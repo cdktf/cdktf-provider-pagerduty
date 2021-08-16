@@ -1538,9 +1538,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^3.0.4, constructs@^3.3.75:
-  version "3.3.121"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.121.tgz#cf22f96f675b54b83ef32c9bfd51f1ea3fa5242a"
-  integrity sha512-vYTkqiaoGWecZ5yyBkeuPkJd6HsQbABuewGMMUTHI7FcvQk9A52j5KZMfIQ0O5TS2ssPUt4WytuIOdTEW+vIRQ==
+  version "3.3.123"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.123.tgz#f3feeab6cfcb25eafd9c0800522c1f10b84472c0"
+  integrity sha512-TN8932wImRGcTKzrlTMU+jX5yo1+nYyz25XejnL+6yu6KnqiDNHnZqbaLr3IGLH5HyjNR+GVIW3457aU7+9s/g==
 
 content-disposition@0.5.3:
   version "0.5.3"
@@ -3345,10 +3345,10 @@ jsii-diff@^1.32.0:
     typescript "~3.9.9"
     yargs "^16.2.0"
 
-jsii-docgen@^3.2.25:
-  version "3.2.25"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-3.2.25.tgz#557dfaf06e7338ae3d72f57ffa84db1fa4c096b2"
-  integrity sha512-3XVwTGsb5feYi25GNt7jW6A3DQvPOsnfV/u+Pdb4TVGvM5PBA9HLvB0qhilSQHYSdB0ZDWPiskrW50dv60hLXQ==
+jsii-docgen@^3.2.27:
+  version "3.2.27"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-3.2.27.tgz#d4b6ebacd8d16ce40cb1ddabf600aa72f6d1d2c1"
+  integrity sha512-TBUnccee748Rp1ow4i3GBt8PZ+XYFtDR0gRDTln7f8iuspkOnIfqkAL9DRLt5XOMLUZnZpFME2ZvCk6tlqGh1w==
   dependencies:
     "@jsii/spec" "^1.32.0"
     case "^1.6.3"
@@ -3401,9 +3401,9 @@ jsii-rosetta@^1.30.0, jsii-rosetta@^1.32.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.272:
-  version "0.1.323"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.323.tgz#d4a45b851894cab64934e803567b8003ea3fe58b"
-  integrity sha512-7LBVa0cUitJdn72YhlmkxW6CWz2TMJZ4q4a0NgvTyinkC3VDJhn232+aOlORrAxVnDLzyLQZZPbAVn3WjtIM8A==
+  version "0.1.325"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.325.tgz#7eef835afe5a53e2f37203962838da8d2f44b520"
+  integrity sha512-Qjz7gBAGsDXfYTGejj1+GqjNrVselgLY0yof3GUOLkSVM3S37GJYowm6DrAiH4TUPrKUfV53E6E8gkIgyiCyxw==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.32.0"
@@ -5239,9 +5239,9 @@ sprintf-js@~1.0.2:
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
 sscaff@^1.2.0:
-  version "1.2.44"
-  resolved "https://registry.yarnpkg.com/sscaff/-/sscaff-1.2.44.tgz#0eb8d67baa4bd4f5bc22d8db09e090bf2c918229"
-  integrity sha512-oLUwVVEPpctKxqIIsVJI3EU6Dpu9GIoel1R8GduJ+xgKbOUnC3UVhBzPAIuWzOHxAML51sGAXeKfciR2PbXu/w==
+  version "1.2.46"
+  resolved "https://registry.yarnpkg.com/sscaff/-/sscaff-1.2.46.tgz#a0c318dc6c916c8b354560d20cdb8c925eb68cac"
+  integrity sha512-PJ1bkq3at9DGWLw2UGSdrKBKH6hypBh5sHNE8Bl4sitZ+KPedG918dK13qNUsCxi8dup6q61ebfSao8NG840kw==
 
 sshpk@^1.7.0:
   version "1.16.1"
