@@ -18,6 +18,11 @@ export interface DataPagerdutyExtensionSchemaConfig extends cdktf.TerraformMetaA
 */
 export class DataPagerdutyExtensionSchema extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_extension_schema";
+
   // ===========
   // INITIALIZER
   // ===========

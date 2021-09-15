@@ -58,6 +58,11 @@ export interface ExtensionServicenowConfig extends cdktf.TerraformMetaArguments 
 */
 export class ExtensionServicenow extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_extension_servicenow";
+
   // ===========
   // INITIALIZER
   // ===========

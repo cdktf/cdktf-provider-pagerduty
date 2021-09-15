@@ -265,6 +265,11 @@ function serviceSupportHoursToTerraform(struct?: ServiceSupportHours): any {
 */
 export class Service extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_service";
+
   // ===========
   // INITIALIZER
   // ===========

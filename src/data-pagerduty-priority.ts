@@ -20,6 +20,11 @@ export interface DataPagerdutyPriorityConfig extends cdktf.TerraformMetaArgument
 */
 export class DataPagerdutyPriority extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_priority";
+
   // ===========
   // INITIALIZER
   // ===========

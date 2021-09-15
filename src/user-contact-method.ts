@@ -22,7 +22,7 @@ export interface UserContactMethodConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method.html#send_short_email UserContactMethod#send_short_email}
   */
-  readonly sendShortEmail?: boolean;
+  readonly sendShortEmail?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method.html#type UserContactMethod#type}
   */
@@ -37,6 +37,11 @@ export interface UserContactMethodConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method.html pagerduty_user_contact_method}
 */
 export class UserContactMethod extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_user_contact_method";
 
   // ===========
   // INITIALIZER
@@ -130,11 +135,11 @@ export class UserContactMethod extends cdktf.TerraformResource {
   }
 
   // send_short_email - computed: false, optional: true, required: false
-  private _sendShortEmail?: boolean;
+  private _sendShortEmail?: boolean | cdktf.IResolvable;
   public get sendShortEmail() {
     return this.getBooleanAttribute('send_short_email');
   }
-  public set sendShortEmail(value: boolean ) {
+  public set sendShortEmail(value: boolean | cdktf.IResolvable ) {
     this._sendShortEmail = value;
   }
   public resetSendShortEmail() {

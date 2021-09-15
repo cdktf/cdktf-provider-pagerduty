@@ -22,6 +22,11 @@ export interface AddonConfig extends cdktf.TerraformMetaArguments {
 */
 export class Addon extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_addon";
+
   // ===========
   // INITIALIZER
   // ===========

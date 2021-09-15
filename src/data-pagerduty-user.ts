@@ -18,6 +18,11 @@ export interface DataPagerdutyUserConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataPagerdutyUser extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_user";
+
   // ===========
   // INITIALIZER
   // ===========

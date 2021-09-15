@@ -72,6 +72,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.Addon.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### BusinessService <a name="@cdktf/provider-pagerduty.BusinessService"></a>
 
@@ -222,6 +229,13 @@ public resetType()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.BusinessService.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### DataPagerdutyBusinessService <a name="@cdktf/provider-pagerduty.DataPagerdutyBusinessService"></a>
 
@@ -281,6 +295,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.DataPagerdutyBusinessService.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### DataPagerdutyEscalationPolicy <a name="@cdktf/provider-pagerduty.DataPagerdutyEscalationPolicy"></a>
 
@@ -340,6 +361,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.DataPagerdutyEscalationPolicy.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### DataPagerdutyExtensionSchema <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchema"></a>
 
@@ -405,6 +433,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchema.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### DataPagerdutyPriority <a name="@cdktf/provider-pagerduty.DataPagerdutyPriority"></a>
 
@@ -470,6 +505,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.DataPagerdutyPriority.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### DataPagerdutyRuleset <a name="@cdktf/provider-pagerduty.DataPagerdutyRuleset"></a>
 
@@ -535,6 +577,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.DataPagerdutyRuleset.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### DataPagerdutySchedule <a name="@cdktf/provider-pagerduty.DataPagerdutySchedule"></a>
 
@@ -594,6 +643,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.DataPagerdutySchedule.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### DataPagerdutyService <a name="@cdktf/provider-pagerduty.DataPagerdutyService"></a>
 
@@ -653,6 +709,97 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.DataPagerdutyService.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
+### DataPagerdutyServiceIntegration <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration.html pagerduty_service_integration}.
+
+#### Initializer <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.Initializer"></a>
+
+```typescript
+import { DataPagerdutyServiceIntegration } from '@cdktf/provider-pagerduty'
+
+new DataPagerdutyServiceIntegration(scope: Construct, id: string, config: DataPagerdutyServiceIntegrationConfig)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig`](#@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig)
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.property.id"></a>
+
+- *Type:* `string`
+
+---
+
+##### `integrationKey`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.property.integrationKey"></a>
+
+- *Type:* `string`
+
+---
+
+##### `integrationSummaryInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.property.integrationSummaryInput"></a>
+
+- *Type:* `string`
+
+---
+
+##### `serviceNameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.property.serviceNameInput"></a>
+
+- *Type:* `string`
+
+---
+
+##### `integrationSummary`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.property.integrationSummary"></a>
+
+- *Type:* `string`
+
+---
+
+##### `serviceName`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.property.serviceName"></a>
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### DataPagerdutyTeam <a name="@cdktf/provider-pagerduty.DataPagerdutyTeam"></a>
 
@@ -737,6 +884,13 @@ public resetParent()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.DataPagerdutyTeam.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### DataPagerdutyUser <a name="@cdktf/provider-pagerduty.DataPagerdutyUser"></a>
 
@@ -802,6 +956,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.DataPagerdutyUser.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### DataPagerdutyUserContactMethod <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethod"></a>
 
@@ -885,6 +1046,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethod.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### DataPagerdutyVendor <a name="@cdktf/provider-pagerduty.DataPagerdutyVendor"></a>
 
@@ -969,6 +1137,13 @@ public resetNameRegex()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.DataPagerdutyVendor.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### EscalationPolicy <a name="@cdktf/provider-pagerduty.EscalationPolicy"></a>
 
@@ -1095,6 +1270,13 @@ public resetTeams()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.EscalationPolicy.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### EventRule <a name="@cdktf/provider-pagerduty.EventRule"></a>
 
@@ -1151,7 +1333,7 @@ public resetAdvancedConditionJson()
 
 ##### `catchAll`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EventRule.property.catchAll"></a>
 
-- *Type:* `boolean`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -1191,6 +1373,13 @@ public resetAdvancedConditionJson()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.EventRule.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### Extension <a name="@cdktf/provider-pagerduty.Extension"></a>
 
@@ -1341,6 +1530,13 @@ public resetType()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.Extension.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### ExtensionServicenow <a name="@cdktf/provider-pagerduty.ExtensionServicenow"></a>
 
@@ -1545,6 +1741,13 @@ public resetType()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### MaintenanceWindow <a name="@cdktf/provider-pagerduty.MaintenanceWindow"></a>
 
@@ -1647,6 +1850,13 @@ public resetDescription()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.MaintenanceWindow.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### PagerdutyProvider <a name="@cdktf/provider-pagerduty.PagerdutyProvider"></a>
 
@@ -1715,7 +1925,7 @@ public resetSkipCredentialsValidation()
 
 ##### `skipCredentialsValidationInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.PagerdutyProvider.property.skipCredentialsValidationInput"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -1733,10 +1943,17 @@ public resetSkipCredentialsValidation()
 
 ##### `skipCredentialsValidation`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.PagerdutyProvider.property.skipCredentialsValidation"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.PagerdutyProvider.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### ResponsePlay <a name="@cdktf/provider-pagerduty.ResponsePlay"></a>
 
@@ -1989,6 +2206,13 @@ public resetType()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.ResponsePlay.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### Ruleset <a name="@cdktf/provider-pagerduty.Ruleset"></a>
 
@@ -2079,6 +2303,13 @@ public resetTeam()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.Ruleset.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### RulesetRule <a name="@cdktf/provider-pagerduty.RulesetRule"></a>
 
@@ -2183,7 +2414,7 @@ public resetVariable()
 
 ##### `disabledInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.disabledInput"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -2219,7 +2450,7 @@ public resetVariable()
 
 ##### `disabled`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.disabled"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -2247,6 +2478,13 @@ public resetVariable()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.RulesetRule.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### Schedule <a name="@cdktf/provider-pagerduty.Schedule"></a>
 
@@ -2304,6 +2542,12 @@ public resetName()
 public resetOverflow()
 ```
 
+##### `resetTeams` <a name="@cdktf/provider-pagerduty.Schedule.resetTeams"></a>
+
+```typescript
+public resetTeams()
+```
+
 
 #### Properties <a name="Properties"></a>
 
@@ -2339,7 +2583,13 @@ public resetOverflow()
 
 ##### `overflowInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.overflowInput"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `teamsInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.teamsInput"></a>
+
+- *Type:* `string`[]
 
 ---
 
@@ -2363,7 +2613,13 @@ public resetOverflow()
 
 ##### `overflow`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.overflow"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `teams`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.teams"></a>
+
+- *Type:* `string`[]
 
 ---
 
@@ -2373,6 +2629,13 @@ public resetOverflow()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.Schedule.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### Service <a name="@cdktf/provider-pagerduty.Service"></a>
 
@@ -2649,6 +2912,13 @@ public resetSupportHours()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.Service.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### ServiceDependency <a name="@cdktf/provider-pagerduty.ServiceDependency"></a>
 
@@ -2708,6 +2978,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.ServiceDependency.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### ServiceEventRule <a name="@cdktf/provider-pagerduty.ServiceEventRule"></a>
 
@@ -2812,7 +3089,7 @@ public resetVariable()
 
 ##### `disabledInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.disabledInput"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -2848,7 +3125,7 @@ public resetVariable()
 
 ##### `disabled`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.disabled"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -2876,6 +3153,13 @@ public resetVariable()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### ServiceIntegration <a name="@cdktf/provider-pagerduty.ServiceIntegration"></a>
 
@@ -3032,6 +3316,151 @@ public resetVendor()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.ServiceIntegration.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
+### SlackConnection <a name="@cdktf/provider-pagerduty.SlackConnection"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html pagerduty_slack_connection}.
+
+#### Initializer <a name="@cdktf/provider-pagerduty.SlackConnection.Initializer"></a>
+
+```typescript
+import { SlackConnection } from '@cdktf/provider-pagerduty'
+
+new SlackConnection(scope: Construct, id: string, config: SlackConnectionConfig)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-pagerduty.SlackConnectionConfig`](#@cdktf/provider-pagerduty.SlackConnectionConfig)
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `channelIdInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.channelIdInput"></a>
+
+- *Type:* `string`
+
+---
+
+##### `channelName`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.channelName"></a>
+
+- *Type:* `string`
+
+---
+
+##### `configInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.configInput"></a>
+
+- *Type:* [`@cdktf/provider-pagerduty.SlackConnectionConfigA`](#@cdktf/provider-pagerduty.SlackConnectionConfigA)[]
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.id"></a>
+
+- *Type:* `string`
+
+---
+
+##### `notificationTypeInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.notificationTypeInput"></a>
+
+- *Type:* `string`
+
+---
+
+##### `sourceIdInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.sourceIdInput"></a>
+
+- *Type:* `string`
+
+---
+
+##### `sourceName`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.sourceName"></a>
+
+- *Type:* `string`
+
+---
+
+##### `sourceTypeInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.sourceTypeInput"></a>
+
+- *Type:* `string`
+
+---
+
+##### `workspaceIdInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.workspaceIdInput"></a>
+
+- *Type:* `string`
+
+---
+
+##### `channelId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.channelId"></a>
+
+- *Type:* `string`
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.config"></a>
+
+- *Type:* [`@cdktf/provider-pagerduty.SlackConnectionConfigA`](#@cdktf/provider-pagerduty.SlackConnectionConfigA)[]
+
+---
+
+##### `notificationType`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.notificationType"></a>
+
+- *Type:* `string`
+
+---
+
+##### `sourceId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.sourceId"></a>
+
+- *Type:* `string`
+
+---
+
+##### `sourceType`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.sourceType"></a>
+
+- *Type:* `string`
+
+---
+
+##### `workspaceId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.workspaceId"></a>
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.SlackConnection.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### Team <a name="@cdktf/provider-pagerduty.Team"></a>
 
@@ -3134,6 +3563,13 @@ public resetParent()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.Team.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### TeamMembership <a name="@cdktf/provider-pagerduty.TeamMembership"></a>
 
@@ -3224,6 +3660,13 @@ public resetRole()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.TeamMembership.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### User <a name="@cdktf/provider-pagerduty.User"></a>
 
@@ -3328,7 +3771,7 @@ public resetTimeZone()
 
 ##### `invitationSent`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.User.property.invitationSent"></a>
 
-- *Type:* `boolean`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -3422,6 +3865,13 @@ public resetTimeZone()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.User.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### UserContactMethod <a name="@cdktf/provider-pagerduty.UserContactMethod"></a>
 
@@ -3484,13 +3934,13 @@ public resetSendShortEmail()
 
 ##### `blacklisted`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.blacklisted"></a>
 
-- *Type:* `boolean`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.enabled"></a>
 
-- *Type:* `boolean`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -3526,7 +3976,7 @@ public resetSendShortEmail()
 
 ##### `sendShortEmailInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.sendShortEmailInput"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -3550,7 +4000,7 @@ public resetSendShortEmail()
 
 ##### `sendShortEmail`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.sendShortEmail"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -3566,6 +4016,13 @@ public resetSendShortEmail()
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.UserContactMethod.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ### UserNotificationRule <a name="@cdktf/provider-pagerduty.UserNotificationRule"></a>
 
@@ -3609,7 +4066,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `contactMethodInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRule.property.contactMethodInput"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
@@ -3639,7 +4096,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `contactMethod`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRule.property.contactMethod"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
@@ -3661,6 +4118,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.UserNotificationRule.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
 
 ## Structs <a name="Structs"></a>
 
@@ -4081,6 +4545,58 @@ const dataPagerdutyServiceConfig: DataPagerdutyServiceConfig = { ... }
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/service.html#name DataPagerdutyService#name}.
+
+---
+
+### DataPagerdutyServiceIntegrationConfig <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataPagerdutyServiceIntegrationConfig } from '@cdktf/provider-pagerduty'
+
+const dataPagerdutyServiceIntegrationConfig: DataPagerdutyServiceIntegrationConfig = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig.property.count"></a>
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig.property.dependsOn"></a>
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig.property.lifecycle"></a>
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig.property.provider"></a>
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `integrationSummary`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig.property.integrationSummary"></a>
+
+- *Type:* `string`
+
+examples 'Amazon CloudWatch', 'New Relic.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration.html#integration_summary DataPagerdutyServiceIntegration#integration_summary}
+
+---
+
+##### `serviceName`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig.property.serviceName"></a>
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration.html#service_name DataPagerdutyServiceIntegration#service_name}.
 
 ---
 
@@ -4778,7 +5294,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `skipCredentialsValidation`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.PagerdutyProviderConfig.property.skipCredentialsValidation"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}.
 
@@ -5296,7 +5812,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsSuppress.property.value"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#value RulesetRule#value}.
 
@@ -5466,7 +5982,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `disabled`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConfig.property.disabled"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#disabled RulesetRule#disabled}.
 
@@ -5748,9 +6264,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `overflow`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleConfig.property.overflow"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#overflow Schedule#overflow}.
+
+---
+
+##### `teams`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleConfig.property.teams"></a>
+
+- *Type:* `string`[]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#teams Schedule#teams}.
 
 ---
 
@@ -6428,7 +6952,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress.property.value"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#value ServiceEventRule#value}.
 
@@ -6598,7 +7122,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `disabled`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConfig.property.disabled"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#disabled ServiceEventRule#disabled}.
 
@@ -7084,6 +7608,124 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ---
 
+### SlackConnectionConfig <a name="@cdktf/provider-pagerduty.SlackConnectionConfig"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { SlackConnectionConfig } from '@cdktf/provider-pagerduty'
+
+const slackConnectionConfig: SlackConnectionConfig = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.count"></a>
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.dependsOn"></a>
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.lifecycle"></a>
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.provider"></a>
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `channelId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.channelId"></a>
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#channel_id SlackConnection#channel_id}.
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.config"></a>
+
+- *Type:* [`@cdktf/provider-pagerduty.SlackConnectionConfigA`](#@cdktf/provider-pagerduty.SlackConnectionConfigA)[]
+
+config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#config SlackConnection#config}
+
+---
+
+##### `notificationType`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.notificationType"></a>
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#notification_type SlackConnection#notification_type}.
+
+---
+
+##### `sourceId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.sourceId"></a>
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#source_id SlackConnection#source_id}.
+
+---
+
+##### `sourceType`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.sourceType"></a>
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#source_type SlackConnection#source_type}.
+
+---
+
+##### `workspaceId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.workspaceId"></a>
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#workspace_id SlackConnection#workspace_id}.
+
+---
+
+### SlackConnectionConfigA <a name="@cdktf/provider-pagerduty.SlackConnectionConfigA"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { SlackConnectionConfigA } from '@cdktf/provider-pagerduty'
+
+const slackConnectionConfigA: SlackConnectionConfigA = { ... }
+```
+
+##### `events`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfigA.property.events"></a>
+
+- *Type:* `string`[]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#events SlackConnection#events}.
+
+---
+
+##### `priorities`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfigA.property.priorities"></a>
+
+- *Type:* `string`[]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#priorities SlackConnection#priorities}.
+
+---
+
+##### `urgency`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfigA.property.urgency"></a>
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#urgency SlackConnection#urgency}.
+
+---
+
 ### TeamConfig <a name="@cdktf/provider-pagerduty.TeamConfig"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -7374,7 +8016,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `sendShortEmail`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserContactMethodConfig.property.sendShortEmail"></a>
 
-- *Type:* `boolean`
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method.html#send_short_email UserContactMethod#send_short_email}.
 
@@ -7416,7 +8058,7 @@ const userNotificationRuleConfig: UserNotificationRuleConfig = { ... }
 
 ##### `contactMethod`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRuleConfig.property.contactMethod"></a>
 
-- *Type:* {[ key: string ]: `string`}
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule.html#contact_method UserNotificationRule#contact_method}.
 

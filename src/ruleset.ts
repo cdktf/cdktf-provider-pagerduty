@@ -38,6 +38,11 @@ function rulesetTeamToTerraform(struct?: RulesetTeam): any {
 */
 export class Ruleset extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_ruleset";
+
   // ===========
   // INITIALIZER
   // ===========

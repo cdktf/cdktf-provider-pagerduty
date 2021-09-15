@@ -34,6 +34,11 @@ export interface BusinessServiceConfig extends cdktf.TerraformMetaArguments {
 */
 export class BusinessService extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_business_service";
+
   // ===========
   // INITIALIZER
   // ===========

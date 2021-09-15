@@ -30,6 +30,11 @@ export interface MaintenanceWindowConfig extends cdktf.TerraformMetaArguments {
 */
 export class MaintenanceWindow extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_maintenance_window";
+
   // ===========
   // INITIALIZER
   // ===========

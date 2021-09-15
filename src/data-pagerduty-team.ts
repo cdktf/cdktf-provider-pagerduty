@@ -24,6 +24,11 @@ export interface DataPagerdutyTeamConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataPagerdutyTeam extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_team";
+
   // ===========
   // INITIALIZER
   // ===========

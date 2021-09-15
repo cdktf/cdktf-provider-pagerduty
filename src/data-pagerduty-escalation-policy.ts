@@ -18,6 +18,11 @@ export interface DataPagerdutyEscalationPolicyConfig extends cdktf.TerraformMeta
 */
 export class DataPagerdutyEscalationPolicy extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_escalation_policy";
+
   // ===========
   // INITIALIZER
   // ===========
