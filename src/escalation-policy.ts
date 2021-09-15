@@ -76,6 +76,11 @@ function escalationPolicyRuleToTerraform(struct?: EscalationPolicyRule): any {
 */
 export class EscalationPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_escalation_policy";
+
   // ===========
   // INITIALIZER
   // ===========

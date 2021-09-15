@@ -10,7 +10,7 @@ export interface PagerdutyProviderConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}
   */
-  readonly skipCredentialsValidation?: boolean;
+  readonly skipCredentialsValidation?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty#token PagerdutyProvider#token}
   */
@@ -27,6 +27,11 @@ export interface PagerdutyProviderConfig {
 * Represents a {@link https://www.terraform.io/docs/providers/pagerduty pagerduty}
 */
 export class PagerdutyProvider extends cdktf.TerraformProvider {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty";
 
   // ===========
   // INITIALIZER
@@ -58,11 +63,11 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   // ==========
 
   // skip_credentials_validation - computed: false, optional: true, required: false
-  private _skipCredentialsValidation?: boolean;
+  private _skipCredentialsValidation?: boolean | cdktf.IResolvable;
   public get skipCredentialsValidation() {
     return this._skipCredentialsValidation;
   }
-  public set skipCredentialsValidation(value: boolean  | undefined) {
+  public set skipCredentialsValidation(value: boolean | cdktf.IResolvable  | undefined) {
     this._skipCredentialsValidation = value;
   }
   public resetSkipCredentialsValidation() {

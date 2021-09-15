@@ -22,6 +22,11 @@ export interface DataPagerdutyVendorConfig extends cdktf.TerraformMetaArguments 
 */
 export class DataPagerdutyVendor extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_vendor";
+
   // ===========
   // INITIALIZER
   // ===========

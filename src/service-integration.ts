@@ -38,6 +38,11 @@ export interface ServiceIntegrationConfig extends cdktf.TerraformMetaArguments {
 */
 export class ServiceIntegration extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_service_integration";
+
   // ===========
   // INITIALIZER
   // ===========

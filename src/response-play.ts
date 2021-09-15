@@ -114,6 +114,11 @@ function responsePlaySubscriberToTerraform(struct?: ResponsePlaySubscriber): any
 */
 export class ResponsePlay extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_response_play";
+
   // ===========
   // INITIALIZER
   // ===========

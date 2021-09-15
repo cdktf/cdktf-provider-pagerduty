@@ -38,6 +38,11 @@ export interface ExtensionConfig extends cdktf.TerraformMetaArguments {
 */
 export class Extension extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_extension";
+
   // ===========
   // INITIALIZER
   // ===========

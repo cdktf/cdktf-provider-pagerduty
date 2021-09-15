@@ -10,7 +10,7 @@ export interface ServiceEventRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#disabled ServiceEventRule#disabled}
   */
-  readonly disabled?: boolean;
+  readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#position ServiceEventRule#position}
   */
@@ -145,7 +145,7 @@ export interface ServiceEventRuleActionsSuppress {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#value ServiceEventRule#value}
   */
-  readonly value?: boolean;
+  readonly value?: boolean | cdktf.IResolvable;
 }
 
 function serviceEventRuleActionsSuppressToTerraform(struct?: ServiceEventRuleActionsSuppress): any {
@@ -413,6 +413,11 @@ function serviceEventRuleVariableToTerraform(struct?: ServiceEventRuleVariable):
 */
 export class ServiceEventRule extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_service_event_rule";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -449,11 +454,11 @@ export class ServiceEventRule extends cdktf.TerraformResource {
   // ==========
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean;
+  private _disabled?: boolean | cdktf.IResolvable;
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean ) {
+  public set disabled(value: boolean | cdktf.IResolvable ) {
     this._disabled = value;
   }
   public resetDisabled() {

@@ -10,7 +10,7 @@ export interface RulesetRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#disabled RulesetRule#disabled}
   */
-  readonly disabled?: boolean;
+  readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#position RulesetRule#position}
   */
@@ -159,7 +159,7 @@ export interface RulesetRuleActionsSuppress {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#value RulesetRule#value}
   */
-  readonly value?: boolean;
+  readonly value?: boolean | cdktf.IResolvable;
 }
 
 function rulesetRuleActionsSuppressToTerraform(struct?: RulesetRuleActionsSuppress): any {
@@ -434,6 +434,11 @@ function rulesetRuleVariableToTerraform(struct?: RulesetRuleVariable): any {
 */
 export class RulesetRule extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_ruleset_rule";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -470,11 +475,11 @@ export class RulesetRule extends cdktf.TerraformResource {
   // ==========
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean;
+  private _disabled?: boolean | cdktf.IResolvable;
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean ) {
+  public set disabled(value: boolean | cdktf.IResolvable ) {
     this._disabled = value;
   }
   public resetDisabled() {

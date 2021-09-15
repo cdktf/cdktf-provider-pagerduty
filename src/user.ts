@@ -46,6 +46,11 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
 */
 export class User extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_user";
+
   // ===========
   // INITIALIZER
   // ===========

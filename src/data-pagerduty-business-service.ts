@@ -18,6 +18,11 @@ export interface DataPagerdutyBusinessServiceConfig extends cdktf.TerraformMetaA
 */
 export class DataPagerdutyBusinessService extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_business_service";
+
   // ===========
   // INITIALIZER
   // ===========

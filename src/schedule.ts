@@ -18,7 +18,11 @@ export interface ScheduleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#overflow Schedule#overflow}
   */
-  readonly overflow?: boolean;
+  readonly overflow?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#teams Schedule#teams}
+  */
+  readonly teams?: string[];
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#time_zone Schedule#time_zone}
   */
@@ -111,6 +115,11 @@ function scheduleLayerToTerraform(struct?: ScheduleLayer): any {
 */
 export class Schedule extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_schedule";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -136,6 +145,7 @@ export class Schedule extends cdktf.TerraformResource {
     this._description = config.description;
     this._name = config.name;
     this._overflow = config.overflow;
+    this._teams = config.teams;
     this._timeZone = config.timeZone;
     this._layer = config.layer;
   }
@@ -182,11 +192,11 @@ export class Schedule extends cdktf.TerraformResource {
   }
 
   // overflow - computed: false, optional: true, required: false
-  private _overflow?: boolean;
+  private _overflow?: boolean | cdktf.IResolvable;
   public get overflow() {
     return this.getBooleanAttribute('overflow');
   }
-  public set overflow(value: boolean ) {
+  public set overflow(value: boolean | cdktf.IResolvable ) {
     this._overflow = value;
   }
   public resetOverflow() {
@@ -195,6 +205,22 @@ export class Schedule extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get overflowInput() {
     return this._overflow
+  }
+
+  // teams - computed: false, optional: true, required: false
+  private _teams?: string[];
+  public get teams() {
+    return this.getListAttribute('teams');
+  }
+  public set teams(value: string[] ) {
+    this._teams = value;
+  }
+  public resetTeams() {
+    this._teams = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get teamsInput() {
+    return this._teams
   }
 
   // time_zone - computed: false, optional: false, required: true
@@ -232,6 +258,7 @@ export class Schedule extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
       overflow: cdktf.booleanToTerraform(this._overflow),
+      teams: cdktf.listMapper(cdktf.stringToTerraform)(this._teams),
       time_zone: cdktf.stringToTerraform(this._timeZone),
       layer: cdktf.listMapper(scheduleLayerToTerraform)(this._layer),
     };

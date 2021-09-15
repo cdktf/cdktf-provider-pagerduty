@@ -86,6 +86,11 @@ function serviceDependencyDependencyToTerraform(struct?: ServiceDependencyDepend
 */
 export class ServiceDependency extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_service_dependency";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -30,6 +30,11 @@ export interface DataPagerdutyUserContactMethodConfig extends cdktf.TerraformMet
 */
 export class DataPagerdutyUserContactMethod extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_user_contact_method";
+
   // ===========
   // INITIALIZER
   // ===========

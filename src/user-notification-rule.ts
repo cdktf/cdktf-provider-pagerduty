@@ -10,7 +10,7 @@ export interface UserNotificationRuleConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule.html#contact_method UserNotificationRule#contact_method}
   */
-  readonly contactMethod: { [key: string]: string };
+  readonly contactMethod: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule.html#start_delay_in_minutes UserNotificationRule#start_delay_in_minutes}
   */
@@ -29,6 +29,11 @@ export interface UserNotificationRuleConfig extends cdktf.TerraformMetaArguments
 * Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule.html pagerduty_user_notification_rule}
 */
 export class UserNotificationRule extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_user_notification_rule";
 
   // ===========
   // INITIALIZER
@@ -63,11 +68,11 @@ export class UserNotificationRule extends cdktf.TerraformResource {
   // ==========
 
   // contact_method - computed: false, optional: false, required: true
-  private _contactMethod: { [key: string]: string };
+  private _contactMethod: { [key: string]: string } | cdktf.IResolvable;
   public get contactMethod() {
     return this.interpolationForAttribute('contact_method') as any;
   }
-  public set contactMethod(value: { [key: string]: string }) {
+  public set contactMethod(value: { [key: string]: string } | cdktf.IResolvable) {
     this._contactMethod = value;
   }
   // Temporarily expose input value. Use with caution.

@@ -26,6 +26,11 @@ export interface EventRuleConfig extends cdktf.TerraformMetaArguments {
 */
 export class EventRule extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_event_rule";
+
   // ===========
   // INITIALIZER
   // ===========

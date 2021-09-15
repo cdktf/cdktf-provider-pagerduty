@@ -18,6 +18,11 @@ export interface DataPagerdutyScheduleConfig extends cdktf.TerraformMetaArgument
 */
 export class DataPagerdutySchedule extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "pagerduty_schedule";
+
   // ===========
   // INITIALIZER
   // ===========
