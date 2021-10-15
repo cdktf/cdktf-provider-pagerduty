@@ -6,7 +6,7 @@
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/addon.html pagerduty_addon}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.Addon.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.Addon.Initializer"></a>
 
 ```typescript
 import { Addon } from '@cdktf/provider-pagerduty'
@@ -44,11 +44,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Addon.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `nameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Addon.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
 
 - *Type:* `string`
 
@@ -56,17 +64,29 @@ Must be unique amongst siblings in the same scope
 
 ##### `srcInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Addon.property.srcInput"></a>
 
+```typescript
+public readonly srcInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Addon.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `src`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Addon.property.src"></a>
+
+```typescript
+public readonly src: string;
+```
 
 - *Type:* `string`
 
@@ -84,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service.html pagerduty_business_service}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.BusinessService.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.BusinessService.Initializer"></a>
 
 ```typescript
 import { BusinessService } from '@cdktf/provider-pagerduty'
@@ -147,11 +167,19 @@ public resetType()
 
 ##### `htmlUrl`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.BusinessService.property.htmlUrl"></a>
 
+```typescript
+public readonly htmlUrl: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.BusinessService.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -159,11 +187,19 @@ public resetType()
 
 ##### `nameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.BusinessService.property.nameInput"></a>
 
+```typescript
+public readonly nameInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `selfAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.BusinessService.property.selfAttribute"></a>
+
+```typescript
+public readonly selfAttribute: string;
+```
 
 - *Type:* `string`
 
@@ -171,11 +207,19 @@ public resetType()
 
 ##### `summary`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.BusinessService.property.summary"></a>
 
+```typescript
+public readonly summary: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `descriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.BusinessService.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
 
 - *Type:* `string`
 
@@ -183,11 +227,19 @@ public resetType()
 
 ##### `pointOfContactInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.BusinessService.property.pointOfContactInput"></a>
 
+```typescript
+public readonly pointOfContactInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `teamInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.BusinessService.property.teamInput"></a>
+
+```typescript
+public readonly teamInput: string;
+```
 
 - *Type:* `string`
 
@@ -195,11 +247,19 @@ public resetType()
 
 ##### `typeInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.BusinessService.property.typeInput"></a>
 
+```typescript
+public readonly typeInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `description`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.BusinessService.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
 
 - *Type:* `string`
 
@@ -207,11 +267,19 @@ public resetType()
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.BusinessService.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `pointOfContact`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.BusinessService.property.pointOfContact"></a>
+
+```typescript
+public readonly pointOfContact: string;
+```
 
 - *Type:* `string`
 
@@ -219,11 +287,19 @@ public resetType()
 
 ##### `team`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.BusinessService.property.team"></a>
 
+```typescript
+public readonly team: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.BusinessService.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -241,7 +317,7 @@ public resetType()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service.html pagerduty_business_service}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.DataPagerdutyBusinessService.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyBusinessService.Initializer"></a>
 
 ```typescript
 import { DataPagerdutyBusinessService } from '@cdktf/provider-pagerduty'
@@ -279,17 +355,29 @@ Must be unique amongst siblings in the same scope
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyBusinessService.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `nameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyBusinessService.property.nameInput"></a>
 
+```typescript
+public readonly nameInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyBusinessService.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -307,7 +395,7 @@ Must be unique amongst siblings in the same scope
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/escalation_policy.html pagerduty_escalation_policy}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.DataPagerdutyEscalationPolicy.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyEscalationPolicy.Initializer"></a>
 
 ```typescript
 import { DataPagerdutyEscalationPolicy } from '@cdktf/provider-pagerduty'
@@ -345,17 +433,29 @@ Must be unique amongst siblings in the same scope
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyEscalationPolicy.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `nameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyEscalationPolicy.property.nameInput"></a>
 
+```typescript
+public readonly nameInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyEscalationPolicy.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -373,7 +473,7 @@ Must be unique amongst siblings in the same scope
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/extension_schema.html pagerduty_extension_schema}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchema.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchema.Initializer"></a>
 
 ```typescript
 import { DataPagerdutyExtensionSchema } from '@cdktf/provider-pagerduty'
@@ -411,11 +511,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchema.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `nameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchema.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
 
 - *Type:* `string`
 
@@ -423,11 +531,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchema.property.type"></a>
 
+```typescript
+public readonly type: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchema.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -445,7 +561,7 @@ Must be unique amongst siblings in the same scope
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/priority.html pagerduty_priority}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.DataPagerdutyPriority.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyPriority.Initializer"></a>
 
 ```typescript
 import { DataPagerdutyPriority } from '@cdktf/provider-pagerduty'
@@ -483,11 +599,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `description`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyPriority.property.description"></a>
 
+```typescript
+public readonly description: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyPriority.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -495,11 +619,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `nameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyPriority.property.nameInput"></a>
 
+```typescript
+public readonly nameInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyPriority.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -517,7 +649,7 @@ Must be unique amongst siblings in the same scope
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/ruleset.html pagerduty_ruleset}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.DataPagerdutyRuleset.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyRuleset.Initializer"></a>
 
 ```typescript
 import { DataPagerdutyRuleset } from '@cdktf/provider-pagerduty'
@@ -555,11 +687,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyRuleset.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `nameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyRuleset.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
 
 - *Type:* `string`
 
@@ -567,11 +707,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `routingKeys`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyRuleset.property.routingKeys"></a>
 
+```typescript
+public readonly routingKeys: string[];
+```
+
 - *Type:* `string`[]
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyRuleset.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -589,7 +737,7 @@ Must be unique amongst siblings in the same scope
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/schedule.html pagerduty_schedule}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.DataPagerdutySchedule.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutySchedule.Initializer"></a>
 
 ```typescript
 import { DataPagerdutySchedule } from '@cdktf/provider-pagerduty'
@@ -627,17 +775,29 @@ Must be unique amongst siblings in the same scope
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutySchedule.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `nameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutySchedule.property.nameInput"></a>
 
+```typescript
+public readonly nameInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutySchedule.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -655,7 +815,7 @@ Must be unique amongst siblings in the same scope
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/service.html pagerduty_service}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.DataPagerdutyService.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyService.Initializer"></a>
 
 ```typescript
 import { DataPagerdutyService } from '@cdktf/provider-pagerduty'
@@ -693,17 +853,29 @@ Must be unique amongst siblings in the same scope
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyService.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `nameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyService.property.nameInput"></a>
 
+```typescript
+public readonly nameInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyService.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -721,7 +893,7 @@ Must be unique amongst siblings in the same scope
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration.html pagerduty_service_integration}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.Initializer"></a>
 
 ```typescript
 import { DataPagerdutyServiceIntegration } from '@cdktf/provider-pagerduty'
@@ -759,11 +931,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `integrationKey`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.property.integrationKey"></a>
+
+```typescript
+public readonly integrationKey: string;
+```
 
 - *Type:* `string`
 
@@ -771,11 +951,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `integrationSummaryInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.property.integrationSummaryInput"></a>
 
+```typescript
+public readonly integrationSummaryInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `serviceNameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.property.serviceNameInput"></a>
+
+```typescript
+public readonly serviceNameInput: string;
+```
 
 - *Type:* `string`
 
@@ -783,11 +971,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `integrationSummary`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.property.integrationSummary"></a>
 
+```typescript
+public readonly integrationSummary: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `serviceName`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.property.serviceName"></a>
+
+```typescript
+public readonly serviceName: string;
+```
 
 - *Type:* `string`
 
@@ -805,7 +1001,7 @@ Must be unique amongst siblings in the same scope
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/team.html pagerduty_team}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.DataPagerdutyTeam.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyTeam.Initializer"></a>
 
 ```typescript
 import { DataPagerdutyTeam } from '@cdktf/provider-pagerduty'
@@ -850,11 +1046,19 @@ public resetParent()
 
 ##### `description`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyTeam.property.description"></a>
 
+```typescript
+public readonly description: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyTeam.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -862,11 +1066,19 @@ public resetParent()
 
 ##### `nameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyTeam.property.nameInput"></a>
 
+```typescript
+public readonly nameInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `parentInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyTeam.property.parentInput"></a>
+
+```typescript
+public readonly parentInput: string;
+```
 
 - *Type:* `string`
 
@@ -874,11 +1086,19 @@ public resetParent()
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyTeam.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `parent`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyTeam.property.parent"></a>
+
+```typescript
+public readonly parent: string;
+```
 
 - *Type:* `string`
 
@@ -896,7 +1116,7 @@ public resetParent()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/user.html pagerduty_user}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.DataPagerdutyUser.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyUser.Initializer"></a>
 
 ```typescript
 import { DataPagerdutyUser } from '@cdktf/provider-pagerduty'
@@ -934,11 +1154,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `emailInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUser.property.emailInput"></a>
 
+```typescript
+public readonly emailInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUser.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -946,11 +1174,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUser.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `email`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUser.property.email"></a>
+
+```typescript
+public readonly email: string;
+```
 
 - *Type:* `string`
 
@@ -968,7 +1204,7 @@ Must be unique amongst siblings in the same scope
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/user_contact_method.html pagerduty_user_contact_method}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethod.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethod.Initializer"></a>
 
 ```typescript
 import { DataPagerdutyUserContactMethod } from '@cdktf/provider-pagerduty'
@@ -1006,11 +1242,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethod.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `labelInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethod.property.labelInput"></a>
+
+```typescript
+public readonly labelInput: string;
+```
 
 - *Type:* `string`
 
@@ -1018,11 +1262,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `typeInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethod.property.typeInput"></a>
 
+```typescript
+public readonly typeInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `userIdInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethod.property.userIdInput"></a>
+
+```typescript
+public readonly userIdInput: string;
+```
 
 - *Type:* `string`
 
@@ -1030,17 +1282,29 @@ Must be unique amongst siblings in the same scope
 
 ##### `label`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethod.property.label"></a>
 
+```typescript
+public readonly label: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethod.property.type"></a>
 
+```typescript
+public readonly type: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `userId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethod.property.userId"></a>
+
+```typescript
+public readonly userId: string;
+```
 
 - *Type:* `string`
 
@@ -1058,7 +1322,7 @@ Must be unique amongst siblings in the same scope
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor.html pagerduty_vendor}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.DataPagerdutyVendor.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyVendor.Initializer"></a>
 
 ```typescript
 import { DataPagerdutyVendor } from '@cdktf/provider-pagerduty'
@@ -1103,11 +1367,19 @@ public resetNameRegex()
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyVendor.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `nameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyVendor.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
 
 - *Type:* `string`
 
@@ -1115,11 +1387,19 @@ public resetNameRegex()
 
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyVendor.property.type"></a>
 
+```typescript
+public readonly type: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `nameRegexInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyVendor.property.nameRegexInput"></a>
+
+```typescript
+public readonly nameRegexInput: string;
+```
 
 - *Type:* `string`
 
@@ -1127,11 +1407,19 @@ public resetNameRegex()
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyVendor.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `nameRegex`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyVendor.property.nameRegex"></a>
+
+```typescript
+public readonly nameRegex: string;
+```
 
 - *Type:* `string`
 
@@ -1149,7 +1437,7 @@ public resetNameRegex()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy.html pagerduty_escalation_policy}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.EscalationPolicy.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.EscalationPolicy.Initializer"></a>
 
 ```typescript
 import { EscalationPolicy } from '@cdktf/provider-pagerduty'
@@ -1206,11 +1494,19 @@ public resetTeams()
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicy.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `nameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicy.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
 
 - *Type:* `string`
 
@@ -1218,11 +1514,19 @@ public resetTeams()
 
 ##### `ruleInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicy.property.ruleInput"></a>
 
+```typescript
+public readonly ruleInput: EscalationPolicyRule[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.EscalationPolicyRule`](#@cdktf/provider-pagerduty.EscalationPolicyRule)[]
 
 ---
 
 ##### `descriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicy.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
 
 - *Type:* `string`
 
@@ -1230,11 +1534,19 @@ public resetTeams()
 
 ##### `numLoopsInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicy.property.numLoopsInput"></a>
 
+```typescript
+public readonly numLoopsInput: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `teamsInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicy.property.teamsInput"></a>
+
+```typescript
+public readonly teamsInput: string[];
+```
 
 - *Type:* `string`[]
 
@@ -1242,11 +1554,19 @@ public resetTeams()
 
 ##### `description`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicy.property.description"></a>
 
+```typescript
+public readonly description: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicy.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -1254,17 +1574,29 @@ public resetTeams()
 
 ##### `numLoops`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicy.property.numLoops"></a>
 
+```typescript
+public readonly numLoops: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `rule`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicy.property.rule"></a>
 
+```typescript
+public readonly rule: EscalationPolicyRule[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.EscalationPolicyRule`](#@cdktf/provider-pagerduty.EscalationPolicyRule)[]
 
 ---
 
 ##### `teams`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicy.property.teams"></a>
+
+```typescript
+public readonly teams: string[];
+```
 
 - *Type:* `string`[]
 
@@ -1282,7 +1614,7 @@ public resetTeams()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule.html pagerduty_event_rule}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.EventRule.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.EventRule.Initializer"></a>
 
 ```typescript
 import { EventRule } from '@cdktf/provider-pagerduty'
@@ -1327,11 +1659,19 @@ public resetAdvancedConditionJson()
 
 ##### `actionJsonInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EventRule.property.actionJsonInput"></a>
 
+```typescript
+public readonly actionJsonInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `catchAll`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EventRule.property.catchAll"></a>
+
+```typescript
+public readonly catchAll: IResolvable;
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -1339,11 +1679,19 @@ public resetAdvancedConditionJson()
 
 ##### `conditionJsonInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EventRule.property.conditionJsonInput"></a>
 
+```typescript
+public readonly conditionJsonInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EventRule.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -1351,11 +1699,19 @@ public resetAdvancedConditionJson()
 
 ##### `advancedConditionJsonInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EventRule.property.advancedConditionJsonInput"></a>
 
+```typescript
+public readonly advancedConditionJsonInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `actionJson`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EventRule.property.actionJson"></a>
+
+```typescript
+public readonly actionJson: string;
+```
 
 - *Type:* `string`
 
@@ -1363,11 +1719,19 @@ public resetAdvancedConditionJson()
 
 ##### `advancedConditionJson`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EventRule.property.advancedConditionJson"></a>
 
+```typescript
+public readonly advancedConditionJson: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `conditionJson`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EventRule.property.conditionJson"></a>
+
+```typescript
+public readonly conditionJson: string;
+```
 
 - *Type:* `string`
 
@@ -1385,7 +1749,7 @@ public resetAdvancedConditionJson()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/extension.html pagerduty_extension}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.Extension.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.Extension.Initializer"></a>
 
 ```typescript
 import { Extension } from '@cdktf/provider-pagerduty'
@@ -1448,11 +1812,19 @@ public resetType()
 
 ##### `extensionObjectsInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Extension.property.extensionObjectsInput"></a>
 
+```typescript
+public readonly extensionObjectsInput: string[];
+```
+
 - *Type:* `string`[]
 
 ---
 
 ##### `extensionSchemaInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Extension.property.extensionSchemaInput"></a>
+
+```typescript
+public readonly extensionSchemaInput: string;
+```
 
 - *Type:* `string`
 
@@ -1460,11 +1832,19 @@ public resetType()
 
 ##### `htmlUrl`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Extension.property.htmlUrl"></a>
 
+```typescript
+public readonly htmlUrl: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Extension.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -1472,11 +1852,19 @@ public resetType()
 
 ##### `configInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Extension.property.configInput"></a>
 
+```typescript
+public readonly configInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `endpointUrlInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Extension.property.endpointUrlInput"></a>
+
+```typescript
+public readonly endpointUrlInput: string;
+```
 
 - *Type:* `string`
 
@@ -1484,11 +1872,19 @@ public resetType()
 
 ##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Extension.property.nameInput"></a>
 
+```typescript
+public readonly nameInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `typeInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Extension.property.typeInput"></a>
+
+```typescript
+public readonly typeInput: string;
+```
 
 - *Type:* `string`
 
@@ -1496,11 +1892,19 @@ public resetType()
 
 ##### `config`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Extension.property.config"></a>
 
+```typescript
+public readonly config: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `endpointUrl`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Extension.property.endpointUrl"></a>
+
+```typescript
+public readonly endpointUrl: string;
+```
 
 - *Type:* `string`
 
@@ -1508,11 +1912,19 @@ public resetType()
 
 ##### `extensionObjects`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Extension.property.extensionObjects"></a>
 
+```typescript
+public readonly extensionObjects: string[];
+```
+
 - *Type:* `string`[]
 
 ---
 
 ##### `extensionSchema`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Extension.property.extensionSchema"></a>
+
+```typescript
+public readonly extensionSchema: string;
+```
 
 - *Type:* `string`
 
@@ -1520,11 +1932,19 @@ public resetType()
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Extension.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Extension.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -1542,7 +1962,7 @@ public resetType()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html pagerduty_extension_servicenow}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.ExtensionServicenow.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.ExtensionServicenow.Initializer"></a>
 
 ```typescript
 import { ExtensionServicenow } from '@cdktf/provider-pagerduty'
@@ -1599,11 +2019,19 @@ public resetType()
 
 ##### `extensionObjectsInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.extensionObjectsInput"></a>
 
+```typescript
+public readonly extensionObjectsInput: string[];
+```
+
 - *Type:* `string`[]
 
 ---
 
 ##### `extensionSchemaInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.extensionSchemaInput"></a>
+
+```typescript
+public readonly extensionSchemaInput: string;
+```
 
 - *Type:* `string`
 
@@ -1611,11 +2039,19 @@ public resetType()
 
 ##### `htmlUrl`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.htmlUrl"></a>
 
+```typescript
+public readonly htmlUrl: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -1623,11 +2059,19 @@ public resetType()
 
 ##### `refererInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.refererInput"></a>
 
+```typescript
+public readonly refererInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `snowPasswordInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.snowPasswordInput"></a>
+
+```typescript
+public readonly snowPasswordInput: string;
+```
 
 - *Type:* `string`
 
@@ -1635,11 +2079,19 @@ public resetType()
 
 ##### `snowUserInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.snowUserInput"></a>
 
+```typescript
+public readonly snowUserInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `syncOptionsInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.syncOptionsInput"></a>
+
+```typescript
+public readonly syncOptionsInput: string;
+```
 
 - *Type:* `string`
 
@@ -1647,11 +2099,19 @@ public resetType()
 
 ##### `targetInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.targetInput"></a>
 
+```typescript
+public readonly targetInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `taskTypeInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.taskTypeInput"></a>
+
+```typescript
+public readonly taskTypeInput: string;
+```
 
 - *Type:* `string`
 
@@ -1659,11 +2119,19 @@ public resetType()
 
 ##### `endpointUrlInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.endpointUrlInput"></a>
 
+```typescript
+public readonly endpointUrlInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
 
 - *Type:* `string`
 
@@ -1671,11 +2139,19 @@ public resetType()
 
 ##### `typeInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.typeInput"></a>
 
+```typescript
+public readonly typeInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `endpointUrl`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.endpointUrl"></a>
+
+```typescript
+public readonly endpointUrl: string;
+```
 
 - *Type:* `string`
 
@@ -1683,11 +2159,19 @@ public resetType()
 
 ##### `extensionObjects`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.extensionObjects"></a>
 
+```typescript
+public readonly extensionObjects: string[];
+```
+
 - *Type:* `string`[]
 
 ---
 
 ##### `extensionSchema`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.extensionSchema"></a>
+
+```typescript
+public readonly extensionSchema: string;
+```
 
 - *Type:* `string`
 
@@ -1695,11 +2179,19 @@ public resetType()
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `referer`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.referer"></a>
+
+```typescript
+public readonly referer: string;
+```
 
 - *Type:* `string`
 
@@ -1707,11 +2199,19 @@ public resetType()
 
 ##### `snowPassword`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.snowPassword"></a>
 
+```typescript
+public readonly snowPassword: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `snowUser`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.snowUser"></a>
+
+```typescript
+public readonly snowUser: string;
+```
 
 - *Type:* `string`
 
@@ -1719,11 +2219,19 @@ public resetType()
 
 ##### `syncOptions`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.syncOptions"></a>
 
+```typescript
+public readonly syncOptions: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `target`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.target"></a>
+
+```typescript
+public readonly target: string;
+```
 
 - *Type:* `string`
 
@@ -1731,11 +2239,19 @@ public resetType()
 
 ##### `taskType`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.taskType"></a>
 
+```typescript
+public readonly taskType: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenow.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -1753,7 +2269,7 @@ public resetType()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window.html pagerduty_maintenance_window}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.MaintenanceWindow.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.MaintenanceWindow.Initializer"></a>
 
 ```typescript
 import { MaintenanceWindow } from '@cdktf/provider-pagerduty'
@@ -1798,11 +2314,19 @@ public resetDescription()
 
 ##### `endTimeInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindow.property.endTimeInput"></a>
 
+```typescript
+public readonly endTimeInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindow.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -1810,11 +2334,19 @@ public resetDescription()
 
 ##### `servicesInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindow.property.servicesInput"></a>
 
+```typescript
+public readonly servicesInput: string[];
+```
+
 - *Type:* `string`[]
 
 ---
 
 ##### `startTimeInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindow.property.startTimeInput"></a>
+
+```typescript
+public readonly startTimeInput: string;
+```
 
 - *Type:* `string`
 
@@ -1822,11 +2354,19 @@ public resetDescription()
 
 ##### `descriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindow.property.descriptionInput"></a>
 
+```typescript
+public readonly descriptionInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `description`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindow.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
 
 - *Type:* `string`
 
@@ -1834,17 +2374,29 @@ public resetDescription()
 
 ##### `endTime`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindow.property.endTime"></a>
 
+```typescript
+public readonly endTime: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `services`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindow.property.services"></a>
 
+```typescript
+public readonly services: string[];
+```
+
 - *Type:* `string`[]
 
 ---
 
 ##### `startTime`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindow.property.startTime"></a>
+
+```typescript
+public readonly startTime: string;
+```
 
 - *Type:* `string`
 
@@ -1862,7 +2414,7 @@ public resetDescription()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty pagerduty}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.PagerdutyProvider.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.PagerdutyProvider.Initializer"></a>
 
 ```typescript
 import { PagerdutyProvider } from '@cdktf/provider-pagerduty'
@@ -1913,11 +2465,19 @@ public resetSkipCredentialsValidation()
 
 ##### `tokenInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.PagerdutyProvider.property.tokenInput"></a>
 
+```typescript
+public readonly tokenInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `aliasInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.PagerdutyProvider.property.aliasInput"></a>
+
+```typescript
+public readonly aliasInput: string;
+```
 
 - *Type:* `string`
 
@@ -1925,11 +2485,19 @@ public resetSkipCredentialsValidation()
 
 ##### `skipCredentialsValidationInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.PagerdutyProvider.property.skipCredentialsValidationInput"></a>
 
+```typescript
+public readonly skipCredentialsValidationInput: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `token`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.PagerdutyProvider.property.token"></a>
+
+```typescript
+public readonly token: string;
+```
 
 - *Type:* `string`
 
@@ -1937,11 +2505,19 @@ public resetSkipCredentialsValidation()
 
 ##### `alias`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.PagerdutyProvider.property.alias"></a>
 
+```typescript
+public readonly alias: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `skipCredentialsValidation`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.PagerdutyProvider.property.skipCredentialsValidation"></a>
+
+```typescript
+public readonly skipCredentialsValidation: boolean | IResolvable;
+```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -1959,7 +2535,7 @@ public resetSkipCredentialsValidation()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html pagerduty_response_play}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.ResponsePlay.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlay.Initializer"></a>
 
 ```typescript
 import { ResponsePlay } from '@cdktf/provider-pagerduty'
@@ -2058,11 +2634,19 @@ public resetType()
 
 ##### `fromInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.fromInput"></a>
 
+```typescript
+public readonly fromInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -2070,11 +2654,19 @@ public resetType()
 
 ##### `nameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.nameInput"></a>
 
+```typescript
+public readonly nameInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `conferenceNumberInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.conferenceNumberInput"></a>
+
+```typescript
+public readonly conferenceNumberInput: string;
+```
 
 - *Type:* `string`
 
@@ -2082,11 +2674,19 @@ public resetType()
 
 ##### `conferenceUrlInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.conferenceUrlInput"></a>
 
+```typescript
+public readonly conferenceUrlInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `descriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
 
 - *Type:* `string`
 
@@ -2094,11 +2694,19 @@ public resetType()
 
 ##### `responderInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.responderInput"></a>
 
+```typescript
+public readonly responderInput: ResponsePlayResponder[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ResponsePlayResponder`](#@cdktf/provider-pagerduty.ResponsePlayResponder)[]
 
 ---
 
 ##### `respondersMessageInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.respondersMessageInput"></a>
+
+```typescript
+public readonly respondersMessageInput: string;
+```
 
 - *Type:* `string`
 
@@ -2106,11 +2714,19 @@ public resetType()
 
 ##### `runnabilityInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.runnabilityInput"></a>
 
+```typescript
+public readonly runnabilityInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `subscriberInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.subscriberInput"></a>
+
+```typescript
+public readonly subscriberInput: ResponsePlaySubscriber[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ResponsePlaySubscriber`](#@cdktf/provider-pagerduty.ResponsePlaySubscriber)[]
 
@@ -2118,11 +2734,19 @@ public resetType()
 
 ##### `subscribersMessageInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.subscribersMessageInput"></a>
 
+```typescript
+public readonly subscribersMessageInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `teamInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.teamInput"></a>
+
+```typescript
+public readonly teamInput: string;
+```
 
 - *Type:* `string`
 
@@ -2130,11 +2754,19 @@ public resetType()
 
 ##### `typeInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.typeInput"></a>
 
+```typescript
+public readonly typeInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `conferenceNumber`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.conferenceNumber"></a>
+
+```typescript
+public readonly conferenceNumber: string;
+```
 
 - *Type:* `string`
 
@@ -2142,11 +2774,19 @@ public resetType()
 
 ##### `conferenceUrl`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.conferenceUrl"></a>
 
+```typescript
+public readonly conferenceUrl: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `description`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
 
 - *Type:* `string`
 
@@ -2154,11 +2794,19 @@ public resetType()
 
 ##### `from`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.from"></a>
 
+```typescript
+public readonly from: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -2166,11 +2814,19 @@ public resetType()
 
 ##### `responder`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.responder"></a>
 
+```typescript
+public readonly responder: ResponsePlayResponder[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ResponsePlayResponder`](#@cdktf/provider-pagerduty.ResponsePlayResponder)[]
 
 ---
 
 ##### `respondersMessage`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.respondersMessage"></a>
+
+```typescript
+public readonly respondersMessage: string;
+```
 
 - *Type:* `string`
 
@@ -2178,11 +2834,19 @@ public resetType()
 
 ##### `runnability`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.runnability"></a>
 
+```typescript
+public readonly runnability: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `subscriber`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.subscriber"></a>
+
+```typescript
+public readonly subscriber: ResponsePlaySubscriber[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ResponsePlaySubscriber`](#@cdktf/provider-pagerduty.ResponsePlaySubscriber)[]
 
@@ -2190,17 +2854,29 @@ public resetType()
 
 ##### `subscribersMessage`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.subscribersMessage"></a>
 
+```typescript
+public readonly subscribersMessage: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `team`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.team"></a>
 
+```typescript
+public readonly team: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -2218,7 +2894,7 @@ public resetType()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset.html pagerduty_ruleset}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.Ruleset.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.Ruleset.Initializer"></a>
 
 ```typescript
 import { Ruleset } from '@cdktf/provider-pagerduty'
@@ -2263,11 +2939,19 @@ public resetTeam()
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Ruleset.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `nameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Ruleset.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
 
 - *Type:* `string`
 
@@ -2275,11 +2959,19 @@ public resetTeam()
 
 ##### `routingKeys`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Ruleset.property.routingKeys"></a>
 
+```typescript
+public readonly routingKeys: string[];
+```
+
 - *Type:* `string`[]
 
 ---
 
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Ruleset.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -2287,17 +2979,29 @@ public resetTeam()
 
 ##### `teamInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Ruleset.property.teamInput"></a>
 
+```typescript
+public readonly teamInput: RulesetTeam[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.RulesetTeam`](#@cdktf/provider-pagerduty.RulesetTeam)[]
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Ruleset.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `team`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Ruleset.property.team"></a>
+
+```typescript
+public readonly team: RulesetTeam[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.RulesetTeam`](#@cdktf/provider-pagerduty.RulesetTeam)[]
 
@@ -2315,7 +3019,7 @@ public resetTeam()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html pagerduty_ruleset_rule}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.RulesetRule.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.RulesetRule.Initializer"></a>
 
 ```typescript
 import { RulesetRule } from '@cdktf/provider-pagerduty'
@@ -2390,11 +3094,19 @@ public resetVariable()
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `rulesetInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.rulesetInput"></a>
+
+```typescript
+public readonly rulesetInput: string;
+```
 
 - *Type:* `string`
 
@@ -2402,11 +3114,19 @@ public resetVariable()
 
 ##### `actionsInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.actionsInput"></a>
 
+```typescript
+public readonly actionsInput: RulesetRuleActions[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActions`](#@cdktf/provider-pagerduty.RulesetRuleActions)[]
 
 ---
 
 ##### `conditionsInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.conditionsInput"></a>
+
+```typescript
+public readonly conditionsInput: RulesetRuleConditions[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleConditions`](#@cdktf/provider-pagerduty.RulesetRuleConditions)[]
 
@@ -2414,11 +3134,19 @@ public resetVariable()
 
 ##### `disabledInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.disabledInput"></a>
 
+```typescript
+public readonly disabledInput: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `positionInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.positionInput"></a>
+
+```typescript
+public readonly positionInput: number;
+```
 
 - *Type:* `number`
 
@@ -2426,11 +3154,19 @@ public resetVariable()
 
 ##### `timeFrameInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.timeFrameInput"></a>
 
+```typescript
+public readonly timeFrameInput: RulesetRuleTimeFrame[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleTimeFrame`](#@cdktf/provider-pagerduty.RulesetRuleTimeFrame)[]
 
 ---
 
 ##### `variableInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.variableInput"></a>
+
+```typescript
+public readonly variableInput: RulesetRuleVariable[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleVariable`](#@cdktf/provider-pagerduty.RulesetRuleVariable)[]
 
@@ -2438,11 +3174,19 @@ public resetVariable()
 
 ##### `actions`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.actions"></a>
 
+```typescript
+public readonly actions: RulesetRuleActions[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActions`](#@cdktf/provider-pagerduty.RulesetRuleActions)[]
 
 ---
 
 ##### `conditions`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.conditions"></a>
+
+```typescript
+public readonly conditions: RulesetRuleConditions[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleConditions`](#@cdktf/provider-pagerduty.RulesetRuleConditions)[]
 
@@ -2450,11 +3194,19 @@ public resetVariable()
 
 ##### `disabled`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.disabled"></a>
 
+```typescript
+public readonly disabled: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `position`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.position"></a>
+
+```typescript
+public readonly position: number;
+```
 
 - *Type:* `number`
 
@@ -2462,17 +3214,29 @@ public resetVariable()
 
 ##### `ruleset`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.ruleset"></a>
 
+```typescript
+public readonly ruleset: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `timeFrame`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.timeFrame"></a>
 
+```typescript
+public readonly timeFrame: RulesetRuleTimeFrame[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleTimeFrame`](#@cdktf/provider-pagerduty.RulesetRuleTimeFrame)[]
 
 ---
 
 ##### `variable`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.variable"></a>
+
+```typescript
+public readonly variable: RulesetRuleVariable[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleVariable`](#@cdktf/provider-pagerduty.RulesetRuleVariable)[]
 
@@ -2490,7 +3254,7 @@ public resetVariable()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html pagerduty_schedule}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.Schedule.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.Schedule.Initializer"></a>
 
 ```typescript
 import { Schedule } from '@cdktf/provider-pagerduty'
@@ -2553,11 +3317,19 @@ public resetTeams()
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `layerInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.layerInput"></a>
+
+```typescript
+public readonly layerInput: ScheduleLayer[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ScheduleLayer`](#@cdktf/provider-pagerduty.ScheduleLayer)[]
 
@@ -2565,11 +3337,19 @@ public resetTeams()
 
 ##### `timeZoneInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.timeZoneInput"></a>
 
+```typescript
+public readonly timeZoneInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `descriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
 
 - *Type:* `string`
 
@@ -2577,11 +3357,19 @@ public resetTeams()
 
 ##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.nameInput"></a>
 
+```typescript
+public readonly nameInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `overflowInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.overflowInput"></a>
+
+```typescript
+public readonly overflowInput: boolean | IResolvable;
+```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -2589,11 +3377,19 @@ public resetTeams()
 
 ##### `teamsInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.teamsInput"></a>
 
+```typescript
+public readonly teamsInput: string[];
+```
+
 - *Type:* `string`[]
 
 ---
 
 ##### `description`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
 
 - *Type:* `string`
 
@@ -2601,11 +3397,19 @@ public resetTeams()
 
 ##### `layer`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.layer"></a>
 
+```typescript
+public readonly layer: ScheduleLayer[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ScheduleLayer`](#@cdktf/provider-pagerduty.ScheduleLayer)[]
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -2613,17 +3417,29 @@ public resetTeams()
 
 ##### `overflow`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.overflow"></a>
 
+```typescript
+public readonly overflow: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `teams`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.teams"></a>
 
+```typescript
+public readonly teams: string[];
+```
+
 - *Type:* `string`[]
 
 ---
 
 ##### `timeZone`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.timeZone"></a>
+
+```typescript
+public readonly timeZone: string;
+```
 
 - *Type:* `string`
 
@@ -2641,7 +3457,7 @@ public resetTeams()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html pagerduty_service}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.Service.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.Service.Initializer"></a>
 
 ```typescript
 import { Service } from '@cdktf/provider-pagerduty'
@@ -2740,11 +3556,19 @@ public resetSupportHours()
 
 ##### `createdAt`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.createdAt"></a>
 
+```typescript
+public readonly createdAt: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `escalationPolicyInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.escalationPolicyInput"></a>
+
+```typescript
+public readonly escalationPolicyInput: string;
+```
 
 - *Type:* `string`
 
@@ -2752,11 +3576,19 @@ public resetSupportHours()
 
 ##### `htmlUrl`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.htmlUrl"></a>
 
+```typescript
+public readonly htmlUrl: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -2764,11 +3596,19 @@ public resetSupportHours()
 
 ##### `lastIncidentTimestamp`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.lastIncidentTimestamp"></a>
 
+```typescript
+public readonly lastIncidentTimestamp: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `nameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
 
 - *Type:* `string`
 
@@ -2776,11 +3616,19 @@ public resetSupportHours()
 
 ##### `status`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.status"></a>
 
+```typescript
+public readonly status: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `acknowledgementTimeoutInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Service.property.acknowledgementTimeoutInput"></a>
+
+```typescript
+public readonly acknowledgementTimeoutInput: string;
+```
 
 - *Type:* `string`
 
@@ -2788,11 +3636,19 @@ public resetSupportHours()
 
 ##### `alertCreationInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Service.property.alertCreationInput"></a>
 
+```typescript
+public readonly alertCreationInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `alertGroupingInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Service.property.alertGroupingInput"></a>
+
+```typescript
+public readonly alertGroupingInput: string;
+```
 
 - *Type:* `string`
 
@@ -2800,11 +3656,19 @@ public resetSupportHours()
 
 ##### `alertGroupingParametersInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Service.property.alertGroupingParametersInput"></a>
 
+```typescript
+public readonly alertGroupingParametersInput: ServiceAlertGroupingParameters[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceAlertGroupingParameters`](#@cdktf/provider-pagerduty.ServiceAlertGroupingParameters)[]
 
 ---
 
 ##### `alertGroupingTimeoutInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Service.property.alertGroupingTimeoutInput"></a>
+
+```typescript
+public readonly alertGroupingTimeoutInput: number;
+```
 
 - *Type:* `number`
 
@@ -2812,11 +3676,19 @@ public resetSupportHours()
 
 ##### `autoResolveTimeoutInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Service.property.autoResolveTimeoutInput"></a>
 
+```typescript
+public readonly autoResolveTimeoutInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `descriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Service.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
 
 - *Type:* `string`
 
@@ -2824,11 +3696,19 @@ public resetSupportHours()
 
 ##### `incidentUrgencyRuleInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Service.property.incidentUrgencyRuleInput"></a>
 
+```typescript
+public readonly incidentUrgencyRuleInput: ServiceIncidentUrgencyRule[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceIncidentUrgencyRule`](#@cdktf/provider-pagerduty.ServiceIncidentUrgencyRule)[]
 
 ---
 
 ##### `scheduledActionsInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Service.property.scheduledActionsInput"></a>
+
+```typescript
+public readonly scheduledActionsInput: ServiceScheduledActions[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceScheduledActions`](#@cdktf/provider-pagerduty.ServiceScheduledActions)[]
 
@@ -2836,11 +3716,19 @@ public resetSupportHours()
 
 ##### `supportHoursInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Service.property.supportHoursInput"></a>
 
+```typescript
+public readonly supportHoursInput: ServiceSupportHours[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceSupportHours`](#@cdktf/provider-pagerduty.ServiceSupportHours)[]
 
 ---
 
 ##### `acknowledgementTimeout`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.acknowledgementTimeout"></a>
+
+```typescript
+public readonly acknowledgementTimeout: string;
+```
 
 - *Type:* `string`
 
@@ -2848,11 +3736,19 @@ public resetSupportHours()
 
 ##### `alertCreation`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.alertCreation"></a>
 
+```typescript
+public readonly alertCreation: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `alertGrouping`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.alertGrouping"></a>
+
+```typescript
+public readonly alertGrouping: string;
+```
 
 - *Type:* `string`
 
@@ -2860,11 +3756,19 @@ public resetSupportHours()
 
 ##### `alertGroupingParameters`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.alertGroupingParameters"></a>
 
+```typescript
+public readonly alertGroupingParameters: ServiceAlertGroupingParameters[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceAlertGroupingParameters`](#@cdktf/provider-pagerduty.ServiceAlertGroupingParameters)[]
 
 ---
 
 ##### `alertGroupingTimeout`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.alertGroupingTimeout"></a>
+
+```typescript
+public readonly alertGroupingTimeout: number;
+```
 
 - *Type:* `number`
 
@@ -2872,11 +3776,19 @@ public resetSupportHours()
 
 ##### `autoResolveTimeout`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.autoResolveTimeout"></a>
 
+```typescript
+public readonly autoResolveTimeout: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `description`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
 
 - *Type:* `string`
 
@@ -2884,11 +3796,19 @@ public resetSupportHours()
 
 ##### `escalationPolicy`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.escalationPolicy"></a>
 
+```typescript
+public readonly escalationPolicy: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `incidentUrgencyRule`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.incidentUrgencyRule"></a>
+
+```typescript
+public readonly incidentUrgencyRule: ServiceIncidentUrgencyRule[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceIncidentUrgencyRule`](#@cdktf/provider-pagerduty.ServiceIncidentUrgencyRule)[]
 
@@ -2896,17 +3816,29 @@ public resetSupportHours()
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `scheduledActions`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.scheduledActions"></a>
 
+```typescript
+public readonly scheduledActions: ServiceScheduledActions[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceScheduledActions`](#@cdktf/provider-pagerduty.ServiceScheduledActions)[]
 
 ---
 
 ##### `supportHours`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.supportHours"></a>
+
+```typescript
+public readonly supportHours: ServiceSupportHours[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceSupportHours`](#@cdktf/provider-pagerduty.ServiceSupportHours)[]
 
@@ -2924,7 +3856,7 @@ public resetSupportHours()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html pagerduty_service_dependency}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.ServiceDependency.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.ServiceDependency.Initializer"></a>
 
 ```typescript
 import { ServiceDependency } from '@cdktf/provider-pagerduty'
@@ -2962,17 +3894,29 @@ Must be unique amongst siblings in the same scope
 
 ##### `dependencyInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceDependency.property.dependencyInput"></a>
 
+```typescript
+public readonly dependencyInput: ServiceDependencyDependency[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceDependencyDependency`](#@cdktf/provider-pagerduty.ServiceDependencyDependency)[]
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceDependency.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `dependency`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceDependency.property.dependency"></a>
+
+```typescript
+public readonly dependency: ServiceDependencyDependency[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceDependencyDependency`](#@cdktf/provider-pagerduty.ServiceDependencyDependency)[]
 
@@ -2990,7 +3934,7 @@ Must be unique amongst siblings in the same scope
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html pagerduty_service_event_rule}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.ServiceEventRule.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.ServiceEventRule.Initializer"></a>
 
 ```typescript
 import { ServiceEventRule } from '@cdktf/provider-pagerduty'
@@ -3065,11 +4009,19 @@ public resetVariable()
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `serviceInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.serviceInput"></a>
+
+```typescript
+public readonly serviceInput: string;
+```
 
 - *Type:* `string`
 
@@ -3077,11 +4029,19 @@ public resetVariable()
 
 ##### `actionsInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.actionsInput"></a>
 
+```typescript
+public readonly actionsInput: ServiceEventRuleActions[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActions`](#@cdktf/provider-pagerduty.ServiceEventRuleActions)[]
 
 ---
 
 ##### `conditionsInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.conditionsInput"></a>
+
+```typescript
+public readonly conditionsInput: ServiceEventRuleConditions[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleConditions`](#@cdktf/provider-pagerduty.ServiceEventRuleConditions)[]
 
@@ -3089,11 +4049,19 @@ public resetVariable()
 
 ##### `disabledInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.disabledInput"></a>
 
+```typescript
+public readonly disabledInput: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `positionInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.positionInput"></a>
+
+```typescript
+public readonly positionInput: number;
+```
 
 - *Type:* `number`
 
@@ -3101,11 +4069,19 @@ public resetVariable()
 
 ##### `timeFrameInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.timeFrameInput"></a>
 
+```typescript
+public readonly timeFrameInput: ServiceEventRuleTimeFrame[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleTimeFrame`](#@cdktf/provider-pagerduty.ServiceEventRuleTimeFrame)[]
 
 ---
 
 ##### `variableInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.variableInput"></a>
+
+```typescript
+public readonly variableInput: ServiceEventRuleVariable[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleVariable`](#@cdktf/provider-pagerduty.ServiceEventRuleVariable)[]
 
@@ -3113,11 +4089,19 @@ public resetVariable()
 
 ##### `actions`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.actions"></a>
 
+```typescript
+public readonly actions: ServiceEventRuleActions[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActions`](#@cdktf/provider-pagerduty.ServiceEventRuleActions)[]
 
 ---
 
 ##### `conditions`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.conditions"></a>
+
+```typescript
+public readonly conditions: ServiceEventRuleConditions[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleConditions`](#@cdktf/provider-pagerduty.ServiceEventRuleConditions)[]
 
@@ -3125,11 +4109,19 @@ public resetVariable()
 
 ##### `disabled`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.disabled"></a>
 
+```typescript
+public readonly disabled: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `position`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.position"></a>
+
+```typescript
+public readonly position: number;
+```
 
 - *Type:* `number`
 
@@ -3137,17 +4129,29 @@ public resetVariable()
 
 ##### `service`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.service"></a>
 
+```typescript
+public readonly service: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `timeFrame`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.timeFrame"></a>
 
+```typescript
+public readonly timeFrame: ServiceEventRuleTimeFrame[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleTimeFrame`](#@cdktf/provider-pagerduty.ServiceEventRuleTimeFrame)[]
 
 ---
 
 ##### `variable`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.variable"></a>
+
+```typescript
+public readonly variable: ServiceEventRuleVariable[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleVariable`](#@cdktf/provider-pagerduty.ServiceEventRuleVariable)[]
 
@@ -3165,7 +4169,7 @@ public resetVariable()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration.html pagerduty_service_integration}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.ServiceIntegration.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.ServiceIntegration.Initializer"></a>
 
 ```typescript
 import { ServiceIntegration } from '@cdktf/provider-pagerduty'
@@ -3234,11 +4238,19 @@ public resetVendor()
 
 ##### `htmlUrl`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegration.property.htmlUrl"></a>
 
+```typescript
+public readonly htmlUrl: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegration.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -3246,11 +4258,19 @@ public resetVendor()
 
 ##### `serviceInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegration.property.serviceInput"></a>
 
+```typescript
+public readonly serviceInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `integrationEmailInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegration.property.integrationEmailInput"></a>
+
+```typescript
+public readonly integrationEmailInput: string;
+```
 
 - *Type:* `string`
 
@@ -3258,11 +4278,19 @@ public resetVendor()
 
 ##### `integrationKeyInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegration.property.integrationKeyInput"></a>
 
+```typescript
+public readonly integrationKeyInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegration.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
 
 - *Type:* `string`
 
@@ -3270,11 +4298,19 @@ public resetVendor()
 
 ##### `typeInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegration.property.typeInput"></a>
 
+```typescript
+public readonly typeInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `vendorInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegration.property.vendorInput"></a>
+
+```typescript
+public readonly vendorInput: string;
+```
 
 - *Type:* `string`
 
@@ -3282,11 +4318,19 @@ public resetVendor()
 
 ##### `integrationEmail`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegration.property.integrationEmail"></a>
 
+```typescript
+public readonly integrationEmail: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `integrationKey`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegration.property.integrationKey"></a>
+
+```typescript
+public readonly integrationKey: string;
+```
 
 - *Type:* `string`
 
@@ -3294,11 +4338,19 @@ public resetVendor()
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegration.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `service`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegration.property.service"></a>
+
+```typescript
+public readonly service: string;
+```
 
 - *Type:* `string`
 
@@ -3306,11 +4358,19 @@ public resetVendor()
 
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegration.property.type"></a>
 
+```typescript
+public readonly type: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `vendor`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegration.property.vendor"></a>
+
+```typescript
+public readonly vendor: string;
+```
 
 - *Type:* `string`
 
@@ -3328,7 +4388,7 @@ public resetVendor()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html pagerduty_slack_connection}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.SlackConnection.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.SlackConnection.Initializer"></a>
 
 ```typescript
 import { SlackConnection } from '@cdktf/provider-pagerduty'
@@ -3366,11 +4426,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `channelIdInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.channelIdInput"></a>
 
+```typescript
+public readonly channelIdInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `channelName`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.channelName"></a>
+
+```typescript
+public readonly channelName: string;
+```
 
 - *Type:* `string`
 
@@ -3378,11 +4446,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `configInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.configInput"></a>
 
+```typescript
+public readonly configInput: SlackConnectionConfigA[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.SlackConnectionConfigA`](#@cdktf/provider-pagerduty.SlackConnectionConfigA)[]
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -3390,11 +4466,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `notificationTypeInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.notificationTypeInput"></a>
 
+```typescript
+public readonly notificationTypeInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `sourceIdInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.sourceIdInput"></a>
+
+```typescript
+public readonly sourceIdInput: string;
+```
 
 - *Type:* `string`
 
@@ -3402,11 +4486,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `sourceName`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.sourceName"></a>
 
+```typescript
+public readonly sourceName: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `sourceTypeInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.sourceTypeInput"></a>
+
+```typescript
+public readonly sourceTypeInput: string;
+```
 
 - *Type:* `string`
 
@@ -3414,11 +4506,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `workspaceIdInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.workspaceIdInput"></a>
 
+```typescript
+public readonly workspaceIdInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `channelId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.channelId"></a>
+
+```typescript
+public readonly channelId: string;
+```
 
 - *Type:* `string`
 
@@ -3426,11 +4526,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `config`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.config"></a>
 
+```typescript
+public readonly config: SlackConnectionConfigA[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.SlackConnectionConfigA`](#@cdktf/provider-pagerduty.SlackConnectionConfigA)[]
 
 ---
 
 ##### `notificationType`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.notificationType"></a>
+
+```typescript
+public readonly notificationType: string;
+```
 
 - *Type:* `string`
 
@@ -3438,17 +4546,29 @@ Must be unique amongst siblings in the same scope
 
 ##### `sourceId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.sourceId"></a>
 
+```typescript
+public readonly sourceId: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `sourceType`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.sourceType"></a>
 
+```typescript
+public readonly sourceType: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `workspaceId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.workspaceId"></a>
+
+```typescript
+public readonly workspaceId: string;
+```
 
 - *Type:* `string`
 
@@ -3466,7 +4586,7 @@ Must be unique amongst siblings in the same scope
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/team.html pagerduty_team}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.Team.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.Team.Initializer"></a>
 
 ```typescript
 import { Team } from '@cdktf/provider-pagerduty'
@@ -3517,11 +4637,19 @@ public resetParent()
 
 ##### `htmlUrl`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Team.property.htmlUrl"></a>
 
+```typescript
+public readonly htmlUrl: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Team.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -3529,11 +4657,19 @@ public resetParent()
 
 ##### `nameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Team.property.nameInput"></a>
 
+```typescript
+public readonly nameInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `descriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Team.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
 
 - *Type:* `string`
 
@@ -3541,11 +4677,19 @@ public resetParent()
 
 ##### `parentInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Team.property.parentInput"></a>
 
+```typescript
+public readonly parentInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `description`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Team.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
 
 - *Type:* `string`
 
@@ -3553,11 +4697,19 @@ public resetParent()
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Team.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `parent`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Team.property.parent"></a>
+
+```typescript
+public readonly parent: string;
+```
 
 - *Type:* `string`
 
@@ -3575,7 +4727,7 @@ public resetParent()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/team_membership.html pagerduty_team_membership}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.TeamMembership.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.TeamMembership.Initializer"></a>
 
 ```typescript
 import { TeamMembership } from '@cdktf/provider-pagerduty'
@@ -3620,11 +4772,19 @@ public resetRole()
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.TeamMembership.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `teamIdInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.TeamMembership.property.teamIdInput"></a>
+
+```typescript
+public readonly teamIdInput: string;
+```
 
 - *Type:* `string`
 
@@ -3632,11 +4792,19 @@ public resetRole()
 
 ##### `userIdInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.TeamMembership.property.userIdInput"></a>
 
+```typescript
+public readonly userIdInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `roleInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamMembership.property.roleInput"></a>
+
+```typescript
+public readonly roleInput: string;
+```
 
 - *Type:* `string`
 
@@ -3644,17 +4812,29 @@ public resetRole()
 
 ##### `role`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.TeamMembership.property.role"></a>
 
+```typescript
+public readonly role: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `teamId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.TeamMembership.property.teamId"></a>
 
+```typescript
+public readonly teamId: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `userId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.TeamMembership.property.userId"></a>
+
+```typescript
+public readonly userId: string;
+```
 
 - *Type:* `string`
 
@@ -3672,7 +4852,7 @@ public resetRole()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/user.html pagerduty_user}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.User.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.User.Initializer"></a>
 
 ```typescript
 import { User } from '@cdktf/provider-pagerduty'
@@ -3747,11 +4927,19 @@ public resetTimeZone()
 
 ##### `avatarUrl`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.User.property.avatarUrl"></a>
 
+```typescript
+public readonly avatarUrl: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `emailInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.User.property.emailInput"></a>
+
+```typescript
+public readonly emailInput: string;
+```
 
 - *Type:* `string`
 
@@ -3759,11 +4947,19 @@ public resetTimeZone()
 
 ##### `htmlUrl`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.User.property.htmlUrl"></a>
 
+```typescript
+public readonly htmlUrl: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.User.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -3771,11 +4967,19 @@ public resetTimeZone()
 
 ##### `invitationSent`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.User.property.invitationSent"></a>
 
+```typescript
+public readonly invitationSent: IResolvable;
+```
+
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `nameInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.User.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
 
 - *Type:* `string`
 
@@ -3783,11 +4987,19 @@ public resetTimeZone()
 
 ##### `colorInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.User.property.colorInput"></a>
 
+```typescript
+public readonly colorInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `descriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.User.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
 
 - *Type:* `string`
 
@@ -3795,11 +5007,19 @@ public resetTimeZone()
 
 ##### `jobTitleInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.User.property.jobTitleInput"></a>
 
+```typescript
+public readonly jobTitleInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `roleInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.User.property.roleInput"></a>
+
+```typescript
+public readonly roleInput: string;
+```
 
 - *Type:* `string`
 
@@ -3807,11 +5027,19 @@ public resetTimeZone()
 
 ##### `teamsInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.User.property.teamsInput"></a>
 
+```typescript
+public readonly teamsInput: string[];
+```
+
 - *Type:* `string`[]
 
 ---
 
 ##### `timeZoneInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.User.property.timeZoneInput"></a>
+
+```typescript
+public readonly timeZoneInput: string;
+```
 
 - *Type:* `string`
 
@@ -3819,11 +5047,19 @@ public resetTimeZone()
 
 ##### `color`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.User.property.color"></a>
 
+```typescript
+public readonly color: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `description`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.User.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
 
 - *Type:* `string`
 
@@ -3831,11 +5067,19 @@ public resetTimeZone()
 
 ##### `email`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.User.property.email"></a>
 
+```typescript
+public readonly email: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `jobTitle`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.User.property.jobTitle"></a>
+
+```typescript
+public readonly jobTitle: string;
+```
 
 - *Type:* `string`
 
@@ -3843,11 +5087,19 @@ public resetTimeZone()
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.User.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `role`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.User.property.role"></a>
+
+```typescript
+public readonly role: string;
+```
 
 - *Type:* `string`
 
@@ -3855,11 +5107,19 @@ public resetTimeZone()
 
 ##### `teams`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.User.property.teams"></a>
 
+```typescript
+public readonly teams: string[];
+```
+
 - *Type:* `string`[]
 
 ---
 
 ##### `timeZone`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.User.property.timeZone"></a>
+
+```typescript
+public readonly timeZone: string;
+```
 
 - *Type:* `string`
 
@@ -3877,7 +5137,7 @@ public resetTimeZone()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method.html pagerduty_user_contact_method}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.UserContactMethod.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.UserContactMethod.Initializer"></a>
 
 ```typescript
 import { UserContactMethod } from '@cdktf/provider-pagerduty'
@@ -3928,11 +5188,19 @@ public resetSendShortEmail()
 
 ##### `addressInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.addressInput"></a>
 
+```typescript
+public readonly addressInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `blacklisted`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.blacklisted"></a>
+
+```typescript
+public readonly blacklisted: IResolvable;
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -3940,11 +5208,19 @@ public resetSendShortEmail()
 
 ##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.enabled"></a>
 
+```typescript
+public readonly enabled: IResolvable;
+```
+
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -3952,11 +5228,19 @@ public resetSendShortEmail()
 
 ##### `labelInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.labelInput"></a>
 
+```typescript
+public readonly labelInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `typeInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.typeInput"></a>
+
+```typescript
+public readonly typeInput: string;
+```
 
 - *Type:* `string`
 
@@ -3964,11 +5248,19 @@ public resetSendShortEmail()
 
 ##### `userIdInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.userIdInput"></a>
 
+```typescript
+public readonly userIdInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `countryCodeInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.countryCodeInput"></a>
+
+```typescript
+public readonly countryCodeInput: number;
+```
 
 - *Type:* `number`
 
@@ -3976,11 +5268,19 @@ public resetSendShortEmail()
 
 ##### `sendShortEmailInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.sendShortEmailInput"></a>
 
+```typescript
+public readonly sendShortEmailInput: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `address`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.address"></a>
+
+```typescript
+public readonly address: string;
+```
 
 - *Type:* `string`
 
@@ -3988,11 +5288,19 @@ public resetSendShortEmail()
 
 ##### `countryCode`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.countryCode"></a>
 
+```typescript
+public readonly countryCode: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `label`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.label"></a>
+
+```typescript
+public readonly label: string;
+```
 
 - *Type:* `string`
 
@@ -4000,17 +5308,29 @@ public resetSendShortEmail()
 
 ##### `sendShortEmail`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.sendShortEmail"></a>
 
+```typescript
+public readonly sendShortEmail: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.type"></a>
 
+```typescript
+public readonly type: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `userId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.userId"></a>
+
+```typescript
+public readonly userId: string;
+```
 
 - *Type:* `string`
 
@@ -4028,7 +5348,7 @@ public resetSendShortEmail()
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule.html pagerduty_user_notification_rule}.
 
-#### Initializer <a name="@cdktf/provider-pagerduty.UserNotificationRule.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.UserNotificationRule.Initializer"></a>
 
 ```typescript
 import { UserNotificationRule } from '@cdktf/provider-pagerduty'
@@ -4066,11 +5386,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `contactMethodInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRule.property.contactMethodInput"></a>
 
+```typescript
+public readonly contactMethodInput: IResolvable | {[ key: string ]: string};
+```
+
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
 ---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRule.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -4078,11 +5406,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `startDelayInMinutesInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRule.property.startDelayInMinutesInput"></a>
 
+```typescript
+public readonly startDelayInMinutesInput: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `urgencyInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRule.property.urgencyInput"></a>
+
+```typescript
+public readonly urgencyInput: string;
+```
 
 - *Type:* `string`
 
@@ -4090,11 +5426,19 @@ Must be unique amongst siblings in the same scope
 
 ##### `userIdInput`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRule.property.userIdInput"></a>
 
+```typescript
+public readonly userIdInput: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `contactMethod`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRule.property.contactMethod"></a>
+
+```typescript
+public readonly contactMethod: IResolvable | {[ key: string ]: string};
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
@@ -4102,17 +5446,29 @@ Must be unique amongst siblings in the same scope
 
 ##### `startDelayInMinutes`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRule.property.startDelayInMinutes"></a>
 
+```typescript
+public readonly startDelayInMinutes: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `urgency`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRule.property.urgency"></a>
 
+```typescript
+public readonly urgency: string;
+```
+
 - *Type:* `string`
 
 ---
 
 ##### `userId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRule.property.userId"></a>
+
+```typescript
+public readonly userId: string;
+```
 
 - *Type:* `string`
 
@@ -4140,11 +5496,19 @@ const addonConfig: AddonConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.AddonConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.AddonConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -4152,17 +5516,29 @@ const addonConfig: AddonConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.AddonConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.AddonConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.AddonConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -4171,6 +5547,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `src`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.AddonConfig.property.src"></a>
+
+```typescript
+public readonly src: string;
+```
 
 - *Type:* `string`
 
@@ -4190,11 +5570,19 @@ const businessServiceConfig: BusinessServiceConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.BusinessServiceConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.BusinessServiceConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -4202,17 +5590,29 @@ const businessServiceConfig: BusinessServiceConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.BusinessServiceConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.BusinessServiceConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.BusinessServiceConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -4222,6 +5622,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `description`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.BusinessServiceConfig.property.description"></a>
 
+```typescript
+public readonly description: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service.html#description BusinessService#description}.
@@ -4229,6 +5633,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `pointOfContact`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.BusinessServiceConfig.property.pointOfContact"></a>
+
+```typescript
+public readonly pointOfContact: string;
+```
 
 - *Type:* `string`
 
@@ -4238,6 +5646,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `team`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.BusinessServiceConfig.property.team"></a>
 
+```typescript
+public readonly team: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service.html#team BusinessService#team}.
@@ -4245,6 +5657,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `type`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.BusinessServiceConfig.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -4264,11 +5680,19 @@ const dataPagerdutyBusinessServiceConfig: DataPagerdutyBusinessServiceConfig = {
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyBusinessServiceConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyBusinessServiceConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -4276,17 +5700,29 @@ const dataPagerdutyBusinessServiceConfig: DataPagerdutyBusinessServiceConfig = {
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyBusinessServiceConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyBusinessServiceConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyBusinessServiceConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -4306,11 +5742,19 @@ const dataPagerdutyEscalationPolicyConfig: DataPagerdutyEscalationPolicyConfig =
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyEscalationPolicyConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyEscalationPolicyConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -4318,17 +5762,29 @@ const dataPagerdutyEscalationPolicyConfig: DataPagerdutyEscalationPolicyConfig =
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyEscalationPolicyConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyEscalationPolicyConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyEscalationPolicyConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -4348,11 +5804,19 @@ const dataPagerdutyExtensionSchemaConfig: DataPagerdutyExtensionSchemaConfig = {
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchemaConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchemaConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -4360,17 +5824,29 @@ const dataPagerdutyExtensionSchemaConfig: DataPagerdutyExtensionSchemaConfig = {
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchemaConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchemaConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchemaConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -4390,11 +5866,19 @@ const dataPagerdutyPriorityConfig: DataPagerdutyPriorityConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyPriorityConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyPriorityConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -4402,17 +5886,29 @@ const dataPagerdutyPriorityConfig: DataPagerdutyPriorityConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyPriorityConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyPriorityConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyPriorityConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -4434,11 +5930,19 @@ const dataPagerdutyRulesetConfig: DataPagerdutyRulesetConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyRulesetConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyRulesetConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -4446,17 +5950,29 @@ const dataPagerdutyRulesetConfig: DataPagerdutyRulesetConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyRulesetConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyRulesetConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyRulesetConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -4476,11 +5992,19 @@ const dataPagerdutyScheduleConfig: DataPagerdutyScheduleConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyScheduleConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyScheduleConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -4488,17 +6012,29 @@ const dataPagerdutyScheduleConfig: DataPagerdutyScheduleConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyScheduleConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyScheduleConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyScheduleConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -4518,11 +6054,19 @@ const dataPagerdutyServiceConfig: DataPagerdutyServiceConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -4530,17 +6074,29 @@ const dataPagerdutyServiceConfig: DataPagerdutyServiceConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -4560,11 +6116,19 @@ const dataPagerdutyServiceIntegrationConfig: DataPagerdutyServiceIntegrationConf
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -4572,17 +6136,29 @@ const dataPagerdutyServiceIntegrationConfig: DataPagerdutyServiceIntegrationConf
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `integrationSummary`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig.property.integrationSummary"></a>
+
+```typescript
+public readonly integrationSummary: string;
+```
 
 - *Type:* `string`
 
@@ -4593,6 +6169,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `serviceName`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig.property.serviceName"></a>
+
+```typescript
+public readonly serviceName: string;
+```
 
 - *Type:* `string`
 
@@ -4612,11 +6192,19 @@ const dataPagerdutyTeamConfig: DataPagerdutyTeamConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyTeamConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyTeamConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -4624,17 +6212,29 @@ const dataPagerdutyTeamConfig: DataPagerdutyTeamConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyTeamConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyTeamConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyTeamConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -4645,6 +6245,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `parent`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyTeamConfig.property.parent"></a>
+
+```typescript
+public readonly parent: string;
+```
 
 - *Type:* `string`
 
@@ -4664,11 +6268,19 @@ const dataPagerdutyUserConfig: DataPagerdutyUserConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -4676,17 +6288,29 @@ const dataPagerdutyUserConfig: DataPagerdutyUserConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `email`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserConfig.property.email"></a>
+
+```typescript
+public readonly email: string;
+```
 
 - *Type:* `string`
 
@@ -4706,11 +6330,19 @@ const dataPagerdutyUserContactMethodConfig: DataPagerdutyUserContactMethodConfig
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethodConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethodConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -4718,17 +6350,29 @@ const dataPagerdutyUserContactMethodConfig: DataPagerdutyUserContactMethodConfig
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethodConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethodConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `label`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethodConfig.property.label"></a>
+
+```typescript
+public readonly label: string;
+```
 
 - *Type:* `string`
 
@@ -4740,6 +6384,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethodConfig.property.type"></a>
 
+```typescript
+public readonly type: string;
+```
+
 - *Type:* `string`
 
 The type of the contact method.
@@ -4749,6 +6397,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `userId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethodConfig.property.userId"></a>
+
+```typescript
+public readonly userId: string;
+```
 
 - *Type:* `string`
 
@@ -4768,11 +6420,19 @@ const dataPagerdutyVendorConfig: DataPagerdutyVendorConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyVendorConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyVendorConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -4780,17 +6440,29 @@ const dataPagerdutyVendorConfig: DataPagerdutyVendorConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyVendorConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyVendorConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyVendorConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -4799,6 +6471,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `nameRegex`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyVendorConfig.property.nameRegex"></a>
+
+```typescript
+public readonly nameRegex: string;
+```
 
 - *Type:* `string`
 
@@ -4818,11 +6494,19 @@ const escalationPolicyConfig: EscalationPolicyConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -4830,17 +6514,29 @@ const escalationPolicyConfig: EscalationPolicyConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -4849,6 +6545,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `rule`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyConfig.property.rule"></a>
+
+```typescript
+public readonly rule: EscalationPolicyRule[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.EscalationPolicyRule`](#@cdktf/provider-pagerduty.EscalationPolicyRule)[]
 
@@ -4860,6 +6560,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `description`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyConfig.property.description"></a>
 
+```typescript
+public readonly description: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy.html#description EscalationPolicy#description}.
@@ -4868,6 +6572,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `numLoops`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyConfig.property.numLoops"></a>
 
+```typescript
+public readonly numLoops: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy.html#num_loops EscalationPolicy#num_loops}.
@@ -4875,6 +6583,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `teams`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyConfig.property.teams"></a>
+
+```typescript
+public readonly teams: string[];
+```
 
 - *Type:* `string`[]
 
@@ -4894,6 +6606,10 @@ const escalationPolicyRule: EscalationPolicyRule = { ... }
 
 ##### `escalationDelayInMinutes`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyRule.property.escalationDelayInMinutes"></a>
 
+```typescript
+public readonly escalationDelayInMinutes: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy.html#escalation_delay_in_minutes EscalationPolicy#escalation_delay_in_minutes}.
@@ -4901,6 +6617,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `target`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyRule.property.target"></a>
+
+```typescript
+public readonly target: EscalationPolicyRuleTarget[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.EscalationPolicyRuleTarget`](#@cdktf/provider-pagerduty.EscalationPolicyRuleTarget)[]
 
@@ -4922,6 +6642,10 @@ const escalationPolicyRuleTarget: EscalationPolicyRuleTarget = { ... }
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyRuleTarget.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy.html#id EscalationPolicy#id}.
@@ -4929,6 +6653,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `type`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyRuleTarget.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -4948,11 +6676,19 @@ const eventRuleConfig: EventRuleConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EventRuleConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EventRuleConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -4960,17 +6696,29 @@ const eventRuleConfig: EventRuleConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EventRuleConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EventRuleConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `actionJson`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EventRuleConfig.property.actionJson"></a>
+
+```typescript
+public readonly actionJson: string;
+```
 
 - *Type:* `string`
 
@@ -4980,6 +6728,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `conditionJson`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EventRuleConfig.property.conditionJson"></a>
 
+```typescript
+public readonly conditionJson: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule.html#condition_json EventRule#condition_json}.
@@ -4987,6 +6739,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `advancedConditionJson`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EventRuleConfig.property.advancedConditionJson"></a>
+
+```typescript
+public readonly advancedConditionJson: string;
+```
 
 - *Type:* `string`
 
@@ -5006,11 +6762,19 @@ const extensionConfig: ExtensionConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -5018,17 +6782,29 @@ const extensionConfig: ExtensionConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `extensionObjects`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionConfig.property.extensionObjects"></a>
+
+```typescript
+public readonly extensionObjects: string[];
+```
 
 - *Type:* `string`[]
 
@@ -5038,6 +6814,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `extensionSchema`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionConfig.property.extensionSchema"></a>
 
+```typescript
+public readonly extensionSchema: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension.html#extension_schema Extension#extension_schema}.
@@ -5045,6 +6825,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `config`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionConfig.property.config"></a>
+
+```typescript
+public readonly config: string;
+```
 
 - *Type:* `string`
 
@@ -5054,6 +6838,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `endpointUrl`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionConfig.property.endpointUrl"></a>
 
+```typescript
+public readonly endpointUrl: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension.html#endpoint_url Extension#endpoint_url}.
@@ -5062,6 +6850,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `name`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionConfig.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension.html#name Extension#name}.
@@ -5069,6 +6861,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `type`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionConfig.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -5088,11 +6884,19 @@ const extensionServicenowConfig: ExtensionServicenowConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -5100,17 +6904,29 @@ const extensionServicenowConfig: ExtensionServicenowConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `extensionObjects`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.extensionObjects"></a>
+
+```typescript
+public readonly extensionObjects: string[];
+```
 
 - *Type:* `string`[]
 
@@ -5120,6 +6936,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `extensionSchema`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.extensionSchema"></a>
 
+```typescript
+public readonly extensionSchema: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html#extension_schema ExtensionServicenow#extension_schema}.
@@ -5127,6 +6947,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `referer`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.referer"></a>
+
+```typescript
+public readonly referer: string;
+```
 
 - *Type:* `string`
 
@@ -5136,6 +6960,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `snowPassword`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.snowPassword"></a>
 
+```typescript
+public readonly snowPassword: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html#snow_password ExtensionServicenow#snow_password}.
@@ -5143,6 +6971,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `snowUser`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.snowUser"></a>
+
+```typescript
+public readonly snowUser: string;
+```
 
 - *Type:* `string`
 
@@ -5152,6 +6984,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `syncOptions`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.syncOptions"></a>
 
+```typescript
+public readonly syncOptions: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html#sync_options ExtensionServicenow#sync_options}.
@@ -5159,6 +6995,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `target`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.target"></a>
+
+```typescript
+public readonly target: string;
+```
 
 - *Type:* `string`
 
@@ -5168,6 +7008,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `taskType`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.taskType"></a>
 
+```typescript
+public readonly taskType: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html#task_type ExtensionServicenow#task_type}.
@@ -5175,6 +7019,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `endpointUrl`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.endpointUrl"></a>
+
+```typescript
+public readonly endpointUrl: string;
+```
 
 - *Type:* `string`
 
@@ -5184,6 +7032,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `name`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html#name ExtensionServicenow#name}.
@@ -5191,6 +7043,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `type`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -5210,11 +7066,19 @@ const maintenanceWindowConfig: MaintenanceWindowConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindowConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindowConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -5222,17 +7086,29 @@ const maintenanceWindowConfig: MaintenanceWindowConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindowConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindowConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `endTime`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindowConfig.property.endTime"></a>
+
+```typescript
+public readonly endTime: string;
+```
 
 - *Type:* `string`
 
@@ -5242,6 +7118,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `services`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindowConfig.property.services"></a>
 
+```typescript
+public readonly services: string[];
+```
+
 - *Type:* `string`[]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window.html#services MaintenanceWindow#services}.
@@ -5250,6 +7130,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `startTime`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindowConfig.property.startTime"></a>
 
+```typescript
+public readonly startTime: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window.html#start_time MaintenanceWindow#start_time}.
@@ -5257,6 +7141,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `description`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindowConfig.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
 
 - *Type:* `string`
 
@@ -5276,6 +7164,10 @@ const pagerdutyProviderConfig: PagerdutyProviderConfig = { ... }
 
 ##### `token`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.PagerdutyProviderConfig.property.token"></a>
 
+```typescript
+public readonly token: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty#token PagerdutyProvider#token}.
@@ -5283,6 +7175,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `alias`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.PagerdutyProviderConfig.property.alias"></a>
+
+```typescript
+public readonly alias: string;
+```
 
 - *Type:* `string`
 
@@ -5293,6 +7189,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `skipCredentialsValidation`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.PagerdutyProviderConfig.property.skipCredentialsValidation"></a>
+
+```typescript
+public readonly skipCredentialsValidation: boolean | IResolvable;
+```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -5312,11 +7212,19 @@ const responsePlayConfig: ResponsePlayConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -5324,17 +7232,29 @@ const responsePlayConfig: ResponsePlayConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `from`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.from"></a>
+
+```typescript
+public readonly from: string;
+```
 
 - *Type:* `string`
 
@@ -5344,6 +7264,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#name ResponsePlay#name}.
@@ -5351,6 +7275,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `conferenceNumber`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.conferenceNumber"></a>
+
+```typescript
+public readonly conferenceNumber: string;
+```
 
 - *Type:* `string`
 
@@ -5360,6 +7288,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `conferenceUrl`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.conferenceUrl"></a>
 
+```typescript
+public readonly conferenceUrl: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#conference_url ResponsePlay#conference_url}.
@@ -5368,6 +7300,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `description`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.description"></a>
 
+```typescript
+public readonly description: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#description ResponsePlay#description}.
@@ -5375,6 +7311,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `responder`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.responder"></a>
+
+```typescript
+public readonly responder: ResponsePlayResponder[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ResponsePlayResponder`](#@cdktf/provider-pagerduty.ResponsePlayResponder)[]
 
@@ -5386,6 +7326,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `respondersMessage`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.respondersMessage"></a>
 
+```typescript
+public readonly respondersMessage: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#responders_message ResponsePlay#responders_message}.
@@ -5394,6 +7338,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `runnability`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.runnability"></a>
 
+```typescript
+public readonly runnability: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#runnability ResponsePlay#runnability}.
@@ -5401,6 +7349,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `subscriber`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.subscriber"></a>
+
+```typescript
+public readonly subscriber: ResponsePlaySubscriber[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ResponsePlaySubscriber`](#@cdktf/provider-pagerduty.ResponsePlaySubscriber)[]
 
@@ -5412,6 +7364,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `subscribersMessage`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.subscribersMessage"></a>
 
+```typescript
+public readonly subscribersMessage: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#subscribers_message ResponsePlay#subscribers_message}.
@@ -5420,6 +7376,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `team`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.team"></a>
 
+```typescript
+public readonly team: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#team ResponsePlay#team}.
@@ -5427,6 +7387,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `type`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -5446,6 +7410,10 @@ const responsePlayResponder: ResponsePlayResponder = { ... }
 
 ##### `description`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponder.property.description"></a>
 
+```typescript
+public readonly description: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#description ResponsePlay#description}.
@@ -5453,6 +7421,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `id`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponder.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
 
 - *Type:* `string`
 
@@ -5462,6 +7434,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `name`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponder.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#name ResponsePlay#name}.
@@ -5469,6 +7445,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `type`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponder.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -5488,6 +7468,10 @@ const responsePlaySubscriber: ResponsePlaySubscriber = { ... }
 
 ##### `id`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlaySubscriber.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#id ResponsePlay#id}.
@@ -5495,6 +7479,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `type`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlaySubscriber.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -5514,11 +7502,19 @@ const rulesetConfig: RulesetConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -5526,17 +7522,29 @@ const rulesetConfig: RulesetConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -5545,6 +7553,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `team`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetConfig.property.team"></a>
+
+```typescript
+public readonly team: RulesetTeam[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.RulesetTeam`](#@cdktf/provider-pagerduty.RulesetTeam)[]
 
@@ -5566,6 +7578,10 @@ const rulesetRuleActions: RulesetRuleActions = { ... }
 
 ##### `annotate`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActions.property.annotate"></a>
 
+```typescript
+public readonly annotate: RulesetRuleActionsAnnotate[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate`](#@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate)[]
 
 annotate block.
@@ -5575,6 +7591,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `eventAction`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActions.property.eventAction"></a>
+
+```typescript
+public readonly eventAction: RulesetRuleActionsEventAction[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsEventAction`](#@cdktf/provider-pagerduty.RulesetRuleActionsEventAction)[]
 
@@ -5586,6 +7606,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `extractions`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActions.property.extractions"></a>
 
+```typescript
+public readonly extractions: RulesetRuleActionsExtractions[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsExtractions`](#@cdktf/provider-pagerduty.RulesetRuleActionsExtractions)[]
 
 extractions block.
@@ -5595,6 +7619,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `priority`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActions.property.priority"></a>
+
+```typescript
+public readonly priority: RulesetRuleActionsPriority[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsPriority`](#@cdktf/provider-pagerduty.RulesetRuleActionsPriority)[]
 
@@ -5606,6 +7634,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `route`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActions.property.route"></a>
 
+```typescript
+public readonly route: RulesetRuleActionsRoute[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsRoute`](#@cdktf/provider-pagerduty.RulesetRuleActionsRoute)[]
 
 route block.
@@ -5615,6 +7647,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `severity`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActions.property.severity"></a>
+
+```typescript
+public readonly severity: RulesetRuleActionsSeverity[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsSeverity`](#@cdktf/provider-pagerduty.RulesetRuleActionsSeverity)[]
 
@@ -5626,6 +7662,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `suppress`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActions.property.suppress"></a>
 
+```typescript
+public readonly suppress: RulesetRuleActionsSuppress[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsSuppress`](#@cdktf/provider-pagerduty.RulesetRuleActionsSuppress)[]
 
 suppress block.
@@ -5635,6 +7675,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `suspend`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActions.property.suspend"></a>
+
+```typescript
+public readonly suspend: RulesetRuleActionsSuspend[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsSuspend`](#@cdktf/provider-pagerduty.RulesetRuleActionsSuspend)[]
 
@@ -5656,6 +7700,10 @@ const rulesetRuleActionsAnnotate: RulesetRuleActionsAnnotate = { ... }
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate.property.value"></a>
 
+```typescript
+public readonly value: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#value RulesetRule#value}.
@@ -5673,6 +7721,10 @@ const rulesetRuleActionsEventAction: RulesetRuleActionsEventAction = { ... }
 ```
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsEventAction.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
 
 - *Type:* `string`
 
@@ -5692,6 +7744,10 @@ const rulesetRuleActionsExtractions: RulesetRuleActionsExtractions = { ... }
 
 ##### `regex`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsExtractions.property.regex"></a>
 
+```typescript
+public readonly regex: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#regex RulesetRule#regex}.
@@ -5699,6 +7755,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `source`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsExtractions.property.source"></a>
+
+```typescript
+public readonly source: string;
+```
 
 - *Type:* `string`
 
@@ -5708,6 +7768,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `target`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsExtractions.property.target"></a>
 
+```typescript
+public readonly target: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#target RulesetRule#target}.
@@ -5715,6 +7779,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `template`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsExtractions.property.template"></a>
+
+```typescript
+public readonly template: string;
+```
 
 - *Type:* `string`
 
@@ -5734,6 +7802,10 @@ const rulesetRuleActionsPriority: RulesetRuleActionsPriority = { ... }
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsPriority.property.value"></a>
 
+```typescript
+public readonly value: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#value RulesetRule#value}.
@@ -5751,6 +7823,10 @@ const rulesetRuleActionsRoute: RulesetRuleActionsRoute = { ... }
 ```
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsRoute.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
 
 - *Type:* `string`
 
@@ -5770,6 +7846,10 @@ const rulesetRuleActionsSeverity: RulesetRuleActionsSeverity = { ... }
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsSeverity.property.value"></a>
 
+```typescript
+public readonly value: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#value RulesetRule#value}.
@@ -5788,6 +7868,10 @@ const rulesetRuleActionsSuppress: RulesetRuleActionsSuppress = { ... }
 
 ##### `thresholdTimeAmount`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsSuppress.property.thresholdTimeAmount"></a>
 
+```typescript
+public readonly thresholdTimeAmount: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#threshold_time_amount RulesetRule#threshold_time_amount}.
@@ -5795,6 +7879,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `thresholdTimeUnit`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsSuppress.property.thresholdTimeUnit"></a>
+
+```typescript
+public readonly thresholdTimeUnit: string;
+```
 
 - *Type:* `string`
 
@@ -5804,6 +7892,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `thresholdValue`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsSuppress.property.thresholdValue"></a>
 
+```typescript
+public readonly thresholdValue: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#threshold_value RulesetRule#threshold_value}.
@@ -5811,6 +7903,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsSuppress.property.value"></a>
+
+```typescript
+public readonly value: boolean | IResolvable;
+```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -5830,6 +7926,10 @@ const rulesetRuleActionsSuspend: RulesetRuleActionsSuspend = { ... }
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsSuspend.property.value"></a>
 
+```typescript
+public readonly value: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#value RulesetRule#value}.
@@ -5848,6 +7948,10 @@ const rulesetRuleConditions: RulesetRuleConditions = { ... }
 
 ##### `operator`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConditions.property.operator"></a>
 
+```typescript
+public readonly operator: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#operator RulesetRule#operator}.
@@ -5855,6 +7959,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `subconditions`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConditions.property.subconditions"></a>
+
+```typescript
+public readonly subconditions: RulesetRuleConditionsSubconditions[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditions`](#@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditions)[]
 
@@ -5876,6 +7984,10 @@ const rulesetRuleConditionsSubconditions: RulesetRuleConditionsSubconditions = {
 
 ##### `operator`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditions.property.operator"></a>
 
+```typescript
+public readonly operator: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#operator RulesetRule#operator}.
@@ -5883,6 +7995,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `parameter`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditions.property.parameter"></a>
+
+```typescript
+public readonly parameter: RulesetRuleConditionsSubconditionsParameter[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditionsParameter`](#@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditionsParameter)[]
 
@@ -5904,6 +8020,10 @@ const rulesetRuleConditionsSubconditionsParameter: RulesetRuleConditionsSubcondi
 
 ##### `path`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditionsParameter.property.path"></a>
 
+```typescript
+public readonly path: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#path RulesetRule#path}.
@@ -5911,6 +8031,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditionsParameter.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
 
 - *Type:* `string`
 
@@ -5930,11 +8054,19 @@ const rulesetRuleConfig: RulesetRuleConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -5942,17 +8074,29 @@ const rulesetRuleConfig: RulesetRuleConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `ruleset`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConfig.property.ruleset"></a>
+
+```typescript
+public readonly ruleset: string;
+```
 
 - *Type:* `string`
 
@@ -5961,6 +8105,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `actions`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConfig.property.actions"></a>
+
+```typescript
+public readonly actions: RulesetRuleActions[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActions`](#@cdktf/provider-pagerduty.RulesetRuleActions)[]
 
@@ -5972,6 +8120,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `conditions`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConfig.property.conditions"></a>
 
+```typescript
+public readonly conditions: RulesetRuleConditions[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleConditions`](#@cdktf/provider-pagerduty.RulesetRuleConditions)[]
 
 conditions block.
@@ -5982,6 +8134,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `disabled`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConfig.property.disabled"></a>
 
+```typescript
+public readonly disabled: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#disabled RulesetRule#disabled}.
@@ -5990,6 +8146,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `position`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConfig.property.position"></a>
 
+```typescript
+public readonly position: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#position RulesetRule#position}.
@@ -5997,6 +8157,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `timeFrame`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConfig.property.timeFrame"></a>
+
+```typescript
+public readonly timeFrame: RulesetRuleTimeFrame[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleTimeFrame`](#@cdktf/provider-pagerduty.RulesetRuleTimeFrame)[]
 
@@ -6007,6 +8171,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `variable`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConfig.property.variable"></a>
+
+```typescript
+public readonly variable: RulesetRuleVariable[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleVariable`](#@cdktf/provider-pagerduty.RulesetRuleVariable)[]
 
@@ -6028,6 +8196,10 @@ const rulesetRuleTimeFrame: RulesetRuleTimeFrame = { ... }
 
 ##### `activeBetween`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleTimeFrame.property.activeBetween"></a>
 
+```typescript
+public readonly activeBetween: RulesetRuleTimeFrameActiveBetween[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleTimeFrameActiveBetween`](#@cdktf/provider-pagerduty.RulesetRuleTimeFrameActiveBetween)[]
 
 active_between block.
@@ -6037,6 +8209,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `scheduledWeekly`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleTimeFrame.property.scheduledWeekly"></a>
+
+```typescript
+public readonly scheduledWeekly: RulesetRuleTimeFrameScheduledWeekly[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly`](#@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly)[]
 
@@ -6058,6 +8234,10 @@ const rulesetRuleTimeFrameActiveBetween: RulesetRuleTimeFrameActiveBetween = { .
 
 ##### `endTime`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleTimeFrameActiveBetween.property.endTime"></a>
 
+```typescript
+public readonly endTime: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#end_time RulesetRule#end_time}.
@@ -6065,6 +8245,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `startTime`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleTimeFrameActiveBetween.property.startTime"></a>
+
+```typescript
+public readonly startTime: number;
+```
 
 - *Type:* `number`
 
@@ -6084,6 +8268,10 @@ const rulesetRuleTimeFrameScheduledWeekly: RulesetRuleTimeFrameScheduledWeekly =
 
 ##### `duration`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly.property.duration"></a>
 
+```typescript
+public readonly duration: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#duration RulesetRule#duration}.
@@ -6091,6 +8279,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `startTime`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly.property.startTime"></a>
+
+```typescript
+public readonly startTime: number;
+```
 
 - *Type:* `number`
 
@@ -6100,6 +8292,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `timezone`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly.property.timezone"></a>
 
+```typescript
+public readonly timezone: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#timezone RulesetRule#timezone}.
@@ -6107,6 +8303,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `weekdays`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly.property.weekdays"></a>
+
+```typescript
+public readonly weekdays: number[];
+```
 
 - *Type:* `number`[]
 
@@ -6126,6 +8326,10 @@ const rulesetRuleVariable: RulesetRuleVariable = { ... }
 
 ##### `name`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleVariable.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#name RulesetRule#name}.
@@ -6133,6 +8337,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `parameters`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleVariable.property.parameters"></a>
+
+```typescript
+public readonly parameters: RulesetRuleVariableParameters[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.RulesetRuleVariableParameters`](#@cdktf/provider-pagerduty.RulesetRuleVariableParameters)[]
 
@@ -6143,6 +8351,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `type`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleVariable.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -6162,6 +8374,10 @@ const rulesetRuleVariableParameters: RulesetRuleVariableParameters = { ... }
 
 ##### `path`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleVariableParameters.property.path"></a>
 
+```typescript
+public readonly path: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#path RulesetRule#path}.
@@ -6169,6 +8385,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleVariableParameters.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
 
 - *Type:* `string`
 
@@ -6188,6 +8408,10 @@ const rulesetTeam: RulesetTeam = { ... }
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetTeam.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset.html#id Ruleset#id}.
@@ -6206,11 +8430,19 @@ const scheduleConfig: ScheduleConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -6218,17 +8450,29 @@ const scheduleConfig: ScheduleConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `layer`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ScheduleConfig.property.layer"></a>
+
+```typescript
+public readonly layer: ScheduleLayer[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ScheduleLayer`](#@cdktf/provider-pagerduty.ScheduleLayer)[]
 
@@ -6240,6 +8484,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `timeZone`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ScheduleConfig.property.timeZone"></a>
 
+```typescript
+public readonly timeZone: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#time_zone Schedule#time_zone}.
@@ -6247,6 +8495,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `description`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleConfig.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
 
 - *Type:* `string`
 
@@ -6256,6 +8508,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `name`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleConfig.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#name Schedule#name}.
@@ -6264,6 +8520,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `overflow`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleConfig.property.overflow"></a>
 
+```typescript
+public readonly overflow: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#overflow Schedule#overflow}.
@@ -6271,6 +8531,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `teams`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleConfig.property.teams"></a>
+
+```typescript
+public readonly teams: string[];
+```
 
 - *Type:* `string`[]
 
@@ -6290,6 +8554,10 @@ const scheduleLayer: ScheduleLayer = { ... }
 
 ##### `rotationTurnLengthSeconds`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ScheduleLayer.property.rotationTurnLengthSeconds"></a>
 
+```typescript
+public readonly rotationTurnLengthSeconds: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#rotation_turn_length_seconds Schedule#rotation_turn_length_seconds}.
@@ -6297,6 +8565,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `rotationVirtualStart`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ScheduleLayer.property.rotationVirtualStart"></a>
+
+```typescript
+public readonly rotationVirtualStart: string;
+```
 
 - *Type:* `string`
 
@@ -6306,6 +8578,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `start`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ScheduleLayer.property.start"></a>
 
+```typescript
+public readonly start: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#start Schedule#start}.
@@ -6313,6 +8589,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ScheduleLayer.property.users"></a>
+
+```typescript
+public readonly users: string[];
+```
 
 - *Type:* `string`[]
 
@@ -6322,6 +8602,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `end`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleLayer.property.end"></a>
 
+```typescript
+public readonly end: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#end Schedule#end}.
@@ -6330,6 +8614,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `name`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleLayer.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#name Schedule#name}.
@@ -6337,6 +8625,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `restriction`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleLayer.property.restriction"></a>
+
+```typescript
+public readonly restriction: ScheduleLayerRestriction[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ScheduleLayerRestriction`](#@cdktf/provider-pagerduty.ScheduleLayerRestriction)[]
 
@@ -6358,6 +8650,10 @@ const scheduleLayerRestriction: ScheduleLayerRestriction = { ... }
 
 ##### `durationSeconds`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ScheduleLayerRestriction.property.durationSeconds"></a>
 
+```typescript
+public readonly durationSeconds: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#duration_seconds Schedule#duration_seconds}.
@@ -6365,6 +8661,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `startTimeOfDay`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ScheduleLayerRestriction.property.startTimeOfDay"></a>
+
+```typescript
+public readonly startTimeOfDay: string;
+```
 
 - *Type:* `string`
 
@@ -6374,6 +8674,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ScheduleLayerRestriction.property.type"></a>
 
+```typescript
+public readonly type: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#type Schedule#type}.
@@ -6381,6 +8685,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `startDayOfWeek`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleLayerRestriction.property.startDayOfWeek"></a>
+
+```typescript
+public readonly startDayOfWeek: number;
+```
 
 - *Type:* `number`
 
@@ -6400,6 +8708,10 @@ const serviceAlertGroupingParameters: ServiceAlertGroupingParameters = { ... }
 
 ##### `config`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceAlertGroupingParameters.property.config"></a>
 
+```typescript
+public readonly config: ServiceAlertGroupingParametersConfig[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceAlertGroupingParametersConfig`](#@cdktf/provider-pagerduty.ServiceAlertGroupingParametersConfig)[]
 
 config block.
@@ -6409,6 +8721,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `type`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceAlertGroupingParameters.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -6428,6 +8744,10 @@ const serviceAlertGroupingParametersConfig: ServiceAlertGroupingParametersConfig
 
 ##### `aggregate`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceAlertGroupingParametersConfig.property.aggregate"></a>
 
+```typescript
+public readonly aggregate: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#aggregate Service#aggregate}.
@@ -6436,6 +8756,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `fields`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceAlertGroupingParametersConfig.property.fields"></a>
 
+```typescript
+public readonly fields: string[];
+```
+
 - *Type:* `string`[]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#fields Service#fields}.
@@ -6443,6 +8767,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `timeout`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceAlertGroupingParametersConfig.property.timeout"></a>
+
+```typescript
+public readonly timeout: number;
+```
 
 - *Type:* `number`
 
@@ -6462,11 +8790,19 @@ const serviceConfig: ServiceConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -6474,17 +8810,29 @@ const serviceConfig: ServiceConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `escalationPolicy`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.escalationPolicy"></a>
+
+```typescript
+public readonly escalationPolicy: string;
+```
 
 - *Type:* `string`
 
@@ -6494,6 +8842,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#name Service#name}.
@@ -6501,6 +8853,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `acknowledgementTimeout`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.acknowledgementTimeout"></a>
+
+```typescript
+public readonly acknowledgementTimeout: string;
+```
 
 - *Type:* `string`
 
@@ -6510,6 +8866,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `alertCreation`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.alertCreation"></a>
 
+```typescript
+public readonly alertCreation: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#alert_creation Service#alert_creation}.
@@ -6518,6 +8878,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `alertGrouping`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.alertGrouping"></a>
 
+```typescript
+public readonly alertGrouping: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#alert_grouping Service#alert_grouping}.
@@ -6525,6 +8889,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `alertGroupingParameters`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.alertGroupingParameters"></a>
+
+```typescript
+public readonly alertGroupingParameters: ServiceAlertGroupingParameters[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceAlertGroupingParameters`](#@cdktf/provider-pagerduty.ServiceAlertGroupingParameters)[]
 
@@ -6536,6 +8904,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `alertGroupingTimeout`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.alertGroupingTimeout"></a>
 
+```typescript
+public readonly alertGroupingTimeout: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#alert_grouping_timeout Service#alert_grouping_timeout}.
@@ -6543,6 +8915,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `autoResolveTimeout`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.autoResolveTimeout"></a>
+
+```typescript
+public readonly autoResolveTimeout: string;
+```
 
 - *Type:* `string`
 
@@ -6552,6 +8928,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `description`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.description"></a>
 
+```typescript
+public readonly description: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#description Service#description}.
@@ -6559,6 +8939,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `incidentUrgencyRule`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.incidentUrgencyRule"></a>
+
+```typescript
+public readonly incidentUrgencyRule: ServiceIncidentUrgencyRule[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceIncidentUrgencyRule`](#@cdktf/provider-pagerduty.ServiceIncidentUrgencyRule)[]
 
@@ -6570,6 +8954,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `scheduledActions`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.scheduledActions"></a>
 
+```typescript
+public readonly scheduledActions: ServiceScheduledActions[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceScheduledActions`](#@cdktf/provider-pagerduty.ServiceScheduledActions)[]
 
 scheduled_actions block.
@@ -6579,6 +8967,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `supportHours`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.supportHours"></a>
+
+```typescript
+public readonly supportHours: ServiceSupportHours[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceSupportHours`](#@cdktf/provider-pagerduty.ServiceSupportHours)[]
 
@@ -6600,11 +8992,19 @@ const serviceDependencyConfig: ServiceDependencyConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -6612,17 +9012,29 @@ const serviceDependencyConfig: ServiceDependencyConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `dependency`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyConfig.property.dependency"></a>
+
+```typescript
+public readonly dependency: ServiceDependencyDependency[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceDependencyDependency`](#@cdktf/provider-pagerduty.ServiceDependencyDependency)[]
 
@@ -6644,6 +9056,10 @@ const serviceDependencyDependency: ServiceDependencyDependency = { ... }
 
 ##### `dependentService`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyDependency.property.dependentService"></a>
 
+```typescript
+public readonly dependentService: ServiceDependencyDependencyDependentService[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceDependencyDependencyDependentService`](#@cdktf/provider-pagerduty.ServiceDependencyDependencyDependentService)[]
 
 dependent_service block.
@@ -6654,6 +9070,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `supportingService`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyDependency.property.supportingService"></a>
 
+```typescript
+public readonly supportingService: ServiceDependencyDependencySupportingService[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceDependencyDependencySupportingService`](#@cdktf/provider-pagerduty.ServiceDependencyDependencySupportingService)[]
 
 supporting_service block.
@@ -6663,6 +9083,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `type`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyDependency.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -6682,6 +9106,10 @@ const serviceDependencyDependencyDependentService: ServiceDependencyDependencyDe
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyDependencyDependentService.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#id ServiceDependency#id}.
@@ -6689,6 +9117,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyDependencyDependentService.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -6708,6 +9140,10 @@ const serviceDependencyDependencySupportingService: ServiceDependencyDependencyS
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyDependencySupportingService.property.id"></a>
 
+```typescript
+public readonly id: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#id ServiceDependency#id}.
@@ -6715,6 +9151,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyDependencySupportingService.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -6734,6 +9174,10 @@ const serviceEventRuleActions: ServiceEventRuleActions = { ... }
 
 ##### `annotate`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActions.property.annotate"></a>
 
+```typescript
+public readonly annotate: ServiceEventRuleActionsAnnotate[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsAnnotate`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsAnnotate)[]
 
 annotate block.
@@ -6743,6 +9187,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `eventAction`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActions.property.eventAction"></a>
+
+```typescript
+public readonly eventAction: ServiceEventRuleActionsEventAction[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsEventAction`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsEventAction)[]
 
@@ -6754,6 +9202,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `extractions`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActions.property.extractions"></a>
 
+```typescript
+public readonly extractions: ServiceEventRuleActionsExtractions[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions)[]
 
 extractions block.
@@ -6763,6 +9215,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `priority`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActions.property.priority"></a>
+
+```typescript
+public readonly priority: ServiceEventRuleActionsPriority[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsPriority`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsPriority)[]
 
@@ -6774,6 +9230,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `severity`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActions.property.severity"></a>
 
+```typescript
+public readonly severity: ServiceEventRuleActionsSeverity[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSeverity`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSeverity)[]
 
 severity block.
@@ -6784,6 +9244,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `suppress`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActions.property.suppress"></a>
 
+```typescript
+public readonly suppress: ServiceEventRuleActionsSuppress[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress)[]
 
 suppress block.
@@ -6793,6 +9257,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `suspend`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActions.property.suspend"></a>
+
+```typescript
+public readonly suspend: ServiceEventRuleActionsSuspend[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSuspend`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSuspend)[]
 
@@ -6814,6 +9282,10 @@ const serviceEventRuleActionsAnnotate: ServiceEventRuleActionsAnnotate = { ... }
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsAnnotate.property.value"></a>
 
+```typescript
+public readonly value: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#value ServiceEventRule#value}.
@@ -6831,6 +9303,10 @@ const serviceEventRuleActionsEventAction: ServiceEventRuleActionsEventAction = {
 ```
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsEventAction.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
 
 - *Type:* `string`
 
@@ -6850,6 +9326,10 @@ const serviceEventRuleActionsExtractions: ServiceEventRuleActionsExtractions = {
 
 ##### `regex`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions.property.regex"></a>
 
+```typescript
+public readonly regex: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#regex ServiceEventRule#regex}.
@@ -6857,6 +9337,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `source`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions.property.source"></a>
+
+```typescript
+public readonly source: string;
+```
 
 - *Type:* `string`
 
@@ -6866,6 +9350,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `target`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions.property.target"></a>
 
+```typescript
+public readonly target: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#target ServiceEventRule#target}.
@@ -6873,6 +9361,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `template`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions.property.template"></a>
+
+```typescript
+public readonly template: string;
+```
 
 - *Type:* `string`
 
@@ -6892,6 +9384,10 @@ const serviceEventRuleActionsPriority: ServiceEventRuleActionsPriority = { ... }
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsPriority.property.value"></a>
 
+```typescript
+public readonly value: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#value ServiceEventRule#value}.
@@ -6909,6 +9405,10 @@ const serviceEventRuleActionsSeverity: ServiceEventRuleActionsSeverity = { ... }
 ```
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsSeverity.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
 
 - *Type:* `string`
 
@@ -6928,6 +9428,10 @@ const serviceEventRuleActionsSuppress: ServiceEventRuleActionsSuppress = { ... }
 
 ##### `thresholdTimeAmount`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress.property.thresholdTimeAmount"></a>
 
+```typescript
+public readonly thresholdTimeAmount: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#threshold_time_amount ServiceEventRule#threshold_time_amount}.
@@ -6935,6 +9439,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `thresholdTimeUnit`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress.property.thresholdTimeUnit"></a>
+
+```typescript
+public readonly thresholdTimeUnit: string;
+```
 
 - *Type:* `string`
 
@@ -6944,6 +9452,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `thresholdValue`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress.property.thresholdValue"></a>
 
+```typescript
+public readonly thresholdValue: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#threshold_value ServiceEventRule#threshold_value}.
@@ -6951,6 +9463,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress.property.value"></a>
+
+```typescript
+public readonly value: boolean | IResolvable;
+```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -6970,6 +9486,10 @@ const serviceEventRuleActionsSuspend: ServiceEventRuleActionsSuspend = { ... }
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsSuspend.property.value"></a>
 
+```typescript
+public readonly value: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#value ServiceEventRule#value}.
@@ -6988,6 +9508,10 @@ const serviceEventRuleConditions: ServiceEventRuleConditions = { ... }
 
 ##### `operator`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConditions.property.operator"></a>
 
+```typescript
+public readonly operator: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#operator ServiceEventRule#operator}.
@@ -6995,6 +9519,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `subconditions`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConditions.property.subconditions"></a>
+
+```typescript
+public readonly subconditions: ServiceEventRuleConditionsSubconditions[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditions`](#@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditions)[]
 
@@ -7016,6 +9544,10 @@ const serviceEventRuleConditionsSubconditions: ServiceEventRuleConditionsSubcond
 
 ##### `operator`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditions.property.operator"></a>
 
+```typescript
+public readonly operator: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#operator ServiceEventRule#operator}.
@@ -7023,6 +9555,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `parameter`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditions.property.parameter"></a>
+
+```typescript
+public readonly parameter: ServiceEventRuleConditionsSubconditionsParameter[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditionsParameter`](#@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditionsParameter)[]
 
@@ -7044,6 +9580,10 @@ const serviceEventRuleConditionsSubconditionsParameter: ServiceEventRuleConditio
 
 ##### `path`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditionsParameter.property.path"></a>
 
+```typescript
+public readonly path: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#path ServiceEventRule#path}.
@@ -7051,6 +9591,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditionsParameter.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
 
 - *Type:* `string`
 
@@ -7070,11 +9614,19 @@ const serviceEventRuleConfig: ServiceEventRuleConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -7082,17 +9634,29 @@ const serviceEventRuleConfig: ServiceEventRuleConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `service`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConfig.property.service"></a>
+
+```typescript
+public readonly service: string;
+```
 
 - *Type:* `string`
 
@@ -7101,6 +9665,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `actions`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConfig.property.actions"></a>
+
+```typescript
+public readonly actions: ServiceEventRuleActions[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActions`](#@cdktf/provider-pagerduty.ServiceEventRuleActions)[]
 
@@ -7112,6 +9680,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `conditions`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConfig.property.conditions"></a>
 
+```typescript
+public readonly conditions: ServiceEventRuleConditions[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleConditions`](#@cdktf/provider-pagerduty.ServiceEventRuleConditions)[]
 
 conditions block.
@@ -7122,6 +9694,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `disabled`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConfig.property.disabled"></a>
 
+```typescript
+public readonly disabled: boolean | IResolvable;
+```
+
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#disabled ServiceEventRule#disabled}.
@@ -7130,6 +9706,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `position`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConfig.property.position"></a>
 
+```typescript
+public readonly position: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#position ServiceEventRule#position}.
@@ -7137,6 +9717,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `timeFrame`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConfig.property.timeFrame"></a>
+
+```typescript
+public readonly timeFrame: ServiceEventRuleTimeFrame[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleTimeFrame`](#@cdktf/provider-pagerduty.ServiceEventRuleTimeFrame)[]
 
@@ -7147,6 +9731,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `variable`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConfig.property.variable"></a>
+
+```typescript
+public readonly variable: ServiceEventRuleVariable[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleVariable`](#@cdktf/provider-pagerduty.ServiceEventRuleVariable)[]
 
@@ -7168,6 +9756,10 @@ const serviceEventRuleTimeFrame: ServiceEventRuleTimeFrame = { ... }
 
 ##### `activeBetween`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleTimeFrame.property.activeBetween"></a>
 
+```typescript
+public readonly activeBetween: ServiceEventRuleTimeFrameActiveBetween[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameActiveBetween`](#@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameActiveBetween)[]
 
 active_between block.
@@ -7177,6 +9769,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `scheduledWeekly`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleTimeFrame.property.scheduledWeekly"></a>
+
+```typescript
+public readonly scheduledWeekly: ServiceEventRuleTimeFrameScheduledWeekly[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly`](#@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly)[]
 
@@ -7198,6 +9794,10 @@ const serviceEventRuleTimeFrameActiveBetween: ServiceEventRuleTimeFrameActiveBet
 
 ##### `endTime`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameActiveBetween.property.endTime"></a>
 
+```typescript
+public readonly endTime: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#end_time ServiceEventRule#end_time}.
@@ -7205,6 +9805,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `startTime`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameActiveBetween.property.startTime"></a>
+
+```typescript
+public readonly startTime: number;
+```
 
 - *Type:* `number`
 
@@ -7224,6 +9828,10 @@ const serviceEventRuleTimeFrameScheduledWeekly: ServiceEventRuleTimeFrameSchedul
 
 ##### `duration`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly.property.duration"></a>
 
+```typescript
+public readonly duration: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#duration ServiceEventRule#duration}.
@@ -7231,6 +9839,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `startTime`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly.property.startTime"></a>
+
+```typescript
+public readonly startTime: number;
+```
 
 - *Type:* `number`
 
@@ -7240,6 +9852,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `timezone`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly.property.timezone"></a>
 
+```typescript
+public readonly timezone: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#timezone ServiceEventRule#timezone}.
@@ -7247,6 +9863,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `weekdays`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly.property.weekdays"></a>
+
+```typescript
+public readonly weekdays: number[];
+```
 
 - *Type:* `number`[]
 
@@ -7266,6 +9886,10 @@ const serviceEventRuleVariable: ServiceEventRuleVariable = { ... }
 
 ##### `name`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleVariable.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#name ServiceEventRule#name}.
@@ -7273,6 +9897,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `parameters`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleVariable.property.parameters"></a>
+
+```typescript
+public readonly parameters: ServiceEventRuleVariableParameters[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleVariableParameters`](#@cdktf/provider-pagerduty.ServiceEventRuleVariableParameters)[]
 
@@ -7283,6 +9911,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `type`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleVariable.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -7302,6 +9934,10 @@ const serviceEventRuleVariableParameters: ServiceEventRuleVariableParameters = {
 
 ##### `path`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleVariableParameters.property.path"></a>
 
+```typescript
+public readonly path: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#path ServiceEventRule#path}.
@@ -7309,6 +9945,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `value`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleVariableParameters.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
 
 - *Type:* `string`
 
@@ -7328,6 +9968,10 @@ const serviceIncidentUrgencyRule: ServiceIncidentUrgencyRule = { ... }
 
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIncidentUrgencyRule.property.type"></a>
 
+```typescript
+public readonly type: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#type Service#type}.
@@ -7335,6 +9979,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `duringSupportHours`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIncidentUrgencyRule.property.duringSupportHours"></a>
+
+```typescript
+public readonly duringSupportHours: ServiceIncidentUrgencyRuleDuringSupportHours[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceIncidentUrgencyRuleDuringSupportHours`](#@cdktf/provider-pagerduty.ServiceIncidentUrgencyRuleDuringSupportHours)[]
 
@@ -7346,6 +9994,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `outsideSupportHours`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIncidentUrgencyRule.property.outsideSupportHours"></a>
 
+```typescript
+public readonly outsideSupportHours: ServiceIncidentUrgencyRuleOutsideSupportHours[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceIncidentUrgencyRuleOutsideSupportHours`](#@cdktf/provider-pagerduty.ServiceIncidentUrgencyRuleOutsideSupportHours)[]
 
 outside_support_hours block.
@@ -7355,6 +10007,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `urgency`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIncidentUrgencyRule.property.urgency"></a>
+
+```typescript
+public readonly urgency: string;
+```
 
 - *Type:* `string`
 
@@ -7374,6 +10030,10 @@ const serviceIncidentUrgencyRuleDuringSupportHours: ServiceIncidentUrgencyRuleDu
 
 ##### `type`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIncidentUrgencyRuleDuringSupportHours.property.type"></a>
 
+```typescript
+public readonly type: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#type Service#type}.
@@ -7381,6 +10041,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `urgency`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIncidentUrgencyRuleDuringSupportHours.property.urgency"></a>
+
+```typescript
+public readonly urgency: string;
+```
 
 - *Type:* `string`
 
@@ -7400,6 +10064,10 @@ const serviceIncidentUrgencyRuleOutsideSupportHours: ServiceIncidentUrgencyRuleO
 
 ##### `type`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIncidentUrgencyRuleOutsideSupportHours.property.type"></a>
 
+```typescript
+public readonly type: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#type Service#type}.
@@ -7407,6 +10075,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `urgency`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIncidentUrgencyRuleOutsideSupportHours.property.urgency"></a>
+
+```typescript
+public readonly urgency: string;
+```
 
 - *Type:* `string`
 
@@ -7426,11 +10098,19 @@ const serviceIntegrationConfig: ServiceIntegrationConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegrationConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegrationConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -7438,17 +10118,29 @@ const serviceIntegrationConfig: ServiceIntegrationConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegrationConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegrationConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `service`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegrationConfig.property.service"></a>
+
+```typescript
+public readonly service: string;
+```
 
 - *Type:* `string`
 
@@ -7458,6 +10150,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `integrationEmail`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegrationConfig.property.integrationEmail"></a>
 
+```typescript
+public readonly integrationEmail: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration.html#integration_email ServiceIntegration#integration_email}.
@@ -7465,6 +10161,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `integrationKey`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegrationConfig.property.integrationKey"></a>
+
+```typescript
+public readonly integrationKey: string;
+```
 
 - *Type:* `string`
 
@@ -7474,6 +10174,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `name`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegrationConfig.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration.html#name ServiceIntegration#name}.
@@ -7482,6 +10186,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `type`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegrationConfig.property.type"></a>
 
+```typescript
+public readonly type: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration.html#type ServiceIntegration#type}.
@@ -7489,6 +10197,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `vendor`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegrationConfig.property.vendor"></a>
+
+```typescript
+public readonly vendor: string;
+```
 
 - *Type:* `string`
 
@@ -7508,6 +10220,10 @@ const serviceScheduledActions: ServiceScheduledActions = { ... }
 
 ##### `at`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceScheduledActions.property.at"></a>
 
+```typescript
+public readonly at: ServiceScheduledActionsAt[];
+```
+
 - *Type:* [`@cdktf/provider-pagerduty.ServiceScheduledActionsAt`](#@cdktf/provider-pagerduty.ServiceScheduledActionsAt)[]
 
 at block.
@@ -7518,6 +10234,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `toUrgency`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceScheduledActions.property.toUrgency"></a>
 
+```typescript
+public readonly toUrgency: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#to_urgency Service#to_urgency}.
@@ -7525,6 +10245,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `type`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceScheduledActions.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -7544,6 +10268,10 @@ const serviceScheduledActionsAt: ServiceScheduledActionsAt = { ... }
 
 ##### `name`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceScheduledActionsAt.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#name Service#name}.
@@ -7551,6 +10279,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `type`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceScheduledActionsAt.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -7570,6 +10302,10 @@ const serviceSupportHours: ServiceSupportHours = { ... }
 
 ##### `daysOfWeek`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceSupportHours.property.daysOfWeek"></a>
 
+```typescript
+public readonly daysOfWeek: number[];
+```
+
 - *Type:* `number`[]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#days_of_week Service#days_of_week}.
@@ -7577,6 +10313,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `endTime`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceSupportHours.property.endTime"></a>
+
+```typescript
+public readonly endTime: string;
+```
 
 - *Type:* `string`
 
@@ -7586,6 +10326,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `startTime`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceSupportHours.property.startTime"></a>
 
+```typescript
+public readonly startTime: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#start_time Service#start_time}.
@@ -7594,6 +10338,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `timeZone`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceSupportHours.property.timeZone"></a>
 
+```typescript
+public readonly timeZone: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#time_zone Service#time_zone}.
@@ -7601,6 +10349,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `type`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceSupportHours.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -7620,11 +10372,19 @@ const slackConnectionConfig: SlackConnectionConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -7632,17 +10392,29 @@ const slackConnectionConfig: SlackConnectionConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `channelId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.channelId"></a>
+
+```typescript
+public readonly channelId: string;
+```
 
 - *Type:* `string`
 
@@ -7651,6 +10423,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `config`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.config"></a>
+
+```typescript
+public readonly config: SlackConnectionConfigA[];
+```
 
 - *Type:* [`@cdktf/provider-pagerduty.SlackConnectionConfigA`](#@cdktf/provider-pagerduty.SlackConnectionConfigA)[]
 
@@ -7662,6 +10438,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `notificationType`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.notificationType"></a>
 
+```typescript
+public readonly notificationType: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#notification_type SlackConnection#notification_type}.
@@ -7669,6 +10449,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `sourceId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.sourceId"></a>
+
+```typescript
+public readonly sourceId: string;
+```
 
 - *Type:* `string`
 
@@ -7678,6 +10462,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `sourceType`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.sourceType"></a>
 
+```typescript
+public readonly sourceType: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#source_type SlackConnection#source_type}.
@@ -7685,6 +10473,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `workspaceId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.workspaceId"></a>
+
+```typescript
+public readonly workspaceId: string;
+```
 
 - *Type:* `string`
 
@@ -7704,6 +10496,10 @@ const slackConnectionConfigA: SlackConnectionConfigA = { ... }
 
 ##### `events`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfigA.property.events"></a>
 
+```typescript
+public readonly events: string[];
+```
+
 - *Type:* `string`[]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#events SlackConnection#events}.
@@ -7712,6 +10508,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `priorities`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfigA.property.priorities"></a>
 
+```typescript
+public readonly priorities: string[];
+```
+
 - *Type:* `string`[]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#priorities SlackConnection#priorities}.
@@ -7719,6 +10519,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `urgency`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfigA.property.urgency"></a>
+
+```typescript
+public readonly urgency: string;
+```
 
 - *Type:* `string`
 
@@ -7738,11 +10542,19 @@ const teamConfig: TeamConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -7750,17 +10562,29 @@ const teamConfig: TeamConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.TeamConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
 
 - *Type:* `string`
 
@@ -7770,6 +10594,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `description`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamConfig.property.description"></a>
 
+```typescript
+public readonly description: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team.html#description Team#description}.
@@ -7777,6 +10605,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `parent`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamConfig.property.parent"></a>
+
+```typescript
+public readonly parent: string;
+```
 
 - *Type:* `string`
 
@@ -7796,11 +10628,19 @@ const teamMembershipConfig: TeamMembershipConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamMembershipConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamMembershipConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -7808,17 +10648,29 @@ const teamMembershipConfig: TeamMembershipConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamMembershipConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamMembershipConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `teamId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.TeamMembershipConfig.property.teamId"></a>
+
+```typescript
+public readonly teamId: string;
+```
 
 - *Type:* `string`
 
@@ -7828,6 +10680,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `userId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.TeamMembershipConfig.property.userId"></a>
 
+```typescript
+public readonly userId: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team_membership.html#user_id TeamMembership#user_id}.
@@ -7835,6 +10691,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `role`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamMembershipConfig.property.role"></a>
+
+```typescript
+public readonly role: string;
+```
 
 - *Type:* `string`
 
@@ -7854,11 +10714,19 @@ const userConfig: UserConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -7866,17 +10734,29 @@ const userConfig: UserConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `email`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserConfig.property.email"></a>
+
+```typescript
+public readonly email: string;
+```
 
 - *Type:* `string`
 
@@ -7886,6 +10766,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserConfig.property.name"></a>
 
+```typescript
+public readonly name: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user.html#name User#name}.
@@ -7893,6 +10777,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `color`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserConfig.property.color"></a>
+
+```typescript
+public readonly color: string;
+```
 
 - *Type:* `string`
 
@@ -7902,6 +10790,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `description`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserConfig.property.description"></a>
 
+```typescript
+public readonly description: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user.html#description User#description}.
@@ -7909,6 +10801,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `jobTitle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserConfig.property.jobTitle"></a>
+
+```typescript
+public readonly jobTitle: string;
+```
 
 - *Type:* `string`
 
@@ -7918,6 +10814,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `role`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserConfig.property.role"></a>
 
+```typescript
+public readonly role: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user.html#role User#role}.
@@ -7926,6 +10826,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `teams`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserConfig.property.teams"></a>
 
+```typescript
+public readonly teams: string[];
+```
+
 - *Type:* `string`[]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user.html#teams User#teams}.
@@ -7933,6 +10837,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `timeZone`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserConfig.property.timeZone"></a>
+
+```typescript
+public readonly timeZone: string;
+```
 
 - *Type:* `string`
 
@@ -7952,11 +10860,19 @@ const userContactMethodConfig: UserContactMethodConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserContactMethodConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserContactMethodConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -7964,17 +10880,29 @@ const userContactMethodConfig: UserContactMethodConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserContactMethodConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserContactMethodConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `address`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethodConfig.property.address"></a>
+
+```typescript
+public readonly address: string;
+```
 
 - *Type:* `string`
 
@@ -7984,6 +10912,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `label`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethodConfig.property.label"></a>
 
+```typescript
+public readonly label: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method.html#label UserContactMethod#label}.
@@ -7991,6 +10923,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethodConfig.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
 
 - *Type:* `string`
 
@@ -8000,6 +10936,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `userId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethodConfig.property.userId"></a>
 
+```typescript
+public readonly userId: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method.html#user_id UserContactMethod#user_id}.
@@ -8008,6 +10948,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `countryCode`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserContactMethodConfig.property.countryCode"></a>
 
+```typescript
+public readonly countryCode: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method.html#country_code UserContactMethod#country_code}.
@@ -8015,6 +10959,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `sendShortEmail`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserContactMethodConfig.property.sendShortEmail"></a>
+
+```typescript
+public readonly sendShortEmail: boolean | IResolvable;
+```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
@@ -8034,11 +10982,19 @@ const userNotificationRuleConfig: UserNotificationRuleConfig = { ... }
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRuleConfig.property.count"></a>
 
+```typescript
+public readonly count: number;
+```
+
 - *Type:* `number`
 
 ---
 
 ##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRuleConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
 
 - *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
 
@@ -8046,17 +11002,29 @@ const userNotificationRuleConfig: UserNotificationRuleConfig = { ... }
 
 ##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRuleConfig.property.lifecycle"></a>
 
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
 - *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRuleConfig.property.provider"></a>
 
+```typescript
+public readonly provider: TerraformProvider;
+```
+
 - *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
 
 ---
 
 ##### `contactMethod`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRuleConfig.property.contactMethod"></a>
+
+```typescript
+public readonly contactMethod: IResolvable | {[ key: string ]: string};
+```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
@@ -8066,6 +11034,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `startDelayInMinutes`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRuleConfig.property.startDelayInMinutes"></a>
 
+```typescript
+public readonly startDelayInMinutes: number;
+```
+
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule.html#start_delay_in_minutes UserNotificationRule#start_delay_in_minutes}.
@@ -8074,6 +11046,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ##### `urgency`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRuleConfig.property.urgency"></a>
 
+```typescript
+public readonly urgency: string;
+```
+
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule.html#urgency UserNotificationRule#urgency}.
@@ -8081,6 +11057,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ---
 
 ##### `userId`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRuleConfig.property.userId"></a>
+
+```typescript
+public readonly userId: string;
+```
 
 - *Type:* `string`
 
