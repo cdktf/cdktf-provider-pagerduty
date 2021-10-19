@@ -63,7 +63,7 @@ export class EventRule extends cdktf.TerraformResource {
   // ==========
 
   // action_json - computed: false, optional: false, required: true
-  private _actionJson: string;
+  private _actionJson?: string; 
   public get actionJson() {
     return this.getStringAttribute('action_json');
   }
@@ -76,11 +76,11 @@ export class EventRule extends cdktf.TerraformResource {
   }
 
   // advanced_condition_json - computed: false, optional: true, required: false
-  private _advancedConditionJson?: string;
+  private _advancedConditionJson?: string | undefined; 
   public get advancedConditionJson() {
     return this.getStringAttribute('advanced_condition_json');
   }
-  public set advancedConditionJson(value: string ) {
+  public set advancedConditionJson(value: string | undefined) {
     this._advancedConditionJson = value;
   }
   public resetAdvancedConditionJson() {
@@ -93,11 +93,11 @@ export class EventRule extends cdktf.TerraformResource {
 
   // catch_all - computed: true, optional: false, required: false
   public get catchAll() {
-    return this.getBooleanAttribute('catch_all');
+    return this.getBooleanAttribute('catch_all') as any;
   }
 
   // condition_json - computed: false, optional: false, required: true
-  private _conditionJson: string;
+  private _conditionJson?: string; 
   public get conditionJson() {
     return this.getStringAttribute('condition_json');
   }

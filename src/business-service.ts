@@ -73,11 +73,11 @@ export class BusinessService extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string;
+  private _description?: string | undefined; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
   public resetDescription() {
@@ -99,7 +99,7 @@ export class BusinessService extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: false, required: true
-  private _name: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -112,11 +112,11 @@ export class BusinessService extends cdktf.TerraformResource {
   }
 
   // point_of_contact - computed: false, optional: true, required: false
-  private _pointOfContact?: string;
+  private _pointOfContact?: string | undefined; 
   public get pointOfContact() {
     return this.getStringAttribute('point_of_contact');
   }
-  public set pointOfContact(value: string ) {
+  public set pointOfContact(value: string | undefined) {
     this._pointOfContact = value;
   }
   public resetPointOfContact() {
@@ -138,11 +138,11 @@ export class BusinessService extends cdktf.TerraformResource {
   }
 
   // team - computed: false, optional: true, required: false
-  private _team?: string;
+  private _team?: string | undefined; 
   public get team() {
     return this.getStringAttribute('team');
   }
-  public set team(value: string ) {
+  public set team(value: string | undefined) {
     this._team = value;
   }
   public resetTeam() {
@@ -154,11 +154,11 @@ export class BusinessService extends cdktf.TerraformResource {
   }
 
   // type - computed: false, optional: true, required: false
-  private _type?: string;
+  private _type?: string | undefined; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string ) {
+  public set type(value: string | undefined) {
     this._type = value;
   }
   public resetType() {

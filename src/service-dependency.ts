@@ -27,6 +27,9 @@ export interface ServiceDependencyDependencyDependentService {
 
 function serviceDependencyDependencyDependentServiceToTerraform(struct?: ServiceDependencyDependencyDependentService): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     id: cdktf.stringToTerraform(struct!.id),
     type: cdktf.stringToTerraform(struct!.type),
@@ -46,6 +49,9 @@ export interface ServiceDependencyDependencySupportingService {
 
 function serviceDependencyDependencySupportingServiceToTerraform(struct?: ServiceDependencyDependencySupportingService): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     id: cdktf.stringToTerraform(struct!.id),
     type: cdktf.stringToTerraform(struct!.type),
@@ -73,6 +79,9 @@ export interface ServiceDependencyDependency {
 
 function serviceDependencyDependencyToTerraform(struct?: ServiceDependencyDependency): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     type: cdktf.stringToTerraform(struct!.type),
     dependent_service: cdktf.listMapper(serviceDependencyDependencyDependentServiceToTerraform)(struct!.dependentService),
@@ -126,8 +135,9 @@ export class ServiceDependency extends cdktf.TerraformResource {
   }
 
   // dependency - computed: false, optional: false, required: true
-  private _dependency: ServiceDependencyDependency[];
+  private _dependency?: ServiceDependencyDependency[]; 
   public get dependency() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('dependency') as any;
   }
   public set dependency(value: ServiceDependencyDependency[]) {

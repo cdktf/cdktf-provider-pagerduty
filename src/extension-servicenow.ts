@@ -103,11 +103,11 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   // ==========
 
   // endpoint_url - computed: false, optional: true, required: false
-  private _endpointUrl?: string;
+  private _endpointUrl?: string | undefined; 
   public get endpointUrl() {
     return this.getStringAttribute('endpoint_url');
   }
-  public set endpointUrl(value: string ) {
+  public set endpointUrl(value: string | undefined) {
     this._endpointUrl = value;
   }
   public resetEndpointUrl() {
@@ -119,7 +119,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
 
   // extension_objects - computed: false, optional: false, required: true
-  private _extensionObjects: string[];
+  private _extensionObjects?: string[]; 
   public get extensionObjects() {
     return this.getListAttribute('extension_objects');
   }
@@ -132,7 +132,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
 
   // extension_schema - computed: false, optional: false, required: true
-  private _extensionSchema: string;
+  private _extensionSchema?: string; 
   public get extensionSchema() {
     return this.getStringAttribute('extension_schema');
   }
@@ -155,11 +155,11 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string;
+  private _name?: string | undefined; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
   }
   public resetName() {
@@ -171,7 +171,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
 
   // referer - computed: false, optional: false, required: true
-  private _referer: string;
+  private _referer?: string; 
   public get referer() {
     return this.getStringAttribute('referer');
   }
@@ -184,7 +184,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
 
   // snow_password - computed: false, optional: false, required: true
-  private _snowPassword: string;
+  private _snowPassword?: string; 
   public get snowPassword() {
     return this.getStringAttribute('snow_password');
   }
@@ -197,7 +197,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
 
   // snow_user - computed: false, optional: false, required: true
-  private _snowUser: string;
+  private _snowUser?: string; 
   public get snowUser() {
     return this.getStringAttribute('snow_user');
   }
@@ -210,7 +210,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
 
   // sync_options - computed: false, optional: false, required: true
-  private _syncOptions: string;
+  private _syncOptions?: string; 
   public get syncOptions() {
     return this.getStringAttribute('sync_options');
   }
@@ -223,7 +223,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
 
   // target - computed: false, optional: false, required: true
-  private _target: string;
+  private _target?: string; 
   public get target() {
     return this.getStringAttribute('target');
   }
@@ -236,7 +236,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
 
   // task_type - computed: false, optional: false, required: true
-  private _taskType: string;
+  private _taskType?: string; 
   public get taskType() {
     return this.getStringAttribute('task_type');
   }
@@ -249,11 +249,11 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
 
   // type - computed: true, optional: true, required: false
-  private _type?: string;
+  private _type?: string | undefined; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string) {
+  public set type(value: string | undefined) {
     this._type = value;
   }
   public resetType() {

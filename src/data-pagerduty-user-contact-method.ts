@@ -72,7 +72,7 @@ export class DataPagerdutyUserContactMethod extends cdktf.TerraformDataSource {
   }
 
   // label - computed: false, optional: false, required: true
-  private _label: string;
+  private _label?: string; 
   public get label() {
     return this.getStringAttribute('label');
   }
@@ -85,7 +85,7 @@ export class DataPagerdutyUserContactMethod extends cdktf.TerraformDataSource {
   }
 
   // type - computed: false, optional: false, required: true
-  private _type: string;
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
@@ -98,7 +98,7 @@ export class DataPagerdutyUserContactMethod extends cdktf.TerraformDataSource {
   }
 
   // user_id - computed: false, optional: false, required: true
-  private _userId: string;
+  private _userId?: string; 
   public get userId() {
     return this.getStringAttribute('user_id');
   }

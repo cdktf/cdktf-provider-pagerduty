@@ -93,11 +93,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // color - computed: true, optional: true, required: false
-  private _color?: string;
+  private _color?: string | undefined; 
   public get color() {
     return this.getStringAttribute('color');
   }
-  public set color(value: string) {
+  public set color(value: string | undefined) {
     this._color = value;
   }
   public resetColor() {
@@ -109,11 +109,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string;
+  private _description?: string | undefined; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
   public resetDescription() {
@@ -125,7 +125,7 @@ export class User extends cdktf.TerraformResource {
   }
 
   // email - computed: false, optional: false, required: true
-  private _email: string;
+  private _email?: string; 
   public get email() {
     return this.getStringAttribute('email');
   }
@@ -149,15 +149,15 @@ export class User extends cdktf.TerraformResource {
 
   // invitation_sent - computed: true, optional: false, required: false
   public get invitationSent() {
-    return this.getBooleanAttribute('invitation_sent');
+    return this.getBooleanAttribute('invitation_sent') as any;
   }
 
   // job_title - computed: false, optional: true, required: false
-  private _jobTitle?: string;
+  private _jobTitle?: string | undefined; 
   public get jobTitle() {
     return this.getStringAttribute('job_title');
   }
-  public set jobTitle(value: string ) {
+  public set jobTitle(value: string | undefined) {
     this._jobTitle = value;
   }
   public resetJobTitle() {
@@ -169,7 +169,7 @@ export class User extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: false, required: true
-  private _name: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -182,11 +182,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // role - computed: false, optional: true, required: false
-  private _role?: string;
+  private _role?: string | undefined; 
   public get role() {
     return this.getStringAttribute('role');
   }
-  public set role(value: string ) {
+  public set role(value: string | undefined) {
     this._role = value;
   }
   public resetRole() {
@@ -198,11 +198,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // teams - computed: true, optional: true, required: false
-  private _teams?: string[];
+  private _teams?: string[] | undefined; 
   public get teams() {
     return this.getListAttribute('teams');
   }
-  public set teams(value: string[]) {
+  public set teams(value: string[] | undefined) {
     this._teams = value;
   }
   public resetTeams() {
@@ -214,11 +214,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // time_zone - computed: true, optional: true, required: false
-  private _timeZone?: string;
+  private _timeZone?: string | undefined; 
   public get timeZone() {
     return this.getStringAttribute('time_zone');
   }
-  public set timeZone(value: string) {
+  public set timeZone(value: string | undefined) {
     this._timeZone = value;
   }
   public resetTimeZone() {

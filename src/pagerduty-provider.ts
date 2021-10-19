@@ -63,11 +63,11 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   // ==========
 
   // skip_credentials_validation - computed: false, optional: true, required: false
-  private _skipCredentialsValidation?: boolean | cdktf.IResolvable;
+  private _skipCredentialsValidation?: boolean | cdktf.IResolvable | undefined; 
   public get skipCredentialsValidation() {
     return this._skipCredentialsValidation;
   }
-  public set skipCredentialsValidation(value: boolean | cdktf.IResolvable  | undefined) {
+  public set skipCredentialsValidation(value: boolean | cdktf.IResolvable | undefined| undefined) {
     this._skipCredentialsValidation = value;
   }
   public resetSkipCredentialsValidation() {
@@ -79,11 +79,11 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   }
 
   // token - computed: false, optional: false, required: true
-  private _token: string;
+  private _token?: string; 
   public get token() {
     return this._token;
   }
-  public set token(value: string) {
+  public set token(value: string| undefined) {
     this._token = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -92,11 +92,11 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   }
 
   // alias - computed: false, optional: true, required: false
-  private _alias?: string;
+  private _alias?: string | undefined; 
   public get alias() {
     return this._alias;
   }
-  public set alias(value: string  | undefined) {
+  public set alias(value: string | undefined| undefined) {
     this._alias = value;
   }
   public resetAlias() {

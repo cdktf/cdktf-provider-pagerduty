@@ -68,11 +68,11 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string;
+  private _description?: string | undefined; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
   public resetDescription() {
@@ -84,7 +84,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
   }
 
   // end_time - computed: false, optional: false, required: true
-  private _endTime: string;
+  private _endTime?: string; 
   public get endTime() {
     return this.getStringAttribute('end_time');
   }
@@ -102,7 +102,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
   }
 
   // services - computed: false, optional: false, required: true
-  private _services: string[];
+  private _services?: string[]; 
   public get services() {
     return this.getListAttribute('services');
   }
@@ -115,7 +115,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
   }
 
   // start_time - computed: false, optional: false, required: true
-  private _startTime: string;
+  private _startTime?: string; 
   public get startTime() {
     return this.getStringAttribute('start_time');
   }

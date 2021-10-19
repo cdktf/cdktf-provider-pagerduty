@@ -88,11 +88,11 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   }
 
   // integration_email - computed: true, optional: true, required: false
-  private _integrationEmail?: string;
+  private _integrationEmail?: string | undefined; 
   public get integrationEmail() {
     return this.getStringAttribute('integration_email');
   }
-  public set integrationEmail(value: string) {
+  public set integrationEmail(value: string | undefined) {
     this._integrationEmail = value;
   }
   public resetIntegrationEmail() {
@@ -104,11 +104,11 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   }
 
   // integration_key - computed: true, optional: true, required: false
-  private _integrationKey?: string;
+  private _integrationKey?: string | undefined; 
   public get integrationKey() {
     return this.getStringAttribute('integration_key');
   }
-  public set integrationKey(value: string) {
+  public set integrationKey(value: string | undefined) {
     this._integrationKey = value;
   }
   public resetIntegrationKey() {
@@ -120,11 +120,11 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string;
+  private _name?: string | undefined; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string ) {
+  public set name(value: string | undefined) {
     this._name = value;
   }
   public resetName() {
@@ -136,7 +136,7 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   }
 
   // service - computed: false, optional: false, required: true
-  private _service: string;
+  private _service?: string; 
   public get service() {
     return this.getStringAttribute('service');
   }
@@ -149,11 +149,11 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   }
 
   // type - computed: true, optional: true, required: false
-  private _type?: string;
+  private _type?: string | undefined; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string) {
+  public set type(value: string | undefined) {
     this._type = value;
   }
   public resetType() {
@@ -165,11 +165,11 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   }
 
   // vendor - computed: true, optional: true, required: false
-  private _vendor?: string;
+  private _vendor?: string | undefined; 
   public get vendor() {
     return this.getStringAttribute('vendor');
   }
-  public set vendor(value: string) {
+  public set vendor(value: string | undefined) {
     this._vendor = value;
   }
   public resetVendor() {

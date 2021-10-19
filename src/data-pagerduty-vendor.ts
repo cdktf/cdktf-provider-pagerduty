@@ -63,7 +63,7 @@ export class DataPagerdutyVendor extends cdktf.TerraformDataSource {
   }
 
   // name - computed: false, optional: false, required: true
-  private _name: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -76,11 +76,11 @@ export class DataPagerdutyVendor extends cdktf.TerraformDataSource {
   }
 
   // name_regex - computed: false, optional: true, required: false
-  private _nameRegex?: string;
+  private _nameRegex?: string | undefined; 
   public get nameRegex() {
     return this.getStringAttribute('name_regex');
   }
-  public set nameRegex(value: string ) {
+  public set nameRegex(value: string | undefined) {
     this._nameRegex = value;
   }
   public resetNameRegex() {

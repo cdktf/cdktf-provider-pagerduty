@@ -68,8 +68,9 @@ export class UserNotificationRule extends cdktf.TerraformResource {
   // ==========
 
   // contact_method - computed: false, optional: false, required: true
-  private _contactMethod: { [key: string]: string } | cdktf.IResolvable;
+  private _contactMethod?: { [key: string]: string } | cdktf.IResolvable; 
   public get contactMethod() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('contact_method') as any;
   }
   public set contactMethod(value: { [key: string]: string } | cdktf.IResolvable) {
@@ -86,7 +87,7 @@ export class UserNotificationRule extends cdktf.TerraformResource {
   }
 
   // start_delay_in_minutes - computed: false, optional: false, required: true
-  private _startDelayInMinutes: number;
+  private _startDelayInMinutes?: number; 
   public get startDelayInMinutes() {
     return this.getNumberAttribute('start_delay_in_minutes');
   }
@@ -99,7 +100,7 @@ export class UserNotificationRule extends cdktf.TerraformResource {
   }
 
   // urgency - computed: false, optional: false, required: true
-  private _urgency: string;
+  private _urgency?: string; 
   public get urgency() {
     return this.getStringAttribute('urgency');
   }
@@ -112,7 +113,7 @@ export class UserNotificationRule extends cdktf.TerraformResource {
   }
 
   // user_id - computed: false, optional: false, required: true
-  private _userId: string;
+  private _userId?: string; 
   public get userId() {
     return this.getStringAttribute('user_id');
   }
