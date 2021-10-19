@@ -24,19 +24,19 @@ export interface RulesetRuleConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#actions RulesetRule#actions}
   */
-  readonly actions?: RulesetRuleActions[];
+  readonly actions?: RulesetRuleActions;
   /**
   * conditions block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#conditions RulesetRule#conditions}
   */
-  readonly conditions?: RulesetRuleConditions[];
+  readonly conditions?: RulesetRuleConditions;
   /**
   * time_frame block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#time_frame RulesetRule#time_frame}
   */
-  readonly timeFrame?: RulesetRuleTimeFrame[];
+  readonly timeFrame?: RulesetRuleTimeFrame;
   /**
   * variable block
   * 
@@ -53,6 +53,9 @@ export interface RulesetRuleActionsAnnotate {
 
 function rulesetRuleActionsAnnotateToTerraform(struct?: RulesetRuleActionsAnnotate): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     value: cdktf.stringToTerraform(struct!.value),
   }
@@ -67,6 +70,9 @@ export interface RulesetRuleActionsEventAction {
 
 function rulesetRuleActionsEventActionToTerraform(struct?: RulesetRuleActionsEventAction): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     value: cdktf.stringToTerraform(struct!.value),
   }
@@ -93,6 +99,9 @@ export interface RulesetRuleActionsExtractions {
 
 function rulesetRuleActionsExtractionsToTerraform(struct?: RulesetRuleActionsExtractions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     regex: cdktf.stringToTerraform(struct!.regex),
     source: cdktf.stringToTerraform(struct!.source),
@@ -110,6 +119,9 @@ export interface RulesetRuleActionsPriority {
 
 function rulesetRuleActionsPriorityToTerraform(struct?: RulesetRuleActionsPriority): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     value: cdktf.stringToTerraform(struct!.value),
   }
@@ -124,6 +136,9 @@ export interface RulesetRuleActionsRoute {
 
 function rulesetRuleActionsRouteToTerraform(struct?: RulesetRuleActionsRoute): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     value: cdktf.stringToTerraform(struct!.value),
   }
@@ -138,6 +153,9 @@ export interface RulesetRuleActionsSeverity {
 
 function rulesetRuleActionsSeverityToTerraform(struct?: RulesetRuleActionsSeverity): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     value: cdktf.stringToTerraform(struct!.value),
   }
@@ -164,6 +182,9 @@ export interface RulesetRuleActionsSuppress {
 
 function rulesetRuleActionsSuppressToTerraform(struct?: RulesetRuleActionsSuppress): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     threshold_time_amount: cdktf.numberToTerraform(struct!.thresholdTimeAmount),
     threshold_time_unit: cdktf.stringToTerraform(struct!.thresholdTimeUnit),
@@ -181,6 +202,9 @@ export interface RulesetRuleActionsSuspend {
 
 function rulesetRuleActionsSuspendToTerraform(struct?: RulesetRuleActionsSuspend): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     value: cdktf.numberToTerraform(struct!.value),
   }
@@ -237,8 +261,11 @@ export interface RulesetRuleActions {
   readonly suspend?: RulesetRuleActionsSuspend[];
 }
 
-function rulesetRuleActionsToTerraform(struct?: RulesetRuleActions): any {
+function rulesetRuleActionsToTerraform(struct?: RulesetRuleActionsOutputReference | RulesetRuleActions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     annotate: cdktf.listMapper(rulesetRuleActionsAnnotateToTerraform)(struct!.annotate),
     event_action: cdktf.listMapper(rulesetRuleActionsEventActionToTerraform)(struct!.eventAction),
@@ -251,6 +278,152 @@ function rulesetRuleActionsToTerraform(struct?: RulesetRuleActions): any {
   }
 }
 
+export class RulesetRuleActionsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // annotate - computed: false, optional: true, required: false
+  private _annotate?: RulesetRuleActionsAnnotate[] | undefined; 
+  public get annotate() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('annotate') as any;
+  }
+  public set annotate(value: RulesetRuleActionsAnnotate[] | undefined) {
+    this._annotate = value;
+  }
+  public resetAnnotate() {
+    this._annotate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get annotateInput() {
+    return this._annotate
+  }
+
+  // event_action - computed: false, optional: true, required: false
+  private _eventAction?: RulesetRuleActionsEventAction[] | undefined; 
+  public get eventAction() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('event_action') as any;
+  }
+  public set eventAction(value: RulesetRuleActionsEventAction[] | undefined) {
+    this._eventAction = value;
+  }
+  public resetEventAction() {
+    this._eventAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventActionInput() {
+    return this._eventAction
+  }
+
+  // extractions - computed: false, optional: true, required: false
+  private _extractions?: RulesetRuleActionsExtractions[] | undefined; 
+  public get extractions() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('extractions') as any;
+  }
+  public set extractions(value: RulesetRuleActionsExtractions[] | undefined) {
+    this._extractions = value;
+  }
+  public resetExtractions() {
+    this._extractions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extractionsInput() {
+    return this._extractions
+  }
+
+  // priority - computed: false, optional: true, required: false
+  private _priority?: RulesetRuleActionsPriority[] | undefined; 
+  public get priority() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('priority') as any;
+  }
+  public set priority(value: RulesetRuleActionsPriority[] | undefined) {
+    this._priority = value;
+  }
+  public resetPriority() {
+    this._priority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority
+  }
+
+  // route - computed: false, optional: true, required: false
+  private _route?: RulesetRuleActionsRoute[] | undefined; 
+  public get route() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('route') as any;
+  }
+  public set route(value: RulesetRuleActionsRoute[] | undefined) {
+    this._route = value;
+  }
+  public resetRoute() {
+    this._route = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeInput() {
+    return this._route
+  }
+
+  // severity - computed: false, optional: true, required: false
+  private _severity?: RulesetRuleActionsSeverity[] | undefined; 
+  public get severity() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('severity') as any;
+  }
+  public set severity(value: RulesetRuleActionsSeverity[] | undefined) {
+    this._severity = value;
+  }
+  public resetSeverity() {
+    this._severity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get severityInput() {
+    return this._severity
+  }
+
+  // suppress - computed: false, optional: true, required: false
+  private _suppress?: RulesetRuleActionsSuppress[] | undefined; 
+  public get suppress() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('suppress') as any;
+  }
+  public set suppress(value: RulesetRuleActionsSuppress[] | undefined) {
+    this._suppress = value;
+  }
+  public resetSuppress() {
+    this._suppress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get suppressInput() {
+    return this._suppress
+  }
+
+  // suspend - computed: false, optional: true, required: false
+  private _suspend?: RulesetRuleActionsSuspend[] | undefined; 
+  public get suspend() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('suspend') as any;
+  }
+  public set suspend(value: RulesetRuleActionsSuspend[] | undefined) {
+    this._suspend = value;
+  }
+  public resetSuspend() {
+    this._suspend = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get suspendInput() {
+    return this._suspend
+  }
+}
 export interface RulesetRuleConditionsSubconditionsParameter {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#path RulesetRule#path}
@@ -264,6 +437,9 @@ export interface RulesetRuleConditionsSubconditionsParameter {
 
 function rulesetRuleConditionsSubconditionsParameterToTerraform(struct?: RulesetRuleConditionsSubconditionsParameter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     path: cdktf.stringToTerraform(struct!.path),
     value: cdktf.stringToTerraform(struct!.value),
@@ -285,6 +461,9 @@ export interface RulesetRuleConditionsSubconditions {
 
 function rulesetRuleConditionsSubconditionsToTerraform(struct?: RulesetRuleConditionsSubconditions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     operator: cdktf.stringToTerraform(struct!.operator),
     parameter: cdktf.listMapper(rulesetRuleConditionsSubconditionsParameterToTerraform)(struct!.parameter),
@@ -304,14 +483,60 @@ export interface RulesetRuleConditions {
   readonly subconditions?: RulesetRuleConditionsSubconditions[];
 }
 
-function rulesetRuleConditionsToTerraform(struct?: RulesetRuleConditions): any {
+function rulesetRuleConditionsToTerraform(struct?: RulesetRuleConditionsOutputReference | RulesetRuleConditions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     operator: cdktf.stringToTerraform(struct!.operator),
     subconditions: cdktf.listMapper(rulesetRuleConditionsSubconditionsToTerraform)(struct!.subconditions),
   }
 }
 
+export class RulesetRuleConditionsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // operator - computed: false, optional: true, required: false
+  private _operator?: string | undefined; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string | undefined) {
+    this._operator = value;
+  }
+  public resetOperator() {
+    this._operator = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator
+  }
+
+  // subconditions - computed: false, optional: true, required: false
+  private _subconditions?: RulesetRuleConditionsSubconditions[] | undefined; 
+  public get subconditions() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('subconditions') as any;
+  }
+  public set subconditions(value: RulesetRuleConditionsSubconditions[] | undefined) {
+    this._subconditions = value;
+  }
+  public resetSubconditions() {
+    this._subconditions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subconditionsInput() {
+    return this._subconditions
+  }
+}
 export interface RulesetRuleTimeFrameActiveBetween {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#end_time RulesetRule#end_time}
@@ -325,6 +550,9 @@ export interface RulesetRuleTimeFrameActiveBetween {
 
 function rulesetRuleTimeFrameActiveBetweenToTerraform(struct?: RulesetRuleTimeFrameActiveBetween): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     end_time: cdktf.numberToTerraform(struct!.endTime),
     start_time: cdktf.numberToTerraform(struct!.startTime),
@@ -352,6 +580,9 @@ export interface RulesetRuleTimeFrameScheduledWeekly {
 
 function rulesetRuleTimeFrameScheduledWeeklyToTerraform(struct?: RulesetRuleTimeFrameScheduledWeekly): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     duration: cdktf.numberToTerraform(struct!.duration),
     start_time: cdktf.numberToTerraform(struct!.startTime),
@@ -375,14 +606,61 @@ export interface RulesetRuleTimeFrame {
   readonly scheduledWeekly?: RulesetRuleTimeFrameScheduledWeekly[];
 }
 
-function rulesetRuleTimeFrameToTerraform(struct?: RulesetRuleTimeFrame): any {
+function rulesetRuleTimeFrameToTerraform(struct?: RulesetRuleTimeFrameOutputReference | RulesetRuleTimeFrame): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     active_between: cdktf.listMapper(rulesetRuleTimeFrameActiveBetweenToTerraform)(struct!.activeBetween),
     scheduled_weekly: cdktf.listMapper(rulesetRuleTimeFrameScheduledWeeklyToTerraform)(struct!.scheduledWeekly),
   }
 }
 
+export class RulesetRuleTimeFrameOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // active_between - computed: false, optional: true, required: false
+  private _activeBetween?: RulesetRuleTimeFrameActiveBetween[] | undefined; 
+  public get activeBetween() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('active_between') as any;
+  }
+  public set activeBetween(value: RulesetRuleTimeFrameActiveBetween[] | undefined) {
+    this._activeBetween = value;
+  }
+  public resetActiveBetween() {
+    this._activeBetween = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get activeBetweenInput() {
+    return this._activeBetween
+  }
+
+  // scheduled_weekly - computed: false, optional: true, required: false
+  private _scheduledWeekly?: RulesetRuleTimeFrameScheduledWeekly[] | undefined; 
+  public get scheduledWeekly() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('scheduled_weekly') as any;
+  }
+  public set scheduledWeekly(value: RulesetRuleTimeFrameScheduledWeekly[] | undefined) {
+    this._scheduledWeekly = value;
+  }
+  public resetScheduledWeekly() {
+    this._scheduledWeekly = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scheduledWeeklyInput() {
+    return this._scheduledWeekly
+  }
+}
 export interface RulesetRuleVariableParameters {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#path RulesetRule#path}
@@ -396,6 +674,9 @@ export interface RulesetRuleVariableParameters {
 
 function rulesetRuleVariableParametersToTerraform(struct?: RulesetRuleVariableParameters): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     path: cdktf.stringToTerraform(struct!.path),
     value: cdktf.stringToTerraform(struct!.value),
@@ -421,6 +702,9 @@ export interface RulesetRuleVariable {
 
 function rulesetRuleVariableToTerraform(struct?: RulesetRuleVariable): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     name: cdktf.stringToTerraform(struct!.name),
     type: cdktf.stringToTerraform(struct!.type),
@@ -475,11 +759,11 @@ export class RulesetRule extends cdktf.TerraformResource {
   // ==========
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable;
+  private _disabled?: boolean | cdktf.IResolvable | undefined; 
   public get disabled() {
-    return this.getBooleanAttribute('disabled');
+    return this.getBooleanAttribute('disabled') as any;
   }
-  public set disabled(value: boolean | cdktf.IResolvable ) {
+  public set disabled(value: boolean | cdktf.IResolvable | undefined) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -496,11 +780,11 @@ export class RulesetRule extends cdktf.TerraformResource {
   }
 
   // position - computed: false, optional: true, required: false
-  private _position?: number;
+  private _position?: number | undefined; 
   public get position() {
     return this.getNumberAttribute('position');
   }
-  public set position(value: number ) {
+  public set position(value: number | undefined) {
     this._position = value;
   }
   public resetPosition() {
@@ -512,7 +796,7 @@ export class RulesetRule extends cdktf.TerraformResource {
   }
 
   // ruleset - computed: false, optional: false, required: true
-  private _ruleset: string;
+  private _ruleset?: string; 
   public get ruleset() {
     return this.getStringAttribute('ruleset');
   }
@@ -525,11 +809,12 @@ export class RulesetRule extends cdktf.TerraformResource {
   }
 
   // actions - computed: false, optional: true, required: false
-  private _actions?: RulesetRuleActions[];
+  private _actions?: RulesetRuleActions | undefined; 
+  private __actionsOutput = new RulesetRuleActionsOutputReference(this as any, "actions", true);
   public get actions() {
-    return this.interpolationForAttribute('actions') as any;
+    return this.__actionsOutput;
   }
-  public set actions(value: RulesetRuleActions[] ) {
+  public putActions(value: RulesetRuleActions | undefined) {
     this._actions = value;
   }
   public resetActions() {
@@ -541,11 +826,12 @@ export class RulesetRule extends cdktf.TerraformResource {
   }
 
   // conditions - computed: false, optional: true, required: false
-  private _conditions?: RulesetRuleConditions[];
+  private _conditions?: RulesetRuleConditions | undefined; 
+  private __conditionsOutput = new RulesetRuleConditionsOutputReference(this as any, "conditions", true);
   public get conditions() {
-    return this.interpolationForAttribute('conditions') as any;
+    return this.__conditionsOutput;
   }
-  public set conditions(value: RulesetRuleConditions[] ) {
+  public putConditions(value: RulesetRuleConditions | undefined) {
     this._conditions = value;
   }
   public resetConditions() {
@@ -557,11 +843,12 @@ export class RulesetRule extends cdktf.TerraformResource {
   }
 
   // time_frame - computed: false, optional: true, required: false
-  private _timeFrame?: RulesetRuleTimeFrame[];
+  private _timeFrame?: RulesetRuleTimeFrame | undefined; 
+  private __timeFrameOutput = new RulesetRuleTimeFrameOutputReference(this as any, "time_frame", true);
   public get timeFrame() {
-    return this.interpolationForAttribute('time_frame') as any;
+    return this.__timeFrameOutput;
   }
-  public set timeFrame(value: RulesetRuleTimeFrame[] ) {
+  public putTimeFrame(value: RulesetRuleTimeFrame | undefined) {
     this._timeFrame = value;
   }
   public resetTimeFrame() {
@@ -573,11 +860,12 @@ export class RulesetRule extends cdktf.TerraformResource {
   }
 
   // variable - computed: false, optional: true, required: false
-  private _variable?: RulesetRuleVariable[];
+  private _variable?: RulesetRuleVariable[] | undefined; 
   public get variable() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('variable') as any;
   }
-  public set variable(value: RulesetRuleVariable[] ) {
+  public set variable(value: RulesetRuleVariable[] | undefined) {
     this._variable = value;
   }
   public resetVariable() {
@@ -597,9 +885,9 @@ export class RulesetRule extends cdktf.TerraformResource {
       disabled: cdktf.booleanToTerraform(this._disabled),
       position: cdktf.numberToTerraform(this._position),
       ruleset: cdktf.stringToTerraform(this._ruleset),
-      actions: cdktf.listMapper(rulesetRuleActionsToTerraform)(this._actions),
-      conditions: cdktf.listMapper(rulesetRuleConditionsToTerraform)(this._conditions),
-      time_frame: cdktf.listMapper(rulesetRuleTimeFrameToTerraform)(this._timeFrame),
+      actions: rulesetRuleActionsToTerraform(this._actions),
+      conditions: rulesetRuleConditionsToTerraform(this._conditions),
+      time_frame: rulesetRuleTimeFrameToTerraform(this._timeFrame),
       variable: cdktf.listMapper(rulesetRuleVariableToTerraform)(this._variable),
     };
   }

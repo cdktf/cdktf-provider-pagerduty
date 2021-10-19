@@ -78,7 +78,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
   // ==========
 
   // address - computed: false, optional: false, required: true
-  private _address: string;
+  private _address?: string; 
   public get address() {
     return this.getStringAttribute('address');
   }
@@ -92,15 +92,15 @@ export class UserContactMethod extends cdktf.TerraformResource {
 
   // blacklisted - computed: true, optional: false, required: false
   public get blacklisted() {
-    return this.getBooleanAttribute('blacklisted');
+    return this.getBooleanAttribute('blacklisted') as any;
   }
 
   // country_code - computed: false, optional: true, required: false
-  private _countryCode?: number;
+  private _countryCode?: number | undefined; 
   public get countryCode() {
     return this.getNumberAttribute('country_code');
   }
-  public set countryCode(value: number ) {
+  public set countryCode(value: number | undefined) {
     this._countryCode = value;
   }
   public resetCountryCode() {
@@ -113,7 +113,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled');
+    return this.getBooleanAttribute('enabled') as any;
   }
 
   // id - computed: true, optional: true, required: false
@@ -122,7 +122,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
   }
 
   // label - computed: false, optional: false, required: true
-  private _label: string;
+  private _label?: string; 
   public get label() {
     return this.getStringAttribute('label');
   }
@@ -135,11 +135,11 @@ export class UserContactMethod extends cdktf.TerraformResource {
   }
 
   // send_short_email - computed: false, optional: true, required: false
-  private _sendShortEmail?: boolean | cdktf.IResolvable;
+  private _sendShortEmail?: boolean | cdktf.IResolvable | undefined; 
   public get sendShortEmail() {
-    return this.getBooleanAttribute('send_short_email');
+    return this.getBooleanAttribute('send_short_email') as any;
   }
-  public set sendShortEmail(value: boolean | cdktf.IResolvable ) {
+  public set sendShortEmail(value: boolean | cdktf.IResolvable | undefined) {
     this._sendShortEmail = value;
   }
   public resetSendShortEmail() {
@@ -151,7 +151,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
   }
 
   // type - computed: false, optional: false, required: true
-  private _type: string;
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
@@ -164,7 +164,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
   }
 
   // user_id - computed: false, optional: false, required: true
-  private _userId: string;
+  private _userId?: string; 
   public get userId() {
     return this.getStringAttribute('user_id');
   }

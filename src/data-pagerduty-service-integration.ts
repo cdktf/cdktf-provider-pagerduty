@@ -70,7 +70,7 @@ export class DataPagerdutyServiceIntegration extends cdktf.TerraformDataSource {
   }
 
   // integration_summary - computed: false, optional: false, required: true
-  private _integrationSummary: string;
+  private _integrationSummary?: string; 
   public get integrationSummary() {
     return this.getStringAttribute('integration_summary');
   }
@@ -83,7 +83,7 @@ export class DataPagerdutyServiceIntegration extends cdktf.TerraformDataSource {
   }
 
   // service_name - computed: false, optional: false, required: true
-  private _serviceName: string;
+  private _serviceName?: string; 
   public get serviceName() {
     return this.getStringAttribute('service_name');
   }

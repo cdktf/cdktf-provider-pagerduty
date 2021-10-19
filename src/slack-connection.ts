@@ -51,6 +51,9 @@ export interface SlackConnectionConfigA {
 
 function slackConnectionConfigAToTerraform(struct?: SlackConnectionConfigA): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
     priorities: cdktf.listMapper(cdktf.stringToTerraform)(struct!.priorities),
@@ -104,7 +107,7 @@ export class SlackConnection extends cdktf.TerraformResource {
   // ==========
 
   // channel_id - computed: false, optional: false, required: true
-  private _channelId: string;
+  private _channelId?: string; 
   public get channelId() {
     return this.getStringAttribute('channel_id');
   }
@@ -127,7 +130,7 @@ export class SlackConnection extends cdktf.TerraformResource {
   }
 
   // notification_type - computed: false, optional: false, required: true
-  private _notificationType: string;
+  private _notificationType?: string; 
   public get notificationType() {
     return this.getStringAttribute('notification_type');
   }
@@ -140,7 +143,7 @@ export class SlackConnection extends cdktf.TerraformResource {
   }
 
   // source_id - computed: false, optional: false, required: true
-  private _sourceId: string;
+  private _sourceId?: string; 
   public get sourceId() {
     return this.getStringAttribute('source_id');
   }
@@ -158,7 +161,7 @@ export class SlackConnection extends cdktf.TerraformResource {
   }
 
   // source_type - computed: false, optional: false, required: true
-  private _sourceType: string;
+  private _sourceType?: string; 
   public get sourceType() {
     return this.getStringAttribute('source_type');
   }
@@ -171,7 +174,7 @@ export class SlackConnection extends cdktf.TerraformResource {
   }
 
   // workspace_id - computed: false, optional: false, required: true
-  private _workspaceId: string;
+  private _workspaceId?: string; 
   public get workspaceId() {
     return this.getStringAttribute('workspace_id');
   }
@@ -184,8 +187,9 @@ export class SlackConnection extends cdktf.TerraformResource {
   }
 
   // config - computed: false, optional: false, required: true
-  private _config: SlackConnectionConfigA[];
+  private _config?: SlackConnectionConfigA[]; 
   public get config() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('config') as any;
   }
   public set config(value: SlackConnectionConfigA[]) {

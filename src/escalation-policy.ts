@@ -43,6 +43,9 @@ export interface EscalationPolicyRuleTarget {
 
 function escalationPolicyRuleTargetToTerraform(struct?: EscalationPolicyRuleTarget): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     id: cdktf.stringToTerraform(struct!.id),
     type: cdktf.stringToTerraform(struct!.type),
@@ -64,6 +67,9 @@ export interface EscalationPolicyRule {
 
 function escalationPolicyRuleToTerraform(struct?: EscalationPolicyRule): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     escalation_delay_in_minutes: cdktf.numberToTerraform(struct!.escalationDelayInMinutes),
     target: cdktf.listMapper(escalationPolicyRuleTargetToTerraform)(struct!.target),
@@ -115,11 +121,11 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string;
+  private _description?: string | undefined; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
   public resetDescription() {
@@ -136,7 +142,7 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: false, required: true
-  private _name: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -149,11 +155,11 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   }
 
   // num_loops - computed: false, optional: true, required: false
-  private _numLoops?: number;
+  private _numLoops?: number | undefined; 
   public get numLoops() {
     return this.getNumberAttribute('num_loops');
   }
-  public set numLoops(value: number ) {
+  public set numLoops(value: number | undefined) {
     this._numLoops = value;
   }
   public resetNumLoops() {
@@ -165,11 +171,11 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   }
 
   // teams - computed: false, optional: true, required: false
-  private _teams?: string[];
+  private _teams?: string[] | undefined; 
   public get teams() {
     return this.getListAttribute('teams');
   }
-  public set teams(value: string[] ) {
+  public set teams(value: string[] | undefined) {
     this._teams = value;
   }
   public resetTeams() {
@@ -181,8 +187,9 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   }
 
   // rule - computed: false, optional: false, required: true
-  private _rule: EscalationPolicyRule[];
+  private _rule?: EscalationPolicyRule[]; 
   public get rule() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('rule') as any;
   }
   public set rule(value: EscalationPolicyRule[]) {

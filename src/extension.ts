@@ -78,11 +78,11 @@ export class Extension extends cdktf.TerraformResource {
   // ==========
 
   // config - computed: false, optional: true, required: false
-  private _config?: string;
+  private _config?: string | undefined; 
   public get config() {
     return this.getStringAttribute('config');
   }
-  public set config(value: string ) {
+  public set config(value: string | undefined) {
     this._config = value;
   }
   public resetConfig() {
@@ -94,11 +94,11 @@ export class Extension extends cdktf.TerraformResource {
   }
 
   // endpoint_url - computed: false, optional: true, required: false
-  private _endpointUrl?: string;
+  private _endpointUrl?: string | undefined; 
   public get endpointUrl() {
     return this.getStringAttribute('endpoint_url');
   }
-  public set endpointUrl(value: string ) {
+  public set endpointUrl(value: string | undefined) {
     this._endpointUrl = value;
   }
   public resetEndpointUrl() {
@@ -110,7 +110,7 @@ export class Extension extends cdktf.TerraformResource {
   }
 
   // extension_objects - computed: false, optional: false, required: true
-  private _extensionObjects: string[];
+  private _extensionObjects?: string[]; 
   public get extensionObjects() {
     return this.getListAttribute('extension_objects');
   }
@@ -123,7 +123,7 @@ export class Extension extends cdktf.TerraformResource {
   }
 
   // extension_schema - computed: false, optional: false, required: true
-  private _extensionSchema: string;
+  private _extensionSchema?: string; 
   public get extensionSchema() {
     return this.getStringAttribute('extension_schema');
   }
@@ -146,11 +146,11 @@ export class Extension extends cdktf.TerraformResource {
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string;
+  private _name?: string | undefined; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
   }
   public resetName() {
@@ -162,11 +162,11 @@ export class Extension extends cdktf.TerraformResource {
   }
 
   // type - computed: true, optional: true, required: false
-  private _type?: string;
+  private _type?: string | undefined; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string) {
+  public set type(value: string | undefined) {
     this._type = value;
   }
   public resetType() {

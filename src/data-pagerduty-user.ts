@@ -53,7 +53,7 @@ export class DataPagerdutyUser extends cdktf.TerraformDataSource {
   // ==========
 
   // email - computed: false, optional: false, required: true
-  private _email: string;
+  private _email?: string; 
   public get email() {
     return this.getStringAttribute('email');
   }
