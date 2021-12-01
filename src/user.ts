@@ -93,11 +93,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // color - computed: true, optional: true, required: false
-  private _color?: string | undefined; 
+  private _color?: string; 
   public get color() {
     return this.getStringAttribute('color');
   }
-  public set color(value: string | undefined) {
+  public set color(value: string) {
     this._color = value;
   }
   public resetColor() {
@@ -105,15 +105,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get colorInput() {
-    return this._color
+    return this._color;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -121,7 +121,7 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // email - computed: false, optional: false, required: true
@@ -134,7 +134,7 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get emailInput() {
-    return this._email
+    return this._email;
   }
 
   // html_url - computed: true, optional: false, required: false
@@ -153,11 +153,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // job_title - computed: false, optional: true, required: false
-  private _jobTitle?: string | undefined; 
+  private _jobTitle?: string; 
   public get jobTitle() {
     return this.getStringAttribute('job_title');
   }
-  public set jobTitle(value: string | undefined) {
+  public set jobTitle(value: string) {
     this._jobTitle = value;
   }
   public resetJobTitle() {
@@ -165,7 +165,7 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get jobTitleInput() {
-    return this._jobTitle
+    return this._jobTitle;
   }
 
   // name - computed: false, optional: false, required: true
@@ -178,15 +178,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // role - computed: false, optional: true, required: false
-  private _role?: string | undefined; 
+  private _role?: string; 
   public get role() {
     return this.getStringAttribute('role');
   }
-  public set role(value: string | undefined) {
+  public set role(value: string) {
     this._role = value;
   }
   public resetRole() {
@@ -194,15 +194,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get roleInput() {
-    return this._role
+    return this._role;
   }
 
   // teams - computed: true, optional: true, required: false
-  private _teams?: string[] | undefined; 
+  private _teams?: string[]; 
   public get teams() {
     return this.getListAttribute('teams');
   }
-  public set teams(value: string[] | undefined) {
+  public set teams(value: string[]) {
     this._teams = value;
   }
   public resetTeams() {
@@ -210,15 +210,15 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get teamsInput() {
-    return this._teams
+    return this._teams;
   }
 
   // time_zone - computed: true, optional: true, required: false
-  private _timeZone?: string | undefined; 
+  private _timeZone?: string; 
   public get timeZone() {
     return this.getStringAttribute('time_zone');
   }
-  public set timeZone(value: string | undefined) {
+  public set timeZone(value: string) {
     this._timeZone = value;
   }
   public resetTimeZone() {
@@ -226,7 +226,7 @@ export class User extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get timeZoneInput() {
-    return this._timeZone
+    return this._timeZone;
   }
 
   // =========

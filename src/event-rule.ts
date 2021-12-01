@@ -72,15 +72,15 @@ export class EventRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get actionJsonInput() {
-    return this._actionJson
+    return this._actionJson;
   }
 
   // advanced_condition_json - computed: false, optional: true, required: false
-  private _advancedConditionJson?: string | undefined; 
+  private _advancedConditionJson?: string; 
   public get advancedConditionJson() {
     return this.getStringAttribute('advanced_condition_json');
   }
-  public set advancedConditionJson(value: string | undefined) {
+  public set advancedConditionJson(value: string) {
     this._advancedConditionJson = value;
   }
   public resetAdvancedConditionJson() {
@@ -88,7 +88,7 @@ export class EventRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get advancedConditionJsonInput() {
-    return this._advancedConditionJson
+    return this._advancedConditionJson;
   }
 
   // catch_all - computed: true, optional: false, required: false
@@ -106,7 +106,7 @@ export class EventRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get conditionJsonInput() {
-    return this._conditionJson
+    return this._conditionJson;
   }
 
   // id - computed: true, optional: true, required: false

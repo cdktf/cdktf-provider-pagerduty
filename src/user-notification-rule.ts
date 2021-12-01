@@ -78,7 +78,7 @@ export class UserNotificationRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get contactMethodInput() {
-    return this._contactMethod
+    return this._contactMethod;
   }
 
   // id - computed: true, optional: true, required: false
@@ -96,7 +96,7 @@ export class UserNotificationRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get startDelayInMinutesInput() {
-    return this._startDelayInMinutes
+    return this._startDelayInMinutes;
   }
 
   // urgency - computed: false, optional: false, required: true
@@ -109,7 +109,7 @@ export class UserNotificationRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get urgencyInput() {
-    return this._urgency
+    return this._urgency;
   }
 
   // user_id - computed: false, optional: false, required: true
@@ -122,7 +122,7 @@ export class UserNotificationRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get userIdInput() {
-    return this._userId
+    return this._userId;
   }
 
   // =========

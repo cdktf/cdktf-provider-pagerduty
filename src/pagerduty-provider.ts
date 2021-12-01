@@ -63,11 +63,11 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   // ==========
 
   // skip_credentials_validation - computed: false, optional: true, required: false
-  private _skipCredentialsValidation?: boolean | cdktf.IResolvable | undefined; 
+  private _skipCredentialsValidation?: boolean | cdktf.IResolvable; 
   public get skipCredentialsValidation() {
     return this._skipCredentialsValidation;
   }
-  public set skipCredentialsValidation(value: boolean | cdktf.IResolvable | undefined| undefined) {
+  public set skipCredentialsValidation(value: boolean | cdktf.IResolvable | undefined) {
     this._skipCredentialsValidation = value;
   }
   public resetSkipCredentialsValidation() {
@@ -75,7 +75,7 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get skipCredentialsValidationInput() {
-    return this._skipCredentialsValidation
+    return this._skipCredentialsValidation;
   }
 
   // token - computed: false, optional: false, required: true
@@ -83,20 +83,20 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   public get token() {
     return this._token;
   }
-  public set token(value: string| undefined) {
+  public set token(value: string | undefined) {
     this._token = value;
   }
   // Temporarily expose input value. Use with caution.
   public get tokenInput() {
-    return this._token
+    return this._token;
   }
 
   // alias - computed: false, optional: true, required: false
-  private _alias?: string | undefined; 
+  private _alias?: string; 
   public get alias() {
     return this._alias;
   }
-  public set alias(value: string | undefined| undefined) {
+  public set alias(value: string | undefined) {
     this._alias = value;
   }
   public resetAlias() {
@@ -104,7 +104,7 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get aliasInput() {
-    return this._alias
+    return this._alias;
   }
 
   // =========

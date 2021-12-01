@@ -68,11 +68,11 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -80,7 +80,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // end_time - computed: false, optional: false, required: true
@@ -93,7 +93,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get endTimeInput() {
-    return this._endTime
+    return this._endTime;
   }
 
   // id - computed: true, optional: true, required: false
@@ -111,7 +111,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get servicesInput() {
-    return this._services
+    return this._services;
   }
 
   // start_time - computed: false, optional: false, required: true
@@ -124,7 +124,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get startTimeInput() {
-    return this._startTime
+    return this._startTime;
   }
 
   // =========

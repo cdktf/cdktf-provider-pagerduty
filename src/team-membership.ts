@@ -68,11 +68,11 @@ export class TeamMembership extends cdktf.TerraformResource {
   }
 
   // role - computed: false, optional: true, required: false
-  private _role?: string | undefined; 
+  private _role?: string; 
   public get role() {
     return this.getStringAttribute('role');
   }
-  public set role(value: string | undefined) {
+  public set role(value: string) {
     this._role = value;
   }
   public resetRole() {
@@ -80,7 +80,7 @@ export class TeamMembership extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get roleInput() {
-    return this._role
+    return this._role;
   }
 
   // team_id - computed: false, optional: false, required: true
@@ -93,7 +93,7 @@ export class TeamMembership extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get teamIdInput() {
-    return this._teamId
+    return this._teamId;
   }
 
   // user_id - computed: false, optional: false, required: true
@@ -106,7 +106,7 @@ export class TeamMembership extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get userIdInput() {
-    return this._userId
+    return this._userId;
   }
 
   // =========

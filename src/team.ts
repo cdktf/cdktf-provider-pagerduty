@@ -63,11 +63,11 @@ export class Team extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -75,7 +75,7 @@ export class Team extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // html_url - computed: true, optional: false, required: false
@@ -98,15 +98,15 @@ export class Team extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // parent - computed: false, optional: true, required: false
-  private _parent?: string | undefined; 
+  private _parent?: string; 
   public get parent() {
     return this.getStringAttribute('parent');
   }
-  public set parent(value: string | undefined) {
+  public set parent(value: string) {
     this._parent = value;
   }
   public resetParent() {
@@ -114,7 +114,7 @@ export class Team extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get parentInput() {
-    return this._parent
+    return this._parent;
   }
 
   // =========

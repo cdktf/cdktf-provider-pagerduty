@@ -79,7 +79,7 @@ export class DataPagerdutyServiceIntegration extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get integrationSummaryInput() {
-    return this._integrationSummary
+    return this._integrationSummary;
   }
 
   // service_name - computed: false, optional: false, required: true
@@ -92,7 +92,7 @@ export class DataPagerdutyServiceIntegration extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get serviceNameInput() {
-    return this._serviceName
+    return this._serviceName;
   }
 
   // =========

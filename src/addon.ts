@@ -72,7 +72,7 @@ export class Addon extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // src - computed: false, optional: false, required: true
@@ -85,7 +85,7 @@ export class Addon extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get srcInput() {
-    return this._src
+    return this._src;
   }
 
   // =========

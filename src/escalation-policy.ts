@@ -41,7 +41,7 @@ export interface EscalationPolicyRuleTarget {
   readonly type?: string;
 }
 
-function escalationPolicyRuleTargetToTerraform(struct?: EscalationPolicyRuleTarget): any {
+export function escalationPolicyRuleTargetToTerraform(struct?: EscalationPolicyRuleTarget): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -65,7 +65,7 @@ export interface EscalationPolicyRule {
   readonly target: EscalationPolicyRuleTarget[];
 }
 
-function escalationPolicyRuleToTerraform(struct?: EscalationPolicyRule): any {
+export function escalationPolicyRuleToTerraform(struct?: EscalationPolicyRule): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -121,11 +121,11 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -133,7 +133,7 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -151,15 +151,15 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // num_loops - computed: false, optional: true, required: false
-  private _numLoops?: number | undefined; 
+  private _numLoops?: number; 
   public get numLoops() {
     return this.getNumberAttribute('num_loops');
   }
-  public set numLoops(value: number | undefined) {
+  public set numLoops(value: number) {
     this._numLoops = value;
   }
   public resetNumLoops() {
@@ -167,15 +167,15 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get numLoopsInput() {
-    return this._numLoops
+    return this._numLoops;
   }
 
   // teams - computed: false, optional: true, required: false
-  private _teams?: string[] | undefined; 
+  private _teams?: string[]; 
   public get teams() {
     return this.getListAttribute('teams');
   }
-  public set teams(value: string[] | undefined) {
+  public set teams(value: string[]) {
     this._teams = value;
   }
   public resetTeams() {
@@ -183,7 +183,7 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get teamsInput() {
-    return this._teams
+    return this._teams;
   }
 
   // rule - computed: false, optional: false, required: true
@@ -197,7 +197,7 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ruleInput() {
-    return this._rule
+    return this._rule;
   }
 
   // =========

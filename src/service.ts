@@ -79,7 +79,7 @@ export interface ServiceAlertGroupingParametersConfig {
   readonly timeout?: number;
 }
 
-function serviceAlertGroupingParametersConfigToTerraform(struct?: ServiceAlertGroupingParametersConfigOutputReference | ServiceAlertGroupingParametersConfig): any {
+export function serviceAlertGroupingParametersConfigToTerraform(struct?: ServiceAlertGroupingParametersConfigOutputReference | ServiceAlertGroupingParametersConfig): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -101,12 +101,43 @@ export class ServiceAlertGroupingParametersConfigOutputReference extends cdktf.C
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ServiceAlertGroupingParametersConfig | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._aggregate) {
+      hasAnyValues = true;
+      internalValueResult.aggregate = this._aggregate;
+    }
+    if (this._fields) {
+      hasAnyValues = true;
+      internalValueResult.fields = this._fields;
+    }
+    if (this._timeout) {
+      hasAnyValues = true;
+      internalValueResult.timeout = this._timeout;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceAlertGroupingParametersConfig | undefined) {
+    if (value === undefined) {
+      this._aggregate = undefined;
+      this._fields = undefined;
+      this._timeout = undefined;
+    }
+    else {
+      this._aggregate = value.aggregate;
+      this._fields = value.fields;
+      this._timeout = value.timeout;
+    }
+  }
+
   // aggregate - computed: false, optional: true, required: false
-  private _aggregate?: string | undefined; 
+  private _aggregate?: string; 
   public get aggregate() {
     return this.getStringAttribute('aggregate');
   }
-  public set aggregate(value: string | undefined) {
+  public set aggregate(value: string) {
     this._aggregate = value;
   }
   public resetAggregate() {
@@ -114,15 +145,15 @@ export class ServiceAlertGroupingParametersConfigOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get aggregateInput() {
-    return this._aggregate
+    return this._aggregate;
   }
 
   // fields - computed: false, optional: true, required: false
-  private _fields?: string[] | undefined; 
+  private _fields?: string[]; 
   public get fields() {
     return this.getListAttribute('fields');
   }
-  public set fields(value: string[] | undefined) {
+  public set fields(value: string[]) {
     this._fields = value;
   }
   public resetFields() {
@@ -130,15 +161,15 @@ export class ServiceAlertGroupingParametersConfigOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get fieldsInput() {
-    return this._fields
+    return this._fields;
   }
 
   // timeout - computed: false, optional: true, required: false
-  private _timeout?: number | undefined; 
+  private _timeout?: number; 
   public get timeout() {
     return this.getNumberAttribute('timeout');
   }
-  public set timeout(value: number | undefined) {
+  public set timeout(value: number) {
     this._timeout = value;
   }
   public resetTimeout() {
@@ -146,7 +177,7 @@ export class ServiceAlertGroupingParametersConfigOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutInput() {
-    return this._timeout
+    return this._timeout;
   }
 }
 export interface ServiceAlertGroupingParameters {
@@ -162,7 +193,7 @@ export interface ServiceAlertGroupingParameters {
   readonly config?: ServiceAlertGroupingParametersConfig;
 }
 
-function serviceAlertGroupingParametersToTerraform(struct?: ServiceAlertGroupingParametersOutputReference | ServiceAlertGroupingParameters): any {
+export function serviceAlertGroupingParametersToTerraform(struct?: ServiceAlertGroupingParametersOutputReference | ServiceAlertGroupingParameters): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -183,12 +214,37 @@ export class ServiceAlertGroupingParametersOutputReference extends cdktf.Complex
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ServiceAlertGroupingParameters | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._type) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._config) {
+      hasAnyValues = true;
+      internalValueResult.config = this._config?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceAlertGroupingParameters | undefined) {
+    if (value === undefined) {
+      this._type = undefined;
+      this._config.internalValue = undefined;
+    }
+    else {
+      this._type = value.type;
+      this._config.internalValue = value.config;
+    }
+  }
+
   // type - computed: false, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -196,24 +252,23 @@ export class ServiceAlertGroupingParametersOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // config - computed: false, optional: true, required: false
-  private _config?: ServiceAlertGroupingParametersConfig | undefined; 
-  private __configOutput = new ServiceAlertGroupingParametersConfigOutputReference(this as any, "config", true);
+  private _config = new ServiceAlertGroupingParametersConfigOutputReference(this as any, "config", true);
   public get config() {
-    return this.__configOutput;
+    return this._config;
   }
-  public putConfig(value: ServiceAlertGroupingParametersConfig | undefined) {
-    this._config = value;
+  public putConfig(value: ServiceAlertGroupingParametersConfig) {
+    this._config.internalValue = value;
   }
   public resetConfig() {
-    this._config = undefined;
+    this._config.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get configInput() {
-    return this._config
+    return this._config.internalValue;
   }
 }
 export interface ServiceIncidentUrgencyRuleDuringSupportHours {
@@ -227,7 +282,7 @@ export interface ServiceIncidentUrgencyRuleDuringSupportHours {
   readonly urgency?: string;
 }
 
-function serviceIncidentUrgencyRuleDuringSupportHoursToTerraform(struct?: ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference | ServiceIncidentUrgencyRuleDuringSupportHours): any {
+export function serviceIncidentUrgencyRuleDuringSupportHoursToTerraform(struct?: ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference | ServiceIncidentUrgencyRuleDuringSupportHours): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -248,12 +303,37 @@ export class ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference extends
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ServiceIncidentUrgencyRuleDuringSupportHours | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._type) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._urgency) {
+      hasAnyValues = true;
+      internalValueResult.urgency = this._urgency;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceIncidentUrgencyRuleDuringSupportHours | undefined) {
+    if (value === undefined) {
+      this._type = undefined;
+      this._urgency = undefined;
+    }
+    else {
+      this._type = value.type;
+      this._urgency = value.urgency;
+    }
+  }
+
   // type - computed: false, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -261,15 +341,15 @@ export class ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // urgency - computed: false, optional: true, required: false
-  private _urgency?: string | undefined; 
+  private _urgency?: string; 
   public get urgency() {
     return this.getStringAttribute('urgency');
   }
-  public set urgency(value: string | undefined) {
+  public set urgency(value: string) {
     this._urgency = value;
   }
   public resetUrgency() {
@@ -277,7 +357,7 @@ export class ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get urgencyInput() {
-    return this._urgency
+    return this._urgency;
   }
 }
 export interface ServiceIncidentUrgencyRuleOutsideSupportHours {
@@ -291,7 +371,7 @@ export interface ServiceIncidentUrgencyRuleOutsideSupportHours {
   readonly urgency?: string;
 }
 
-function serviceIncidentUrgencyRuleOutsideSupportHoursToTerraform(struct?: ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference | ServiceIncidentUrgencyRuleOutsideSupportHours): any {
+export function serviceIncidentUrgencyRuleOutsideSupportHoursToTerraform(struct?: ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference | ServiceIncidentUrgencyRuleOutsideSupportHours): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -312,12 +392,37 @@ export class ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference extend
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ServiceIncidentUrgencyRuleOutsideSupportHours | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._type) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._urgency) {
+      hasAnyValues = true;
+      internalValueResult.urgency = this._urgency;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceIncidentUrgencyRuleOutsideSupportHours | undefined) {
+    if (value === undefined) {
+      this._type = undefined;
+      this._urgency = undefined;
+    }
+    else {
+      this._type = value.type;
+      this._urgency = value.urgency;
+    }
+  }
+
   // type - computed: false, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -325,15 +430,15 @@ export class ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference extend
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // urgency - computed: false, optional: true, required: false
-  private _urgency?: string | undefined; 
+  private _urgency?: string; 
   public get urgency() {
     return this.getStringAttribute('urgency');
   }
-  public set urgency(value: string | undefined) {
+  public set urgency(value: string) {
     this._urgency = value;
   }
   public resetUrgency() {
@@ -341,7 +446,7 @@ export class ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference extend
   }
   // Temporarily expose input value. Use with caution.
   public get urgencyInput() {
-    return this._urgency
+    return this._urgency;
   }
 }
 export interface ServiceIncidentUrgencyRule {
@@ -367,7 +472,7 @@ export interface ServiceIncidentUrgencyRule {
   readonly outsideSupportHours?: ServiceIncidentUrgencyRuleOutsideSupportHours;
 }
 
-function serviceIncidentUrgencyRuleToTerraform(struct?: ServiceIncidentUrgencyRuleOutputReference | ServiceIncidentUrgencyRule): any {
+export function serviceIncidentUrgencyRuleToTerraform(struct?: ServiceIncidentUrgencyRuleOutputReference | ServiceIncidentUrgencyRule): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -390,6 +495,43 @@ export class ServiceIncidentUrgencyRuleOutputReference extends cdktf.ComplexObje
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ServiceIncidentUrgencyRule | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._type) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._urgency) {
+      hasAnyValues = true;
+      internalValueResult.urgency = this._urgency;
+    }
+    if (this._duringSupportHours) {
+      hasAnyValues = true;
+      internalValueResult.duringSupportHours = this._duringSupportHours?.internalValue;
+    }
+    if (this._outsideSupportHours) {
+      hasAnyValues = true;
+      internalValueResult.outsideSupportHours = this._outsideSupportHours?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceIncidentUrgencyRule | undefined) {
+    if (value === undefined) {
+      this._type = undefined;
+      this._urgency = undefined;
+      this._duringSupportHours.internalValue = undefined;
+      this._outsideSupportHours.internalValue = undefined;
+    }
+    else {
+      this._type = value.type;
+      this._urgency = value.urgency;
+      this._duringSupportHours.internalValue = value.duringSupportHours;
+      this._outsideSupportHours.internalValue = value.outsideSupportHours;
+    }
+  }
+
   // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
@@ -400,15 +542,15 @@ export class ServiceIncidentUrgencyRuleOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // urgency - computed: false, optional: true, required: false
-  private _urgency?: string | undefined; 
+  private _urgency?: string; 
   public get urgency() {
     return this.getStringAttribute('urgency');
   }
-  public set urgency(value: string | undefined) {
+  public set urgency(value: string) {
     this._urgency = value;
   }
   public resetUrgency() {
@@ -416,41 +558,39 @@ export class ServiceIncidentUrgencyRuleOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get urgencyInput() {
-    return this._urgency
+    return this._urgency;
   }
 
   // during_support_hours - computed: false, optional: true, required: false
-  private _duringSupportHours?: ServiceIncidentUrgencyRuleDuringSupportHours | undefined; 
-  private __duringSupportHoursOutput = new ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference(this as any, "during_support_hours", true);
+  private _duringSupportHours = new ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference(this as any, "during_support_hours", true);
   public get duringSupportHours() {
-    return this.__duringSupportHoursOutput;
+    return this._duringSupportHours;
   }
-  public putDuringSupportHours(value: ServiceIncidentUrgencyRuleDuringSupportHours | undefined) {
-    this._duringSupportHours = value;
+  public putDuringSupportHours(value: ServiceIncidentUrgencyRuleDuringSupportHours) {
+    this._duringSupportHours.internalValue = value;
   }
   public resetDuringSupportHours() {
-    this._duringSupportHours = undefined;
+    this._duringSupportHours.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get duringSupportHoursInput() {
-    return this._duringSupportHours
+    return this._duringSupportHours.internalValue;
   }
 
   // outside_support_hours - computed: false, optional: true, required: false
-  private _outsideSupportHours?: ServiceIncidentUrgencyRuleOutsideSupportHours | undefined; 
-  private __outsideSupportHoursOutput = new ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference(this as any, "outside_support_hours", true);
+  private _outsideSupportHours = new ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference(this as any, "outside_support_hours", true);
   public get outsideSupportHours() {
-    return this.__outsideSupportHoursOutput;
+    return this._outsideSupportHours;
   }
-  public putOutsideSupportHours(value: ServiceIncidentUrgencyRuleOutsideSupportHours | undefined) {
-    this._outsideSupportHours = value;
+  public putOutsideSupportHours(value: ServiceIncidentUrgencyRuleOutsideSupportHours) {
+    this._outsideSupportHours.internalValue = value;
   }
   public resetOutsideSupportHours() {
-    this._outsideSupportHours = undefined;
+    this._outsideSupportHours.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get outsideSupportHoursInput() {
-    return this._outsideSupportHours
+    return this._outsideSupportHours.internalValue;
   }
 }
 export interface ServiceScheduledActionsAt {
@@ -464,7 +604,7 @@ export interface ServiceScheduledActionsAt {
   readonly type?: string;
 }
 
-function serviceScheduledActionsAtToTerraform(struct?: ServiceScheduledActionsAt): any {
+export function serviceScheduledActionsAtToTerraform(struct?: ServiceScheduledActionsAt): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -492,7 +632,7 @@ export interface ServiceScheduledActions {
   readonly at?: ServiceScheduledActionsAt[];
 }
 
-function serviceScheduledActionsToTerraform(struct?: ServiceScheduledActions): any {
+export function serviceScheduledActionsToTerraform(struct?: ServiceScheduledActions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -527,7 +667,7 @@ export interface ServiceSupportHours {
   readonly type?: string;
 }
 
-function serviceSupportHoursToTerraform(struct?: ServiceSupportHoursOutputReference | ServiceSupportHours): any {
+export function serviceSupportHoursToTerraform(struct?: ServiceSupportHoursOutputReference | ServiceSupportHours): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -551,13 +691,56 @@ export class ServiceSupportHoursOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ServiceSupportHours | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._daysOfWeek) {
+      hasAnyValues = true;
+      internalValueResult.daysOfWeek = this._daysOfWeek;
+    }
+    if (this._endTime) {
+      hasAnyValues = true;
+      internalValueResult.endTime = this._endTime;
+    }
+    if (this._startTime) {
+      hasAnyValues = true;
+      internalValueResult.startTime = this._startTime;
+    }
+    if (this._timeZone) {
+      hasAnyValues = true;
+      internalValueResult.timeZone = this._timeZone;
+    }
+    if (this._type) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceSupportHours | undefined) {
+    if (value === undefined) {
+      this._daysOfWeek = undefined;
+      this._endTime = undefined;
+      this._startTime = undefined;
+      this._timeZone = undefined;
+      this._type = undefined;
+    }
+    else {
+      this._daysOfWeek = value.daysOfWeek;
+      this._endTime = value.endTime;
+      this._startTime = value.startTime;
+      this._timeZone = value.timeZone;
+      this._type = value.type;
+    }
+  }
+
   // days_of_week - computed: false, optional: true, required: false
-  private _daysOfWeek?: number[] | undefined; 
+  private _daysOfWeek?: number[]; 
   public get daysOfWeek() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('days_of_week') as any;
   }
-  public set daysOfWeek(value: number[] | undefined) {
+  public set daysOfWeek(value: number[]) {
     this._daysOfWeek = value;
   }
   public resetDaysOfWeek() {
@@ -565,15 +748,15 @@ export class ServiceSupportHoursOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get daysOfWeekInput() {
-    return this._daysOfWeek
+    return this._daysOfWeek;
   }
 
   // end_time - computed: false, optional: true, required: false
-  private _endTime?: string | undefined; 
+  private _endTime?: string; 
   public get endTime() {
     return this.getStringAttribute('end_time');
   }
-  public set endTime(value: string | undefined) {
+  public set endTime(value: string) {
     this._endTime = value;
   }
   public resetEndTime() {
@@ -581,15 +764,15 @@ export class ServiceSupportHoursOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get endTimeInput() {
-    return this._endTime
+    return this._endTime;
   }
 
   // start_time - computed: false, optional: true, required: false
-  private _startTime?: string | undefined; 
+  private _startTime?: string; 
   public get startTime() {
     return this.getStringAttribute('start_time');
   }
-  public set startTime(value: string | undefined) {
+  public set startTime(value: string) {
     this._startTime = value;
   }
   public resetStartTime() {
@@ -597,15 +780,15 @@ export class ServiceSupportHoursOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get startTimeInput() {
-    return this._startTime
+    return this._startTime;
   }
 
   // time_zone - computed: false, optional: true, required: false
-  private _timeZone?: string | undefined; 
+  private _timeZone?: string; 
   public get timeZone() {
     return this.getStringAttribute('time_zone');
   }
-  public set timeZone(value: string | undefined) {
+  public set timeZone(value: string) {
     this._timeZone = value;
   }
   public resetTimeZone() {
@@ -613,15 +796,15 @@ export class ServiceSupportHoursOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get timeZoneInput() {
-    return this._timeZone
+    return this._timeZone;
   }
 
   // type - computed: false, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -629,7 +812,7 @@ export class ServiceSupportHoursOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 }
 
@@ -673,10 +856,10 @@ export class Service extends cdktf.TerraformResource {
     this._description = config.description;
     this._escalationPolicy = config.escalationPolicy;
     this._name = config.name;
-    this._alertGroupingParameters = config.alertGroupingParameters;
-    this._incidentUrgencyRule = config.incidentUrgencyRule;
+    this._alertGroupingParameters.internalValue = config.alertGroupingParameters;
+    this._incidentUrgencyRule.internalValue = config.incidentUrgencyRule;
     this._scheduledActions = config.scheduledActions;
-    this._supportHours = config.supportHours;
+    this._supportHours.internalValue = config.supportHours;
   }
 
   // ==========
@@ -684,11 +867,11 @@ export class Service extends cdktf.TerraformResource {
   // ==========
 
   // acknowledgement_timeout - computed: false, optional: true, required: false
-  private _acknowledgementTimeout?: string | undefined; 
+  private _acknowledgementTimeout?: string; 
   public get acknowledgementTimeout() {
     return this.getStringAttribute('acknowledgement_timeout');
   }
-  public set acknowledgementTimeout(value: string | undefined) {
+  public set acknowledgementTimeout(value: string) {
     this._acknowledgementTimeout = value;
   }
   public resetAcknowledgementTimeout() {
@@ -696,15 +879,15 @@ export class Service extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get acknowledgementTimeoutInput() {
-    return this._acknowledgementTimeout
+    return this._acknowledgementTimeout;
   }
 
   // alert_creation - computed: false, optional: true, required: false
-  private _alertCreation?: string | undefined; 
+  private _alertCreation?: string; 
   public get alertCreation() {
     return this.getStringAttribute('alert_creation');
   }
-  public set alertCreation(value: string | undefined) {
+  public set alertCreation(value: string) {
     this._alertCreation = value;
   }
   public resetAlertCreation() {
@@ -712,15 +895,15 @@ export class Service extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get alertCreationInput() {
-    return this._alertCreation
+    return this._alertCreation;
   }
 
   // alert_grouping - computed: true, optional: true, required: false
-  private _alertGrouping?: string | undefined; 
+  private _alertGrouping?: string; 
   public get alertGrouping() {
     return this.getStringAttribute('alert_grouping');
   }
-  public set alertGrouping(value: string | undefined) {
+  public set alertGrouping(value: string) {
     this._alertGrouping = value;
   }
   public resetAlertGrouping() {
@@ -728,15 +911,15 @@ export class Service extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get alertGroupingInput() {
-    return this._alertGrouping
+    return this._alertGrouping;
   }
 
   // alert_grouping_timeout - computed: false, optional: true, required: false
-  private _alertGroupingTimeout?: number | undefined; 
+  private _alertGroupingTimeout?: number; 
   public get alertGroupingTimeout() {
     return this.getNumberAttribute('alert_grouping_timeout');
   }
-  public set alertGroupingTimeout(value: number | undefined) {
+  public set alertGroupingTimeout(value: number) {
     this._alertGroupingTimeout = value;
   }
   public resetAlertGroupingTimeout() {
@@ -744,15 +927,15 @@ export class Service extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get alertGroupingTimeoutInput() {
-    return this._alertGroupingTimeout
+    return this._alertGroupingTimeout;
   }
 
   // auto_resolve_timeout - computed: false, optional: true, required: false
-  private _autoResolveTimeout?: string | undefined; 
+  private _autoResolveTimeout?: string; 
   public get autoResolveTimeout() {
     return this.getStringAttribute('auto_resolve_timeout');
   }
-  public set autoResolveTimeout(value: string | undefined) {
+  public set autoResolveTimeout(value: string) {
     this._autoResolveTimeout = value;
   }
   public resetAutoResolveTimeout() {
@@ -760,7 +943,7 @@ export class Service extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get autoResolveTimeoutInput() {
-    return this._autoResolveTimeout
+    return this._autoResolveTimeout;
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -769,11 +952,11 @@ export class Service extends cdktf.TerraformResource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -781,7 +964,7 @@ export class Service extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // escalation_policy - computed: false, optional: false, required: true
@@ -794,7 +977,7 @@ export class Service extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get escalationPolicyInput() {
-    return this._escalationPolicy
+    return this._escalationPolicy;
   }
 
   // html_url - computed: true, optional: false, required: false
@@ -822,7 +1005,7 @@ export class Service extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // status - computed: true, optional: false, required: false
@@ -831,46 +1014,44 @@ export class Service extends cdktf.TerraformResource {
   }
 
   // alert_grouping_parameters - computed: false, optional: true, required: false
-  private _alertGroupingParameters?: ServiceAlertGroupingParameters | undefined; 
-  private __alertGroupingParametersOutput = new ServiceAlertGroupingParametersOutputReference(this as any, "alert_grouping_parameters", true);
+  private _alertGroupingParameters = new ServiceAlertGroupingParametersOutputReference(this as any, "alert_grouping_parameters", true);
   public get alertGroupingParameters() {
-    return this.__alertGroupingParametersOutput;
+    return this._alertGroupingParameters;
   }
-  public putAlertGroupingParameters(value: ServiceAlertGroupingParameters | undefined) {
-    this._alertGroupingParameters = value;
+  public putAlertGroupingParameters(value: ServiceAlertGroupingParameters) {
+    this._alertGroupingParameters.internalValue = value;
   }
   public resetAlertGroupingParameters() {
-    this._alertGroupingParameters = undefined;
+    this._alertGroupingParameters.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get alertGroupingParametersInput() {
-    return this._alertGroupingParameters
+    return this._alertGroupingParameters.internalValue;
   }
 
   // incident_urgency_rule - computed: false, optional: true, required: false
-  private _incidentUrgencyRule?: ServiceIncidentUrgencyRule | undefined; 
-  private __incidentUrgencyRuleOutput = new ServiceIncidentUrgencyRuleOutputReference(this as any, "incident_urgency_rule", true);
+  private _incidentUrgencyRule = new ServiceIncidentUrgencyRuleOutputReference(this as any, "incident_urgency_rule", true);
   public get incidentUrgencyRule() {
-    return this.__incidentUrgencyRuleOutput;
+    return this._incidentUrgencyRule;
   }
-  public putIncidentUrgencyRule(value: ServiceIncidentUrgencyRule | undefined) {
-    this._incidentUrgencyRule = value;
+  public putIncidentUrgencyRule(value: ServiceIncidentUrgencyRule) {
+    this._incidentUrgencyRule.internalValue = value;
   }
   public resetIncidentUrgencyRule() {
-    this._incidentUrgencyRule = undefined;
+    this._incidentUrgencyRule.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get incidentUrgencyRuleInput() {
-    return this._incidentUrgencyRule
+    return this._incidentUrgencyRule.internalValue;
   }
 
   // scheduled_actions - computed: false, optional: true, required: false
-  private _scheduledActions?: ServiceScheduledActions[] | undefined; 
+  private _scheduledActions?: ServiceScheduledActions[]; 
   public get scheduledActions() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('scheduled_actions') as any;
   }
-  public set scheduledActions(value: ServiceScheduledActions[] | undefined) {
+  public set scheduledActions(value: ServiceScheduledActions[]) {
     this._scheduledActions = value;
   }
   public resetScheduledActions() {
@@ -878,24 +1059,23 @@ export class Service extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get scheduledActionsInput() {
-    return this._scheduledActions
+    return this._scheduledActions;
   }
 
   // support_hours - computed: false, optional: true, required: false
-  private _supportHours?: ServiceSupportHours | undefined; 
-  private __supportHoursOutput = new ServiceSupportHoursOutputReference(this as any, "support_hours", true);
+  private _supportHours = new ServiceSupportHoursOutputReference(this as any, "support_hours", true);
   public get supportHours() {
-    return this.__supportHoursOutput;
+    return this._supportHours;
   }
-  public putSupportHours(value: ServiceSupportHours | undefined) {
-    this._supportHours = value;
+  public putSupportHours(value: ServiceSupportHours) {
+    this._supportHours.internalValue = value;
   }
   public resetSupportHours() {
-    this._supportHours = undefined;
+    this._supportHours.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get supportHoursInput() {
-    return this._supportHours
+    return this._supportHours.internalValue;
   }
 
   // =========
@@ -912,10 +1092,10 @@ export class Service extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       escalation_policy: cdktf.stringToTerraform(this._escalationPolicy),
       name: cdktf.stringToTerraform(this._name),
-      alert_grouping_parameters: serviceAlertGroupingParametersToTerraform(this._alertGroupingParameters),
-      incident_urgency_rule: serviceIncidentUrgencyRuleToTerraform(this._incidentUrgencyRule),
+      alert_grouping_parameters: serviceAlertGroupingParametersToTerraform(this._alertGroupingParameters.internalValue),
+      incident_urgency_rule: serviceIncidentUrgencyRuleToTerraform(this._incidentUrgencyRule.internalValue),
       scheduled_actions: cdktf.listMapper(serviceScheduledActionsToTerraform)(this._scheduledActions),
-      support_hours: serviceSupportHoursToTerraform(this._supportHours),
+      support_hours: serviceSupportHoursToTerraform(this._supportHours.internalValue),
     };
   }
 }
