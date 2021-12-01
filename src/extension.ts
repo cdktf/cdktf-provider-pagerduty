@@ -78,11 +78,11 @@ export class Extension extends cdktf.TerraformResource {
   // ==========
 
   // config - computed: false, optional: true, required: false
-  private _config?: string | undefined; 
+  private _config?: string; 
   public get config() {
     return this.getStringAttribute('config');
   }
-  public set config(value: string | undefined) {
+  public set config(value: string) {
     this._config = value;
   }
   public resetConfig() {
@@ -90,15 +90,15 @@ export class Extension extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get configInput() {
-    return this._config
+    return this._config;
   }
 
   // endpoint_url - computed: false, optional: true, required: false
-  private _endpointUrl?: string | undefined; 
+  private _endpointUrl?: string; 
   public get endpointUrl() {
     return this.getStringAttribute('endpoint_url');
   }
-  public set endpointUrl(value: string | undefined) {
+  public set endpointUrl(value: string) {
     this._endpointUrl = value;
   }
   public resetEndpointUrl() {
@@ -106,7 +106,7 @@ export class Extension extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get endpointUrlInput() {
-    return this._endpointUrl
+    return this._endpointUrl;
   }
 
   // extension_objects - computed: false, optional: false, required: true
@@ -119,7 +119,7 @@ export class Extension extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get extensionObjectsInput() {
-    return this._extensionObjects
+    return this._extensionObjects;
   }
 
   // extension_schema - computed: false, optional: false, required: true
@@ -132,7 +132,7 @@ export class Extension extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get extensionSchemaInput() {
-    return this._extensionSchema
+    return this._extensionSchema;
   }
 
   // html_url - computed: true, optional: false, required: false
@@ -146,11 +146,11 @@ export class Extension extends cdktf.TerraformResource {
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -158,15 +158,15 @@ export class Extension extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // type - computed: true, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -174,7 +174,7 @@ export class Extension extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // =========

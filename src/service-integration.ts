@@ -88,11 +88,11 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   }
 
   // integration_email - computed: true, optional: true, required: false
-  private _integrationEmail?: string | undefined; 
+  private _integrationEmail?: string; 
   public get integrationEmail() {
     return this.getStringAttribute('integration_email');
   }
-  public set integrationEmail(value: string | undefined) {
+  public set integrationEmail(value: string) {
     this._integrationEmail = value;
   }
   public resetIntegrationEmail() {
@@ -100,15 +100,15 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get integrationEmailInput() {
-    return this._integrationEmail
+    return this._integrationEmail;
   }
 
   // integration_key - computed: true, optional: true, required: false
-  private _integrationKey?: string | undefined; 
+  private _integrationKey?: string; 
   public get integrationKey() {
     return this.getStringAttribute('integration_key');
   }
-  public set integrationKey(value: string | undefined) {
+  public set integrationKey(value: string) {
     this._integrationKey = value;
   }
   public resetIntegrationKey() {
@@ -116,15 +116,15 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get integrationKeyInput() {
-    return this._integrationKey
+    return this._integrationKey;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -132,7 +132,7 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // service - computed: false, optional: false, required: true
@@ -145,15 +145,15 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get serviceInput() {
-    return this._service
+    return this._service;
   }
 
   // type - computed: true, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -161,15 +161,15 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // vendor - computed: true, optional: true, required: false
-  private _vendor?: string | undefined; 
+  private _vendor?: string; 
   public get vendor() {
     return this.getStringAttribute('vendor');
   }
-  public set vendor(value: string | undefined) {
+  public set vendor(value: string) {
     this._vendor = value;
   }
   public resetVendor() {
@@ -177,7 +177,7 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get vendorInput() {
-    return this._vendor
+    return this._vendor;
   }
 
   // =========

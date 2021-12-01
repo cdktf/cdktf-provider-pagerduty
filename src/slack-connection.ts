@@ -49,7 +49,7 @@ export interface SlackConnectionConfigA {
   readonly urgency?: string;
 }
 
-function slackConnectionConfigAToTerraform(struct?: SlackConnectionConfigA): any {
+export function slackConnectionConfigAToTerraform(struct?: SlackConnectionConfigA): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -116,7 +116,7 @@ export class SlackConnection extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get channelIdInput() {
-    return this._channelId
+    return this._channelId;
   }
 
   // channel_name - computed: true, optional: false, required: false
@@ -139,7 +139,7 @@ export class SlackConnection extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get notificationTypeInput() {
-    return this._notificationType
+    return this._notificationType;
   }
 
   // source_id - computed: false, optional: false, required: true
@@ -152,7 +152,7 @@ export class SlackConnection extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sourceIdInput() {
-    return this._sourceId
+    return this._sourceId;
   }
 
   // source_name - computed: true, optional: false, required: false
@@ -170,7 +170,7 @@ export class SlackConnection extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sourceTypeInput() {
-    return this._sourceType
+    return this._sourceType;
   }
 
   // workspace_id - computed: false, optional: false, required: true
@@ -183,7 +183,7 @@ export class SlackConnection extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get workspaceIdInput() {
-    return this._workspaceId
+    return this._workspaceId;
   }
 
   // config - computed: false, optional: false, required: true
@@ -197,7 +197,7 @@ export class SlackConnection extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get configInput() {
-    return this._config
+    return this._config;
   }
 
   // =========

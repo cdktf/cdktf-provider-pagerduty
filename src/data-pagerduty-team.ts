@@ -79,15 +79,15 @@ export class DataPagerdutyTeam extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // parent - computed: false, optional: true, required: false
-  private _parent?: string | undefined; 
+  private _parent?: string; 
   public get parent() {
     return this.getStringAttribute('parent');
   }
-  public set parent(value: string | undefined) {
+  public set parent(value: string) {
     this._parent = value;
   }
   public resetParent() {
@@ -95,7 +95,7 @@ export class DataPagerdutyTeam extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get parentInput() {
-    return this._parent
+    return this._parent;
   }
 
   // =========

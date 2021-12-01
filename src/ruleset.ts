@@ -25,7 +25,7 @@ export interface RulesetTeam {
   readonly id: string;
 }
 
-function rulesetTeamToTerraform(struct?: RulesetTeamOutputReference | RulesetTeam): any {
+export function rulesetTeamToTerraform(struct?: RulesetTeamOutputReference | RulesetTeam): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -45,6 +45,25 @@ export class RulesetTeamOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): RulesetTeam | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._id) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RulesetTeam | undefined) {
+    if (value === undefined) {
+      this._id = undefined;
+    }
+    else {
+      this._id = value.id;
+    }
+  }
+
   // id - computed: false, optional: false, required: true
   private _id?: string; 
   public get id() {
@@ -55,7 +74,7 @@ export class RulesetTeamOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
-    return this._id
+    return this._id;
   }
 }
 
@@ -92,7 +111,7 @@ export class Ruleset extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._name = config.name;
-    this._team = config.team;
+    this._team.internalValue = config.team;
   }
 
   // ==========
@@ -114,7 +133,7 @@ export class Ruleset extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // routing_keys - computed: true, optional: false, required: false
@@ -128,20 +147,19 @@ export class Ruleset extends cdktf.TerraformResource {
   }
 
   // team - computed: false, optional: true, required: false
-  private _team?: RulesetTeam | undefined; 
-  private __teamOutput = new RulesetTeamOutputReference(this as any, "team", true);
+  private _team = new RulesetTeamOutputReference(this as any, "team", true);
   public get team() {
-    return this.__teamOutput;
+    return this._team;
   }
-  public putTeam(value: RulesetTeam | undefined) {
-    this._team = value;
+  public putTeam(value: RulesetTeam) {
+    this._team.internalValue = value;
   }
   public resetTeam() {
-    this._team = undefined;
+    this._team.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get teamInput() {
-    return this._team
+    return this._team.internalValue;
   }
 
   // =========
@@ -151,7 +169,7 @@ export class Ruleset extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
-      team: rulesetTeamToTerraform(this._team),
+      team: rulesetTeamToTerraform(this._team.internalValue),
     };
   }
 }

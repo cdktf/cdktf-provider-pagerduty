@@ -53,7 +53,7 @@ export interface ScheduleLayerRestriction {
   readonly type: string;
 }
 
-function scheduleLayerRestrictionToTerraform(struct?: ScheduleLayerRestriction): any {
+export function scheduleLayerRestrictionToTerraform(struct?: ScheduleLayerRestriction): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -99,7 +99,7 @@ export interface ScheduleLayer {
   readonly restriction?: ScheduleLayerRestriction[];
 }
 
-function scheduleLayerToTerraform(struct?: ScheduleLayer): any {
+export function scheduleLayerToTerraform(struct?: ScheduleLayer): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -161,11 +161,11 @@ export class Schedule extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -173,7 +173,7 @@ export class Schedule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -182,11 +182,11 @@ export class Schedule extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -194,15 +194,15 @@ export class Schedule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // overflow - computed: false, optional: true, required: false
-  private _overflow?: boolean | cdktf.IResolvable | undefined; 
+  private _overflow?: boolean | cdktf.IResolvable; 
   public get overflow() {
     return this.getBooleanAttribute('overflow') as any;
   }
-  public set overflow(value: boolean | cdktf.IResolvable | undefined) {
+  public set overflow(value: boolean | cdktf.IResolvable) {
     this._overflow = value;
   }
   public resetOverflow() {
@@ -210,15 +210,15 @@ export class Schedule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get overflowInput() {
-    return this._overflow
+    return this._overflow;
   }
 
   // teams - computed: false, optional: true, required: false
-  private _teams?: string[] | undefined; 
+  private _teams?: string[]; 
   public get teams() {
     return this.getListAttribute('teams');
   }
-  public set teams(value: string[] | undefined) {
+  public set teams(value: string[]) {
     this._teams = value;
   }
   public resetTeams() {
@@ -226,7 +226,7 @@ export class Schedule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get teamsInput() {
-    return this._teams
+    return this._teams;
   }
 
   // time_zone - computed: false, optional: false, required: true
@@ -239,7 +239,7 @@ export class Schedule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get timeZoneInput() {
-    return this._timeZone
+    return this._timeZone;
   }
 
   // layer - computed: false, optional: false, required: true
@@ -253,7 +253,7 @@ export class Schedule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get layerInput() {
-    return this._layer
+    return this._layer;
   }
 
   // =========

@@ -73,11 +73,11 @@ export class BusinessService extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -85,7 +85,7 @@ export class BusinessService extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // html_url - computed: true, optional: false, required: false
@@ -108,15 +108,15 @@ export class BusinessService extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // point_of_contact - computed: false, optional: true, required: false
-  private _pointOfContact?: string | undefined; 
+  private _pointOfContact?: string; 
   public get pointOfContact() {
     return this.getStringAttribute('point_of_contact');
   }
-  public set pointOfContact(value: string | undefined) {
+  public set pointOfContact(value: string) {
     this._pointOfContact = value;
   }
   public resetPointOfContact() {
@@ -124,7 +124,7 @@ export class BusinessService extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get pointOfContactInput() {
-    return this._pointOfContact
+    return this._pointOfContact;
   }
 
   // self - computed: true, optional: false, required: false
@@ -138,11 +138,11 @@ export class BusinessService extends cdktf.TerraformResource {
   }
 
   // team - computed: false, optional: true, required: false
-  private _team?: string | undefined; 
+  private _team?: string; 
   public get team() {
     return this.getStringAttribute('team');
   }
-  public set team(value: string | undefined) {
+  public set team(value: string) {
     this._team = value;
   }
   public resetTeam() {
@@ -150,15 +150,15 @@ export class BusinessService extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get teamInput() {
-    return this._team
+    return this._team;
   }
 
   // type - computed: false, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -166,7 +166,7 @@ export class BusinessService extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // =========

@@ -25,7 +25,7 @@ export interface ServiceDependencyDependencyDependentService {
   readonly type: string;
 }
 
-function serviceDependencyDependencyDependentServiceToTerraform(struct?: ServiceDependencyDependencyDependentService): any {
+export function serviceDependencyDependencyDependentServiceToTerraform(struct?: ServiceDependencyDependencyDependentService): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -47,7 +47,7 @@ export interface ServiceDependencyDependencySupportingService {
   readonly type: string;
 }
 
-function serviceDependencyDependencySupportingServiceToTerraform(struct?: ServiceDependencyDependencySupportingService): any {
+export function serviceDependencyDependencySupportingServiceToTerraform(struct?: ServiceDependencyDependencySupportingService): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -77,7 +77,7 @@ export interface ServiceDependencyDependency {
   readonly supportingService: ServiceDependencyDependencySupportingService[];
 }
 
-function serviceDependencyDependencyToTerraform(struct?: ServiceDependencyDependency): any {
+export function serviceDependencyDependencyToTerraform(struct?: ServiceDependencyDependency): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -145,7 +145,7 @@ export class ServiceDependency extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get dependencyInput() {
-    return this._dependency
+    return this._dependency;
   }
 
   // =========

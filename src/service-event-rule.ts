@@ -51,7 +51,7 @@ export interface ServiceEventRuleActionsAnnotate {
   readonly value?: string;
 }
 
-function serviceEventRuleActionsAnnotateToTerraform(struct?: ServiceEventRuleActionsAnnotate): any {
+export function serviceEventRuleActionsAnnotateToTerraform(struct?: ServiceEventRuleActionsAnnotate): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -68,7 +68,7 @@ export interface ServiceEventRuleActionsEventAction {
   readonly value?: string;
 }
 
-function serviceEventRuleActionsEventActionToTerraform(struct?: ServiceEventRuleActionsEventAction): any {
+export function serviceEventRuleActionsEventActionToTerraform(struct?: ServiceEventRuleActionsEventAction): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -97,7 +97,7 @@ export interface ServiceEventRuleActionsExtractions {
   readonly template?: string;
 }
 
-function serviceEventRuleActionsExtractionsToTerraform(struct?: ServiceEventRuleActionsExtractions): any {
+export function serviceEventRuleActionsExtractionsToTerraform(struct?: ServiceEventRuleActionsExtractions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -117,7 +117,7 @@ export interface ServiceEventRuleActionsPriority {
   readonly value?: string;
 }
 
-function serviceEventRuleActionsPriorityToTerraform(struct?: ServiceEventRuleActionsPriority): any {
+export function serviceEventRuleActionsPriorityToTerraform(struct?: ServiceEventRuleActionsPriority): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -134,7 +134,7 @@ export interface ServiceEventRuleActionsSeverity {
   readonly value?: string;
 }
 
-function serviceEventRuleActionsSeverityToTerraform(struct?: ServiceEventRuleActionsSeverity): any {
+export function serviceEventRuleActionsSeverityToTerraform(struct?: ServiceEventRuleActionsSeverity): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -163,7 +163,7 @@ export interface ServiceEventRuleActionsSuppress {
   readonly value?: boolean | cdktf.IResolvable;
 }
 
-function serviceEventRuleActionsSuppressToTerraform(struct?: ServiceEventRuleActionsSuppress): any {
+export function serviceEventRuleActionsSuppressToTerraform(struct?: ServiceEventRuleActionsSuppress): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -183,7 +183,7 @@ export interface ServiceEventRuleActionsSuspend {
   readonly value?: number;
 }
 
-function serviceEventRuleActionsSuspendToTerraform(struct?: ServiceEventRuleActionsSuspend): any {
+export function serviceEventRuleActionsSuspendToTerraform(struct?: ServiceEventRuleActionsSuspend): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -238,7 +238,7 @@ export interface ServiceEventRuleActions {
   readonly suspend?: ServiceEventRuleActionsSuspend[];
 }
 
-function serviceEventRuleActionsToTerraform(struct?: ServiceEventRuleActionsOutputReference | ServiceEventRuleActions): any {
+export function serviceEventRuleActionsToTerraform(struct?: ServiceEventRuleActionsOutputReference | ServiceEventRuleActions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -264,13 +264,68 @@ export class ServiceEventRuleActionsOutputReference extends cdktf.ComplexObject 
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ServiceEventRuleActions | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._annotate) {
+      hasAnyValues = true;
+      internalValueResult.annotate = this._annotate;
+    }
+    if (this._eventAction) {
+      hasAnyValues = true;
+      internalValueResult.eventAction = this._eventAction;
+    }
+    if (this._extractions) {
+      hasAnyValues = true;
+      internalValueResult.extractions = this._extractions;
+    }
+    if (this._priority) {
+      hasAnyValues = true;
+      internalValueResult.priority = this._priority;
+    }
+    if (this._severity) {
+      hasAnyValues = true;
+      internalValueResult.severity = this._severity;
+    }
+    if (this._suppress) {
+      hasAnyValues = true;
+      internalValueResult.suppress = this._suppress;
+    }
+    if (this._suspend) {
+      hasAnyValues = true;
+      internalValueResult.suspend = this._suspend;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceEventRuleActions | undefined) {
+    if (value === undefined) {
+      this._annotate = undefined;
+      this._eventAction = undefined;
+      this._extractions = undefined;
+      this._priority = undefined;
+      this._severity = undefined;
+      this._suppress = undefined;
+      this._suspend = undefined;
+    }
+    else {
+      this._annotate = value.annotate;
+      this._eventAction = value.eventAction;
+      this._extractions = value.extractions;
+      this._priority = value.priority;
+      this._severity = value.severity;
+      this._suppress = value.suppress;
+      this._suspend = value.suspend;
+    }
+  }
+
   // annotate - computed: false, optional: true, required: false
-  private _annotate?: ServiceEventRuleActionsAnnotate[] | undefined; 
+  private _annotate?: ServiceEventRuleActionsAnnotate[]; 
   public get annotate() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('annotate') as any;
   }
-  public set annotate(value: ServiceEventRuleActionsAnnotate[] | undefined) {
+  public set annotate(value: ServiceEventRuleActionsAnnotate[]) {
     this._annotate = value;
   }
   public resetAnnotate() {
@@ -278,16 +333,16 @@ export class ServiceEventRuleActionsOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get annotateInput() {
-    return this._annotate
+    return this._annotate;
   }
 
   // event_action - computed: false, optional: true, required: false
-  private _eventAction?: ServiceEventRuleActionsEventAction[] | undefined; 
+  private _eventAction?: ServiceEventRuleActionsEventAction[]; 
   public get eventAction() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('event_action') as any;
   }
-  public set eventAction(value: ServiceEventRuleActionsEventAction[] | undefined) {
+  public set eventAction(value: ServiceEventRuleActionsEventAction[]) {
     this._eventAction = value;
   }
   public resetEventAction() {
@@ -295,16 +350,16 @@ export class ServiceEventRuleActionsOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get eventActionInput() {
-    return this._eventAction
+    return this._eventAction;
   }
 
   // extractions - computed: false, optional: true, required: false
-  private _extractions?: ServiceEventRuleActionsExtractions[] | undefined; 
+  private _extractions?: ServiceEventRuleActionsExtractions[]; 
   public get extractions() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('extractions') as any;
   }
-  public set extractions(value: ServiceEventRuleActionsExtractions[] | undefined) {
+  public set extractions(value: ServiceEventRuleActionsExtractions[]) {
     this._extractions = value;
   }
   public resetExtractions() {
@@ -312,16 +367,16 @@ export class ServiceEventRuleActionsOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get extractionsInput() {
-    return this._extractions
+    return this._extractions;
   }
 
   // priority - computed: false, optional: true, required: false
-  private _priority?: ServiceEventRuleActionsPriority[] | undefined; 
+  private _priority?: ServiceEventRuleActionsPriority[]; 
   public get priority() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('priority') as any;
   }
-  public set priority(value: ServiceEventRuleActionsPriority[] | undefined) {
+  public set priority(value: ServiceEventRuleActionsPriority[]) {
     this._priority = value;
   }
   public resetPriority() {
@@ -329,16 +384,16 @@ export class ServiceEventRuleActionsOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get priorityInput() {
-    return this._priority
+    return this._priority;
   }
 
   // severity - computed: false, optional: true, required: false
-  private _severity?: ServiceEventRuleActionsSeverity[] | undefined; 
+  private _severity?: ServiceEventRuleActionsSeverity[]; 
   public get severity() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('severity') as any;
   }
-  public set severity(value: ServiceEventRuleActionsSeverity[] | undefined) {
+  public set severity(value: ServiceEventRuleActionsSeverity[]) {
     this._severity = value;
   }
   public resetSeverity() {
@@ -346,16 +401,16 @@ export class ServiceEventRuleActionsOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get severityInput() {
-    return this._severity
+    return this._severity;
   }
 
   // suppress - computed: false, optional: true, required: false
-  private _suppress?: ServiceEventRuleActionsSuppress[] | undefined; 
+  private _suppress?: ServiceEventRuleActionsSuppress[]; 
   public get suppress() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('suppress') as any;
   }
-  public set suppress(value: ServiceEventRuleActionsSuppress[] | undefined) {
+  public set suppress(value: ServiceEventRuleActionsSuppress[]) {
     this._suppress = value;
   }
   public resetSuppress() {
@@ -363,16 +418,16 @@ export class ServiceEventRuleActionsOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get suppressInput() {
-    return this._suppress
+    return this._suppress;
   }
 
   // suspend - computed: false, optional: true, required: false
-  private _suspend?: ServiceEventRuleActionsSuspend[] | undefined; 
+  private _suspend?: ServiceEventRuleActionsSuspend[]; 
   public get suspend() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('suspend') as any;
   }
-  public set suspend(value: ServiceEventRuleActionsSuspend[] | undefined) {
+  public set suspend(value: ServiceEventRuleActionsSuspend[]) {
     this._suspend = value;
   }
   public resetSuspend() {
@@ -380,7 +435,7 @@ export class ServiceEventRuleActionsOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get suspendInput() {
-    return this._suspend
+    return this._suspend;
   }
 }
 export interface ServiceEventRuleConditionsSubconditionsParameter {
@@ -394,7 +449,7 @@ export interface ServiceEventRuleConditionsSubconditionsParameter {
   readonly value?: string;
 }
 
-function serviceEventRuleConditionsSubconditionsParameterToTerraform(struct?: ServiceEventRuleConditionsSubconditionsParameter): any {
+export function serviceEventRuleConditionsSubconditionsParameterToTerraform(struct?: ServiceEventRuleConditionsSubconditionsParameter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -418,7 +473,7 @@ export interface ServiceEventRuleConditionsSubconditions {
   readonly parameter?: ServiceEventRuleConditionsSubconditionsParameter[];
 }
 
-function serviceEventRuleConditionsSubconditionsToTerraform(struct?: ServiceEventRuleConditionsSubconditions): any {
+export function serviceEventRuleConditionsSubconditionsToTerraform(struct?: ServiceEventRuleConditionsSubconditions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -442,7 +497,7 @@ export interface ServiceEventRuleConditions {
   readonly subconditions?: ServiceEventRuleConditionsSubconditions[];
 }
 
-function serviceEventRuleConditionsToTerraform(struct?: ServiceEventRuleConditionsOutputReference | ServiceEventRuleConditions): any {
+export function serviceEventRuleConditionsToTerraform(struct?: ServiceEventRuleConditionsOutputReference | ServiceEventRuleConditions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -463,12 +518,37 @@ export class ServiceEventRuleConditionsOutputReference extends cdktf.ComplexObje
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ServiceEventRuleConditions | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._operator) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._subconditions) {
+      hasAnyValues = true;
+      internalValueResult.subconditions = this._subconditions;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceEventRuleConditions | undefined) {
+    if (value === undefined) {
+      this._operator = undefined;
+      this._subconditions = undefined;
+    }
+    else {
+      this._operator = value.operator;
+      this._subconditions = value.subconditions;
+    }
+  }
+
   // operator - computed: false, optional: true, required: false
-  private _operator?: string | undefined; 
+  private _operator?: string; 
   public get operator() {
     return this.getStringAttribute('operator');
   }
-  public set operator(value: string | undefined) {
+  public set operator(value: string) {
     this._operator = value;
   }
   public resetOperator() {
@@ -476,16 +556,16 @@ export class ServiceEventRuleConditionsOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get operatorInput() {
-    return this._operator
+    return this._operator;
   }
 
   // subconditions - computed: false, optional: true, required: false
-  private _subconditions?: ServiceEventRuleConditionsSubconditions[] | undefined; 
+  private _subconditions?: ServiceEventRuleConditionsSubconditions[]; 
   public get subconditions() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('subconditions') as any;
   }
-  public set subconditions(value: ServiceEventRuleConditionsSubconditions[] | undefined) {
+  public set subconditions(value: ServiceEventRuleConditionsSubconditions[]) {
     this._subconditions = value;
   }
   public resetSubconditions() {
@@ -493,7 +573,7 @@ export class ServiceEventRuleConditionsOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get subconditionsInput() {
-    return this._subconditions
+    return this._subconditions;
   }
 }
 export interface ServiceEventRuleTimeFrameActiveBetween {
@@ -507,7 +587,7 @@ export interface ServiceEventRuleTimeFrameActiveBetween {
   readonly startTime?: number;
 }
 
-function serviceEventRuleTimeFrameActiveBetweenToTerraform(struct?: ServiceEventRuleTimeFrameActiveBetween): any {
+export function serviceEventRuleTimeFrameActiveBetweenToTerraform(struct?: ServiceEventRuleTimeFrameActiveBetween): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -537,7 +617,7 @@ export interface ServiceEventRuleTimeFrameScheduledWeekly {
   readonly weekdays?: number[];
 }
 
-function serviceEventRuleTimeFrameScheduledWeeklyToTerraform(struct?: ServiceEventRuleTimeFrameScheduledWeekly): any {
+export function serviceEventRuleTimeFrameScheduledWeeklyToTerraform(struct?: ServiceEventRuleTimeFrameScheduledWeekly): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -565,7 +645,7 @@ export interface ServiceEventRuleTimeFrame {
   readonly scheduledWeekly?: ServiceEventRuleTimeFrameScheduledWeekly[];
 }
 
-function serviceEventRuleTimeFrameToTerraform(struct?: ServiceEventRuleTimeFrameOutputReference | ServiceEventRuleTimeFrame): any {
+export function serviceEventRuleTimeFrameToTerraform(struct?: ServiceEventRuleTimeFrameOutputReference | ServiceEventRuleTimeFrame): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -586,13 +666,38 @@ export class ServiceEventRuleTimeFrameOutputReference extends cdktf.ComplexObjec
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ServiceEventRuleTimeFrame | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._activeBetween) {
+      hasAnyValues = true;
+      internalValueResult.activeBetween = this._activeBetween;
+    }
+    if (this._scheduledWeekly) {
+      hasAnyValues = true;
+      internalValueResult.scheduledWeekly = this._scheduledWeekly;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceEventRuleTimeFrame | undefined) {
+    if (value === undefined) {
+      this._activeBetween = undefined;
+      this._scheduledWeekly = undefined;
+    }
+    else {
+      this._activeBetween = value.activeBetween;
+      this._scheduledWeekly = value.scheduledWeekly;
+    }
+  }
+
   // active_between - computed: false, optional: true, required: false
-  private _activeBetween?: ServiceEventRuleTimeFrameActiveBetween[] | undefined; 
+  private _activeBetween?: ServiceEventRuleTimeFrameActiveBetween[]; 
   public get activeBetween() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('active_between') as any;
   }
-  public set activeBetween(value: ServiceEventRuleTimeFrameActiveBetween[] | undefined) {
+  public set activeBetween(value: ServiceEventRuleTimeFrameActiveBetween[]) {
     this._activeBetween = value;
   }
   public resetActiveBetween() {
@@ -600,16 +705,16 @@ export class ServiceEventRuleTimeFrameOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get activeBetweenInput() {
-    return this._activeBetween
+    return this._activeBetween;
   }
 
   // scheduled_weekly - computed: false, optional: true, required: false
-  private _scheduledWeekly?: ServiceEventRuleTimeFrameScheduledWeekly[] | undefined; 
+  private _scheduledWeekly?: ServiceEventRuleTimeFrameScheduledWeekly[]; 
   public get scheduledWeekly() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('scheduled_weekly') as any;
   }
-  public set scheduledWeekly(value: ServiceEventRuleTimeFrameScheduledWeekly[] | undefined) {
+  public set scheduledWeekly(value: ServiceEventRuleTimeFrameScheduledWeekly[]) {
     this._scheduledWeekly = value;
   }
   public resetScheduledWeekly() {
@@ -617,7 +722,7 @@ export class ServiceEventRuleTimeFrameOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get scheduledWeeklyInput() {
-    return this._scheduledWeekly
+    return this._scheduledWeekly;
   }
 }
 export interface ServiceEventRuleVariableParameters {
@@ -631,7 +736,7 @@ export interface ServiceEventRuleVariableParameters {
   readonly value?: string;
 }
 
-function serviceEventRuleVariableParametersToTerraform(struct?: ServiceEventRuleVariableParameters): any {
+export function serviceEventRuleVariableParametersToTerraform(struct?: ServiceEventRuleVariableParameters): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -659,7 +764,7 @@ export interface ServiceEventRuleVariable {
   readonly parameters?: ServiceEventRuleVariableParameters[];
 }
 
-function serviceEventRuleVariableToTerraform(struct?: ServiceEventRuleVariable): any {
+export function serviceEventRuleVariableToTerraform(struct?: ServiceEventRuleVariable): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -707,9 +812,9 @@ export class ServiceEventRule extends cdktf.TerraformResource {
     this._disabled = config.disabled;
     this._position = config.position;
     this._service = config.service;
-    this._actions = config.actions;
-    this._conditions = config.conditions;
-    this._timeFrame = config.timeFrame;
+    this._actions.internalValue = config.actions;
+    this._conditions.internalValue = config.conditions;
+    this._timeFrame.internalValue = config.timeFrame;
     this._variable = config.variable;
   }
 
@@ -718,11 +823,11 @@ export class ServiceEventRule extends cdktf.TerraformResource {
   // ==========
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable | undefined; 
+  private _disabled?: boolean | cdktf.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled') as any;
   }
-  public set disabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set disabled(value: boolean | cdktf.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -730,7 +835,7 @@ export class ServiceEventRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get disabledInput() {
-    return this._disabled
+    return this._disabled;
   }
 
   // id - computed: true, optional: true, required: false
@@ -739,11 +844,11 @@ export class ServiceEventRule extends cdktf.TerraformResource {
   }
 
   // position - computed: false, optional: true, required: false
-  private _position?: number | undefined; 
+  private _position?: number; 
   public get position() {
     return this.getNumberAttribute('position');
   }
-  public set position(value: number | undefined) {
+  public set position(value: number) {
     this._position = value;
   }
   public resetPosition() {
@@ -751,7 +856,7 @@ export class ServiceEventRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get positionInput() {
-    return this._position
+    return this._position;
   }
 
   // service - computed: false, optional: false, required: true
@@ -764,67 +869,64 @@ export class ServiceEventRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get serviceInput() {
-    return this._service
+    return this._service;
   }
 
   // actions - computed: false, optional: true, required: false
-  private _actions?: ServiceEventRuleActions | undefined; 
-  private __actionsOutput = new ServiceEventRuleActionsOutputReference(this as any, "actions", true);
+  private _actions = new ServiceEventRuleActionsOutputReference(this as any, "actions", true);
   public get actions() {
-    return this.__actionsOutput;
+    return this._actions;
   }
-  public putActions(value: ServiceEventRuleActions | undefined) {
-    this._actions = value;
+  public putActions(value: ServiceEventRuleActions) {
+    this._actions.internalValue = value;
   }
   public resetActions() {
-    this._actions = undefined;
+    this._actions.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get actionsInput() {
-    return this._actions
+    return this._actions.internalValue;
   }
 
   // conditions - computed: false, optional: true, required: false
-  private _conditions?: ServiceEventRuleConditions | undefined; 
-  private __conditionsOutput = new ServiceEventRuleConditionsOutputReference(this as any, "conditions", true);
+  private _conditions = new ServiceEventRuleConditionsOutputReference(this as any, "conditions", true);
   public get conditions() {
-    return this.__conditionsOutput;
+    return this._conditions;
   }
-  public putConditions(value: ServiceEventRuleConditions | undefined) {
-    this._conditions = value;
+  public putConditions(value: ServiceEventRuleConditions) {
+    this._conditions.internalValue = value;
   }
   public resetConditions() {
-    this._conditions = undefined;
+    this._conditions.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get conditionsInput() {
-    return this._conditions
+    return this._conditions.internalValue;
   }
 
   // time_frame - computed: false, optional: true, required: false
-  private _timeFrame?: ServiceEventRuleTimeFrame | undefined; 
-  private __timeFrameOutput = new ServiceEventRuleTimeFrameOutputReference(this as any, "time_frame", true);
+  private _timeFrame = new ServiceEventRuleTimeFrameOutputReference(this as any, "time_frame", true);
   public get timeFrame() {
-    return this.__timeFrameOutput;
+    return this._timeFrame;
   }
-  public putTimeFrame(value: ServiceEventRuleTimeFrame | undefined) {
-    this._timeFrame = value;
+  public putTimeFrame(value: ServiceEventRuleTimeFrame) {
+    this._timeFrame.internalValue = value;
   }
   public resetTimeFrame() {
-    this._timeFrame = undefined;
+    this._timeFrame.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeFrameInput() {
-    return this._timeFrame
+    return this._timeFrame.internalValue;
   }
 
   // variable - computed: false, optional: true, required: false
-  private _variable?: ServiceEventRuleVariable[] | undefined; 
+  private _variable?: ServiceEventRuleVariable[]; 
   public get variable() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('variable') as any;
   }
-  public set variable(value: ServiceEventRuleVariable[] | undefined) {
+  public set variable(value: ServiceEventRuleVariable[]) {
     this._variable = value;
   }
   public resetVariable() {
@@ -832,7 +934,7 @@ export class ServiceEventRule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get variableInput() {
-    return this._variable
+    return this._variable;
   }
 
   // =========
@@ -844,9 +946,9 @@ export class ServiceEventRule extends cdktf.TerraformResource {
       disabled: cdktf.booleanToTerraform(this._disabled),
       position: cdktf.numberToTerraform(this._position),
       service: cdktf.stringToTerraform(this._service),
-      actions: serviceEventRuleActionsToTerraform(this._actions),
-      conditions: serviceEventRuleConditionsToTerraform(this._conditions),
-      time_frame: serviceEventRuleTimeFrameToTerraform(this._timeFrame),
+      actions: serviceEventRuleActionsToTerraform(this._actions.internalValue),
+      conditions: serviceEventRuleConditionsToTerraform(this._conditions.internalValue),
+      time_frame: serviceEventRuleTimeFrameToTerraform(this._timeFrame.internalValue),
       variable: cdktf.listMapper(serviceEventRuleVariableToTerraform)(this._variable),
     };
   }

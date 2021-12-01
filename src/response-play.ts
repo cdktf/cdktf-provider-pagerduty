@@ -79,7 +79,7 @@ export interface ResponsePlayResponder {
   readonly type?: string;
 }
 
-function responsePlayResponderToTerraform(struct?: ResponsePlayResponder): any {
+export function responsePlayResponderToTerraform(struct?: ResponsePlayResponder): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -103,7 +103,7 @@ export interface ResponsePlaySubscriber {
   readonly type?: string;
 }
 
-function responsePlaySubscriberToTerraform(struct?: ResponsePlaySubscriber): any {
+export function responsePlaySubscriberToTerraform(struct?: ResponsePlaySubscriber): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -166,11 +166,11 @@ export class ResponsePlay extends cdktf.TerraformResource {
   // ==========
 
   // conference_number - computed: false, optional: true, required: false
-  private _conferenceNumber?: string | undefined; 
+  private _conferenceNumber?: string; 
   public get conferenceNumber() {
     return this.getStringAttribute('conference_number');
   }
-  public set conferenceNumber(value: string | undefined) {
+  public set conferenceNumber(value: string) {
     this._conferenceNumber = value;
   }
   public resetConferenceNumber() {
@@ -178,15 +178,15 @@ export class ResponsePlay extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get conferenceNumberInput() {
-    return this._conferenceNumber
+    return this._conferenceNumber;
   }
 
   // conference_url - computed: false, optional: true, required: false
-  private _conferenceUrl?: string | undefined; 
+  private _conferenceUrl?: string; 
   public get conferenceUrl() {
     return this.getStringAttribute('conference_url');
   }
-  public set conferenceUrl(value: string | undefined) {
+  public set conferenceUrl(value: string) {
     this._conferenceUrl = value;
   }
   public resetConferenceUrl() {
@@ -194,15 +194,15 @@ export class ResponsePlay extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get conferenceUrlInput() {
-    return this._conferenceUrl
+    return this._conferenceUrl;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -210,7 +210,7 @@ export class ResponsePlay extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // from - computed: false, optional: false, required: true
@@ -223,7 +223,7 @@ export class ResponsePlay extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get fromInput() {
-    return this._from
+    return this._from;
   }
 
   // id - computed: true, optional: true, required: false
@@ -241,15 +241,15 @@ export class ResponsePlay extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // responders_message - computed: false, optional: true, required: false
-  private _respondersMessage?: string | undefined; 
+  private _respondersMessage?: string; 
   public get respondersMessage() {
     return this.getStringAttribute('responders_message');
   }
-  public set respondersMessage(value: string | undefined) {
+  public set respondersMessage(value: string) {
     this._respondersMessage = value;
   }
   public resetRespondersMessage() {
@@ -257,15 +257,15 @@ export class ResponsePlay extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get respondersMessageInput() {
-    return this._respondersMessage
+    return this._respondersMessage;
   }
 
   // runnability - computed: false, optional: true, required: false
-  private _runnability?: string | undefined; 
+  private _runnability?: string; 
   public get runnability() {
     return this.getStringAttribute('runnability');
   }
-  public set runnability(value: string | undefined) {
+  public set runnability(value: string) {
     this._runnability = value;
   }
   public resetRunnability() {
@@ -273,15 +273,15 @@ export class ResponsePlay extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get runnabilityInput() {
-    return this._runnability
+    return this._runnability;
   }
 
   // subscribers_message - computed: false, optional: true, required: false
-  private _subscribersMessage?: string | undefined; 
+  private _subscribersMessage?: string; 
   public get subscribersMessage() {
     return this.getStringAttribute('subscribers_message');
   }
-  public set subscribersMessage(value: string | undefined) {
+  public set subscribersMessage(value: string) {
     this._subscribersMessage = value;
   }
   public resetSubscribersMessage() {
@@ -289,15 +289,15 @@ export class ResponsePlay extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get subscribersMessageInput() {
-    return this._subscribersMessage
+    return this._subscribersMessage;
   }
 
   // team - computed: false, optional: true, required: false
-  private _team?: string | undefined; 
+  private _team?: string; 
   public get team() {
     return this.getStringAttribute('team');
   }
-  public set team(value: string | undefined) {
+  public set team(value: string) {
     this._team = value;
   }
   public resetTeam() {
@@ -305,15 +305,15 @@ export class ResponsePlay extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get teamInput() {
-    return this._team
+    return this._team;
   }
 
   // type - computed: false, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -321,16 +321,16 @@ export class ResponsePlay extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // responder - computed: false, optional: true, required: false
-  private _responder?: ResponsePlayResponder[] | undefined; 
+  private _responder?: ResponsePlayResponder[]; 
   public get responder() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('responder') as any;
   }
-  public set responder(value: ResponsePlayResponder[] | undefined) {
+  public set responder(value: ResponsePlayResponder[]) {
     this._responder = value;
   }
   public resetResponder() {
@@ -338,16 +338,16 @@ export class ResponsePlay extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get responderInput() {
-    return this._responder
+    return this._responder;
   }
 
   // subscriber - computed: false, optional: true, required: false
-  private _subscriber?: ResponsePlaySubscriber[] | undefined; 
+  private _subscriber?: ResponsePlaySubscriber[]; 
   public get subscriber() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('subscriber') as any;
   }
-  public set subscriber(value: ResponsePlaySubscriber[] | undefined) {
+  public set subscriber(value: ResponsePlaySubscriber[]) {
     this._subscriber = value;
   }
   public resetSubscriber() {
@@ -355,7 +355,7 @@ export class ResponsePlay extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get subscriberInput() {
-    return this._subscriber
+    return this._subscriber;
   }
 
   // =========

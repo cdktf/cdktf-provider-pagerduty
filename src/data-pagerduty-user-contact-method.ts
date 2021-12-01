@@ -81,7 +81,7 @@ export class DataPagerdutyUserContactMethod extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get labelInput() {
-    return this._label
+    return this._label;
   }
 
   // type - computed: false, optional: false, required: true
@@ -94,7 +94,7 @@ export class DataPagerdutyUserContactMethod extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // user_id - computed: false, optional: false, required: true
@@ -107,7 +107,7 @@ export class DataPagerdutyUserContactMethod extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get userIdInput() {
-    return this._userId
+    return this._userId;
   }
 
   // =========

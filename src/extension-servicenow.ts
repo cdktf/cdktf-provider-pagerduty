@@ -103,11 +103,11 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   // ==========
 
   // endpoint_url - computed: false, optional: true, required: false
-  private _endpointUrl?: string | undefined; 
+  private _endpointUrl?: string; 
   public get endpointUrl() {
     return this.getStringAttribute('endpoint_url');
   }
-  public set endpointUrl(value: string | undefined) {
+  public set endpointUrl(value: string) {
     this._endpointUrl = value;
   }
   public resetEndpointUrl() {
@@ -115,7 +115,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get endpointUrlInput() {
-    return this._endpointUrl
+    return this._endpointUrl;
   }
 
   // extension_objects - computed: false, optional: false, required: true
@@ -128,7 +128,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get extensionObjectsInput() {
-    return this._extensionObjects
+    return this._extensionObjects;
   }
 
   // extension_schema - computed: false, optional: false, required: true
@@ -141,7 +141,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get extensionSchemaInput() {
-    return this._extensionSchema
+    return this._extensionSchema;
   }
 
   // html_url - computed: true, optional: false, required: false
@@ -155,11 +155,11 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -167,7 +167,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // referer - computed: false, optional: false, required: true
@@ -180,7 +180,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get refererInput() {
-    return this._referer
+    return this._referer;
   }
 
   // snow_password - computed: false, optional: false, required: true
@@ -193,7 +193,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get snowPasswordInput() {
-    return this._snowPassword
+    return this._snowPassword;
   }
 
   // snow_user - computed: false, optional: false, required: true
@@ -206,7 +206,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get snowUserInput() {
-    return this._snowUser
+    return this._snowUser;
   }
 
   // sync_options - computed: false, optional: false, required: true
@@ -219,7 +219,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get syncOptionsInput() {
-    return this._syncOptions
+    return this._syncOptions;
   }
 
   // target - computed: false, optional: false, required: true
@@ -232,7 +232,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get targetInput() {
-    return this._target
+    return this._target;
   }
 
   // task_type - computed: false, optional: false, required: true
@@ -245,15 +245,15 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get taskTypeInput() {
-    return this._taskType
+    return this._taskType;
   }
 
   // type - computed: true, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -261,7 +261,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // =========

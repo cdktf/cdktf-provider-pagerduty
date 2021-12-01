@@ -87,7 +87,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get addressInput() {
-    return this._address
+    return this._address;
   }
 
   // blacklisted - computed: true, optional: false, required: false
@@ -96,11 +96,11 @@ export class UserContactMethod extends cdktf.TerraformResource {
   }
 
   // country_code - computed: false, optional: true, required: false
-  private _countryCode?: number | undefined; 
+  private _countryCode?: number; 
   public get countryCode() {
     return this.getNumberAttribute('country_code');
   }
-  public set countryCode(value: number | undefined) {
+  public set countryCode(value: number) {
     this._countryCode = value;
   }
   public resetCountryCode() {
@@ -108,7 +108,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get countryCodeInput() {
-    return this._countryCode
+    return this._countryCode;
   }
 
   // enabled - computed: true, optional: false, required: false
@@ -131,15 +131,15 @@ export class UserContactMethod extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get labelInput() {
-    return this._label
+    return this._label;
   }
 
   // send_short_email - computed: false, optional: true, required: false
-  private _sendShortEmail?: boolean | cdktf.IResolvable | undefined; 
+  private _sendShortEmail?: boolean | cdktf.IResolvable; 
   public get sendShortEmail() {
     return this.getBooleanAttribute('send_short_email') as any;
   }
-  public set sendShortEmail(value: boolean | cdktf.IResolvable | undefined) {
+  public set sendShortEmail(value: boolean | cdktf.IResolvable) {
     this._sendShortEmail = value;
   }
   public resetSendShortEmail() {
@@ -147,7 +147,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sendShortEmailInput() {
-    return this._sendShortEmail
+    return this._sendShortEmail;
   }
 
   // type - computed: false, optional: false, required: true
@@ -160,7 +160,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // user_id - computed: false, optional: false, required: true
@@ -173,7 +173,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get userIdInput() {
-    return this._userId
+    return this._userId;
   }
 
   // =========
