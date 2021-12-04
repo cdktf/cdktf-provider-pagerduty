@@ -36,6 +36,8 @@ export function rulesetTeamToTerraform(struct?: RulesetTeamOutputReference | Rul
 }
 
 export class RulesetTeamOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -46,7 +48,7 @@ export class RulesetTeamOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): RulesetTeam | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._id) {
       hasAnyValues = true;
@@ -57,9 +59,11 @@ export class RulesetTeamOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: RulesetTeam | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._id = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._id = value.id;
     }
   }
