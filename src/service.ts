@@ -92,6 +92,8 @@ export function serviceAlertGroupingParametersConfigToTerraform(struct?: Service
 }
 
 export class ServiceAlertGroupingParametersConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -102,7 +104,7 @@ export class ServiceAlertGroupingParametersConfigOutputReference extends cdktf.C
   }
 
   public get internalValue(): ServiceAlertGroupingParametersConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._aggregate) {
       hasAnyValues = true;
@@ -121,11 +123,13 @@ export class ServiceAlertGroupingParametersConfigOutputReference extends cdktf.C
 
   public set internalValue(value: ServiceAlertGroupingParametersConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._aggregate = undefined;
       this._fields = undefined;
       this._timeout = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._aggregate = value.aggregate;
       this._fields = value.fields;
       this._timeout = value.timeout;
@@ -205,6 +209,8 @@ export function serviceAlertGroupingParametersToTerraform(struct?: ServiceAlertG
 }
 
 export class ServiceAlertGroupingParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -215,13 +221,13 @@ export class ServiceAlertGroupingParametersOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): ServiceAlertGroupingParameters | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._config) {
+    if (this._config?.internalValue) {
       hasAnyValues = true;
       internalValueResult.config = this._config?.internalValue;
     }
@@ -230,10 +236,12 @@ export class ServiceAlertGroupingParametersOutputReference extends cdktf.Complex
 
   public set internalValue(value: ServiceAlertGroupingParameters | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
       this._config.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
       this._config.internalValue = value.config;
     }
@@ -294,6 +302,8 @@ export function serviceIncidentUrgencyRuleDuringSupportHoursToTerraform(struct?:
 }
 
 export class ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -304,7 +314,7 @@ export class ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference extends
   }
 
   public get internalValue(): ServiceIncidentUrgencyRuleDuringSupportHours | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
@@ -319,10 +329,12 @@ export class ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference extends
 
   public set internalValue(value: ServiceIncidentUrgencyRuleDuringSupportHours | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
       this._urgency = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
       this._urgency = value.urgency;
     }
@@ -383,6 +395,8 @@ export function serviceIncidentUrgencyRuleOutsideSupportHoursToTerraform(struct?
 }
 
 export class ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -393,7 +407,7 @@ export class ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference extend
   }
 
   public get internalValue(): ServiceIncidentUrgencyRuleOutsideSupportHours | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
@@ -408,10 +422,12 @@ export class ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference extend
 
   public set internalValue(value: ServiceIncidentUrgencyRuleOutsideSupportHours | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
       this._urgency = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
       this._urgency = value.urgency;
     }
@@ -486,6 +502,8 @@ export function serviceIncidentUrgencyRuleToTerraform(struct?: ServiceIncidentUr
 }
 
 export class ServiceIncidentUrgencyRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -496,7 +514,7 @@ export class ServiceIncidentUrgencyRuleOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): ServiceIncidentUrgencyRule | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
@@ -506,11 +524,11 @@ export class ServiceIncidentUrgencyRuleOutputReference extends cdktf.ComplexObje
       hasAnyValues = true;
       internalValueResult.urgency = this._urgency;
     }
-    if (this._duringSupportHours) {
+    if (this._duringSupportHours?.internalValue) {
       hasAnyValues = true;
       internalValueResult.duringSupportHours = this._duringSupportHours?.internalValue;
     }
-    if (this._outsideSupportHours) {
+    if (this._outsideSupportHours?.internalValue) {
       hasAnyValues = true;
       internalValueResult.outsideSupportHours = this._outsideSupportHours?.internalValue;
     }
@@ -519,12 +537,14 @@ export class ServiceIncidentUrgencyRuleOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: ServiceIncidentUrgencyRule | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
       this._urgency = undefined;
       this._duringSupportHours.internalValue = undefined;
       this._outsideSupportHours.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
       this._urgency = value.urgency;
       this._duringSupportHours.internalValue = value.duringSupportHours;
@@ -682,6 +702,8 @@ export function serviceSupportHoursToTerraform(struct?: ServiceSupportHoursOutpu
 }
 
 export class ServiceSupportHoursOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -692,7 +714,7 @@ export class ServiceSupportHoursOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): ServiceSupportHours | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._daysOfWeek) {
       hasAnyValues = true;
@@ -719,6 +741,7 @@ export class ServiceSupportHoursOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: ServiceSupportHours | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._daysOfWeek = undefined;
       this._endTime = undefined;
       this._startTime = undefined;
@@ -726,6 +749,7 @@ export class ServiceSupportHoursOutputReference extends cdktf.ComplexObject {
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._daysOfWeek = value.daysOfWeek;
       this._endTime = value.endTime;
       this._startTime = value.startTime;

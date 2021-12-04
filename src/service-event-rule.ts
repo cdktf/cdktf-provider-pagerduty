@@ -255,6 +255,8 @@ export function serviceEventRuleActionsToTerraform(struct?: ServiceEventRuleActi
 }
 
 export class ServiceEventRuleActionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -265,7 +267,7 @@ export class ServiceEventRuleActionsOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): ServiceEventRuleActions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._annotate) {
       hasAnyValues = true;
@@ -300,6 +302,7 @@ export class ServiceEventRuleActionsOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: ServiceEventRuleActions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._annotate = undefined;
       this._eventAction = undefined;
       this._extractions = undefined;
@@ -309,6 +312,7 @@ export class ServiceEventRuleActionsOutputReference extends cdktf.ComplexObject 
       this._suspend = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._annotate = value.annotate;
       this._eventAction = value.eventAction;
       this._extractions = value.extractions;
@@ -509,6 +513,8 @@ export function serviceEventRuleConditionsToTerraform(struct?: ServiceEventRuleC
 }
 
 export class ServiceEventRuleConditionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -519,7 +525,7 @@ export class ServiceEventRuleConditionsOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): ServiceEventRuleConditions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._operator) {
       hasAnyValues = true;
@@ -534,10 +540,12 @@ export class ServiceEventRuleConditionsOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: ServiceEventRuleConditions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._operator = undefined;
       this._subconditions = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._operator = value.operator;
       this._subconditions = value.subconditions;
     }
@@ -657,6 +665,8 @@ export function serviceEventRuleTimeFrameToTerraform(struct?: ServiceEventRuleTi
 }
 
 export class ServiceEventRuleTimeFrameOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -667,7 +677,7 @@ export class ServiceEventRuleTimeFrameOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): ServiceEventRuleTimeFrame | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._activeBetween) {
       hasAnyValues = true;
@@ -682,10 +692,12 @@ export class ServiceEventRuleTimeFrameOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: ServiceEventRuleTimeFrame | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._activeBetween = undefined;
       this._scheduledWeekly = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._activeBetween = value.activeBetween;
       this._scheduledWeekly = value.scheduledWeekly;
     }
