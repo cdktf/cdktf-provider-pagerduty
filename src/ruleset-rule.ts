@@ -293,35 +293,35 @@ export class RulesetRuleActionsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RulesetRuleActions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._annotate) {
+    if (this._annotate !== undefined) {
       hasAnyValues = true;
       internalValueResult.annotate = this._annotate;
     }
-    if (this._eventAction) {
+    if (this._eventAction !== undefined) {
       hasAnyValues = true;
       internalValueResult.eventAction = this._eventAction;
     }
-    if (this._extractions) {
+    if (this._extractions !== undefined) {
       hasAnyValues = true;
       internalValueResult.extractions = this._extractions;
     }
-    if (this._priority) {
+    if (this._priority !== undefined) {
       hasAnyValues = true;
       internalValueResult.priority = this._priority;
     }
-    if (this._route) {
+    if (this._route !== undefined) {
       hasAnyValues = true;
       internalValueResult.route = this._route;
     }
-    if (this._severity) {
+    if (this._severity !== undefined) {
       hasAnyValues = true;
       internalValueResult.severity = this._severity;
     }
-    if (this._suppress) {
+    if (this._suppress !== undefined) {
       hasAnyValues = true;
       internalValueResult.suppress = this._suppress;
     }
-    if (this._suspend) {
+    if (this._suspend !== undefined) {
       hasAnyValues = true;
       internalValueResult.suspend = this._suspend;
     }
@@ -574,11 +574,11 @@ export class RulesetRuleConditionsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RulesetRuleConditions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._operator) {
+    if (this._operator !== undefined) {
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
     }
-    if (this._subconditions) {
+    if (this._subconditions !== undefined) {
       hasAnyValues = true;
       internalValueResult.subconditions = this._subconditions;
     }
@@ -726,11 +726,11 @@ export class RulesetRuleTimeFrameOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RulesetRuleTimeFrame | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._activeBetween) {
+    if (this._activeBetween !== undefined) {
       hasAnyValues = true;
       internalValueResult.activeBetween = this._activeBetween;
     }
-    if (this._scheduledWeekly) {
+    if (this._scheduledWeekly !== undefined) {
       hasAnyValues = true;
       internalValueResult.scheduledWeekly = this._scheduledWeekly;
     }
