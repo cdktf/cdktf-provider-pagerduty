@@ -106,15 +106,15 @@ export class ServiceAlertGroupingParametersConfigOutputReference extends cdktf.C
   public get internalValue(): ServiceAlertGroupingParametersConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._aggregate) {
+    if (this._aggregate !== undefined) {
       hasAnyValues = true;
       internalValueResult.aggregate = this._aggregate;
     }
-    if (this._fields) {
+    if (this._fields !== undefined) {
       hasAnyValues = true;
       internalValueResult.fields = this._fields;
     }
-    if (this._timeout) {
+    if (this._timeout !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeout = this._timeout;
     }
@@ -223,11 +223,11 @@ export class ServiceAlertGroupingParametersOutputReference extends cdktf.Complex
   public get internalValue(): ServiceAlertGroupingParameters | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._config?.internalValue) {
+    if (this._config?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.config = this._config?.internalValue;
     }
@@ -316,11 +316,11 @@ export class ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference extends
   public get internalValue(): ServiceIncidentUrgencyRuleDuringSupportHours | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._urgency) {
+    if (this._urgency !== undefined) {
       hasAnyValues = true;
       internalValueResult.urgency = this._urgency;
     }
@@ -409,11 +409,11 @@ export class ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference extend
   public get internalValue(): ServiceIncidentUrgencyRuleOutsideSupportHours | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._urgency) {
+    if (this._urgency !== undefined) {
       hasAnyValues = true;
       internalValueResult.urgency = this._urgency;
     }
@@ -516,19 +516,19 @@ export class ServiceIncidentUrgencyRuleOutputReference extends cdktf.ComplexObje
   public get internalValue(): ServiceIncidentUrgencyRule | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._urgency) {
+    if (this._urgency !== undefined) {
       hasAnyValues = true;
       internalValueResult.urgency = this._urgency;
     }
-    if (this._duringSupportHours?.internalValue) {
+    if (this._duringSupportHours?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.duringSupportHours = this._duringSupportHours?.internalValue;
     }
-    if (this._outsideSupportHours?.internalValue) {
+    if (this._outsideSupportHours?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.outsideSupportHours = this._outsideSupportHours?.internalValue;
     }
@@ -716,23 +716,23 @@ export class ServiceSupportHoursOutputReference extends cdktf.ComplexObject {
   public get internalValue(): ServiceSupportHours | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._daysOfWeek) {
+    if (this._daysOfWeek !== undefined) {
       hasAnyValues = true;
       internalValueResult.daysOfWeek = this._daysOfWeek;
     }
-    if (this._endTime) {
+    if (this._endTime !== undefined) {
       hasAnyValues = true;
       internalValueResult.endTime = this._endTime;
     }
-    if (this._startTime) {
+    if (this._startTime !== undefined) {
       hasAnyValues = true;
       internalValueResult.startTime = this._startTime;
     }
-    if (this._timeZone) {
+    if (this._timeZone !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeZone = this._timeZone;
     }
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }

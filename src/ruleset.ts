@@ -50,7 +50,7 @@ export class RulesetTeamOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RulesetTeam | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._id) {
+    if (this._id !== undefined) {
       hasAnyValues = true;
       internalValueResult.id = this._id;
     }
