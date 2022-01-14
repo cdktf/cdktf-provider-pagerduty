@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window.html
+// https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface MaintenanceWindowConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window.html#description MaintenanceWindow#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window#description MaintenanceWindow#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window.html#end_time MaintenanceWindow#end_time}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window#end_time MaintenanceWindow#end_time}
   */
   readonly endTime: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window.html#services MaintenanceWindow#services}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window#services MaintenanceWindow#services}
   */
   readonly services: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window.html#start_time MaintenanceWindow#start_time}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window#start_time MaintenanceWindow#start_time}
   */
   readonly startTime: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window.html pagerduty_maintenance_window}
+* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window pagerduty_maintenance_window}
 */
 export class MaintenanceWindow extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window.html pagerduty_maintenance_window} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window pagerduty_maintenance_window} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html
+// https://www.terraform.io/docs/providers/pagerduty/r/slack_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,43 +8,43 @@ import * as cdktf from 'cdktf';
 
 export interface SlackConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#channel_id SlackConnection#channel_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#channel_id SlackConnection#channel_id}
   */
   readonly channelId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#notification_type SlackConnection#notification_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#notification_type SlackConnection#notification_type}
   */
   readonly notificationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#source_id SlackConnection#source_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#source_id SlackConnection#source_id}
   */
   readonly sourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#source_type SlackConnection#source_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#source_type SlackConnection#source_type}
   */
   readonly sourceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#workspace_id SlackConnection#workspace_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#workspace_id SlackConnection#workspace_id}
   */
   readonly workspaceId: string;
   /**
   * config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#config SlackConnection#config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#config SlackConnection#config}
   */
   readonly config: SlackConnectionConfigA[];
 }
 export interface SlackConnectionConfigA {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#events SlackConnection#events}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#events SlackConnection#events}
   */
   readonly events: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#priorities SlackConnection#priorities}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#priorities SlackConnection#priorities}
   */
   readonly priorities?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#urgency SlackConnection#urgency}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#urgency SlackConnection#urgency}
   */
   readonly urgency?: string;
 }
@@ -63,7 +63,7 @@ export function slackConnectionConfigAToTerraform(struct?: SlackConnectionConfig
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html pagerduty_slack_connection}
+* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection pagerduty_slack_connection}
 */
 export class SlackConnection extends cdktf.TerraformResource {
 
@@ -77,7 +77,7 @@ export class SlackConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html pagerduty_slack_connection} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection pagerduty_slack_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -4,7 +4,7 @@
 
 ### Addon <a name="@cdktf/provider-pagerduty.Addon"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/addon.html pagerduty_addon}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/addon pagerduty_addon}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.Addon.Initializer"></a>
 
@@ -102,7 +102,7 @@ public readonly src: string;
 
 ### BusinessService <a name="@cdktf/provider-pagerduty.BusinessService"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service.html pagerduty_business_service}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service pagerduty_business_service}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.BusinessService.Initializer"></a>
 
@@ -315,7 +315,7 @@ public readonly type: string;
 
 ### DataPagerdutyBusinessService <a name="@cdktf/provider-pagerduty.DataPagerdutyBusinessService"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service.html pagerduty_business_service}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service pagerduty_business_service}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyBusinessService.Initializer"></a>
 
@@ -393,7 +393,7 @@ public readonly name: string;
 
 ### DataPagerdutyEscalationPolicy <a name="@cdktf/provider-pagerduty.DataPagerdutyEscalationPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/escalation_policy.html pagerduty_escalation_policy}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/escalation_policy pagerduty_escalation_policy}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyEscalationPolicy.Initializer"></a>
 
@@ -471,7 +471,7 @@ public readonly name: string;
 
 ### DataPagerdutyExtensionSchema <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchema"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/extension_schema.html pagerduty_extension_schema}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/extension_schema pagerduty_extension_schema}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchema.Initializer"></a>
 
@@ -559,7 +559,7 @@ public readonly name: string;
 
 ### DataPagerdutyPriority <a name="@cdktf/provider-pagerduty.DataPagerdutyPriority"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/priority.html pagerduty_priority}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/priority pagerduty_priority}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyPriority.Initializer"></a>
 
@@ -647,7 +647,7 @@ public readonly name: string;
 
 ### DataPagerdutyRuleset <a name="@cdktf/provider-pagerduty.DataPagerdutyRuleset"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/ruleset.html pagerduty_ruleset}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/ruleset pagerduty_ruleset}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyRuleset.Initializer"></a>
 
@@ -735,7 +735,7 @@ public readonly name: string;
 
 ### DataPagerdutySchedule <a name="@cdktf/provider-pagerduty.DataPagerdutySchedule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/schedule.html pagerduty_schedule}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/schedule pagerduty_schedule}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutySchedule.Initializer"></a>
 
@@ -813,7 +813,7 @@ public readonly name: string;
 
 ### DataPagerdutyService <a name="@cdktf/provider-pagerduty.DataPagerdutyService"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/service.html pagerduty_service}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/service pagerduty_service}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyService.Initializer"></a>
 
@@ -891,7 +891,7 @@ public readonly name: string;
 
 ### DataPagerdutyServiceIntegration <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration.html pagerduty_service_integration}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration pagerduty_service_integration}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegration.Initializer"></a>
 
@@ -999,7 +999,7 @@ public readonly serviceName: string;
 
 ### DataPagerdutyTeam <a name="@cdktf/provider-pagerduty.DataPagerdutyTeam"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/team.html pagerduty_team}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/team pagerduty_team}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyTeam.Initializer"></a>
 
@@ -1114,7 +1114,7 @@ public readonly parent: string;
 
 ### DataPagerdutyUser <a name="@cdktf/provider-pagerduty.DataPagerdutyUser"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/user.html pagerduty_user}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/user pagerduty_user}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyUser.Initializer"></a>
 
@@ -1202,7 +1202,7 @@ public readonly email: string;
 
 ### DataPagerdutyUserContactMethod <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethod"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/user_contact_method.html pagerduty_user_contact_method}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/user_contact_method pagerduty_user_contact_method}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethod.Initializer"></a>
 
@@ -1320,7 +1320,7 @@ public readonly userId: string;
 
 ### DataPagerdutyVendor <a name="@cdktf/provider-pagerduty.DataPagerdutyVendor"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor.html pagerduty_vendor}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor pagerduty_vendor}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyVendor.Initializer"></a>
 
@@ -1435,7 +1435,7 @@ public readonly nameRegex: string;
 
 ### EscalationPolicy <a name="@cdktf/provider-pagerduty.EscalationPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy.html pagerduty_escalation_policy}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy pagerduty_escalation_policy}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.EscalationPolicy.Initializer"></a>
 
@@ -1612,7 +1612,7 @@ public readonly teams: string[];
 
 ### EventRule <a name="@cdktf/provider-pagerduty.EventRule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule.html pagerduty_event_rule}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule pagerduty_event_rule}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.EventRule.Initializer"></a>
 
@@ -1747,7 +1747,7 @@ public readonly conditionJson: string;
 
 ### Extension <a name="@cdktf/provider-pagerduty.Extension"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/extension.html pagerduty_extension}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/extension pagerduty_extension}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.Extension.Initializer"></a>
 
@@ -1960,7 +1960,7 @@ public readonly type: string;
 
 ### ExtensionServicenow <a name="@cdktf/provider-pagerduty.ExtensionServicenow"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html pagerduty_extension_servicenow}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow pagerduty_extension_servicenow}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.ExtensionServicenow.Initializer"></a>
 
@@ -2267,7 +2267,7 @@ public readonly type: string;
 
 ### MaintenanceWindow <a name="@cdktf/provider-pagerduty.MaintenanceWindow"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window.html pagerduty_maintenance_window}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window pagerduty_maintenance_window}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.MaintenanceWindow.Initializer"></a>
 
@@ -2533,7 +2533,7 @@ public readonly token: string;
 
 ### ResponsePlay <a name="@cdktf/provider-pagerduty.ResponsePlay"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html pagerduty_response_play}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play pagerduty_response_play}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlay.Initializer"></a>
 
@@ -2892,7 +2892,7 @@ public readonly type: string;
 
 ### Ruleset <a name="@cdktf/provider-pagerduty.Ruleset"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset.html pagerduty_ruleset}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset pagerduty_ruleset}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.Ruleset.Initializer"></a>
 
@@ -3029,7 +3029,7 @@ public readonly name: string;
 
 ### RulesetRule <a name="@cdktf/provider-pagerduty.RulesetRule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html pagerduty_ruleset_rule}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule pagerduty_ruleset_rule}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.RulesetRule.Initializer"></a>
 
@@ -3300,7 +3300,7 @@ public readonly variable: RulesetRuleVariable[];
 
 ### Schedule <a name="@cdktf/provider-pagerduty.Schedule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html pagerduty_schedule}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule pagerduty_schedule}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.Schedule.Initializer"></a>
 
@@ -3503,7 +3503,7 @@ public readonly timeZone: string;
 
 ### Service <a name="@cdktf/provider-pagerduty.Service"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html pagerduty_service}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service pagerduty_service}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.Service.Initializer"></a>
 
@@ -3938,7 +3938,7 @@ public readonly scheduledActions: ServiceScheduledActions[];
 
 ### ServiceDependency <a name="@cdktf/provider-pagerduty.ServiceDependency"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html pagerduty_service_dependency}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency pagerduty_service_dependency}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.ServiceDependency.Initializer"></a>
 
@@ -4016,7 +4016,7 @@ public readonly dependency: ServiceDependencyDependency[];
 
 ### ServiceEventRule <a name="@cdktf/provider-pagerduty.ServiceEventRule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html pagerduty_service_event_rule}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule pagerduty_service_event_rule}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.ServiceEventRule.Initializer"></a>
 
@@ -4287,7 +4287,7 @@ public readonly variable: ServiceEventRuleVariable[];
 
 ### ServiceIntegration <a name="@cdktf/provider-pagerduty.ServiceIntegration"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration.html pagerduty_service_integration}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration pagerduty_service_integration}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.ServiceIntegration.Initializer"></a>
 
@@ -4506,7 +4506,7 @@ public readonly vendor: string;
 
 ### SlackConnection <a name="@cdktf/provider-pagerduty.SlackConnection"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html pagerduty_slack_connection}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection pagerduty_slack_connection}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.SlackConnection.Initializer"></a>
 
@@ -4704,7 +4704,7 @@ public readonly workspaceId: string;
 
 ### Team <a name="@cdktf/provider-pagerduty.Team"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/team.html pagerduty_team}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/team pagerduty_team}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.Team.Initializer"></a>
 
@@ -4845,7 +4845,7 @@ public readonly parent: string;
 
 ### TeamMembership <a name="@cdktf/provider-pagerduty.TeamMembership"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/team_membership.html pagerduty_team_membership}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/team_membership pagerduty_team_membership}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.TeamMembership.Initializer"></a>
 
@@ -4970,7 +4970,7 @@ public readonly userId: string;
 
 ### User <a name="@cdktf/provider-pagerduty.User"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/user.html pagerduty_user}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/user pagerduty_user}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.User.Initializer"></a>
 
@@ -5255,7 +5255,7 @@ public readonly timeZone: string;
 
 ### UserContactMethod <a name="@cdktf/provider-pagerduty.UserContactMethod"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method.html pagerduty_user_contact_method}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method pagerduty_user_contact_method}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.UserContactMethod.Initializer"></a>
 
@@ -5466,7 +5466,7 @@ public readonly userId: string;
 
 ### UserNotificationRule <a name="@cdktf/provider-pagerduty.UserNotificationRule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule.html pagerduty_user_notification_rule}.
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule pagerduty_user_notification_rule}.
 
 #### Initializers <a name="@cdktf/provider-pagerduty.UserNotificationRule.Initializer"></a>
 
@@ -5662,7 +5662,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/addon.html#name Addon#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/addon#name Addon#name}.
 
 ---
 
@@ -5674,7 +5674,7 @@ public readonly src: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/addon.html#src Addon#src}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/addon#src Addon#src}.
 
 ---
 
@@ -5736,7 +5736,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service.html#name BusinessService#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service#name BusinessService#name}.
 
 ---
 
@@ -5748,7 +5748,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service.html#description BusinessService#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service#description BusinessService#description}.
 
 ---
 
@@ -5760,7 +5760,7 @@ public readonly pointOfContact: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service.html#point_of_contact BusinessService#point_of_contact}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service#point_of_contact BusinessService#point_of_contact}.
 
 ---
 
@@ -5772,7 +5772,7 @@ public readonly team: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service.html#team BusinessService#team}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service#team BusinessService#team}.
 
 ---
 
@@ -5784,7 +5784,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service.html#type BusinessService#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service#type BusinessService#type}.
 
 ---
 
@@ -5846,7 +5846,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service.html#name DataPagerdutyBusinessService#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service#name DataPagerdutyBusinessService#name}.
 
 ---
 
@@ -5908,7 +5908,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/escalation_policy.html#name DataPagerdutyEscalationPolicy#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/escalation_policy#name DataPagerdutyEscalationPolicy#name}.
 
 ---
 
@@ -5970,7 +5970,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/extension_schema.html#name DataPagerdutyExtensionSchema#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/extension_schema#name DataPagerdutyExtensionSchema#name}.
 
 ---
 
@@ -6034,7 +6034,7 @@ public readonly name: string;
 
 The name of the priority to find in the PagerDuty API.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/priority.html#name DataPagerdutyPriority#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/priority#name DataPagerdutyPriority#name}
 
 ---
 
@@ -6096,7 +6096,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/ruleset.html#name DataPagerdutyRuleset#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/ruleset#name DataPagerdutyRuleset#name}.
 
 ---
 
@@ -6158,7 +6158,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/schedule.html#name DataPagerdutySchedule#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/schedule#name DataPagerdutySchedule#name}.
 
 ---
 
@@ -6220,7 +6220,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/service.html#name DataPagerdutyService#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/service#name DataPagerdutyService#name}.
 
 ---
 
@@ -6284,7 +6284,7 @@ public readonly integrationSummary: string;
 
 examples 'Amazon CloudWatch', 'New Relic.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration.html#integration_summary DataPagerdutyServiceIntegration#integration_summary}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration#integration_summary DataPagerdutyServiceIntegration#integration_summary}
 
 ---
 
@@ -6296,7 +6296,7 @@ public readonly serviceName: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration.html#service_name DataPagerdutyServiceIntegration#service_name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration#service_name DataPagerdutyServiceIntegration#service_name}.
 
 ---
 
@@ -6360,7 +6360,7 @@ public readonly name: string;
 
 The name of the team to find in the PagerDuty API.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/team.html#name DataPagerdutyTeam#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/team#name DataPagerdutyTeam#name}
 
 ---
 
@@ -6372,7 +6372,7 @@ public readonly parent: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/team.html#parent DataPagerdutyTeam#parent}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/team#parent DataPagerdutyTeam#parent}.
 
 ---
 
@@ -6434,7 +6434,7 @@ public readonly email: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/user.html#email DataPagerdutyUser#email}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/user#email DataPagerdutyUser#email}.
 
 ---
 
@@ -6498,7 +6498,7 @@ public readonly label: string;
 
 The name of the contact method to find in the PagerDuty API.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/user_contact_method.html#label DataPagerdutyUserContactMethod#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/user_contact_method#label DataPagerdutyUserContactMethod#label}
 
 ---
 
@@ -6512,7 +6512,7 @@ public readonly type: string;
 
 The type of the contact method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/user_contact_method.html#type DataPagerdutyUserContactMethod#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/user_contact_method#type DataPagerdutyUserContactMethod#type}
 
 ---
 
@@ -6524,7 +6524,7 @@ public readonly userId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/user_contact_method.html#user_id DataPagerdutyUserContactMethod#user_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/user_contact_method#user_id DataPagerdutyUserContactMethod#user_id}.
 
 ---
 
@@ -6586,7 +6586,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor.html#name DataPagerdutyVendor#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor#name DataPagerdutyVendor#name}.
 
 ---
 
@@ -6598,7 +6598,7 @@ public readonly nameRegex: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor.html#name_regex DataPagerdutyVendor#name_regex}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor#name_regex DataPagerdutyVendor#name_regex}.
 
 ---
 
@@ -6660,7 +6660,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy.html#name EscalationPolicy#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy#name EscalationPolicy#name}.
 
 ---
 
@@ -6674,7 +6674,7 @@ public readonly rule: EscalationPolicyRule[];
 
 rule block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy.html#rule EscalationPolicy#rule}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy#rule EscalationPolicy#rule}
 
 ---
 
@@ -6686,7 +6686,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy.html#description EscalationPolicy#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy#description EscalationPolicy#description}.
 
 ---
 
@@ -6698,7 +6698,7 @@ public readonly numLoops: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy.html#num_loops EscalationPolicy#num_loops}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy#num_loops EscalationPolicy#num_loops}.
 
 ---
 
@@ -6710,7 +6710,7 @@ public readonly teams: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy.html#teams EscalationPolicy#teams}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy#teams EscalationPolicy#teams}.
 
 ---
 
@@ -6732,7 +6732,7 @@ public readonly escalationDelayInMinutes: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy.html#escalation_delay_in_minutes EscalationPolicy#escalation_delay_in_minutes}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy#escalation_delay_in_minutes EscalationPolicy#escalation_delay_in_minutes}.
 
 ---
 
@@ -6746,7 +6746,7 @@ public readonly target: EscalationPolicyRuleTarget[];
 
 target block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy.html#target EscalationPolicy#target}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy#target EscalationPolicy#target}
 
 ---
 
@@ -6768,7 +6768,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy.html#id EscalationPolicy#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy#id EscalationPolicy#id}.
 
 ---
 
@@ -6780,7 +6780,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy.html#type EscalationPolicy#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy#type EscalationPolicy#type}.
 
 ---
 
@@ -6842,7 +6842,7 @@ public readonly actionJson: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule.html#action_json EventRule#action_json}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule#action_json EventRule#action_json}.
 
 ---
 
@@ -6854,7 +6854,7 @@ public readonly conditionJson: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule.html#condition_json EventRule#condition_json}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule#condition_json EventRule#condition_json}.
 
 ---
 
@@ -6866,7 +6866,7 @@ public readonly advancedConditionJson: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule.html#advanced_condition_json EventRule#advanced_condition_json}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule#advanced_condition_json EventRule#advanced_condition_json}.
 
 ---
 
@@ -6928,7 +6928,7 @@ public readonly extensionObjects: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension.html#extension_objects Extension#extension_objects}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension#extension_objects Extension#extension_objects}.
 
 ---
 
@@ -6940,7 +6940,7 @@ public readonly extensionSchema: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension.html#extension_schema Extension#extension_schema}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension#extension_schema Extension#extension_schema}.
 
 ---
 
@@ -6952,7 +6952,7 @@ public readonly config: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension.html#config Extension#config}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension#config Extension#config}.
 
 ---
 
@@ -6964,7 +6964,7 @@ public readonly endpointUrl: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension.html#endpoint_url Extension#endpoint_url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension#endpoint_url Extension#endpoint_url}.
 
 ---
 
@@ -6976,7 +6976,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension.html#name Extension#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension#name Extension#name}.
 
 ---
 
@@ -6988,7 +6988,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension.html#type Extension#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension#type Extension#type}.
 
 ---
 
@@ -7050,7 +7050,7 @@ public readonly extensionObjects: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html#extension_objects ExtensionServicenow#extension_objects}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow#extension_objects ExtensionServicenow#extension_objects}.
 
 ---
 
@@ -7062,7 +7062,7 @@ public readonly extensionSchema: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html#extension_schema ExtensionServicenow#extension_schema}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow#extension_schema ExtensionServicenow#extension_schema}.
 
 ---
 
@@ -7074,7 +7074,7 @@ public readonly referer: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html#referer ExtensionServicenow#referer}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow#referer ExtensionServicenow#referer}.
 
 ---
 
@@ -7086,7 +7086,7 @@ public readonly snowPassword: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html#snow_password ExtensionServicenow#snow_password}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow#snow_password ExtensionServicenow#snow_password}.
 
 ---
 
@@ -7098,7 +7098,7 @@ public readonly snowUser: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html#snow_user ExtensionServicenow#snow_user}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow#snow_user ExtensionServicenow#snow_user}.
 
 ---
 
@@ -7110,7 +7110,7 @@ public readonly syncOptions: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html#sync_options ExtensionServicenow#sync_options}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow#sync_options ExtensionServicenow#sync_options}.
 
 ---
 
@@ -7122,7 +7122,7 @@ public readonly target: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html#target ExtensionServicenow#target}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow#target ExtensionServicenow#target}.
 
 ---
 
@@ -7134,7 +7134,7 @@ public readonly taskType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html#task_type ExtensionServicenow#task_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow#task_type ExtensionServicenow#task_type}.
 
 ---
 
@@ -7146,7 +7146,7 @@ public readonly endpointUrl: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html#endpoint_url ExtensionServicenow#endpoint_url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow#endpoint_url ExtensionServicenow#endpoint_url}.
 
 ---
 
@@ -7158,7 +7158,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html#name ExtensionServicenow#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow#name ExtensionServicenow#name}.
 
 ---
 
@@ -7170,7 +7170,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow.html#type ExtensionServicenow#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow#type ExtensionServicenow#type}.
 
 ---
 
@@ -7232,7 +7232,7 @@ public readonly endTime: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window.html#end_time MaintenanceWindow#end_time}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window#end_time MaintenanceWindow#end_time}.
 
 ---
 
@@ -7244,7 +7244,7 @@ public readonly services: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window.html#services MaintenanceWindow#services}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window#services MaintenanceWindow#services}.
 
 ---
 
@@ -7256,7 +7256,7 @@ public readonly startTime: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window.html#start_time MaintenanceWindow#start_time}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window#start_time MaintenanceWindow#start_time}.
 
 ---
 
@@ -7268,7 +7268,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window.html#description MaintenanceWindow#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/maintenance_window#description MaintenanceWindow#description}.
 
 ---
 
@@ -7378,7 +7378,7 @@ public readonly from: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#from ResponsePlay#from}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#from ResponsePlay#from}.
 
 ---
 
@@ -7390,7 +7390,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#name ResponsePlay#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#name ResponsePlay#name}.
 
 ---
 
@@ -7402,7 +7402,7 @@ public readonly conferenceNumber: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#conference_number ResponsePlay#conference_number}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#conference_number ResponsePlay#conference_number}.
 
 ---
 
@@ -7414,7 +7414,7 @@ public readonly conferenceUrl: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#conference_url ResponsePlay#conference_url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#conference_url ResponsePlay#conference_url}.
 
 ---
 
@@ -7426,7 +7426,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#description ResponsePlay#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#description ResponsePlay#description}.
 
 ---
 
@@ -7440,7 +7440,7 @@ public readonly responder: ResponsePlayResponder[];
 
 responder block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#responder ResponsePlay#responder}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#responder ResponsePlay#responder}
 
 ---
 
@@ -7452,7 +7452,7 @@ public readonly respondersMessage: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#responders_message ResponsePlay#responders_message}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#responders_message ResponsePlay#responders_message}.
 
 ---
 
@@ -7464,7 +7464,7 @@ public readonly runnability: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#runnability ResponsePlay#runnability}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#runnability ResponsePlay#runnability}.
 
 ---
 
@@ -7478,7 +7478,7 @@ public readonly subscriber: ResponsePlaySubscriber[];
 
 subscriber block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#subscriber ResponsePlay#subscriber}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#subscriber ResponsePlay#subscriber}
 
 ---
 
@@ -7490,7 +7490,7 @@ public readonly subscribersMessage: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#subscribers_message ResponsePlay#subscribers_message}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#subscribers_message ResponsePlay#subscribers_message}.
 
 ---
 
@@ -7502,7 +7502,7 @@ public readonly team: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#team ResponsePlay#team}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#team ResponsePlay#team}.
 
 ---
 
@@ -7514,7 +7514,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#type ResponsePlay#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#type ResponsePlay#type}.
 
 ---
 
@@ -7536,7 +7536,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#description ResponsePlay#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#description ResponsePlay#description}.
 
 ---
 
@@ -7548,7 +7548,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#id ResponsePlay#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#id ResponsePlay#id}.
 
 ---
 
@@ -7560,7 +7560,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#name ResponsePlay#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#name ResponsePlay#name}.
 
 ---
 
@@ -7572,7 +7572,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#type ResponsePlay#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#type ResponsePlay#type}.
 
 ---
 
@@ -7594,7 +7594,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#id ResponsePlay#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#id ResponsePlay#id}.
 
 ---
 
@@ -7606,7 +7606,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play.html#type ResponsePlay#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#type ResponsePlay#type}.
 
 ---
 
@@ -7668,7 +7668,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset.html#name Ruleset#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset#name Ruleset#name}.
 
 ---
 
@@ -7682,7 +7682,7 @@ public readonly team: RulesetTeam;
 
 team block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset.html#team Ruleset#team}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset#team Ruleset#team}
 
 ---
 
@@ -7706,7 +7706,7 @@ public readonly annotate: RulesetRuleActionsAnnotate[];
 
 annotate block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#annotate RulesetRule#annotate}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#annotate RulesetRule#annotate}
 
 ---
 
@@ -7720,7 +7720,7 @@ public readonly eventAction: RulesetRuleActionsEventAction[];
 
 event_action block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#event_action RulesetRule#event_action}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#event_action RulesetRule#event_action}
 
 ---
 
@@ -7734,7 +7734,7 @@ public readonly extractions: RulesetRuleActionsExtractions[];
 
 extractions block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#extractions RulesetRule#extractions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#extractions RulesetRule#extractions}
 
 ---
 
@@ -7748,7 +7748,7 @@ public readonly priority: RulesetRuleActionsPriority[];
 
 priority block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#priority RulesetRule#priority}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#priority RulesetRule#priority}
 
 ---
 
@@ -7762,7 +7762,7 @@ public readonly route: RulesetRuleActionsRoute[];
 
 route block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#route RulesetRule#route}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#route RulesetRule#route}
 
 ---
 
@@ -7776,7 +7776,7 @@ public readonly severity: RulesetRuleActionsSeverity[];
 
 severity block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#severity RulesetRule#severity}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#severity RulesetRule#severity}
 
 ---
 
@@ -7790,7 +7790,7 @@ public readonly suppress: RulesetRuleActionsSuppress[];
 
 suppress block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#suppress RulesetRule#suppress}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#suppress RulesetRule#suppress}
 
 ---
 
@@ -7804,7 +7804,7 @@ public readonly suspend: RulesetRuleActionsSuspend[];
 
 suspend block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#suspend RulesetRule#suspend}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#suspend RulesetRule#suspend}
 
 ---
 
@@ -7826,7 +7826,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#value RulesetRule#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#value RulesetRule#value}.
 
 ---
 
@@ -7848,7 +7848,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#value RulesetRule#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#value RulesetRule#value}.
 
 ---
 
@@ -7870,7 +7870,7 @@ public readonly regex: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#regex RulesetRule#regex}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#regex RulesetRule#regex}.
 
 ---
 
@@ -7882,7 +7882,7 @@ public readonly source: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#source RulesetRule#source}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#source RulesetRule#source}.
 
 ---
 
@@ -7894,7 +7894,7 @@ public readonly target: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#target RulesetRule#target}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#target RulesetRule#target}.
 
 ---
 
@@ -7906,7 +7906,7 @@ public readonly template: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#template RulesetRule#template}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#template RulesetRule#template}.
 
 ---
 
@@ -7928,7 +7928,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#value RulesetRule#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#value RulesetRule#value}.
 
 ---
 
@@ -7950,7 +7950,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#value RulesetRule#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#value RulesetRule#value}.
 
 ---
 
@@ -7972,7 +7972,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#value RulesetRule#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#value RulesetRule#value}.
 
 ---
 
@@ -7994,7 +7994,7 @@ public readonly thresholdTimeAmount: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#threshold_time_amount RulesetRule#threshold_time_amount}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#threshold_time_amount RulesetRule#threshold_time_amount}.
 
 ---
 
@@ -8006,7 +8006,7 @@ public readonly thresholdTimeUnit: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#threshold_time_unit RulesetRule#threshold_time_unit}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#threshold_time_unit RulesetRule#threshold_time_unit}.
 
 ---
 
@@ -8018,7 +8018,7 @@ public readonly thresholdValue: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#threshold_value RulesetRule#threshold_value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#threshold_value RulesetRule#threshold_value}.
 
 ---
 
@@ -8030,7 +8030,7 @@ public readonly value: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#value RulesetRule#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#value RulesetRule#value}.
 
 ---
 
@@ -8052,7 +8052,7 @@ public readonly value: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#value RulesetRule#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#value RulesetRule#value}.
 
 ---
 
@@ -8074,7 +8074,7 @@ public readonly operator: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#operator RulesetRule#operator}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#operator RulesetRule#operator}.
 
 ---
 
@@ -8088,7 +8088,7 @@ public readonly subconditions: RulesetRuleConditionsSubconditions[];
 
 subconditions block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#subconditions RulesetRule#subconditions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#subconditions RulesetRule#subconditions}
 
 ---
 
@@ -8110,7 +8110,7 @@ public readonly operator: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#operator RulesetRule#operator}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#operator RulesetRule#operator}.
 
 ---
 
@@ -8124,7 +8124,7 @@ public readonly parameter: RulesetRuleConditionsSubconditionsParameter[];
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#parameter RulesetRule#parameter}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#parameter RulesetRule#parameter}
 
 ---
 
@@ -8146,7 +8146,7 @@ public readonly path: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#path RulesetRule#path}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#path RulesetRule#path}.
 
 ---
 
@@ -8158,7 +8158,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#value RulesetRule#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#value RulesetRule#value}.
 
 ---
 
@@ -8220,7 +8220,7 @@ public readonly ruleset: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#ruleset RulesetRule#ruleset}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#ruleset RulesetRule#ruleset}.
 
 ---
 
@@ -8234,7 +8234,7 @@ public readonly actions: RulesetRuleActions;
 
 actions block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#actions RulesetRule#actions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#actions RulesetRule#actions}
 
 ---
 
@@ -8248,7 +8248,7 @@ public readonly conditions: RulesetRuleConditions;
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#conditions RulesetRule#conditions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#conditions RulesetRule#conditions}
 
 ---
 
@@ -8260,7 +8260,7 @@ public readonly disabled: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#disabled RulesetRule#disabled}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#disabled RulesetRule#disabled}.
 
 ---
 
@@ -8272,7 +8272,7 @@ public readonly position: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#position RulesetRule#position}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#position RulesetRule#position}.
 
 ---
 
@@ -8286,7 +8286,7 @@ public readonly timeFrame: RulesetRuleTimeFrame;
 
 time_frame block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#time_frame RulesetRule#time_frame}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#time_frame RulesetRule#time_frame}
 
 ---
 
@@ -8300,7 +8300,7 @@ public readonly variable: RulesetRuleVariable[];
 
 variable block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#variable RulesetRule#variable}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#variable RulesetRule#variable}
 
 ---
 
@@ -8324,7 +8324,7 @@ public readonly activeBetween: RulesetRuleTimeFrameActiveBetween[];
 
 active_between block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#active_between RulesetRule#active_between}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#active_between RulesetRule#active_between}
 
 ---
 
@@ -8338,7 +8338,7 @@ public readonly scheduledWeekly: RulesetRuleTimeFrameScheduledWeekly[];
 
 scheduled_weekly block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#scheduled_weekly RulesetRule#scheduled_weekly}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#scheduled_weekly RulesetRule#scheduled_weekly}
 
 ---
 
@@ -8360,7 +8360,7 @@ public readonly endTime: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#end_time RulesetRule#end_time}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#end_time RulesetRule#end_time}.
 
 ---
 
@@ -8372,7 +8372,7 @@ public readonly startTime: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#start_time RulesetRule#start_time}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#start_time RulesetRule#start_time}.
 
 ---
 
@@ -8394,7 +8394,7 @@ public readonly duration: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#duration RulesetRule#duration}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#duration RulesetRule#duration}.
 
 ---
 
@@ -8406,7 +8406,7 @@ public readonly startTime: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#start_time RulesetRule#start_time}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#start_time RulesetRule#start_time}.
 
 ---
 
@@ -8418,7 +8418,7 @@ public readonly timezone: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#timezone RulesetRule#timezone}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#timezone RulesetRule#timezone}.
 
 ---
 
@@ -8430,7 +8430,7 @@ public readonly weekdays: number[];
 
 - *Type:* `number`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#weekdays RulesetRule#weekdays}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#weekdays RulesetRule#weekdays}.
 
 ---
 
@@ -8452,7 +8452,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#name RulesetRule#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#name RulesetRule#name}.
 
 ---
 
@@ -8466,7 +8466,7 @@ public readonly parameters: RulesetRuleVariableParameters[];
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#parameters RulesetRule#parameters}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#parameters RulesetRule#parameters}
 
 ---
 
@@ -8478,7 +8478,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#type RulesetRule#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#type RulesetRule#type}.
 
 ---
 
@@ -8500,7 +8500,7 @@ public readonly path: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#path RulesetRule#path}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#path RulesetRule#path}.
 
 ---
 
@@ -8512,7 +8512,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule.html#value RulesetRule#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#value RulesetRule#value}.
 
 ---
 
@@ -8534,7 +8534,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset.html#id Ruleset#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset#id Ruleset#id}.
 
 ---
 
@@ -8598,7 +8598,7 @@ public readonly layer: ScheduleLayer[];
 
 layer block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#layer Schedule#layer}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#layer Schedule#layer}
 
 ---
 
@@ -8610,7 +8610,7 @@ public readonly timeZone: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#time_zone Schedule#time_zone}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#time_zone Schedule#time_zone}.
 
 ---
 
@@ -8622,7 +8622,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#description Schedule#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#description Schedule#description}.
 
 ---
 
@@ -8634,7 +8634,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#name Schedule#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#name Schedule#name}.
 
 ---
 
@@ -8646,7 +8646,7 @@ public readonly overflow: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#overflow Schedule#overflow}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#overflow Schedule#overflow}.
 
 ---
 
@@ -8658,7 +8658,7 @@ public readonly teams: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#teams Schedule#teams}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#teams Schedule#teams}.
 
 ---
 
@@ -8680,7 +8680,7 @@ public readonly rotationTurnLengthSeconds: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#rotation_turn_length_seconds Schedule#rotation_turn_length_seconds}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#rotation_turn_length_seconds Schedule#rotation_turn_length_seconds}.
 
 ---
 
@@ -8692,7 +8692,7 @@ public readonly rotationVirtualStart: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#rotation_virtual_start Schedule#rotation_virtual_start}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#rotation_virtual_start Schedule#rotation_virtual_start}.
 
 ---
 
@@ -8704,7 +8704,7 @@ public readonly start: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#start Schedule#start}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#start Schedule#start}.
 
 ---
 
@@ -8716,7 +8716,7 @@ public readonly users: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#users Schedule#users}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#users Schedule#users}.
 
 ---
 
@@ -8728,7 +8728,7 @@ public readonly end: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#end Schedule#end}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#end Schedule#end}.
 
 ---
 
@@ -8740,7 +8740,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#name Schedule#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#name Schedule#name}.
 
 ---
 
@@ -8754,7 +8754,7 @@ public readonly restriction: ScheduleLayerRestriction[];
 
 restriction block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#restriction Schedule#restriction}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#restriction Schedule#restriction}
 
 ---
 
@@ -8776,7 +8776,7 @@ public readonly durationSeconds: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#duration_seconds Schedule#duration_seconds}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#duration_seconds Schedule#duration_seconds}.
 
 ---
 
@@ -8788,7 +8788,7 @@ public readonly startTimeOfDay: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#start_time_of_day Schedule#start_time_of_day}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#start_time_of_day Schedule#start_time_of_day}.
 
 ---
 
@@ -8800,7 +8800,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#type Schedule#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#type Schedule#type}.
 
 ---
 
@@ -8812,7 +8812,7 @@ public readonly startDayOfWeek: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule.html#start_day_of_week Schedule#start_day_of_week}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#start_day_of_week Schedule#start_day_of_week}.
 
 ---
 
@@ -8836,7 +8836,7 @@ public readonly config: ServiceAlertGroupingParametersConfig;
 
 config block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#config Service#config}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#config Service#config}
 
 ---
 
@@ -8848,7 +8848,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#type Service#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}.
 
 ---
 
@@ -8870,7 +8870,7 @@ public readonly aggregate: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#aggregate Service#aggregate}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#aggregate Service#aggregate}.
 
 ---
 
@@ -8882,7 +8882,7 @@ public readonly fields: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#fields Service#fields}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#fields Service#fields}.
 
 ---
 
@@ -8894,7 +8894,7 @@ public readonly timeout: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#timeout Service#timeout}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#timeout Service#timeout}.
 
 ---
 
@@ -8956,7 +8956,7 @@ public readonly escalationPolicy: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#escalation_policy Service#escalation_policy}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#escalation_policy Service#escalation_policy}.
 
 ---
 
@@ -8968,7 +8968,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#name Service#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#name Service#name}.
 
 ---
 
@@ -8980,7 +8980,7 @@ public readonly acknowledgementTimeout: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#acknowledgement_timeout Service#acknowledgement_timeout}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#acknowledgement_timeout Service#acknowledgement_timeout}.
 
 ---
 
@@ -8992,7 +8992,7 @@ public readonly alertCreation: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#alert_creation Service#alert_creation}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#alert_creation Service#alert_creation}.
 
 ---
 
@@ -9004,7 +9004,7 @@ public readonly alertGrouping: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#alert_grouping Service#alert_grouping}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#alert_grouping Service#alert_grouping}.
 
 ---
 
@@ -9018,7 +9018,7 @@ public readonly alertGroupingParameters: ServiceAlertGroupingParameters;
 
 alert_grouping_parameters block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#alert_grouping_parameters Service#alert_grouping_parameters}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#alert_grouping_parameters Service#alert_grouping_parameters}
 
 ---
 
@@ -9030,7 +9030,7 @@ public readonly alertGroupingTimeout: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#alert_grouping_timeout Service#alert_grouping_timeout}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#alert_grouping_timeout Service#alert_grouping_timeout}.
 
 ---
 
@@ -9042,7 +9042,7 @@ public readonly autoResolveTimeout: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#auto_resolve_timeout Service#auto_resolve_timeout}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#auto_resolve_timeout Service#auto_resolve_timeout}.
 
 ---
 
@@ -9054,7 +9054,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#description Service#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#description Service#description}.
 
 ---
 
@@ -9068,7 +9068,7 @@ public readonly incidentUrgencyRule: ServiceIncidentUrgencyRule;
 
 incident_urgency_rule block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#incident_urgency_rule Service#incident_urgency_rule}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#incident_urgency_rule Service#incident_urgency_rule}
 
 ---
 
@@ -9082,7 +9082,7 @@ public readonly scheduledActions: ServiceScheduledActions[];
 
 scheduled_actions block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#scheduled_actions Service#scheduled_actions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#scheduled_actions Service#scheduled_actions}
 
 ---
 
@@ -9096,7 +9096,7 @@ public readonly supportHours: ServiceSupportHours;
 
 support_hours block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#support_hours Service#support_hours}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#support_hours Service#support_hours}
 
 ---
 
@@ -9160,7 +9160,7 @@ public readonly dependency: ServiceDependencyDependency[];
 
 dependency block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#dependency ServiceDependency#dependency}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#dependency ServiceDependency#dependency}
 
 ---
 
@@ -9184,7 +9184,7 @@ public readonly dependentService: ServiceDependencyDependencyDependentService[];
 
 dependent_service block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#dependent_service ServiceDependency#dependent_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#dependent_service ServiceDependency#dependent_service}
 
 ---
 
@@ -9198,7 +9198,7 @@ public readonly supportingService: ServiceDependencyDependencySupportingService[
 
 supporting_service block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#supporting_service ServiceDependency#supporting_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#supporting_service ServiceDependency#supporting_service}
 
 ---
 
@@ -9210,7 +9210,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#type ServiceDependency#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#type ServiceDependency#type}.
 
 ---
 
@@ -9232,7 +9232,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#id ServiceDependency#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#id ServiceDependency#id}.
 
 ---
 
@@ -9244,7 +9244,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#type ServiceDependency#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#type ServiceDependency#type}.
 
 ---
 
@@ -9266,7 +9266,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#id ServiceDependency#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#id ServiceDependency#id}.
 
 ---
 
@@ -9278,7 +9278,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#type ServiceDependency#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#type ServiceDependency#type}.
 
 ---
 
@@ -9302,7 +9302,7 @@ public readonly annotate: ServiceEventRuleActionsAnnotate[];
 
 annotate block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#annotate ServiceEventRule#annotate}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#annotate ServiceEventRule#annotate}
 
 ---
 
@@ -9316,7 +9316,7 @@ public readonly eventAction: ServiceEventRuleActionsEventAction[];
 
 event_action block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#event_action ServiceEventRule#event_action}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#event_action ServiceEventRule#event_action}
 
 ---
 
@@ -9330,7 +9330,7 @@ public readonly extractions: ServiceEventRuleActionsExtractions[];
 
 extractions block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#extractions ServiceEventRule#extractions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#extractions ServiceEventRule#extractions}
 
 ---
 
@@ -9344,7 +9344,7 @@ public readonly priority: ServiceEventRuleActionsPriority[];
 
 priority block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#priority ServiceEventRule#priority}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#priority ServiceEventRule#priority}
 
 ---
 
@@ -9358,7 +9358,7 @@ public readonly severity: ServiceEventRuleActionsSeverity[];
 
 severity block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#severity ServiceEventRule#severity}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#severity ServiceEventRule#severity}
 
 ---
 
@@ -9372,7 +9372,7 @@ public readonly suppress: ServiceEventRuleActionsSuppress[];
 
 suppress block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#suppress ServiceEventRule#suppress}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#suppress ServiceEventRule#suppress}
 
 ---
 
@@ -9386,7 +9386,7 @@ public readonly suspend: ServiceEventRuleActionsSuspend[];
 
 suspend block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#suspend ServiceEventRule#suspend}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#suspend ServiceEventRule#suspend}
 
 ---
 
@@ -9408,7 +9408,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#value ServiceEventRule#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#value ServiceEventRule#value}.
 
 ---
 
@@ -9430,7 +9430,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#value ServiceEventRule#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#value ServiceEventRule#value}.
 
 ---
 
@@ -9452,7 +9452,7 @@ public readonly regex: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#regex ServiceEventRule#regex}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#regex ServiceEventRule#regex}.
 
 ---
 
@@ -9464,7 +9464,7 @@ public readonly source: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#source ServiceEventRule#source}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#source ServiceEventRule#source}.
 
 ---
 
@@ -9476,7 +9476,7 @@ public readonly target: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#target ServiceEventRule#target}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#target ServiceEventRule#target}.
 
 ---
 
@@ -9488,7 +9488,7 @@ public readonly template: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#template ServiceEventRule#template}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#template ServiceEventRule#template}.
 
 ---
 
@@ -9510,7 +9510,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#value ServiceEventRule#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#value ServiceEventRule#value}.
 
 ---
 
@@ -9532,7 +9532,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#value ServiceEventRule#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#value ServiceEventRule#value}.
 
 ---
 
@@ -9554,7 +9554,7 @@ public readonly thresholdTimeAmount: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#threshold_time_amount ServiceEventRule#threshold_time_amount}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#threshold_time_amount ServiceEventRule#threshold_time_amount}.
 
 ---
 
@@ -9566,7 +9566,7 @@ public readonly thresholdTimeUnit: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#threshold_time_unit ServiceEventRule#threshold_time_unit}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#threshold_time_unit ServiceEventRule#threshold_time_unit}.
 
 ---
 
@@ -9578,7 +9578,7 @@ public readonly thresholdValue: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#threshold_value ServiceEventRule#threshold_value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#threshold_value ServiceEventRule#threshold_value}.
 
 ---
 
@@ -9590,7 +9590,7 @@ public readonly value: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#value ServiceEventRule#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#value ServiceEventRule#value}.
 
 ---
 
@@ -9612,7 +9612,7 @@ public readonly value: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#value ServiceEventRule#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#value ServiceEventRule#value}.
 
 ---
 
@@ -9634,7 +9634,7 @@ public readonly operator: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#operator ServiceEventRule#operator}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#operator ServiceEventRule#operator}.
 
 ---
 
@@ -9648,7 +9648,7 @@ public readonly subconditions: ServiceEventRuleConditionsSubconditions[];
 
 subconditions block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#subconditions ServiceEventRule#subconditions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#subconditions ServiceEventRule#subconditions}
 
 ---
 
@@ -9670,7 +9670,7 @@ public readonly operator: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#operator ServiceEventRule#operator}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#operator ServiceEventRule#operator}.
 
 ---
 
@@ -9684,7 +9684,7 @@ public readonly parameter: ServiceEventRuleConditionsSubconditionsParameter[];
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#parameter ServiceEventRule#parameter}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#parameter ServiceEventRule#parameter}
 
 ---
 
@@ -9706,7 +9706,7 @@ public readonly path: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#path ServiceEventRule#path}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#path ServiceEventRule#path}.
 
 ---
 
@@ -9718,7 +9718,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#value ServiceEventRule#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#value ServiceEventRule#value}.
 
 ---
 
@@ -9780,7 +9780,7 @@ public readonly service: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#service ServiceEventRule#service}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#service ServiceEventRule#service}.
 
 ---
 
@@ -9794,7 +9794,7 @@ public readonly actions: ServiceEventRuleActions;
 
 actions block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#actions ServiceEventRule#actions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#actions ServiceEventRule#actions}
 
 ---
 
@@ -9808,7 +9808,7 @@ public readonly conditions: ServiceEventRuleConditions;
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#conditions ServiceEventRule#conditions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#conditions ServiceEventRule#conditions}
 
 ---
 
@@ -9820,7 +9820,7 @@ public readonly disabled: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#disabled ServiceEventRule#disabled}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#disabled ServiceEventRule#disabled}.
 
 ---
 
@@ -9832,7 +9832,7 @@ public readonly position: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#position ServiceEventRule#position}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#position ServiceEventRule#position}.
 
 ---
 
@@ -9846,7 +9846,7 @@ public readonly timeFrame: ServiceEventRuleTimeFrame;
 
 time_frame block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#time_frame ServiceEventRule#time_frame}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#time_frame ServiceEventRule#time_frame}
 
 ---
 
@@ -9860,7 +9860,7 @@ public readonly variable: ServiceEventRuleVariable[];
 
 variable block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#variable ServiceEventRule#variable}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#variable ServiceEventRule#variable}
 
 ---
 
@@ -9884,7 +9884,7 @@ public readonly activeBetween: ServiceEventRuleTimeFrameActiveBetween[];
 
 active_between block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#active_between ServiceEventRule#active_between}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#active_between ServiceEventRule#active_between}
 
 ---
 
@@ -9898,7 +9898,7 @@ public readonly scheduledWeekly: ServiceEventRuleTimeFrameScheduledWeekly[];
 
 scheduled_weekly block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#scheduled_weekly ServiceEventRule#scheduled_weekly}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#scheduled_weekly ServiceEventRule#scheduled_weekly}
 
 ---
 
@@ -9920,7 +9920,7 @@ public readonly endTime: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#end_time ServiceEventRule#end_time}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#end_time ServiceEventRule#end_time}.
 
 ---
 
@@ -9932,7 +9932,7 @@ public readonly startTime: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#start_time ServiceEventRule#start_time}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#start_time ServiceEventRule#start_time}.
 
 ---
 
@@ -9954,7 +9954,7 @@ public readonly duration: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#duration ServiceEventRule#duration}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#duration ServiceEventRule#duration}.
 
 ---
 
@@ -9966,7 +9966,7 @@ public readonly startTime: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#start_time ServiceEventRule#start_time}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#start_time ServiceEventRule#start_time}.
 
 ---
 
@@ -9978,7 +9978,7 @@ public readonly timezone: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#timezone ServiceEventRule#timezone}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#timezone ServiceEventRule#timezone}.
 
 ---
 
@@ -9990,7 +9990,7 @@ public readonly weekdays: number[];
 
 - *Type:* `number`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#weekdays ServiceEventRule#weekdays}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#weekdays ServiceEventRule#weekdays}.
 
 ---
 
@@ -10012,7 +10012,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#name ServiceEventRule#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#name ServiceEventRule#name}.
 
 ---
 
@@ -10026,7 +10026,7 @@ public readonly parameters: ServiceEventRuleVariableParameters[];
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#parameters ServiceEventRule#parameters}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#parameters ServiceEventRule#parameters}
 
 ---
 
@@ -10038,7 +10038,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#type ServiceEventRule#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#type ServiceEventRule#type}.
 
 ---
 
@@ -10060,7 +10060,7 @@ public readonly path: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#path ServiceEventRule#path}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#path ServiceEventRule#path}.
 
 ---
 
@@ -10072,7 +10072,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule.html#value ServiceEventRule#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#value ServiceEventRule#value}.
 
 ---
 
@@ -10094,7 +10094,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#type Service#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}.
 
 ---
 
@@ -10108,7 +10108,7 @@ public readonly duringSupportHours: ServiceIncidentUrgencyRuleDuringSupportHours
 
 during_support_hours block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#during_support_hours Service#during_support_hours}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#during_support_hours Service#during_support_hours}
 
 ---
 
@@ -10122,7 +10122,7 @@ public readonly outsideSupportHours: ServiceIncidentUrgencyRuleOutsideSupportHou
 
 outside_support_hours block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#outside_support_hours Service#outside_support_hours}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#outside_support_hours Service#outside_support_hours}
 
 ---
 
@@ -10134,7 +10134,7 @@ public readonly urgency: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#urgency Service#urgency}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#urgency Service#urgency}.
 
 ---
 
@@ -10156,7 +10156,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#type Service#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}.
 
 ---
 
@@ -10168,7 +10168,7 @@ public readonly urgency: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#urgency Service#urgency}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#urgency Service#urgency}.
 
 ---
 
@@ -10190,7 +10190,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#type Service#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}.
 
 ---
 
@@ -10202,7 +10202,7 @@ public readonly urgency: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#urgency Service#urgency}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#urgency Service#urgency}.
 
 ---
 
@@ -10264,7 +10264,7 @@ public readonly service: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration.html#service ServiceIntegration#service}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration#service ServiceIntegration#service}.
 
 ---
 
@@ -10276,7 +10276,7 @@ public readonly integrationEmail: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration.html#integration_email ServiceIntegration#integration_email}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration#integration_email ServiceIntegration#integration_email}.
 
 ---
 
@@ -10288,7 +10288,7 @@ public readonly integrationKey: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration.html#integration_key ServiceIntegration#integration_key}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration#integration_key ServiceIntegration#integration_key}.
 
 ---
 
@@ -10300,7 +10300,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration.html#name ServiceIntegration#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration#name ServiceIntegration#name}.
 
 ---
 
@@ -10312,7 +10312,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration.html#type ServiceIntegration#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration#type ServiceIntegration#type}.
 
 ---
 
@@ -10324,7 +10324,7 @@ public readonly vendor: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration.html#vendor ServiceIntegration#vendor}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_integration#vendor ServiceIntegration#vendor}.
 
 ---
 
@@ -10348,7 +10348,7 @@ public readonly at: ServiceScheduledActionsAt[];
 
 at block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#at Service#at}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#at Service#at}
 
 ---
 
@@ -10360,7 +10360,7 @@ public readonly toUrgency: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#to_urgency Service#to_urgency}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#to_urgency Service#to_urgency}.
 
 ---
 
@@ -10372,7 +10372,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#type Service#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}.
 
 ---
 
@@ -10394,7 +10394,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#name Service#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#name Service#name}.
 
 ---
 
@@ -10406,7 +10406,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#type Service#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}.
 
 ---
 
@@ -10428,7 +10428,7 @@ public readonly daysOfWeek: number[];
 
 - *Type:* `number`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#days_of_week Service#days_of_week}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#days_of_week Service#days_of_week}.
 
 ---
 
@@ -10440,7 +10440,7 @@ public readonly endTime: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#end_time Service#end_time}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#end_time Service#end_time}.
 
 ---
 
@@ -10452,7 +10452,7 @@ public readonly startTime: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#start_time Service#start_time}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#start_time Service#start_time}.
 
 ---
 
@@ -10464,7 +10464,7 @@ public readonly timeZone: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#time_zone Service#time_zone}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#time_zone Service#time_zone}.
 
 ---
 
@@ -10476,7 +10476,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service.html#type Service#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}.
 
 ---
 
@@ -10538,7 +10538,7 @@ public readonly channelId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#channel_id SlackConnection#channel_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#channel_id SlackConnection#channel_id}.
 
 ---
 
@@ -10552,7 +10552,7 @@ public readonly config: SlackConnectionConfigA[];
 
 config block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#config SlackConnection#config}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#config SlackConnection#config}
 
 ---
 
@@ -10564,7 +10564,7 @@ public readonly notificationType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#notification_type SlackConnection#notification_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#notification_type SlackConnection#notification_type}.
 
 ---
 
@@ -10576,7 +10576,7 @@ public readonly sourceId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#source_id SlackConnection#source_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#source_id SlackConnection#source_id}.
 
 ---
 
@@ -10588,7 +10588,7 @@ public readonly sourceType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#source_type SlackConnection#source_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#source_type SlackConnection#source_type}.
 
 ---
 
@@ -10600,7 +10600,7 @@ public readonly workspaceId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#workspace_id SlackConnection#workspace_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#workspace_id SlackConnection#workspace_id}.
 
 ---
 
@@ -10622,7 +10622,7 @@ public readonly events: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#events SlackConnection#events}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#events SlackConnection#events}.
 
 ---
 
@@ -10634,7 +10634,7 @@ public readonly priorities: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#priorities SlackConnection#priorities}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#priorities SlackConnection#priorities}.
 
 ---
 
@@ -10646,7 +10646,7 @@ public readonly urgency: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection.html#urgency SlackConnection#urgency}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#urgency SlackConnection#urgency}.
 
 ---
 
@@ -10708,7 +10708,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team.html#name Team#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team#name Team#name}.
 
 ---
 
@@ -10720,7 +10720,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team.html#description Team#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team#description Team#description}.
 
 ---
 
@@ -10732,7 +10732,7 @@ public readonly parent: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team.html#parent Team#parent}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team#parent Team#parent}.
 
 ---
 
@@ -10794,7 +10794,7 @@ public readonly teamId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team_membership.html#team_id TeamMembership#team_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team_membership#team_id TeamMembership#team_id}.
 
 ---
 
@@ -10806,7 +10806,7 @@ public readonly userId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team_membership.html#user_id TeamMembership#user_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team_membership#user_id TeamMembership#user_id}.
 
 ---
 
@@ -10818,7 +10818,7 @@ public readonly role: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team_membership.html#role TeamMembership#role}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team_membership#role TeamMembership#role}.
 
 ---
 
@@ -10880,7 +10880,7 @@ public readonly email: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user.html#email User#email}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#email User#email}.
 
 ---
 
@@ -10892,7 +10892,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user.html#name User#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#name User#name}.
 
 ---
 
@@ -10904,7 +10904,7 @@ public readonly color: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user.html#color User#color}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#color User#color}.
 
 ---
 
@@ -10916,7 +10916,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user.html#description User#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#description User#description}.
 
 ---
 
@@ -10928,7 +10928,7 @@ public readonly jobTitle: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user.html#job_title User#job_title}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#job_title User#job_title}.
 
 ---
 
@@ -10940,7 +10940,7 @@ public readonly role: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user.html#role User#role}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#role User#role}.
 
 ---
 
@@ -10952,7 +10952,7 @@ public readonly teams: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user.html#teams User#teams}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#teams User#teams}.
 
 ---
 
@@ -10964,7 +10964,7 @@ public readonly timeZone: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user.html#time_zone User#time_zone}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#time_zone User#time_zone}.
 
 ---
 
@@ -11026,7 +11026,7 @@ public readonly address: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method.html#address UserContactMethod#address}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method#address UserContactMethod#address}.
 
 ---
 
@@ -11038,7 +11038,7 @@ public readonly label: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method.html#label UserContactMethod#label}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method#label UserContactMethod#label}.
 
 ---
 
@@ -11050,7 +11050,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method.html#type UserContactMethod#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method#type UserContactMethod#type}.
 
 ---
 
@@ -11062,7 +11062,7 @@ public readonly userId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method.html#user_id UserContactMethod#user_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method#user_id UserContactMethod#user_id}.
 
 ---
 
@@ -11074,7 +11074,7 @@ public readonly countryCode: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method.html#country_code UserContactMethod#country_code}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method#country_code UserContactMethod#country_code}.
 
 ---
 
@@ -11086,7 +11086,7 @@ public readonly sendShortEmail: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method.html#send_short_email UserContactMethod#send_short_email}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_contact_method#send_short_email UserContactMethod#send_short_email}.
 
 ---
 
@@ -11148,7 +11148,7 @@ public readonly contactMethod: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule.html#contact_method UserNotificationRule#contact_method}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule#contact_method UserNotificationRule#contact_method}.
 
 ---
 
@@ -11160,7 +11160,7 @@ public readonly startDelayInMinutes: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule.html#start_delay_in_minutes UserNotificationRule#start_delay_in_minutes}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule#start_delay_in_minutes UserNotificationRule#start_delay_in_minutes}.
 
 ---
 
@@ -11172,7 +11172,7 @@ public readonly urgency: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule.html#urgency UserNotificationRule#urgency}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule#urgency UserNotificationRule#urgency}.
 
 ---
 
@@ -11184,7 +11184,7 @@ public readonly userId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule.html#user_id UserNotificationRule#user_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule#user_id UserNotificationRule#user_id}.
 
 ---
 

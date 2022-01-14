@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/pagerduty/r/addon.html
+// https://www.terraform.io/docs/providers/pagerduty/r/addon
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface AddonConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/addon.html#name Addon#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/addon#name Addon#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/addon.html#src Addon#src}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/addon#src Addon#src}
   */
   readonly src: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/addon.html pagerduty_addon}
+* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/addon pagerduty_addon}
 */
 export class Addon extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class Addon extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/addon.html pagerduty_addon} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/addon pagerduty_addon} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

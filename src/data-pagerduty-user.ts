@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/pagerduty/d/user.html
+// https://www.terraform.io/docs/providers/pagerduty/d/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyUserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/user.html#email DataPagerdutyUser#email}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/user#email DataPagerdutyUser#email}
   */
   readonly email: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/user.html pagerduty_user}
+* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/user pagerduty_user}
 */
 export class DataPagerdutyUser extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataPagerdutyUser extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/user.html pagerduty_user} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/user pagerduty_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

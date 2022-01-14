@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/pagerduty/r/ruleset.html
+// https://www.terraform.io/docs/providers/pagerduty/r/ruleset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,19 +8,19 @@ import * as cdktf from 'cdktf';
 
 export interface RulesetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset.html#name Ruleset#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset#name Ruleset#name}
   */
   readonly name: string;
   /**
   * team block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset.html#team Ruleset#team}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset#team Ruleset#team}
   */
   readonly team?: RulesetTeam;
 }
 export interface RulesetTeam {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset.html#id Ruleset#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset#id Ruleset#id}
   */
   readonly id: string;
 }
@@ -83,7 +83,7 @@ export class RulesetTeamOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset.html pagerduty_ruleset}
+* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset pagerduty_ruleset}
 */
 export class Ruleset extends cdktf.TerraformResource {
 
@@ -97,7 +97,7 @@ export class Ruleset extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset.html pagerduty_ruleset} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset pagerduty_ruleset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

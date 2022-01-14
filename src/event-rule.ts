@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/pagerduty/r/event_rule.html
+// https://www.terraform.io/docs/providers/pagerduty/r/event_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface EventRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule.html#action_json EventRule#action_json}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule#action_json EventRule#action_json}
   */
   readonly actionJson: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule.html#advanced_condition_json EventRule#advanced_condition_json}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule#advanced_condition_json EventRule#advanced_condition_json}
   */
   readonly advancedConditionJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule.html#condition_json EventRule#condition_json}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule#condition_json EventRule#condition_json}
   */
   readonly conditionJson: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule.html pagerduty_event_rule}
+* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule pagerduty_event_rule}
 */
 export class EventRule extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class EventRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule.html pagerduty_event_rule} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule pagerduty_event_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

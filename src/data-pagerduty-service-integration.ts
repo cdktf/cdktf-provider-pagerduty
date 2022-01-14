@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/pagerduty/d/service_integration.html
+// https://www.terraform.io/docs/providers/pagerduty/d/service_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface DataPagerdutyServiceIntegrationConfig extends cdktf.TerraformMe
   /**
   * examples 'Amazon CloudWatch', 'New Relic
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration.html#integration_summary DataPagerdutyServiceIntegration#integration_summary}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration#integration_summary DataPagerdutyServiceIntegration#integration_summary}
   */
   readonly integrationSummary: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration.html#service_name DataPagerdutyServiceIntegration#service_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration#service_name DataPagerdutyServiceIntegration#service_name}
   */
   readonly serviceName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration.html pagerduty_service_integration}
+* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration pagerduty_service_integration}
 */
 export class DataPagerdutyServiceIntegration extends cdktf.TerraformDataSource {
 
@@ -34,7 +34,7 @@ export class DataPagerdutyServiceIntegration extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration.html pagerduty_service_integration} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/service_integration pagerduty_service_integration} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/pagerduty/d/priority.html
+// https://www.terraform.io/docs/providers/pagerduty/d/priority
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataPagerdutyPriorityConfig extends cdktf.TerraformMetaArgument
   /**
   * The name of the priority to find in the PagerDuty API
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/priority.html#name DataPagerdutyPriority#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/priority#name DataPagerdutyPriority#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/priority.html pagerduty_priority}
+* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/priority pagerduty_priority}
 */
 export class DataPagerdutyPriority extends cdktf.TerraformDataSource {
 
@@ -30,7 +30,7 @@ export class DataPagerdutyPriority extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/priority.html pagerduty_priority} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/priority pagerduty_priority} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
