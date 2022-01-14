@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/pagerduty/d/business_service.html
+// https://www.terraform.io/docs/providers/pagerduty/d/business_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyBusinessServiceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service.html#name DataPagerdutyBusinessService#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service#name DataPagerdutyBusinessService#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service.html pagerduty_business_service}
+* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service pagerduty_business_service}
 */
 export class DataPagerdutyBusinessService extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataPagerdutyBusinessService extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service.html pagerduty_business_service} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service pagerduty_business_service} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

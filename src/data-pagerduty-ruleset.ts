@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/pagerduty/d/ruleset.html
+// https://www.terraform.io/docs/providers/pagerduty/d/ruleset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyRulesetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/ruleset.html#name DataPagerdutyRuleset#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/ruleset#name DataPagerdutyRuleset#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/ruleset.html pagerduty_ruleset}
+* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/ruleset pagerduty_ruleset}
 */
 export class DataPagerdutyRuleset extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataPagerdutyRuleset extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/ruleset.html pagerduty_ruleset} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/ruleset pagerduty_ruleset} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

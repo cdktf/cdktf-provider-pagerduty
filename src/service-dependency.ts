@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html
+// https://www.terraform.io/docs/providers/pagerduty/r/service_dependency
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface ServiceDependencyConfig extends cdktf.TerraformMetaArguments {
   /**
   * dependency block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#dependency ServiceDependency#dependency}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#dependency ServiceDependency#dependency}
   */
   readonly dependency: ServiceDependencyDependency[];
 }
 export interface ServiceDependencyDependencyDependentService {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#id ServiceDependency#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#id ServiceDependency#id}
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#type ServiceDependency#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#type ServiceDependency#type}
   */
   readonly type: string;
 }
@@ -38,11 +38,11 @@ export function serviceDependencyDependencyDependentServiceToTerraform(struct?: 
 
 export interface ServiceDependencyDependencySupportingService {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#id ServiceDependency#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#id ServiceDependency#id}
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#type ServiceDependency#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#type ServiceDependency#type}
   */
   readonly type: string;
 }
@@ -60,19 +60,19 @@ export function serviceDependencyDependencySupportingServiceToTerraform(struct?:
 
 export interface ServiceDependencyDependency {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#type ServiceDependency#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#type ServiceDependency#type}
   */
   readonly type?: string;
   /**
   * dependent_service block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#dependent_service ServiceDependency#dependent_service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#dependent_service ServiceDependency#dependent_service}
   */
   readonly dependentService: ServiceDependencyDependencyDependentService[];
   /**
   * supporting_service block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html#supporting_service ServiceDependency#supporting_service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#supporting_service ServiceDependency#supporting_service}
   */
   readonly supportingService: ServiceDependencyDependencySupportingService[];
 }
@@ -91,7 +91,7 @@ export function serviceDependencyDependencyToTerraform(struct?: ServiceDependenc
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html pagerduty_service_dependency}
+* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency pagerduty_service_dependency}
 */
 export class ServiceDependency extends cdktf.TerraformResource {
 
@@ -105,7 +105,7 @@ export class ServiceDependency extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency.html pagerduty_service_dependency} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency pagerduty_service_dependency} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

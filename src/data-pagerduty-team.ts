@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/pagerduty/d/team.html
+// https://www.terraform.io/docs/providers/pagerduty/d/team
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface DataPagerdutyTeamConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the team to find in the PagerDuty API
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/team.html#name DataPagerdutyTeam#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/team#name DataPagerdutyTeam#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/team.html#parent DataPagerdutyTeam#parent}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/team#parent DataPagerdutyTeam#parent}
   */
   readonly parent?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/team.html pagerduty_team}
+* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/team pagerduty_team}
 */
 export class DataPagerdutyTeam extends cdktf.TerraformDataSource {
 
@@ -34,7 +34,7 @@ export class DataPagerdutyTeam extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/team.html pagerduty_team} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/team pagerduty_team} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

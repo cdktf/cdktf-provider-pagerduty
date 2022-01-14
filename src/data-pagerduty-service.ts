@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/pagerduty/d/service.html
+// https://www.terraform.io/docs/providers/pagerduty/d/service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyServiceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/service.html#name DataPagerdutyService#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/service#name DataPagerdutyService#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/service.html pagerduty_service}
+* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/service pagerduty_service}
 */
 export class DataPagerdutyService extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataPagerdutyService extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/service.html pagerduty_service} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/service pagerduty_service} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

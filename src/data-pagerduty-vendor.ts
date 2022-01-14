@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/pagerduty/d/vendor.html
+// https://www.terraform.io/docs/providers/pagerduty/d/vendor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyVendorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor.html#name DataPagerdutyVendor#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor#name DataPagerdutyVendor#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor.html#name_regex DataPagerdutyVendor#name_regex}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor#name_regex DataPagerdutyVendor#name_regex}
   */
   readonly nameRegex?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor.html pagerduty_vendor}
+* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor pagerduty_vendor}
 */
 export class DataPagerdutyVendor extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataPagerdutyVendor extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor.html pagerduty_vendor} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor pagerduty_vendor} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
