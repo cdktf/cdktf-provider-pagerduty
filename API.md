@@ -1535,10 +1535,10 @@ public readonly numLoopsInput: number;
 ##### `ruleInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicy.property.ruleInput"></a>
 
 ```typescript
-public readonly ruleInput: EscalationPolicyRule[];
+public readonly ruleInput: IResolvable | EscalationPolicyRule[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.EscalationPolicyRule`](#@cdktf/provider-pagerduty.EscalationPolicyRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.EscalationPolicyRule`](#@cdktf/provider-pagerduty.EscalationPolicyRule)[]
 
 ---
 
@@ -1585,10 +1585,10 @@ public readonly numLoops: number;
 ##### `rule`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicy.property.rule"></a>
 
 ```typescript
-public readonly rule: EscalationPolicyRule[];
+public readonly rule: IResolvable | EscalationPolicyRule[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.EscalationPolicyRule`](#@cdktf/provider-pagerduty.EscalationPolicyRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.EscalationPolicyRule`](#@cdktf/provider-pagerduty.EscalationPolicyRule)[]
 
 ---
 
@@ -1660,10 +1660,10 @@ public resetAdvancedConditionJson()
 ##### `catchAll`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EventRule.property.catchAll"></a>
 
 ```typescript
-public readonly catchAll: any;
+public readonly catchAll: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -2695,10 +2695,10 @@ public readonly nameInput: string;
 ##### `responderInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.responderInput"></a>
 
 ```typescript
-public readonly responderInput: ResponsePlayResponder[];
+public readonly responderInput: IResolvable | ResponsePlayResponder[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ResponsePlayResponder`](#@cdktf/provider-pagerduty.ResponsePlayResponder)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ResponsePlayResponder`](#@cdktf/provider-pagerduty.ResponsePlayResponder)[]
 
 ---
 
@@ -2725,10 +2725,10 @@ public readonly runnabilityInput: string;
 ##### `subscriberInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.subscriberInput"></a>
 
 ```typescript
-public readonly subscriberInput: ResponsePlaySubscriber[];
+public readonly subscriberInput: IResolvable | ResponsePlaySubscriber[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ResponsePlaySubscriber`](#@cdktf/provider-pagerduty.ResponsePlaySubscriber)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ResponsePlaySubscriber`](#@cdktf/provider-pagerduty.ResponsePlaySubscriber)[]
 
 ---
 
@@ -2815,10 +2815,10 @@ public readonly name: string;
 ##### `responder`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.responder"></a>
 
 ```typescript
-public readonly responder: ResponsePlayResponder[];
+public readonly responder: IResolvable | ResponsePlayResponder[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ResponsePlayResponder`](#@cdktf/provider-pagerduty.ResponsePlayResponder)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ResponsePlayResponder`](#@cdktf/provider-pagerduty.ResponsePlayResponder)[]
 
 ---
 
@@ -2845,10 +2845,10 @@ public readonly runnability: string;
 ##### `subscriber`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlay.property.subscriber"></a>
 
 ```typescript
-public readonly subscriber: ResponsePlaySubscriber[];
+public readonly subscriber: IResolvable | ResponsePlaySubscriber[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ResponsePlaySubscriber`](#@cdktf/provider-pagerduty.ResponsePlaySubscriber)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ResponsePlaySubscriber`](#@cdktf/provider-pagerduty.ResponsePlaySubscriber)[]
 
 ---
 
@@ -3243,10 +3243,10 @@ public readonly timeFrameInput: RulesetRuleTimeFrame;
 ##### `variableInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.variableInput"></a>
 
 ```typescript
-public readonly variableInput: RulesetRuleVariable[];
+public readonly variableInput: IResolvable | RulesetRuleVariable[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleVariable`](#@cdktf/provider-pagerduty.RulesetRuleVariable)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleVariable`](#@cdktf/provider-pagerduty.RulesetRuleVariable)[]
 
 ---
 
@@ -3283,10 +3283,10 @@ public readonly ruleset: string;
 ##### `variable`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRule.property.variable"></a>
 
 ```typescript
-public readonly variable: RulesetRuleVariable[];
+public readonly variable: IResolvable | RulesetRuleVariable[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleVariable`](#@cdktf/provider-pagerduty.RulesetRuleVariable)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleVariable`](#@cdktf/provider-pagerduty.RulesetRuleVariable)[]
 
 ---
 
@@ -3386,10 +3386,10 @@ public readonly descriptionInput: string;
 ##### `layerInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.layerInput"></a>
 
 ```typescript
-public readonly layerInput: ScheduleLayer[];
+public readonly layerInput: IResolvable | ScheduleLayer[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ScheduleLayer`](#@cdktf/provider-pagerduty.ScheduleLayer)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ScheduleLayer`](#@cdktf/provider-pagerduty.ScheduleLayer)[]
 
 ---
 
@@ -3446,10 +3446,10 @@ public readonly description: string;
 ##### `layer`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Schedule.property.layer"></a>
 
 ```typescript
-public readonly layer: ScheduleLayer[];
+public readonly layer: IResolvable | ScheduleLayer[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ScheduleLayer`](#@cdktf/provider-pagerduty.ScheduleLayer)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ScheduleLayer`](#@cdktf/provider-pagerduty.ScheduleLayer)[]
 
 ---
 
@@ -3821,10 +3821,10 @@ public readonly nameInput: string;
 ##### `scheduledActionsInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Service.property.scheduledActionsInput"></a>
 
 ```typescript
-public readonly scheduledActionsInput: ServiceScheduledActions[];
+public readonly scheduledActionsInput: IResolvable | ServiceScheduledActions[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceScheduledActions`](#@cdktf/provider-pagerduty.ServiceScheduledActions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceScheduledActions`](#@cdktf/provider-pagerduty.ServiceScheduledActions)[]
 
 ---
 
@@ -3921,10 +3921,10 @@ public readonly name: string;
 ##### `scheduledActions`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.scheduledActions"></a>
 
 ```typescript
-public readonly scheduledActions: ServiceScheduledActions[];
+public readonly scheduledActions: IResolvable | ServiceScheduledActions[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceScheduledActions`](#@cdktf/provider-pagerduty.ServiceScheduledActions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceScheduledActions`](#@cdktf/provider-pagerduty.ServiceScheduledActions)[]
 
 ---
 
@@ -3989,20 +3989,20 @@ public readonly id: string;
 ##### `dependencyInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceDependency.property.dependencyInput"></a>
 
 ```typescript
-public readonly dependencyInput: ServiceDependencyDependency[];
+public readonly dependencyInput: IResolvable | ServiceDependencyDependency[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceDependencyDependency`](#@cdktf/provider-pagerduty.ServiceDependencyDependency)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceDependencyDependency`](#@cdktf/provider-pagerduty.ServiceDependencyDependency)[]
 
 ---
 
 ##### `dependency`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceDependency.property.dependency"></a>
 
 ```typescript
-public readonly dependency: ServiceDependencyDependency[];
+public readonly dependency: IResolvable | ServiceDependencyDependency[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceDependencyDependency`](#@cdktf/provider-pagerduty.ServiceDependencyDependency)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceDependencyDependency`](#@cdktf/provider-pagerduty.ServiceDependencyDependency)[]
 
 ---
 
@@ -4230,10 +4230,10 @@ public readonly timeFrameInput: ServiceEventRuleTimeFrame;
 ##### `variableInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.variableInput"></a>
 
 ```typescript
-public readonly variableInput: ServiceEventRuleVariable[];
+public readonly variableInput: IResolvable | ServiceEventRuleVariable[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleVariable`](#@cdktf/provider-pagerduty.ServiceEventRuleVariable)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleVariable`](#@cdktf/provider-pagerduty.ServiceEventRuleVariable)[]
 
 ---
 
@@ -4270,10 +4270,10 @@ public readonly service: string;
 ##### `variable`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRule.property.variable"></a>
 
 ```typescript
-public readonly variable: ServiceEventRuleVariable[];
+public readonly variable: IResolvable | ServiceEventRuleVariable[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleVariable`](#@cdktf/provider-pagerduty.ServiceEventRuleVariable)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleVariable`](#@cdktf/provider-pagerduty.ServiceEventRuleVariable)[]
 
 ---
 
@@ -4587,10 +4587,10 @@ public readonly channelIdInput: string;
 ##### `configInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.configInput"></a>
 
 ```typescript
-public readonly configInput: SlackConnectionConfigA[];
+public readonly configInput: IResolvable | SlackConnectionConfigA[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.SlackConnectionConfigA`](#@cdktf/provider-pagerduty.SlackConnectionConfigA)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.SlackConnectionConfigA`](#@cdktf/provider-pagerduty.SlackConnectionConfigA)[]
 
 ---
 
@@ -4647,10 +4647,10 @@ public readonly channelId: string;
 ##### `config`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnection.property.config"></a>
 
 ```typescript
-public readonly config: SlackConnectionConfigA[];
+public readonly config: IResolvable | SlackConnectionConfigA[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.SlackConnectionConfigA`](#@cdktf/provider-pagerduty.SlackConnectionConfigA)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.SlackConnectionConfigA`](#@cdktf/provider-pagerduty.SlackConnectionConfigA)[]
 
 ---
 
@@ -5078,10 +5078,10 @@ public readonly id: string;
 ##### `invitationSent`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.User.property.invitationSent"></a>
 
 ```typescript
-public readonly invitationSent: any;
+public readonly invitationSent: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -5309,20 +5309,20 @@ public resetSendShortEmail()
 ##### `blacklisted`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.blacklisted"></a>
 
 ```typescript
-public readonly blacklisted: any;
+public readonly blacklisted: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserContactMethod.property.enabled"></a>
 
 ```typescript
-public readonly enabled: any;
+public readonly enabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -5517,10 +5517,10 @@ public readonly id: string;
 ##### `contactMethodInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRule.property.contactMethodInput"></a>
 
 ```typescript
-public readonly contactMethodInput: IResolvable | {[ key: string ]: string};
+public readonly contactMethodInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -5557,10 +5557,10 @@ public readonly userIdInput: string;
 ##### `contactMethod`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRule.property.contactMethod"></a>
 
 ```typescript
-public readonly contactMethod: IResolvable | {[ key: string ]: string};
+public readonly contactMethod: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -5617,10 +5617,10 @@ const addonConfig: AddonConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.AddonConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -5691,10 +5691,10 @@ const businessServiceConfig: BusinessServiceConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.BusinessServiceConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -5801,10 +5801,10 @@ const dataPagerdutyBusinessServiceConfig: DataPagerdutyBusinessServiceConfig = {
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyBusinessServiceConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -5863,10 +5863,10 @@ const dataPagerdutyEscalationPolicyConfig: DataPagerdutyEscalationPolicyConfig =
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyEscalationPolicyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -5925,10 +5925,10 @@ const dataPagerdutyExtensionSchemaConfig: DataPagerdutyExtensionSchemaConfig = {
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchemaConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -5987,10 +5987,10 @@ const dataPagerdutyPriorityConfig: DataPagerdutyPriorityConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyPriorityConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -6051,10 +6051,10 @@ const dataPagerdutyRulesetConfig: DataPagerdutyRulesetConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyRulesetConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -6113,10 +6113,10 @@ const dataPagerdutyScheduleConfig: DataPagerdutyScheduleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyScheduleConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -6175,10 +6175,10 @@ const dataPagerdutyServiceConfig: DataPagerdutyServiceConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -6237,10 +6237,10 @@ const dataPagerdutyServiceIntegrationConfig: DataPagerdutyServiceIntegrationConf
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -6313,10 +6313,10 @@ const dataPagerdutyTeamConfig: DataPagerdutyTeamConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyTeamConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -6389,10 +6389,10 @@ const dataPagerdutyUserConfig: DataPagerdutyUserConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -6451,10 +6451,10 @@ const dataPagerdutyUserContactMethodConfig: DataPagerdutyUserContactMethodConfig
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethodConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -6541,10 +6541,10 @@ const dataPagerdutyVendorConfig: DataPagerdutyVendorConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyVendorConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -6615,10 +6615,10 @@ const escalationPolicyConfig: EscalationPolicyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -6667,10 +6667,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `rule`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyConfig.property.rule"></a>
 
 ```typescript
-public readonly rule: EscalationPolicyRule[];
+public readonly rule: IResolvable | EscalationPolicyRule[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.EscalationPolicyRule`](#@cdktf/provider-pagerduty.EscalationPolicyRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.EscalationPolicyRule`](#@cdktf/provider-pagerduty.EscalationPolicyRule)[]
 
 rule block.
 
@@ -6739,10 +6739,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `target`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyRule.property.target"></a>
 
 ```typescript
-public readonly target: EscalationPolicyRuleTarget[];
+public readonly target: IResolvable | EscalationPolicyRuleTarget[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.EscalationPolicyRuleTarget`](#@cdktf/provider-pagerduty.EscalationPolicyRuleTarget)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.EscalationPolicyRuleTarget`](#@cdktf/provider-pagerduty.EscalationPolicyRuleTarget)[]
 
 target block.
 
@@ -6797,10 +6797,10 @@ const eventRuleConfig: EventRuleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EventRuleConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -6883,10 +6883,10 @@ const extensionConfig: ExtensionConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -7005,10 +7005,10 @@ const extensionServicenowConfig: ExtensionServicenowConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -7187,10 +7187,10 @@ const maintenanceWindowConfig: MaintenanceWindowConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindowConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -7333,10 +7333,10 @@ const responsePlayConfig: ResponsePlayConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -7433,10 +7433,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `responder`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.responder"></a>
 
 ```typescript
-public readonly responder: ResponsePlayResponder[];
+public readonly responder: IResolvable | ResponsePlayResponder[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ResponsePlayResponder`](#@cdktf/provider-pagerduty.ResponsePlayResponder)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ResponsePlayResponder`](#@cdktf/provider-pagerduty.ResponsePlayResponder)[]
 
 responder block.
 
@@ -7471,10 +7471,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `subscriber`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.subscriber"></a>
 
 ```typescript
-public readonly subscriber: ResponsePlaySubscriber[];
+public readonly subscriber: IResolvable | ResponsePlaySubscriber[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ResponsePlaySubscriber`](#@cdktf/provider-pagerduty.ResponsePlaySubscriber)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ResponsePlaySubscriber`](#@cdktf/provider-pagerduty.ResponsePlaySubscriber)[]
 
 subscriber block.
 
@@ -7623,10 +7623,10 @@ const rulesetConfig: RulesetConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -7699,10 +7699,10 @@ const rulesetRuleActions: RulesetRuleActions = { ... }
 ##### `annotate`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActions.property.annotate"></a>
 
 ```typescript
-public readonly annotate: RulesetRuleActionsAnnotate[];
+public readonly annotate: RulesetRuleActionsAnnotate[] | IResolvable;
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate`](#@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate)[]
+- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate`](#@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate)[] | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 annotate block.
 
@@ -7713,10 +7713,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `eventAction`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActions.property.eventAction"></a>
 
 ```typescript
-public readonly eventAction: RulesetRuleActionsEventAction[];
+public readonly eventAction: IResolvable | RulesetRuleActionsEventAction[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsEventAction`](#@cdktf/provider-pagerduty.RulesetRuleActionsEventAction)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsEventAction`](#@cdktf/provider-pagerduty.RulesetRuleActionsEventAction)[]
 
 event_action block.
 
@@ -7727,10 +7727,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `extractions`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActions.property.extractions"></a>
 
 ```typescript
-public readonly extractions: RulesetRuleActionsExtractions[];
+public readonly extractions: IResolvable | RulesetRuleActionsExtractions[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsExtractions`](#@cdktf/provider-pagerduty.RulesetRuleActionsExtractions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsExtractions`](#@cdktf/provider-pagerduty.RulesetRuleActionsExtractions)[]
 
 extractions block.
 
@@ -7741,10 +7741,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `priority`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActions.property.priority"></a>
 
 ```typescript
-public readonly priority: RulesetRuleActionsPriority[];
+public readonly priority: IResolvable | RulesetRuleActionsPriority[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsPriority`](#@cdktf/provider-pagerduty.RulesetRuleActionsPriority)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsPriority`](#@cdktf/provider-pagerduty.RulesetRuleActionsPriority)[]
 
 priority block.
 
@@ -7755,10 +7755,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `route`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActions.property.route"></a>
 
 ```typescript
-public readonly route: RulesetRuleActionsRoute[];
+public readonly route: IResolvable | RulesetRuleActionsRoute[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsRoute`](#@cdktf/provider-pagerduty.RulesetRuleActionsRoute)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsRoute`](#@cdktf/provider-pagerduty.RulesetRuleActionsRoute)[]
 
 route block.
 
@@ -7769,10 +7769,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `severity`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActions.property.severity"></a>
 
 ```typescript
-public readonly severity: RulesetRuleActionsSeverity[];
+public readonly severity: IResolvable | RulesetRuleActionsSeverity[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsSeverity`](#@cdktf/provider-pagerduty.RulesetRuleActionsSeverity)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsSeverity`](#@cdktf/provider-pagerduty.RulesetRuleActionsSeverity)[]
 
 severity block.
 
@@ -7783,10 +7783,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `suppress`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActions.property.suppress"></a>
 
 ```typescript
-public readonly suppress: RulesetRuleActionsSuppress[];
+public readonly suppress: IResolvable | RulesetRuleActionsSuppress[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsSuppress`](#@cdktf/provider-pagerduty.RulesetRuleActionsSuppress)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsSuppress`](#@cdktf/provider-pagerduty.RulesetRuleActionsSuppress)[]
 
 suppress block.
 
@@ -7797,10 +7797,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `suspend`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActions.property.suspend"></a>
 
 ```typescript
-public readonly suspend: RulesetRuleActionsSuspend[];
+public readonly suspend: IResolvable | RulesetRuleActionsSuspend[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsSuspend`](#@cdktf/provider-pagerduty.RulesetRuleActionsSuspend)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsSuspend`](#@cdktf/provider-pagerduty.RulesetRuleActionsSuspend)[]
 
 suspend block.
 
@@ -8081,10 +8081,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `subconditions`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConditions.property.subconditions"></a>
 
 ```typescript
-public readonly subconditions: RulesetRuleConditionsSubconditions[];
+public readonly subconditions: IResolvable | RulesetRuleConditionsSubconditions[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditions`](#@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditions`](#@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditions)[]
 
 subconditions block.
 
@@ -8117,10 +8117,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `parameter`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditions.property.parameter"></a>
 
 ```typescript
-public readonly parameter: RulesetRuleConditionsSubconditionsParameter[];
+public readonly parameter: IResolvable | RulesetRuleConditionsSubconditionsParameter[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditionsParameter`](#@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditionsParameter)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditionsParameter`](#@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditionsParameter)[]
 
 parameter block.
 
@@ -8175,10 +8175,10 @@ const rulesetRuleConfig: RulesetRuleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -8293,10 +8293,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `variable`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConfig.property.variable"></a>
 
 ```typescript
-public readonly variable: RulesetRuleVariable[];
+public readonly variable: IResolvable | RulesetRuleVariable[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleVariable`](#@cdktf/provider-pagerduty.RulesetRuleVariable)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleVariable`](#@cdktf/provider-pagerduty.RulesetRuleVariable)[]
 
 variable block.
 
@@ -8317,10 +8317,10 @@ const rulesetRuleTimeFrame: RulesetRuleTimeFrame = { ... }
 ##### `activeBetween`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleTimeFrame.property.activeBetween"></a>
 
 ```typescript
-public readonly activeBetween: RulesetRuleTimeFrameActiveBetween[];
+public readonly activeBetween: IResolvable | RulesetRuleTimeFrameActiveBetween[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleTimeFrameActiveBetween`](#@cdktf/provider-pagerduty.RulesetRuleTimeFrameActiveBetween)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleTimeFrameActiveBetween`](#@cdktf/provider-pagerduty.RulesetRuleTimeFrameActiveBetween)[]
 
 active_between block.
 
@@ -8331,10 +8331,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `scheduledWeekly`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleTimeFrame.property.scheduledWeekly"></a>
 
 ```typescript
-public readonly scheduledWeekly: RulesetRuleTimeFrameScheduledWeekly[];
+public readonly scheduledWeekly: IResolvable | RulesetRuleTimeFrameScheduledWeekly[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly`](#@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly`](#@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly)[]
 
 scheduled_weekly block.
 
@@ -8459,10 +8459,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `parameters`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleVariable.property.parameters"></a>
 
 ```typescript
-public readonly parameters: RulesetRuleVariableParameters[];
+public readonly parameters: IResolvable | RulesetRuleVariableParameters[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleVariableParameters`](#@cdktf/provider-pagerduty.RulesetRuleVariableParameters)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleVariableParameters`](#@cdktf/provider-pagerduty.RulesetRuleVariableParameters)[]
 
 parameters block.
 
@@ -8551,10 +8551,10 @@ const scheduleConfig: ScheduleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -8591,10 +8591,10 @@ public readonly provider: TerraformProvider;
 ##### `layer`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ScheduleConfig.property.layer"></a>
 
 ```typescript
-public readonly layer: ScheduleLayer[];
+public readonly layer: IResolvable | ScheduleLayer[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ScheduleLayer`](#@cdktf/provider-pagerduty.ScheduleLayer)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ScheduleLayer`](#@cdktf/provider-pagerduty.ScheduleLayer)[]
 
 layer block.
 
@@ -8747,10 +8747,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `restriction`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleLayer.property.restriction"></a>
 
 ```typescript
-public readonly restriction: ScheduleLayerRestriction[];
+public readonly restriction: IResolvable | ScheduleLayerRestriction[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ScheduleLayerRestriction`](#@cdktf/provider-pagerduty.ScheduleLayerRestriction)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ScheduleLayerRestriction`](#@cdktf/provider-pagerduty.ScheduleLayerRestriction)[]
 
 restriction block.
 
@@ -8911,10 +8911,10 @@ const serviceConfig: ServiceConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -9075,10 +9075,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `scheduledActions`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.scheduledActions"></a>
 
 ```typescript
-public readonly scheduledActions: ServiceScheduledActions[];
+public readonly scheduledActions: IResolvable | ServiceScheduledActions[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceScheduledActions`](#@cdktf/provider-pagerduty.ServiceScheduledActions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceScheduledActions`](#@cdktf/provider-pagerduty.ServiceScheduledActions)[]
 
 scheduled_actions block.
 
@@ -9113,10 +9113,10 @@ const serviceDependencyConfig: ServiceDependencyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -9153,10 +9153,10 @@ public readonly provider: TerraformProvider;
 ##### `dependency`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyConfig.property.dependency"></a>
 
 ```typescript
-public readonly dependency: ServiceDependencyDependency[];
+public readonly dependency: IResolvable | ServiceDependencyDependency[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceDependencyDependency`](#@cdktf/provider-pagerduty.ServiceDependencyDependency)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceDependencyDependency`](#@cdktf/provider-pagerduty.ServiceDependencyDependency)[]
 
 dependency block.
 
@@ -9177,10 +9177,10 @@ const serviceDependencyDependency: ServiceDependencyDependency = { ... }
 ##### `dependentService`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyDependency.property.dependentService"></a>
 
 ```typescript
-public readonly dependentService: ServiceDependencyDependencyDependentService[];
+public readonly dependentService: IResolvable | ServiceDependencyDependencyDependentService[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceDependencyDependencyDependentService`](#@cdktf/provider-pagerduty.ServiceDependencyDependencyDependentService)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceDependencyDependencyDependentService`](#@cdktf/provider-pagerduty.ServiceDependencyDependencyDependentService)[]
 
 dependent_service block.
 
@@ -9191,10 +9191,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `supportingService`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyDependency.property.supportingService"></a>
 
 ```typescript
-public readonly supportingService: ServiceDependencyDependencySupportingService[];
+public readonly supportingService: IResolvable | ServiceDependencyDependencySupportingService[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceDependencyDependencySupportingService`](#@cdktf/provider-pagerduty.ServiceDependencyDependencySupportingService)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceDependencyDependencySupportingService`](#@cdktf/provider-pagerduty.ServiceDependencyDependencySupportingService)[]
 
 supporting_service block.
 
@@ -9295,10 +9295,10 @@ const serviceEventRuleActions: ServiceEventRuleActions = { ... }
 ##### `annotate`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActions.property.annotate"></a>
 
 ```typescript
-public readonly annotate: ServiceEventRuleActionsAnnotate[];
+public readonly annotate: IResolvable | ServiceEventRuleActionsAnnotate[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsAnnotate`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsAnnotate)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsAnnotate`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsAnnotate)[]
 
 annotate block.
 
@@ -9309,10 +9309,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `eventAction`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActions.property.eventAction"></a>
 
 ```typescript
-public readonly eventAction: ServiceEventRuleActionsEventAction[];
+public readonly eventAction: IResolvable | ServiceEventRuleActionsEventAction[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsEventAction`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsEventAction)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsEventAction`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsEventAction)[]
 
 event_action block.
 
@@ -9323,10 +9323,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `extractions`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActions.property.extractions"></a>
 
 ```typescript
-public readonly extractions: ServiceEventRuleActionsExtractions[];
+public readonly extractions: IResolvable | ServiceEventRuleActionsExtractions[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions)[]
 
 extractions block.
 
@@ -9337,10 +9337,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `priority`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActions.property.priority"></a>
 
 ```typescript
-public readonly priority: ServiceEventRuleActionsPriority[];
+public readonly priority: IResolvable | ServiceEventRuleActionsPriority[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsPriority`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsPriority)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsPriority`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsPriority)[]
 
 priority block.
 
@@ -9351,10 +9351,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `severity`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActions.property.severity"></a>
 
 ```typescript
-public readonly severity: ServiceEventRuleActionsSeverity[];
+public readonly severity: IResolvable | ServiceEventRuleActionsSeverity[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSeverity`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSeverity)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSeverity`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSeverity)[]
 
 severity block.
 
@@ -9365,10 +9365,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `suppress`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActions.property.suppress"></a>
 
 ```typescript
-public readonly suppress: ServiceEventRuleActionsSuppress[];
+public readonly suppress: IResolvable | ServiceEventRuleActionsSuppress[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress)[]
 
 suppress block.
 
@@ -9379,10 +9379,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `suspend`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActions.property.suspend"></a>
 
 ```typescript
-public readonly suspend: ServiceEventRuleActionsSuspend[];
+public readonly suspend: IResolvable | ServiceEventRuleActionsSuspend[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSuspend`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSuspend)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSuspend`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSuspend)[]
 
 suspend block.
 
@@ -9641,10 +9641,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `subconditions`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConditions.property.subconditions"></a>
 
 ```typescript
-public readonly subconditions: ServiceEventRuleConditionsSubconditions[];
+public readonly subconditions: IResolvable | ServiceEventRuleConditionsSubconditions[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditions`](#@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditions`](#@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditions)[]
 
 subconditions block.
 
@@ -9677,10 +9677,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `parameter`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditions.property.parameter"></a>
 
 ```typescript
-public readonly parameter: ServiceEventRuleConditionsSubconditionsParameter[];
+public readonly parameter: IResolvable | ServiceEventRuleConditionsSubconditionsParameter[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditionsParameter`](#@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditionsParameter)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditionsParameter`](#@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditionsParameter)[]
 
 parameter block.
 
@@ -9735,10 +9735,10 @@ const serviceEventRuleConfig: ServiceEventRuleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -9853,10 +9853,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `variable`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConfig.property.variable"></a>
 
 ```typescript
-public readonly variable: ServiceEventRuleVariable[];
+public readonly variable: IResolvable | ServiceEventRuleVariable[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleVariable`](#@cdktf/provider-pagerduty.ServiceEventRuleVariable)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleVariable`](#@cdktf/provider-pagerduty.ServiceEventRuleVariable)[]
 
 variable block.
 
@@ -9877,10 +9877,10 @@ const serviceEventRuleTimeFrame: ServiceEventRuleTimeFrame = { ... }
 ##### `activeBetween`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleTimeFrame.property.activeBetween"></a>
 
 ```typescript
-public readonly activeBetween: ServiceEventRuleTimeFrameActiveBetween[];
+public readonly activeBetween: IResolvable | ServiceEventRuleTimeFrameActiveBetween[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameActiveBetween`](#@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameActiveBetween)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameActiveBetween`](#@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameActiveBetween)[]
 
 active_between block.
 
@@ -9891,10 +9891,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `scheduledWeekly`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleTimeFrame.property.scheduledWeekly"></a>
 
 ```typescript
-public readonly scheduledWeekly: ServiceEventRuleTimeFrameScheduledWeekly[];
+public readonly scheduledWeekly: IResolvable | ServiceEventRuleTimeFrameScheduledWeekly[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly`](#@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly`](#@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly)[]
 
 scheduled_weekly block.
 
@@ -10019,10 +10019,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `parameters`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleVariable.property.parameters"></a>
 
 ```typescript
-public readonly parameters: ServiceEventRuleVariableParameters[];
+public readonly parameters: IResolvable | ServiceEventRuleVariableParameters[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleVariableParameters`](#@cdktf/provider-pagerduty.ServiceEventRuleVariableParameters)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleVariableParameters`](#@cdktf/provider-pagerduty.ServiceEventRuleVariableParameters)[]
 
 parameters block.
 
@@ -10219,10 +10219,10 @@ const serviceIntegrationConfig: ServiceIntegrationConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegrationConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -10341,10 +10341,10 @@ const serviceScheduledActions: ServiceScheduledActions = { ... }
 ##### `at`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceScheduledActions.property.at"></a>
 
 ```typescript
-public readonly at: ServiceScheduledActionsAt[];
+public readonly at: IResolvable | ServiceScheduledActionsAt[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceScheduledActionsAt`](#@cdktf/provider-pagerduty.ServiceScheduledActionsAt)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceScheduledActionsAt`](#@cdktf/provider-pagerduty.ServiceScheduledActionsAt)[]
 
 at block.
 
@@ -10493,10 +10493,10 @@ const slackConnectionConfig: SlackConnectionConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -10545,10 +10545,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `config`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.config"></a>
 
 ```typescript
-public readonly config: SlackConnectionConfigA[];
+public readonly config: IResolvable | SlackConnectionConfigA[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.SlackConnectionConfigA`](#@cdktf/provider-pagerduty.SlackConnectionConfigA)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.SlackConnectionConfigA`](#@cdktf/provider-pagerduty.SlackConnectionConfigA)[]
 
 config block.
 
@@ -10663,10 +10663,10 @@ const teamConfig: TeamConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -10749,10 +10749,10 @@ const teamMembershipConfig: TeamMembershipConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamMembershipConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -10835,10 +10835,10 @@ const userConfig: UserConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -10981,10 +10981,10 @@ const userContactMethodConfig: UserContactMethodConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserContactMethodConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -11103,10 +11103,10 @@ const userNotificationRuleConfig: UserNotificationRuleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRuleConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -11143,10 +11143,10 @@ public readonly provider: TerraformProvider;
 ##### `contactMethod`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRuleConfig.property.contactMethod"></a>
 
 ```typescript
-public readonly contactMethod: IResolvable | {[ key: string ]: string};
+public readonly contactMethod: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule#contact_method UserNotificationRule#contact_method}.
 
@@ -11190,6 +11190,252 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ## Classes <a name="Classes"></a>
 
+### ResponsePlayResponderEscalationRule <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule"></a>
+
+#### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule.Initializer"></a>
+
+```typescript
+import { ResponsePlayResponderEscalationRule } from '@cdktf/provider-pagerduty'
+
+new ResponsePlayResponderEscalationRule(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+---
+
+##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule.parameter.complexComputedListIndex"></a>
+
+- *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `escalationDelayInMinutes`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule.property.escalationDelayInMinutes"></a>
+
+```typescript
+public readonly escalationDelayInMinutes: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `target`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule.property.target"></a>
+
+```typescript
+public readonly target: IResolvable;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+
+### ResponsePlayResponderEscalationRuleTarget <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget"></a>
+
+#### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget.Initializer"></a>
+
+```typescript
+import { ResponsePlayResponderEscalationRuleTarget } from '@cdktf/provider-pagerduty'
+
+new ResponsePlayResponderEscalationRuleTarget(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+---
+
+##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget.parameter.complexComputedListIndex"></a>
+
+- *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+
+### ResponsePlayResponderService <a name="@cdktf/provider-pagerduty.ResponsePlayResponderService"></a>
+
+#### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlayResponderService.Initializer"></a>
+
+```typescript
+import { ResponsePlayResponderService } from '@cdktf/provider-pagerduty'
+
+new ResponsePlayResponderService(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderService.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderService.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+---
+
+##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderService.parameter.complexComputedListIndex"></a>
+
+- *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderService.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderService.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderService.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+
+### ResponsePlayResponderTeam <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeam"></a>
+
+#### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeam.Initializer"></a>
+
+```typescript
+import { ResponsePlayResponderTeam } from '@cdktf/provider-pagerduty'
+
+new ResponsePlayResponderTeam(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeam.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeam.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+---
+
+##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeam.parameter.complexComputedListIndex"></a>
+
+- *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeam.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeam.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeam.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+
 ### RulesetRuleActionsOutputReference <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference"></a>
 
 #### Initializers <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.Initializer"></a>
@@ -11197,12 +11443,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ```typescript
 import { RulesetRuleActionsOutputReference } from '@cdktf/provider-pagerduty'
 
-new RulesetRuleActionsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RulesetRuleActionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -11280,160 +11526,160 @@ public resetSuspend()
 ##### `annotateInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.annotateInput"></a>
 
 ```typescript
-public readonly annotateInput: RulesetRuleActionsAnnotate[];
+public readonly annotateInput: RulesetRuleActionsAnnotate[] | IResolvable;
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate`](#@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate)[]
+- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate`](#@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate)[] | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `eventActionInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.eventActionInput"></a>
 
 ```typescript
-public readonly eventActionInput: RulesetRuleActionsEventAction[];
+public readonly eventActionInput: IResolvable | RulesetRuleActionsEventAction[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsEventAction`](#@cdktf/provider-pagerduty.RulesetRuleActionsEventAction)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsEventAction`](#@cdktf/provider-pagerduty.RulesetRuleActionsEventAction)[]
 
 ---
 
 ##### `extractionsInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.extractionsInput"></a>
 
 ```typescript
-public readonly extractionsInput: RulesetRuleActionsExtractions[];
+public readonly extractionsInput: IResolvable | RulesetRuleActionsExtractions[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsExtractions`](#@cdktf/provider-pagerduty.RulesetRuleActionsExtractions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsExtractions`](#@cdktf/provider-pagerduty.RulesetRuleActionsExtractions)[]
 
 ---
 
 ##### `priorityInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.priorityInput"></a>
 
 ```typescript
-public readonly priorityInput: RulesetRuleActionsPriority[];
+public readonly priorityInput: IResolvable | RulesetRuleActionsPriority[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsPriority`](#@cdktf/provider-pagerduty.RulesetRuleActionsPriority)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsPriority`](#@cdktf/provider-pagerduty.RulesetRuleActionsPriority)[]
 
 ---
 
 ##### `routeInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.routeInput"></a>
 
 ```typescript
-public readonly routeInput: RulesetRuleActionsRoute[];
+public readonly routeInput: IResolvable | RulesetRuleActionsRoute[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsRoute`](#@cdktf/provider-pagerduty.RulesetRuleActionsRoute)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsRoute`](#@cdktf/provider-pagerduty.RulesetRuleActionsRoute)[]
 
 ---
 
 ##### `severityInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.severityInput"></a>
 
 ```typescript
-public readonly severityInput: RulesetRuleActionsSeverity[];
+public readonly severityInput: IResolvable | RulesetRuleActionsSeverity[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsSeverity`](#@cdktf/provider-pagerduty.RulesetRuleActionsSeverity)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsSeverity`](#@cdktf/provider-pagerduty.RulesetRuleActionsSeverity)[]
 
 ---
 
 ##### `suppressInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.suppressInput"></a>
 
 ```typescript
-public readonly suppressInput: RulesetRuleActionsSuppress[];
+public readonly suppressInput: IResolvable | RulesetRuleActionsSuppress[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsSuppress`](#@cdktf/provider-pagerduty.RulesetRuleActionsSuppress)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsSuppress`](#@cdktf/provider-pagerduty.RulesetRuleActionsSuppress)[]
 
 ---
 
 ##### `suspendInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.suspendInput"></a>
 
 ```typescript
-public readonly suspendInput: RulesetRuleActionsSuspend[];
+public readonly suspendInput: IResolvable | RulesetRuleActionsSuspend[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsSuspend`](#@cdktf/provider-pagerduty.RulesetRuleActionsSuspend)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsSuspend`](#@cdktf/provider-pagerduty.RulesetRuleActionsSuspend)[]
 
 ---
 
 ##### `annotate`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.annotate"></a>
 
 ```typescript
-public readonly annotate: RulesetRuleActionsAnnotate[];
+public readonly annotate: RulesetRuleActionsAnnotate[] | IResolvable;
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate`](#@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate)[]
+- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate`](#@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate)[] | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `eventAction`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.eventAction"></a>
 
 ```typescript
-public readonly eventAction: RulesetRuleActionsEventAction[];
+public readonly eventAction: IResolvable | RulesetRuleActionsEventAction[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsEventAction`](#@cdktf/provider-pagerduty.RulesetRuleActionsEventAction)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsEventAction`](#@cdktf/provider-pagerduty.RulesetRuleActionsEventAction)[]
 
 ---
 
 ##### `extractions`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.extractions"></a>
 
 ```typescript
-public readonly extractions: RulesetRuleActionsExtractions[];
+public readonly extractions: IResolvable | RulesetRuleActionsExtractions[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsExtractions`](#@cdktf/provider-pagerduty.RulesetRuleActionsExtractions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsExtractions`](#@cdktf/provider-pagerduty.RulesetRuleActionsExtractions)[]
 
 ---
 
 ##### `priority`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.priority"></a>
 
 ```typescript
-public readonly priority: RulesetRuleActionsPriority[];
+public readonly priority: IResolvable | RulesetRuleActionsPriority[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsPriority`](#@cdktf/provider-pagerduty.RulesetRuleActionsPriority)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsPriority`](#@cdktf/provider-pagerduty.RulesetRuleActionsPriority)[]
 
 ---
 
 ##### `route`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.route"></a>
 
 ```typescript
-public readonly route: RulesetRuleActionsRoute[];
+public readonly route: IResolvable | RulesetRuleActionsRoute[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsRoute`](#@cdktf/provider-pagerduty.RulesetRuleActionsRoute)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsRoute`](#@cdktf/provider-pagerduty.RulesetRuleActionsRoute)[]
 
 ---
 
 ##### `severity`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.severity"></a>
 
 ```typescript
-public readonly severity: RulesetRuleActionsSeverity[];
+public readonly severity: IResolvable | RulesetRuleActionsSeverity[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsSeverity`](#@cdktf/provider-pagerduty.RulesetRuleActionsSeverity)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsSeverity`](#@cdktf/provider-pagerduty.RulesetRuleActionsSeverity)[]
 
 ---
 
 ##### `suppress`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.suppress"></a>
 
 ```typescript
-public readonly suppress: RulesetRuleActionsSuppress[];
+public readonly suppress: IResolvable | RulesetRuleActionsSuppress[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsSuppress`](#@cdktf/provider-pagerduty.RulesetRuleActionsSuppress)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsSuppress`](#@cdktf/provider-pagerduty.RulesetRuleActionsSuppress)[]
 
 ---
 
 ##### `suspend`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.suspend"></a>
 
 ```typescript
-public readonly suspend: RulesetRuleActionsSuspend[];
+public readonly suspend: IResolvable | RulesetRuleActionsSuspend[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsSuspend`](#@cdktf/provider-pagerduty.RulesetRuleActionsSuspend)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsSuspend`](#@cdktf/provider-pagerduty.RulesetRuleActionsSuspend)[]
 
 ---
 
@@ -11455,12 +11701,12 @@ public readonly internalValue: RulesetRuleActions;
 ```typescript
 import { RulesetRuleConditionsOutputReference } from '@cdktf/provider-pagerduty'
 
-new RulesetRuleConditionsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RulesetRuleConditionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConditionsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -11512,10 +11758,10 @@ public readonly operatorInput: string;
 ##### `subconditionsInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConditionsOutputReference.property.subconditionsInput"></a>
 
 ```typescript
-public readonly subconditionsInput: RulesetRuleConditionsSubconditions[];
+public readonly subconditionsInput: IResolvable | RulesetRuleConditionsSubconditions[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditions`](#@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditions`](#@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditions)[]
 
 ---
 
@@ -11532,10 +11778,10 @@ public readonly operator: string;
 ##### `subconditions`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConditionsOutputReference.property.subconditions"></a>
 
 ```typescript
-public readonly subconditions: RulesetRuleConditionsSubconditions[];
+public readonly subconditions: IResolvable | RulesetRuleConditionsSubconditions[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditions`](#@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditions`](#@cdktf/provider-pagerduty.RulesetRuleConditionsSubconditions)[]
 
 ---
 
@@ -11557,12 +11803,12 @@ public readonly internalValue: RulesetRuleConditions;
 ```typescript
 import { RulesetRuleTimeFrameOutputReference } from '@cdktf/provider-pagerduty'
 
-new RulesetRuleTimeFrameOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RulesetRuleTimeFrameOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleTimeFrameOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -11604,40 +11850,40 @@ public resetScheduledWeekly()
 ##### `activeBetweenInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleTimeFrameOutputReference.property.activeBetweenInput"></a>
 
 ```typescript
-public readonly activeBetweenInput: RulesetRuleTimeFrameActiveBetween[];
+public readonly activeBetweenInput: IResolvable | RulesetRuleTimeFrameActiveBetween[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleTimeFrameActiveBetween`](#@cdktf/provider-pagerduty.RulesetRuleTimeFrameActiveBetween)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleTimeFrameActiveBetween`](#@cdktf/provider-pagerduty.RulesetRuleTimeFrameActiveBetween)[]
 
 ---
 
 ##### `scheduledWeeklyInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleTimeFrameOutputReference.property.scheduledWeeklyInput"></a>
 
 ```typescript
-public readonly scheduledWeeklyInput: RulesetRuleTimeFrameScheduledWeekly[];
+public readonly scheduledWeeklyInput: IResolvable | RulesetRuleTimeFrameScheduledWeekly[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly`](#@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly`](#@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly)[]
 
 ---
 
 ##### `activeBetween`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleTimeFrameOutputReference.property.activeBetween"></a>
 
 ```typescript
-public readonly activeBetween: RulesetRuleTimeFrameActiveBetween[];
+public readonly activeBetween: IResolvable | RulesetRuleTimeFrameActiveBetween[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleTimeFrameActiveBetween`](#@cdktf/provider-pagerduty.RulesetRuleTimeFrameActiveBetween)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleTimeFrameActiveBetween`](#@cdktf/provider-pagerduty.RulesetRuleTimeFrameActiveBetween)[]
 
 ---
 
 ##### `scheduledWeekly`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleTimeFrameOutputReference.property.scheduledWeekly"></a>
 
 ```typescript
-public readonly scheduledWeekly: RulesetRuleTimeFrameScheduledWeekly[];
+public readonly scheduledWeekly: IResolvable | RulesetRuleTimeFrameScheduledWeekly[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly`](#@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly`](#@cdktf/provider-pagerduty.RulesetRuleTimeFrameScheduledWeekly)[]
 
 ---
 
@@ -11659,12 +11905,12 @@ public readonly internalValue: RulesetRuleTimeFrame;
 ```typescript
 import { RulesetTeamOutputReference } from '@cdktf/provider-pagerduty'
 
-new RulesetTeamOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RulesetTeamOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetTeamOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -11728,12 +11974,12 @@ public readonly internalValue: RulesetTeam;
 ```typescript
 import { ServiceAlertGroupingParametersConfigOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceAlertGroupingParametersConfigOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServiceAlertGroupingParametersConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceAlertGroupingParametersConfigOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -11856,12 +12102,12 @@ public readonly internalValue: ServiceAlertGroupingParametersConfig;
 ```typescript
 import { ServiceAlertGroupingParametersOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceAlertGroupingParametersOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServiceAlertGroupingParametersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceAlertGroupingParametersOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -11970,12 +12216,12 @@ public readonly internalValue: ServiceAlertGroupingParameters;
 ```typescript
 import { ServiceEventRuleActionsOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceEventRuleActionsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServiceEventRuleActionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -12047,140 +12293,140 @@ public resetSuspend()
 ##### `annotateInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsOutputReference.property.annotateInput"></a>
 
 ```typescript
-public readonly annotateInput: ServiceEventRuleActionsAnnotate[];
+public readonly annotateInput: IResolvable | ServiceEventRuleActionsAnnotate[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsAnnotate`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsAnnotate)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsAnnotate`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsAnnotate)[]
 
 ---
 
 ##### `eventActionInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsOutputReference.property.eventActionInput"></a>
 
 ```typescript
-public readonly eventActionInput: ServiceEventRuleActionsEventAction[];
+public readonly eventActionInput: IResolvable | ServiceEventRuleActionsEventAction[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsEventAction`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsEventAction)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsEventAction`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsEventAction)[]
 
 ---
 
 ##### `extractionsInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsOutputReference.property.extractionsInput"></a>
 
 ```typescript
-public readonly extractionsInput: ServiceEventRuleActionsExtractions[];
+public readonly extractionsInput: IResolvable | ServiceEventRuleActionsExtractions[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions)[]
 
 ---
 
 ##### `priorityInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsOutputReference.property.priorityInput"></a>
 
 ```typescript
-public readonly priorityInput: ServiceEventRuleActionsPriority[];
+public readonly priorityInput: IResolvable | ServiceEventRuleActionsPriority[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsPriority`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsPriority)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsPriority`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsPriority)[]
 
 ---
 
 ##### `severityInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsOutputReference.property.severityInput"></a>
 
 ```typescript
-public readonly severityInput: ServiceEventRuleActionsSeverity[];
+public readonly severityInput: IResolvable | ServiceEventRuleActionsSeverity[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSeverity`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSeverity)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSeverity`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSeverity)[]
 
 ---
 
 ##### `suppressInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsOutputReference.property.suppressInput"></a>
 
 ```typescript
-public readonly suppressInput: ServiceEventRuleActionsSuppress[];
+public readonly suppressInput: IResolvable | ServiceEventRuleActionsSuppress[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress)[]
 
 ---
 
 ##### `suspendInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsOutputReference.property.suspendInput"></a>
 
 ```typescript
-public readonly suspendInput: ServiceEventRuleActionsSuspend[];
+public readonly suspendInput: IResolvable | ServiceEventRuleActionsSuspend[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSuspend`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSuspend)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSuspend`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSuspend)[]
 
 ---
 
 ##### `annotate`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsOutputReference.property.annotate"></a>
 
 ```typescript
-public readonly annotate: ServiceEventRuleActionsAnnotate[];
+public readonly annotate: IResolvable | ServiceEventRuleActionsAnnotate[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsAnnotate`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsAnnotate)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsAnnotate`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsAnnotate)[]
 
 ---
 
 ##### `eventAction`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsOutputReference.property.eventAction"></a>
 
 ```typescript
-public readonly eventAction: ServiceEventRuleActionsEventAction[];
+public readonly eventAction: IResolvable | ServiceEventRuleActionsEventAction[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsEventAction`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsEventAction)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsEventAction`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsEventAction)[]
 
 ---
 
 ##### `extractions`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsOutputReference.property.extractions"></a>
 
 ```typescript
-public readonly extractions: ServiceEventRuleActionsExtractions[];
+public readonly extractions: IResolvable | ServiceEventRuleActionsExtractions[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsExtractions)[]
 
 ---
 
 ##### `priority`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsOutputReference.property.priority"></a>
 
 ```typescript
-public readonly priority: ServiceEventRuleActionsPriority[];
+public readonly priority: IResolvable | ServiceEventRuleActionsPriority[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsPriority`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsPriority)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsPriority`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsPriority)[]
 
 ---
 
 ##### `severity`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsOutputReference.property.severity"></a>
 
 ```typescript
-public readonly severity: ServiceEventRuleActionsSeverity[];
+public readonly severity: IResolvable | ServiceEventRuleActionsSeverity[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSeverity`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSeverity)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSeverity`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSeverity)[]
 
 ---
 
 ##### `suppress`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsOutputReference.property.suppress"></a>
 
 ```typescript
-public readonly suppress: ServiceEventRuleActionsSuppress[];
+public readonly suppress: IResolvable | ServiceEventRuleActionsSuppress[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSuppress)[]
 
 ---
 
 ##### `suspend`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsOutputReference.property.suspend"></a>
 
 ```typescript
-public readonly suspend: ServiceEventRuleActionsSuspend[];
+public readonly suspend: IResolvable | ServiceEventRuleActionsSuspend[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSuspend`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSuspend)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleActionsSuspend`](#@cdktf/provider-pagerduty.ServiceEventRuleActionsSuspend)[]
 
 ---
 
@@ -12202,12 +12448,12 @@ public readonly internalValue: ServiceEventRuleActions;
 ```typescript
 import { ServiceEventRuleConditionsOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceEventRuleConditionsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServiceEventRuleConditionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConditionsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -12259,10 +12505,10 @@ public readonly operatorInput: string;
 ##### `subconditionsInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConditionsOutputReference.property.subconditionsInput"></a>
 
 ```typescript
-public readonly subconditionsInput: ServiceEventRuleConditionsSubconditions[];
+public readonly subconditionsInput: IResolvable | ServiceEventRuleConditionsSubconditions[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditions`](#@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditions`](#@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditions)[]
 
 ---
 
@@ -12279,10 +12525,10 @@ public readonly operator: string;
 ##### `subconditions`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConditionsOutputReference.property.subconditions"></a>
 
 ```typescript
-public readonly subconditions: ServiceEventRuleConditionsSubconditions[];
+public readonly subconditions: IResolvable | ServiceEventRuleConditionsSubconditions[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditions`](#@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditions`](#@cdktf/provider-pagerduty.ServiceEventRuleConditionsSubconditions)[]
 
 ---
 
@@ -12304,12 +12550,12 @@ public readonly internalValue: ServiceEventRuleConditions;
 ```typescript
 import { ServiceEventRuleTimeFrameOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceEventRuleTimeFrameOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServiceEventRuleTimeFrameOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -12351,40 +12597,40 @@ public resetScheduledWeekly()
 ##### `activeBetweenInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameOutputReference.property.activeBetweenInput"></a>
 
 ```typescript
-public readonly activeBetweenInput: ServiceEventRuleTimeFrameActiveBetween[];
+public readonly activeBetweenInput: IResolvable | ServiceEventRuleTimeFrameActiveBetween[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameActiveBetween`](#@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameActiveBetween)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameActiveBetween`](#@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameActiveBetween)[]
 
 ---
 
 ##### `scheduledWeeklyInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameOutputReference.property.scheduledWeeklyInput"></a>
 
 ```typescript
-public readonly scheduledWeeklyInput: ServiceEventRuleTimeFrameScheduledWeekly[];
+public readonly scheduledWeeklyInput: IResolvable | ServiceEventRuleTimeFrameScheduledWeekly[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly`](#@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly`](#@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly)[]
 
 ---
 
 ##### `activeBetween`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameOutputReference.property.activeBetween"></a>
 
 ```typescript
-public readonly activeBetween: ServiceEventRuleTimeFrameActiveBetween[];
+public readonly activeBetween: IResolvable | ServiceEventRuleTimeFrameActiveBetween[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameActiveBetween`](#@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameActiveBetween)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameActiveBetween`](#@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameActiveBetween)[]
 
 ---
 
 ##### `scheduledWeekly`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameOutputReference.property.scheduledWeekly"></a>
 
 ```typescript
-public readonly scheduledWeekly: ServiceEventRuleTimeFrameScheduledWeekly[];
+public readonly scheduledWeekly: IResolvable | ServiceEventRuleTimeFrameScheduledWeekly[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly`](#@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly`](#@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameScheduledWeekly)[]
 
 ---
 
@@ -12406,12 +12652,12 @@ public readonly internalValue: ServiceEventRuleTimeFrame;
 ```typescript
 import { ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -12508,12 +12754,12 @@ public readonly internalValue: ServiceIncidentUrgencyRuleDuringSupportHours;
 ```typescript
 import { ServiceIncidentUrgencyRuleOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceIncidentUrgencyRuleOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServiceIncidentUrgencyRuleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIncidentUrgencyRuleOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -12680,12 +12926,12 @@ public readonly internalValue: ServiceIncidentUrgencyRule;
 ```typescript
 import { ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -12782,12 +13028,12 @@ public readonly internalValue: ServiceIncidentUrgencyRuleOutsideSupportHours;
 ```typescript
 import { ServiceSupportHoursOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceSupportHoursOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ServiceSupportHoursOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceSupportHoursOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 

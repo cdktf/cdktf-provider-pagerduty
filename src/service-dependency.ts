@@ -12,7 +12,7 @@ export interface ServiceDependencyConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#dependency ServiceDependency#dependency}
   */
-  readonly dependency: ServiceDependencyDependency[];
+  readonly dependency: ServiceDependencyDependency[] | cdktf.IResolvable;
 }
 export interface ServiceDependencyDependencyDependentService {
   /**
@@ -25,8 +25,8 @@ export interface ServiceDependencyDependencyDependentService {
   readonly type: string;
 }
 
-export function serviceDependencyDependencyDependentServiceToTerraform(struct?: ServiceDependencyDependencyDependentService): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function serviceDependencyDependencyDependentServiceToTerraform(struct?: ServiceDependencyDependencyDependentService | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -47,8 +47,8 @@ export interface ServiceDependencyDependencySupportingService {
   readonly type: string;
 }
 
-export function serviceDependencyDependencySupportingServiceToTerraform(struct?: ServiceDependencyDependencySupportingService): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function serviceDependencyDependencySupportingServiceToTerraform(struct?: ServiceDependencyDependencySupportingService | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -68,17 +68,17 @@ export interface ServiceDependencyDependency {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#dependent_service ServiceDependency#dependent_service}
   */
-  readonly dependentService: ServiceDependencyDependencyDependentService[];
+  readonly dependentService: ServiceDependencyDependencyDependentService[] | cdktf.IResolvable;
   /**
   * supporting_service block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#supporting_service ServiceDependency#supporting_service}
   */
-  readonly supportingService: ServiceDependencyDependencySupportingService[];
+  readonly supportingService: ServiceDependencyDependencySupportingService[] | cdktf.IResolvable;
 }
 
-export function serviceDependencyDependencyToTerraform(struct?: ServiceDependencyDependency): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function serviceDependencyDependencyToTerraform(struct?: ServiceDependencyDependency | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -135,12 +135,12 @@ export class ServiceDependency extends cdktf.TerraformResource {
   }
 
   // dependency - computed: false, optional: false, required: true
-  private _dependency?: ServiceDependencyDependency[]; 
+  private _dependency?: ServiceDependencyDependency[] | cdktf.IResolvable; 
   public get dependency() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dependency') as any;
+    return this.interpolationForAttribute('dependency');
   }
-  public set dependency(value: ServiceDependencyDependency[]) {
+  public set dependency(value: ServiceDependencyDependency[] | cdktf.IResolvable) {
     this._dependency = value;
   }
   // Temporarily expose input value. Use with caution.

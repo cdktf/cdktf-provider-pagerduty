@@ -10,7 +10,7 @@ export interface UserNotificationRuleConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule#contact_method UserNotificationRule#contact_method}
   */
-  readonly contactMethod: { [key: string]: string } | cdktf.IResolvable;
+  readonly contactMethod: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule#start_delay_in_minutes UserNotificationRule#start_delay_in_minutes}
   */
@@ -68,12 +68,11 @@ export class UserNotificationRule extends cdktf.TerraformResource {
   // ==========
 
   // contact_method - computed: false, optional: false, required: true
-  private _contactMethod?: { [key: string]: string } | cdktf.IResolvable; 
+  private _contactMethod?: { [key: string]: string }; 
   public get contactMethod() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('contact_method') as any;
+    return this.getStringMapAttribute('contact_method');
   }
-  public set contactMethod(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set contactMethod(value: { [key: string]: string }) {
     this._contactMethod = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -131,7 +130,7 @@ export class UserNotificationRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      contact_method: cdktf.hashMapper(cdktf.anyToTerraform)(this._contactMethod),
+      contact_method: cdktf.hashMapper(cdktf.stringToTerraform)(this._contactMethod),
       start_delay_in_minutes: cdktf.numberToTerraform(this._startDelayInMinutes),
       urgency: cdktf.stringToTerraform(this._urgency),
       user_id: cdktf.stringToTerraform(this._userId),
