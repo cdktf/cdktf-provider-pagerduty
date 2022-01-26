@@ -32,7 +32,7 @@ export interface ScheduleConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#layer Schedule#layer}
   */
-  readonly layer: ScheduleLayer[];
+  readonly layer: ScheduleLayer[] | cdktf.IResolvable;
 }
 export interface ScheduleLayerRestriction {
   /**
@@ -53,8 +53,8 @@ export interface ScheduleLayerRestriction {
   readonly type: string;
 }
 
-export function scheduleLayerRestrictionToTerraform(struct?: ScheduleLayerRestriction): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function scheduleLayerRestrictionToTerraform(struct?: ScheduleLayerRestriction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -96,11 +96,11 @@ export interface ScheduleLayer {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#restriction Schedule#restriction}
   */
-  readonly restriction?: ScheduleLayerRestriction[];
+  readonly restriction?: ScheduleLayerRestriction[] | cdktf.IResolvable;
 }
 
-export function scheduleLayerToTerraform(struct?: ScheduleLayer): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function scheduleLayerToTerraform(struct?: ScheduleLayer | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -200,7 +200,7 @@ export class Schedule extends cdktf.TerraformResource {
   // overflow - computed: false, optional: true, required: false
   private _overflow?: boolean | cdktf.IResolvable; 
   public get overflow() {
-    return this.getBooleanAttribute('overflow') as any;
+    return this.getBooleanAttribute('overflow');
   }
   public set overflow(value: boolean | cdktf.IResolvable) {
     this._overflow = value;
@@ -243,12 +243,12 @@ export class Schedule extends cdktf.TerraformResource {
   }
 
   // layer - computed: false, optional: false, required: true
-  private _layer?: ScheduleLayer[]; 
+  private _layer?: ScheduleLayer[] | cdktf.IResolvable; 
   public get layer() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('layer') as any;
+    return this.interpolationForAttribute('layer');
   }
-  public set layer(value: ScheduleLayer[]) {
+  public set layer(value: ScheduleLayer[] | cdktf.IResolvable) {
     this._layer = value;
   }
   // Temporarily expose input value. Use with caution.

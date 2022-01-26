@@ -56,7 +56,7 @@ export interface ServiceConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#scheduled_actions Service#scheduled_actions}
   */
-  readonly scheduledActions?: ServiceScheduledActions[];
+  readonly scheduledActions?: ServiceScheduledActions[] | cdktf.IResolvable;
   /**
   * support_hours block
   * 
@@ -80,7 +80,7 @@ export interface ServiceAlertGroupingParametersConfig {
 }
 
 export function serviceAlertGroupingParametersConfigToTerraform(struct?: ServiceAlertGroupingParametersConfigOutputReference | ServiceAlertGroupingParametersConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -99,7 +99,7 @@ export class ServiceAlertGroupingParametersConfigOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -198,7 +198,7 @@ export interface ServiceAlertGroupingParameters {
 }
 
 export function serviceAlertGroupingParametersToTerraform(struct?: ServiceAlertGroupingParametersOutputReference | ServiceAlertGroupingParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -216,7 +216,7 @@ export class ServiceAlertGroupingParametersOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -264,7 +264,7 @@ export class ServiceAlertGroupingParametersOutputReference extends cdktf.Complex
   }
 
   // config - computed: false, optional: true, required: false
-  private _config = new ServiceAlertGroupingParametersConfigOutputReference(this as any, "config", true);
+  private _config = new ServiceAlertGroupingParametersConfigOutputReference(this, "config", true);
   public get config() {
     return this._config;
   }
@@ -291,7 +291,7 @@ export interface ServiceIncidentUrgencyRuleDuringSupportHours {
 }
 
 export function serviceIncidentUrgencyRuleDuringSupportHoursToTerraform(struct?: ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference | ServiceIncidentUrgencyRuleDuringSupportHours): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -309,7 +309,7 @@ export class ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference extends
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -384,7 +384,7 @@ export interface ServiceIncidentUrgencyRuleOutsideSupportHours {
 }
 
 export function serviceIncidentUrgencyRuleOutsideSupportHoursToTerraform(struct?: ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference | ServiceIncidentUrgencyRuleOutsideSupportHours): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -402,7 +402,7 @@ export class ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference extend
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -489,7 +489,7 @@ export interface ServiceIncidentUrgencyRule {
 }
 
 export function serviceIncidentUrgencyRuleToTerraform(struct?: ServiceIncidentUrgencyRuleOutputReference | ServiceIncidentUrgencyRule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -509,7 +509,7 @@ export class ServiceIncidentUrgencyRuleOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -582,7 +582,7 @@ export class ServiceIncidentUrgencyRuleOutputReference extends cdktf.ComplexObje
   }
 
   // during_support_hours - computed: false, optional: true, required: false
-  private _duringSupportHours = new ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference(this as any, "during_support_hours", true);
+  private _duringSupportHours = new ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference(this, "during_support_hours", true);
   public get duringSupportHours() {
     return this._duringSupportHours;
   }
@@ -598,7 +598,7 @@ export class ServiceIncidentUrgencyRuleOutputReference extends cdktf.ComplexObje
   }
 
   // outside_support_hours - computed: false, optional: true, required: false
-  private _outsideSupportHours = new ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference(this as any, "outside_support_hours", true);
+  private _outsideSupportHours = new ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference(this, "outside_support_hours", true);
   public get outsideSupportHours() {
     return this._outsideSupportHours;
   }
@@ -624,8 +624,8 @@ export interface ServiceScheduledActionsAt {
   readonly type?: string;
 }
 
-export function serviceScheduledActionsAtToTerraform(struct?: ServiceScheduledActionsAt): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function serviceScheduledActionsAtToTerraform(struct?: ServiceScheduledActionsAt | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -649,11 +649,11 @@ export interface ServiceScheduledActions {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#at Service#at}
   */
-  readonly at?: ServiceScheduledActionsAt[];
+  readonly at?: ServiceScheduledActionsAt[] | cdktf.IResolvable;
 }
 
-export function serviceScheduledActionsToTerraform(struct?: ServiceScheduledActions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function serviceScheduledActionsToTerraform(struct?: ServiceScheduledActions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -688,7 +688,7 @@ export interface ServiceSupportHours {
 }
 
 export function serviceSupportHoursToTerraform(struct?: ServiceSupportHoursOutputReference | ServiceSupportHours): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -709,7 +709,7 @@ export class ServiceSupportHoursOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -761,8 +761,7 @@ export class ServiceSupportHoursOutputReference extends cdktf.ComplexObject {
   // days_of_week - computed: false, optional: true, required: false
   private _daysOfWeek?: number[]; 
   public get daysOfWeek() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('days_of_week') as any;
+    return this.getNumberListAttribute('days_of_week');
   }
   public set daysOfWeek(value: number[]) {
     this._daysOfWeek = value;
@@ -1038,7 +1037,7 @@ export class Service extends cdktf.TerraformResource {
   }
 
   // alert_grouping_parameters - computed: false, optional: true, required: false
-  private _alertGroupingParameters = new ServiceAlertGroupingParametersOutputReference(this as any, "alert_grouping_parameters", true);
+  private _alertGroupingParameters = new ServiceAlertGroupingParametersOutputReference(this, "alert_grouping_parameters", true);
   public get alertGroupingParameters() {
     return this._alertGroupingParameters;
   }
@@ -1054,7 +1053,7 @@ export class Service extends cdktf.TerraformResource {
   }
 
   // incident_urgency_rule - computed: false, optional: true, required: false
-  private _incidentUrgencyRule = new ServiceIncidentUrgencyRuleOutputReference(this as any, "incident_urgency_rule", true);
+  private _incidentUrgencyRule = new ServiceIncidentUrgencyRuleOutputReference(this, "incident_urgency_rule", true);
   public get incidentUrgencyRule() {
     return this._incidentUrgencyRule;
   }
@@ -1070,12 +1069,12 @@ export class Service extends cdktf.TerraformResource {
   }
 
   // scheduled_actions - computed: false, optional: true, required: false
-  private _scheduledActions?: ServiceScheduledActions[]; 
+  private _scheduledActions?: ServiceScheduledActions[] | cdktf.IResolvable; 
   public get scheduledActions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('scheduled_actions') as any;
+    return this.interpolationForAttribute('scheduled_actions');
   }
-  public set scheduledActions(value: ServiceScheduledActions[]) {
+  public set scheduledActions(value: ServiceScheduledActions[] | cdktf.IResolvable) {
     this._scheduledActions = value;
   }
   public resetScheduledActions() {
@@ -1087,7 +1086,7 @@ export class Service extends cdktf.TerraformResource {
   }
 
   // support_hours - computed: false, optional: true, required: false
-  private _supportHours = new ServiceSupportHoursOutputReference(this as any, "support_hours", true);
+  private _supportHours = new ServiceSupportHoursOutputReference(this, "support_hours", true);
   public get supportHours() {
     return this._supportHours;
   }

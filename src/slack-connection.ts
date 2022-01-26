@@ -32,7 +32,7 @@ export interface SlackConnectionConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#config SlackConnection#config}
   */
-  readonly config: SlackConnectionConfigA[];
+  readonly config: SlackConnectionConfigA[] | cdktf.IResolvable;
 }
 export interface SlackConnectionConfigA {
   /**
@@ -49,8 +49,8 @@ export interface SlackConnectionConfigA {
   readonly urgency?: string;
 }
 
-export function slackConnectionConfigAToTerraform(struct?: SlackConnectionConfigA): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function slackConnectionConfigAToTerraform(struct?: SlackConnectionConfigA | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -187,12 +187,12 @@ export class SlackConnection extends cdktf.TerraformResource {
   }
 
   // config - computed: false, optional: false, required: true
-  private _config?: SlackConnectionConfigA[]; 
+  private _config?: SlackConnectionConfigA[] | cdktf.IResolvable; 
   public get config() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('config') as any;
+    return this.interpolationForAttribute('config');
   }
-  public set config(value: SlackConnectionConfigA[]) {
+  public set config(value: SlackConnectionConfigA[] | cdktf.IResolvable) {
     this._config = value;
   }
   // Temporarily expose input value. Use with caution.

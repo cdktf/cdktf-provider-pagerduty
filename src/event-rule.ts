@@ -93,7 +93,7 @@ export class EventRule extends cdktf.TerraformResource {
 
   // catch_all - computed: true, optional: false, required: false
   public get catchAll() {
-    return this.getBooleanAttribute('catch_all') as any;
+    return this.getBooleanAttribute('catch_all');
   }
 
   // condition_json - computed: false, optional: false, required: true

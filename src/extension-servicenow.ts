@@ -121,7 +121,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   // extension_objects - computed: false, optional: false, required: true
   private _extensionObjects?: string[]; 
   public get extensionObjects() {
-    return this.getListAttribute('extension_objects');
+    return cdktf.Fn.tolist(this.getListAttribute('extension_objects'));
   }
   public set extensionObjects(value: string[]) {
     this._extensionObjects = value;

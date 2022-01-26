@@ -28,7 +28,7 @@ export interface EscalationPolicyConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy#rule EscalationPolicy#rule}
   */
-  readonly rule: EscalationPolicyRule[];
+  readonly rule: EscalationPolicyRule[] | cdktf.IResolvable;
 }
 export interface EscalationPolicyRuleTarget {
   /**
@@ -41,8 +41,8 @@ export interface EscalationPolicyRuleTarget {
   readonly type?: string;
 }
 
-export function escalationPolicyRuleTargetToTerraform(struct?: EscalationPolicyRuleTarget): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function escalationPolicyRuleTargetToTerraform(struct?: EscalationPolicyRuleTarget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -62,11 +62,11 @@ export interface EscalationPolicyRule {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy#target EscalationPolicy#target}
   */
-  readonly target: EscalationPolicyRuleTarget[];
+  readonly target: EscalationPolicyRuleTarget[] | cdktf.IResolvable;
 }
 
-export function escalationPolicyRuleToTerraform(struct?: EscalationPolicyRule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function escalationPolicyRuleToTerraform(struct?: EscalationPolicyRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -187,12 +187,12 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   }
 
   // rule - computed: false, optional: false, required: true
-  private _rule?: EscalationPolicyRule[]; 
+  private _rule?: EscalationPolicyRule[] | cdktf.IResolvable; 
   public get rule() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('rule') as any;
+    return this.interpolationForAttribute('rule');
   }
-  public set rule(value: EscalationPolicyRule[]) {
+  public set rule(value: EscalationPolicyRule[] | cdktf.IResolvable) {
     this._rule = value;
   }
   // Temporarily expose input value. Use with caution.

@@ -52,13 +52,67 @@ export interface ResponsePlayConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#responder ResponsePlay#responder}
   */
-  readonly responder?: ResponsePlayResponder[];
+  readonly responder?: ResponsePlayResponder[] | cdktf.IResolvable;
   /**
   * subscriber block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#subscriber ResponsePlay#subscriber}
   */
-  readonly subscriber?: ResponsePlaySubscriber[];
+  readonly subscriber?: ResponsePlaySubscriber[] | cdktf.IResolvable;
+}
+export class ResponsePlayResponderEscalationRuleTarget extends cdktf.ComplexComputedList {
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+export class ResponsePlayResponderEscalationRule extends cdktf.ComplexComputedList {
+
+  // escalation_delay_in_minutes - computed: true, optional: false, required: false
+  public get escalationDelayInMinutes() {
+    return this.getNumberAttribute('escalation_delay_in_minutes');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // target - computed: true, optional: false, required: false
+  public get target() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('target');
+  }
+}
+export class ResponsePlayResponderService extends cdktf.ComplexComputedList {
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+export class ResponsePlayResponderTeam extends cdktf.ComplexComputedList {
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
 }
 export interface ResponsePlayResponder {
   /**
@@ -79,8 +133,8 @@ export interface ResponsePlayResponder {
   readonly type?: string;
 }
 
-export function responsePlayResponderToTerraform(struct?: ResponsePlayResponder): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function responsePlayResponderToTerraform(struct?: ResponsePlayResponder | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -103,8 +157,8 @@ export interface ResponsePlaySubscriber {
   readonly type?: string;
 }
 
-export function responsePlaySubscriberToTerraform(struct?: ResponsePlaySubscriber): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function responsePlaySubscriberToTerraform(struct?: ResponsePlaySubscriber | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -325,12 +379,12 @@ export class ResponsePlay extends cdktf.TerraformResource {
   }
 
   // responder - computed: false, optional: true, required: false
-  private _responder?: ResponsePlayResponder[]; 
+  private _responder?: ResponsePlayResponder[] | cdktf.IResolvable; 
   public get responder() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('responder') as any;
+    return this.interpolationForAttribute('responder');
   }
-  public set responder(value: ResponsePlayResponder[]) {
+  public set responder(value: ResponsePlayResponder[] | cdktf.IResolvable) {
     this._responder = value;
   }
   public resetResponder() {
@@ -342,12 +396,12 @@ export class ResponsePlay extends cdktf.TerraformResource {
   }
 
   // subscriber - computed: false, optional: true, required: false
-  private _subscriber?: ResponsePlaySubscriber[]; 
+  private _subscriber?: ResponsePlaySubscriber[] | cdktf.IResolvable; 
   public get subscriber() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('subscriber') as any;
+    return this.interpolationForAttribute('subscriber');
   }
-  public set subscriber(value: ResponsePlaySubscriber[]) {
+  public set subscriber(value: ResponsePlaySubscriber[] | cdktf.IResolvable) {
     this._subscriber = value;
   }
   public resetSubscriber() {

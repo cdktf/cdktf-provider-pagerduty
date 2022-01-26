@@ -149,7 +149,7 @@ export class User extends cdktf.TerraformResource {
 
   // invitation_sent - computed: true, optional: false, required: false
   public get invitationSent() {
-    return this.getBooleanAttribute('invitation_sent') as any;
+    return this.getBooleanAttribute('invitation_sent');
   }
 
   // job_title - computed: false, optional: true, required: false
@@ -200,7 +200,7 @@ export class User extends cdktf.TerraformResource {
   // teams - computed: true, optional: true, required: false
   private _teams?: string[]; 
   public get teams() {
-    return this.getListAttribute('teams');
+    return cdktf.Fn.tolist(this.getListAttribute('teams'));
   }
   public set teams(value: string[]) {
     this._teams = value;

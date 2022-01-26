@@ -104,7 +104,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
   // services - computed: false, optional: false, required: true
   private _services?: string[]; 
   public get services() {
-    return this.getListAttribute('services');
+    return cdktf.Fn.tolist(this.getListAttribute('services'));
   }
   public set services(value: string[]) {
     this._services = value;

@@ -92,7 +92,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
 
   // blacklisted - computed: true, optional: false, required: false
   public get blacklisted() {
-    return this.getBooleanAttribute('blacklisted') as any;
+    return this.getBooleanAttribute('blacklisted');
   }
 
   // country_code - computed: false, optional: true, required: false
@@ -113,7 +113,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 
   // id - computed: true, optional: true, required: false
@@ -137,7 +137,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
   // send_short_email - computed: false, optional: true, required: false
   private _sendShortEmail?: boolean | cdktf.IResolvable; 
   public get sendShortEmail() {
-    return this.getBooleanAttribute('send_short_email') as any;
+    return this.getBooleanAttribute('send_short_email');
   }
   public set sendShortEmail(value: boolean | cdktf.IResolvable) {
     this._sendShortEmail = value;

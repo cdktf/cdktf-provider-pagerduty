@@ -26,7 +26,7 @@ export interface RulesetTeam {
 }
 
 export function rulesetTeamToTerraform(struct?: RulesetTeamOutputReference | RulesetTeam): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -43,7 +43,7 @@ export class RulesetTeamOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -151,7 +151,7 @@ export class Ruleset extends cdktf.TerraformResource {
   }
 
   // team - computed: false, optional: true, required: false
-  private _team = new RulesetTeamOutputReference(this as any, "team", true);
+  private _team = new RulesetTeamOutputReference(this, "team", true);
   public get team() {
     return this._team;
   }
