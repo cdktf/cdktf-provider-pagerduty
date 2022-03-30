@@ -41,7 +41,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "pagerduty_user_contact_method";
+  public static readonly tfResourceType = "pagerduty_user_contact_method";
 
   // ===========
   // INITIALIZER
@@ -58,7 +58,9 @@ export class UserContactMethod extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'pagerduty_user_contact_method',
       terraformGeneratorMetadata: {
-        providerName: 'pagerduty'
+        providerName: 'pagerduty',
+        providerVersion: '1.11.0',
+        providerVersionConstraint: '~> 1.10'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -25,7 +25,7 @@ export class Addon extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "pagerduty_addon";
+  public static readonly tfResourceType = "pagerduty_addon";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class Addon extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'pagerduty_addon',
       terraformGeneratorMetadata: {
-        providerName: 'pagerduty'
+        providerName: 'pagerduty',
+        providerVersion: '1.11.0',
+        providerVersionConstraint: '~> 1.10'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -7576,6 +7576,46 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ---
 
+### ResponsePlayResponderEscalationRule <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ResponsePlayResponderEscalationRule } from '@cdktf/provider-pagerduty'
+
+const responsePlayResponderEscalationRule: ResponsePlayResponderEscalationRule = { ... }
+```
+
+### ResponsePlayResponderEscalationRuleTarget <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ResponsePlayResponderEscalationRuleTarget } from '@cdktf/provider-pagerduty'
+
+const responsePlayResponderEscalationRuleTarget: ResponsePlayResponderEscalationRuleTarget = { ... }
+```
+
+### ResponsePlayResponderService <a name="@cdktf/provider-pagerduty.ResponsePlayResponderService"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ResponsePlayResponderService } from '@cdktf/provider-pagerduty'
+
+const responsePlayResponderService: ResponsePlayResponderService = { ... }
+```
+
+### ResponsePlayResponderTeam <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeam"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ResponsePlayResponderTeam } from '@cdktf/provider-pagerduty'
+
+const responsePlayResponderTeam: ResponsePlayResponderTeam = { ... }
+```
+
 ### ResponsePlaySubscriber <a name="@cdktf/provider-pagerduty.ResponsePlaySubscriber"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -11190,37 +11230,98 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ## Classes <a name="Classes"></a>
 
-### ResponsePlayResponderEscalationRule <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule"></a>
+### ResponsePlayResponderEscalationRuleList <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleList"></a>
 
-#### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleList.Initializer"></a>
 
 ```typescript
-import { ResponsePlayResponderEscalationRule } from '@cdktf/provider-pagerduty'
+import { ResponsePlayResponderEscalationRuleList } from '@cdktf/provider-pagerduty'
 
-new ResponsePlayResponderEscalationRule(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new ResponsePlayResponderEscalationRuleList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### ResponsePlayResponderEscalationRuleOutputReference <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleOutputReference.Initializer"></a>
+
+```typescript
+import { ResponsePlayResponderEscalationRuleOutputReference } from '@cdktf/provider-pagerduty'
+
+new ResponsePlayResponderEscalationRuleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -11228,7 +11329,7 @@ new ResponsePlayResponderEscalationRule(terraformResource: IInterpolatingParent,
 
 #### Properties <a name="Properties"></a>
 
-##### `escalationDelayInMinutes`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule.property.escalationDelayInMinutes"></a>
+##### `escalationDelayInMinutes`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleOutputReference.property.escalationDelayInMinutes"></a>
 
 ```typescript
 public readonly escalationDelayInMinutes: number;
@@ -11238,7 +11339,7 @@ public readonly escalationDelayInMinutes: number;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -11248,48 +11349,119 @@ public readonly id: string;
 
 ---
 
-##### `target`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule.property.target"></a>
+##### `target`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleOutputReference.property.target"></a>
 
 ```typescript
-public readonly target: IResolvable;
+public readonly target: ResponsePlayResponderEscalationRuleTargetList;
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* [`@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetList`](#@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetList)
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ResponsePlayResponderEscalationRule;
+```
+
+- *Type:* [`@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule`](#@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRule)
 
 ---
 
 
-### ResponsePlayResponderEscalationRuleTarget <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget"></a>
+### ResponsePlayResponderEscalationRuleTargetList <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetList"></a>
 
-#### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetList.Initializer"></a>
 
 ```typescript
-import { ResponsePlayResponderEscalationRuleTarget } from '@cdktf/provider-pagerduty'
+import { ResponsePlayResponderEscalationRuleTargetList } from '@cdktf/provider-pagerduty'
 
-new ResponsePlayResponderEscalationRuleTarget(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new ResponsePlayResponderEscalationRuleTargetList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### ResponsePlayResponderEscalationRuleTargetOutputReference <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetOutputReference.Initializer"></a>
+
+```typescript
+import { ResponsePlayResponderEscalationRuleTargetOutputReference } from '@cdktf/provider-pagerduty'
+
+new ResponsePlayResponderEscalationRuleTargetOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -11297,7 +11469,7 @@ new ResponsePlayResponderEscalationRuleTarget(terraformResource: IInterpolatingP
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -11307,7 +11479,7 @@ public readonly id: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -11317,38 +11489,109 @@ public readonly type: string;
 
 ---
 
-
-### ResponsePlayResponderService <a name="@cdktf/provider-pagerduty.ResponsePlayResponderService"></a>
-
-#### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlayResponderService.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTargetOutputReference.property.internalValue"></a>
 
 ```typescript
-import { ResponsePlayResponderService } from '@cdktf/provider-pagerduty'
-
-new ResponsePlayResponderService(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: ResponsePlayResponderEscalationRuleTarget;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderService.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget`](#@cdktf/provider-pagerduty.ResponsePlayResponderEscalationRuleTarget)
+
+---
+
+
+### ResponsePlayResponderServiceList <a name="@cdktf/provider-pagerduty.ResponsePlayResponderServiceList"></a>
+
+#### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlayResponderServiceList.Initializer"></a>
+
+```typescript
+import { ResponsePlayResponderServiceList } from '@cdktf/provider-pagerduty'
+
+new ResponsePlayResponderServiceList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderServiceList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderService.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderServiceList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderService.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderService.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderServiceList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-pagerduty.ResponsePlayResponderServiceList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderServiceList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### ResponsePlayResponderServiceOutputReference <a name="@cdktf/provider-pagerduty.ResponsePlayResponderServiceOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlayResponderServiceOutputReference.Initializer"></a>
+
+```typescript
+import { ResponsePlayResponderServiceOutputReference } from '@cdktf/provider-pagerduty'
+
+new ResponsePlayResponderServiceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderServiceOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderServiceOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderServiceOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderServiceOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -11356,7 +11599,7 @@ new ResponsePlayResponderService(terraformResource: IInterpolatingParent, terraf
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderService.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderServiceOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -11366,7 +11609,7 @@ public readonly id: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderService.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderServiceOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -11376,38 +11619,109 @@ public readonly type: string;
 
 ---
 
-
-### ResponsePlayResponderTeam <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeam"></a>
-
-#### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeam.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderServiceOutputReference.property.internalValue"></a>
 
 ```typescript
-import { ResponsePlayResponderTeam } from '@cdktf/provider-pagerduty'
-
-new ResponsePlayResponderTeam(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: ResponsePlayResponderService;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeam.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-pagerduty.ResponsePlayResponderService`](#@cdktf/provider-pagerduty.ResponsePlayResponderService)
+
+---
+
+
+### ResponsePlayResponderTeamList <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeamList"></a>
+
+#### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeamList.Initializer"></a>
+
+```typescript
+import { ResponsePlayResponderTeamList } from '@cdktf/provider-pagerduty'
+
+new ResponsePlayResponderTeamList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeamList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeam.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeamList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeam.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeam.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeamList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeamList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeamList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### ResponsePlayResponderTeamOutputReference <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeamOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeamOutputReference.Initializer"></a>
+
+```typescript
+import { ResponsePlayResponderTeamOutputReference } from '@cdktf/provider-pagerduty'
+
+new ResponsePlayResponderTeamOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeamOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeamOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeamOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeamOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -11415,7 +11729,7 @@ new ResponsePlayResponderTeam(terraformResource: IInterpolatingParent, terraform
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeam.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeamOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -11425,13 +11739,23 @@ public readonly id: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeam.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeamOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayResponderTeamOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ResponsePlayResponderTeam;
+```
+
+- *Type:* [`@cdktf/provider-pagerduty.ResponsePlayResponderTeam`](#@cdktf/provider-pagerduty.ResponsePlayResponderTeam)
 
 ---
 
@@ -11443,7 +11767,7 @@ public readonly type: string;
 ```typescript
 import { RulesetRuleActionsOutputReference } from '@cdktf/provider-pagerduty'
 
-new RulesetRuleActionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RulesetRuleActionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.parameter.terraformResource"></a>
@@ -11459,14 +11783,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -11701,7 +12017,7 @@ public readonly internalValue: RulesetRuleActions;
 ```typescript
 import { RulesetRuleConditionsOutputReference } from '@cdktf/provider-pagerduty'
 
-new RulesetRuleConditionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RulesetRuleConditionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConditionsOutputReference.parameter.terraformResource"></a>
@@ -11717,14 +12033,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConditionsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -11803,7 +12111,7 @@ public readonly internalValue: RulesetRuleConditions;
 ```typescript
 import { RulesetRuleTimeFrameOutputReference } from '@cdktf/provider-pagerduty'
 
-new RulesetRuleTimeFrameOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RulesetRuleTimeFrameOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleTimeFrameOutputReference.parameter.terraformResource"></a>
@@ -11819,14 +12127,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleTimeFrameOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -11905,7 +12205,7 @@ public readonly internalValue: RulesetRuleTimeFrame;
 ```typescript
 import { RulesetTeamOutputReference } from '@cdktf/provider-pagerduty'
 
-new RulesetTeamOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RulesetTeamOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetTeamOutputReference.parameter.terraformResource"></a>
@@ -11921,14 +12221,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetTeamOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -11974,7 +12266,7 @@ public readonly internalValue: RulesetTeam;
 ```typescript
 import { ServiceAlertGroupingParametersConfigOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceAlertGroupingParametersConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServiceAlertGroupingParametersConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceAlertGroupingParametersConfigOutputReference.parameter.terraformResource"></a>
@@ -11990,14 +12282,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceAlertGroupingParametersConfigOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -12102,7 +12386,7 @@ public readonly internalValue: ServiceAlertGroupingParametersConfig;
 ```typescript
 import { ServiceAlertGroupingParametersOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceAlertGroupingParametersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServiceAlertGroupingParametersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceAlertGroupingParametersOutputReference.parameter.terraformResource"></a>
@@ -12118,14 +12402,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceAlertGroupingParametersOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -12216,7 +12492,7 @@ public readonly internalValue: ServiceAlertGroupingParameters;
 ```typescript
 import { ServiceEventRuleActionsOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceEventRuleActionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServiceEventRuleActionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsOutputReference.parameter.terraformResource"></a>
@@ -12232,14 +12508,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleActionsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -12448,7 +12716,7 @@ public readonly internalValue: ServiceEventRuleActions;
 ```typescript
 import { ServiceEventRuleConditionsOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceEventRuleConditionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServiceEventRuleConditionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConditionsOutputReference.parameter.terraformResource"></a>
@@ -12464,14 +12732,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConditionsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -12550,7 +12810,7 @@ public readonly internalValue: ServiceEventRuleConditions;
 ```typescript
 import { ServiceEventRuleTimeFrameOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceEventRuleTimeFrameOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServiceEventRuleTimeFrameOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameOutputReference.parameter.terraformResource"></a>
@@ -12566,14 +12826,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleTimeFrameOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -12652,7 +12904,7 @@ public readonly internalValue: ServiceEventRuleTimeFrame;
 ```typescript
 import { ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference.parameter.terraformResource"></a>
@@ -12668,14 +12920,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -12754,7 +12998,7 @@ public readonly internalValue: ServiceIncidentUrgencyRuleDuringSupportHours;
 ```typescript
 import { ServiceIncidentUrgencyRuleOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceIncidentUrgencyRuleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServiceIncidentUrgencyRuleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIncidentUrgencyRuleOutputReference.parameter.terraformResource"></a>
@@ -12770,14 +13014,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIncidentUrgencyRuleOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -12926,7 +13162,7 @@ public readonly internalValue: ServiceIncidentUrgencyRule;
 ```typescript
 import { ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference.parameter.terraformResource"></a>
@@ -12942,14 +13178,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -13028,7 +13256,7 @@ public readonly internalValue: ServiceIncidentUrgencyRuleOutsideSupportHours;
 ```typescript
 import { ServiceSupportHoursOutputReference } from '@cdktf/provider-pagerduty'
 
-new ServiceSupportHoursOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ServiceSupportHoursOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceSupportHoursOutputReference.parameter.terraformResource"></a>
@@ -13044,14 +13272,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceSupportHoursOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 

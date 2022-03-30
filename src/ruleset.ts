@@ -41,10 +41,9 @@ export class RulesetTeamOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RulesetTeam | undefined {
@@ -90,7 +89,7 @@ export class Ruleset extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "pagerduty_ruleset";
+  public static readonly tfResourceType = "pagerduty_ruleset";
 
   // ===========
   // INITIALIZER
@@ -107,7 +106,9 @@ export class Ruleset extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'pagerduty_ruleset',
       terraformGeneratorMetadata: {
-        providerName: 'pagerduty'
+        providerName: 'pagerduty',
+        providerVersion: '1.11.0',
+        providerVersionConstraint: '~> 1.10'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -151,7 +152,7 @@ export class Ruleset extends cdktf.TerraformResource {
   }
 
   // team - computed: false, optional: true, required: false
-  private _team = new RulesetTeamOutputReference(this, "team", true);
+  private _team = new RulesetTeamOutputReference(this, "team");
   public get team() {
     return this._team;
   }

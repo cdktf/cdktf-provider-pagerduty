@@ -70,7 +70,7 @@ export class SlackConnection extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "pagerduty_slack_connection";
+  public static readonly tfResourceType = "pagerduty_slack_connection";
 
   // ===========
   // INITIALIZER
@@ -87,7 +87,9 @@ export class SlackConnection extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'pagerduty_slack_connection',
       terraformGeneratorMetadata: {
-        providerName: 'pagerduty'
+        providerName: 'pagerduty',
+        providerVersion: '1.11.0',
+        providerVersionConstraint: '~> 1.10'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -31,7 +31,7 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "pagerduty";
+  public static readonly tfResourceType = "pagerduty";
 
   // ===========
   // INITIALIZER
@@ -49,6 +49,7 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'pagerduty',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
+        providerVersion: '1.11.0',
         providerVersionConstraint: '~> 1.10'
       },
       terraformProviderSource: 'PagerDuty/pagerduty'
