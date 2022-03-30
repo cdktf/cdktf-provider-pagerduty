@@ -29,7 +29,7 @@ export class TeamMembership extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "pagerduty_team_membership";
+  public static readonly tfResourceType = "pagerduty_team_membership";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class TeamMembership extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'pagerduty_team_membership',
       terraformGeneratorMetadata: {
-        providerName: 'pagerduty'
+        providerName: 'pagerduty',
+        providerVersion: '1.11.0',
+        providerVersionConstraint: '~> 1.10'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

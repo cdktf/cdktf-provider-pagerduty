@@ -29,7 +29,7 @@ export class EventRule extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "pagerduty_event_rule";
+  public static readonly tfResourceType = "pagerduty_event_rule";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class EventRule extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'pagerduty_event_rule',
       terraformGeneratorMetadata: {
-        providerName: 'pagerduty'
+        providerName: 'pagerduty',
+        providerVersion: '1.11.0',
+        providerVersionConstraint: '~> 1.10'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

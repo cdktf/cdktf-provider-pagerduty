@@ -21,7 +21,7 @@ export class DataPagerdutyUser extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "pagerduty_user";
+  public static readonly tfResourceType = "pagerduty_user";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class DataPagerdutyUser extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'pagerduty_user',
       terraformGeneratorMetadata: {
-        providerName: 'pagerduty'
+        providerName: 'pagerduty',
+        providerVersion: '1.11.0',
+        providerVersionConstraint: '~> 1.10'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

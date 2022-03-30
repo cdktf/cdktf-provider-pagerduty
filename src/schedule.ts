@@ -124,7 +124,7 @@ export class Schedule extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "pagerduty_schedule";
+  public static readonly tfResourceType = "pagerduty_schedule";
 
   // ===========
   // INITIALIZER
@@ -141,7 +141,9 @@ export class Schedule extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'pagerduty_schedule',
       terraformGeneratorMetadata: {
-        providerName: 'pagerduty'
+        providerName: 'pagerduty',
+        providerVersion: '1.11.0',
+        providerVersionConstraint: '~> 1.10'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

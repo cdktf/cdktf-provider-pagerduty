@@ -97,10 +97,9 @@ export class ServiceAlertGroupingParametersConfigOutputReference extends cdktf.C
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceAlertGroupingParametersConfig | undefined {
@@ -214,10 +213,9 @@ export class ServiceAlertGroupingParametersOutputReference extends cdktf.Complex
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceAlertGroupingParameters | undefined {
@@ -264,7 +262,7 @@ export class ServiceAlertGroupingParametersOutputReference extends cdktf.Complex
   }
 
   // config - computed: false, optional: true, required: false
-  private _config = new ServiceAlertGroupingParametersConfigOutputReference(this, "config", true);
+  private _config = new ServiceAlertGroupingParametersConfigOutputReference(this, "config");
   public get config() {
     return this._config;
   }
@@ -307,10 +305,9 @@ export class ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference extends
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceIncidentUrgencyRuleDuringSupportHours | undefined {
@@ -400,10 +397,9 @@ export class ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference extend
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceIncidentUrgencyRuleOutsideSupportHours | undefined {
@@ -507,10 +503,9 @@ export class ServiceIncidentUrgencyRuleOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceIncidentUrgencyRule | undefined {
@@ -582,7 +577,7 @@ export class ServiceIncidentUrgencyRuleOutputReference extends cdktf.ComplexObje
   }
 
   // during_support_hours - computed: false, optional: true, required: false
-  private _duringSupportHours = new ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference(this, "during_support_hours", true);
+  private _duringSupportHours = new ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference(this, "during_support_hours");
   public get duringSupportHours() {
     return this._duringSupportHours;
   }
@@ -598,7 +593,7 @@ export class ServiceIncidentUrgencyRuleOutputReference extends cdktf.ComplexObje
   }
 
   // outside_support_hours - computed: false, optional: true, required: false
-  private _outsideSupportHours = new ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference(this, "outside_support_hours", true);
+  private _outsideSupportHours = new ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference(this, "outside_support_hours");
   public get outsideSupportHours() {
     return this._outsideSupportHours;
   }
@@ -707,10 +702,9 @@ export class ServiceSupportHoursOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceSupportHours | undefined {
@@ -847,7 +841,7 @@ export class Service extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "pagerduty_service";
+  public static readonly tfResourceType = "pagerduty_service";
 
   // ===========
   // INITIALIZER
@@ -864,7 +858,9 @@ export class Service extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'pagerduty_service',
       terraformGeneratorMetadata: {
-        providerName: 'pagerduty'
+        providerName: 'pagerduty',
+        providerVersion: '1.11.0',
+        providerVersionConstraint: '~> 1.10'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1037,7 +1033,7 @@ export class Service extends cdktf.TerraformResource {
   }
 
   // alert_grouping_parameters - computed: false, optional: true, required: false
-  private _alertGroupingParameters = new ServiceAlertGroupingParametersOutputReference(this, "alert_grouping_parameters", true);
+  private _alertGroupingParameters = new ServiceAlertGroupingParametersOutputReference(this, "alert_grouping_parameters");
   public get alertGroupingParameters() {
     return this._alertGroupingParameters;
   }
@@ -1053,7 +1049,7 @@ export class Service extends cdktf.TerraformResource {
   }
 
   // incident_urgency_rule - computed: false, optional: true, required: false
-  private _incidentUrgencyRule = new ServiceIncidentUrgencyRuleOutputReference(this, "incident_urgency_rule", true);
+  private _incidentUrgencyRule = new ServiceIncidentUrgencyRuleOutputReference(this, "incident_urgency_rule");
   public get incidentUrgencyRule() {
     return this._incidentUrgencyRule;
   }
@@ -1086,7 +1082,7 @@ export class Service extends cdktf.TerraformResource {
   }
 
   // support_hours - computed: false, optional: true, required: false
-  private _supportHours = new ServiceSupportHoursOutputReference(this, "support_hours", true);
+  private _supportHours = new ServiceSupportHoursOutputReference(this, "support_hours");
   public get supportHours() {
     return this._supportHours;
   }

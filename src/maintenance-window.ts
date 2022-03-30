@@ -33,7 +33,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "pagerduty_maintenance_window";
+  public static readonly tfResourceType = "pagerduty_maintenance_window";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'pagerduty_maintenance_window',
       terraformGeneratorMetadata: {
-        providerName: 'pagerduty'
+        providerName: 'pagerduty',
+        providerVersion: '1.11.0',
+        providerVersionConstraint: '~> 1.10'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

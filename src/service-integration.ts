@@ -41,7 +41,7 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "pagerduty_service_integration";
+  public static readonly tfResourceType = "pagerduty_service_integration";
 
   // ===========
   // INITIALIZER
@@ -58,7 +58,9 @@ export class ServiceIntegration extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'pagerduty_service_integration',
       terraformGeneratorMetadata: {
-        providerName: 'pagerduty'
+        providerName: 'pagerduty',
+        providerVersion: '1.11.0',
+        providerVersionConstraint: '~> 1.10'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

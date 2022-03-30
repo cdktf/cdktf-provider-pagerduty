@@ -260,10 +260,9 @@ export class ServiceEventRuleActionsOutputReference extends cdktf.ComplexObject 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceEventRuleActions | undefined {
@@ -518,10 +517,9 @@ export class ServiceEventRuleConditionsOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceEventRuleConditions | undefined {
@@ -670,10 +668,9 @@ export class ServiceEventRuleTimeFrameOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ServiceEventRuleTimeFrame | undefined {
@@ -797,7 +794,7 @@ export class ServiceEventRule extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "pagerduty_service_event_rule";
+  public static readonly tfResourceType = "pagerduty_service_event_rule";
 
   // ===========
   // INITIALIZER
@@ -814,7 +811,9 @@ export class ServiceEventRule extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'pagerduty_service_event_rule',
       terraformGeneratorMetadata: {
-        providerName: 'pagerduty'
+        providerName: 'pagerduty',
+        providerVersion: '1.11.0',
+        providerVersionConstraint: '~> 1.10'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -885,7 +884,7 @@ export class ServiceEventRule extends cdktf.TerraformResource {
   }
 
   // actions - computed: false, optional: true, required: false
-  private _actions = new ServiceEventRuleActionsOutputReference(this, "actions", true);
+  private _actions = new ServiceEventRuleActionsOutputReference(this, "actions");
   public get actions() {
     return this._actions;
   }
@@ -901,7 +900,7 @@ export class ServiceEventRule extends cdktf.TerraformResource {
   }
 
   // conditions - computed: false, optional: true, required: false
-  private _conditions = new ServiceEventRuleConditionsOutputReference(this, "conditions", true);
+  private _conditions = new ServiceEventRuleConditionsOutputReference(this, "conditions");
   public get conditions() {
     return this._conditions;
   }
@@ -917,7 +916,7 @@ export class ServiceEventRule extends cdktf.TerraformResource {
   }
 
   // time_frame - computed: false, optional: true, required: false
-  private _timeFrame = new ServiceEventRuleTimeFrameOutputReference(this, "time_frame", true);
+  private _timeFrame = new ServiceEventRuleTimeFrameOutputReference(this, "time_frame");
   public get timeFrame() {
     return this._timeFrame;
   }

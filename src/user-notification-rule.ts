@@ -33,7 +33,7 @@ export class UserNotificationRule extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "pagerduty_user_notification_rule";
+  public static readonly tfResourceType = "pagerduty_user_notification_rule";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class UserNotificationRule extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'pagerduty_user_notification_rule',
       terraformGeneratorMetadata: {
-        providerName: 'pagerduty'
+        providerName: 'pagerduty',
+        providerVersion: '1.11.0',
+        providerVersionConstraint: '~> 1.10'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

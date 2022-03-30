@@ -23,7 +23,7 @@ export class DataPagerdutyPriority extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "pagerduty_priority";
+  public static readonly tfResourceType = "pagerduty_priority";
 
   // ===========
   // INITIALIZER
@@ -40,7 +40,9 @@ export class DataPagerdutyPriority extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'pagerduty_priority',
       terraformGeneratorMetadata: {
-        providerName: 'pagerduty'
+        providerName: 'pagerduty',
+        providerVersion: '1.11.0',
+        providerVersionConstraint: '~> 1.10'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
