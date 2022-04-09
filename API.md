@@ -1535,10 +1535,10 @@ public readonly numLoopsInput: number;
 ##### `ruleInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicy.property.ruleInput"></a>
 
 ```typescript
-public readonly ruleInput: IResolvable | EscalationPolicyRule[];
+public readonly ruleInput: EscalationPolicyRule[] | IResolvable;
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.EscalationPolicyRule`](#@cdktf/provider-pagerduty.EscalationPolicyRule)[]
+- *Type:* [`@cdktf/provider-pagerduty.EscalationPolicyRule`](#@cdktf/provider-pagerduty.EscalationPolicyRule)[] | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -1585,10 +1585,10 @@ public readonly numLoops: number;
 ##### `rule`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicy.property.rule"></a>
 
 ```typescript
-public readonly rule: IResolvable | EscalationPolicyRule[];
+public readonly rule: EscalationPolicyRule[] | IResolvable;
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.EscalationPolicyRule`](#@cdktf/provider-pagerduty.EscalationPolicyRule)[]
+- *Type:* [`@cdktf/provider-pagerduty.EscalationPolicyRule`](#@cdktf/provider-pagerduty.EscalationPolicyRule)[] | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -6667,10 +6667,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 ##### `rule`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyConfig.property.rule"></a>
 
 ```typescript
-public readonly rule: IResolvable | EscalationPolicyRule[];
+public readonly rule: EscalationPolicyRule[] | IResolvable;
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.EscalationPolicyRule`](#@cdktf/provider-pagerduty.EscalationPolicyRule)[]
+- *Type:* [`@cdktf/provider-pagerduty.EscalationPolicyRule`](#@cdktf/provider-pagerduty.EscalationPolicyRule)[] | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 rule block.
 
@@ -7739,10 +7739,10 @@ const rulesetRuleActions: RulesetRuleActions = { ... }
 ##### `annotate`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActions.property.annotate"></a>
 
 ```typescript
-public readonly annotate: RulesetRuleActionsAnnotate[] | IResolvable;
+public readonly annotate: IResolvable | RulesetRuleActionsAnnotate[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate`](#@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate)[] | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate`](#@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate)[]
 
 annotate block.
 
@@ -11842,10 +11842,10 @@ public resetSuspend()
 ##### `annotateInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.annotateInput"></a>
 
 ```typescript
-public readonly annotateInput: RulesetRuleActionsAnnotate[] | IResolvable;
+public readonly annotateInput: IResolvable | RulesetRuleActionsAnnotate[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate`](#@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate)[] | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate`](#@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate)[]
 
 ---
 
@@ -11922,10 +11922,10 @@ public readonly suspendInput: IResolvable | RulesetRuleActionsSuspend[];
 ##### `annotate`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleActionsOutputReference.property.annotate"></a>
 
 ```typescript
-public readonly annotate: RulesetRuleActionsAnnotate[] | IResolvable;
+public readonly annotate: IResolvable | RulesetRuleActionsAnnotate[];
 ```
 
-- *Type:* [`@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate`](#@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate)[] | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate`](#@cdktf/provider-pagerduty.RulesetRuleActionsAnnotate)[]
 
 ---
 
