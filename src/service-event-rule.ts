@@ -12,6 +12,13 @@ export interface ServiceEventRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#id ServiceEventRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#position ServiceEventRule#position}
   */
   readonly position?: number;
@@ -61,6 +68,86 @@ export function serviceEventRuleActionsAnnotateToTerraform(struct?: ServiceEvent
   }
 }
 
+export class ServiceEventRuleActionsAnnotateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceEventRuleActionsAnnotate | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceEventRuleActionsAnnotate | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._value = value.value;
+    }
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ServiceEventRuleActionsAnnotateList extends cdktf.ComplexList {
+  public internalValue? : ServiceEventRuleActionsAnnotate[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceEventRuleActionsAnnotateOutputReference {
+    return new ServiceEventRuleActionsAnnotateOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceEventRuleActionsEventAction {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#value ServiceEventRule#value}
@@ -78,6 +165,86 @@ export function serviceEventRuleActionsEventActionToTerraform(struct?: ServiceEv
   }
 }
 
+export class ServiceEventRuleActionsEventActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceEventRuleActionsEventAction | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceEventRuleActionsEventAction | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._value = value.value;
+    }
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ServiceEventRuleActionsEventActionList extends cdktf.ComplexList {
+  public internalValue? : ServiceEventRuleActionsEventAction[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceEventRuleActionsEventActionOutputReference {
+    return new ServiceEventRuleActionsEventActionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceEventRuleActionsExtractions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#regex ServiceEventRule#regex}
@@ -110,6 +277,152 @@ export function serviceEventRuleActionsExtractionsToTerraform(struct?: ServiceEv
   }
 }
 
+export class ServiceEventRuleActionsExtractionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceEventRuleActionsExtractions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._regex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regex = this._regex;
+    }
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    if (this._target !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    if (this._template !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.template = this._template;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceEventRuleActionsExtractions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._regex = undefined;
+      this._source = undefined;
+      this._target = undefined;
+      this._template = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._regex = value.regex;
+      this._source = value.source;
+      this._target = value.target;
+      this._template = value.template;
+    }
+  }
+
+  // regex - computed: false, optional: true, required: false
+  private _regex?: string; 
+  public get regex() {
+    return this.getStringAttribute('regex');
+  }
+  public set regex(value: string) {
+    this._regex = value;
+  }
+  public resetRegex() {
+    this._regex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regexInput() {
+    return this._regex;
+  }
+
+  // source - computed: false, optional: true, required: false
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  public resetSource() {
+    this._source = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
+  }
+
+  // target - computed: false, optional: true, required: false
+  private _target?: string; 
+  public get target() {
+    return this.getStringAttribute('target');
+  }
+  public set target(value: string) {
+    this._target = value;
+  }
+  public resetTarget() {
+    this._target = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetInput() {
+    return this._target;
+  }
+
+  // template - computed: false, optional: true, required: false
+  private _template?: string; 
+  public get template() {
+    return this.getStringAttribute('template');
+  }
+  public set template(value: string) {
+    this._template = value;
+  }
+  public resetTemplate() {
+    this._template = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get templateInput() {
+    return this._template;
+  }
+}
+
+export class ServiceEventRuleActionsExtractionsList extends cdktf.ComplexList {
+  public internalValue? : ServiceEventRuleActionsExtractions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceEventRuleActionsExtractionsOutputReference {
+    return new ServiceEventRuleActionsExtractionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceEventRuleActionsPriority {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#value ServiceEventRule#value}
@@ -127,6 +440,86 @@ export function serviceEventRuleActionsPriorityToTerraform(struct?: ServiceEvent
   }
 }
 
+export class ServiceEventRuleActionsPriorityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceEventRuleActionsPriority | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceEventRuleActionsPriority | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._value = value.value;
+    }
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ServiceEventRuleActionsPriorityList extends cdktf.ComplexList {
+  public internalValue? : ServiceEventRuleActionsPriority[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceEventRuleActionsPriorityOutputReference {
+    return new ServiceEventRuleActionsPriorityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceEventRuleActionsSeverity {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#value ServiceEventRule#value}
@@ -144,6 +537,86 @@ export function serviceEventRuleActionsSeverityToTerraform(struct?: ServiceEvent
   }
 }
 
+export class ServiceEventRuleActionsSeverityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceEventRuleActionsSeverity | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceEventRuleActionsSeverity | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._value = value.value;
+    }
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ServiceEventRuleActionsSeverityList extends cdktf.ComplexList {
+  public internalValue? : ServiceEventRuleActionsSeverity[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceEventRuleActionsSeverityOutputReference {
+    return new ServiceEventRuleActionsSeverityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceEventRuleActionsSuppress {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#threshold_time_amount ServiceEventRule#threshold_time_amount}
@@ -176,6 +649,152 @@ export function serviceEventRuleActionsSuppressToTerraform(struct?: ServiceEvent
   }
 }
 
+export class ServiceEventRuleActionsSuppressOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceEventRuleActionsSuppress | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._thresholdTimeAmount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.thresholdTimeAmount = this._thresholdTimeAmount;
+    }
+    if (this._thresholdTimeUnit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.thresholdTimeUnit = this._thresholdTimeUnit;
+    }
+    if (this._thresholdValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.thresholdValue = this._thresholdValue;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceEventRuleActionsSuppress | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._thresholdTimeAmount = undefined;
+      this._thresholdTimeUnit = undefined;
+      this._thresholdValue = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._thresholdTimeAmount = value.thresholdTimeAmount;
+      this._thresholdTimeUnit = value.thresholdTimeUnit;
+      this._thresholdValue = value.thresholdValue;
+      this._value = value.value;
+    }
+  }
+
+  // threshold_time_amount - computed: false, optional: true, required: false
+  private _thresholdTimeAmount?: number; 
+  public get thresholdTimeAmount() {
+    return this.getNumberAttribute('threshold_time_amount');
+  }
+  public set thresholdTimeAmount(value: number) {
+    this._thresholdTimeAmount = value;
+  }
+  public resetThresholdTimeAmount() {
+    this._thresholdTimeAmount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thresholdTimeAmountInput() {
+    return this._thresholdTimeAmount;
+  }
+
+  // threshold_time_unit - computed: false, optional: true, required: false
+  private _thresholdTimeUnit?: string; 
+  public get thresholdTimeUnit() {
+    return this.getStringAttribute('threshold_time_unit');
+  }
+  public set thresholdTimeUnit(value: string) {
+    this._thresholdTimeUnit = value;
+  }
+  public resetThresholdTimeUnit() {
+    this._thresholdTimeUnit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thresholdTimeUnitInput() {
+    return this._thresholdTimeUnit;
+  }
+
+  // threshold_value - computed: false, optional: true, required: false
+  private _thresholdValue?: number; 
+  public get thresholdValue() {
+    return this.getNumberAttribute('threshold_value');
+  }
+  public set thresholdValue(value: number) {
+    this._thresholdValue = value;
+  }
+  public resetThresholdValue() {
+    this._thresholdValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thresholdValueInput() {
+    return this._thresholdValue;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: boolean | cdktf.IResolvable; 
+  public get value() {
+    return this.getBooleanAttribute('value');
+  }
+  public set value(value: boolean | cdktf.IResolvable) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ServiceEventRuleActionsSuppressList extends cdktf.ComplexList {
+  public internalValue? : ServiceEventRuleActionsSuppress[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceEventRuleActionsSuppressOutputReference {
+    return new ServiceEventRuleActionsSuppressOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceEventRuleActionsSuspend {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#value ServiceEventRule#value}
@@ -193,6 +812,86 @@ export function serviceEventRuleActionsSuspendToTerraform(struct?: ServiceEventR
   }
 }
 
+export class ServiceEventRuleActionsSuspendOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceEventRuleActionsSuspend | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceEventRuleActionsSuspend | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._value = value.value;
+    }
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: number; 
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+  public set value(value: number) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ServiceEventRuleActionsSuspendList extends cdktf.ComplexList {
+  public internalValue? : ServiceEventRuleActionsSuspend[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceEventRuleActionsSuspendOutputReference {
+    return new ServiceEventRuleActionsSuspendOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceEventRuleActions {
   /**
   * annotate block
@@ -268,33 +967,33 @@ export class ServiceEventRuleActionsOutputReference extends cdktf.ComplexObject 
   public get internalValue(): ServiceEventRuleActions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._annotate !== undefined) {
+    if (this._annotate?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.annotate = this._annotate;
+      internalValueResult.annotate = this._annotate?.internalValue;
     }
-    if (this._eventAction !== undefined) {
+    if (this._eventAction?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.eventAction = this._eventAction;
+      internalValueResult.eventAction = this._eventAction?.internalValue;
     }
-    if (this._extractions !== undefined) {
+    if (this._extractions?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.extractions = this._extractions;
+      internalValueResult.extractions = this._extractions?.internalValue;
     }
-    if (this._priority !== undefined) {
+    if (this._priority?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.priority = this._priority;
+      internalValueResult.priority = this._priority?.internalValue;
     }
-    if (this._severity !== undefined) {
+    if (this._severity?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.severity = this._severity;
+      internalValueResult.severity = this._severity?.internalValue;
     }
-    if (this._suppress !== undefined) {
+    if (this._suppress?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.suppress = this._suppress;
+      internalValueResult.suppress = this._suppress?.internalValue;
     }
-    if (this._suspend !== undefined) {
+    if (this._suspend?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.suspend = this._suspend;
+      internalValueResult.suspend = this._suspend?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -302,143 +1001,136 @@ export class ServiceEventRuleActionsOutputReference extends cdktf.ComplexObject 
   public set internalValue(value: ServiceEventRuleActions | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._annotate = undefined;
-      this._eventAction = undefined;
-      this._extractions = undefined;
-      this._priority = undefined;
-      this._severity = undefined;
-      this._suppress = undefined;
-      this._suspend = undefined;
+      this._annotate.internalValue = undefined;
+      this._eventAction.internalValue = undefined;
+      this._extractions.internalValue = undefined;
+      this._priority.internalValue = undefined;
+      this._severity.internalValue = undefined;
+      this._suppress.internalValue = undefined;
+      this._suspend.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._annotate = value.annotate;
-      this._eventAction = value.eventAction;
-      this._extractions = value.extractions;
-      this._priority = value.priority;
-      this._severity = value.severity;
-      this._suppress = value.suppress;
-      this._suspend = value.suspend;
+      this._annotate.internalValue = value.annotate;
+      this._eventAction.internalValue = value.eventAction;
+      this._extractions.internalValue = value.extractions;
+      this._priority.internalValue = value.priority;
+      this._severity.internalValue = value.severity;
+      this._suppress.internalValue = value.suppress;
+      this._suspend.internalValue = value.suspend;
     }
   }
 
   // annotate - computed: false, optional: true, required: false
-  private _annotate?: ServiceEventRuleActionsAnnotate[] | cdktf.IResolvable; 
+  private _annotate = new ServiceEventRuleActionsAnnotateList(this, "annotate", false);
   public get annotate() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('annotate');
+    return this._annotate;
   }
-  public set annotate(value: ServiceEventRuleActionsAnnotate[] | cdktf.IResolvable) {
-    this._annotate = value;
+  public putAnnotate(value: ServiceEventRuleActionsAnnotate[] | cdktf.IResolvable) {
+    this._annotate.internalValue = value;
   }
   public resetAnnotate() {
-    this._annotate = undefined;
+    this._annotate.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get annotateInput() {
-    return this._annotate;
+    return this._annotate.internalValue;
   }
 
   // event_action - computed: false, optional: true, required: false
-  private _eventAction?: ServiceEventRuleActionsEventAction[] | cdktf.IResolvable; 
+  private _eventAction = new ServiceEventRuleActionsEventActionList(this, "event_action", false);
   public get eventAction() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('event_action');
+    return this._eventAction;
   }
-  public set eventAction(value: ServiceEventRuleActionsEventAction[] | cdktf.IResolvable) {
-    this._eventAction = value;
+  public putEventAction(value: ServiceEventRuleActionsEventAction[] | cdktf.IResolvable) {
+    this._eventAction.internalValue = value;
   }
   public resetEventAction() {
-    this._eventAction = undefined;
+    this._eventAction.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get eventActionInput() {
-    return this._eventAction;
+    return this._eventAction.internalValue;
   }
 
   // extractions - computed: false, optional: true, required: false
-  private _extractions?: ServiceEventRuleActionsExtractions[] | cdktf.IResolvable; 
+  private _extractions = new ServiceEventRuleActionsExtractionsList(this, "extractions", false);
   public get extractions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('extractions');
+    return this._extractions;
   }
-  public set extractions(value: ServiceEventRuleActionsExtractions[] | cdktf.IResolvable) {
-    this._extractions = value;
+  public putExtractions(value: ServiceEventRuleActionsExtractions[] | cdktf.IResolvable) {
+    this._extractions.internalValue = value;
   }
   public resetExtractions() {
-    this._extractions = undefined;
+    this._extractions.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get extractionsInput() {
-    return this._extractions;
+    return this._extractions.internalValue;
   }
 
   // priority - computed: false, optional: true, required: false
-  private _priority?: ServiceEventRuleActionsPriority[] | cdktf.IResolvable; 
+  private _priority = new ServiceEventRuleActionsPriorityList(this, "priority", false);
   public get priority() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('priority');
+    return this._priority;
   }
-  public set priority(value: ServiceEventRuleActionsPriority[] | cdktf.IResolvable) {
-    this._priority = value;
+  public putPriority(value: ServiceEventRuleActionsPriority[] | cdktf.IResolvable) {
+    this._priority.internalValue = value;
   }
   public resetPriority() {
-    this._priority = undefined;
+    this._priority.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get priorityInput() {
-    return this._priority;
+    return this._priority.internalValue;
   }
 
   // severity - computed: false, optional: true, required: false
-  private _severity?: ServiceEventRuleActionsSeverity[] | cdktf.IResolvable; 
+  private _severity = new ServiceEventRuleActionsSeverityList(this, "severity", false);
   public get severity() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('severity');
+    return this._severity;
   }
-  public set severity(value: ServiceEventRuleActionsSeverity[] | cdktf.IResolvable) {
-    this._severity = value;
+  public putSeverity(value: ServiceEventRuleActionsSeverity[] | cdktf.IResolvable) {
+    this._severity.internalValue = value;
   }
   public resetSeverity() {
-    this._severity = undefined;
+    this._severity.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get severityInput() {
-    return this._severity;
+    return this._severity.internalValue;
   }
 
   // suppress - computed: false, optional: true, required: false
-  private _suppress?: ServiceEventRuleActionsSuppress[] | cdktf.IResolvable; 
+  private _suppress = new ServiceEventRuleActionsSuppressList(this, "suppress", false);
   public get suppress() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('suppress');
+    return this._suppress;
   }
-  public set suppress(value: ServiceEventRuleActionsSuppress[] | cdktf.IResolvable) {
-    this._suppress = value;
+  public putSuppress(value: ServiceEventRuleActionsSuppress[] | cdktf.IResolvable) {
+    this._suppress.internalValue = value;
   }
   public resetSuppress() {
-    this._suppress = undefined;
+    this._suppress.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get suppressInput() {
-    return this._suppress;
+    return this._suppress.internalValue;
   }
 
   // suspend - computed: false, optional: true, required: false
-  private _suspend?: ServiceEventRuleActionsSuspend[] | cdktf.IResolvable; 
+  private _suspend = new ServiceEventRuleActionsSuspendList(this, "suspend", false);
   public get suspend() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('suspend');
+    return this._suspend;
   }
-  public set suspend(value: ServiceEventRuleActionsSuspend[] | cdktf.IResolvable) {
-    this._suspend = value;
+  public putSuspend(value: ServiceEventRuleActionsSuspend[] | cdktf.IResolvable) {
+    this._suspend.internalValue = value;
   }
   public resetSuspend() {
-    this._suspend = undefined;
+    this._suspend.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get suspendInput() {
-    return this._suspend;
+    return this._suspend.internalValue;
   }
 }
 export interface ServiceEventRuleConditionsSubconditionsParameter {
@@ -463,6 +1155,108 @@ export function serviceEventRuleConditionsSubconditionsParameterToTerraform(stru
   }
 }
 
+export class ServiceEventRuleConditionsSubconditionsParameterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceEventRuleConditionsSubconditionsParameter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceEventRuleConditionsSubconditionsParameter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._path = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._path = value.path;
+      this._value = value.value;
+    }
+  }
+
+  // path - computed: false, optional: true, required: false
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  public resetPath() {
+    this._path = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ServiceEventRuleConditionsSubconditionsParameterList extends cdktf.ComplexList {
+  public internalValue? : ServiceEventRuleConditionsSubconditionsParameter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceEventRuleConditionsSubconditionsParameterOutputReference {
+    return new ServiceEventRuleConditionsSubconditionsParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceEventRuleConditionsSubconditions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#operator ServiceEventRule#operator}
@@ -487,6 +1281,108 @@ export function serviceEventRuleConditionsSubconditionsToTerraform(struct?: Serv
   }
 }
 
+export class ServiceEventRuleConditionsSubconditionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceEventRuleConditionsSubconditions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._parameter?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameter = this._parameter?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceEventRuleConditionsSubconditions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._operator = undefined;
+      this._parameter.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._operator = value.operator;
+      this._parameter.internalValue = value.parameter;
+    }
+  }
+
+  // operator - computed: false, optional: true, required: false
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  public resetOperator() {
+    this._operator = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // parameter - computed: false, optional: true, required: false
+  private _parameter = new ServiceEventRuleConditionsSubconditionsParameterList(this, "parameter", false);
+  public get parameter() {
+    return this._parameter;
+  }
+  public putParameter(value: ServiceEventRuleConditionsSubconditionsParameter[] | cdktf.IResolvable) {
+    this._parameter.internalValue = value;
+  }
+  public resetParameter() {
+    this._parameter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterInput() {
+    return this._parameter.internalValue;
+  }
+}
+
+export class ServiceEventRuleConditionsSubconditionsList extends cdktf.ComplexList {
+  public internalValue? : ServiceEventRuleConditionsSubconditions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceEventRuleConditionsSubconditionsOutputReference {
+    return new ServiceEventRuleConditionsSubconditionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceEventRuleConditions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#operator ServiceEventRule#operator}
@@ -529,9 +1425,9 @@ export class ServiceEventRuleConditionsOutputReference extends cdktf.ComplexObje
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
     }
-    if (this._subconditions !== undefined) {
+    if (this._subconditions?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.subconditions = this._subconditions;
+      internalValueResult.subconditions = this._subconditions?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -540,12 +1436,12 @@ export class ServiceEventRuleConditionsOutputReference extends cdktf.ComplexObje
     if (value === undefined) {
       this.isEmptyObject = false;
       this._operator = undefined;
-      this._subconditions = undefined;
+      this._subconditions.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._operator = value.operator;
-      this._subconditions = value.subconditions;
+      this._subconditions.internalValue = value.subconditions;
     }
   }
 
@@ -566,20 +1462,19 @@ export class ServiceEventRuleConditionsOutputReference extends cdktf.ComplexObje
   }
 
   // subconditions - computed: false, optional: true, required: false
-  private _subconditions?: ServiceEventRuleConditionsSubconditions[] | cdktf.IResolvable; 
+  private _subconditions = new ServiceEventRuleConditionsSubconditionsList(this, "subconditions", false);
   public get subconditions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('subconditions');
+    return this._subconditions;
   }
-  public set subconditions(value: ServiceEventRuleConditionsSubconditions[] | cdktf.IResolvable) {
-    this._subconditions = value;
+  public putSubconditions(value: ServiceEventRuleConditionsSubconditions[] | cdktf.IResolvable) {
+    this._subconditions.internalValue = value;
   }
   public resetSubconditions() {
-    this._subconditions = undefined;
+    this._subconditions.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get subconditionsInput() {
-    return this._subconditions;
+    return this._subconditions.internalValue;
   }
 }
 export interface ServiceEventRuleTimeFrameActiveBetween {
@@ -604,6 +1499,108 @@ export function serviceEventRuleTimeFrameActiveBetweenToTerraform(struct?: Servi
   }
 }
 
+export class ServiceEventRuleTimeFrameActiveBetweenOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceEventRuleTimeFrameActiveBetween | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endTime = this._endTime;
+    }
+    if (this._startTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startTime = this._startTime;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceEventRuleTimeFrameActiveBetween | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._endTime = undefined;
+      this._startTime = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._endTime = value.endTime;
+      this._startTime = value.startTime;
+    }
+  }
+
+  // end_time - computed: false, optional: true, required: false
+  private _endTime?: number; 
+  public get endTime() {
+    return this.getNumberAttribute('end_time');
+  }
+  public set endTime(value: number) {
+    this._endTime = value;
+  }
+  public resetEndTime() {
+    this._endTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endTimeInput() {
+    return this._endTime;
+  }
+
+  // start_time - computed: false, optional: true, required: false
+  private _startTime?: number; 
+  public get startTime() {
+    return this.getNumberAttribute('start_time');
+  }
+  public set startTime(value: number) {
+    this._startTime = value;
+  }
+  public resetStartTime() {
+    this._startTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startTimeInput() {
+    return this._startTime;
+  }
+}
+
+export class ServiceEventRuleTimeFrameActiveBetweenList extends cdktf.ComplexList {
+  public internalValue? : ServiceEventRuleTimeFrameActiveBetween[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceEventRuleTimeFrameActiveBetweenOutputReference {
+    return new ServiceEventRuleTimeFrameActiveBetweenOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceEventRuleTimeFrameScheduledWeekly {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#duration ServiceEventRule#duration}
@@ -636,6 +1633,152 @@ export function serviceEventRuleTimeFrameScheduledWeeklyToTerraform(struct?: Ser
   }
 }
 
+export class ServiceEventRuleTimeFrameScheduledWeeklyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceEventRuleTimeFrameScheduledWeekly | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._duration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.duration = this._duration;
+    }
+    if (this._startTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startTime = this._startTime;
+    }
+    if (this._timezone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timezone = this._timezone;
+    }
+    if (this._weekdays !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weekdays = this._weekdays;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceEventRuleTimeFrameScheduledWeekly | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._duration = undefined;
+      this._startTime = undefined;
+      this._timezone = undefined;
+      this._weekdays = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._duration = value.duration;
+      this._startTime = value.startTime;
+      this._timezone = value.timezone;
+      this._weekdays = value.weekdays;
+    }
+  }
+
+  // duration - computed: false, optional: true, required: false
+  private _duration?: number; 
+  public get duration() {
+    return this.getNumberAttribute('duration');
+  }
+  public set duration(value: number) {
+    this._duration = value;
+  }
+  public resetDuration() {
+    this._duration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get durationInput() {
+    return this._duration;
+  }
+
+  // start_time - computed: false, optional: true, required: false
+  private _startTime?: number; 
+  public get startTime() {
+    return this.getNumberAttribute('start_time');
+  }
+  public set startTime(value: number) {
+    this._startTime = value;
+  }
+  public resetStartTime() {
+    this._startTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startTimeInput() {
+    return this._startTime;
+  }
+
+  // timezone - computed: false, optional: true, required: false
+  private _timezone?: string; 
+  public get timezone() {
+    return this.getStringAttribute('timezone');
+  }
+  public set timezone(value: string) {
+    this._timezone = value;
+  }
+  public resetTimezone() {
+    this._timezone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timezoneInput() {
+    return this._timezone;
+  }
+
+  // weekdays - computed: false, optional: true, required: false
+  private _weekdays?: number[]; 
+  public get weekdays() {
+    return this.getNumberListAttribute('weekdays');
+  }
+  public set weekdays(value: number[]) {
+    this._weekdays = value;
+  }
+  public resetWeekdays() {
+    this._weekdays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weekdaysInput() {
+    return this._weekdays;
+  }
+}
+
+export class ServiceEventRuleTimeFrameScheduledWeeklyList extends cdktf.ComplexList {
+  public internalValue? : ServiceEventRuleTimeFrameScheduledWeekly[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceEventRuleTimeFrameScheduledWeeklyOutputReference {
+    return new ServiceEventRuleTimeFrameScheduledWeeklyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceEventRuleTimeFrame {
   /**
   * active_between block
@@ -676,13 +1819,13 @@ export class ServiceEventRuleTimeFrameOutputReference extends cdktf.ComplexObjec
   public get internalValue(): ServiceEventRuleTimeFrame | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._activeBetween !== undefined) {
+    if (this._activeBetween?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.activeBetween = this._activeBetween;
+      internalValueResult.activeBetween = this._activeBetween?.internalValue;
     }
-    if (this._scheduledWeekly !== undefined) {
+    if (this._scheduledWeekly?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.scheduledWeekly = this._scheduledWeekly;
+      internalValueResult.scheduledWeekly = this._scheduledWeekly?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -690,48 +1833,46 @@ export class ServiceEventRuleTimeFrameOutputReference extends cdktf.ComplexObjec
   public set internalValue(value: ServiceEventRuleTimeFrame | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._activeBetween = undefined;
-      this._scheduledWeekly = undefined;
+      this._activeBetween.internalValue = undefined;
+      this._scheduledWeekly.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._activeBetween = value.activeBetween;
-      this._scheduledWeekly = value.scheduledWeekly;
+      this._activeBetween.internalValue = value.activeBetween;
+      this._scheduledWeekly.internalValue = value.scheduledWeekly;
     }
   }
 
   // active_between - computed: false, optional: true, required: false
-  private _activeBetween?: ServiceEventRuleTimeFrameActiveBetween[] | cdktf.IResolvable; 
+  private _activeBetween = new ServiceEventRuleTimeFrameActiveBetweenList(this, "active_between", false);
   public get activeBetween() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('active_between');
+    return this._activeBetween;
   }
-  public set activeBetween(value: ServiceEventRuleTimeFrameActiveBetween[] | cdktf.IResolvable) {
-    this._activeBetween = value;
+  public putActiveBetween(value: ServiceEventRuleTimeFrameActiveBetween[] | cdktf.IResolvable) {
+    this._activeBetween.internalValue = value;
   }
   public resetActiveBetween() {
-    this._activeBetween = undefined;
+    this._activeBetween.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get activeBetweenInput() {
-    return this._activeBetween;
+    return this._activeBetween.internalValue;
   }
 
   // scheduled_weekly - computed: false, optional: true, required: false
-  private _scheduledWeekly?: ServiceEventRuleTimeFrameScheduledWeekly[] | cdktf.IResolvable; 
+  private _scheduledWeekly = new ServiceEventRuleTimeFrameScheduledWeeklyList(this, "scheduled_weekly", false);
   public get scheduledWeekly() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('scheduled_weekly');
+    return this._scheduledWeekly;
   }
-  public set scheduledWeekly(value: ServiceEventRuleTimeFrameScheduledWeekly[] | cdktf.IResolvable) {
-    this._scheduledWeekly = value;
+  public putScheduledWeekly(value: ServiceEventRuleTimeFrameScheduledWeekly[] | cdktf.IResolvable) {
+    this._scheduledWeekly.internalValue = value;
   }
   public resetScheduledWeekly() {
-    this._scheduledWeekly = undefined;
+    this._scheduledWeekly.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get scheduledWeeklyInput() {
-    return this._scheduledWeekly;
+    return this._scheduledWeekly.internalValue;
   }
 }
 export interface ServiceEventRuleVariableParameters {
@@ -756,6 +1897,108 @@ export function serviceEventRuleVariableParametersToTerraform(struct?: ServiceEv
   }
 }
 
+export class ServiceEventRuleVariableParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceEventRuleVariableParameters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceEventRuleVariableParameters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._path = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._path = value.path;
+      this._value = value.value;
+    }
+  }
+
+  // path - computed: false, optional: true, required: false
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  public resetPath() {
+    this._path = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ServiceEventRuleVariableParametersList extends cdktf.ComplexList {
+  public internalValue? : ServiceEventRuleVariableParameters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceEventRuleVariableParametersOutputReference {
+    return new ServiceEventRuleVariableParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceEventRuleVariable {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule#name ServiceEventRule#name}
@@ -785,6 +2028,130 @@ export function serviceEventRuleVariableToTerraform(struct?: ServiceEventRuleVar
   }
 }
 
+export class ServiceEventRuleVariableOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceEventRuleVariable | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._parameters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameters = this._parameters?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceEventRuleVariable | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._type = undefined;
+      this._parameters.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._type = value.type;
+      this._parameters.internalValue = value.parameters;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // parameters - computed: false, optional: true, required: false
+  private _parameters = new ServiceEventRuleVariableParametersList(this, "parameters", false);
+  public get parameters() {
+    return this._parameters;
+  }
+  public putParameters(value: ServiceEventRuleVariableParameters[] | cdktf.IResolvable) {
+    this._parameters.internalValue = value;
+  }
+  public resetParameters() {
+    this._parameters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parametersInput() {
+    return this._parameters.internalValue;
+  }
+}
+
+export class ServiceEventRuleVariableList extends cdktf.ComplexList {
+  public internalValue? : ServiceEventRuleVariable[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceEventRuleVariableOutputReference {
+    return new ServiceEventRuleVariableOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service_event_rule pagerduty_service_event_rule}
@@ -821,12 +2188,13 @@ export class ServiceEventRule extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._disabled = config.disabled;
+    this._id = config.id;
     this._position = config.position;
     this._service = config.service;
     this._actions.internalValue = config.actions;
     this._conditions.internalValue = config.conditions;
     this._timeFrame.internalValue = config.timeFrame;
-    this._variable = config.variable;
+    this._variable.internalValue = config.variable;
   }
 
   // ==========
@@ -850,8 +2218,19 @@ export class ServiceEventRule extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // position - computed: false, optional: true, required: false
@@ -932,20 +2311,19 @@ export class ServiceEventRule extends cdktf.TerraformResource {
   }
 
   // variable - computed: false, optional: true, required: false
-  private _variable?: ServiceEventRuleVariable[] | cdktf.IResolvable; 
+  private _variable = new ServiceEventRuleVariableList(this, "variable", false);
   public get variable() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('variable');
+    return this._variable;
   }
-  public set variable(value: ServiceEventRuleVariable[] | cdktf.IResolvable) {
-    this._variable = value;
+  public putVariable(value: ServiceEventRuleVariable[] | cdktf.IResolvable) {
+    this._variable.internalValue = value;
   }
   public resetVariable() {
-    this._variable = undefined;
+    this._variable.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get variableInput() {
-    return this._variable;
+    return this._variable.internalValue;
   }
 
   // =========
@@ -955,12 +2333,13 @@ export class ServiceEventRule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       disabled: cdktf.booleanToTerraform(this._disabled),
+      id: cdktf.stringToTerraform(this._id),
       position: cdktf.numberToTerraform(this._position),
       service: cdktf.stringToTerraform(this._service),
       actions: serviceEventRuleActionsToTerraform(this._actions.internalValue),
       conditions: serviceEventRuleConditionsToTerraform(this._conditions.internalValue),
       time_frame: serviceEventRuleTimeFrameToTerraform(this._timeFrame.internalValue),
-      variable: cdktf.listMapper(serviceEventRuleVariableToTerraform)(this._variable),
+      variable: cdktf.listMapper(serviceEventRuleVariableToTerraform)(this._variable.internalValue),
     };
   }
 }

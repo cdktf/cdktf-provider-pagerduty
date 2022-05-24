@@ -20,6 +20,13 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   */
   readonly email: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#id User#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#job_title User#job_title}
   */
   readonly jobTitle?: string;
@@ -78,6 +85,7 @@ export class User extends cdktf.TerraformResource {
     this._color = config.color;
     this._description = config.description;
     this._email = config.email;
+    this._id = config.id;
     this._jobTitle = config.jobTitle;
     this._name = config.name;
     this._role = config.role;
@@ -145,8 +153,19 @@ export class User extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // invitation_sent - computed: true, optional: false, required: false
@@ -240,6 +259,7 @@ export class User extends cdktf.TerraformResource {
       color: cdktf.stringToTerraform(this._color),
       description: cdktf.stringToTerraform(this._description),
       email: cdktf.stringToTerraform(this._email),
+      id: cdktf.stringToTerraform(this._id),
       job_title: cdktf.stringToTerraform(this._jobTitle),
       name: cdktf.stringToTerraform(this._name),
       role: cdktf.stringToTerraform(this._role),

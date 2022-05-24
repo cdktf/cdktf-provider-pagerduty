@@ -12,6 +12,13 @@ export interface SlackConnectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly channelId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#id SlackConnection#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection#notification_type SlackConnection#notification_type}
   */
   readonly notificationType: string;
@@ -61,6 +68,127 @@ export function slackConnectionConfigAToTerraform(struct?: SlackConnectionConfig
   }
 }
 
+export class SlackConnectionConfigAOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SlackConnectionConfigA | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._events !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.events = this._events;
+    }
+    if (this._priorities !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priorities = this._priorities;
+    }
+    if (this._urgency !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.urgency = this._urgency;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SlackConnectionConfigA | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._events = undefined;
+      this._priorities = undefined;
+      this._urgency = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._events = value.events;
+      this._priorities = value.priorities;
+      this._urgency = value.urgency;
+    }
+  }
+
+  // events - computed: false, optional: false, required: true
+  private _events?: string[]; 
+  public get events() {
+    return this.getListAttribute('events');
+  }
+  public set events(value: string[]) {
+    this._events = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventsInput() {
+    return this._events;
+  }
+
+  // priorities - computed: false, optional: true, required: false
+  private _priorities?: string[]; 
+  public get priorities() {
+    return this.getListAttribute('priorities');
+  }
+  public set priorities(value: string[]) {
+    this._priorities = value;
+  }
+  public resetPriorities() {
+    this._priorities = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prioritiesInput() {
+    return this._priorities;
+  }
+
+  // urgency - computed: false, optional: true, required: false
+  private _urgency?: string; 
+  public get urgency() {
+    return this.getStringAttribute('urgency');
+  }
+  public set urgency(value: string) {
+    this._urgency = value;
+  }
+  public resetUrgency() {
+    this._urgency = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urgencyInput() {
+    return this._urgency;
+  }
+}
+
+export class SlackConnectionConfigAList extends cdktf.ComplexList {
+  public internalValue? : SlackConnectionConfigA[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SlackConnectionConfigAOutputReference {
+    return new SlackConnectionConfigAOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/slack_connection pagerduty_slack_connection}
@@ -97,11 +225,12 @@ export class SlackConnection extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._channelId = config.channelId;
+    this._id = config.id;
     this._notificationType = config.notificationType;
     this._sourceId = config.sourceId;
     this._sourceType = config.sourceType;
     this._workspaceId = config.workspaceId;
-    this._config = config.config;
+    this._config.internalValue = config.config;
   }
 
   // ==========
@@ -127,8 +256,19 @@ export class SlackConnection extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // notification_type - computed: false, optional: false, required: true
@@ -189,17 +329,16 @@ export class SlackConnection extends cdktf.TerraformResource {
   }
 
   // config - computed: false, optional: false, required: true
-  private _config?: SlackConnectionConfigA[] | cdktf.IResolvable; 
+  private _config = new SlackConnectionConfigAList(this, "config", false);
   public get config() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('config');
+    return this._config;
   }
-  public set config(value: SlackConnectionConfigA[] | cdktf.IResolvable) {
-    this._config = value;
+  public putConfig(value: SlackConnectionConfigA[] | cdktf.IResolvable) {
+    this._config.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get configInput() {
-    return this._config;
+    return this._config.internalValue;
   }
 
   // =========
@@ -209,11 +348,12 @@ export class SlackConnection extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       channel_id: cdktf.stringToTerraform(this._channelId),
+      id: cdktf.stringToTerraform(this._id),
       notification_type: cdktf.stringToTerraform(this._notificationType),
       source_id: cdktf.stringToTerraform(this._sourceId),
       source_type: cdktf.stringToTerraform(this._sourceType),
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
-      config: cdktf.listMapper(slackConnectionConfigAToTerraform)(this._config),
+      config: cdktf.listMapper(slackConnectionConfigAToTerraform)(this._config.internalValue),
     };
   }
 }

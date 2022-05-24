@@ -36,6 +36,13 @@ export interface ServiceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly escalationPolicy: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#id Service#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#name Service#name}
   */
   readonly name: string;
@@ -630,6 +637,108 @@ export function serviceScheduledActionsAtToTerraform(struct?: ServiceScheduledAc
   }
 }
 
+export class ServiceScheduledActionsAtOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceScheduledActionsAt | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceScheduledActionsAt | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._type = value.type;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class ServiceScheduledActionsAtList extends cdktf.ComplexList {
+  public internalValue? : ServiceScheduledActionsAt[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceScheduledActionsAtOutputReference {
+    return new ServiceScheduledActionsAtOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceScheduledActions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#to_urgency Service#to_urgency}
@@ -659,6 +768,130 @@ export function serviceScheduledActionsToTerraform(struct?: ServiceScheduledActi
   }
 }
 
+export class ServiceScheduledActionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceScheduledActions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._toUrgency !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.toUrgency = this._toUrgency;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._at?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.at = this._at?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceScheduledActions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._toUrgency = undefined;
+      this._type = undefined;
+      this._at.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._toUrgency = value.toUrgency;
+      this._type = value.type;
+      this._at.internalValue = value.at;
+    }
+  }
+
+  // to_urgency - computed: false, optional: true, required: false
+  private _toUrgency?: string; 
+  public get toUrgency() {
+    return this.getStringAttribute('to_urgency');
+  }
+  public set toUrgency(value: string) {
+    this._toUrgency = value;
+  }
+  public resetToUrgency() {
+    this._toUrgency = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get toUrgencyInput() {
+    return this._toUrgency;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // at - computed: false, optional: true, required: false
+  private _at = new ServiceScheduledActionsAtList(this, "at", false);
+  public get at() {
+    return this._at;
+  }
+  public putAt(value: ServiceScheduledActionsAt[] | cdktf.IResolvable) {
+    this._at.internalValue = value;
+  }
+  public resetAt() {
+    this._at.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get atInput() {
+    return this._at.internalValue;
+  }
+}
+
+export class ServiceScheduledActionsList extends cdktf.ComplexList {
+  public internalValue? : ServiceScheduledActions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceScheduledActionsOutputReference {
+    return new ServiceScheduledActionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceSupportHours {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#days_of_week Service#days_of_week}
@@ -874,10 +1107,11 @@ export class Service extends cdktf.TerraformResource {
     this._autoResolveTimeout = config.autoResolveTimeout;
     this._description = config.description;
     this._escalationPolicy = config.escalationPolicy;
+    this._id = config.id;
     this._name = config.name;
     this._alertGroupingParameters.internalValue = config.alertGroupingParameters;
     this._incidentUrgencyRule.internalValue = config.incidentUrgencyRule;
-    this._scheduledActions = config.scheduledActions;
+    this._scheduledActions.internalValue = config.scheduledActions;
     this._supportHours.internalValue = config.supportHours;
   }
 
@@ -1005,8 +1239,19 @@ export class Service extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // last_incident_timestamp - computed: true, optional: false, required: false
@@ -1065,20 +1310,19 @@ export class Service extends cdktf.TerraformResource {
   }
 
   // scheduled_actions - computed: false, optional: true, required: false
-  private _scheduledActions?: ServiceScheduledActions[] | cdktf.IResolvable; 
+  private _scheduledActions = new ServiceScheduledActionsList(this, "scheduled_actions", false);
   public get scheduledActions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('scheduled_actions');
+    return this._scheduledActions;
   }
-  public set scheduledActions(value: ServiceScheduledActions[] | cdktf.IResolvable) {
-    this._scheduledActions = value;
+  public putScheduledActions(value: ServiceScheduledActions[] | cdktf.IResolvable) {
+    this._scheduledActions.internalValue = value;
   }
   public resetScheduledActions() {
-    this._scheduledActions = undefined;
+    this._scheduledActions.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get scheduledActionsInput() {
-    return this._scheduledActions;
+    return this._scheduledActions.internalValue;
   }
 
   // support_hours - computed: false, optional: true, required: false
@@ -1110,10 +1354,11 @@ export class Service extends cdktf.TerraformResource {
       auto_resolve_timeout: cdktf.stringToTerraform(this._autoResolveTimeout),
       description: cdktf.stringToTerraform(this._description),
       escalation_policy: cdktf.stringToTerraform(this._escalationPolicy),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       alert_grouping_parameters: serviceAlertGroupingParametersToTerraform(this._alertGroupingParameters.internalValue),
       incident_urgency_rule: serviceIncidentUrgencyRuleToTerraform(this._incidentUrgencyRule.internalValue),
-      scheduled_actions: cdktf.listMapper(serviceScheduledActionsToTerraform)(this._scheduledActions),
+      scheduled_actions: cdktf.listMapper(serviceScheduledActionsToTerraform)(this._scheduledActions.internalValue),
       support_hours: serviceSupportHoursToTerraform(this._supportHours.internalValue),
     };
   }

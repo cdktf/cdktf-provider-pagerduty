@@ -19,6 +19,13 @@ export interface EventRuleConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule#condition_json EventRule#condition_json}
   */
   readonly conditionJson: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_rule#id EventRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
 }
 
 /**
@@ -58,6 +65,7 @@ export class EventRule extends cdktf.TerraformResource {
     this._actionJson = config.actionJson;
     this._advancedConditionJson = config.advancedConditionJson;
     this._conditionJson = config.conditionJson;
+    this._id = config.id;
   }
 
   // ==========
@@ -112,8 +120,19 @@ export class EventRule extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // =========
@@ -125,6 +144,7 @@ export class EventRule extends cdktf.TerraformResource {
       action_json: cdktf.stringToTerraform(this._actionJson),
       advanced_condition_json: cdktf.stringToTerraform(this._advancedConditionJson),
       condition_json: cdktf.stringToTerraform(this._conditionJson),
+      id: cdktf.stringToTerraform(this._id),
     };
   }
 }

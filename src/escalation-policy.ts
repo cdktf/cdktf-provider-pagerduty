@@ -12,6 +12,13 @@ export interface EscalationPolicyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy#id EscalationPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy#name EscalationPolicy#name}
   */
   readonly name: string;
@@ -33,6 +40,9 @@ export interface EscalationPolicyConfig extends cdktf.TerraformMetaArguments {
 export interface EscalationPolicyRuleTarget {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy#id EscalationPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
@@ -52,6 +62,105 @@ export function escalationPolicyRuleTargetToTerraform(struct?: EscalationPolicyR
   }
 }
 
+export class EscalationPolicyRuleTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EscalationPolicyRuleTarget | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EscalationPolicyRuleTarget | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._type = value.type;
+    }
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class EscalationPolicyRuleTargetList extends cdktf.ComplexList {
+  public internalValue? : EscalationPolicyRuleTarget[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EscalationPolicyRuleTargetOutputReference {
+    return new EscalationPolicyRuleTargetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EscalationPolicyRule {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy#escalation_delay_in_minutes EscalationPolicy#escalation_delay_in_minutes}
@@ -76,6 +185,107 @@ export function escalationPolicyRuleToTerraform(struct?: EscalationPolicyRule | 
   }
 }
 
+export class EscalationPolicyRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EscalationPolicyRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._escalationDelayInMinutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.escalationDelayInMinutes = this._escalationDelayInMinutes;
+    }
+    if (this._target?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EscalationPolicyRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._escalationDelayInMinutes = undefined;
+      this._target.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._escalationDelayInMinutes = value.escalationDelayInMinutes;
+      this._target.internalValue = value.target;
+    }
+  }
+
+  // escalation_delay_in_minutes - computed: false, optional: false, required: true
+  private _escalationDelayInMinutes?: number; 
+  public get escalationDelayInMinutes() {
+    return this.getNumberAttribute('escalation_delay_in_minutes');
+  }
+  public set escalationDelayInMinutes(value: number) {
+    this._escalationDelayInMinutes = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get escalationDelayInMinutesInput() {
+    return this._escalationDelayInMinutes;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // target - computed: false, optional: false, required: true
+  private _target = new EscalationPolicyRuleTargetList(this, "target", false);
+  public get target() {
+    return this._target;
+  }
+  public putTarget(value: EscalationPolicyRuleTarget[] | cdktf.IResolvable) {
+    this._target.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetInput() {
+    return this._target.internalValue;
+  }
+}
+
+export class EscalationPolicyRuleList extends cdktf.ComplexList {
+  public internalValue? : EscalationPolicyRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EscalationPolicyRuleOutputReference {
+    return new EscalationPolicyRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/escalation_policy pagerduty_escalation_policy}
@@ -112,10 +322,11 @@ export class EscalationPolicy extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._numLoops = config.numLoops;
     this._teams = config.teams;
-    this._rule = config.rule;
+    this._rule.internalValue = config.rule;
   }
 
   // ==========
@@ -139,8 +350,19 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -189,17 +411,16 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   }
 
   // rule - computed: false, optional: false, required: true
-  private _rule?: EscalationPolicyRule[] | cdktf.IResolvable; 
+  private _rule = new EscalationPolicyRuleList(this, "rule", false);
   public get rule() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('rule');
+    return this._rule;
   }
-  public set rule(value: EscalationPolicyRule[] | cdktf.IResolvable) {
-    this._rule = value;
+  public putRule(value: EscalationPolicyRule[] | cdktf.IResolvable) {
+    this._rule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get ruleInput() {
-    return this._rule;
+    return this._rule.internalValue;
   }
 
   // =========
@@ -209,10 +430,11 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       num_loops: cdktf.numberToTerraform(this._numLoops),
       teams: cdktf.listMapper(cdktf.stringToTerraform)(this._teams),
-      rule: cdktf.listMapper(escalationPolicyRuleToTerraform)(this._rule),
+      rule: cdktf.listMapper(escalationPolicyRuleToTerraform)(this._rule.internalValue),
     };
   }
 }
