@@ -24,6 +24,13 @@ export interface ResponsePlayConfig extends cdktf.TerraformMetaArguments {
   */
   readonly from: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#id ResponsePlay#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#name ResponsePlay#name}
   */
   readonly name: string;
@@ -349,6 +356,9 @@ export interface ResponsePlayResponder {
   readonly description?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#id ResponsePlay#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -374,9 +384,186 @@ export function responsePlayResponderToTerraform(struct?: ResponsePlayResponder 
   }
 }
 
+export class ResponsePlayResponderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ResponsePlayResponder | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ResponsePlayResponder | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._description = undefined;
+      this._id = undefined;
+      this._name = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._description = value.description;
+      this._id = value.id;
+      this._name = value.name;
+      this._type = value.type;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // escalation_rule - computed: true, optional: false, required: false
+  private _escalationRule = new ResponsePlayResponderEscalationRuleList(this, "escalation_rule", false);
+  public get escalationRule() {
+    return this._escalationRule;
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // num_loops - computed: true, optional: false, required: false
+  public get numLoops() {
+    return this.getNumberAttribute('num_loops');
+  }
+
+  // on_call_handoff_notifications - computed: true, optional: false, required: false
+  public get onCallHandoffNotifications() {
+    return this.getStringAttribute('on_call_handoff_notifications');
+  }
+
+  // service - computed: true, optional: false, required: false
+  private _service = new ResponsePlayResponderServiceList(this, "service", false);
+  public get service() {
+    return this._service;
+  }
+
+  // team - computed: true, optional: false, required: false
+  private _team = new ResponsePlayResponderTeamList(this, "team", false);
+  public get team() {
+    return this._team;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class ResponsePlayResponderList extends cdktf.ComplexList {
+  public internalValue? : ResponsePlayResponder[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ResponsePlayResponderOutputReference {
+    return new ResponsePlayResponderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ResponsePlaySubscriber {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play#id ResponsePlay#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -396,6 +583,108 @@ export function responsePlaySubscriberToTerraform(struct?: ResponsePlaySubscribe
   }
 }
 
+export class ResponsePlaySubscriberOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ResponsePlaySubscriber | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ResponsePlaySubscriber | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._type = value.type;
+    }
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class ResponsePlaySubscriberList extends cdktf.ComplexList {
+  public internalValue? : ResponsePlaySubscriber[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ResponsePlaySubscriberOutputReference {
+    return new ResponsePlaySubscriberOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/response_play pagerduty_response_play}
@@ -435,14 +724,15 @@ export class ResponsePlay extends cdktf.TerraformResource {
     this._conferenceUrl = config.conferenceUrl;
     this._description = config.description;
     this._from = config.from;
+    this._id = config.id;
     this._name = config.name;
     this._respondersMessage = config.respondersMessage;
     this._runnability = config.runnability;
     this._subscribersMessage = config.subscribersMessage;
     this._team = config.team;
     this._type = config.type;
-    this._responder = config.responder;
-    this._subscriber = config.subscriber;
+    this._responder.internalValue = config.responder;
+    this._subscriber.internalValue = config.subscriber;
   }
 
   // ==========
@@ -511,8 +801,19 @@ export class ResponsePlay extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -609,37 +910,35 @@ export class ResponsePlay extends cdktf.TerraformResource {
   }
 
   // responder - computed: false, optional: true, required: false
-  private _responder?: ResponsePlayResponder[] | cdktf.IResolvable; 
+  private _responder = new ResponsePlayResponderList(this, "responder", false);
   public get responder() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('responder');
+    return this._responder;
   }
-  public set responder(value: ResponsePlayResponder[] | cdktf.IResolvable) {
-    this._responder = value;
+  public putResponder(value: ResponsePlayResponder[] | cdktf.IResolvable) {
+    this._responder.internalValue = value;
   }
   public resetResponder() {
-    this._responder = undefined;
+    this._responder.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get responderInput() {
-    return this._responder;
+    return this._responder.internalValue;
   }
 
   // subscriber - computed: false, optional: true, required: false
-  private _subscriber?: ResponsePlaySubscriber[] | cdktf.IResolvable; 
+  private _subscriber = new ResponsePlaySubscriberList(this, "subscriber", false);
   public get subscriber() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('subscriber');
+    return this._subscriber;
   }
-  public set subscriber(value: ResponsePlaySubscriber[] | cdktf.IResolvable) {
-    this._subscriber = value;
+  public putSubscriber(value: ResponsePlaySubscriber[] | cdktf.IResolvable) {
+    this._subscriber.internalValue = value;
   }
   public resetSubscriber() {
-    this._subscriber = undefined;
+    this._subscriber.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get subscriberInput() {
-    return this._subscriber;
+    return this._subscriber.internalValue;
   }
 
   // =========
@@ -652,14 +951,15 @@ export class ResponsePlay extends cdktf.TerraformResource {
       conference_url: cdktf.stringToTerraform(this._conferenceUrl),
       description: cdktf.stringToTerraform(this._description),
       from: cdktf.stringToTerraform(this._from),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       responders_message: cdktf.stringToTerraform(this._respondersMessage),
       runnability: cdktf.stringToTerraform(this._runnability),
       subscribers_message: cdktf.stringToTerraform(this._subscribersMessage),
       team: cdktf.stringToTerraform(this._team),
       type: cdktf.stringToTerraform(this._type),
-      responder: cdktf.listMapper(responsePlayResponderToTerraform)(this._responder),
-      subscriber: cdktf.listMapper(responsePlaySubscriberToTerraform)(this._subscriber),
+      responder: cdktf.listMapper(responsePlayResponderToTerraform)(this._responder.internalValue),
+      subscriber: cdktf.listMapper(responsePlaySubscriberToTerraform)(this._subscriber.internalValue),
     };
   }
 }

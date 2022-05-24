@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyUserContactMethodConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/user_contact_method#id DataPagerdutyUserContactMethod#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The name of the contact method to find in the PagerDuty API
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/user_contact_method#label DataPagerdutyUserContactMethod#label}
@@ -59,6 +66,7 @@ export class DataPagerdutyUserContactMethod extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._label = config.label;
     this._type = config.type;
     this._userId = config.userId;
@@ -69,8 +77,19 @@ export class DataPagerdutyUserContactMethod extends cdktf.TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // label - computed: false, optional: false, required: true
@@ -118,6 +137,7 @@ export class DataPagerdutyUserContactMethod extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       label: cdktf.stringToTerraform(this._label),
       type: cdktf.stringToTerraform(this._type),
       user_id: cdktf.stringToTerraform(this._userId),

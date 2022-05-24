@@ -12,6 +12,13 @@ export interface ScheduleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#id Schedule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#name Schedule#name}
   */
   readonly name?: string;
@@ -66,6 +73,143 @@ export function scheduleLayerRestrictionToTerraform(struct?: ScheduleLayerRestri
   }
 }
 
+export class ScheduleLayerRestrictionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ScheduleLayerRestriction | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._durationSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.durationSeconds = this._durationSeconds;
+    }
+    if (this._startDayOfWeek !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startDayOfWeek = this._startDayOfWeek;
+    }
+    if (this._startTimeOfDay !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startTimeOfDay = this._startTimeOfDay;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ScheduleLayerRestriction | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._durationSeconds = undefined;
+      this._startDayOfWeek = undefined;
+      this._startTimeOfDay = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._durationSeconds = value.durationSeconds;
+      this._startDayOfWeek = value.startDayOfWeek;
+      this._startTimeOfDay = value.startTimeOfDay;
+      this._type = value.type;
+    }
+  }
+
+  // duration_seconds - computed: false, optional: false, required: true
+  private _durationSeconds?: number; 
+  public get durationSeconds() {
+    return this.getNumberAttribute('duration_seconds');
+  }
+  public set durationSeconds(value: number) {
+    this._durationSeconds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get durationSecondsInput() {
+    return this._durationSeconds;
+  }
+
+  // start_day_of_week - computed: false, optional: true, required: false
+  private _startDayOfWeek?: number; 
+  public get startDayOfWeek() {
+    return this.getNumberAttribute('start_day_of_week');
+  }
+  public set startDayOfWeek(value: number) {
+    this._startDayOfWeek = value;
+  }
+  public resetStartDayOfWeek() {
+    this._startDayOfWeek = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startDayOfWeekInput() {
+    return this._startDayOfWeek;
+  }
+
+  // start_time_of_day - computed: false, optional: false, required: true
+  private _startTimeOfDay?: string; 
+  public get startTimeOfDay() {
+    return this.getStringAttribute('start_time_of_day');
+  }
+  public set startTimeOfDay(value: string) {
+    this._startTimeOfDay = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startTimeOfDayInput() {
+    return this._startTimeOfDay;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class ScheduleLayerRestrictionList extends cdktf.ComplexList {
+  public internalValue? : ScheduleLayerRestriction[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ScheduleLayerRestrictionOutputReference {
+    return new ScheduleLayerRestrictionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ScheduleLayer {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#end Schedule#end}
@@ -115,6 +259,211 @@ export function scheduleLayerToTerraform(struct?: ScheduleLayer | cdktf.IResolva
   }
 }
 
+export class ScheduleLayerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ScheduleLayer | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._end !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.end = this._end;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._rotationTurnLengthSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rotationTurnLengthSeconds = this._rotationTurnLengthSeconds;
+    }
+    if (this._rotationVirtualStart !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rotationVirtualStart = this._rotationVirtualStart;
+    }
+    if (this._start !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.start = this._start;
+    }
+    if (this._users !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.users = this._users;
+    }
+    if (this._restriction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.restriction = this._restriction?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ScheduleLayer | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._end = undefined;
+      this._name = undefined;
+      this._rotationTurnLengthSeconds = undefined;
+      this._rotationVirtualStart = undefined;
+      this._start = undefined;
+      this._users = undefined;
+      this._restriction.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._end = value.end;
+      this._name = value.name;
+      this._rotationTurnLengthSeconds = value.rotationTurnLengthSeconds;
+      this._rotationVirtualStart = value.rotationVirtualStart;
+      this._start = value.start;
+      this._users = value.users;
+      this._restriction.internalValue = value.restriction;
+    }
+  }
+
+  // end - computed: false, optional: true, required: false
+  private _end?: string; 
+  public get end() {
+    return this.getStringAttribute('end');
+  }
+  public set end(value: string) {
+    this._end = value;
+  }
+  public resetEnd() {
+    this._end = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endInput() {
+    return this._end;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: true, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // rotation_turn_length_seconds - computed: false, optional: false, required: true
+  private _rotationTurnLengthSeconds?: number; 
+  public get rotationTurnLengthSeconds() {
+    return this.getNumberAttribute('rotation_turn_length_seconds');
+  }
+  public set rotationTurnLengthSeconds(value: number) {
+    this._rotationTurnLengthSeconds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rotationTurnLengthSecondsInput() {
+    return this._rotationTurnLengthSeconds;
+  }
+
+  // rotation_virtual_start - computed: false, optional: false, required: true
+  private _rotationVirtualStart?: string; 
+  public get rotationVirtualStart() {
+    return this.getStringAttribute('rotation_virtual_start');
+  }
+  public set rotationVirtualStart(value: string) {
+    this._rotationVirtualStart = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rotationVirtualStartInput() {
+    return this._rotationVirtualStart;
+  }
+
+  // start - computed: false, optional: false, required: true
+  private _start?: string; 
+  public get start() {
+    return this.getStringAttribute('start');
+  }
+  public set start(value: string) {
+    this._start = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startInput() {
+    return this._start;
+  }
+
+  // users - computed: false, optional: false, required: true
+  private _users?: string[]; 
+  public get users() {
+    return this.getListAttribute('users');
+  }
+  public set users(value: string[]) {
+    this._users = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usersInput() {
+    return this._users;
+  }
+
+  // restriction - computed: false, optional: true, required: false
+  private _restriction = new ScheduleLayerRestrictionList(this, "restriction", false);
+  public get restriction() {
+    return this._restriction;
+  }
+  public putRestriction(value: ScheduleLayerRestriction[] | cdktf.IResolvable) {
+    this._restriction.internalValue = value;
+  }
+  public resetRestriction() {
+    this._restriction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restrictionInput() {
+    return this._restriction.internalValue;
+  }
+}
+
+export class ScheduleLayerList extends cdktf.ComplexList {
+  public internalValue? : ScheduleLayer[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ScheduleLayerOutputReference {
+    return new ScheduleLayerOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule pagerduty_schedule}
@@ -151,11 +500,12 @@ export class Schedule extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._overflow = config.overflow;
     this._teams = config.teams;
     this._timeZone = config.timeZone;
-    this._layer = config.layer;
+    this._layer.internalValue = config.layer;
   }
 
   // ==========
@@ -179,8 +529,19 @@ export class Schedule extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: true, required: false
@@ -245,17 +606,16 @@ export class Schedule extends cdktf.TerraformResource {
   }
 
   // layer - computed: false, optional: false, required: true
-  private _layer?: ScheduleLayer[] | cdktf.IResolvable; 
+  private _layer = new ScheduleLayerList(this, "layer", false);
   public get layer() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('layer');
+    return this._layer;
   }
-  public set layer(value: ScheduleLayer[] | cdktf.IResolvable) {
-    this._layer = value;
+  public putLayer(value: ScheduleLayer[] | cdktf.IResolvable) {
+    this._layer.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get layerInput() {
-    return this._layer;
+    return this._layer.internalValue;
   }
 
   // =========
@@ -265,11 +625,12 @@ export class Schedule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       overflow: cdktf.booleanToTerraform(this._overflow),
       teams: cdktf.listMapper(cdktf.stringToTerraform)(this._teams),
       time_zone: cdktf.stringToTerraform(this._timeZone),
-      layer: cdktf.listMapper(scheduleLayerToTerraform)(this._layer),
+      layer: cdktf.listMapper(scheduleLayerToTerraform)(this._layer.internalValue),
     };
   }
 }

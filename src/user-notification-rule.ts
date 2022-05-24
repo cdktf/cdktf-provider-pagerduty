@@ -12,6 +12,13 @@ export interface UserNotificationRuleConfig extends cdktf.TerraformMetaArguments
   */
   readonly contactMethod: { [key: string]: string };
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule#id UserNotificationRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule#start_delay_in_minutes UserNotificationRule#start_delay_in_minutes}
   */
   readonly startDelayInMinutes: number;
@@ -60,6 +67,7 @@ export class UserNotificationRule extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._contactMethod = config.contactMethod;
+    this._id = config.id;
     this._startDelayInMinutes = config.startDelayInMinutes;
     this._urgency = config.urgency;
     this._userId = config.userId;
@@ -83,8 +91,19 @@ export class UserNotificationRule extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // start_delay_in_minutes - computed: false, optional: false, required: true
@@ -133,6 +152,7 @@ export class UserNotificationRule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       contact_method: cdktf.hashMapper(cdktf.stringToTerraform)(this._contactMethod),
+      id: cdktf.stringToTerraform(this._id),
       start_delay_in_minutes: cdktf.numberToTerraform(this._startDelayInMinutes),
       urgency: cdktf.stringToTerraform(this._urgency),
       user_id: cdktf.stringToTerraform(this._userId),
