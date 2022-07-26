@@ -43,6 +43,10 @@ export interface ExtensionServicenowConfig extends cdktf.TerraformMetaArguments 
   */
   readonly snowUser: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow#summary ExtensionServicenow#summary}
+  */
+  readonly summary?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/extension_servicenow#sync_options ExtensionServicenow#sync_options}
   */
   readonly syncOptions: string;
@@ -86,8 +90,8 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_extension_servicenow',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '1.11.0',
-        providerVersionConstraint: '~> 1.10'
+        providerVersion: '2.5.2',
+        providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -102,6 +106,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
     this._referer = config.referer;
     this._snowPassword = config.snowPassword;
     this._snowUser = config.snowUser;
+    this._summary = config.summary;
     this._syncOptions = config.syncOptions;
     this._target = config.target;
     this._taskType = config.taskType;
@@ -230,6 +235,22 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
     return this._snowUser;
   }
 
+  // summary - computed: true, optional: true, required: false
+  private _summary?: string; 
+  public get summary() {
+    return this.getStringAttribute('summary');
+  }
+  public set summary(value: string) {
+    this._summary = value;
+  }
+  public resetSummary() {
+    this._summary = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get summaryInput() {
+    return this._summary;
+  }
+
   // sync_options - computed: false, optional: false, required: true
   private _syncOptions?: string; 
   public get syncOptions() {
@@ -299,6 +320,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
       referer: cdktf.stringToTerraform(this._referer),
       snow_password: cdktf.stringToTerraform(this._snowPassword),
       snow_user: cdktf.stringToTerraform(this._snowUser),
+      summary: cdktf.stringToTerraform(this._summary),
       sync_options: cdktf.stringToTerraform(this._syncOptions),
       target: cdktf.stringToTerraform(this._target),
       task_type: cdktf.stringToTerraform(this._taskType),

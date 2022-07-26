@@ -22,7 +22,7 @@ export interface ServiceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#alert_grouping_timeout Service#alert_grouping_timeout}
   */
-  readonly alertGroupingTimeout?: number;
+  readonly alertGroupingTimeout?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#auto_resolve_timeout Service#auto_resolve_timeout}
   */
@@ -1092,8 +1092,8 @@ export class Service extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_service',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '1.11.0',
-        providerVersionConstraint: '~> 1.10'
+        providerVersion: '2.5.2',
+        providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1167,12 +1167,12 @@ export class Service extends cdktf.TerraformResource {
     return this._alertGrouping;
   }
 
-  // alert_grouping_timeout - computed: false, optional: true, required: false
-  private _alertGroupingTimeout?: number; 
+  // alert_grouping_timeout - computed: true, optional: true, required: false
+  private _alertGroupingTimeout?: string; 
   public get alertGroupingTimeout() {
-    return this.getNumberAttribute('alert_grouping_timeout');
+    return this.getStringAttribute('alert_grouping_timeout');
   }
-  public set alertGroupingTimeout(value: number) {
+  public set alertGroupingTimeout(value: string) {
     this._alertGroupingTimeout = value;
   }
   public resetAlertGroupingTimeout() {
@@ -1277,6 +1277,11 @@ export class Service extends cdktf.TerraformResource {
     return this.getStringAttribute('status');
   }
 
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+
   // alert_grouping_parameters - computed: false, optional: true, required: false
   private _alertGroupingParameters = new ServiceAlertGroupingParametersOutputReference(this, "alert_grouping_parameters");
   public get alertGroupingParameters() {
@@ -1350,7 +1355,7 @@ export class Service extends cdktf.TerraformResource {
       acknowledgement_timeout: cdktf.stringToTerraform(this._acknowledgementTimeout),
       alert_creation: cdktf.stringToTerraform(this._alertCreation),
       alert_grouping: cdktf.stringToTerraform(this._alertGrouping),
-      alert_grouping_timeout: cdktf.numberToTerraform(this._alertGroupingTimeout),
+      alert_grouping_timeout: cdktf.stringToTerraform(this._alertGroupingTimeout),
       auto_resolve_timeout: cdktf.stringToTerraform(this._autoResolveTimeout),
       description: cdktf.stringToTerraform(this._description),
       escalation_policy: cdktf.stringToTerraform(this._escalationPolicy),

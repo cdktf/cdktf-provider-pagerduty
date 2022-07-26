@@ -8,6 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface PagerdutyProviderConfig {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty#api_url_override PagerdutyProvider#api_url_override}
+  */
+  readonly apiUrlOverride?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty#service_region PagerdutyProvider#service_region}
+  */
+  readonly serviceRegion?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}
   */
   readonly skipCredentialsValidation?: boolean | cdktf.IResolvable;
@@ -15,6 +23,10 @@ export interface PagerdutyProviderConfig {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty#token PagerdutyProvider#token}
   */
   readonly token: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty#user_token PagerdutyProvider#user_token}
+  */
+  readonly userToken?: string;
   /**
   * Alias name
   * 
@@ -49,19 +61,54 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'pagerduty',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '1.11.0',
-        providerVersionConstraint: '~> 1.10'
+        providerVersion: '2.5.2',
+        providerVersionConstraint: '~> 2.5'
       },
       terraformProviderSource: 'PagerDuty/pagerduty'
     });
+    this._apiUrlOverride = config.apiUrlOverride;
+    this._serviceRegion = config.serviceRegion;
     this._skipCredentialsValidation = config.skipCredentialsValidation;
     this._token = config.token;
+    this._userToken = config.userToken;
     this._alias = config.alias;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // api_url_override - computed: false, optional: true, required: false
+  private _apiUrlOverride?: string; 
+  public get apiUrlOverride() {
+    return this._apiUrlOverride;
+  }
+  public set apiUrlOverride(value: string | undefined) {
+    this._apiUrlOverride = value;
+  }
+  public resetApiUrlOverride() {
+    this._apiUrlOverride = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiUrlOverrideInput() {
+    return this._apiUrlOverride;
+  }
+
+  // service_region - computed: false, optional: true, required: false
+  private _serviceRegion?: string; 
+  public get serviceRegion() {
+    return this._serviceRegion;
+  }
+  public set serviceRegion(value: string | undefined) {
+    this._serviceRegion = value;
+  }
+  public resetServiceRegion() {
+    this._serviceRegion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceRegionInput() {
+    return this._serviceRegion;
+  }
 
   // skip_credentials_validation - computed: false, optional: true, required: false
   private _skipCredentialsValidation?: boolean | cdktf.IResolvable; 
@@ -92,6 +139,22 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
     return this._token;
   }
 
+  // user_token - computed: false, optional: true, required: false
+  private _userToken?: string; 
+  public get userToken() {
+    return this._userToken;
+  }
+  public set userToken(value: string | undefined) {
+    this._userToken = value;
+  }
+  public resetUserToken() {
+    this._userToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userTokenInput() {
+    return this._userToken;
+  }
+
   // alias - computed: false, optional: true, required: false
   private _alias?: string; 
   public get alias() {
@@ -114,8 +177,11 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      api_url_override: cdktf.stringToTerraform(this._apiUrlOverride),
+      service_region: cdktf.stringToTerraform(this._serviceRegion),
       skip_credentials_validation: cdktf.booleanToTerraform(this._skipCredentialsValidation),
       token: cdktf.stringToTerraform(this._token),
+      user_token: cdktf.stringToTerraform(this._userToken),
       alias: cdktf.stringToTerraform(this._alias),
     };
   }

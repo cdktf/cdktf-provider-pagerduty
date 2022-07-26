@@ -58,8 +58,8 @@ export class DataPagerdutyUserContactMethod extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_user_contact_method',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '1.11.0',
-        providerVersionConstraint: '~> 1.10'
+        providerVersion: '2.5.2',
+        providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -75,6 +75,31 @@ export class DataPagerdutyUserContactMethod extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // address - computed: true, optional: false, required: false
+  public get address() {
+    return this.getStringAttribute('address');
+  }
+
+  // blacklisted - computed: true, optional: false, required: false
+  public get blacklisted() {
+    return this.getBooleanAttribute('blacklisted');
+  }
+
+  // country_code - computed: true, optional: false, required: false
+  public get countryCode() {
+    return this.getNumberAttribute('country_code');
+  }
+
+  // device_type - computed: true, optional: false, required: false
+  public get deviceType() {
+    return this.getStringAttribute('device_type');
+  }
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -103,6 +128,11 @@ export class DataPagerdutyUserContactMethod extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get labelInput() {
     return this._label;
+  }
+
+  // send_short_email - computed: true, optional: false, required: false
+  public get sendShortEmail() {
+    return this.getBooleanAttribute('send_short_email');
   }
 
   // type - computed: false, optional: false, required: true

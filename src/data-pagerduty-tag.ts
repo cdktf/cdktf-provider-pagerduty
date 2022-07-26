@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/pagerduty/d/vendor
+// https://www.terraform.io/docs/providers/pagerduty/d/tag
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,44 +6,46 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataPagerdutyVendorConfig extends cdktf.TerraformMetaArguments {
+export interface DataPagerdutyTagConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor#id DataPagerdutyVendor#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/tag#id DataPagerdutyTag#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor#name DataPagerdutyVendor#name}
+  * The label of the tag to find in the PagerDuty API
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/tag#label DataPagerdutyTag#label}
   */
-  readonly name: string;
+  readonly label: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor pagerduty_vendor}
+* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/tag pagerduty_tag}
 */
-export class DataPagerdutyVendor extends cdktf.TerraformDataSource {
+export class DataPagerdutyTag extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "pagerduty_vendor";
+  public static readonly tfResourceType = "pagerduty_tag";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor pagerduty_vendor} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/tag pagerduty_tag} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataPagerdutyVendorConfig
+  * @param options DataPagerdutyTagConfig
   */
-  public constructor(scope: Construct, id: string, config: DataPagerdutyVendorConfig) {
+  public constructor(scope: Construct, id: string, config: DataPagerdutyTagConfig) {
     super(scope, id, {
-      terraformResourceType: 'pagerduty_vendor',
+      terraformResourceType: 'pagerduty_tag',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
         providerVersion: '2.5.2',
@@ -55,7 +57,7 @@ export class DataPagerdutyVendor extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._id = config.id;
-    this._name = config.name;
+    this._label = config.label;
   }
 
   // ==========
@@ -78,22 +80,17 @@ export class DataPagerdutyVendor extends cdktf.TerraformDataSource {
     return this._id;
   }
 
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
+  // label - computed: false, optional: false, required: true
+  private _label?: string; 
+  public get label() {
+    return this.getStringAttribute('label');
   }
-  public set name(value: string) {
-    this._name = value;
+  public set label(value: string) {
+    this._label = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-
-  // type - computed: true, optional: false, required: false
-  public get type() {
-    return this.getStringAttribute('type');
+  public get labelInput() {
+    return this._label;
   }
 
   // =========
@@ -103,7 +100,7 @@ export class DataPagerdutyVendor extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      label: cdktf.stringToTerraform(this._label),
     };
   }
 }
