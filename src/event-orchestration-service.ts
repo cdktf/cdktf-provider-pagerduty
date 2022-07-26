@@ -303,8 +303,8 @@ export function eventOrchestrationServiceCatchAllActionsAutomationActionToTerraf
     auto_send: cdktf.booleanToTerraform(struct!.autoSend),
     name: cdktf.stringToTerraform(struct!.name),
     url: cdktf.stringToTerraform(struct!.url),
-    header: cdktf.listMapper(eventOrchestrationServiceCatchAllActionsAutomationActionHeaderToTerraform)(struct!.header),
-    parameter: cdktf.listMapper(eventOrchestrationServiceCatchAllActionsAutomationActionParameterToTerraform)(struct!.parameter),
+    header: cdktf.listMapper(eventOrchestrationServiceCatchAllActionsAutomationActionHeaderToTerraform, true)(struct!.header),
+    parameter: cdktf.listMapper(eventOrchestrationServiceCatchAllActionsAutomationActionParameterToTerraform, true)(struct!.parameter),
   }
 }
 
@@ -910,9 +910,9 @@ export function eventOrchestrationServiceCatchAllActionsToTerraform(struct?: Eve
     suppress: cdktf.booleanToTerraform(struct!.suppress),
     suspend: cdktf.numberToTerraform(struct!.suspend),
     automation_action: eventOrchestrationServiceCatchAllActionsAutomationActionToTerraform(struct!.automationAction),
-    extraction: cdktf.listMapper(eventOrchestrationServiceCatchAllActionsExtractionToTerraform)(struct!.extraction),
+    extraction: cdktf.listMapper(eventOrchestrationServiceCatchAllActionsExtractionToTerraform, true)(struct!.extraction),
     pagerduty_automation_action: eventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionToTerraform(struct!.pagerdutyAutomationAction),
-    variable: cdktf.listMapper(eventOrchestrationServiceCatchAllActionsVariableToTerraform)(struct!.variable),
+    variable: cdktf.listMapper(eventOrchestrationServiceCatchAllActionsVariableToTerraform, true)(struct!.variable),
   }
 }
 
@@ -1520,8 +1520,8 @@ export function eventOrchestrationServiceSetRuleActionsAutomationActionToTerrafo
     auto_send: cdktf.booleanToTerraform(struct!.autoSend),
     name: cdktf.stringToTerraform(struct!.name),
     url: cdktf.stringToTerraform(struct!.url),
-    header: cdktf.listMapper(eventOrchestrationServiceSetRuleActionsAutomationActionHeaderToTerraform)(struct!.header),
-    parameter: cdktf.listMapper(eventOrchestrationServiceSetRuleActionsAutomationActionParameterToTerraform)(struct!.parameter),
+    header: cdktf.listMapper(eventOrchestrationServiceSetRuleActionsAutomationActionHeaderToTerraform, true)(struct!.header),
+    parameter: cdktf.listMapper(eventOrchestrationServiceSetRuleActionsAutomationActionParameterToTerraform, true)(struct!.parameter),
   }
 }
 
@@ -2127,9 +2127,9 @@ export function eventOrchestrationServiceSetRuleActionsToTerraform(struct?: Even
     suppress: cdktf.booleanToTerraform(struct!.suppress),
     suspend: cdktf.numberToTerraform(struct!.suspend),
     automation_action: eventOrchestrationServiceSetRuleActionsAutomationActionToTerraform(struct!.automationAction),
-    extraction: cdktf.listMapper(eventOrchestrationServiceSetRuleActionsExtractionToTerraform)(struct!.extraction),
+    extraction: cdktf.listMapper(eventOrchestrationServiceSetRuleActionsExtractionToTerraform, true)(struct!.extraction),
     pagerduty_automation_action: eventOrchestrationServiceSetRuleActionsPagerdutyAutomationActionToTerraform(struct!.pagerdutyAutomationAction),
-    variable: cdktf.listMapper(eventOrchestrationServiceSetRuleActionsVariableToTerraform)(struct!.variable),
+    variable: cdktf.listMapper(eventOrchestrationServiceSetRuleActionsVariableToTerraform, true)(struct!.variable),
   }
 }
 
@@ -2527,7 +2527,7 @@ export function eventOrchestrationServiceSetRuleToTerraform(struct?: EventOrches
     disabled: cdktf.booleanToTerraform(struct!.disabled),
     label: cdktf.stringToTerraform(struct!.label),
     actions: eventOrchestrationServiceSetRuleActionsToTerraform(struct!.actions),
-    condition: cdktf.listMapper(eventOrchestrationServiceSetRuleConditionToTerraform)(struct!.condition),
+    condition: cdktf.listMapper(eventOrchestrationServiceSetRuleConditionToTerraform, true)(struct!.condition),
   }
 }
 
@@ -2702,7 +2702,7 @@ export function eventOrchestrationServiceSetToTerraform(struct?: EventOrchestrat
   }
   return {
     id: cdktf.stringToTerraform(struct!.id),
-    rule: cdktf.listMapper(eventOrchestrationServiceSetRuleToTerraform)(struct!.rule),
+    rule: cdktf.listMapper(eventOrchestrationServiceSetRuleToTerraform, true)(struct!.rule),
   }
 }
 
@@ -2838,7 +2838,10 @@ export class EventOrchestrationService extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._service = config.service;
@@ -2914,7 +2917,7 @@ export class EventOrchestrationService extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       service: cdktf.stringToTerraform(this._service),
       catch_all: eventOrchestrationServiceCatchAllToTerraform(this._catchAll.internalValue),
-      set: cdktf.listMapper(eventOrchestrationServiceSetToTerraform)(this._set.internalValue),
+      set: cdktf.listMapper(eventOrchestrationServiceSetToTerraform, true)(this._set.internalValue),
     };
   }
 }

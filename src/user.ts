@@ -80,7 +80,10 @@ export class User extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._color = config.color;
     this._description = config.description;
@@ -263,7 +266,7 @@ export class User extends cdktf.TerraformResource {
       job_title: cdktf.stringToTerraform(this._jobTitle),
       name: cdktf.stringToTerraform(this._name),
       role: cdktf.stringToTerraform(this._role),
-      teams: cdktf.listMapper(cdktf.stringToTerraform)(this._teams),
+      teams: cdktf.listMapper(cdktf.stringToTerraform, false)(this._teams),
       time_zone: cdktf.stringToTerraform(this._timeZone),
     };
   }

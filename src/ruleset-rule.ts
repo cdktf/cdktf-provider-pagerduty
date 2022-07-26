@@ -1050,14 +1050,14 @@ export function rulesetRuleActionsToTerraform(struct?: RulesetRuleActionsOutputR
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotate: cdktf.listMapper(rulesetRuleActionsAnnotateToTerraform)(struct!.annotate),
-    event_action: cdktf.listMapper(rulesetRuleActionsEventActionToTerraform)(struct!.eventAction),
-    extractions: cdktf.listMapper(rulesetRuleActionsExtractionsToTerraform)(struct!.extractions),
-    priority: cdktf.listMapper(rulesetRuleActionsPriorityToTerraform)(struct!.priority),
-    route: cdktf.listMapper(rulesetRuleActionsRouteToTerraform)(struct!.route),
-    severity: cdktf.listMapper(rulesetRuleActionsSeverityToTerraform)(struct!.severity),
-    suppress: cdktf.listMapper(rulesetRuleActionsSuppressToTerraform)(struct!.suppress),
-    suspend: cdktf.listMapper(rulesetRuleActionsSuspendToTerraform)(struct!.suspend),
+    annotate: cdktf.listMapper(rulesetRuleActionsAnnotateToTerraform, true)(struct!.annotate),
+    event_action: cdktf.listMapper(rulesetRuleActionsEventActionToTerraform, true)(struct!.eventAction),
+    extractions: cdktf.listMapper(rulesetRuleActionsExtractionsToTerraform, true)(struct!.extractions),
+    priority: cdktf.listMapper(rulesetRuleActionsPriorityToTerraform, true)(struct!.priority),
+    route: cdktf.listMapper(rulesetRuleActionsRouteToTerraform, true)(struct!.route),
+    severity: cdktf.listMapper(rulesetRuleActionsSeverityToTerraform, true)(struct!.severity),
+    suppress: cdktf.listMapper(rulesetRuleActionsSuppressToTerraform, true)(struct!.suppress),
+    suspend: cdktf.listMapper(rulesetRuleActionsSuspendToTerraform, true)(struct!.suspend),
   }
 }
 
@@ -1407,7 +1407,7 @@ export function rulesetRuleConditionsSubconditionsToTerraform(struct?: RulesetRu
   }
   return {
     operator: cdktf.stringToTerraform(struct!.operator),
-    parameter: cdktf.listMapper(rulesetRuleConditionsSubconditionsParameterToTerraform)(struct!.parameter),
+    parameter: cdktf.listMapper(rulesetRuleConditionsSubconditionsParameterToTerraform, true)(struct!.parameter),
   }
 }
 
@@ -1533,7 +1533,7 @@ export function rulesetRuleConditionsToTerraform(struct?: RulesetRuleConditionsO
   }
   return {
     operator: cdktf.stringToTerraform(struct!.operator),
-    subconditions: cdktf.listMapper(rulesetRuleConditionsSubconditionsToTerraform)(struct!.subconditions),
+    subconditions: cdktf.listMapper(rulesetRuleConditionsSubconditionsToTerraform, true)(struct!.subconditions),
   }
 }
 
@@ -1759,7 +1759,7 @@ export function rulesetRuleTimeFrameScheduledWeeklyToTerraform(struct?: RulesetR
     duration: cdktf.numberToTerraform(struct!.duration),
     start_time: cdktf.numberToTerraform(struct!.startTime),
     timezone: cdktf.stringToTerraform(struct!.timezone),
-    weekdays: cdktf.listMapper(cdktf.numberToTerraform)(struct!.weekdays),
+    weekdays: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.weekdays),
   }
 }
 
@@ -1930,8 +1930,8 @@ export function rulesetRuleTimeFrameToTerraform(struct?: RulesetRuleTimeFrameOut
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    active_between: cdktf.listMapper(rulesetRuleTimeFrameActiveBetweenToTerraform)(struct!.activeBetween),
-    scheduled_weekly: cdktf.listMapper(rulesetRuleTimeFrameScheduledWeeklyToTerraform)(struct!.scheduledWeekly),
+    active_between: cdktf.listMapper(rulesetRuleTimeFrameActiveBetweenToTerraform, true)(struct!.activeBetween),
+    scheduled_weekly: cdktf.listMapper(rulesetRuleTimeFrameScheduledWeeklyToTerraform, true)(struct!.scheduledWeekly),
   }
 }
 
@@ -2154,7 +2154,7 @@ export function rulesetRuleVariableToTerraform(struct?: RulesetRuleVariable | cd
   return {
     name: cdktf.stringToTerraform(struct!.name),
     type: cdktf.stringToTerraform(struct!.type),
-    parameters: cdktf.listMapper(rulesetRuleVariableParametersToTerraform)(struct!.parameters),
+    parameters: cdktf.listMapper(rulesetRuleVariableParametersToTerraform, true)(struct!.parameters),
   }
 }
 
@@ -2315,7 +2315,10 @@ export class RulesetRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._catchAll = config.catchAll;
     this._disabled = config.disabled;
@@ -2487,7 +2490,7 @@ export class RulesetRule extends cdktf.TerraformResource {
       actions: rulesetRuleActionsToTerraform(this._actions.internalValue),
       conditions: rulesetRuleConditionsToTerraform(this._conditions.internalValue),
       time_frame: rulesetRuleTimeFrameToTerraform(this._timeFrame.internalValue),
-      variable: cdktf.listMapper(rulesetRuleVariableToTerraform)(this._variable.internalValue),
+      variable: cdktf.listMapper(rulesetRuleVariableToTerraform, true)(this._variable.internalValue),
     };
   }
 }

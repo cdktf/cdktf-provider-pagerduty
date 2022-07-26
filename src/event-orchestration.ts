@@ -216,7 +216,10 @@ export class EventOrchestration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -321,7 +324,7 @@ export class EventOrchestration extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       team: cdktf.stringToTerraform(this._team),
-      integration: cdktf.listMapper(eventOrchestrationIntegrationToTerraform)(this._integration.internalValue),
+      integration: cdktf.listMapper(eventOrchestrationIntegrationToTerraform, true)(this._integration.internalValue),
     };
   }
 }

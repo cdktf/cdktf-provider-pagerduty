@@ -472,7 +472,7 @@ export function serviceIntegrationEmailParserMatchPredicatePredicateToTerraform(
     matcher: cdktf.stringToTerraform(struct!.matcher),
     part: cdktf.stringToTerraform(struct!.part),
     type: cdktf.stringToTerraform(struct!.type),
-    predicate: cdktf.listMapper(serviceIntegrationEmailParserMatchPredicatePredicatePredicateToTerraform)(struct!.predicate),
+    predicate: cdktf.listMapper(serviceIntegrationEmailParserMatchPredicatePredicatePredicateToTerraform, true)(struct!.predicate),
   }
 }
 
@@ -639,7 +639,7 @@ export function serviceIntegrationEmailParserMatchPredicateToTerraform(struct?: 
   }
   return {
     type: cdktf.stringToTerraform(struct!.type),
-    predicate: cdktf.listMapper(serviceIntegrationEmailParserMatchPredicatePredicateToTerraform)(struct!.predicate),
+    predicate: cdktf.listMapper(serviceIntegrationEmailParserMatchPredicatePredicateToTerraform, true)(struct!.predicate),
   }
 }
 
@@ -960,7 +960,7 @@ export function serviceIntegrationEmailParserToTerraform(struct?: ServiceIntegra
   return {
     action: cdktf.stringToTerraform(struct!.action),
     match_predicate: serviceIntegrationEmailParserMatchPredicateToTerraform(struct!.matchPredicate),
-    value_extractor: cdktf.listMapper(serviceIntegrationEmailParserValueExtractorToTerraform)(struct!.valueExtractor),
+    value_extractor: cdktf.listMapper(serviceIntegrationEmailParserValueExtractorToTerraform, true)(struct!.valueExtractor),
   }
 }
 
@@ -1120,7 +1120,10 @@ export class ServiceIntegration extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._emailFilterMode = config.emailFilterMode;
     this._emailIncidentCreation = config.emailIncidentCreation;
@@ -1350,8 +1353,8 @@ export class ServiceIntegration extends cdktf.TerraformResource {
       service: cdktf.stringToTerraform(this._service),
       type: cdktf.stringToTerraform(this._type),
       vendor: cdktf.stringToTerraform(this._vendor),
-      email_filter: cdktf.listMapper(serviceIntegrationEmailFilterToTerraform)(this._emailFilter.internalValue),
-      email_parser: cdktf.listMapper(serviceIntegrationEmailParserToTerraform)(this._emailParser.internalValue),
+      email_filter: cdktf.listMapper(serviceIntegrationEmailFilterToTerraform, true)(this._emailFilter.internalValue),
+      email_parser: cdktf.listMapper(serviceIntegrationEmailParserToTerraform, true)(this._emailParser.internalValue),
     };
   }
 }

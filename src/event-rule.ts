@@ -60,7 +60,10 @@ export class EventRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._actionJson = config.actionJson;
     this._advancedConditionJson = config.advancedConditionJson;

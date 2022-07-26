@@ -96,7 +96,10 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._endpointUrl = config.endpointUrl;
     this._extensionObjects = config.extensionObjects;
@@ -313,7 +316,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       endpoint_url: cdktf.stringToTerraform(this._endpointUrl),
-      extension_objects: cdktf.listMapper(cdktf.stringToTerraform)(this._extensionObjects),
+      extension_objects: cdktf.listMapper(cdktf.stringToTerraform, false)(this._extensionObjects),
       extension_schema: cdktf.stringToTerraform(this._extensionSchema),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),

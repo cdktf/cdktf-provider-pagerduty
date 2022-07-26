@@ -191,7 +191,7 @@ export function webhookSubscriptionDeliveryMethodToTerraform(struct?: WebhookSub
     temporarily_disabled: cdktf.booleanToTerraform(struct!.temporarilyDisabled),
     type: cdktf.stringToTerraform(struct!.type),
     url: cdktf.stringToTerraform(struct!.url),
-    custom_header: cdktf.listMapper(webhookSubscriptionDeliveryMethodCustomHeaderToTerraform)(struct!.customHeader),
+    custom_header: cdktf.listMapper(webhookSubscriptionDeliveryMethodCustomHeaderToTerraform, true)(struct!.customHeader),
   }
 }
 
@@ -498,7 +498,10 @@ export class WebhookSubscription extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._active = config.active;
     this._description = config.description;
@@ -624,11 +627,11 @@ export class WebhookSubscription extends cdktf.TerraformResource {
     return {
       active: cdktf.booleanToTerraform(this._active),
       description: cdktf.stringToTerraform(this._description),
-      events: cdktf.listMapper(cdktf.stringToTerraform)(this._events),
+      events: cdktf.listMapper(cdktf.stringToTerraform, false)(this._events),
       id: cdktf.stringToTerraform(this._id),
       type: cdktf.stringToTerraform(this._type),
-      delivery_method: cdktf.listMapper(webhookSubscriptionDeliveryMethodToTerraform)(this._deliveryMethod.internalValue),
-      filter: cdktf.listMapper(webhookSubscriptionFilterToTerraform)(this._filter.internalValue),
+      delivery_method: cdktf.listMapper(webhookSubscriptionDeliveryMethodToTerraform, true)(this._deliveryMethod.internalValue),
+      filter: cdktf.listMapper(webhookSubscriptionFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 }
