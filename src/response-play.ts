@@ -718,7 +718,10 @@ export class ResponsePlay extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._conferenceNumber = config.conferenceNumber;
     this._conferenceUrl = config.conferenceUrl;
@@ -958,8 +961,8 @@ export class ResponsePlay extends cdktf.TerraformResource {
       subscribers_message: cdktf.stringToTerraform(this._subscribersMessage),
       team: cdktf.stringToTerraform(this._team),
       type: cdktf.stringToTerraform(this._type),
-      responder: cdktf.listMapper(responsePlayResponderToTerraform)(this._responder.internalValue),
-      subscriber: cdktf.listMapper(responsePlaySubscriberToTerraform)(this._subscriber.internalValue),
+      responder: cdktf.listMapper(responsePlayResponderToTerraform, true)(this._responder.internalValue),
+      subscriber: cdktf.listMapper(responsePlaySubscriberToTerraform, true)(this._subscriber.internalValue),
     };
   }
 }

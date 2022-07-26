@@ -62,8 +62,8 @@ export function slackConnectionConfigAToTerraform(struct?: SlackConnectionConfig
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
-    priorities: cdktf.listMapper(cdktf.stringToTerraform)(struct!.priorities),
+    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
+    priorities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.priorities),
     urgency: cdktf.stringToTerraform(struct!.urgency),
   }
 }
@@ -222,7 +222,10 @@ export class SlackConnection extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._channelId = config.channelId;
     this._id = config.id;
@@ -353,7 +356,7 @@ export class SlackConnection extends cdktf.TerraformResource {
       source_id: cdktf.stringToTerraform(this._sourceId),
       source_type: cdktf.stringToTerraform(this._sourceType),
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
-      config: cdktf.listMapper(slackConnectionConfigAToTerraform)(this._config.internalValue),
+      config: cdktf.listMapper(slackConnectionConfigAToTerraform, true)(this._config.internalValue),
     };
   }
 }

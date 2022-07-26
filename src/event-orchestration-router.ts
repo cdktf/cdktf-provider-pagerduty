@@ -345,7 +345,7 @@ export function eventOrchestrationRouterSetRuleToTerraform(struct?: EventOrchest
     disabled: cdktf.booleanToTerraform(struct!.disabled),
     label: cdktf.stringToTerraform(struct!.label),
     actions: eventOrchestrationRouterSetRuleActionsToTerraform(struct!.actions),
-    condition: cdktf.listMapper(eventOrchestrationRouterSetRuleConditionToTerraform)(struct!.condition),
+    condition: cdktf.listMapper(eventOrchestrationRouterSetRuleConditionToTerraform, true)(struct!.condition),
   }
 }
 
@@ -520,7 +520,7 @@ export function eventOrchestrationRouterSetToTerraform(struct?: EventOrchestrati
   }
   return {
     id: cdktf.stringToTerraform(struct!.id),
-    rule: cdktf.listMapper(eventOrchestrationRouterSetRuleToTerraform)(struct!.rule),
+    rule: cdktf.listMapper(eventOrchestrationRouterSetRuleToTerraform, true)(struct!.rule),
   }
 }
 
@@ -624,7 +624,10 @@ export class EventOrchestrationRouter extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._eventOrchestration = config.eventOrchestration;
     this._id = config.id;

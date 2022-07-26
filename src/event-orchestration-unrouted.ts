@@ -403,8 +403,8 @@ export function eventOrchestrationUnroutedCatchAllActionsToTerraform(struct?: Ev
   return {
     event_action: cdktf.stringToTerraform(struct!.eventAction),
     severity: cdktf.stringToTerraform(struct!.severity),
-    extraction: cdktf.listMapper(eventOrchestrationUnroutedCatchAllActionsExtractionToTerraform)(struct!.extraction),
-    variable: cdktf.listMapper(eventOrchestrationUnroutedCatchAllActionsVariableToTerraform)(struct!.variable),
+    extraction: cdktf.listMapper(eventOrchestrationUnroutedCatchAllActionsExtractionToTerraform, true)(struct!.extraction),
+    variable: cdktf.listMapper(eventOrchestrationUnroutedCatchAllActionsVariableToTerraform, true)(struct!.variable),
   }
 }
 
@@ -968,8 +968,8 @@ export function eventOrchestrationUnroutedSetRuleActionsToTerraform(struct?: Eve
     event_action: cdktf.stringToTerraform(struct!.eventAction),
     route_to: cdktf.stringToTerraform(struct!.routeTo),
     severity: cdktf.stringToTerraform(struct!.severity),
-    extraction: cdktf.listMapper(eventOrchestrationUnroutedSetRuleActionsExtractionToTerraform)(struct!.extraction),
-    variable: cdktf.listMapper(eventOrchestrationUnroutedSetRuleActionsVariableToTerraform)(struct!.variable),
+    extraction: cdktf.listMapper(eventOrchestrationUnroutedSetRuleActionsExtractionToTerraform, true)(struct!.extraction),
+    variable: cdktf.listMapper(eventOrchestrationUnroutedSetRuleActionsVariableToTerraform, true)(struct!.variable),
   }
 }
 
@@ -1235,7 +1235,7 @@ export function eventOrchestrationUnroutedSetRuleToTerraform(struct?: EventOrche
     disabled: cdktf.booleanToTerraform(struct!.disabled),
     label: cdktf.stringToTerraform(struct!.label),
     actions: eventOrchestrationUnroutedSetRuleActionsToTerraform(struct!.actions),
-    condition: cdktf.listMapper(eventOrchestrationUnroutedSetRuleConditionToTerraform)(struct!.condition),
+    condition: cdktf.listMapper(eventOrchestrationUnroutedSetRuleConditionToTerraform, true)(struct!.condition),
   }
 }
 
@@ -1410,7 +1410,7 @@ export function eventOrchestrationUnroutedSetToTerraform(struct?: EventOrchestra
   }
   return {
     id: cdktf.stringToTerraform(struct!.id),
-    rule: cdktf.listMapper(eventOrchestrationUnroutedSetRuleToTerraform)(struct!.rule),
+    rule: cdktf.listMapper(eventOrchestrationUnroutedSetRuleToTerraform, true)(struct!.rule),
   }
 }
 
@@ -1546,7 +1546,10 @@ export class EventOrchestrationUnrouted extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._eventOrchestration = config.eventOrchestration;
     this._id = config.id;
@@ -1622,7 +1625,7 @@ export class EventOrchestrationUnrouted extends cdktf.TerraformResource {
       event_orchestration: cdktf.stringToTerraform(this._eventOrchestration),
       id: cdktf.stringToTerraform(this._id),
       catch_all: eventOrchestrationUnroutedCatchAllToTerraform(this._catchAll.internalValue),
-      set: cdktf.listMapper(eventOrchestrationUnroutedSetToTerraform)(this._set.internalValue),
+      set: cdktf.listMapper(eventOrchestrationUnroutedSetToTerraform, true)(this._set.internalValue),
     };
   }
 }

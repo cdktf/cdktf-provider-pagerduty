@@ -93,7 +93,7 @@ export function serviceAlertGroupingParametersConfigToTerraform(struct?: Service
   }
   return {
     aggregate: cdktf.stringToTerraform(struct!.aggregate),
-    fields: cdktf.listMapper(cdktf.stringToTerraform)(struct!.fields),
+    fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fields),
     timeout: cdktf.numberToTerraform(struct!.timeout),
   }
 }
@@ -764,7 +764,7 @@ export function serviceScheduledActionsToTerraform(struct?: ServiceScheduledActi
   return {
     to_urgency: cdktf.stringToTerraform(struct!.toUrgency),
     type: cdktf.stringToTerraform(struct!.type),
-    at: cdktf.listMapper(serviceScheduledActionsAtToTerraform)(struct!.at),
+    at: cdktf.listMapper(serviceScheduledActionsAtToTerraform, true)(struct!.at),
   }
 }
 
@@ -921,7 +921,7 @@ export function serviceSupportHoursToTerraform(struct?: ServiceSupportHoursOutpu
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days_of_week: cdktf.listMapper(cdktf.numberToTerraform)(struct!.daysOfWeek),
+    days_of_week: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.daysOfWeek),
     end_time: cdktf.stringToTerraform(struct!.endTime),
     start_time: cdktf.stringToTerraform(struct!.startTime),
     time_zone: cdktf.stringToTerraform(struct!.timeZone),
@@ -1098,7 +1098,10 @@ export class Service extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._acknowledgementTimeout = config.acknowledgementTimeout;
     this._alertCreation = config.alertCreation;
@@ -1363,7 +1366,7 @@ export class Service extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       alert_grouping_parameters: serviceAlertGroupingParametersToTerraform(this._alertGroupingParameters.internalValue),
       incident_urgency_rule: serviceIncidentUrgencyRuleToTerraform(this._incidentUrgencyRule.internalValue),
-      scheduled_actions: cdktf.listMapper(serviceScheduledActionsToTerraform)(this._scheduledActions.internalValue),
+      scheduled_actions: cdktf.listMapper(serviceScheduledActionsToTerraform, true)(this._scheduledActions.internalValue),
       support_hours: serviceSupportHoursToTerraform(this._supportHours.internalValue),
     };
   }

@@ -323,8 +323,8 @@ export function scheduleLayerToTerraform(struct?: ScheduleLayer | cdktf.IResolva
     rotation_turn_length_seconds: cdktf.numberToTerraform(struct!.rotationTurnLengthSeconds),
     rotation_virtual_start: cdktf.stringToTerraform(struct!.rotationVirtualStart),
     start: cdktf.stringToTerraform(struct!.start),
-    users: cdktf.listMapper(cdktf.stringToTerraform)(struct!.users),
-    restriction: cdktf.listMapper(scheduleLayerRestrictionToTerraform)(struct!.restriction),
+    users: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.users),
+    restriction: cdktf.listMapper(scheduleLayerRestrictionToTerraform, true)(struct!.restriction),
   }
 }
 
@@ -571,7 +571,10 @@ export class Schedule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -708,9 +711,9 @@ export class Schedule extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       overflow: cdktf.booleanToTerraform(this._overflow),
-      teams: cdktf.listMapper(cdktf.stringToTerraform)(this._teams),
+      teams: cdktf.listMapper(cdktf.stringToTerraform, false)(this._teams),
       time_zone: cdktf.stringToTerraform(this._timeZone),
-      layer: cdktf.listMapper(scheduleLayerToTerraform)(this._layer.internalValue),
+      layer: cdktf.listMapper(scheduleLayerToTerraform, true)(this._layer.internalValue),
     };
   }
 }

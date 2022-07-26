@@ -64,7 +64,10 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._endTime = config.endTime;
@@ -157,7 +160,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       end_time: cdktf.stringToTerraform(this._endTime),
       id: cdktf.stringToTerraform(this._id),
-      services: cdktf.listMapper(cdktf.stringToTerraform)(this._services),
+      services: cdktf.listMapper(cdktf.stringToTerraform, false)(this._services),
       start_time: cdktf.stringToTerraform(this._startTime),
     };
   }

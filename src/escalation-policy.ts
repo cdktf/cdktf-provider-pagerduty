@@ -181,7 +181,7 @@ export function escalationPolicyRuleToTerraform(struct?: EscalationPolicyRule | 
   }
   return {
     escalation_delay_in_minutes: cdktf.numberToTerraform(struct!.escalationDelayInMinutes),
-    target: cdktf.listMapper(escalationPolicyRuleTargetToTerraform)(struct!.target),
+    target: cdktf.listMapper(escalationPolicyRuleTargetToTerraform, true)(struct!.target),
   }
 }
 
@@ -319,7 +319,10 @@ export class EscalationPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -433,8 +436,8 @@ export class EscalationPolicy extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       num_loops: cdktf.numberToTerraform(this._numLoops),
-      teams: cdktf.listMapper(cdktf.stringToTerraform)(this._teams),
-      rule: cdktf.listMapper(escalationPolicyRuleToTerraform)(this._rule.internalValue),
+      teams: cdktf.listMapper(cdktf.stringToTerraform, false)(this._teams),
+      rule: cdktf.listMapper(escalationPolicyRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 }

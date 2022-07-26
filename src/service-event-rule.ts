@@ -943,13 +943,13 @@ export function serviceEventRuleActionsToTerraform(struct?: ServiceEventRuleActi
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    annotate: cdktf.listMapper(serviceEventRuleActionsAnnotateToTerraform)(struct!.annotate),
-    event_action: cdktf.listMapper(serviceEventRuleActionsEventActionToTerraform)(struct!.eventAction),
-    extractions: cdktf.listMapper(serviceEventRuleActionsExtractionsToTerraform)(struct!.extractions),
-    priority: cdktf.listMapper(serviceEventRuleActionsPriorityToTerraform)(struct!.priority),
-    severity: cdktf.listMapper(serviceEventRuleActionsSeverityToTerraform)(struct!.severity),
-    suppress: cdktf.listMapper(serviceEventRuleActionsSuppressToTerraform)(struct!.suppress),
-    suspend: cdktf.listMapper(serviceEventRuleActionsSuspendToTerraform)(struct!.suspend),
+    annotate: cdktf.listMapper(serviceEventRuleActionsAnnotateToTerraform, true)(struct!.annotate),
+    event_action: cdktf.listMapper(serviceEventRuleActionsEventActionToTerraform, true)(struct!.eventAction),
+    extractions: cdktf.listMapper(serviceEventRuleActionsExtractionsToTerraform, true)(struct!.extractions),
+    priority: cdktf.listMapper(serviceEventRuleActionsPriorityToTerraform, true)(struct!.priority),
+    severity: cdktf.listMapper(serviceEventRuleActionsSeverityToTerraform, true)(struct!.severity),
+    suppress: cdktf.listMapper(serviceEventRuleActionsSuppressToTerraform, true)(struct!.suppress),
+    suspend: cdktf.listMapper(serviceEventRuleActionsSuspendToTerraform, true)(struct!.suspend),
   }
 }
 
@@ -1277,7 +1277,7 @@ export function serviceEventRuleConditionsSubconditionsToTerraform(struct?: Serv
   }
   return {
     operator: cdktf.stringToTerraform(struct!.operator),
-    parameter: cdktf.listMapper(serviceEventRuleConditionsSubconditionsParameterToTerraform)(struct!.parameter),
+    parameter: cdktf.listMapper(serviceEventRuleConditionsSubconditionsParameterToTerraform, true)(struct!.parameter),
   }
 }
 
@@ -1403,7 +1403,7 @@ export function serviceEventRuleConditionsToTerraform(struct?: ServiceEventRuleC
   }
   return {
     operator: cdktf.stringToTerraform(struct!.operator),
-    subconditions: cdktf.listMapper(serviceEventRuleConditionsSubconditionsToTerraform)(struct!.subconditions),
+    subconditions: cdktf.listMapper(serviceEventRuleConditionsSubconditionsToTerraform, true)(struct!.subconditions),
   }
 }
 
@@ -1629,7 +1629,7 @@ export function serviceEventRuleTimeFrameScheduledWeeklyToTerraform(struct?: Ser
     duration: cdktf.numberToTerraform(struct!.duration),
     start_time: cdktf.numberToTerraform(struct!.startTime),
     timezone: cdktf.stringToTerraform(struct!.timezone),
-    weekdays: cdktf.listMapper(cdktf.numberToTerraform)(struct!.weekdays),
+    weekdays: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.weekdays),
   }
 }
 
@@ -1800,8 +1800,8 @@ export function serviceEventRuleTimeFrameToTerraform(struct?: ServiceEventRuleTi
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    active_between: cdktf.listMapper(serviceEventRuleTimeFrameActiveBetweenToTerraform)(struct!.activeBetween),
-    scheduled_weekly: cdktf.listMapper(serviceEventRuleTimeFrameScheduledWeeklyToTerraform)(struct!.scheduledWeekly),
+    active_between: cdktf.listMapper(serviceEventRuleTimeFrameActiveBetweenToTerraform, true)(struct!.activeBetween),
+    scheduled_weekly: cdktf.listMapper(serviceEventRuleTimeFrameScheduledWeeklyToTerraform, true)(struct!.scheduledWeekly),
   }
 }
 
@@ -2024,7 +2024,7 @@ export function serviceEventRuleVariableToTerraform(struct?: ServiceEventRuleVar
   return {
     name: cdktf.stringToTerraform(struct!.name),
     type: cdktf.stringToTerraform(struct!.type),
-    parameters: cdktf.listMapper(serviceEventRuleVariableParametersToTerraform)(struct!.parameters),
+    parameters: cdktf.listMapper(serviceEventRuleVariableParametersToTerraform, true)(struct!.parameters),
   }
 }
 
@@ -2185,7 +2185,10 @@ export class ServiceEventRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._disabled = config.disabled;
     this._id = config.id;
@@ -2339,7 +2342,7 @@ export class ServiceEventRule extends cdktf.TerraformResource {
       actions: serviceEventRuleActionsToTerraform(this._actions.internalValue),
       conditions: serviceEventRuleConditionsToTerraform(this._conditions.internalValue),
       time_frame: serviceEventRuleTimeFrameToTerraform(this._timeFrame.internalValue),
-      variable: cdktf.listMapper(serviceEventRuleVariableToTerraform)(this._variable.internalValue),
+      variable: cdktf.listMapper(serviceEventRuleVariableToTerraform, true)(this._variable.internalValue),
     };
   }
 }

@@ -289,8 +289,8 @@ export function serviceDependencyDependencyToTerraform(struct?: ServiceDependenc
   }
   return {
     type: cdktf.stringToTerraform(struct!.type),
-    dependent_service: cdktf.listMapper(serviceDependencyDependencyDependentServiceToTerraform)(struct!.dependentService),
-    supporting_service: cdktf.listMapper(serviceDependencyDependencySupportingServiceToTerraform)(struct!.supportingService),
+    dependent_service: cdktf.listMapper(serviceDependencyDependencyDependentServiceToTerraform, true)(struct!.dependentService),
+    supporting_service: cdktf.listMapper(serviceDependencyDependencySupportingServiceToTerraform, true)(struct!.supportingService),
   }
 }
 
@@ -413,7 +413,10 @@ export class ServiceDependency extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._dependency.internalValue = config.dependency;
