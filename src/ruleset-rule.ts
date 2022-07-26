@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface RulesetRuleConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#catch_all RulesetRule#catch_all}
+  */
+  readonly catchAll?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset_rule#disabled RulesetRule#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
@@ -2305,14 +2309,15 @@ export class RulesetRule extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_ruleset_rule',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '1.11.0',
-        providerVersionConstraint: '~> 1.10'
+        providerVersion: '2.5.2',
+        providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._catchAll = config.catchAll;
     this._disabled = config.disabled;
     this._id = config.id;
     this._position = config.position;
@@ -2326,6 +2331,22 @@ export class RulesetRule extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // catch_all - computed: false, optional: true, required: false
+  private _catchAll?: boolean | cdktf.IResolvable; 
+  public get catchAll() {
+    return this.getBooleanAttribute('catch_all');
+  }
+  public set catchAll(value: boolean | cdktf.IResolvable) {
+    this._catchAll = value;
+  }
+  public resetCatchAll() {
+    this._catchAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get catchAllInput() {
+    return this._catchAll;
+  }
 
   // disabled - computed: false, optional: true, required: false
   private _disabled?: boolean | cdktf.IResolvable; 
@@ -2458,6 +2479,7 @@ export class RulesetRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      catch_all: cdktf.booleanToTerraform(this._catchAll),
       disabled: cdktf.booleanToTerraform(this._disabled),
       id: cdktf.stringToTerraform(this._id),
       position: cdktf.numberToTerraform(this._position),

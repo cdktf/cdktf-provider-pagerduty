@@ -19,7 +19,7 @@ export interface ServiceDependencyConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency#dependency ServiceDependency#dependency}
   */
-  readonly dependency: ServiceDependencyDependency[] | cdktf.IResolvable;
+  readonly dependency: ServiceDependencyDependency;
 }
 export interface ServiceDependencyDependencyDependentService {
   /**
@@ -282,7 +282,7 @@ export interface ServiceDependencyDependency {
   readonly supportingService: ServiceDependencyDependencySupportingService[] | cdktf.IResolvable;
 }
 
-export function serviceDependencyDependencyToTerraform(struct?: ServiceDependencyDependency | cdktf.IResolvable): any {
+export function serviceDependencyDependencyToTerraform(struct?: ServiceDependencyDependencyOutputReference | ServiceDependencyDependency): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -296,22 +296,16 @@ export function serviceDependencyDependencyToTerraform(struct?: ServiceDependenc
 
 export class ServiceDependencyDependencyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): ServiceDependencyDependency | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): ServiceDependencyDependency | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type !== undefined) {
@@ -329,21 +323,15 @@ export class ServiceDependencyDependencyOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceDependencyDependency | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceDependencyDependency | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._type = undefined;
       this._dependentService.internalValue = undefined;
       this._supportingService.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._type = value.type;
       this._dependentService.internalValue = value.dependentService;
       this._supportingService.internalValue = value.supportingService;
@@ -393,26 +381,6 @@ export class ServiceDependencyDependencyOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class ServiceDependencyDependencyList extends cdktf.ComplexList {
-  public internalValue? : ServiceDependencyDependency[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ServiceDependencyDependencyOutputReference {
-    return new ServiceDependencyDependencyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service_dependency pagerduty_service_dependency}
 */
@@ -439,8 +407,8 @@ export class ServiceDependency extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_service_dependency',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '1.11.0',
-        providerVersionConstraint: '~> 1.10'
+        providerVersion: '2.5.2',
+        providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -472,11 +440,11 @@ export class ServiceDependency extends cdktf.TerraformResource {
   }
 
   // dependency - computed: false, optional: false, required: true
-  private _dependency = new ServiceDependencyDependencyList(this, "dependency", false);
+  private _dependency = new ServiceDependencyDependencyOutputReference(this, "dependency");
   public get dependency() {
     return this._dependency;
   }
-  public putDependency(value: ServiceDependencyDependency[] | cdktf.IResolvable) {
+  public putDependency(value: ServiceDependencyDependency) {
     this._dependency.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -491,7 +459,7 @@ export class ServiceDependency extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      dependency: cdktf.listMapper(serviceDependencyDependencyToTerraform)(this._dependency.internalValue),
+      dependency: serviceDependencyDependencyToTerraform(this._dependency.internalValue),
     };
   }
 }

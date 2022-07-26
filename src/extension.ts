@@ -66,8 +66,8 @@ export class Extension extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_extension',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '1.11.0',
-        providerVersionConstraint: '~> 1.10'
+        providerVersion: '2.5.2',
+        providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -180,6 +180,11 @@ export class Extension extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // summary - computed: true, optional: false, required: false
+  public get summary() {
+    return this.getStringAttribute('summary');
   }
 
   // type - computed: true, optional: true, required: false

@@ -1,6 +1,6 @@
 const { CdktfProviderProject } = require("@cdktf/provider-project");
 const project = new CdktfProviderProject({
-  terraformProvider: "PagerDuty/pagerduty@~> 1.10",
+  terraformProvider: "PagerDuty/pagerduty@~> 2.5",
   cdktfVersion: "^0.11.0",
   constructsVersion: "^10.0.0",
   minNodeVersion: "14.17.0",

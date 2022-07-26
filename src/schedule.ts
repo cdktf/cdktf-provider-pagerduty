@@ -41,6 +41,75 @@ export interface ScheduleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly layer: ScheduleLayer[] | cdktf.IResolvable;
 }
+export interface ScheduleFinalSchedule {
+}
+
+export function scheduleFinalScheduleToTerraform(struct?: ScheduleFinalSchedule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class ScheduleFinalScheduleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ScheduleFinalSchedule | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ScheduleFinalSchedule | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // rendered_coverage_percentage - computed: true, optional: false, required: false
+  public get renderedCoveragePercentage() {
+    return this.getStringAttribute('rendered_coverage_percentage');
+  }
+}
+
+export class ScheduleFinalScheduleList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ScheduleFinalScheduleOutputReference {
+    return new ScheduleFinalScheduleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ScheduleLayerRestriction {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/schedule#duration_seconds Schedule#duration_seconds}
@@ -376,6 +445,11 @@ export class ScheduleLayerOutputReference extends cdktf.ComplexObject {
     return this._name;
   }
 
+  // rendered_coverage_percentage - computed: true, optional: false, required: false
+  public get renderedCoveragePercentage() {
+    return this.getStringAttribute('rendered_coverage_percentage');
+  }
+
   // rotation_turn_length_seconds - computed: false, optional: false, required: true
   private _rotationTurnLengthSeconds?: number; 
   public get rotationTurnLengthSeconds() {
@@ -491,8 +565,8 @@ export class Schedule extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_schedule',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '1.11.0',
-        providerVersionConstraint: '~> 1.10'
+        providerVersion: '2.5.2',
+        providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -526,6 +600,12 @@ export class Schedule extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // final_schedule - computed: true, optional: false, required: false
+  private _finalSchedule = new ScheduleFinalScheduleList(this, "final_schedule", false);
+  public get finalSchedule() {
+    return this._finalSchedule;
   }
 
   // id - computed: true, optional: true, required: false
