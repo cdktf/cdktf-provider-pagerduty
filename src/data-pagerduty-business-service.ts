@@ -46,7 +46,7 @@ export class DataPagerdutyBusinessService extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_business_service',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.5.2',
+        providerVersion: '2.6.0',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
