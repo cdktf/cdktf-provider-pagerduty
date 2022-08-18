@@ -1980,6 +1980,117 @@ public readonly userId: string;
 
 ---
 
+### DataPagerdutyUsers <a name="@cdktf/provider-pagerduty.DataPagerdutyUsers"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/users pagerduty_users}.
+
+#### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyUsers.Initializer"></a>
+
+```typescript
+import { DataPagerdutyUsers } from '@cdktf/provider-pagerduty'
+
+new DataPagerdutyUsers(scope: Construct, id: string, config?: DataPagerdutyUsersConfig)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsers.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsers.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsers.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-pagerduty.DataPagerdutyUsersConfig`](#@cdktf/provider-pagerduty.DataPagerdutyUsersConfig)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetId` <a name="@cdktf/provider-pagerduty.DataPagerdutyUsers.resetId"></a>
+
+```typescript
+public resetId()
+```
+
+##### `resetTeamIds` <a name="@cdktf/provider-pagerduty.DataPagerdutyUsers.resetTeamIds"></a>
+
+```typescript
+public resetTeamIds()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `users`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsers.property.users"></a>
+
+```typescript
+public readonly users: DataPagerdutyUsersUsersList;
+```
+
+- *Type:* [`@cdktf/provider-pagerduty.DataPagerdutyUsersUsersList`](#@cdktf/provider-pagerduty.DataPagerdutyUsersUsersList)
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsers.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `teamIdsInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsers.property.teamIdsInput"></a>
+
+```typescript
+public readonly teamIdsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsers.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `teamIds`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsers.property.teamIds"></a>
+
+```typescript
+public readonly teamIds: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-pagerduty.DataPagerdutyUsers.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
 ### DataPagerdutyVendor <a name="@cdktf/provider-pagerduty.DataPagerdutyVendor"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor pagerduty_vendor}.
@@ -5229,6 +5340,18 @@ public putAlertGroupingParameters(value: ServiceAlertGroupingParameters)
 
 ---
 
+##### `putAutoPauseNotificationsParameters` <a name="@cdktf/provider-pagerduty.Service.putAutoPauseNotificationsParameters"></a>
+
+```typescript
+public putAutoPauseNotificationsParameters(value: ServiceAutoPauseNotificationsParameters)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.parameter.value"></a>
+
+- *Type:* [`@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParameters`](#@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParameters)
+
+---
+
 ##### `putIncidentUrgencyRule` <a name="@cdktf/provider-pagerduty.Service.putIncidentUrgencyRule"></a>
 
 ```typescript
@@ -5295,6 +5418,12 @@ public resetAlertGroupingParameters()
 public resetAlertGroupingTimeout()
 ```
 
+##### `resetAutoPauseNotificationsParameters` <a name="@cdktf/provider-pagerduty.Service.resetAutoPauseNotificationsParameters"></a>
+
+```typescript
+public resetAutoPauseNotificationsParameters()
+```
+
 ##### `resetAutoResolveTimeout` <a name="@cdktf/provider-pagerduty.Service.resetAutoResolveTimeout"></a>
 
 ```typescript
@@ -5319,6 +5448,12 @@ public resetId()
 public resetIncidentUrgencyRule()
 ```
 
+##### `resetResponsePlay` <a name="@cdktf/provider-pagerduty.Service.resetResponsePlay"></a>
+
+```typescript
+public resetResponsePlay()
+```
+
 ##### `resetScheduledActions` <a name="@cdktf/provider-pagerduty.Service.resetScheduledActions"></a>
 
 ```typescript
@@ -5341,6 +5476,16 @@ public readonly alertGroupingParameters: ServiceAlertGroupingParametersOutputRef
 ```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceAlertGroupingParametersOutputReference`](#@cdktf/provider-pagerduty.ServiceAlertGroupingParametersOutputReference)
+
+---
+
+##### `autoPauseNotificationsParameters`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.autoPauseNotificationsParameters"></a>
+
+```typescript
+public readonly autoPauseNotificationsParameters: ServiceAutoPauseNotificationsParametersOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParametersOutputReference`](#@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParametersOutputReference)
 
 ---
 
@@ -5474,6 +5619,16 @@ public readonly alertGroupingTimeoutInput: string;
 
 ---
 
+##### `autoPauseNotificationsParametersInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Service.property.autoPauseNotificationsParametersInput"></a>
+
+```typescript
+public readonly autoPauseNotificationsParametersInput: ServiceAutoPauseNotificationsParameters;
+```
+
+- *Type:* [`@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParameters`](#@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParameters)
+
+---
+
 ##### `autoResolveTimeoutInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Service.property.autoResolveTimeoutInput"></a>
 
 ```typescript
@@ -5528,6 +5683,16 @@ public readonly incidentUrgencyRuleInput: ServiceIncidentUrgencyRule;
 
 ```typescript
 public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `responsePlayInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.Service.property.responsePlayInput"></a>
+
+```typescript
+public readonly responsePlayInput: string;
 ```
 
 - *Type:* `string`
@@ -5638,6 +5803,16 @@ public readonly id: string;
 
 ```typescript
 public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `responsePlay`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.Service.property.responsePlay"></a>
+
+```typescript
+public readonly responsePlay: string;
 ```
 
 - *Type:* `string`
@@ -10033,6 +10208,123 @@ Please be aware that the id field is automatically added to all resources in Ter
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
+
+### DataPagerdutyUsersConfig <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersConfig"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataPagerdutyUsersConfig } from '@cdktf/provider-pagerduty'
+
+const dataPagerdutyUsersConfig: DataPagerdutyUsersConfig = { ... }
+```
+
+##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+
+---
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* [`cdktf.ITerraformIterator`](#cdktf.ITerraformIterator)
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/users#id DataPagerdutyUsers#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `teamIds`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersConfig.property.teamIds"></a>
+
+```typescript
+public readonly teamIds: string[];
+```
+
+- *Type:* `string`[]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/users#team_ids DataPagerdutyUsers#team_ids}.
+
+---
+
+### DataPagerdutyUsersUsers <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsers"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataPagerdutyUsersUsers } from '@cdktf/provider-pagerduty'
+
+const dataPagerdutyUsersUsers: DataPagerdutyUsersUsers = { ... }
+```
 
 ### DataPagerdutyVendorConfig <a name="@cdktf/provider-pagerduty.DataPagerdutyVendorConfig"></a>
 
@@ -15247,6 +15539,40 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ---
 
+### ServiceAutoPauseNotificationsParameters <a name="@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParameters"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ServiceAutoPauseNotificationsParameters } from '@cdktf/provider-pagerduty'
+
+const serviceAutoPauseNotificationsParameters: ServiceAutoPauseNotificationsParameters = { ... }
+```
+
+##### `enabled`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParameters.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#enabled Service#enabled}.
+
+---
+
+##### `timeout`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParameters.property.timeout"></a>
+
+```typescript
+public readonly timeout: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#timeout Service#timeout}.
+
+---
+
 ### ServiceConfig <a name="@cdktf/provider-pagerduty.ServiceConfig"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -15413,6 +15739,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ---
 
+##### `autoPauseNotificationsParameters`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.autoPauseNotificationsParameters"></a>
+
+```typescript
+public readonly autoPauseNotificationsParameters: ServiceAutoPauseNotificationsParameters;
+```
+
+- *Type:* [`@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParameters`](#@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParameters)
+
+auto_pause_notifications_parameters block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#auto_pause_notifications_parameters Service#auto_pause_notifications_parameters}
+
+---
+
 ##### `autoResolveTimeout`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.autoResolveTimeout"></a>
 
 ```typescript
@@ -15463,6 +15803,18 @@ public readonly incidentUrgencyRule: ServiceIncidentUrgencyRule;
 incident_urgency_rule block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#incident_urgency_rule Service#incident_urgency_rule}
+
+---
+
+##### `responsePlay`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.responsePlay"></a>
+
+```typescript
+public readonly responsePlay: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#response_play Service#response_play}.
 
 ---
 
@@ -19222,6 +19574,146 @@ public readonly internalValue: DataPagerdutyEventOrchestrationIntegrationParamet
 ```
 
 - *Type:* [`@cdktf/provider-pagerduty.DataPagerdutyEventOrchestrationIntegrationParameters`](#@cdktf/provider-pagerduty.DataPagerdutyEventOrchestrationIntegrationParameters)
+
+---
+
+
+### DataPagerdutyUsersUsersList <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsersList"></a>
+
+#### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsersList.Initializer"></a>
+
+```typescript
+import { DataPagerdutyUsersUsersList } from '@cdktf/provider-pagerduty'
+
+new DataPagerdutyUsersUsersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsersList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsersList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsersList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsersList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsersList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataPagerdutyUsersUsersOutputReference <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsersOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsersOutputReference.Initializer"></a>
+
+```typescript
+import { DataPagerdutyUsersUsersOutputReference } from '@cdktf/provider-pagerduty'
+
+new DataPagerdutyUsersUsersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsersOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsersOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsersOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsersOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `email`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsersOutputReference.property.email"></a>
+
+```typescript
+public readonly email: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsersOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsersOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersUsersOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataPagerdutyUsersUsers;
+```
+
+- *Type:* [`@cdktf/provider-pagerduty.DataPagerdutyUsersUsers`](#@cdktf/provider-pagerduty.DataPagerdutyUsersUsers)
 
 ---
 
@@ -30753,6 +31245,100 @@ public readonly internalValue: ServiceAlertGroupingParameters;
 ```
 
 - *Type:* [`@cdktf/provider-pagerduty.ServiceAlertGroupingParameters`](#@cdktf/provider-pagerduty.ServiceAlertGroupingParameters)
+
+---
+
+
+### ServiceAutoPauseNotificationsParametersOutputReference <a name="@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParametersOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParametersOutputReference.Initializer"></a>
+
+```typescript
+import { ServiceAutoPauseNotificationsParametersOutputReference } from '@cdktf/provider-pagerduty'
+
+new ServiceAutoPauseNotificationsParametersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParametersOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParametersOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetEnabled` <a name="@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParametersOutputReference.resetEnabled"></a>
+
+```typescript
+public resetEnabled()
+```
+
+##### `resetTimeout` <a name="@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParametersOutputReference.resetTimeout"></a>
+
+```typescript
+public resetTimeout()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `enabledInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParametersOutputReference.property.enabledInput"></a>
+
+```typescript
+public readonly enabledInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `timeoutInput`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParametersOutputReference.property.timeoutInput"></a>
+
+```typescript
+public readonly timeoutInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParametersOutputReference.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `timeout`<sup>Required</sup> <a name="@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParametersOutputReference.property.timeout"></a>
+
+```typescript
+public readonly timeout: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParametersOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ServiceAutoPauseNotificationsParameters;
+```
+
+- *Type:* [`@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParameters`](#@cdktf/provider-pagerduty.ServiceAutoPauseNotificationsParameters)
 
 ---
 

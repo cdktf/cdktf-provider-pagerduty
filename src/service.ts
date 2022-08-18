@@ -47,11 +47,21 @@ export interface ServiceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#response_play Service#response_play}
+  */
+  readonly responsePlay?: string;
+  /**
   * alert_grouping_parameters block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#alert_grouping_parameters Service#alert_grouping_parameters}
   */
   readonly alertGroupingParameters?: ServiceAlertGroupingParameters;
+  /**
+  * auto_pause_notifications_parameters block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#auto_pause_notifications_parameters Service#auto_pause_notifications_parameters}
+  */
+  readonly autoPauseNotificationsParameters?: ServiceAutoPauseNotificationsParameters;
   /**
   * incident_urgency_rule block
   * 
@@ -282,6 +292,98 @@ export class ServiceAlertGroupingParametersOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get configInput() {
     return this._config.internalValue;
+  }
+}
+export interface ServiceAutoPauseNotificationsParameters {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#enabled Service#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#timeout Service#timeout}
+  */
+  readonly timeout?: number;
+}
+
+export function serviceAutoPauseNotificationsParametersToTerraform(struct?: ServiceAutoPauseNotificationsParametersOutputReference | ServiceAutoPauseNotificationsParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    timeout: cdktf.numberToTerraform(struct!.timeout),
+  }
+}
+
+export class ServiceAutoPauseNotificationsParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ServiceAutoPauseNotificationsParameters | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._timeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeout = this._timeout;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceAutoPauseNotificationsParameters | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+      this._timeout = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+      this._timeout = value.timeout;
+    }
+  }
+
+  // enabled - computed: true, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // timeout - computed: true, optional: true, required: false
+  private _timeout?: number; 
+  public get timeout() {
+    return this.getNumberAttribute('timeout');
+  }
+  public set timeout(value: number) {
+    this._timeout = value;
+  }
+  public resetTimeout() {
+    this._timeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutInput() {
+    return this._timeout;
   }
 }
 export interface ServiceIncidentUrgencyRuleDuringSupportHours {
@@ -1092,7 +1194,7 @@ export class Service extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_service',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.5.2',
+        providerVersion: '2.6.0',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
@@ -1112,7 +1214,9 @@ export class Service extends cdktf.TerraformResource {
     this._escalationPolicy = config.escalationPolicy;
     this._id = config.id;
     this._name = config.name;
+    this._responsePlay = config.responsePlay;
     this._alertGroupingParameters.internalValue = config.alertGroupingParameters;
+    this._autoPauseNotificationsParameters.internalValue = config.autoPauseNotificationsParameters;
     this._incidentUrgencyRule.internalValue = config.incidentUrgencyRule;
     this._scheduledActions.internalValue = config.scheduledActions;
     this._supportHours.internalValue = config.supportHours;
@@ -1275,6 +1379,22 @@ export class Service extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // response_play - computed: false, optional: true, required: false
+  private _responsePlay?: string; 
+  public get responsePlay() {
+    return this.getStringAttribute('response_play');
+  }
+  public set responsePlay(value: string) {
+    this._responsePlay = value;
+  }
+  public resetResponsePlay() {
+    this._responsePlay = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get responsePlayInput() {
+    return this._responsePlay;
+  }
+
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
@@ -1299,6 +1419,22 @@ export class Service extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get alertGroupingParametersInput() {
     return this._alertGroupingParameters.internalValue;
+  }
+
+  // auto_pause_notifications_parameters - computed: false, optional: true, required: false
+  private _autoPauseNotificationsParameters = new ServiceAutoPauseNotificationsParametersOutputReference(this, "auto_pause_notifications_parameters");
+  public get autoPauseNotificationsParameters() {
+    return this._autoPauseNotificationsParameters;
+  }
+  public putAutoPauseNotificationsParameters(value: ServiceAutoPauseNotificationsParameters) {
+    this._autoPauseNotificationsParameters.internalValue = value;
+  }
+  public resetAutoPauseNotificationsParameters() {
+    this._autoPauseNotificationsParameters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoPauseNotificationsParametersInput() {
+    return this._autoPauseNotificationsParameters.internalValue;
   }
 
   // incident_urgency_rule - computed: false, optional: true, required: false
@@ -1364,7 +1500,9 @@ export class Service extends cdktf.TerraformResource {
       escalation_policy: cdktf.stringToTerraform(this._escalationPolicy),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      response_play: cdktf.stringToTerraform(this._responsePlay),
       alert_grouping_parameters: serviceAlertGroupingParametersToTerraform(this._alertGroupingParameters.internalValue),
+      auto_pause_notifications_parameters: serviceAutoPauseNotificationsParametersToTerraform(this._autoPauseNotificationsParameters.internalValue),
       incident_urgency_rule: serviceIncidentUrgencyRuleToTerraform(this._incidentUrgencyRule.internalValue),
       scheduled_actions: cdktf.listMapper(serviceScheduledActionsToTerraform, true)(this._scheduledActions.internalValue),
       support_hours: serviceSupportHoursToTerraform(this._supportHours.internalValue),

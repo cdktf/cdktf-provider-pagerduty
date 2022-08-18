@@ -41,6 +41,7 @@ export * from './data-pagerduty-tag';
 export * from './data-pagerduty-team';
 export * from './data-pagerduty-user';
 export * from './data-pagerduty-user-contact-method';
+export * from './data-pagerduty-users';
 export * from './data-pagerduty-vendor';
 export * from './pagerduty-provider';
 
