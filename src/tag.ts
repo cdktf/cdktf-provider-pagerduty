@@ -46,7 +46,7 @@ export class Tag extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_tag',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.6.0',
+        providerVersion: '2.6.1',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
