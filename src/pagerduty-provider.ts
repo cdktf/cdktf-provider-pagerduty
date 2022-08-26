@@ -61,7 +61,7 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'pagerduty',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.6.0',
+        providerVersion: '2.6.1',
         providerVersionConstraint: '~> 2.5'
       },
       terraformProviderSource: 'PagerDuty/pagerduty'

@@ -2179,7 +2179,7 @@ export class ServiceEventRule extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_service_event_rule',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.6.0',
+        providerVersion: '2.6.1',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
