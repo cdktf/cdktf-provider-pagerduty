@@ -8332,10 +8332,10 @@ const addonConfig: AddonConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.AddonConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -8392,10 +8392,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.AddonConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -8451,10 +8451,10 @@ const businessServiceConfig: BusinessServiceConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.BusinessServiceConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -8511,10 +8511,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.BusinessServiceConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -8606,10 +8606,10 @@ const businessServiceSubscriberConfig: BusinessServiceSubscriberConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.BusinessServiceSubscriberConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -8666,10 +8666,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.BusinessServiceSubscriberConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -8737,10 +8737,10 @@ const dataPagerdutyBusinessServiceConfig: DataPagerdutyBusinessServiceConfig = {
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyBusinessServiceConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -8797,10 +8797,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyBusinessServiceConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -8844,10 +8844,10 @@ const dataPagerdutyEscalationPolicyConfig: DataPagerdutyEscalationPolicyConfig =
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyEscalationPolicyConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -8904,10 +8904,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyEscalationPolicyConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -8951,10 +8951,10 @@ const dataPagerdutyEventOrchestrationConfig: DataPagerdutyEventOrchestrationConf
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyEventOrchestrationConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -9011,10 +9011,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyEventOrchestrationConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -9092,10 +9092,10 @@ const dataPagerdutyExtensionSchemaConfig: DataPagerdutyExtensionSchemaConfig = {
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchemaConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -9152,10 +9152,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyExtensionSchemaConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -9199,10 +9199,10 @@ const dataPagerdutyPriorityConfig: DataPagerdutyPriorityConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyPriorityConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -9259,10 +9259,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyPriorityConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -9308,10 +9308,10 @@ const dataPagerdutyRulesetConfig: DataPagerdutyRulesetConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyRulesetConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -9368,10 +9368,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyRulesetConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -9415,10 +9415,10 @@ const dataPagerdutyScheduleConfig: DataPagerdutyScheduleConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyScheduleConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -9475,10 +9475,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyScheduleConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -9522,10 +9522,10 @@ const dataPagerdutyServiceConfig: DataPagerdutyServiceConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -9582,10 +9582,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -9629,10 +9629,10 @@ const dataPagerdutyServiceIntegrationConfig: DataPagerdutyServiceIntegrationConf
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -9689,10 +9689,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyServiceIntegrationConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -9750,10 +9750,10 @@ const dataPagerdutyTagConfig: DataPagerdutyTagConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyTagConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -9810,10 +9810,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyTagConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -9859,10 +9859,10 @@ const dataPagerdutyTeamConfig: DataPagerdutyTeamConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyTeamConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -9919,10 +9919,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyTeamConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -9980,10 +9980,10 @@ const dataPagerdutyUserConfig: DataPagerdutyUserConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -10040,10 +10040,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -10087,10 +10087,10 @@ const dataPagerdutyUserContactMethodConfig: DataPagerdutyUserContactMethodConfig
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethodConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -10147,10 +10147,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUserContactMethodConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -10222,10 +10222,10 @@ const dataPagerdutyUsersConfig: DataPagerdutyUsersConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -10282,10 +10282,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyUsersConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -10339,10 +10339,10 @@ const dataPagerdutyVendorConfig: DataPagerdutyVendorConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyVendorConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -10399,10 +10399,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.DataPagerdutyVendorConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -10446,10 +10446,10 @@ const escalationPolicyConfig: EscalationPolicyConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -10506,10 +10506,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EscalationPolicyConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -10676,10 +10676,10 @@ const eventOrchestrationConfig: EventOrchestrationConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EventOrchestrationConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -10736,10 +10736,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EventOrchestrationConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -10887,10 +10887,10 @@ const eventOrchestrationRouterConfig: EventOrchestrationRouterConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EventOrchestrationRouterConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -10947,10 +10947,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EventOrchestrationRouterConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -11621,10 +11621,10 @@ const eventOrchestrationServiceConfig: EventOrchestrationServiceConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EventOrchestrationServiceConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -11681,10 +11681,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EventOrchestrationServiceConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -12511,10 +12511,10 @@ const eventOrchestrationUnroutedConfig: EventOrchestrationUnroutedConfig = { ...
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EventOrchestrationUnroutedConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -12571,10 +12571,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EventOrchestrationUnroutedConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -12959,10 +12959,10 @@ const eventRuleConfig: EventRuleConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EventRuleConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -13019,10 +13019,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.EventRuleConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -13090,10 +13090,10 @@ const extensionConfig: ExtensionConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -13150,10 +13150,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -13257,10 +13257,10 @@ const extensionServicenowConfig: ExtensionServicenowConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -13317,10 +13317,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ExtensionServicenowConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -13496,10 +13496,10 @@ const maintenanceWindowConfig: MaintenanceWindowConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindowConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -13556,10 +13556,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.MaintenanceWindowConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -13723,10 +13723,10 @@ const responsePlayConfig: ResponsePlayConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -13783,10 +13783,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ResponsePlayConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -14104,10 +14104,10 @@ const rulesetConfig: RulesetConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -14164,10 +14164,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -14701,10 +14701,10 @@ const rulesetRuleConfig: RulesetRuleConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -14761,10 +14761,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.RulesetRuleConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -15137,10 +15137,10 @@ const scheduleConfig: ScheduleConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -15197,10 +15197,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ScheduleConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -15586,10 +15586,10 @@ const serviceConfig: ServiceConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -15646,10 +15646,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -15859,10 +15859,10 @@ const serviceDependencyConfig: ServiceDependencyConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -15919,10 +15919,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceDependencyConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -16532,10 +16532,10 @@ const serviceEventRuleConfig: ServiceEventRuleConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -16592,10 +16592,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceEventRuleConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -17061,10 +17061,10 @@ const serviceIntegrationConfig: ServiceIntegrationConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegrationConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -17121,10 +17121,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.ServiceIntegrationConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -17800,10 +17800,10 @@ const slackConnectionConfig: SlackConnectionConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -17860,10 +17860,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.SlackConnectionConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -18015,10 +18015,10 @@ const tagAssignmentConfig: TagAssignmentConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TagAssignmentConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -18075,10 +18075,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TagAssignmentConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -18146,10 +18146,10 @@ const tagConfig: TagConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TagConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -18206,10 +18206,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TagConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -18253,10 +18253,10 @@ const teamConfig: TeamConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -18313,10 +18313,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -18384,10 +18384,10 @@ const teamMembershipConfig: TeamMembershipConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamMembershipConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -18444,10 +18444,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.TeamMembershipConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -18515,10 +18515,10 @@ const userConfig: UserConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -18575,10 +18575,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -18706,10 +18706,10 @@ const userContactMethodConfig: UserContactMethodConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserContactMethodConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -18766,10 +18766,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserContactMethodConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -18873,10 +18873,10 @@ const userNotificationRuleConfig: UserNotificationRuleConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRuleConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -18933,10 +18933,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.UserNotificationRuleConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
@@ -19016,10 +19016,10 @@ const webhookSubscriptionConfig: WebhookSubscriptionConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.WebhookSubscriptionConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* [`cdktf.ISSHProvisionerConnection`](#cdktf.ISSHProvisionerConnection) | [`cdktf.IWinrmProvisionerConnection`](#cdktf.IWinrmProvisionerConnection)
+- *Type:* [`cdktf.SSHProvisionerConnection`](#cdktf.SSHProvisionerConnection) | [`cdktf.WinrmProvisionerConnection`](#cdktf.WinrmProvisionerConnection)
 
 ---
 
@@ -19076,10 +19076,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="@cdktf/provider-pagerduty.WebhookSubscriptionConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* [`cdktf.IFileProvisioner`](#cdktf.IFileProvisioner) | [`cdktf.ILocalExecProvisioner`](#cdktf.ILocalExecProvisioner) | [`cdktf.IRemoteExecProvisioner`](#cdktf.IRemoteExecProvisioner)[]
+- *Type:* [`cdktf.FileProvisioner`](#cdktf.FileProvisioner) | [`cdktf.LocalExecProvisioner`](#cdktf.LocalExecProvisioner) | [`cdktf.RemoteExecProvisioner`](#cdktf.RemoteExecProvisioner)[]
 
 ---
 
