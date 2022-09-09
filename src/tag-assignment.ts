@@ -54,7 +54,7 @@ export class TagAssignment extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_tag_assignment',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.6.1',
+        providerVersion: '2.6.2',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
