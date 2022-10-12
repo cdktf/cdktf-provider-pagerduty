@@ -565,7 +565,7 @@ export class Schedule extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_schedule',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.6.2',
+        providerVersion: '2.6.3',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
