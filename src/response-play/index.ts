@@ -712,7 +712,7 @@ export class ResponsePlay extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_response_play',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.6.3',
+        providerVersion: '2.6.4',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
