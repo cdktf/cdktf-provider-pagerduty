@@ -90,7 +90,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_extension_servicenow',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.6.4',
+        providerVersion: '2.7.0',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
