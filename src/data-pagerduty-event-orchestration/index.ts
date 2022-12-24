@@ -202,7 +202,7 @@ export class DataPagerdutyEventOrchestration extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_event_orchestration',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.7.0',
+        providerVersion: '2.8.1',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,

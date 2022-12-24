@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/pagerduty/r/team_membership
+// https://www.terraform.io/docs/providers/pagerduty/r/automation_actions_action_team_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,52 +6,48 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface TeamMembershipConfig extends cdktf.TerraformMetaArguments {
+export interface AutomationActionsActionTeamAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team_membership#id TeamMembership#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/automation_actions_action_team_association#action_id AutomationActionsActionTeamAssociation#action_id}
+  */
+  readonly actionId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/automation_actions_action_team_association#id AutomationActionsActionTeamAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team_membership#role TeamMembership#role}
-  */
-  readonly role?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team_membership#team_id TeamMembership#team_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/automation_actions_action_team_association#team_id AutomationActionsActionTeamAssociation#team_id}
   */
   readonly teamId: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/team_membership#user_id TeamMembership#user_id}
-  */
-  readonly userId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/team_membership pagerduty_team_membership}
+* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/automation_actions_action_team_association pagerduty_automation_actions_action_team_association}
 */
-export class TeamMembership extends cdktf.TerraformResource {
+export class AutomationActionsActionTeamAssociation extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "pagerduty_team_membership";
+  public static readonly tfResourceType = "pagerduty_automation_actions_action_team_association";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/team_membership pagerduty_team_membership} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/r/automation_actions_action_team_association pagerduty_automation_actions_action_team_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options TeamMembershipConfig
+  * @param options AutomationActionsActionTeamAssociationConfig
   */
-  public constructor(scope: Construct, id: string, config: TeamMembershipConfig) {
+  public constructor(scope: Construct, id: string, config: AutomationActionsActionTeamAssociationConfig) {
     super(scope, id, {
-      terraformResourceType: 'pagerduty_team_membership',
+      terraformResourceType: 'pagerduty_automation_actions_action_team_association',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
         providerVersion: '2.8.1',
@@ -65,15 +61,27 @@ export class TeamMembership extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._actionId = config.actionId;
     this._id = config.id;
-    this._role = config.role;
     this._teamId = config.teamId;
-    this._userId = config.userId;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // action_id - computed: false, optional: false, required: true
+  private _actionId?: string; 
+  public get actionId() {
+    return this.getStringAttribute('action_id');
+  }
+  public set actionId(value: string) {
+    this._actionId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionIdInput() {
+    return this._actionId;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -91,22 +99,6 @@ export class TeamMembership extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // role - computed: false, optional: true, required: false
-  private _role?: string; 
-  public get role() {
-    return this.getStringAttribute('role');
-  }
-  public set role(value: string) {
-    this._role = value;
-  }
-  public resetRole() {
-    this._role = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get roleInput() {
-    return this._role;
-  }
-
   // team_id - computed: false, optional: false, required: true
   private _teamId?: string; 
   public get teamId() {
@@ -120,29 +112,15 @@ export class TeamMembership extends cdktf.TerraformResource {
     return this._teamId;
   }
 
-  // user_id - computed: false, optional: false, required: true
-  private _userId?: string; 
-  public get userId() {
-    return this.getStringAttribute('user_id');
-  }
-  public set userId(value: string) {
-    this._userId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get userIdInput() {
-    return this._userId;
-  }
-
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      action_id: cdktf.stringToTerraform(this._actionId),
       id: cdktf.stringToTerraform(this._id),
-      role: cdktf.stringToTerraform(this._role),
       team_id: cdktf.stringToTerraform(this._teamId),
-      user_id: cdktf.stringToTerraform(this._userId),
     };
   }
 }
