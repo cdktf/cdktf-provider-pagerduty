@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/pagerduty/d/vendor
+// https://www.terraform.io/docs/providers/pagerduty/d/incident_workflow
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,44 +6,44 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataPagerdutyVendorConfig extends cdktf.TerraformMetaArguments {
+export interface DataPagerdutyIncidentWorkflowConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor#id DataPagerdutyVendor#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/incident_workflow#id DataPagerdutyIncidentWorkflow#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor#name DataPagerdutyVendor#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/incident_workflow#name DataPagerdutyIncidentWorkflow#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor pagerduty_vendor}
+* Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/incident_workflow pagerduty_incident_workflow}
 */
-export class DataPagerdutyVendor extends cdktf.TerraformDataSource {
+export class DataPagerdutyIncidentWorkflow extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "pagerduty_vendor";
+  public static readonly tfResourceType = "pagerduty_incident_workflow";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/vendor pagerduty_vendor} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/pagerduty/d/incident_workflow pagerduty_incident_workflow} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataPagerdutyVendorConfig
+  * @param options DataPagerdutyIncidentWorkflowConfig
   */
-  public constructor(scope: Construct, id: string, config: DataPagerdutyVendorConfig) {
+  public constructor(scope: Construct, id: string, config: DataPagerdutyIncidentWorkflowConfig) {
     super(scope, id, {
-      terraformResourceType: 'pagerduty_vendor',
+      terraformResourceType: 'pagerduty_incident_workflow',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
         providerVersion: '2.8.1',
@@ -64,6 +64,11 @@ export class DataPagerdutyVendor extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -92,11 +97,6 @@ export class DataPagerdutyVendor extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
-  }
-
-  // type - computed: true, optional: false, required: false
-  public get type() {
-    return this.getStringAttribute('type');
   }
 
   // =========
