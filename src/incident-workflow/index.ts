@@ -23,6 +23,10 @@ export interface IncidentWorkflowConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/incident_workflow#team IncidentWorkflow#team}
+  */
+  readonly team?: string;
+  /**
   * step block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/incident_workflow#step IncidentWorkflow#step}
@@ -331,7 +335,7 @@ export class IncidentWorkflow extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_incident_workflow',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.8.1',
+        providerVersion: '2.9.1',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
@@ -345,6 +349,7 @@ export class IncidentWorkflow extends cdktf.TerraformResource {
     this._description = config.description;
     this._id = config.id;
     this._name = config.name;
+    this._team = config.team;
     this._step.internalValue = config.step;
   }
 
@@ -397,6 +402,22 @@ export class IncidentWorkflow extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // team - computed: false, optional: true, required: false
+  private _team?: string; 
+  public get team() {
+    return this.getStringAttribute('team');
+  }
+  public set team(value: string) {
+    this._team = value;
+  }
+  public resetTeam() {
+    this._team = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get teamInput() {
+    return this._team;
+  }
+
   // step - computed: false, optional: true, required: false
   private _step = new IncidentWorkflowStepList(this, "step", false);
   public get step() {
@@ -422,6 +443,7 @@ export class IncidentWorkflow extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      team: cdktf.stringToTerraform(this._team),
       step: cdktf.listMapper(incidentWorkflowStepToTerraform, true)(this._step.internalValue),
     };
   }

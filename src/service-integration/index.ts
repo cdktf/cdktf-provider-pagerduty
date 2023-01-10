@@ -1114,7 +1114,7 @@ export class ServiceIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_service_integration',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.8.1',
+        providerVersion: '2.9.1',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
