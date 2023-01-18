@@ -66,7 +66,7 @@ export class Extension extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_extension',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.9.1',
+        providerVersion: '2.9.2',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
