@@ -50,7 +50,7 @@ export class Addon extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_addon',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.9.1',
+        providerVersion: '2.9.2',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
