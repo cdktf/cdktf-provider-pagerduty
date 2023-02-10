@@ -40,6 +40,7 @@ export * as dataPagerdutyAutomationActionsRunner from './data-pagerduty-automati
 export * as dataPagerdutyBusinessService from './data-pagerduty-business-service';
 export * as dataPagerdutyEscalationPolicy from './data-pagerduty-escalation-policy';
 export * as dataPagerdutyEventOrchestration from './data-pagerduty-event-orchestration';
+export * as dataPagerdutyEventOrchestrations from './data-pagerduty-event-orchestrations';
 export * as dataPagerdutyExtensionSchema from './data-pagerduty-extension-schema';
 export * as dataPagerdutyIncidentWorkflow from './data-pagerduty-incident-workflow';
 export * as dataPagerdutyPriority from './data-pagerduty-priority';
