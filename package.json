@@ -149,7 +149,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/pagerduty/pagerduty",
-      "version": "2.9.3"
+      "version": "2.10.2"
     }
   },
   "resolutions": {
