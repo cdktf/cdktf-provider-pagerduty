@@ -58,7 +58,7 @@ export class MaintenanceWindow extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_maintenance_window',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.10.2',
+        providerVersion: '2.11.0',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,

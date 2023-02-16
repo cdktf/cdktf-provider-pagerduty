@@ -1540,7 +1540,7 @@ export class EventOrchestrationUnrouted extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_event_orchestration_unrouted',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.10.2',
+        providerVersion: '2.11.0',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
