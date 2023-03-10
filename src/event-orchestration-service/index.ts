@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface EventOrchestrationServiceConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_orchestration_service#enable_event_orchestration_for_service EventOrchestrationService#enable_event_orchestration_for_service}
+  */
+  readonly enableEventOrchestrationForService?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/event_orchestration_service#id EventOrchestrationService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -2832,7 +2836,7 @@ export class EventOrchestrationService extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_event_orchestration_service',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.11.0',
+        providerVersion: '2.11.1',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
@@ -2843,6 +2847,7 @@ export class EventOrchestrationService extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._enableEventOrchestrationForService = config.enableEventOrchestrationForService;
     this._id = config.id;
     this._service = config.service;
     this._catchAll.internalValue = config.catchAll;
@@ -2852,6 +2857,22 @@ export class EventOrchestrationService extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // enable_event_orchestration_for_service - computed: false, optional: true, required: false
+  private _enableEventOrchestrationForService?: boolean | cdktf.IResolvable; 
+  public get enableEventOrchestrationForService() {
+    return this.getBooleanAttribute('enable_event_orchestration_for_service');
+  }
+  public set enableEventOrchestrationForService(value: boolean | cdktf.IResolvable) {
+    this._enableEventOrchestrationForService = value;
+  }
+  public resetEnableEventOrchestrationForService() {
+    this._enableEventOrchestrationForService = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableEventOrchestrationForServiceInput() {
+    return this._enableEventOrchestrationForService;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -2914,6 +2935,7 @@ export class EventOrchestrationService extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      enable_event_orchestration_for_service: cdktf.booleanToTerraform(this._enableEventOrchestrationForService),
       id: cdktf.stringToTerraform(this._id),
       service: cdktf.stringToTerraform(this._service),
       catch_all: eventOrchestrationServiceCatchAllToTerraform(this._catchAll.internalValue),

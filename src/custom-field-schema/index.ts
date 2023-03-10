@@ -50,7 +50,7 @@ export class CustomFieldSchema extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_custom_field_schema',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.11.0',
+        providerVersion: '2.11.1',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
