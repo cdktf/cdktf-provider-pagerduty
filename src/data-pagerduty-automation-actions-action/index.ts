@@ -98,6 +98,11 @@ export class DataPagerdutyAutomationActionsActionActionDataReferenceOutputRefere
     return this.getStringAttribute('process_automation_job_id');
   }
 
+  // process_automation_node_filter - computed: true, optional: false, required: false
+  public get processAutomationNodeFilter() {
+    return this.getStringAttribute('process_automation_node_filter');
+  }
+
   // script - computed: true, optional: false, required: false
   public get script() {
     return this.getStringAttribute('script');
@@ -149,7 +154,7 @@ export class DataPagerdutyAutomationActionsAction extends cdktf.TerraformDataSou
       terraformResourceType: 'pagerduty_automation_actions_action',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.11.1',
+        providerVersion: '2.11.2',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,

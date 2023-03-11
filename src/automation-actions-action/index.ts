@@ -71,6 +71,10 @@ export interface AutomationActionsActionActionDataReference {
   */
   readonly processAutomationJobId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/automation_actions_action#process_automation_node_filter AutomationActionsAction#process_automation_node_filter}
+  */
+  readonly processAutomationNodeFilter?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/automation_actions_action#script AutomationActionsAction#script}
   */
   readonly script?: string;
@@ -85,6 +89,7 @@ export function automationActionsActionActionDataReferenceToTerraform(struct?: A
     invocation_command: cdktf.stringToTerraform(struct!.invocationCommand),
     process_automation_job_arguments: cdktf.stringToTerraform(struct!.processAutomationJobArguments),
     process_automation_job_id: cdktf.stringToTerraform(struct!.processAutomationJobId),
+    process_automation_node_filter: cdktf.stringToTerraform(struct!.processAutomationNodeFilter),
     script: cdktf.stringToTerraform(struct!.script),
   }
 }
@@ -115,6 +120,10 @@ export class AutomationActionsActionActionDataReferenceOutputReference extends c
       hasAnyValues = true;
       internalValueResult.processAutomationJobId = this._processAutomationJobId;
     }
+    if (this._processAutomationNodeFilter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.processAutomationNodeFilter = this._processAutomationNodeFilter;
+    }
     if (this._script !== undefined) {
       hasAnyValues = true;
       internalValueResult.script = this._script;
@@ -128,6 +137,7 @@ export class AutomationActionsActionActionDataReferenceOutputReference extends c
       this._invocationCommand = undefined;
       this._processAutomationJobArguments = undefined;
       this._processAutomationJobId = undefined;
+      this._processAutomationNodeFilter = undefined;
       this._script = undefined;
     }
     else {
@@ -135,6 +145,7 @@ export class AutomationActionsActionActionDataReferenceOutputReference extends c
       this._invocationCommand = value.invocationCommand;
       this._processAutomationJobArguments = value.processAutomationJobArguments;
       this._processAutomationJobId = value.processAutomationJobId;
+      this._processAutomationNodeFilter = value.processAutomationNodeFilter;
       this._script = value.script;
     }
   }
@@ -187,6 +198,22 @@ export class AutomationActionsActionActionDataReferenceOutputReference extends c
     return this._processAutomationJobId;
   }
 
+  // process_automation_node_filter - computed: false, optional: true, required: false
+  private _processAutomationNodeFilter?: string; 
+  public get processAutomationNodeFilter() {
+    return this.getStringAttribute('process_automation_node_filter');
+  }
+  public set processAutomationNodeFilter(value: string) {
+    this._processAutomationNodeFilter = value;
+  }
+  public resetProcessAutomationNodeFilter() {
+    this._processAutomationNodeFilter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get processAutomationNodeFilterInput() {
+    return this._processAutomationNodeFilter;
+  }
+
   // script - computed: false, optional: true, required: false
   private _script?: string; 
   public get script() {
@@ -230,7 +257,7 @@ export class AutomationActionsAction extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_automation_actions_action',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.11.1',
+        providerVersion: '2.11.2',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,

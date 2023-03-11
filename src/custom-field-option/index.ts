@@ -54,7 +54,7 @@ export class CustomFieldOption extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_custom_field_option',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.11.1',
+        providerVersion: '2.11.2',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
