@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/automati
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/automationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/automationactionsaction"
 
 automationactionsaction.NewAutomationActionsAction(scope Construct, id *string, config AutomationActionsActionConfig) AutomationActionsAction
 ```
@@ -335,7 +335,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/automationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/automationactionsaction"
 
 automationactionsaction.AutomationActionsAction_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/automationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/automationactionsaction"
 
 automationactionsaction.AutomationActionsAction_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ automationactionsaction.AutomationActionsAction_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/automationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/automationactionsaction"
 
 automationactionsaction.AutomationActionsAction_IsTerraformResource(x interface{}) *bool
 ```
@@ -822,12 +822,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/automationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/automationactionsaction"
 
 &automationactionsaction.AutomationActionsActionActionDataReference {
 	InvocationCommand: *string,
 	ProcessAutomationJobArguments: *string,
 	ProcessAutomationJobId: *string,
+	ProcessAutomationNodeFilter: *string,
 	Script: *string,
 }
 ```
@@ -839,6 +840,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/automationacti
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.property.invocationCommand">InvocationCommand</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/automation_actions_action#invocation_command AutomationActionsAction#invocation_command}. |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.property.processAutomationJobArguments">ProcessAutomationJobArguments</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/automation_actions_action#process_automation_job_arguments AutomationActionsAction#process_automation_job_arguments}. |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.property.processAutomationJobId">ProcessAutomationJobId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/automation_actions_action#process_automation_job_id AutomationActionsAction#process_automation_job_id}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.property.processAutomationNodeFilter">ProcessAutomationNodeFilter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/automation_actions_action#process_automation_node_filter AutomationActionsAction#process_automation_node_filter}. |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.property.script">Script</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/automation_actions_action#script AutomationActionsAction#script}. |
 
 ---
@@ -879,6 +881,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ---
 
+##### `ProcessAutomationNodeFilter`<sup>Optional</sup> <a name="ProcessAutomationNodeFilter" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.property.processAutomationNodeFilter"></a>
+
+```go
+ProcessAutomationNodeFilter *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/automation_actions_action#process_automation_node_filter AutomationActionsAction#process_automation_node_filter}.
+
+---
+
 ##### `Script`<sup>Optional</sup> <a name="Script" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.property.script"></a>
 
 ```go
@@ -896,7 +910,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/automationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/automationactionsaction"
 
 &automationactionsaction.AutomationActionsActionConfig {
 	Connection: interface{},
@@ -906,7 +920,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/automationacti
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	ActionDataReference: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5.automationActionsAction.AutomationActionsActionActionDataReference,
+	ActionDataReference: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.automationActionsAction.AutomationActionsActionActionDataReference,
 	ActionType: *string,
 	Name: *string,
 	ActionClassification: *string,
@@ -1159,7 +1173,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/automationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/automationactionsaction"
 
 automationactionsaction.NewAutomationActionsActionActionDataReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutomationActionsActionActionDataReferenceOutputReference
 ```
@@ -1207,6 +1221,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.resetInvocationCommand">ResetInvocationCommand</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.resetProcessAutomationJobArguments">ResetProcessAutomationJobArguments</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.resetProcessAutomationJobId">ResetProcessAutomationJobId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.resetProcessAutomationNodeFilter">ResetProcessAutomationNodeFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.resetScript">ResetScript</a></code> | *No description.* |
 
 ---
@@ -1379,6 +1394,12 @@ func ResetProcessAutomationJobArguments()
 func ResetProcessAutomationJobId()
 ```
 
+##### `ResetProcessAutomationNodeFilter` <a name="ResetProcessAutomationNodeFilter" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.resetProcessAutomationNodeFilter"></a>
+
+```go
+func ResetProcessAutomationNodeFilter()
+```
+
 ##### `ResetScript` <a name="ResetScript" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.resetScript"></a>
 
 ```go
@@ -1395,10 +1416,12 @@ func ResetScript()
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.property.invocationCommandInput">InvocationCommandInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.property.processAutomationJobArgumentsInput">ProcessAutomationJobArgumentsInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.property.processAutomationJobIdInput">ProcessAutomationJobIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.property.processAutomationNodeFilterInput">ProcessAutomationNodeFilterInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.property.scriptInput">ScriptInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.property.invocationCommand">InvocationCommand</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.property.processAutomationJobArguments">ProcessAutomationJobArguments</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.property.processAutomationJobId">ProcessAutomationJobId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.property.processAutomationNodeFilter">ProcessAutomationNodeFilter</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.property.script">Script</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference">AutomationActionsActionActionDataReference</a></code> | *No description.* |
 
@@ -1458,6 +1481,16 @@ func ProcessAutomationJobIdInput() *string
 
 ---
 
+##### `ProcessAutomationNodeFilterInput`<sup>Optional</sup> <a name="ProcessAutomationNodeFilterInput" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.property.processAutomationNodeFilterInput"></a>
+
+```go
+func ProcessAutomationNodeFilterInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ScriptInput`<sup>Optional</sup> <a name="ScriptInput" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.property.scriptInput"></a>
 
 ```go
@@ -1492,6 +1525,16 @@ func ProcessAutomationJobArguments() *string
 
 ```go
 func ProcessAutomationJobId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ProcessAutomationNodeFilter`<sup>Required</sup> <a name="ProcessAutomationNodeFilter" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.property.processAutomationNodeFilter"></a>
+
+```go
+func ProcessAutomationNodeFilter() *string
 ```
 
 - *Type:* *string
