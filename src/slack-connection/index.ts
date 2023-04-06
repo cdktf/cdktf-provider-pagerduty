@@ -216,7 +216,7 @@ export class SlackConnection extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_slack_connection',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.11.2',
+        providerVersion: '2.11.3',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,

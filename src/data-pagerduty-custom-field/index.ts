@@ -46,7 +46,7 @@ export class DataPagerdutyCustomField extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_custom_field',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.11.2',
+        providerVersion: '2.11.3',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
