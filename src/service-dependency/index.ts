@@ -407,7 +407,7 @@ export class ServiceDependency extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_service_dependency',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.11.2',
+        providerVersion: '2.11.3',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
