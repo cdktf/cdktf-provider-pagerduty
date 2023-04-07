@@ -346,6 +346,12 @@ dataPagerdutyService.DataPagerdutyService.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.acknowledgementTimeout">acknowledgementTimeout</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.alertCreation">alertCreation</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.autoResolveTimeout">autoResolveTimeout</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.escalationPolicy">escalationPolicy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.teams">teams</a></code> | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList">DataPagerdutyServiceTeamsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
@@ -473,6 +479,66 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `acknowledgementTimeout`<sup>Required</sup> <a name="acknowledgementTimeout" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.acknowledgementTimeout"></a>
+
+```typescript
+public readonly acknowledgementTimeout: number;
+```
+
+- *Type:* number
+
+---
+
+##### `alertCreation`<sup>Required</sup> <a name="alertCreation" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.alertCreation"></a>
+
+```typescript
+public readonly alertCreation: string;
+```
+
+- *Type:* string
+
+---
+
+##### `autoResolveTimeout`<sup>Required</sup> <a name="autoResolveTimeout" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.autoResolveTimeout"></a>
+
+```typescript
+public readonly autoResolveTimeout: number;
+```
+
+- *Type:* number
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `escalationPolicy`<sup>Required</sup> <a name="escalationPolicy" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.escalationPolicy"></a>
+
+```typescript
+public readonly escalationPolicy: string;
+```
+
+- *Type:* string
+
+---
+
+##### `teams`<sup>Required</sup> <a name="teams" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.property.teams"></a>
+
+```typescript
+public readonly teams: DataPagerdutyServiceTeamsList;
+```
+
+- *Type:* <a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList">DataPagerdutyServiceTeamsList</a>
 
 ---
 
@@ -666,6 +732,439 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### DataPagerdutyServiceTeams <a name="DataPagerdutyServiceTeams" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeams"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeams.Initializer"></a>
+
+```typescript
+import { dataPagerdutyService } from '@cdktf/provider-pagerduty'
+
+const dataPagerdutyServiceTeams: dataPagerdutyService.DataPagerdutyServiceTeams = { ... }
+```
+
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### DataPagerdutyServiceTeamsList <a name="DataPagerdutyServiceTeamsList" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.Initializer"></a>
+
+```typescript
+import { dataPagerdutyService } from '@cdktf/provider-pagerduty'
+
+new dataPagerdutyService.DataPagerdutyServiceTeamsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.get"></a>
+
+```typescript
+public get(index: number): DataPagerdutyServiceTeamsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataPagerdutyServiceTeamsOutputReference <a name="DataPagerdutyServiceTeamsOutputReference" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.Initializer"></a>
+
+```typescript
+import { dataPagerdutyService } from '@cdktf/provider-pagerduty'
+
+new dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeams">DataPagerdutyServiceTeams</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataPagerdutyServiceTeams;
+```
+
+- *Type:* <a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeams">DataPagerdutyServiceTeams</a>
 
 ---
 

@@ -19,6 +19,75 @@ export interface DataPagerdutyServiceConfig extends cdktf.TerraformMetaArguments
   */
   readonly name: string;
 }
+export interface DataPagerdutyServiceTeams {
+}
+
+export function dataPagerdutyServiceTeamsToTerraform(struct?: DataPagerdutyServiceTeams): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataPagerdutyServiceTeamsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataPagerdutyServiceTeams | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataPagerdutyServiceTeams | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class DataPagerdutyServiceTeamsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataPagerdutyServiceTeamsOutputReference {
+    return new DataPagerdutyServiceTeamsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/service pagerduty_service}
@@ -46,7 +115,7 @@ export class DataPagerdutyService extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_service',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.11.3',
+        providerVersion: '2.12.1',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
@@ -64,6 +133,31 @@ export class DataPagerdutyService extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // acknowledgement_timeout - computed: true, optional: false, required: false
+  public get acknowledgementTimeout() {
+    return this.getNumberAttribute('acknowledgement_timeout');
+  }
+
+  // alert_creation - computed: true, optional: false, required: false
+  public get alertCreation() {
+    return this.getStringAttribute('alert_creation');
+  }
+
+  // auto_resolve_timeout - computed: true, optional: false, required: false
+  public get autoResolveTimeout() {
+    return this.getNumberAttribute('auto_resolve_timeout');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // escalation_policy - computed: true, optional: false, required: false
+  public get escalationPolicy() {
+    return this.getStringAttribute('escalation_policy');
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -92,6 +186,12 @@ export class DataPagerdutyService extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // teams - computed: true, optional: false, required: false
+  private _teams = new DataPagerdutyServiceTeamsList(this, "teams", false);
+  public get teams() {
+    return this._teams;
   }
 
   // type - computed: true, optional: false, required: false

@@ -50,7 +50,7 @@ export class AutomationActionsRunnerTeamAssociation extends cdktf.TerraformResou
       terraformResourceType: 'pagerduty_automation_actions_runner_team_association',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.11.3',
+        providerVersion: '2.12.1',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,

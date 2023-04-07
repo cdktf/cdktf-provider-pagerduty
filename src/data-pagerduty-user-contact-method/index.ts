@@ -58,7 +58,7 @@ export class DataPagerdutyUserContactMethod extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_user_contact_method',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.11.3',
+        providerVersion: '2.12.1',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
