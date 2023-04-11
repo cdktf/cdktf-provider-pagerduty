@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_f
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/customfieldschema"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfieldschema"
 
 customfieldschema.NewCustomFieldSchema(scope Construct, id *string, config CustomFieldSchemaConfig) CustomFieldSchema
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/customfieldschema"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfieldschema"
 
 customfieldschema.CustomFieldSchema_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/customfieldschema"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfieldschema"
 
 customfieldschema.CustomFieldSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ customfieldschema.CustomFieldSchema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/customfieldschema"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfieldschema"
 
 customfieldschema.CustomFieldSchema_IsTerraformResource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/customfieldschema"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfieldschema"
 
 &customfieldschema.CustomFieldSchemaConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_f
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.customField.CustomField.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/customfield"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfield"
 
 customfield.NewCustomField(scope Construct, id *string, config CustomFieldConfig) CustomField
 ```
@@ -294,7 +294,7 @@ func ResetMultiValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.customField.CustomField.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/customfield"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfield"
 
 customfield.CustomField_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.customField.CustomField.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/customfield"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfield"
 
 customfield.CustomField_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ customfield.CustomField_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.customField.CustomField.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/customfield"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfield"
 
 customfield.CustomField_IsTerraformResource(x interface{}) *bool
 ```
@@ -693,7 +693,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.customField.CustomFieldConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/customfield"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfield"
 
 &customfield.CustomFieldConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/escalati
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyEscalationPolicy.DataPagerdutyEscalationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/datapagerdutyescalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutyescalationpolicy"
 
 datapagerdutyescalationpolicy.NewDataPagerdutyEscalationPolicy(scope Construct, id *string, config DataPagerdutyEscalationPolicyConfig) DataPagerdutyEscalationPolicy
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyEscalationPolicy.DataPagerdutyEscalationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/datapagerdutyescalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutyescalationpolicy"
 
 datapagerdutyescalationpolicy.DataPagerdutyEscalationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyEscalationPolicy.DataPagerdutyEscalationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/datapagerdutyescalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutyescalationpolicy"
 
 datapagerdutyescalationpolicy.DataPagerdutyEscalationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datapagerdutyescalationpolicy.DataPagerdutyEscalationPolicy_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyEscalationPolicy.DataPagerdutyEscalationPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/datapagerdutyescalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutyescalationpolicy"
 
 datapagerdutyescalationpolicy.DataPagerdutyEscalationPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyEscalationPolicy.DataPagerdutyEscalationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v5/datapagerdutyescalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutyescalationpolicy"
 
 &datapagerdutyescalationpolicy.DataPagerdutyEscalationPolicyConfig {
 	Connection: interface{},
