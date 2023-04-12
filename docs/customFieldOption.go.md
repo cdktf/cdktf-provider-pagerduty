@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_f
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.customFieldOption.CustomFieldOption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/customfieldoption"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/customfieldoption"
 
 customfieldoption.NewCustomFieldOption(scope Construct, id *string, config CustomFieldOptionConfig) CustomFieldOption
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.customFieldOption.CustomFieldOption.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/customfieldoption"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/customfieldoption"
 
 customfieldoption.CustomFieldOption_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.customFieldOption.CustomFieldOption.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/customfieldoption"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/customfieldoption"
 
 customfieldoption.CustomFieldOption_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ customfieldoption.CustomFieldOption_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.customFieldOption.CustomFieldOption.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/customfieldoption"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/customfieldoption"
 
 customfieldoption.CustomFieldOption_IsTerraformResource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.customFieldOption.CustomFieldOptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/customfieldoption"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/customfieldoption"
 
 &customfieldoption.CustomFieldOptionConfig {
 	Connection: interface{},
