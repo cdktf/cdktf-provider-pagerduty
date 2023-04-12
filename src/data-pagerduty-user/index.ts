@@ -46,7 +46,7 @@ export class DataPagerdutyUser extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_user',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.12.1',
+        providerVersion: '2.12.2',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
