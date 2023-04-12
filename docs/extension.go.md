@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/extensio
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.extension.Extension.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/extension"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/extension"
 
 extension.NewExtension(scope Construct, id *string, config ExtensionConfig) Extension
 ```
@@ -301,7 +301,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.extension.Extension.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/extension"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/extension"
 
 extension.Extension_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.extension.Extension.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/extension"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/extension"
 
 extension.Extension_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ extension.Extension_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.extension.Extension.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/extension"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/extension"
 
 extension.Extension_IsTerraformResource(x interface{}) *bool
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.extension.ExtensionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/extension"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/extension"
 
 &extension.ExtensionConfig {
 	Connection: interface{},

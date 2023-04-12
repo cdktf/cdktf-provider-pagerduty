@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/custom_f
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/datapagerdutycustomfieldschema"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutycustomfieldschema"
 
 datapagerdutycustomfieldschema.NewDataPagerdutyCustomFieldSchema(scope Construct, id *string, config DataPagerdutyCustomFieldSchemaConfig) DataPagerdutyCustomFieldSchema
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/datapagerdutycustomfieldschema"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutycustomfieldschema"
 
 datapagerdutycustomfieldschema.DataPagerdutyCustomFieldSchema_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/datapagerdutycustomfieldschema"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutycustomfieldschema"
 
 datapagerdutycustomfieldschema.DataPagerdutyCustomFieldSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datapagerdutycustomfieldschema.DataPagerdutyCustomFieldSchema_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchema.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/datapagerdutycustomfieldschema"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutycustomfieldschema"
 
 datapagerdutycustomfieldschema.DataPagerdutyCustomFieldSchema_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/datapagerdutycustomfieldschema"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutycustomfieldschema"
 
 &datapagerdutycustomfieldschema.DataPagerdutyCustomFieldSchemaConfig {
 	Connection: interface{},
