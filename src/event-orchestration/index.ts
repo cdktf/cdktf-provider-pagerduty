@@ -157,6 +157,11 @@ export class EventOrchestrationIntegrationOutputReference extends cdktf.ComplexO
     return this.getStringAttribute('id');
   }
 
+  // label - computed: true, optional: false, required: false
+  public get label() {
+    return this.getStringAttribute('label');
+  }
+
   // parameters - computed: true, optional: false, required: false
   private _parameters = new EventOrchestrationIntegrationParametersList(this, "parameters", false);
   public get parameters() {
@@ -210,7 +215,7 @@ export class EventOrchestration extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_event_orchestration',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.12.2',
+        providerVersion: '2.13.0',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
