@@ -133,6 +133,11 @@ export class DataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationOutpu
     return this.getStringAttribute('id');
   }
 
+  // label - computed: true, optional: false, required: false
+  public get label() {
+    return this.getStringAttribute('label');
+  }
+
   // parameters - computed: true, optional: false, required: false
   private _parameters = new DataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationParametersList(this, "parameters", false);
   public get parameters() {
@@ -260,7 +265,7 @@ export class DataPagerdutyEventOrchestrations extends cdktf.TerraformDataSource 
       terraformResourceType: 'pagerduty_event_orchestrations',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.12.2',
+        providerVersion: '2.13.0',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
