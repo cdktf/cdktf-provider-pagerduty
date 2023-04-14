@@ -25,6 +25,8 @@ The following submodules are available:
 - [dataPagerdutyEventOrchestrations](./dataPagerdutyEventOrchestrations.java.md)
 - [dataPagerdutyExtensionSchema](./dataPagerdutyExtensionSchema.java.md)
 - [dataPagerdutyIncidentWorkflow](./dataPagerdutyIncidentWorkflow.java.md)
+- [dataPagerdutyLicense](./dataPagerdutyLicense.java.md)
+- [dataPagerdutyLicenses](./dataPagerdutyLicenses.java.md)
 - [dataPagerdutyPriority](./dataPagerdutyPriority.java.md)
 - [dataPagerdutyRuleset](./dataPagerdutyRuleset.java.md)
 - [dataPagerdutySchedule](./dataPagerdutySchedule.java.md)

@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetJobTitle">ResetJobTitle</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.user.User.resetLicense">ResetLicense</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetRole">ResetRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetTeams">ResetTeams</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetTimeZone">ResetTimeZone</a></code> | *No description.* |
@@ -284,6 +285,12 @@ func ResetId()
 func ResetJobTitle()
 ```
 
+##### `ResetLicense` <a name="ResetLicense" id="@cdktf/provider-pagerduty.user.User.resetLicense"></a>
+
+```go
+func ResetLicense()
+```
+
 ##### `ResetRole` <a name="ResetRole" id="@cdktf/provider-pagerduty.user.User.resetRole"></a>
 
 ```go
@@ -398,6 +405,7 @@ user.User_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.emailInput">EmailInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.jobTitleInput">JobTitleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.user.User.property.licenseInput">LicenseInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.roleInput">RoleInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.teamsInput">TeamsInput</a></code> | <code>*[]*string</code> | *No description.* |
@@ -407,6 +415,7 @@ user.User_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.email">Email</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.jobTitle">JobTitle</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.user.User.property.license">License</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.role">Role</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.teams">Teams</a></code> | <code>*[]*string</code> | *No description.* |
@@ -636,6 +645,16 @@ func JobTitleInput() *string
 
 ---
 
+##### `LicenseInput`<sup>Optional</sup> <a name="LicenseInput" id="@cdktf/provider-pagerduty.user.User.property.licenseInput"></a>
+
+```go
+func LicenseInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-pagerduty.user.User.property.nameInput"></a>
 
 ```go
@@ -726,6 +745,16 @@ func JobTitle() *string
 
 ---
 
+##### `License`<sup>Required</sup> <a name="License" id="@cdktf/provider-pagerduty.user.User.property.license"></a>
+
+```go
+func License() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-pagerduty.user.User.property.name"></a>
 
 ```go
@@ -807,6 +836,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/user"
 	Description: *string,
 	Id: *string,
 	JobTitle: *string,
+	License: *string,
 	Role: *string,
 	Teams: *[]*string,
 	TimeZone: *string,
@@ -830,6 +860,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/user"
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#description User#description}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#id User#id}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.jobTitle">JobTitle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#job_title User#job_title}. |
+| <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.license">License</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#license User#license}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#role User#role}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.teams">Teams</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#teams User#teams}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.timeZone">TimeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#time_zone User#time_zone}. |
@@ -978,6 +1009,18 @@ JobTitle *string
 - *Type:* *string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#job_title User#job_title}.
+
+---
+
+##### `License`<sup>Optional</sup> <a name="License" id="@cdktf/provider-pagerduty.user.UserConfig.property.license"></a>
+
+```go
+License *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#license User#license}.
 
 ---
 

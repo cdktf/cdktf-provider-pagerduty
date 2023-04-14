@@ -25,6 +25,8 @@ The following submodules are available:
 - [dataPagerdutyEventOrchestrations](./dataPagerdutyEventOrchestrations.go.md)
 - [dataPagerdutyExtensionSchema](./dataPagerdutyExtensionSchema.go.md)
 - [dataPagerdutyIncidentWorkflow](./dataPagerdutyIncidentWorkflow.go.md)
+- [dataPagerdutyLicense](./dataPagerdutyLicense.go.md)
+- [dataPagerdutyLicenses](./dataPagerdutyLicenses.go.md)
 - [dataPagerdutyPriority](./dataPagerdutyPriority.go.md)
 - [dataPagerdutyRuleset](./dataPagerdutyRuleset.go.md)
 - [dataPagerdutySchedule](./dataPagerdutySchedule.go.md)

@@ -31,6 +31,10 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   */
   readonly jobTitle?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#license User#license}
+  */
+  readonly license?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#name User#name}
   */
   readonly name: string;
@@ -74,7 +78,7 @@ export class User extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_user',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.13.0',
+        providerVersion: '2.14.0',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
@@ -90,6 +94,7 @@ export class User extends cdktf.TerraformResource {
     this._email = config.email;
     this._id = config.id;
     this._jobTitle = config.jobTitle;
+    this._license = config.license;
     this._name = config.name;
     this._role = config.role;
     this._teams = config.teams;
@@ -192,6 +197,22 @@ export class User extends cdktf.TerraformResource {
     return this._jobTitle;
   }
 
+  // license - computed: true, optional: true, required: false
+  private _license?: string; 
+  public get license() {
+    return this.getStringAttribute('license');
+  }
+  public set license(value: string) {
+    this._license = value;
+  }
+  public resetLicense() {
+    this._license = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get licenseInput() {
+    return this._license;
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -264,6 +285,7 @@ export class User extends cdktf.TerraformResource {
       email: cdktf.stringToTerraform(this._email),
       id: cdktf.stringToTerraform(this._id),
       job_title: cdktf.stringToTerraform(this._jobTitle),
+      license: cdktf.stringToTerraform(this._license),
       name: cdktf.stringToTerraform(this._name),
       role: cdktf.stringToTerraform(this._role),
       teams: cdktf.listMapper(cdktf.stringToTerraform, false)(this._teams),

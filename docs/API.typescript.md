@@ -25,6 +25,8 @@ The following submodules are available:
 - [dataPagerdutyEventOrchestrations](./dataPagerdutyEventOrchestrations.typescript.md)
 - [dataPagerdutyExtensionSchema](./dataPagerdutyExtensionSchema.typescript.md)
 - [dataPagerdutyIncidentWorkflow](./dataPagerdutyIncidentWorkflow.typescript.md)
+- [dataPagerdutyLicense](./dataPagerdutyLicense.typescript.md)
+- [dataPagerdutyLicenses](./dataPagerdutyLicenses.typescript.md)
 - [dataPagerdutyPriority](./dataPagerdutyPriority.typescript.md)
 - [dataPagerdutyRuleset](./dataPagerdutyRuleset.typescript.md)
 - [dataPagerdutySchedule](./dataPagerdutySchedule.typescript.md)

@@ -28,6 +28,7 @@ User.Builder.create(Construct scope, java.lang.String id)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .jobTitle(java.lang.String)
+//  .license(java.lang.String)
 //  .role(java.lang.String)
 //  .teams(java.util.List<java.lang.String>)
 //  .timeZone(java.lang.String)
@@ -51,6 +52,7 @@ User.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-pagerduty.user.User.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#description User#description}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#id User#id}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.Initializer.parameter.jobTitle">jobTitle</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#job_title User#job_title}. |
+| <code><a href="#@cdktf/provider-pagerduty.user.User.Initializer.parameter.license">license</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#license User#license}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#role User#role}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.Initializer.parameter.teams">teams</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#teams User#teams}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.Initializer.parameter.timeZone">timeZone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#time_zone User#time_zone}. |
@@ -168,6 +170,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ---
 
+##### `license`<sup>Optional</sup> <a name="license" id="@cdktf/provider-pagerduty.user.User.Initializer.parameter.license"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#license User#license}.
+
+---
+
 ##### `role`<sup>Optional</sup> <a name="role" id="@cdktf/provider-pagerduty.user.User.Initializer.parameter.role"></a>
 
 - *Type:* java.lang.String
@@ -216,6 +226,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetJobTitle">resetJobTitle</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.user.User.resetLicense">resetLicense</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetRole">resetRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetTeams">resetTeams</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetTimeZone">resetTimeZone</a></code> | *No description.* |
@@ -430,6 +441,12 @@ public void resetId()
 public void resetJobTitle()
 ```
 
+##### `resetLicense` <a name="resetLicense" id="@cdktf/provider-pagerduty.user.User.resetLicense"></a>
+
+```java
+public void resetLicense()
+```
+
 ##### `resetRole` <a name="resetRole" id="@cdktf/provider-pagerduty.user.User.resetRole"></a>
 
 ```java
@@ -544,6 +561,7 @@ User.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.emailInput">emailInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.jobTitleInput">jobTitleInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.user.User.property.licenseInput">licenseInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.roleInput">roleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.teamsInput">teamsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -553,6 +571,7 @@ User.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.email">email</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.jobTitle">jobTitle</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.user.User.property.license">license</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.role">role</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.teams">teams</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -782,6 +801,16 @@ public java.lang.String getJobTitleInput();
 
 ---
 
+##### `licenseInput`<sup>Optional</sup> <a name="licenseInput" id="@cdktf/provider-pagerduty.user.User.property.licenseInput"></a>
+
+```java
+public java.lang.String getLicenseInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-pagerduty.user.User.property.nameInput"></a>
 
 ```java
@@ -872,6 +901,16 @@ public java.lang.String getJobTitle();
 
 ---
 
+##### `license`<sup>Required</sup> <a name="license" id="@cdktf/provider-pagerduty.user.User.property.license"></a>
+
+```java
+public java.lang.String getLicense();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-pagerduty.user.User.property.name"></a>
 
 ```java
@@ -956,6 +995,7 @@ UserConfig.builder()
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .jobTitle(java.lang.String)
+//  .license(java.lang.String)
 //  .role(java.lang.String)
 //  .teams(java.util.List<java.lang.String>)
 //  .timeZone(java.lang.String)
@@ -979,6 +1019,7 @@ UserConfig.builder()
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#description User#description}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#id User#id}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.jobTitle">jobTitle</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#job_title User#job_title}. |
+| <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.license">license</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#license User#license}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#role User#role}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.teams">teams</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#teams User#teams}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.timeZone">timeZone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#time_zone User#time_zone}. |
@@ -1127,6 +1168,18 @@ public java.lang.String getJobTitle();
 - *Type:* java.lang.String
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#job_title User#job_title}.
+
+---
+
+##### `license`<sup>Optional</sup> <a name="license" id="@cdktf/provider-pagerduty.user.UserConfig.property.license"></a>
+
+```java
+public java.lang.String getLicense();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#license User#license}.
 
 ---
 

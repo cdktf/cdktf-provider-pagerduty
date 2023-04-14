@@ -53,6 +53,8 @@ export * as dataPagerdutyEventOrchestrationIntegration from './data-pagerduty-ev
 export * as dataPagerdutyEventOrchestrations from './data-pagerduty-event-orchestrations';
 export * as dataPagerdutyExtensionSchema from './data-pagerduty-extension-schema';
 export * as dataPagerdutyIncidentWorkflow from './data-pagerduty-incident-workflow';
+export * as dataPagerdutyLicense from './data-pagerduty-license';
+export * as dataPagerdutyLicenses from './data-pagerduty-licenses';
 export * as dataPagerdutyPriority from './data-pagerduty-priority';
 export * as dataPagerdutyRuleset from './data-pagerduty-ruleset';
 export * as dataPagerdutySchedule from './data-pagerduty-schedule';

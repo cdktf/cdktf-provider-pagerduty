@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetJobTitle">resetJobTitle</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.user.User.resetLicense">resetLicense</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetRole">resetRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetTeams">resetTeams</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetTimeZone">resetTimeZone</a></code> | *No description.* |
@@ -284,6 +285,12 @@ public resetId(): void
 public resetJobTitle(): void
 ```
 
+##### `resetLicense` <a name="resetLicense" id="@cdktf/provider-pagerduty.user.User.resetLicense"></a>
+
+```typescript
+public resetLicense(): void
+```
+
 ##### `resetRole` <a name="resetRole" id="@cdktf/provider-pagerduty.user.User.resetRole"></a>
 
 ```typescript
@@ -398,6 +405,7 @@ user.User.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.emailInput">emailInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.jobTitleInput">jobTitleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.user.User.property.licenseInput">licenseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.roleInput">roleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.teamsInput">teamsInput</a></code> | <code>string[]</code> | *No description.* |
@@ -407,6 +415,7 @@ user.User.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.email">email</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.jobTitle">jobTitle</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.user.User.property.license">license</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.role">role</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.teams">teams</a></code> | <code>string[]</code> | *No description.* |
@@ -636,6 +645,16 @@ public readonly jobTitleInput: string;
 
 ---
 
+##### `licenseInput`<sup>Optional</sup> <a name="licenseInput" id="@cdktf/provider-pagerduty.user.User.property.licenseInput"></a>
+
+```typescript
+public readonly licenseInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-pagerduty.user.User.property.nameInput"></a>
 
 ```typescript
@@ -720,6 +739,16 @@ public readonly id: string;
 
 ```typescript
 public readonly jobTitle: string;
+```
+
+- *Type:* string
+
+---
+
+##### `license`<sup>Required</sup> <a name="license" id="@cdktf/provider-pagerduty.user.User.property.license"></a>
+
+```typescript
+public readonly license: string;
 ```
 
 - *Type:* string
@@ -813,6 +842,7 @@ const userConfig: user.UserConfig = { ... }
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#description User#description}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#id User#id}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.jobTitle">jobTitle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#job_title User#job_title}. |
+| <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.license">license</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#license User#license}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#role User#role}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.teams">teams</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#teams User#teams}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.timeZone">timeZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#time_zone User#time_zone}. |
@@ -961,6 +991,18 @@ public readonly jobTitle: string;
 - *Type:* string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#job_title User#job_title}.
+
+---
+
+##### `license`<sup>Optional</sup> <a name="license" id="@cdktf/provider-pagerduty.user.UserConfig.property.license"></a>
+
+```typescript
+public readonly license: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#license User#license}.
 
 ---
 

@@ -25,6 +25,8 @@ The following submodules are available:
 - [dataPagerdutyEventOrchestrations](./dataPagerdutyEventOrchestrations.csharp.md)
 - [dataPagerdutyExtensionSchema](./dataPagerdutyExtensionSchema.csharp.md)
 - [dataPagerdutyIncidentWorkflow](./dataPagerdutyIncidentWorkflow.csharp.md)
+- [dataPagerdutyLicense](./dataPagerdutyLicense.csharp.md)
+- [dataPagerdutyLicenses](./dataPagerdutyLicenses.csharp.md)
 - [dataPagerdutyPriority](./dataPagerdutyPriority.csharp.md)
 - [dataPagerdutyRuleset](./dataPagerdutyRuleset.csharp.md)
 - [dataPagerdutySchedule](./dataPagerdutySchedule.csharp.md)
