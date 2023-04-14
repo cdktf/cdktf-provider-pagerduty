@@ -27,6 +27,7 @@ user.User(
   description: str = None,
   id: str = None,
   job_title: str = None,
+  license: str = None,
   role: str = None,
   teams: typing.List[str] = None,
   time_zone: str = None
@@ -50,6 +51,7 @@ user.User(
 | <code><a href="#@cdktf/provider-pagerduty.user.User.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#description User#description}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#id User#id}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.Initializer.parameter.jobTitle">job_title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#job_title User#job_title}. |
+| <code><a href="#@cdktf/provider-pagerduty.user.User.Initializer.parameter.license">license</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#license User#license}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#role User#role}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.Initializer.parameter.teams">teams</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#teams User#teams}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.Initializer.parameter.timeZone">time_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#time_zone User#time_zone}. |
@@ -167,6 +169,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 
 ---
 
+##### `license`<sup>Optional</sup> <a name="license" id="@cdktf/provider-pagerduty.user.User.Initializer.parameter.license"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#license User#license}.
+
+---
+
 ##### `role`<sup>Optional</sup> <a name="role" id="@cdktf/provider-pagerduty.user.User.Initializer.parameter.role"></a>
 
 - *Type:* str
@@ -215,6 +225,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetJobTitle">reset_job_title</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.user.User.resetLicense">reset_license</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetRole">reset_role</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetTeams">reset_teams</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.resetTimeZone">reset_time_zone</a></code> | *No description.* |
@@ -454,6 +465,12 @@ def reset_id() -> None
 def reset_job_title() -> None
 ```
 
+##### `reset_license` <a name="reset_license" id="@cdktf/provider-pagerduty.user.User.resetLicense"></a>
+
+```python
+def reset_license() -> None
+```
+
 ##### `reset_role` <a name="reset_role" id="@cdktf/provider-pagerduty.user.User.resetRole"></a>
 
 ```python
@@ -574,6 +591,7 @@ user.User.is_terraform_resource(
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.emailInput">email_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.jobTitleInput">job_title_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.user.User.property.licenseInput">license_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.roleInput">role_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.teamsInput">teams_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -583,6 +601,7 @@ user.User.is_terraform_resource(
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.email">email</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.jobTitle">job_title</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.user.User.property.license">license</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.role">role</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.user.User.property.teams">teams</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -812,6 +831,16 @@ job_title_input: str
 
 ---
 
+##### `license_input`<sup>Optional</sup> <a name="license_input" id="@cdktf/provider-pagerduty.user.User.property.licenseInput"></a>
+
+```python
+license_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-pagerduty.user.User.property.nameInput"></a>
 
 ```python
@@ -902,6 +931,16 @@ job_title: str
 
 ---
 
+##### `license`<sup>Required</sup> <a name="license" id="@cdktf/provider-pagerduty.user.User.property.license"></a>
+
+```python
+license: str
+```
+
+- *Type:* str
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-pagerduty.user.User.property.name"></a>
 
 ```python
@@ -983,6 +1022,7 @@ user.UserConfig(
   description: str = None,
   id: str = None,
   job_title: str = None,
+  license: str = None,
   role: str = None,
   teams: typing.List[str] = None,
   time_zone: str = None
@@ -1006,6 +1046,7 @@ user.UserConfig(
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#description User#description}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#id User#id}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.jobTitle">job_title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#job_title User#job_title}. |
+| <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.license">license</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#license User#license}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#role User#role}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.teams">teams</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#teams User#teams}. |
 | <code><a href="#@cdktf/provider-pagerduty.user.UserConfig.property.timeZone">time_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#time_zone User#time_zone}. |
@@ -1154,6 +1195,18 @@ job_title: str
 - *Type:* str
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#job_title User#job_title}.
+
+---
+
+##### `license`<sup>Optional</sup> <a name="license" id="@cdktf/provider-pagerduty.user.UserConfig.property.license"></a>
+
+```python
+license: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/user#license User#license}.
 
 ---
 

@@ -1194,7 +1194,7 @@ export class Service extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_service',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.13.0',
+        providerVersion: '2.14.0',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,

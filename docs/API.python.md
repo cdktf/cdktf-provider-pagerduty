@@ -25,6 +25,8 @@ The following submodules are available:
 - [dataPagerdutyEventOrchestrations](./dataPagerdutyEventOrchestrations.python.md)
 - [dataPagerdutyExtensionSchema](./dataPagerdutyExtensionSchema.python.md)
 - [dataPagerdutyIncidentWorkflow](./dataPagerdutyIncidentWorkflow.python.md)
+- [dataPagerdutyLicense](./dataPagerdutyLicense.python.md)
+- [dataPagerdutyLicenses](./dataPagerdutyLicenses.python.md)
 - [dataPagerdutyPriority](./dataPagerdutyPriority.python.md)
 - [dataPagerdutyRuleset](./dataPagerdutyRuleset.python.md)
 - [dataPagerdutySchedule](./dataPagerdutySchedule.python.md)
