@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/event_or
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationIntegration.EventOrchestrationIntegrationA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/eventorchestrationintegration"
 
 eventorchestrationintegration.NewEventOrchestrationIntegrationA(scope Construct, id *string, config EventOrchestrationIntegrationAConfig) EventOrchestrationIntegrationA
 ```
@@ -266,7 +266,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.eventOrchestrationIntegration.EventOrchestrationIntegrationA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/eventorchestrationintegration"
 
 eventorchestrationintegration.EventOrchestrationIntegrationA_IsConstruct(x interface{}) *bool
 ```
@@ -298,7 +298,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.eventOrchestrationIntegration.EventOrchestrationIntegrationA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/eventorchestrationintegration"
 
 eventorchestrationintegration.EventOrchestrationIntegrationA_IsTerraformElement(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ eventorchestrationintegration.EventOrchestrationIntegrationA_IsTerraformElement(
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.eventOrchestrationIntegration.EventOrchestrationIntegrationA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/eventorchestrationintegration"
 
 eventorchestrationintegration.EventOrchestrationIntegrationA_IsTerraformResource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationIntegration.EventOrchestrationIntegrationAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/eventorchestrationintegration"
 
 &eventorchestrationintegration.EventOrchestrationIntegrationAConfig {
 	Connection: interface{},
@@ -707,7 +707,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationIntegration.EventOrchestrationIntegrationParametersA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/eventorchestrationintegration"
 
 &eventorchestrationintegration.EventOrchestrationIntegrationParametersA {
 
@@ -722,7 +722,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestratio
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationIntegration.EventOrchestrationIntegrationParametersAList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/eventorchestrationintegration"
 
 eventorchestrationintegration.NewEventOrchestrationIntegrationParametersAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationIntegrationParametersAList
 ```
@@ -854,7 +854,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationIntegration.EventOrchestrationIntegrationParametersAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/eventorchestrationintegration"
 
 eventorchestrationintegration.NewEventOrchestrationIntegrationParametersAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationIntegrationParametersAOutputReference
 ```
