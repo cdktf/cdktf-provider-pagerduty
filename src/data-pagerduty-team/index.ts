@@ -52,7 +52,7 @@ export class DataPagerdutyTeam extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_team',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.14.0',
+        providerVersion: '2.14.1',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,

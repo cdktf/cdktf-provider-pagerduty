@@ -82,7 +82,7 @@ export class DataPagerdutyLicense extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_license',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.14.0',
+        providerVersion: '2.14.1',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,

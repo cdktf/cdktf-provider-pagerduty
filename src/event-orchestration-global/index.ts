@@ -2704,7 +2704,7 @@ export class EventOrchestrationGlobal extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_event_orchestration_global',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.14.0',
+        providerVersion: '2.14.1',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
