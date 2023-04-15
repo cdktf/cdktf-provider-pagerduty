@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/automati
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsAction.DataPagerdutyAutomationActionsAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutyautomationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyautomationactionsaction"
 
 datapagerdutyautomationactionsaction.NewDataPagerdutyAutomationActionsAction(scope Construct, id *string, config DataPagerdutyAutomationActionsActionConfig) DataPagerdutyAutomationActionsAction
 ```
@@ -315,7 +315,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsAction.DataPagerdutyAutomationActionsAction.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutyautomationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyautomationactionsaction"
 
 datapagerdutyautomationactionsaction.DataPagerdutyAutomationActionsAction_IsConstruct(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsAction.DataPagerdutyAutomationActionsAction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutyautomationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyautomationactionsaction"
 
 datapagerdutyautomationactionsaction.DataPagerdutyAutomationActionsAction_IsTerraformElement(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ datapagerdutyautomationactionsaction.DataPagerdutyAutomationActionsAction_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsAction.DataPagerdutyAutomationActionsAction.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutyautomationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyautomationactionsaction"
 
 datapagerdutyautomationactionsaction.DataPagerdutyAutomationActionsAction_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsAction.DataPagerdutyAutomationActionsActionActionDataReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutyautomationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyautomationactionsaction"
 
 &datapagerdutyautomationactionsaction.DataPagerdutyAutomationActionsActionActionDataReference {
 
@@ -760,7 +760,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutya
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsAction.DataPagerdutyAutomationActionsActionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutyautomationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyautomationactionsaction"
 
 &datapagerdutyautomationactionsaction.DataPagerdutyAutomationActionsActionConfig {
 	Connection: interface{},
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsAction.DataPagerdutyAutomationActionsActionActionDataReferenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutyautomationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyautomationactionsaction"
 
 datapagerdutyautomationactionsaction.NewDataPagerdutyAutomationActionsActionActionDataReferenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPagerdutyAutomationActionsActionActionDataReferenceList
 ```
@@ -1111,7 +1111,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsAction.DataPagerdutyAutomationActionsActionActionDataReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/datapagerdutyautomationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyautomationactionsaction"
 
 datapagerdutyautomationactionsaction.NewDataPagerdutyAutomationActionsActionActionDataReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPagerdutyAutomationActionsActionActionDataReferenceOutputReference
 ```

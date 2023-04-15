@@ -54,7 +54,7 @@ export class BusinessServiceSubscriber extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_business_service_subscriber',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.14.0',
+        providerVersion: '2.14.1',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,

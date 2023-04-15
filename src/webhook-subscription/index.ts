@@ -492,7 +492,7 @@ export class WebhookSubscription extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_webhook_subscription',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.14.0',
+        providerVersion: '2.14.1',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
