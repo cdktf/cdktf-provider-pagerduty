@@ -1,6 +1,6 @@
 # `data_pagerduty_tag`
 
-Refer to the Terraform Registory for docs: [`data_pagerduty_tag`](https://www.terraform.io/docs/providers/pagerduty/d/tag).
+Refer to the Terraform Registory for docs: [`data_pagerduty_tag`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/tag).
 
 # `dataPagerdutyTag` Submodule <a name="`dataPagerdutyTag` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyTag"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_pagerduty_tag`](https://www.te
 
 ### DataPagerdutyTag <a name="DataPagerdutyTag" id="@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/tag pagerduty_tag}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/tag pagerduty_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.Initializer"></a>
 
@@ -345,7 +345,7 @@ dataPagerdutyTag.DataPagerdutyTag.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -432,10 +432,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -554,14 +554,14 @@ const dataPagerdutyTagConfig: dataPagerdutyTag.DataPagerdutyTagConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.property.label">label</a></code> | <code>string</code> | The label of the tag to find in the PagerDuty API. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/tag#id DataPagerdutyTag#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/tag#id DataPagerdutyTag#id}. |
 
 ---
 
@@ -578,10 +578,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -645,7 +645,7 @@ public readonly label: string;
 
 The label of the tag to find in the PagerDuty API.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/tag#label DataPagerdutyTag#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/tag#label DataPagerdutyTag#label}
 
 ---
 
@@ -657,7 +657,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/tag#id DataPagerdutyTag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/tag#id DataPagerdutyTag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

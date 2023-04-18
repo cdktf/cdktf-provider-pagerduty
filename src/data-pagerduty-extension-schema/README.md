@@ -1,3 +1,3 @@
 # `data_pagerduty_extension_schema`
 
-Refer to the Terraform Registory for docs: [`data_pagerduty_extension_schema`](https://www.terraform.io/docs/providers/pagerduty/d/extension_schema).
+Refer to the Terraform Registory for docs: [`data_pagerduty_extension_schema`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/extension_schema).

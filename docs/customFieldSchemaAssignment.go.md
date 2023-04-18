@@ -1,6 +1,6 @@
 # `pagerduty_custom_field_schema_assignment`
 
-Refer to the Terraform Registory for docs: [`pagerduty_custom_field_schema_assignment`](https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema_assignment).
+Refer to the Terraform Registory for docs: [`pagerduty_custom_field_schema_assignment`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema_assignment).
 
 # `customFieldSchemaAssignment` Submodule <a name="`customFieldSchemaAssignment` Submodule" id="@cdktf/provider-pagerduty.customFieldSchemaAssignment"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`pagerduty_custom_field_schema_assig
 
 ### CustomFieldSchemaAssignment <a name="CustomFieldSchemaAssignment" id="@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignment"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema_assignment pagerduty_custom_field_schema_assignment}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema_assignment pagerduty_custom_field_schema_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfieldschemaassignment"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/customfieldschemaassignment"
 
 customfieldschemaassignment.NewCustomFieldSchemaAssignment(scope Construct, id *string, config CustomFieldSchemaAssignmentConfig) CustomFieldSchemaAssignment
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfieldschemaassignment"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/customfieldschemaassignment"
 
 customfieldschemaassignment.CustomFieldSchemaAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfieldschemaassignment"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/customfieldschemaassignment"
 
 customfieldschemaassignment.CustomFieldSchemaAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ customfieldschemaassignment.CustomFieldSchemaAssignment_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfieldschemaassignment"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/customfieldschemaassignment"
 
 customfieldschemaassignment.CustomFieldSchemaAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ customfieldschemaassignment.CustomFieldSchemaAssignment_IsTerraformResource(x in
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignment.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignment.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignment.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignment.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignment.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignment.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignment.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignment.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -446,10 +446,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignment.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -588,11 +588,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfieldschemaassignment"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/customfieldschemaassignment"
 
 &customfieldschemaassignment.CustomFieldSchemaAssignmentConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -609,15 +609,15 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/customfieldsch
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignmentConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignmentConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignmentConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignmentConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignmentConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignmentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignmentConfig.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema_assignment#schema CustomFieldSchemaAssignment#schema}. |
-| <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignmentConfig.property.service">Service</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema_assignment#service CustomFieldSchemaAssignment#service}. |
-| <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema_assignment#id CustomFieldSchemaAssignment#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignmentConfig.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema_assignment#schema CustomFieldSchemaAssignment#schema}. |
+| <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignmentConfig.property.service">Service</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema_assignment#service CustomFieldSchemaAssignment#service}. |
+| <code><a href="#@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema_assignment#id CustomFieldSchemaAssignment#id}. |
 
 ---
 
@@ -634,10 +634,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.customFieldSchemaAssignment.CustomFieldSchemaAssignmentConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -699,7 +699,7 @@ Schema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema_assignment#schema CustomFieldSchemaAssignment#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema_assignment#schema CustomFieldSchemaAssignment#schema}.
 
 ---
 
@@ -711,7 +711,7 @@ Service *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema_assignment#service CustomFieldSchemaAssignment#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema_assignment#service CustomFieldSchemaAssignment#service}.
 
 ---
 
@@ -723,7 +723,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema_assignment#id CustomFieldSchemaAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema_assignment#id CustomFieldSchemaAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

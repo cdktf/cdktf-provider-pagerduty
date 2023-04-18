@@ -1,6 +1,6 @@
 # `data_pagerduty_custom_field`
 
-Refer to the Terraform Registory for docs: [`data_pagerduty_custom_field`](https://www.terraform.io/docs/providers/pagerduty/d/custom_field).
+Refer to the Terraform Registory for docs: [`data_pagerduty_custom_field`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/custom_field).
 
 # `dataPagerdutyCustomField` Submodule <a name="`dataPagerdutyCustomField` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyCustomField"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_pagerduty_custom_field`](https
 
 ### DataPagerdutyCustomField <a name="DataPagerdutyCustomField" id="@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomField"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/custom_field pagerduty_custom_field}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/custom_field pagerduty_custom_field}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomField.Initializer"></a>
 
@@ -345,7 +345,7 @@ dataPagerdutyCustomField.DataPagerdutyCustomField.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomField.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomField.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomField.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomField.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomField.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomField.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomField.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomField.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -437,10 +437,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomField.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -609,14 +609,14 @@ const dataPagerdutyCustomFieldConfig: dataPagerdutyCustomField.DataPagerdutyCust
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomFieldConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomFieldConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomFieldConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomFieldConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomFieldConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomFieldConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomFieldConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomFieldConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomFieldConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/custom_field#name DataPagerdutyCustomField#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomFieldConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/custom_field#id DataPagerdutyCustomField#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomFieldConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/custom_field#name DataPagerdutyCustomField#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomFieldConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/custom_field#id DataPagerdutyCustomField#id}. |
 
 ---
 
@@ -633,10 +633,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.dataPagerdutyCustomField.DataPagerdutyCustomFieldConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -698,7 +698,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/custom_field#name DataPagerdutyCustomField#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/custom_field#name DataPagerdutyCustomField#name}.
 
 ---
 
@@ -710,7 +710,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/custom_field#id DataPagerdutyCustomField#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/custom_field#id DataPagerdutyCustomField#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

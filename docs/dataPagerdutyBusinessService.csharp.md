@@ -1,6 +1,6 @@
 # `data_pagerduty_business_service`
 
-Refer to the Terraform Registory for docs: [`data_pagerduty_business_service`](https://www.terraform.io/docs/providers/pagerduty/d/business_service).
+Refer to the Terraform Registory for docs: [`data_pagerduty_business_service`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/business_service).
 
 # `dataPagerdutyBusinessService` Submodule <a name="`dataPagerdutyBusinessService` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyBusinessService"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_pagerduty_business_service`](h
 
 ### DataPagerdutyBusinessService <a name="DataPagerdutyBusinessService" id="@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service pagerduty_business_service}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/business_service pagerduty_business_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService.Initializer"></a>
 
@@ -345,7 +345,7 @@ DataPagerdutyBusinessService.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -433,10 +433,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -559,7 +559,7 @@ using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new DataPagerdutyBusinessServiceConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -575,14 +575,14 @@ new DataPagerdutyBusinessServiceConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service#name DataPagerdutyBusinessService#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service#id DataPagerdutyBusinessService#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/business_service#name DataPagerdutyBusinessService#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/business_service#id DataPagerdutyBusinessService#id}. |
 
 ---
 
@@ -599,10 +599,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -664,7 +664,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service#name DataPagerdutyBusinessService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/business_service#name DataPagerdutyBusinessService#name}.
 
 ---
 
@@ -676,7 +676,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/business_service#id DataPagerdutyBusinessService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/business_service#id DataPagerdutyBusinessService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

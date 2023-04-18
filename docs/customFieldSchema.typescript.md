@@ -1,6 +1,6 @@
 # `pagerduty_custom_field_schema`
 
-Refer to the Terraform Registory for docs: [`pagerduty_custom_field_schema`](https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema).
+Refer to the Terraform Registory for docs: [`pagerduty_custom_field_schema`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema).
 
 # `customFieldSchema` Submodule <a name="`customFieldSchema` Submodule" id="@cdktf/provider-pagerduty.customFieldSchema"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`pagerduty_custom_field_schema`](htt
 
 ### CustomFieldSchema <a name="CustomFieldSchema" id="@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchema"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema pagerduty_custom_field_schema}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema pagerduty_custom_field_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchema.Initializer"></a>
 
@@ -353,7 +353,7 @@ customFieldSchema.CustomFieldSchema.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchema.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchema.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchema.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchema.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchema.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchema.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchema.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchema.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -453,10 +453,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchema.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -605,15 +605,15 @@ const customFieldSchemaConfig: customFieldSchema.CustomFieldSchemaConfig = { ...
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchemaConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchemaConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchemaConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchemaConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchemaConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchemaConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchemaConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchemaConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchemaConfig.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema#title CustomFieldSchema#title}. |
-| <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchemaConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema#description CustomFieldSchema#description}. |
-| <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchemaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema#id CustomFieldSchema#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchemaConfig.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema#title CustomFieldSchema#title}. |
+| <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchemaConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema#description CustomFieldSchema#description}. |
+| <code><a href="#@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchemaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema#id CustomFieldSchema#id}. |
 
 ---
 
@@ -630,10 +630,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.customFieldSchema.CustomFieldSchemaConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -695,7 +695,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema#title CustomFieldSchema#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema#title CustomFieldSchema#title}.
 
 ---
 
@@ -707,7 +707,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema#description CustomFieldSchema#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema#description CustomFieldSchema#description}.
 
 ---
 
@@ -719,7 +719,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema#id CustomFieldSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/custom_field_schema#id CustomFieldSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

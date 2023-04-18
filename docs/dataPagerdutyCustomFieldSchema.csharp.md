@@ -1,6 +1,6 @@
 # `data_pagerduty_custom_field_schema`
 
-Refer to the Terraform Registory for docs: [`data_pagerduty_custom_field_schema`](https://www.terraform.io/docs/providers/pagerduty/d/custom_field_schema).
+Refer to the Terraform Registory for docs: [`data_pagerduty_custom_field_schema`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/custom_field_schema).
 
 # `dataPagerdutyCustomFieldSchema` Submodule <a name="`dataPagerdutyCustomFieldSchema` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_pagerduty_custom_field_schema`
 
 ### DataPagerdutyCustomFieldSchema <a name="DataPagerdutyCustomFieldSchema" id="@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchema"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/custom_field_schema pagerduty_custom_field_schema}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/custom_field_schema pagerduty_custom_field_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchema.Initializer"></a>
 
@@ -345,7 +345,7 @@ DataPagerdutyCustomFieldSchema.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchema.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchema.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchema.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchema.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchema.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchema.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchema.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchema.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -433,10 +433,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchema.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -559,7 +559,7 @@ using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new DataPagerdutyCustomFieldSchemaConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -575,14 +575,14 @@ new DataPagerdutyCustomFieldSchemaConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchemaConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchemaConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchemaConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchemaConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchemaConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchemaConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchemaConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchemaConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchemaConfig.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/custom_field_schema#title DataPagerdutyCustomFieldSchema#title}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchemaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/custom_field_schema#id DataPagerdutyCustomFieldSchema#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchemaConfig.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/custom_field_schema#title DataPagerdutyCustomFieldSchema#title}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchemaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/custom_field_schema#id DataPagerdutyCustomFieldSchema#id}. |
 
 ---
 
@@ -599,10 +599,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema.DataPagerdutyCustomFieldSchemaConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -664,7 +664,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/custom_field_schema#title DataPagerdutyCustomFieldSchema#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/custom_field_schema#title DataPagerdutyCustomFieldSchema#title}.
 
 ---
 
@@ -676,7 +676,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/custom_field_schema#id DataPagerdutyCustomFieldSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/custom_field_schema#id DataPagerdutyCustomFieldSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

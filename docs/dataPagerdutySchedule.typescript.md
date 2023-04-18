@@ -1,6 +1,6 @@
 # `data_pagerduty_schedule`
 
-Refer to the Terraform Registory for docs: [`data_pagerduty_schedule`](https://www.terraform.io/docs/providers/pagerduty/d/schedule).
+Refer to the Terraform Registory for docs: [`data_pagerduty_schedule`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/schedule).
 
 # `dataPagerdutySchedule` Submodule <a name="`dataPagerdutySchedule` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutySchedule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_pagerduty_schedule`](https://w
 
 ### DataPagerdutySchedule <a name="DataPagerdutySchedule" id="@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/d/schedule pagerduty_schedule}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/schedule pagerduty_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.Initializer"></a>
 
@@ -345,7 +345,7 @@ dataPagerdutySchedule.DataPagerdutySchedule.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -432,10 +432,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -554,14 +554,14 @@ const dataPagerdutyScheduleConfig: dataPagerdutySchedule.DataPagerdutyScheduleCo
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/schedule#name DataPagerdutySchedule#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/schedule#id DataPagerdutySchedule#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/schedule#name DataPagerdutySchedule#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/schedule#id DataPagerdutySchedule#id}. |
 
 ---
 
@@ -578,10 +578,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -643,7 +643,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/schedule#name DataPagerdutySchedule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/schedule#name DataPagerdutySchedule#name}.
 
 ---
 
@@ -655,7 +655,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/d/schedule#id DataPagerdutySchedule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/data-sources/schedule#id DataPagerdutySchedule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `pagerduty_ruleset`
 
-Refer to the Terraform Registory for docs: [`pagerduty_ruleset`](https://www.terraform.io/docs/providers/pagerduty/r/ruleset).
+Refer to the Terraform Registory for docs: [`pagerduty_ruleset`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/ruleset).
 
 # `ruleset` Submodule <a name="`ruleset` Submodule" id="@cdktf/provider-pagerduty.ruleset"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`pagerduty_ruleset`](https://www.ter
 
 ### Ruleset <a name="Ruleset" id="@cdktf/provider-pagerduty.ruleset.Ruleset"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset pagerduty_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/ruleset pagerduty_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.ruleset.Ruleset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/ruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/ruleset"
 
 ruleset.NewRuleset(scope Construct, id *string, config RulesetConfig) Ruleset
 ```
@@ -297,7 +297,7 @@ func ResetTeam()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.ruleset.Ruleset.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/ruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/ruleset"
 
 ruleset.Ruleset_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.ruleset.Ruleset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/ruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/ruleset"
 
 ruleset.Ruleset_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ ruleset.Ruleset_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.ruleset.Ruleset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/ruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/ruleset"
 
 ruleset.Ruleset_IsTerraformResource(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ ruleset.Ruleset_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-pagerduty.ruleset.Ruleset.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.ruleset.Ruleset.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.ruleset.Ruleset.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.ruleset.Ruleset.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.ruleset.Ruleset.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.ruleset.Ruleset.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.ruleset.Ruleset.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.ruleset.Ruleset.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -468,10 +468,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.ruleset.Ruleset.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -630,11 +630,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.ruleset.RulesetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/ruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/ruleset"
 
 &ruleset.RulesetConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -642,7 +642,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/ruleset"
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
-	Team: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6.ruleset.RulesetTeam,
+	Team: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.ruleset.RulesetTeam,
 }
 ```
 
@@ -651,14 +651,14 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/ruleset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset#name Ruleset#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset#id Ruleset#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/ruleset#name Ruleset#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/ruleset#id Ruleset#id}. |
 | <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.team">Team</a></code> | <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetTeam">RulesetTeam</a></code> | team block. |
 
 ---
@@ -676,10 +676,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -741,7 +741,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset#name Ruleset#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/ruleset#name Ruleset#name}.
 
 ---
 
@@ -753,7 +753,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset#id Ruleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/ruleset#id Ruleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -770,7 +770,7 @@ Team RulesetTeam
 
 team block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset#team Ruleset#team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/ruleset#team Ruleset#team}
 
 ---
 
@@ -779,7 +779,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.ruleset.RulesetTeam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/ruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/ruleset"
 
 &ruleset.RulesetTeam {
 	Id: *string,
@@ -790,7 +790,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/ruleset"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetTeam.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset#id Ruleset#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetTeam.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/ruleset#id Ruleset#id}. |
 
 ---
 
@@ -802,7 +802,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/ruleset#id Ruleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/ruleset#id Ruleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -816,7 +816,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.ruleset.RulesetTeamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/ruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/ruleset"
 
 ruleset.NewRulesetTeamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RulesetTeamOutputReference
 ```

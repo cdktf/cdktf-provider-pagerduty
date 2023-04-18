@@ -1,3 +1,3 @@
 # `pagerduty_user`
 
-Refer to the Terraform Registory for docs: [`pagerduty_user`](https://www.terraform.io/docs/providers/pagerduty/r/user).
+Refer to the Terraform Registory for docs: [`pagerduty_user`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/user).

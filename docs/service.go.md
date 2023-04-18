@@ -1,6 +1,6 @@
 # `pagerduty_service`
 
-Refer to the Terraform Registory for docs: [`pagerduty_service`](https://www.terraform.io/docs/providers/pagerduty/r/service).
+Refer to the Terraform Registory for docs: [`pagerduty_service`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service).
 
 # `service` Submodule <a name="`service` Submodule" id="@cdktf/provider-pagerduty.service"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`pagerduty_service`](https://www.ter
 
 ### Service <a name="Service" id="@cdktf/provider-pagerduty.service.Service"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/service pagerduty_service}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service pagerduty_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.service.Service.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 service.NewService(scope Construct, id *string, config ServiceConfig) Service
 ```
@@ -426,7 +426,7 @@ func ResetSupportHours()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.service.Service.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 service.Service_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.service.Service.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 service.Service_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ service.Service_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.service.Service.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 service.Service_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ service.Service_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-pagerduty.service.Service.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.service.Service.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.service.Service.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.service.Service.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.service.Service.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.service.Service.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.service.Service.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.service.Service.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -624,10 +624,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.service.Service.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1056,10 +1056,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.service.ServiceAlertGroupingParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 &service.ServiceAlertGroupingParameters {
-	Config: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6.service.ServiceAlertGroupingParametersConfig,
+	Config: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.service.ServiceAlertGroupingParametersConfig,
 	Type: *string,
 }
 ```
@@ -1069,7 +1069,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceAlertGroupingParameters.property.config">Config</a></code> | <code><a href="#@cdktf/provider-pagerduty.service.ServiceAlertGroupingParametersConfig">ServiceAlertGroupingParametersConfig</a></code> | config block. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceAlertGroupingParameters.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceAlertGroupingParameters.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#type Service#type}. |
 
 ---
 
@@ -1083,7 +1083,7 @@ Config ServiceAlertGroupingParametersConfig
 
 config block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#config Service#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#config Service#config}
 
 ---
 
@@ -1095,7 +1095,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#type Service#type}.
 
 ---
 
@@ -1104,7 +1104,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.service.ServiceAlertGroupingParametersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 &service.ServiceAlertGroupingParametersConfig {
 	Aggregate: *string,
@@ -1117,9 +1117,9 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceAlertGroupingParametersConfig.property.aggregate">Aggregate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#aggregate Service#aggregate}. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceAlertGroupingParametersConfig.property.fields">Fields</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#fields Service#fields}. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceAlertGroupingParametersConfig.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#timeout Service#timeout}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceAlertGroupingParametersConfig.property.aggregate">Aggregate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#aggregate Service#aggregate}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceAlertGroupingParametersConfig.property.fields">Fields</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#fields Service#fields}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceAlertGroupingParametersConfig.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#timeout Service#timeout}. |
 
 ---
 
@@ -1131,7 +1131,7 @@ Aggregate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#aggregate Service#aggregate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#aggregate Service#aggregate}.
 
 ---
 
@@ -1143,7 +1143,7 @@ Fields *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#fields Service#fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#fields Service#fields}.
 
 ---
 
@@ -1155,7 +1155,7 @@ Timeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#timeout Service#timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#timeout Service#timeout}.
 
 ---
 
@@ -1164,7 +1164,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.service.ServiceAutoPauseNotificationsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 &service.ServiceAutoPauseNotificationsParameters {
 	Enabled: interface{},
@@ -1176,8 +1176,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceAutoPauseNotificationsParameters.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#enabled Service#enabled}. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceAutoPauseNotificationsParameters.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#timeout Service#timeout}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceAutoPauseNotificationsParameters.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#enabled Service#enabled}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceAutoPauseNotificationsParameters.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#timeout Service#timeout}. |
 
 ---
 
@@ -1189,7 +1189,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#enabled Service#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#enabled Service#enabled}.
 
 ---
 
@@ -1201,7 +1201,7 @@ Timeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#timeout Service#timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#timeout Service#timeout}.
 
 ---
 
@@ -1210,11 +1210,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.service.ServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 &service.ServiceConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -1225,16 +1225,16 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
 	AcknowledgementTimeout: *string,
 	AlertCreation: *string,
 	AlertGrouping: *string,
-	AlertGroupingParameters: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6.service.ServiceAlertGroupingParameters,
+	AlertGroupingParameters: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.service.ServiceAlertGroupingParameters,
 	AlertGroupingTimeout: *string,
-	AutoPauseNotificationsParameters: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6.service.ServiceAutoPauseNotificationsParameters,
+	AutoPauseNotificationsParameters: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.service.ServiceAutoPauseNotificationsParameters,
 	AutoResolveTimeout: *string,
 	Description: *string,
 	Id: *string,
-	IncidentUrgencyRule: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6.service.ServiceIncidentUrgencyRule,
+	IncidentUrgencyRule: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.service.ServiceIncidentUrgencyRule,
 	ResponsePlay: *string,
 	ScheduledActions: interface{},
-	SupportHours: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6.service.ServiceSupportHours,
+	SupportHours: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.service.ServiceSupportHours,
 }
 ```
 
@@ -1243,25 +1243,25 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.escalationPolicy">EscalationPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#escalation_policy Service#escalation_policy}. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#name Service#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.acknowledgementTimeout">AcknowledgementTimeout</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#acknowledgement_timeout Service#acknowledgement_timeout}. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.alertCreation">AlertCreation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#alert_creation Service#alert_creation}. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.alertGrouping">AlertGrouping</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#alert_grouping Service#alert_grouping}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.escalationPolicy">EscalationPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#escalation_policy Service#escalation_policy}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#name Service#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.acknowledgementTimeout">AcknowledgementTimeout</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#acknowledgement_timeout Service#acknowledgement_timeout}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.alertCreation">AlertCreation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#alert_creation Service#alert_creation}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.alertGrouping">AlertGrouping</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#alert_grouping Service#alert_grouping}. |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.alertGroupingParameters">AlertGroupingParameters</a></code> | <code><a href="#@cdktf/provider-pagerduty.service.ServiceAlertGroupingParameters">ServiceAlertGroupingParameters</a></code> | alert_grouping_parameters block. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.alertGroupingTimeout">AlertGroupingTimeout</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#alert_grouping_timeout Service#alert_grouping_timeout}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.alertGroupingTimeout">AlertGroupingTimeout</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#alert_grouping_timeout Service#alert_grouping_timeout}. |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.autoPauseNotificationsParameters">AutoPauseNotificationsParameters</a></code> | <code><a href="#@cdktf/provider-pagerduty.service.ServiceAutoPauseNotificationsParameters">ServiceAutoPauseNotificationsParameters</a></code> | auto_pause_notifications_parameters block. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.autoResolveTimeout">AutoResolveTimeout</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#auto_resolve_timeout Service#auto_resolve_timeout}. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#description Service#description}. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#id Service#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.autoResolveTimeout">AutoResolveTimeout</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#auto_resolve_timeout Service#auto_resolve_timeout}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#description Service#description}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#id Service#id}. |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.incidentUrgencyRule">IncidentUrgencyRule</a></code> | <code><a href="#@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRule">ServiceIncidentUrgencyRule</a></code> | incident_urgency_rule block. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.responsePlay">ResponsePlay</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#response_play Service#response_play}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.responsePlay">ResponsePlay</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#response_play Service#response_play}. |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.scheduledActions">ScheduledActions</a></code> | <code>interface{}</code> | scheduled_actions block. |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceConfig.property.supportHours">SupportHours</a></code> | <code><a href="#@cdktf/provider-pagerduty.service.ServiceSupportHours">ServiceSupportHours</a></code> | support_hours block. |
 
@@ -1280,10 +1280,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.service.ServiceConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1345,7 +1345,7 @@ EscalationPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#escalation_policy Service#escalation_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#escalation_policy Service#escalation_policy}.
 
 ---
 
@@ -1357,7 +1357,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#name Service#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#name Service#name}.
 
 ---
 
@@ -1369,7 +1369,7 @@ AcknowledgementTimeout *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#acknowledgement_timeout Service#acknowledgement_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#acknowledgement_timeout Service#acknowledgement_timeout}.
 
 ---
 
@@ -1381,7 +1381,7 @@ AlertCreation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#alert_creation Service#alert_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#alert_creation Service#alert_creation}.
 
 ---
 
@@ -1393,7 +1393,7 @@ AlertGrouping *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#alert_grouping Service#alert_grouping}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#alert_grouping Service#alert_grouping}.
 
 ---
 
@@ -1407,7 +1407,7 @@ AlertGroupingParameters ServiceAlertGroupingParameters
 
 alert_grouping_parameters block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#alert_grouping_parameters Service#alert_grouping_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#alert_grouping_parameters Service#alert_grouping_parameters}
 
 ---
 
@@ -1419,7 +1419,7 @@ AlertGroupingTimeout *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#alert_grouping_timeout Service#alert_grouping_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#alert_grouping_timeout Service#alert_grouping_timeout}.
 
 ---
 
@@ -1433,7 +1433,7 @@ AutoPauseNotificationsParameters ServiceAutoPauseNotificationsParameters
 
 auto_pause_notifications_parameters block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#auto_pause_notifications_parameters Service#auto_pause_notifications_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#auto_pause_notifications_parameters Service#auto_pause_notifications_parameters}
 
 ---
 
@@ -1445,7 +1445,7 @@ AutoResolveTimeout *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#auto_resolve_timeout Service#auto_resolve_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#auto_resolve_timeout Service#auto_resolve_timeout}.
 
 ---
 
@@ -1457,7 +1457,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#description Service#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#description Service#description}.
 
 ---
 
@@ -1469,7 +1469,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#id Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#id Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1486,7 +1486,7 @@ IncidentUrgencyRule ServiceIncidentUrgencyRule
 
 incident_urgency_rule block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#incident_urgency_rule Service#incident_urgency_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#incident_urgency_rule Service#incident_urgency_rule}
 
 ---
 
@@ -1498,7 +1498,7 @@ ResponsePlay *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#response_play Service#response_play}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#response_play Service#response_play}.
 
 ---
 
@@ -1512,7 +1512,7 @@ ScheduledActions interface{}
 
 scheduled_actions block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#scheduled_actions Service#scheduled_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#scheduled_actions Service#scheduled_actions}
 
 ---
 
@@ -1526,7 +1526,7 @@ SupportHours ServiceSupportHours
 
 support_hours block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#support_hours Service#support_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#support_hours Service#support_hours}
 
 ---
 
@@ -1535,12 +1535,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 &service.ServiceIncidentUrgencyRule {
 	Type: *string,
-	DuringSupportHours: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6.service.ServiceIncidentUrgencyRuleDuringSupportHours,
-	OutsideSupportHours: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6.service.ServiceIncidentUrgencyRuleOutsideSupportHours,
+	DuringSupportHours: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.service.ServiceIncidentUrgencyRuleDuringSupportHours,
+	OutsideSupportHours: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.service.ServiceIncidentUrgencyRuleOutsideSupportHours,
 	Urgency: *string,
 }
 ```
@@ -1549,10 +1549,10 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRule.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRule.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#type Service#type}. |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRule.property.duringSupportHours">DuringSupportHours</a></code> | <code><a href="#@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRuleDuringSupportHours">ServiceIncidentUrgencyRuleDuringSupportHours</a></code> | during_support_hours block. |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRule.property.outsideSupportHours">OutsideSupportHours</a></code> | <code><a href="#@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRuleOutsideSupportHours">ServiceIncidentUrgencyRuleOutsideSupportHours</a></code> | outside_support_hours block. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRule.property.urgency">Urgency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#urgency Service#urgency}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRule.property.urgency">Urgency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#urgency Service#urgency}. |
 
 ---
 
@@ -1564,7 +1564,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#type Service#type}.
 
 ---
 
@@ -1578,7 +1578,7 @@ DuringSupportHours ServiceIncidentUrgencyRuleDuringSupportHours
 
 during_support_hours block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#during_support_hours Service#during_support_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#during_support_hours Service#during_support_hours}
 
 ---
 
@@ -1592,7 +1592,7 @@ OutsideSupportHours ServiceIncidentUrgencyRuleOutsideSupportHours
 
 outside_support_hours block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#outside_support_hours Service#outside_support_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#outside_support_hours Service#outside_support_hours}
 
 ---
 
@@ -1604,7 +1604,7 @@ Urgency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#urgency Service#urgency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#urgency Service#urgency}.
 
 ---
 
@@ -1613,7 +1613,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRuleDuringSupportHours.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 &service.ServiceIncidentUrgencyRuleDuringSupportHours {
 	Type: *string,
@@ -1625,8 +1625,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRuleDuringSupportHours.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRuleDuringSupportHours.property.urgency">Urgency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#urgency Service#urgency}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRuleDuringSupportHours.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#type Service#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRuleDuringSupportHours.property.urgency">Urgency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#urgency Service#urgency}. |
 
 ---
 
@@ -1638,7 +1638,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#type Service#type}.
 
 ---
 
@@ -1650,7 +1650,7 @@ Urgency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#urgency Service#urgency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#urgency Service#urgency}.
 
 ---
 
@@ -1659,7 +1659,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRuleOutsideSupportHours.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 &service.ServiceIncidentUrgencyRuleOutsideSupportHours {
 	Type: *string,
@@ -1671,8 +1671,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRuleOutsideSupportHours.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRuleOutsideSupportHours.property.urgency">Urgency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#urgency Service#urgency}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRuleOutsideSupportHours.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#type Service#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRuleOutsideSupportHours.property.urgency">Urgency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#urgency Service#urgency}. |
 
 ---
 
@@ -1684,7 +1684,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#type Service#type}.
 
 ---
 
@@ -1696,7 +1696,7 @@ Urgency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#urgency Service#urgency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#urgency Service#urgency}.
 
 ---
 
@@ -1705,7 +1705,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.service.ServiceScheduledActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 &service.ServiceScheduledActions {
 	At: interface{},
@@ -1719,8 +1719,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActions.property.at">At</a></code> | <code>interface{}</code> | at block. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActions.property.toUrgency">ToUrgency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#to_urgency Service#to_urgency}. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActions.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActions.property.toUrgency">ToUrgency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#to_urgency Service#to_urgency}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActions.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#type Service#type}. |
 
 ---
 
@@ -1734,7 +1734,7 @@ At interface{}
 
 at block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#at Service#at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#at Service#at}
 
 ---
 
@@ -1746,7 +1746,7 @@ ToUrgency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#to_urgency Service#to_urgency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#to_urgency Service#to_urgency}.
 
 ---
 
@@ -1758,7 +1758,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#type Service#type}.
 
 ---
 
@@ -1767,7 +1767,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.service.ServiceScheduledActionsAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 &service.ServiceScheduledActionsAt {
 	Name: *string,
@@ -1779,8 +1779,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsAt.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#name Service#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsAt.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsAt.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#name Service#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsAt.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#type Service#type}. |
 
 ---
 
@@ -1792,7 +1792,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#name Service#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#name Service#name}.
 
 ---
 
@@ -1804,7 +1804,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#type Service#type}.
 
 ---
 
@@ -1813,7 +1813,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.service.ServiceSupportHours.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 &service.ServiceSupportHours {
 	DaysOfWeek: *[]*f64,
@@ -1828,11 +1828,11 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceSupportHours.property.daysOfWeek">DaysOfWeek</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#days_of_week Service#days_of_week}. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceSupportHours.property.endTime">EndTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#end_time Service#end_time}. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceSupportHours.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#start_time Service#start_time}. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceSupportHours.property.timeZone">TimeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#time_zone Service#time_zone}. |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceSupportHours.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceSupportHours.property.daysOfWeek">DaysOfWeek</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#days_of_week Service#days_of_week}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceSupportHours.property.endTime">EndTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#end_time Service#end_time}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceSupportHours.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#start_time Service#start_time}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceSupportHours.property.timeZone">TimeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#time_zone Service#time_zone}. |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceSupportHours.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#type Service#type}. |
 
 ---
 
@@ -1844,7 +1844,7 @@ DaysOfWeek *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#days_of_week Service#days_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#days_of_week Service#days_of_week}.
 
 ---
 
@@ -1856,7 +1856,7 @@ EndTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#end_time Service#end_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#end_time Service#end_time}.
 
 ---
 
@@ -1868,7 +1868,7 @@ StartTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#start_time Service#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#start_time Service#start_time}.
 
 ---
 
@@ -1880,7 +1880,7 @@ TimeZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#time_zone Service#time_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#time_zone Service#time_zone}.
 
 ---
 
@@ -1892,7 +1892,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/service#type Service#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/service#type Service#type}.
 
 ---
 
@@ -1903,7 +1903,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.service.ServiceAlertGroupingParametersConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 service.NewServiceAlertGroupingParametersConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceAlertGroupingParametersConfigOutputReference
 ```
@@ -2239,7 +2239,7 @@ func InternalValue() ServiceAlertGroupingParametersConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.service.ServiceAlertGroupingParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 service.NewServiceAlertGroupingParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceAlertGroupingParametersOutputReference
 ```
@@ -2559,7 +2559,7 @@ func InternalValue() ServiceAlertGroupingParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.service.ServiceAutoPauseNotificationsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 service.NewServiceAutoPauseNotificationsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceAutoPauseNotificationsParametersOutputReference
 ```
@@ -2866,7 +2866,7 @@ func InternalValue() ServiceAutoPauseNotificationsParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 service.NewServiceIncidentUrgencyRuleDuringSupportHoursOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference
 ```
@@ -3173,7 +3173,7 @@ func InternalValue() ServiceIncidentUrgencyRuleDuringSupportHours
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 service.NewServiceIncidentUrgencyRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceIncidentUrgencyRuleOutputReference
 ```
@@ -3557,7 +3557,7 @@ func InternalValue() ServiceIncidentUrgencyRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.service.ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 service.NewServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference
 ```
@@ -3864,7 +3864,7 @@ func InternalValue() ServiceIncidentUrgencyRuleOutsideSupportHours
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.service.ServiceScheduledActionsAtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 service.NewServiceScheduledActionsAtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceScheduledActionsAtList
 ```
@@ -4007,7 +4007,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.service.ServiceScheduledActionsAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 service.NewServiceScheduledActionsAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceScheduledActionsAtOutputReference
 ```
@@ -4332,7 +4332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.service.ServiceScheduledActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 service.NewServiceScheduledActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceScheduledActionsList
 ```
@@ -4475,7 +4475,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.service.ServiceScheduledActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 service.NewServiceScheduledActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceScheduledActionsOutputReference
 ```
@@ -4842,7 +4842,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.service.ServiceSupportHoursOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v6/service"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/service"
 
 service.NewServiceSupportHoursOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceSupportHoursOutputReference
 ```
