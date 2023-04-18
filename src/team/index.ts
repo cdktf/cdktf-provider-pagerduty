@@ -54,7 +54,7 @@ export class Team extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_team',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.14.1',
+        providerVersion: '2.14.2',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
