@@ -1,3 +1,7 @@
+# `pagerduty_event_rule`
+
+Refer to the Terraform Registory for docs: [`pagerduty_event_rule`](https://www.terraform.io/docs/providers/pagerduty/r/event_rule).
+
 # `eventRule` Submodule <a name="`eventRule` Submodule" id="@cdktf/provider-pagerduty.eventRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

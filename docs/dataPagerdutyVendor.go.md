@@ -1,3 +1,7 @@
+# `data_pagerduty_vendor`
+
+Refer to the Terraform Registory for docs: [`data_pagerduty_vendor`](https://www.terraform.io/docs/providers/pagerduty/d/vendor).
+
 # `dataPagerdutyVendor` Submodule <a name="`dataPagerdutyVendor` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyVendor"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

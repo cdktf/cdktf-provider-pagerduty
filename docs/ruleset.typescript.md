@@ -1,3 +1,7 @@
+# `pagerduty_ruleset`
+
+Refer to the Terraform Registory for docs: [`pagerduty_ruleset`](https://www.terraform.io/docs/providers/pagerduty/r/ruleset).
+
 # `ruleset` Submodule <a name="`ruleset` Submodule" id="@cdktf/provider-pagerduty.ruleset"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

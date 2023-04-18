@@ -1,3 +1,7 @@
+# `data_pagerduty_custom_field_schema`
+
+Refer to the Terraform Registory for docs: [`data_pagerduty_custom_field_schema`](https://www.terraform.io/docs/providers/pagerduty/d/custom_field_schema).
+
 # `dataPagerdutyCustomFieldSchema` Submodule <a name="`dataPagerdutyCustomFieldSchema` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyCustomFieldSchema"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

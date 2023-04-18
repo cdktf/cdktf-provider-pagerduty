@@ -1,3 +1,7 @@
+# `data_pagerduty_license`
+
+Refer to the Terraform Registory for docs: [`data_pagerduty_license`](https://www.terraform.io/docs/providers/pagerduty/d/license).
+
 # `dataPagerdutyLicense` Submodule <a name="`dataPagerdutyLicense` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyLicense"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `pagerduty_service_integration`
+
+Refer to the Terraform Registory for docs: [`pagerduty_service_integration`](https://www.terraform.io/docs/providers/pagerduty/r/service_integration).
+
 # `serviceIntegration` Submodule <a name="`serviceIntegration` Submodule" id="@cdktf/provider-pagerduty.serviceIntegration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

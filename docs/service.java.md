@@ -1,3 +1,7 @@
+# `pagerduty_service`
+
+Refer to the Terraform Registory for docs: [`pagerduty_service`](https://www.terraform.io/docs/providers/pagerduty/r/service).
+
 # `service` Submodule <a name="`service` Submodule" id="@cdktf/provider-pagerduty.service"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

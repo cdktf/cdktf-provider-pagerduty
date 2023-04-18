@@ -1,3 +1,7 @@
+# `pagerduty_extension`
+
+Refer to the Terraform Registory for docs: [`pagerduty_extension`](https://www.terraform.io/docs/providers/pagerduty/r/extension).
+
 # `extension` Submodule <a name="`extension` Submodule" id="@cdktf/provider-pagerduty.extension"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `pagerduty_tag_assignment`
+
+Refer to the Terraform Registory for docs: [`pagerduty_tag_assignment`](https://www.terraform.io/docs/providers/pagerduty/r/tag_assignment).
+
 # `tagAssignment` Submodule <a name="`tagAssignment` Submodule" id="@cdktf/provider-pagerduty.tagAssignment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

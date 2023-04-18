@@ -1,3 +1,7 @@
+# `data_pagerduty_tag`
+
+Refer to the Terraform Registory for docs: [`data_pagerduty_tag`](https://www.terraform.io/docs/providers/pagerduty/d/tag).
+
 # `dataPagerdutyTag` Submodule <a name="`dataPagerdutyTag` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyTag"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

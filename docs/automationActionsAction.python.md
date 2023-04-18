@@ -1,3 +1,7 @@
+# `pagerduty_automation_actions_action`
+
+Refer to the Terraform Registory for docs: [`pagerduty_automation_actions_action`](https://www.terraform.io/docs/providers/pagerduty/r/automation_actions_action).
+
 # `automationActionsAction` Submodule <a name="`automationActionsAction` Submodule" id="@cdktf/provider-pagerduty.automationActionsAction"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

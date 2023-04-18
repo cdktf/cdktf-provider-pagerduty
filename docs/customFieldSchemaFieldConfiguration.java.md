@@ -1,3 +1,7 @@
+# `pagerduty_custom_field_schema_field_configuration`
+
+Refer to the Terraform Registory for docs: [`pagerduty_custom_field_schema_field_configuration`](https://www.terraform.io/docs/providers/pagerduty/r/custom_field_schema_field_configuration).
+
 # `customFieldSchemaFieldConfiguration` Submodule <a name="`customFieldSchemaFieldConfiguration` Submodule" id="@cdktf/provider-pagerduty.customFieldSchemaFieldConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
