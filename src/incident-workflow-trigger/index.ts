@@ -62,7 +62,7 @@ export class IncidentWorkflowTrigger extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_incident_workflow_trigger',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.14.1',
+        providerVersion: '2.14.2',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
