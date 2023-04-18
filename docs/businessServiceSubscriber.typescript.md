@@ -1,6 +1,6 @@
 # `pagerduty_business_service_subscriber`
 
-Refer to the Terraform Registory for docs: [`pagerduty_business_service_subscriber`](https://www.terraform.io/docs/providers/pagerduty/r/business_service_subscriber).
+Refer to the Terraform Registory for docs: [`pagerduty_business_service_subscriber`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/business_service_subscriber).
 
 # `businessServiceSubscriber` Submodule <a name="`businessServiceSubscriber` Submodule" id="@cdktf/provider-pagerduty.businessServiceSubscriber"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`pagerduty_business_service_subscrib
 
 ### BusinessServiceSubscriber <a name="BusinessServiceSubscriber" id="@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriber"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service_subscriber pagerduty_business_service_subscriber}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/business_service_subscriber pagerduty_business_service_subscriber}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriber.Initializer"></a>
 
@@ -346,7 +346,7 @@ businessServiceSubscriber.BusinessServiceSubscriber.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriber.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriber.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriber.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriber.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriber.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriber.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriber.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriber.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -448,10 +448,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriber.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -620,16 +620,16 @@ const businessServiceSubscriberConfig: businessServiceSubscriber.BusinessService
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriberConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriberConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriberConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriberConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriberConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriberConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriberConfig.property.businessServiceId">businessServiceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service_subscriber#business_service_id BusinessServiceSubscriber#business_service_id}. |
-| <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriberConfig.property.subscriberId">subscriberId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service_subscriber#subscriber_id BusinessServiceSubscriber#subscriber_id}. |
-| <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriberConfig.property.subscriberType">subscriberType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service_subscriber#subscriber_type BusinessServiceSubscriber#subscriber_type}. |
-| <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service_subscriber#id BusinessServiceSubscriber#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriberConfig.property.businessServiceId">businessServiceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/business_service_subscriber#business_service_id BusinessServiceSubscriber#business_service_id}. |
+| <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriberConfig.property.subscriberId">subscriberId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/business_service_subscriber#subscriber_id BusinessServiceSubscriber#subscriber_id}. |
+| <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriberConfig.property.subscriberType">subscriberType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/business_service_subscriber#subscriber_type BusinessServiceSubscriber#subscriber_type}. |
+| <code><a href="#@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/business_service_subscriber#id BusinessServiceSubscriber#id}. |
 
 ---
 
@@ -646,10 +646,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.businessServiceSubscriber.BusinessServiceSubscriberConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -711,7 +711,7 @@ public readonly businessServiceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service_subscriber#business_service_id BusinessServiceSubscriber#business_service_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/business_service_subscriber#business_service_id BusinessServiceSubscriber#business_service_id}.
 
 ---
 
@@ -723,7 +723,7 @@ public readonly subscriberId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service_subscriber#subscriber_id BusinessServiceSubscriber#subscriber_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/business_service_subscriber#subscriber_id BusinessServiceSubscriber#subscriber_id}.
 
 ---
 
@@ -735,7 +735,7 @@ public readonly subscriberType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service_subscriber#subscriber_type BusinessServiceSubscriber#subscriber_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/business_service_subscriber#subscriber_type BusinessServiceSubscriber#subscriber_type}.
 
 ---
 
@@ -747,7 +747,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/pagerduty/r/business_service_subscriber#id BusinessServiceSubscriber#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.2/docs/resources/business_service_subscriber#id BusinessServiceSubscriber#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
