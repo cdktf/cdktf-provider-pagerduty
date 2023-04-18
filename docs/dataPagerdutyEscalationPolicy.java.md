@@ -1,3 +1,7 @@
+# `data_pagerduty_escalation_policy`
+
+Refer to the Terraform Registory for docs: [`data_pagerduty_escalation_policy`](https://www.terraform.io/docs/providers/pagerduty/d/escalation_policy).
+
 # `dataPagerdutyEscalationPolicy` Submodule <a name="`dataPagerdutyEscalationPolicy` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyEscalationPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

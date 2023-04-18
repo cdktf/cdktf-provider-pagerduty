@@ -1,3 +1,7 @@
+# `pagerduty_team_membership`
+
+Refer to the Terraform Registory for docs: [`pagerduty_team_membership`](https://www.terraform.io/docs/providers/pagerduty/r/team_membership).
+
 # `teamMembership` Submodule <a name="`teamMembership` Submodule" id="@cdktf/provider-pagerduty.teamMembership"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

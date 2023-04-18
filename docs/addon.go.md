@@ -1,3 +1,7 @@
+# `pagerduty_addon`
+
+Refer to the Terraform Registory for docs: [`pagerduty_addon`](https://www.terraform.io/docs/providers/pagerduty/r/addon).
+
 # `addon` Submodule <a name="`addon` Submodule" id="@cdktf/provider-pagerduty.addon"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

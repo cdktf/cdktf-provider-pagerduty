@@ -1,3 +1,7 @@
+# `pagerduty_slack_connection`
+
+Refer to the Terraform Registory for docs: [`pagerduty_slack_connection`](https://www.terraform.io/docs/providers/pagerduty/r/slack_connection).
+
 # `slackConnection` Submodule <a name="`slackConnection` Submodule" id="@cdktf/provider-pagerduty.slackConnection"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

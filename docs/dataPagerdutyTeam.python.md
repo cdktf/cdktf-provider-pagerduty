@@ -1,3 +1,7 @@
+# `data_pagerduty_team`
+
+Refer to the Terraform Registory for docs: [`data_pagerduty_team`](https://www.terraform.io/docs/providers/pagerduty/d/team).
+
 # `dataPagerdutyTeam` Submodule <a name="`dataPagerdutyTeam` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyTeam"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

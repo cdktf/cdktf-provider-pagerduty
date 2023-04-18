@@ -1,3 +1,7 @@
+# `pagerduty_event_orchestration`
+
+Refer to the Terraform Registory for docs: [`pagerduty_event_orchestration`](https://www.terraform.io/docs/providers/pagerduty/r/event_orchestration).
+
 # `eventOrchestration` Submodule <a name="`eventOrchestration` Submodule" id="@cdktf/provider-pagerduty.eventOrchestration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

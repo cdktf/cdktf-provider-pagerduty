@@ -1,3 +1,7 @@
+# `pagerduty_business_service_subscriber`
+
+Refer to the Terraform Registory for docs: [`pagerduty_business_service_subscriber`](https://www.terraform.io/docs/providers/pagerduty/r/business_service_subscriber).
+
 # `businessServiceSubscriber` Submodule <a name="`businessServiceSubscriber` Submodule" id="@cdktf/provider-pagerduty.businessServiceSubscriber"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

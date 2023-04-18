@@ -1,3 +1,7 @@
+# `pagerduty_user_notification_rule`
+
+Refer to the Terraform Registory for docs: [`pagerduty_user_notification_rule`](https://www.terraform.io/docs/providers/pagerduty/r/user_notification_rule).
+
 # `userNotificationRule` Submodule <a name="`userNotificationRule` Submodule" id="@cdktf/provider-pagerduty.userNotificationRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

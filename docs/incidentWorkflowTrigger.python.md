@@ -1,3 +1,7 @@
+# `pagerduty_incident_workflow_trigger`
+
+Refer to the Terraform Registory for docs: [`pagerduty_incident_workflow_trigger`](https://www.terraform.io/docs/providers/pagerduty/r/incident_workflow_trigger).
+
 # `incidentWorkflowTrigger` Submodule <a name="`incidentWorkflowTrigger` Submodule" id="@cdktf/provider-pagerduty.incidentWorkflowTrigger"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
