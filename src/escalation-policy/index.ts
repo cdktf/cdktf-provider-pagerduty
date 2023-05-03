@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.3/docs/resources/escalation_policy
+// https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/resources/escalation_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,45 +8,45 @@ import * as cdktf from 'cdktf';
 
 export interface EscalationPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.3/docs/resources/escalation_policy#description EscalationPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/resources/escalation_policy#description EscalationPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.3/docs/resources/escalation_policy#id EscalationPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/resources/escalation_policy#id EscalationPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.3/docs/resources/escalation_policy#name EscalationPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/resources/escalation_policy#name EscalationPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.3/docs/resources/escalation_policy#num_loops EscalationPolicy#num_loops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/resources/escalation_policy#num_loops EscalationPolicy#num_loops}
   */
   readonly numLoops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.3/docs/resources/escalation_policy#teams EscalationPolicy#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/resources/escalation_policy#teams EscalationPolicy#teams}
   */
   readonly teams?: string[];
   /**
   * rule block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.3/docs/resources/escalation_policy#rule EscalationPolicy#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/resources/escalation_policy#rule EscalationPolicy#rule}
   */
   readonly rule: EscalationPolicyRule[] | cdktf.IResolvable;
 }
 export interface EscalationPolicyRuleTarget {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.3/docs/resources/escalation_policy#id EscalationPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/resources/escalation_policy#id EscalationPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.3/docs/resources/escalation_policy#type EscalationPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/resources/escalation_policy#type EscalationPolicy#type}
   */
   readonly type?: string;
 }
@@ -163,13 +163,13 @@ export class EscalationPolicyRuleTargetList extends cdktf.ComplexList {
 }
 export interface EscalationPolicyRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.3/docs/resources/escalation_policy#escalation_delay_in_minutes EscalationPolicy#escalation_delay_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/resources/escalation_policy#escalation_delay_in_minutes EscalationPolicy#escalation_delay_in_minutes}
   */
   readonly escalationDelayInMinutes: number;
   /**
   * target block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.3/docs/resources/escalation_policy#target EscalationPolicy#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/resources/escalation_policy#target EscalationPolicy#target}
   */
   readonly target: EscalationPolicyRuleTarget[] | cdktf.IResolvable;
 }
@@ -288,7 +288,7 @@ export class EscalationPolicyRuleList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.3/docs/resources/escalation_policy pagerduty_escalation_policy}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/resources/escalation_policy pagerduty_escalation_policy}
 */
 export class EscalationPolicy extends cdktf.TerraformResource {
 
@@ -302,7 +302,7 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.3/docs/resources/escalation_policy pagerduty_escalation_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/resources/escalation_policy pagerduty_escalation_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -313,7 +313,7 @@ export class EscalationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_escalation_policy',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.14.3',
+        providerVersion: '2.14.4',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
