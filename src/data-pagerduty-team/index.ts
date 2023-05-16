@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/data-sources/team
+// https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.5/docs/data-sources/team
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyTeamConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/data-sources/team#id DataPagerdutyTeam#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.5/docs/data-sources/team#id DataPagerdutyTeam#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,17 +17,17 @@ export interface DataPagerdutyTeamConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the team to find in the PagerDuty API
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/data-sources/team#name DataPagerdutyTeam#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.5/docs/data-sources/team#name DataPagerdutyTeam#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/data-sources/team#parent DataPagerdutyTeam#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.5/docs/data-sources/team#parent DataPagerdutyTeam#parent}
   */
   readonly parent?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/data-sources/team pagerduty_team}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.5/docs/data-sources/team pagerduty_team}
 */
 export class DataPagerdutyTeam extends cdktf.TerraformDataSource {
 
@@ -41,7 +41,7 @@ export class DataPagerdutyTeam extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.4/docs/data-sources/team pagerduty_team} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.5/docs/data-sources/team pagerduty_team} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -52,7 +52,7 @@ export class DataPagerdutyTeam extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_team',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.14.4',
+        providerVersion: '2.14.5',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
