@@ -1,3 +1,3 @@
 # `data_pagerduty_automation_actions_runner`
 
-Refer to the Terraform Registory for docs: [`data_pagerduty_automation_actions_runner`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.5/docs/data-sources/automation_actions_runner).
+Refer to the Terraform Registory for docs: [`data_pagerduty_automation_actions_runner`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/data-sources/automation_actions_runner).
