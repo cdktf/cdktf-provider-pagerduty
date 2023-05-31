@@ -1,3 +1,3 @@
 # `pagerduty_service`
 
-Refer to the Terraform Registory for docs: [`pagerduty_service`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/service).
+Refer to the Terraform Registory for docs: [`pagerduty_service`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/service).

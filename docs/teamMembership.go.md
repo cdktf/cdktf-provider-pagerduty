@@ -1,6 +1,6 @@
 # `pagerduty_team_membership`
 
-Refer to the Terraform Registory for docs: [`pagerduty_team_membership`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/team_membership).
+Refer to the Terraform Registory for docs: [`pagerduty_team_membership`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/team_membership).
 
 # `teamMembership` Submodule <a name="`teamMembership` Submodule" id="@cdktf/provider-pagerduty.teamMembership"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`pagerduty_team_membership`](https:/
 
 ### TeamMembership <a name="TeamMembership" id="@cdktf/provider-pagerduty.teamMembership.TeamMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/team_membership pagerduty_team_membership}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/team_membership pagerduty_team_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.teamMembership.TeamMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/teammembership"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/teammembership"
 
 teammembership.NewTeamMembership(scope Construct, id *string, config TeamMembershipConfig) TeamMembership
 ```
@@ -284,7 +284,7 @@ func ResetRole()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.teamMembership.TeamMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/teammembership"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/teammembership"
 
 teammembership.TeamMembership_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.teamMembership.TeamMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/teammembership"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/teammembership"
 
 teammembership.TeamMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ teammembership.TeamMembership_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.teamMembership.TeamMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/teammembership"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/teammembership"
 
 teammembership.TeamMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/teammembership"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/teammembership"
 
 &teammembership.TeamMembershipConfig {
 	Connection: interface{},
@@ -645,10 +645,10 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v7/teammembership
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.teamId">TeamId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/team_membership#team_id TeamMembership#team_id}. |
-| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/team_membership#user_id TeamMembership#user_id}. |
-| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/team_membership#id TeamMembership#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/team_membership#role TeamMembership#role}. |
+| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.teamId">TeamId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/team_membership#team_id TeamMembership#team_id}. |
+| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/team_membership#user_id TeamMembership#user_id}. |
+| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/team_membership#id TeamMembership#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/team_membership#role TeamMembership#role}. |
 
 ---
 
@@ -730,7 +730,7 @@ TeamId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/team_membership#team_id TeamMembership#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/team_membership#team_id TeamMembership#team_id}.
 
 ---
 
@@ -742,7 +742,7 @@ UserId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/team_membership#user_id TeamMembership#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/team_membership#user_id TeamMembership#user_id}.
 
 ---
 
@@ -754,7 +754,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/team_membership#id TeamMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/team_membership#id TeamMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -769,7 +769,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/team_membership#role TeamMembership#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/team_membership#role TeamMembership#role}.
 
 ---
 

@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/extension_servicenow
+// https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/extension_servicenow
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,64 +8,64 @@ import * as cdktf from 'cdktf';
 
 export interface ExtensionServicenowConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/extension_servicenow#endpoint_url ExtensionServicenow#endpoint_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/extension_servicenow#endpoint_url ExtensionServicenow#endpoint_url}
   */
   readonly endpointUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/extension_servicenow#extension_objects ExtensionServicenow#extension_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/extension_servicenow#extension_objects ExtensionServicenow#extension_objects}
   */
   readonly extensionObjects: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/extension_servicenow#extension_schema ExtensionServicenow#extension_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/extension_servicenow#extension_schema ExtensionServicenow#extension_schema}
   */
   readonly extensionSchema: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/extension_servicenow#id ExtensionServicenow#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/extension_servicenow#id ExtensionServicenow#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/extension_servicenow#name ExtensionServicenow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/extension_servicenow#name ExtensionServicenow#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/extension_servicenow#referer ExtensionServicenow#referer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/extension_servicenow#referer ExtensionServicenow#referer}
   */
   readonly referer: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/extension_servicenow#snow_password ExtensionServicenow#snow_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/extension_servicenow#snow_password ExtensionServicenow#snow_password}
   */
   readonly snowPassword: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/extension_servicenow#snow_user ExtensionServicenow#snow_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/extension_servicenow#snow_user ExtensionServicenow#snow_user}
   */
   readonly snowUser: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/extension_servicenow#summary ExtensionServicenow#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/extension_servicenow#summary ExtensionServicenow#summary}
   */
   readonly summary?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/extension_servicenow#sync_options ExtensionServicenow#sync_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/extension_servicenow#sync_options ExtensionServicenow#sync_options}
   */
   readonly syncOptions: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/extension_servicenow#target ExtensionServicenow#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/extension_servicenow#target ExtensionServicenow#target}
   */
   readonly target: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/extension_servicenow#task_type ExtensionServicenow#task_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/extension_servicenow#task_type ExtensionServicenow#task_type}
   */
   readonly taskType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/extension_servicenow#type ExtensionServicenow#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/extension_servicenow#type ExtensionServicenow#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/extension_servicenow pagerduty_extension_servicenow}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/extension_servicenow pagerduty_extension_servicenow}
 */
 export class ExtensionServicenow extends cdktf.TerraformResource {
 
@@ -79,7 +79,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/extension_servicenow pagerduty_extension_servicenow} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/extension_servicenow pagerduty_extension_servicenow} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class ExtensionServicenow extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_extension_servicenow',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.14.6',
+        providerVersion: '2.15.0',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
