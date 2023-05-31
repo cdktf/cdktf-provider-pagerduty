@@ -1,3 +1,3 @@
 # `pagerduty_tag`
 
-Refer to the Terraform Registory for docs: [`pagerduty_tag`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/tag).
+Refer to the Terraform Registory for docs: [`pagerduty_tag`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/tag).

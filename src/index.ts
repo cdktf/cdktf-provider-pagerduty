@@ -22,6 +22,8 @@ export * as eventOrchestrationUnrouted from './event-orchestration-unrouted';
 export * as eventRule from './event-rule';
 export * as extension from './extension';
 export * as extensionServicenow from './extension-servicenow';
+export * as incidentCustomField from './incident-custom-field';
+export * as incidentCustomFieldOption from './incident-custom-field-option';
 export * as incidentWorkflow from './incident-workflow';
 export * as incidentWorkflowTrigger from './incident-workflow-trigger';
 export * as maintenanceWindow from './maintenance-window';
@@ -52,6 +54,7 @@ export * as dataPagerdutyEventOrchestration from './data-pagerduty-event-orchest
 export * as dataPagerdutyEventOrchestrationIntegration from './data-pagerduty-event-orchestration-integration';
 export * as dataPagerdutyEventOrchestrations from './data-pagerduty-event-orchestrations';
 export * as dataPagerdutyExtensionSchema from './data-pagerduty-extension-schema';
+export * as dataPagerdutyIncidentCustomField from './data-pagerduty-incident-custom-field';
 export * as dataPagerdutyIncidentWorkflow from './data-pagerduty-incident-workflow';
 export * as dataPagerdutyLicense from './data-pagerduty-license';
 export * as dataPagerdutyLicenses from './data-pagerduty-licenses';

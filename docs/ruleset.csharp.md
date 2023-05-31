@@ -1,6 +1,6 @@
 # `pagerduty_ruleset`
 
-Refer to the Terraform Registory for docs: [`pagerduty_ruleset`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/ruleset).
+Refer to the Terraform Registory for docs: [`pagerduty_ruleset`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/ruleset).
 
 # `ruleset` Submodule <a name="`ruleset` Submodule" id="@cdktf/provider-pagerduty.ruleset"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`pagerduty_ruleset`](https://registr
 
 ### Ruleset <a name="Ruleset" id="@cdktf/provider-pagerduty.ruleset.Ruleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/ruleset pagerduty_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/ruleset pagerduty_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.ruleset.Ruleset.Initializer"></a>
 
@@ -657,8 +657,8 @@ new RulesetConfig {
 | <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/ruleset#name Ruleset#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/ruleset#id Ruleset#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/ruleset#name Ruleset#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/ruleset#id Ruleset#id}. |
 | <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetConfig.property.team">Team</a></code> | <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetTeam">RulesetTeam</a></code> | team block. |
 
 ---
@@ -741,7 +741,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/ruleset#name Ruleset#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/ruleset#name Ruleset#name}.
 
 ---
 
@@ -753,7 +753,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/ruleset#id Ruleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/ruleset#id Ruleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -770,7 +770,7 @@ public RulesetTeam Team { get; set; }
 
 team block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/ruleset#team Ruleset#team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/ruleset#team Ruleset#team}
 
 ---
 
@@ -790,7 +790,7 @@ new RulesetTeam {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetTeam.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/ruleset#id Ruleset#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.ruleset.RulesetTeam.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/ruleset#id Ruleset#id}. |
 
 ---
 
@@ -802,7 +802,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/ruleset#id Ruleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/ruleset#id Ruleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

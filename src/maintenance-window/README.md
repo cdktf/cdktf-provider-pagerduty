@@ -1,3 +1,3 @@
 # `pagerduty_maintenance_window`
 
-Refer to the Terraform Registory for docs: [`pagerduty_maintenance_window`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.14.6/docs/resources/maintenance_window).
+Refer to the Terraform Registory for docs: [`pagerduty_maintenance_window`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs/resources/maintenance_window).
