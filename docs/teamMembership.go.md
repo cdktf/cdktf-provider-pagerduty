@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.teamMembership.TeamMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/teammembership"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/teammembership"
 
 teammembership.NewTeamMembership(scope Construct, id *string, config TeamMembershipConfig) TeamMembership
 ```
@@ -284,7 +284,7 @@ func ResetRole()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.teamMembership.TeamMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/teammembership"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/teammembership"
 
 teammembership.TeamMembership_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.teamMembership.TeamMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/teammembership"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/teammembership"
 
 teammembership.TeamMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ teammembership.TeamMembership_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.teamMembership.TeamMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/teammembership"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/teammembership"
 
 teammembership.TeamMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/teammembership"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v8/teammembership"
 
 &teammembership.TeamMembershipConfig {
 	Connection: interface{},
