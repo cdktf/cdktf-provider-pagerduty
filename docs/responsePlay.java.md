@@ -2830,7 +2830,7 @@ public void resetType()
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a></code> | *No description.* |
 
 ---
 
@@ -2994,7 +2994,7 @@ public java.lang.String getType();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>
 
 ---
 
@@ -4230,7 +4230,7 @@ public void resetType()
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a></code> | *No description.* |
 
 ---
 
@@ -4304,7 +4304,7 @@ public java.lang.String getType();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>
 
 ---
 

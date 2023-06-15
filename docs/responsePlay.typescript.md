@@ -2598,7 +2598,7 @@ public resetType(): void
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a></code> | *No description.* |
 
 ---
 
@@ -2759,10 +2759,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ResponsePlayResponder | IResolvable;
+public readonly internalValue: IResolvable | ResponsePlayResponder;
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>
 
 ---
 
@@ -3998,7 +3998,7 @@ public resetType(): void
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a></code> | *No description.* |
 
 ---
 
@@ -4069,10 +4069,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ResponsePlaySubscriber | IResolvable;
+public readonly internalValue: IResolvable | ResponsePlaySubscriber;
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>
 
 ---
 

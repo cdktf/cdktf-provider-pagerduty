@@ -2956,7 +2956,7 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]</code> | *No description.* |
 
 ---
 
@@ -3117,10 +3117,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ResponsePlayResponder, IResolvable]
+internal_value: typing.Union[IResolvable, ResponsePlayResponder]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]
 
 ---
 
@@ -4461,7 +4461,7 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]</code> | *No description.* |
 
 ---
 
@@ -4532,10 +4532,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ResponsePlaySubscriber, IResolvable]
+internal_value: typing.Union[IResolvable, ResponsePlaySubscriber]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]
 
 ---
 
