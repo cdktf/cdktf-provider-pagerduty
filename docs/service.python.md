@@ -4832,7 +4832,7 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsAtOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsAtOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsAtOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsAt">ServiceScheduledActionsAt</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsAtOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsAt">ServiceScheduledActionsAt</a>]</code> | *No description.* |
 
 ---
 
@@ -4903,10 +4903,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.service.ServiceScheduledActionsAtOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServiceScheduledActionsAt, IResolvable]
+internal_value: typing.Union[IResolvable, ServiceScheduledActionsAt]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsAt">ServiceScheduledActionsAt</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsAt">ServiceScheduledActionsAt</a>]
 
 ---
 
@@ -5359,7 +5359,7 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsOutputReference.property.toUrgency">to_urgency</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActions">ServiceScheduledActions</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActions">ServiceScheduledActions</a>]</code> | *No description.* |
 
 ---
 
@@ -5450,10 +5450,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.service.ServiceScheduledActionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServiceScheduledActions, IResolvable]
+internal_value: typing.Union[IResolvable, ServiceScheduledActions]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActions">ServiceScheduledActions</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.service.ServiceScheduledActions">ServiceScheduledActions</a>]
 
 ---
 

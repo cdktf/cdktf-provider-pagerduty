@@ -2679,7 +2679,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotate">RulesetRuleActionsAnnotate</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotate">RulesetRuleActionsAnnotate</a>]</code> | *No description.* |
 
 ---
 
@@ -2730,10 +2730,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RulesetRuleActionsAnnotate, IResolvable]
+internal_value: typing.Union[IResolvable, RulesetRuleActionsAnnotate]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotate">RulesetRuleActionsAnnotate</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotate">RulesetRuleActionsAnnotate</a>]
 
 ---
 
@@ -3153,7 +3153,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventAction">RulesetRuleActionsEventAction</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventAction">RulesetRuleActionsEventAction</a>]</code> | *No description.* |
 
 ---
 
@@ -3204,10 +3204,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RulesetRuleActionsEventAction, IResolvable]
+internal_value: typing.Union[IResolvable, RulesetRuleActionsEventAction]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventAction">RulesetRuleActionsEventAction</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventAction">RulesetRuleActionsEventAction</a>]
 
 ---
 
@@ -3654,7 +3654,7 @@ def reset_template() -> None
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsOutputReference.property.template">template</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractions">RulesetRuleActionsExtractions</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractions">RulesetRuleActionsExtractions</a>]</code> | *No description.* |
 
 ---
 
@@ -3765,10 +3765,10 @@ template: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RulesetRuleActionsExtractions, IResolvable]
+internal_value: typing.Union[IResolvable, RulesetRuleActionsExtractions]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractions">RulesetRuleActionsExtractions</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractions">RulesetRuleActionsExtractions</a>]
 
 ---
 
@@ -4814,7 +4814,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriority">RulesetRuleActionsPriority</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriority">RulesetRuleActionsPriority</a>]</code> | *No description.* |
 
 ---
 
@@ -4865,10 +4865,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RulesetRuleActionsPriority, IResolvable]
+internal_value: typing.Union[IResolvable, RulesetRuleActionsPriority]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriority">RulesetRuleActionsPriority</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriority">RulesetRuleActionsPriority</a>]
 
 ---
 
@@ -5288,7 +5288,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRoute">RulesetRuleActionsRoute</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRoute">RulesetRuleActionsRoute</a>]</code> | *No description.* |
 
 ---
 
@@ -5339,10 +5339,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RulesetRuleActionsRoute, IResolvable]
+internal_value: typing.Union[IResolvable, RulesetRuleActionsRoute]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRoute">RulesetRuleActionsRoute</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRoute">RulesetRuleActionsRoute</a>]
 
 ---
 
@@ -5762,7 +5762,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverity">RulesetRuleActionsSeverity</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverity">RulesetRuleActionsSeverity</a>]</code> | *No description.* |
 
 ---
 
@@ -5813,10 +5813,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RulesetRuleActionsSeverity, IResolvable]
+internal_value: typing.Union[IResolvable, RulesetRuleActionsSeverity]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverity">RulesetRuleActionsSeverity</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverity">RulesetRuleActionsSeverity</a>]
 
 ---
 
@@ -6263,7 +6263,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.thresholdTimeUnit">threshold_time_unit</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.thresholdValue">threshold_value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.value">value</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress">RulesetRuleActionsSuppress</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress">RulesetRuleActionsSuppress</a>]</code> | *No description.* |
 
 ---
 
@@ -6374,10 +6374,10 @@ value: typing.Union[bool, IResolvable]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RulesetRuleActionsSuppress, IResolvable]
+internal_value: typing.Union[IResolvable, RulesetRuleActionsSuppress]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress">RulesetRuleActionsSuppress</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress">RulesetRuleActionsSuppress</a>]
 
 ---
 
@@ -6797,7 +6797,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspend">RulesetRuleActionsSuspend</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspend">RulesetRuleActionsSuspend</a>]</code> | *No description.* |
 
 ---
 
@@ -6848,10 +6848,10 @@ value: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RulesetRuleActionsSuspend, IResolvable]
+internal_value: typing.Union[IResolvable, RulesetRuleActionsSuspend]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspend">RulesetRuleActionsSuspend</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspend">RulesetRuleActionsSuspend</a>]
 
 ---
 
@@ -7642,7 +7642,7 @@ def reset_parameter() -> None
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.property.operatorInput">operator_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.property.parameterInput">parameter_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameter">RulesetRuleConditionsSubconditionsParameter</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions">RulesetRuleConditionsSubconditions</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions">RulesetRuleConditionsSubconditions</a>]</code> | *No description.* |
 
 ---
 
@@ -7713,10 +7713,10 @@ operator: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RulesetRuleConditionsSubconditions, IResolvable]
+internal_value: typing.Union[IResolvable, RulesetRuleConditionsSubconditions]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions">RulesetRuleConditionsSubconditions</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions">RulesetRuleConditionsSubconditions</a>]
 
 ---
 
@@ -8145,7 +8145,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameter">RulesetRuleConditionsSubconditionsParameter</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameter">RulesetRuleConditionsSubconditionsParameter</a>]</code> | *No description.* |
 
 ---
 
@@ -8216,10 +8216,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RulesetRuleConditionsSubconditionsParameter, IResolvable]
+internal_value: typing.Union[IResolvable, RulesetRuleConditionsSubconditionsParameter]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameter">RulesetRuleConditionsSubconditionsParameter</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameter">RulesetRuleConditionsSubconditionsParameter</a>]
 
 ---
 
@@ -8648,7 +8648,7 @@ def reset_start_time() -> None
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenOutputReference.property.startTimeInput">start_time_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenOutputReference.property.endTime">end_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenOutputReference.property.startTime">start_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetween">RulesetRuleTimeFrameActiveBetween</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetween">RulesetRuleTimeFrameActiveBetween</a>]</code> | *No description.* |
 
 ---
 
@@ -8719,10 +8719,10 @@ start_time: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RulesetRuleTimeFrameActiveBetween, IResolvable]
+internal_value: typing.Union[IResolvable, RulesetRuleTimeFrameActiveBetween]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetween">RulesetRuleTimeFrameActiveBetween</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetween">RulesetRuleTimeFrameActiveBetween</a>]
 
 ---
 
@@ -9531,7 +9531,7 @@ def reset_weekdays() -> None
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyOutputReference.property.startTime">start_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyOutputReference.property.timezone">timezone</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyOutputReference.property.weekdays">weekdays</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeekly">RulesetRuleTimeFrameScheduledWeekly</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeekly">RulesetRuleTimeFrameScheduledWeekly</a>]</code> | *No description.* |
 
 ---
 
@@ -9642,10 +9642,10 @@ weekdays: typing.List[typing.Union[int, float]]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RulesetRuleTimeFrameScheduledWeekly, IResolvable]
+internal_value: typing.Union[IResolvable, RulesetRuleTimeFrameScheduledWeekly]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeekly">RulesetRuleTimeFrameScheduledWeekly</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeekly">RulesetRuleTimeFrameScheduledWeekly</a>]
 
 ---
 
@@ -10098,7 +10098,7 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable">RulesetRuleVariable</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable">RulesetRuleVariable</a>]</code> | *No description.* |
 
 ---
 
@@ -10189,10 +10189,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RulesetRuleVariable, IResolvable]
+internal_value: typing.Union[IResolvable, RulesetRuleVariable]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable">RulesetRuleVariable</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable">RulesetRuleVariable</a>]
 
 ---
 
@@ -10621,7 +10621,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParameters">RulesetRuleVariableParameters</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParameters">RulesetRuleVariableParameters</a>]</code> | *No description.* |
 
 ---
 
@@ -10692,10 +10692,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RulesetRuleVariableParameters, IResolvable]
+internal_value: typing.Union[IResolvable, RulesetRuleVariableParameters]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParameters">RulesetRuleVariableParameters</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParameters">RulesetRuleVariableParameters</a>]
 
 ---
 

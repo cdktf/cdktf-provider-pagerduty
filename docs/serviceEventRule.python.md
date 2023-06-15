@@ -2567,7 +2567,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]</code> | *No description.* |
 
 ---
 
@@ -2618,10 +2618,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServiceEventRuleActionsAnnotate, IResolvable]
+internal_value: typing.Union[IResolvable, ServiceEventRuleActionsAnnotate]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]
 
 ---
 
@@ -3041,7 +3041,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]</code> | *No description.* |
 
 ---
 
@@ -3092,10 +3092,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServiceEventRuleActionsEventAction, IResolvable]
+internal_value: typing.Union[IResolvable, ServiceEventRuleActionsEventAction]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]
 
 ---
 
@@ -3542,7 +3542,7 @@ def reset_template() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.template">template</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]</code> | *No description.* |
 
 ---
 
@@ -3653,10 +3653,10 @@ template: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServiceEventRuleActionsExtractions, IResolvable]
+internal_value: typing.Union[IResolvable, ServiceEventRuleActionsExtractions]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]
 
 ---
 
@@ -4658,7 +4658,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]</code> | *No description.* |
 
 ---
 
@@ -4709,10 +4709,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServiceEventRuleActionsPriority, IResolvable]
+internal_value: typing.Union[IResolvable, ServiceEventRuleActionsPriority]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]
 
 ---
 
@@ -5132,7 +5132,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]</code> | *No description.* |
 
 ---
 
@@ -5183,10 +5183,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServiceEventRuleActionsSeverity, IResolvable]
+internal_value: typing.Union[IResolvable, ServiceEventRuleActionsSeverity]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]
 
 ---
 
@@ -5633,7 +5633,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.thresholdTimeUnit">threshold_time_unit</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.thresholdValue">threshold_value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.value">value</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]</code> | *No description.* |
 
 ---
 
@@ -5744,10 +5744,10 @@ value: typing.Union[bool, IResolvable]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServiceEventRuleActionsSuppress, IResolvable]
+internal_value: typing.Union[IResolvable, ServiceEventRuleActionsSuppress]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]
 
 ---
 
@@ -6167,7 +6167,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]</code> | *No description.* |
 
 ---
 
@@ -6218,10 +6218,10 @@ value: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServiceEventRuleActionsSuspend, IResolvable]
+internal_value: typing.Union[IResolvable, ServiceEventRuleActionsSuspend]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]
 
 ---
 
@@ -7012,7 +7012,7 @@ def reset_parameter() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.operatorInput">operator_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.parameterInput">parameter_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]</code> | *No description.* |
 
 ---
 
@@ -7083,10 +7083,10 @@ operator: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServiceEventRuleConditionsSubconditions, IResolvable]
+internal_value: typing.Union[IResolvable, ServiceEventRuleConditionsSubconditions]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]
 
 ---
 
@@ -7515,7 +7515,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]</code> | *No description.* |
 
 ---
 
@@ -7586,10 +7586,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServiceEventRuleConditionsSubconditionsParameter, IResolvable]
+internal_value: typing.Union[IResolvable, ServiceEventRuleConditionsSubconditionsParameter]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]
 
 ---
 
@@ -8018,7 +8018,7 @@ def reset_start_time() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.startTimeInput">start_time_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.endTime">end_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.startTime">start_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]</code> | *No description.* |
 
 ---
 
@@ -8089,10 +8089,10 @@ start_time: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServiceEventRuleTimeFrameActiveBetween, IResolvable]
+internal_value: typing.Union[IResolvable, ServiceEventRuleTimeFrameActiveBetween]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]
 
 ---
 
@@ -8901,7 +8901,7 @@ def reset_weekdays() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.startTime">start_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.timezone">timezone</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.weekdays">weekdays</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]</code> | *No description.* |
 
 ---
 
@@ -9012,10 +9012,10 @@ weekdays: typing.List[typing.Union[int, float]]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServiceEventRuleTimeFrameScheduledWeekly, IResolvable]
+internal_value: typing.Union[IResolvable, ServiceEventRuleTimeFrameScheduledWeekly]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]
 
 ---
 
@@ -9468,7 +9468,7 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]</code> | *No description.* |
 
 ---
 
@@ -9559,10 +9559,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServiceEventRuleVariable, IResolvable]
+internal_value: typing.Union[IResolvable, ServiceEventRuleVariable]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]
 
 ---
 
@@ -9991,7 +9991,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]</code> | *No description.* |
 
 ---
 
@@ -10062,10 +10062,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServiceEventRuleVariableParameters, IResolvable]
+internal_value: typing.Union[IResolvable, ServiceEventRuleVariableParameters]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]
 
 ---
 

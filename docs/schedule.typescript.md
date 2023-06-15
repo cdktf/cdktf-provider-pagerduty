@@ -1947,7 +1947,7 @@ public resetRestriction(): void
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.rotationVirtualStart">rotationVirtualStart</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.users">users</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer">ScheduleLayer</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer">ScheduleLayer</a></code> | *No description.* |
 
 ---
 
@@ -2138,10 +2138,10 @@ public readonly users: string[];
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ScheduleLayer | IResolvable;
+public readonly internalValue: IResolvable | ScheduleLayer;
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer">ScheduleLayer</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer">ScheduleLayer</a>
 
 ---
 
@@ -2532,7 +2532,7 @@ public resetStartDayOfWeek(): void
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionOutputReference.property.startDayOfWeek">startDayOfWeek</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionOutputReference.property.startTimeOfDay">startTimeOfDay</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction">ScheduleLayerRestriction</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction">ScheduleLayerRestriction</a></code> | *No description.* |
 
 ---
 
@@ -2643,10 +2643,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ScheduleLayerRestriction | IResolvable;
+public readonly internalValue: IResolvable | ScheduleLayerRestriction;
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction">ScheduleLayerRestriction</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction">ScheduleLayerRestriction</a>
 
 ---
 

@@ -2418,7 +2418,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a></code> | *No description.* |
 
 ---
 
@@ -2472,7 +2472,7 @@ public java.lang.String getValue();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>
 
 ---
 
@@ -2857,7 +2857,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a></code> | *No description.* |
 
 ---
 
@@ -2911,7 +2911,7 @@ public java.lang.String getValue();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>
 
 ---
 
@@ -3323,7 +3323,7 @@ public void resetTemplate()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.source">source</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.target">target</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.template">template</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a></code> | *No description.* |
 
 ---
 
@@ -3437,7 +3437,7 @@ public java.lang.String getTemplate();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>
 
 ---
 
@@ -4365,7 +4365,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a></code> | *No description.* |
 
 ---
 
@@ -4419,7 +4419,7 @@ public java.lang.String getValue();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>
 
 ---
 
@@ -4804,7 +4804,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a></code> | *No description.* |
 
 ---
 
@@ -4858,7 +4858,7 @@ public java.lang.String getValue();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>
 
 ---
 
@@ -5270,7 +5270,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.thresholdTimeUnit">thresholdTimeUnit</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.thresholdValue">thresholdValue</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.value">value</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a></code> | *No description.* |
 
 ---
 
@@ -5384,7 +5384,7 @@ public java.lang.Object getValue();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>
 
 ---
 
@@ -5769,7 +5769,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.value">value</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a></code> | *No description.* |
 
 ---
 
@@ -5823,7 +5823,7 @@ public java.lang.Number getValue();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>
 
 ---
 
@@ -6550,7 +6550,7 @@ public void resetParameter()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.operatorInput">operatorInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.parameterInput">parameterInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.operator">operator</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a></code> | *No description.* |
 
 ---
 
@@ -6624,7 +6624,7 @@ public java.lang.String getOperator();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>
 
 ---
 
@@ -7018,7 +7018,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.path">path</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a></code> | *No description.* |
 
 ---
 
@@ -7092,7 +7092,7 @@ public java.lang.String getValue();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>
 
 ---
 
@@ -7486,7 +7486,7 @@ public void resetStartTime()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.startTimeInput">startTimeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.endTime">endTime</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.startTime">startTime</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a></code> | *No description.* |
 
 ---
 
@@ -7560,7 +7560,7 @@ public java.lang.Number getStartTime();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>
 
 ---
 
@@ -8305,7 +8305,7 @@ public void resetWeekdays()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.startTime">startTime</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.timezone">timezone</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.weekdays">weekdays</a></code> | <code>java.util.List<java.lang.Number></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a></code> | *No description.* |
 
 ---
 
@@ -8419,7 +8419,7 @@ public java.util.List<java.lang.Number> getWeekdays();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>
 
 ---
 
@@ -8835,7 +8835,7 @@ public void resetType()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a></code> | *No description.* |
 
 ---
 
@@ -8929,7 +8929,7 @@ public java.lang.String getType();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>
 
 ---
 
@@ -9323,7 +9323,7 @@ public void resetValue()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.path">path</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a></code> | *No description.* |
 
 ---
 
@@ -9397,7 +9397,7 @@ public java.lang.String getValue();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>
 
 ---
 

@@ -1804,7 +1804,7 @@ public resetTemplate(): void
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.target">target</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.template">template</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a></code> | *No description.* |
 
 ---
 
@@ -1915,10 +1915,10 @@ public readonly template: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: EventOrchestrationUnroutedCatchAllActionsExtraction | IResolvable;
+public readonly internalValue: IResolvable | EventOrchestrationUnroutedCatchAllActionsExtraction;
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>
 
 ---
 
@@ -2704,7 +2704,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a></code> | *No description.* |
 
 ---
 
@@ -2815,10 +2815,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: EventOrchestrationUnroutedCatchAllActionsVariable | IResolvable;
+public readonly internalValue: IResolvable | EventOrchestrationUnroutedCatchAllActionsVariable;
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>
 
 ---
 
@@ -3502,7 +3502,7 @@ public resetRule(): void
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.ruleInput">ruleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a></code> | *No description.* |
 
 ---
 
@@ -3573,10 +3573,10 @@ public readonly id: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: EventOrchestrationUnroutedSet | IResolvable;
+public readonly internalValue: IResolvable | EventOrchestrationUnroutedSet;
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>
 
 ---
 
@@ -3981,7 +3981,7 @@ public resetTemplate(): void
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.target">target</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.template">template</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a></code> | *No description.* |
 
 ---
 
@@ -4092,10 +4092,10 @@ public readonly template: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: EventOrchestrationUnroutedSetRuleActionsExtraction | IResolvable;
+public readonly internalValue: IResolvable | EventOrchestrationUnroutedSetRuleActionsExtraction;
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>
 
 ---
 
@@ -4899,7 +4899,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a></code> | *No description.* |
 
 ---
 
@@ -5010,10 +5010,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: EventOrchestrationUnroutedSetRuleActionsVariable | IResolvable;
+public readonly internalValue: IResolvable | EventOrchestrationUnroutedSetRuleActionsVariable;
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>
 
 ---
 
@@ -5391,7 +5391,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.expressionInput">expressionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.expression">expression</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a></code> | *No description.* |
 
 ---
 
@@ -5442,10 +5442,10 @@ public readonly expression: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: EventOrchestrationUnroutedSetRuleCondition | IResolvable;
+public readonly internalValue: IResolvable | EventOrchestrationUnroutedSetRuleCondition;
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>
 
 ---
 
@@ -5877,7 +5877,7 @@ public resetLabel(): void
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.labelInput">labelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.label">label</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a></code> | *No description.* |
 
 ---
 
@@ -5998,10 +5998,10 @@ public readonly label: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: EventOrchestrationUnroutedSetRule | IResolvable;
+public readonly internalValue: IResolvable | EventOrchestrationUnroutedSetRule;
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>
 
 ---
 
