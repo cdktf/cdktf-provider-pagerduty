@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs
+// https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,35 +13,35 @@ import * as cdktf from 'cdktf';
 
 export interface PagerdutyProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs#api_url_override PagerdutyProvider#api_url_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs#api_url_override PagerdutyProvider#api_url_override}
   */
   readonly apiUrlOverride?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs#service_region PagerdutyProvider#service_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs#service_region PagerdutyProvider#service_region}
   */
   readonly serviceRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}
   */
   readonly skipCredentialsValidation?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs#token PagerdutyProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs#token PagerdutyProvider#token}
   */
   readonly token: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs#user_token PagerdutyProvider#user_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs#user_token PagerdutyProvider#user_token}
   */
   readonly userToken?: string;
   /**
   * Alias name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs#alias PagerdutyProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs#alias PagerdutyProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs pagerduty}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs pagerduty}
 */
 export class PagerdutyProvider extends cdktf.TerraformProvider {
 
@@ -55,7 +55,7 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.0/docs pagerduty} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs pagerduty} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'pagerduty',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.15.0',
+        providerVersion: '2.15.1',
         providerVersionConstraint: '~> 2.5'
       },
       terraformProviderSource: 'PagerDuty/pagerduty'
