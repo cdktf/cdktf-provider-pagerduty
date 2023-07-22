@@ -1,6 +1,6 @@
 # `data_pagerduty_schedule`
 
-Refer to the Terraform Registory for docs: [`data_pagerduty_schedule`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/schedule).
+Refer to the Terraform Registory for docs: [`data_pagerduty_schedule`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/data-sources/schedule).
 
 # `dataPagerdutySchedule` Submodule <a name="`dataPagerdutySchedule` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutySchedule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_pagerduty_schedule`](https://r
 
 ### DataPagerdutySchedule <a name="DataPagerdutySchedule" id="@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/schedule pagerduty_schedule}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/data-sources/schedule pagerduty_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.Initializer"></a>
 
@@ -570,8 +570,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/datapagerdutys
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/schedule#name DataPagerdutySchedule#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/schedule#id DataPagerdutySchedule#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/data-sources/schedule#name DataPagerdutySchedule#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/data-sources/schedule#id DataPagerdutySchedule#id}. |
 
 ---
 
@@ -653,7 +653,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/schedule#name DataPagerdutySchedule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/data-sources/schedule#name DataPagerdutySchedule#name}.
 
 ---
 
@@ -665,7 +665,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/schedule#id DataPagerdutySchedule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/data-sources/schedule#id DataPagerdutySchedule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

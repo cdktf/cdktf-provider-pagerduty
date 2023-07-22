@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule
+// https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +13,56 @@ import * as cdktf from 'cdktf';
 
 export interface RulesetRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#catch_all RulesetRule#catch_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#catch_all RulesetRule#catch_all}
   */
   readonly catchAll?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#disabled RulesetRule#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#disabled RulesetRule#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#id RulesetRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#id RulesetRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#position RulesetRule#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#position RulesetRule#position}
   */
   readonly position?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#ruleset RulesetRule#ruleset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#ruleset RulesetRule#ruleset}
   */
   readonly ruleset: string;
   /**
   * actions block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#actions RulesetRule#actions}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#actions RulesetRule#actions}
   */
   readonly actions?: RulesetRuleActions;
   /**
   * conditions block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#conditions RulesetRule#conditions}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#conditions RulesetRule#conditions}
   */
   readonly conditions?: RulesetRuleConditions;
   /**
   * time_frame block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#time_frame RulesetRule#time_frame}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#time_frame RulesetRule#time_frame}
   */
   readonly timeFrame?: RulesetRuleTimeFrame;
   /**
   * variable block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#variable RulesetRule#variable}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#variable RulesetRule#variable}
   */
   readonly variable?: RulesetRuleVariable[] | cdktf.IResolvable;
 }
 export interface RulesetRuleActionsAnnotate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: string;
 }
@@ -159,7 +159,7 @@ export class RulesetRuleActionsAnnotateList extends cdktf.ComplexList {
 }
 export interface RulesetRuleActionsEventAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: string;
 }
@@ -256,19 +256,19 @@ export class RulesetRuleActionsEventActionList extends cdktf.ComplexList {
 }
 export interface RulesetRuleActionsExtractions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#regex RulesetRule#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#regex RulesetRule#regex}
   */
   readonly regex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#source RulesetRule#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#source RulesetRule#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#target RulesetRule#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#target RulesetRule#target}
   */
   readonly target?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#template RulesetRule#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#template RulesetRule#template}
   */
   readonly template?: string;
 }
@@ -434,7 +434,7 @@ export class RulesetRuleActionsExtractionsList extends cdktf.ComplexList {
 }
 export interface RulesetRuleActionsPriority {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: string;
 }
@@ -531,7 +531,7 @@ export class RulesetRuleActionsPriorityList extends cdktf.ComplexList {
 }
 export interface RulesetRuleActionsRoute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: string;
 }
@@ -628,7 +628,7 @@ export class RulesetRuleActionsRouteList extends cdktf.ComplexList {
 }
 export interface RulesetRuleActionsSeverity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: string;
 }
@@ -725,19 +725,19 @@ export class RulesetRuleActionsSeverityList extends cdktf.ComplexList {
 }
 export interface RulesetRuleActionsSuppress {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#threshold_time_amount RulesetRule#threshold_time_amount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#threshold_time_amount RulesetRule#threshold_time_amount}
   */
   readonly thresholdTimeAmount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#threshold_time_unit RulesetRule#threshold_time_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#threshold_time_unit RulesetRule#threshold_time_unit}
   */
   readonly thresholdTimeUnit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#threshold_value RulesetRule#threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#threshold_value RulesetRule#threshold_value}
   */
   readonly thresholdValue?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: boolean | cdktf.IResolvable;
 }
@@ -903,7 +903,7 @@ export class RulesetRuleActionsSuppressList extends cdktf.ComplexList {
 }
 export interface RulesetRuleActionsSuspend {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: number;
 }
@@ -1001,50 +1001,50 @@ export class RulesetRuleActionsSuspendList extends cdktf.ComplexList {
 export interface RulesetRuleActions {
   /**
   * annotate block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#annotate RulesetRule#annotate}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#annotate RulesetRule#annotate}
   */
   readonly annotate?: RulesetRuleActionsAnnotate[] | cdktf.IResolvable;
   /**
   * event_action block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#event_action RulesetRule#event_action}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#event_action RulesetRule#event_action}
   */
   readonly eventAction?: RulesetRuleActionsEventAction[] | cdktf.IResolvable;
   /**
   * extractions block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#extractions RulesetRule#extractions}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#extractions RulesetRule#extractions}
   */
   readonly extractions?: RulesetRuleActionsExtractions[] | cdktf.IResolvable;
   /**
   * priority block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#priority RulesetRule#priority}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#priority RulesetRule#priority}
   */
   readonly priority?: RulesetRuleActionsPriority[] | cdktf.IResolvable;
   /**
   * route block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#route RulesetRule#route}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#route RulesetRule#route}
   */
   readonly route?: RulesetRuleActionsRoute[] | cdktf.IResolvable;
   /**
   * severity block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#severity RulesetRule#severity}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#severity RulesetRule#severity}
   */
   readonly severity?: RulesetRuleActionsSeverity[] | cdktf.IResolvable;
   /**
   * suppress block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#suppress RulesetRule#suppress}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#suppress RulesetRule#suppress}
   */
   readonly suppress?: RulesetRuleActionsSuppress[] | cdktf.IResolvable;
   /**
   * suspend block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#suspend RulesetRule#suspend}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#suspend RulesetRule#suspend}
   */
   readonly suspend?: RulesetRuleActionsSuspend[] | cdktf.IResolvable;
 }
@@ -1270,11 +1270,11 @@ export class RulesetRuleActionsOutputReference extends cdktf.ComplexObject {
 }
 export interface RulesetRuleConditionsSubconditionsParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#path RulesetRule#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#path RulesetRule#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: string;
 }
@@ -1394,13 +1394,13 @@ export class RulesetRuleConditionsSubconditionsParameterList extends cdktf.Compl
 }
 export interface RulesetRuleConditionsSubconditions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#operator RulesetRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#operator RulesetRule#operator}
   */
   readonly operator?: string;
   /**
   * parameter block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#parameter RulesetRule#parameter}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#parameter RulesetRule#parameter}
   */
   readonly parameter?: RulesetRuleConditionsSubconditionsParameter[] | cdktf.IResolvable;
 }
@@ -1520,13 +1520,13 @@ export class RulesetRuleConditionsSubconditionsList extends cdktf.ComplexList {
 }
 export interface RulesetRuleConditions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#operator RulesetRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#operator RulesetRule#operator}
   */
   readonly operator?: string;
   /**
   * subconditions block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#subconditions RulesetRule#subconditions}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#subconditions RulesetRule#subconditions}
   */
   readonly subconditions?: RulesetRuleConditionsSubconditions[] | cdktf.IResolvable;
 }
@@ -1614,11 +1614,11 @@ export class RulesetRuleConditionsOutputReference extends cdktf.ComplexObject {
 }
 export interface RulesetRuleTimeFrameActiveBetween {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#end_time RulesetRule#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#end_time RulesetRule#end_time}
   */
   readonly endTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#start_time RulesetRule#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#start_time RulesetRule#start_time}
   */
   readonly startTime?: number;
 }
@@ -1738,19 +1738,19 @@ export class RulesetRuleTimeFrameActiveBetweenList extends cdktf.ComplexList {
 }
 export interface RulesetRuleTimeFrameScheduledWeekly {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#duration RulesetRule#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#duration RulesetRule#duration}
   */
   readonly duration?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#start_time RulesetRule#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#start_time RulesetRule#start_time}
   */
   readonly startTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#timezone RulesetRule#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#timezone RulesetRule#timezone}
   */
   readonly timezone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#weekdays RulesetRule#weekdays}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#weekdays RulesetRule#weekdays}
   */
   readonly weekdays?: number[];
 }
@@ -1917,14 +1917,14 @@ export class RulesetRuleTimeFrameScheduledWeeklyList extends cdktf.ComplexList {
 export interface RulesetRuleTimeFrame {
   /**
   * active_between block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#active_between RulesetRule#active_between}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#active_between RulesetRule#active_between}
   */
   readonly activeBetween?: RulesetRuleTimeFrameActiveBetween[] | cdktf.IResolvable;
   /**
   * scheduled_weekly block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#scheduled_weekly RulesetRule#scheduled_weekly}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#scheduled_weekly RulesetRule#scheduled_weekly}
   */
   readonly scheduledWeekly?: RulesetRuleTimeFrameScheduledWeekly[] | cdktf.IResolvable;
 }
@@ -2012,11 +2012,11 @@ export class RulesetRuleTimeFrameOutputReference extends cdktf.ComplexObject {
 }
 export interface RulesetRuleVariableParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#path RulesetRule#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#path RulesetRule#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#value RulesetRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#value RulesetRule#value}
   */
   readonly value?: string;
 }
@@ -2136,17 +2136,17 @@ export class RulesetRuleVariableParametersList extends cdktf.ComplexList {
 }
 export interface RulesetRuleVariable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#name RulesetRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#name RulesetRule#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#type RulesetRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#type RulesetRule#type}
   */
   readonly type?: string;
   /**
   * parameters block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule#parameters RulesetRule#parameters}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule#parameters RulesetRule#parameters}
   */
   readonly parameters?: RulesetRuleVariableParameters[] | cdktf.IResolvable;
 }
@@ -2289,7 +2289,7 @@ export class RulesetRuleVariableList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule pagerduty_ruleset_rule}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule pagerduty_ruleset_rule}
 */
 export class RulesetRule extends cdktf.TerraformResource {
 
@@ -2303,7 +2303,7 @@ export class RulesetRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/resources/ruleset_rule pagerduty_ruleset_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/ruleset_rule pagerduty_ruleset_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2314,7 +2314,7 @@ export class RulesetRule extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_ruleset_rule',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.15.1',
+        providerVersion: '2.15.2',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,

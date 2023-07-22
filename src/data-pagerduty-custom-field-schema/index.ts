@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/custom_field_schema
+// https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/data-sources/custom_field_schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyCustomFieldSchemaConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/custom_field_schema#id DataPagerdutyCustomFieldSchema#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/data-sources/custom_field_schema#id DataPagerdutyCustomFieldSchema#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/custom_field_schema#title DataPagerdutyCustomFieldSchema#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/data-sources/custom_field_schema#title DataPagerdutyCustomFieldSchema#title}
   */
   readonly title: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/custom_field_schema pagerduty_custom_field_schema}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/data-sources/custom_field_schema pagerduty_custom_field_schema}
 */
 export class DataPagerdutyCustomFieldSchema extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataPagerdutyCustomFieldSchema extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.1/docs/data-sources/custom_field_schema pagerduty_custom_field_schema} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/data-sources/custom_field_schema pagerduty_custom_field_schema} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +51,7 @@ export class DataPagerdutyCustomFieldSchema extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_custom_field_schema',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.15.1',
+        providerVersion: '2.15.2',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
