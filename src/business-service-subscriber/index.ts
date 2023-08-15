@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/business_service_subscriber
+// https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/business_service_subscriber
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface BusinessServiceSubscriberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/business_service_subscriber#business_service_id BusinessServiceSubscriber#business_service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/business_service_subscriber#business_service_id BusinessServiceSubscriber#business_service_id}
   */
   readonly businessServiceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/business_service_subscriber#id BusinessServiceSubscriber#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/business_service_subscriber#id BusinessServiceSubscriber#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/business_service_subscriber#subscriber_id BusinessServiceSubscriber#subscriber_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/business_service_subscriber#subscriber_id BusinessServiceSubscriber#subscriber_id}
   */
   readonly subscriberId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/business_service_subscriber#subscriber_type BusinessServiceSubscriber#subscriber_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/business_service_subscriber#subscriber_type BusinessServiceSubscriber#subscriber_type}
   */
   readonly subscriberType: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/business_service_subscriber pagerduty_business_service_subscriber}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/business_service_subscriber pagerduty_business_service_subscriber}
 */
 export class BusinessServiceSubscriber extends cdktf.TerraformResource {
 
@@ -48,7 +43,7 @@ export class BusinessServiceSubscriber extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/business_service_subscriber pagerduty_business_service_subscriber} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/business_service_subscriber pagerduty_business_service_subscriber} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class BusinessServiceSubscriber extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_business_service_subscriber',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.15.2',
+        providerVersion: '2.15.3',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
