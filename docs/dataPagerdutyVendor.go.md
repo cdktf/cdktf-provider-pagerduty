@@ -1,6 +1,6 @@
 # `data_pagerduty_vendor`
 
-Refer to the Terraform Registory for docs: [`data_pagerduty_vendor`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/data-sources/vendor).
+Refer to the Terraform Registory for docs: [`data_pagerduty_vendor`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/data-sources/vendor).
 
 # `dataPagerdutyVendor` Submodule <a name="`dataPagerdutyVendor` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyVendor"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_pagerduty_vendor`](https://reg
 
 ### DataPagerdutyVendor <a name="DataPagerdutyVendor" id="@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/data-sources/vendor pagerduty_vendor}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/data-sources/vendor pagerduty_vendor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor.Initializer"></a>
 
@@ -581,8 +581,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/datapagerdutyv
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/data-sources/vendor#name DataPagerdutyVendor#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/data-sources/vendor#id DataPagerdutyVendor#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/data-sources/vendor#name DataPagerdutyVendor#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/data-sources/vendor#id DataPagerdutyVendor#id}. |
 
 ---
 
@@ -664,7 +664,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/data-sources/vendor#name DataPagerdutyVendor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/data-sources/vendor#name DataPagerdutyVendor#name}.
 
 ---
 
@@ -676,7 +676,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/data-sources/vendor#id DataPagerdutyVendor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/data-sources/vendor#id DataPagerdutyVendor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

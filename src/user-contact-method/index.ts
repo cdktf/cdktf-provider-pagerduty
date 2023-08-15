@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/user_contact_method
+// https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/user_contact_method
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,40 @@ import * as cdktf from 'cdktf';
 
 export interface UserContactMethodConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/user_contact_method#address UserContactMethod#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/user_contact_method#address UserContactMethod#address}
   */
   readonly address: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/user_contact_method#country_code UserContactMethod#country_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/user_contact_method#country_code UserContactMethod#country_code}
   */
   readonly countryCode?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/user_contact_method#id UserContactMethod#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/user_contact_method#id UserContactMethod#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/user_contact_method#label UserContactMethod#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/user_contact_method#label UserContactMethod#label}
   */
   readonly label: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/user_contact_method#send_short_email UserContactMethod#send_short_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/user_contact_method#send_short_email UserContactMethod#send_short_email}
   */
   readonly sendShortEmail?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/user_contact_method#type UserContactMethod#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/user_contact_method#type UserContactMethod#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/user_contact_method#user_id UserContactMethod#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/user_contact_method#user_id UserContactMethod#user_id}
   */
   readonly userId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/user_contact_method pagerduty_user_contact_method}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/user_contact_method pagerduty_user_contact_method}
 */
 export class UserContactMethod extends cdktf.TerraformResource {
 
@@ -60,7 +60,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.2/docs/resources/user_contact_method pagerduty_user_contact_method} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/user_contact_method pagerduty_user_contact_method} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_user_contact_method',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.15.2',
+        providerVersion: '2.15.3',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
