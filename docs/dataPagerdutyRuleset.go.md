@@ -1,6 +1,6 @@
 # `data_pagerduty_ruleset`
 
-Refer to the Terraform Registory for docs: [`data_pagerduty_ruleset`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/data-sources/ruleset).
+Refer to the Terraform Registory for docs: [`data_pagerduty_ruleset`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/data-sources/ruleset).
 
 # `dataPagerdutyRuleset` Submodule <a name="`dataPagerdutyRuleset` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyRuleset"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_pagerduty_ruleset`](https://re
 
 ### DataPagerdutyRuleset <a name="DataPagerdutyRuleset" id="@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRuleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/data-sources/ruleset pagerduty_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/data-sources/ruleset pagerduty_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRuleset.Initializer"></a>
 
@@ -581,8 +581,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/datapagerdutyr
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRulesetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRulesetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRulesetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRulesetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/data-sources/ruleset#name DataPagerdutyRuleset#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRulesetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/data-sources/ruleset#id DataPagerdutyRuleset#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRulesetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/data-sources/ruleset#name DataPagerdutyRuleset#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRulesetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/data-sources/ruleset#id DataPagerdutyRuleset#id}. |
 
 ---
 
@@ -664,7 +664,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/data-sources/ruleset#name DataPagerdutyRuleset#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/data-sources/ruleset#name DataPagerdutyRuleset#name}.
 
 ---
 
@@ -676,7 +676,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/data-sources/ruleset#id DataPagerdutyRuleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/data-sources/ruleset#id DataPagerdutyRuleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
