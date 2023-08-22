@@ -1,6 +1,6 @@
 # `pagerduty_event_orchestration_global`
 
-Refer to the Terraform Registory for docs: [`pagerduty_event_orchestration_global`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global).
+Refer to the Terraform Registory for docs: [`pagerduty_event_orchestration_global`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global).
 
 # `eventOrchestrationGlobal` Submodule <a name="`eventOrchestrationGlobal` Submodule" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`pagerduty_event_orchestration_globa
 
 ### EventOrchestrationGlobal <a name="EventOrchestrationGlobal" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobal"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global pagerduty_event_orchestration_global}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global pagerduty_event_orchestration_global}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobal(scope Construct, id *string, config EventOrchestrationGlobalConfig) EventOrchestrationGlobal
 ```
@@ -303,7 +303,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobal.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.EventOrchestrationGlobal_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.EventOrchestrationGlobal_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ eventorchestrationglobal.EventOrchestrationGlobal_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobal.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.EventOrchestrationGlobal_IsTerraformResource(x interface{}) *bool
 ```
@@ -636,10 +636,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAll.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 &eventorchestrationglobal.EventOrchestrationGlobalCatchAll {
-	Actions: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions,
+	Actions: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions,
 }
 ```
 
@@ -661,7 +661,7 @@ Actions EventOrchestrationGlobalCatchAllActions
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#actions EventOrchestrationGlobal#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#actions EventOrchestrationGlobal#actions}
 
 ---
 
@@ -670,11 +670,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 &eventorchestrationglobal.EventOrchestrationGlobalCatchAllActions {
 	Annotate: *string,
-	AutomationAction: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationAction,
+	AutomationAction: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationAction,
 	DropEvent: interface{},
 	EventAction: *string,
 	Extraction: interface{},
@@ -691,16 +691,16 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.annotate">Annotate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#annotate EventOrchestrationGlobal#annotate}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.annotate">Annotate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#annotate EventOrchestrationGlobal#annotate}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.automationAction">AutomationAction</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationAction">EventOrchestrationGlobalCatchAllActionsAutomationAction</a></code> | automation_action block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.dropEvent">DropEvent</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#drop_event EventOrchestrationGlobal#drop_event}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.eventAction">EventAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#event_action EventOrchestrationGlobal#event_action}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.dropEvent">DropEvent</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#drop_event EventOrchestrationGlobal#drop_event}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.eventAction">EventAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#event_action EventOrchestrationGlobal#event_action}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.extraction">Extraction</a></code> | <code>interface{}</code> | extraction block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.priority">Priority</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#priority EventOrchestrationGlobal#priority}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.routeTo">RouteTo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#route_to EventOrchestrationGlobal#route_to}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.severity">Severity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#severity EventOrchestrationGlobal#severity}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.suppress">Suppress</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#suppress EventOrchestrationGlobal#suppress}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.suspend">Suspend</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#suspend EventOrchestrationGlobal#suspend}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.priority">Priority</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#priority EventOrchestrationGlobal#priority}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.routeTo">RouteTo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#route_to EventOrchestrationGlobal#route_to}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.severity">Severity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#severity EventOrchestrationGlobal#severity}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.suppress">Suppress</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#suppress EventOrchestrationGlobal#suppress}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.suspend">Suspend</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#suspend EventOrchestrationGlobal#suspend}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActions.property.variable">Variable</a></code> | <code>interface{}</code> | variable block. |
 
 ---
@@ -713,7 +713,7 @@ Annotate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#annotate EventOrchestrationGlobal#annotate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#annotate EventOrchestrationGlobal#annotate}.
 
 ---
 
@@ -727,7 +727,7 @@ AutomationAction EventOrchestrationGlobalCatchAllActionsAutomationAction
 
 automation_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#automation_action EventOrchestrationGlobal#automation_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#automation_action EventOrchestrationGlobal#automation_action}
 
 ---
 
@@ -739,7 +739,7 @@ DropEvent interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#drop_event EventOrchestrationGlobal#drop_event}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#drop_event EventOrchestrationGlobal#drop_event}.
 
 ---
 
@@ -751,7 +751,7 @@ EventAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#event_action EventOrchestrationGlobal#event_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#event_action EventOrchestrationGlobal#event_action}.
 
 ---
 
@@ -765,7 +765,7 @@ Extraction interface{}
 
 extraction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#extraction EventOrchestrationGlobal#extraction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#extraction EventOrchestrationGlobal#extraction}
 
 ---
 
@@ -777,7 +777,7 @@ Priority *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#priority EventOrchestrationGlobal#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#priority EventOrchestrationGlobal#priority}.
 
 ---
 
@@ -789,7 +789,7 @@ RouteTo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#route_to EventOrchestrationGlobal#route_to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#route_to EventOrchestrationGlobal#route_to}.
 
 ---
 
@@ -801,7 +801,7 @@ Severity *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#severity EventOrchestrationGlobal#severity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#severity EventOrchestrationGlobal#severity}.
 
 ---
 
@@ -813,7 +813,7 @@ Suppress interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#suppress EventOrchestrationGlobal#suppress}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#suppress EventOrchestrationGlobal#suppress}.
 
 ---
 
@@ -825,7 +825,7 @@ Suspend *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#suspend EventOrchestrationGlobal#suspend}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#suspend EventOrchestrationGlobal#suspend}.
 
 ---
 
@@ -839,7 +839,7 @@ Variable interface{}
 
 variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#variable EventOrchestrationGlobal#variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#variable EventOrchestrationGlobal#variable}
 
 ---
 
@@ -848,7 +848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 &eventorchestrationglobal.EventOrchestrationGlobalCatchAllActionsAutomationAction {
 	Name: *string,
@@ -863,9 +863,9 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationAction.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationAction.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#url EventOrchestrationGlobal#url}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationAction.property.autoSend">AutoSend</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#auto_send EventOrchestrationGlobal#auto_send}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationAction.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationAction.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#url EventOrchestrationGlobal#url}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationAction.property.autoSend">AutoSend</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#auto_send EventOrchestrationGlobal#auto_send}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationAction.property.header">Header</a></code> | <code>interface{}</code> | header block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationAction.property.parameter">Parameter</a></code> | <code>interface{}</code> | parameter block. |
 
@@ -879,7 +879,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}.
 
 ---
 
@@ -891,7 +891,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#url EventOrchestrationGlobal#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#url EventOrchestrationGlobal#url}.
 
 ---
 
@@ -903,7 +903,7 @@ AutoSend interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#auto_send EventOrchestrationGlobal#auto_send}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#auto_send EventOrchestrationGlobal#auto_send}.
 
 ---
 
@@ -917,7 +917,7 @@ Header interface{}
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#header EventOrchestrationGlobal#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#header EventOrchestrationGlobal#header}
 
 ---
 
@@ -931,7 +931,7 @@ Parameter interface{}
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#parameter EventOrchestrationGlobal#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#parameter EventOrchestrationGlobal#parameter}
 
 ---
 
@@ -940,7 +940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationActionHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 &eventorchestrationglobal.EventOrchestrationGlobalCatchAllActionsAutomationActionHeader {
 	Key: *string,
@@ -952,8 +952,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationActionHeader.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationActionHeader.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationActionHeader.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationActionHeader.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}. |
 
 ---
 
@@ -965,7 +965,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}.
 
 ---
 
@@ -977,7 +977,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}.
 
 ---
 
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationActionParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 &eventorchestrationglobal.EventOrchestrationGlobalCatchAllActionsAutomationActionParameter {
 	Key: *string,
@@ -998,8 +998,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationActionParameter.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationActionParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationActionParameter.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationActionParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}. |
 
 ---
 
@@ -1011,7 +1011,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}.
 
 ---
 
@@ -1023,7 +1023,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}.
 
 ---
 
@@ -1032,7 +1032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsExtraction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 &eventorchestrationglobal.EventOrchestrationGlobalCatchAllActionsExtraction {
 	Target: *string,
@@ -1046,10 +1046,10 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsExtraction.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsExtraction.property.regex">Regex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsExtraction.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsExtraction.property.template">Template</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsExtraction.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsExtraction.property.regex">Regex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsExtraction.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsExtraction.property.template">Template</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}. |
 
 ---
 
@@ -1061,7 +1061,7 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}.
 
 ---
 
@@ -1073,7 +1073,7 @@ Regex *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}.
 
 ---
 
@@ -1085,7 +1085,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}.
 
 ---
 
@@ -1097,7 +1097,7 @@ Template *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}.
 
 ---
 
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 &eventorchestrationglobal.EventOrchestrationGlobalCatchAllActionsVariable {
 	Name: *string,
@@ -1120,10 +1120,10 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsVariable.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsVariable.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#path EventOrchestrationGlobal#path}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsVariable.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#type EventOrchestrationGlobal#type}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsVariable.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsVariable.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsVariable.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#path EventOrchestrationGlobal#path}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsVariable.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#type EventOrchestrationGlobal#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsVariable.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}. |
 
 ---
 
@@ -1135,7 +1135,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}.
 
 ---
 
@@ -1147,7 +1147,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#path EventOrchestrationGlobal#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#path EventOrchestrationGlobal#path}.
 
 ---
 
@@ -1159,7 +1159,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#type EventOrchestrationGlobal#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#type EventOrchestrationGlobal#type}.
 
 ---
 
@@ -1171,7 +1171,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}.
 
 ---
 
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 &eventorchestrationglobal.EventOrchestrationGlobalConfig {
 	Connection: interface{},
@@ -1190,7 +1190,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestra
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	CatchAll: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAll,
+	CatchAll: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAll,
 	EventOrchestration: *string,
 	Set: interface{},
 	Id: *string,
@@ -1209,9 +1209,9 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestra
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalConfig.property.catchAll">CatchAll</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAll">EventOrchestrationGlobalCatchAll</a></code> | catch_all block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalConfig.property.eventOrchestration">EventOrchestration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#event_orchestration EventOrchestrationGlobal#event_orchestration}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalConfig.property.eventOrchestration">EventOrchestration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#event_orchestration EventOrchestrationGlobal#event_orchestration}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalConfig.property.set">Set</a></code> | <code>interface{}</code> | set block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}. |
 
 ---
 
@@ -1295,7 +1295,7 @@ CatchAll EventOrchestrationGlobalCatchAll
 
 catch_all block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#catch_all EventOrchestrationGlobal#catch_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#catch_all EventOrchestrationGlobal#catch_all}
 
 ---
 
@@ -1307,7 +1307,7 @@ EventOrchestration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#event_orchestration EventOrchestrationGlobal#event_orchestration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#event_orchestration EventOrchestrationGlobal#event_orchestration}.
 
 ---
 
@@ -1321,7 +1321,7 @@ Set interface{}
 
 set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#set EventOrchestrationGlobal#set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#set EventOrchestrationGlobal#set}
 
 ---
 
@@ -1333,7 +1333,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1345,7 +1345,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 &eventorchestrationglobal.EventOrchestrationGlobalSet {
 	Id: *string,
@@ -1357,7 +1357,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSet.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSet.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSet.property.rule">Rule</a></code> | <code>interface{}</code> | rule block. |
 
 ---
@@ -1370,7 +1370,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1387,7 +1387,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#rule EventOrchestrationGlobal#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#rule EventOrchestrationGlobal#rule}
 
 ---
 
@@ -1396,10 +1396,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 &eventorchestrationglobal.EventOrchestrationGlobalSetRule {
-	Actions: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions,
+	Actions: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions,
 	Condition: interface{},
 	Disabled: interface{},
 	Label: *string,
@@ -1412,8 +1412,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestra
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRule.property.actions">Actions</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions">EventOrchestrationGlobalSetRuleActions</a></code> | actions block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRule.property.condition">Condition</a></code> | <code>interface{}</code> | condition block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRule.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#disabled EventOrchestrationGlobal#disabled}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRule.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#label EventOrchestrationGlobal#label}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRule.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#disabled EventOrchestrationGlobal#disabled}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRule.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#label EventOrchestrationGlobal#label}. |
 
 ---
 
@@ -1427,7 +1427,7 @@ Actions EventOrchestrationGlobalSetRuleActions
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#actions EventOrchestrationGlobal#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#actions EventOrchestrationGlobal#actions}
 
 ---
 
@@ -1441,7 +1441,7 @@ Condition interface{}
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#condition EventOrchestrationGlobal#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#condition EventOrchestrationGlobal#condition}
 
 ---
 
@@ -1453,7 +1453,7 @@ Disabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#disabled EventOrchestrationGlobal#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#disabled EventOrchestrationGlobal#disabled}.
 
 ---
 
@@ -1465,7 +1465,7 @@ Label *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#label EventOrchestrationGlobal#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#label EventOrchestrationGlobal#label}.
 
 ---
 
@@ -1474,11 +1474,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 &eventorchestrationglobal.EventOrchestrationGlobalSetRuleActions {
 	Annotate: *string,
-	AutomationAction: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationAction,
+	AutomationAction: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationAction,
 	DropEvent: interface{},
 	EventAction: *string,
 	Extraction: interface{},
@@ -1495,16 +1495,16 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.annotate">Annotate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#annotate EventOrchestrationGlobal#annotate}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.annotate">Annotate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#annotate EventOrchestrationGlobal#annotate}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.automationAction">AutomationAction</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationAction">EventOrchestrationGlobalSetRuleActionsAutomationAction</a></code> | automation_action block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.dropEvent">DropEvent</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#drop_event EventOrchestrationGlobal#drop_event}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.eventAction">EventAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#event_action EventOrchestrationGlobal#event_action}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.dropEvent">DropEvent</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#drop_event EventOrchestrationGlobal#drop_event}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.eventAction">EventAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#event_action EventOrchestrationGlobal#event_action}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.extraction">Extraction</a></code> | <code>interface{}</code> | extraction block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.priority">Priority</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#priority EventOrchestrationGlobal#priority}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.routeTo">RouteTo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#route_to EventOrchestrationGlobal#route_to}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.severity">Severity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#severity EventOrchestrationGlobal#severity}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.suppress">Suppress</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#suppress EventOrchestrationGlobal#suppress}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.suspend">Suspend</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#suspend EventOrchestrationGlobal#suspend}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.priority">Priority</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#priority EventOrchestrationGlobal#priority}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.routeTo">RouteTo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#route_to EventOrchestrationGlobal#route_to}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.severity">Severity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#severity EventOrchestrationGlobal#severity}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.suppress">Suppress</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#suppress EventOrchestrationGlobal#suppress}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.suspend">Suspend</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#suspend EventOrchestrationGlobal#suspend}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActions.property.variable">Variable</a></code> | <code>interface{}</code> | variable block. |
 
 ---
@@ -1517,7 +1517,7 @@ Annotate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#annotate EventOrchestrationGlobal#annotate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#annotate EventOrchestrationGlobal#annotate}.
 
 ---
 
@@ -1531,7 +1531,7 @@ AutomationAction EventOrchestrationGlobalSetRuleActionsAutomationAction
 
 automation_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#automation_action EventOrchestrationGlobal#automation_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#automation_action EventOrchestrationGlobal#automation_action}
 
 ---
 
@@ -1543,7 +1543,7 @@ DropEvent interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#drop_event EventOrchestrationGlobal#drop_event}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#drop_event EventOrchestrationGlobal#drop_event}.
 
 ---
 
@@ -1555,7 +1555,7 @@ EventAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#event_action EventOrchestrationGlobal#event_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#event_action EventOrchestrationGlobal#event_action}.
 
 ---
 
@@ -1569,7 +1569,7 @@ Extraction interface{}
 
 extraction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#extraction EventOrchestrationGlobal#extraction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#extraction EventOrchestrationGlobal#extraction}
 
 ---
 
@@ -1581,7 +1581,7 @@ Priority *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#priority EventOrchestrationGlobal#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#priority EventOrchestrationGlobal#priority}.
 
 ---
 
@@ -1593,7 +1593,7 @@ RouteTo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#route_to EventOrchestrationGlobal#route_to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#route_to EventOrchestrationGlobal#route_to}.
 
 ---
 
@@ -1605,7 +1605,7 @@ Severity *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#severity EventOrchestrationGlobal#severity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#severity EventOrchestrationGlobal#severity}.
 
 ---
 
@@ -1617,7 +1617,7 @@ Suppress interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#suppress EventOrchestrationGlobal#suppress}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#suppress EventOrchestrationGlobal#suppress}.
 
 ---
 
@@ -1629,7 +1629,7 @@ Suspend *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#suspend EventOrchestrationGlobal#suspend}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#suspend EventOrchestrationGlobal#suspend}.
 
 ---
 
@@ -1643,7 +1643,7 @@ Variable interface{}
 
 variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#variable EventOrchestrationGlobal#variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#variable EventOrchestrationGlobal#variable}
 
 ---
 
@@ -1652,7 +1652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 &eventorchestrationglobal.EventOrchestrationGlobalSetRuleActionsAutomationAction {
 	Name: *string,
@@ -1667,9 +1667,9 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationAction.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationAction.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#url EventOrchestrationGlobal#url}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationAction.property.autoSend">AutoSend</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#auto_send EventOrchestrationGlobal#auto_send}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationAction.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationAction.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#url EventOrchestrationGlobal#url}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationAction.property.autoSend">AutoSend</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#auto_send EventOrchestrationGlobal#auto_send}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationAction.property.header">Header</a></code> | <code>interface{}</code> | header block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationAction.property.parameter">Parameter</a></code> | <code>interface{}</code> | parameter block. |
 
@@ -1683,7 +1683,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}.
 
 ---
 
@@ -1695,7 +1695,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#url EventOrchestrationGlobal#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#url EventOrchestrationGlobal#url}.
 
 ---
 
@@ -1707,7 +1707,7 @@ AutoSend interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#auto_send EventOrchestrationGlobal#auto_send}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#auto_send EventOrchestrationGlobal#auto_send}.
 
 ---
 
@@ -1721,7 +1721,7 @@ Header interface{}
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#header EventOrchestrationGlobal#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#header EventOrchestrationGlobal#header}
 
 ---
 
@@ -1735,7 +1735,7 @@ Parameter interface{}
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#parameter EventOrchestrationGlobal#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#parameter EventOrchestrationGlobal#parameter}
 
 ---
 
@@ -1744,7 +1744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationActionHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 &eventorchestrationglobal.EventOrchestrationGlobalSetRuleActionsAutomationActionHeader {
 	Key: *string,
@@ -1756,8 +1756,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationActionHeader.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationActionHeader.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationActionHeader.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationActionHeader.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}. |
 
 ---
 
@@ -1769,7 +1769,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}.
 
 ---
 
@@ -1781,7 +1781,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}.
 
 ---
 
@@ -1790,7 +1790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationActionParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 &eventorchestrationglobal.EventOrchestrationGlobalSetRuleActionsAutomationActionParameter {
 	Key: *string,
@@ -1802,8 +1802,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationActionParameter.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationActionParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationActionParameter.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationActionParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}. |
 
 ---
 
@@ -1815,7 +1815,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}.
 
 ---
 
@@ -1827,7 +1827,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}.
 
 ---
 
@@ -1836,7 +1836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsExtraction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 &eventorchestrationglobal.EventOrchestrationGlobalSetRuleActionsExtraction {
 	Target: *string,
@@ -1850,10 +1850,10 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsExtraction.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsExtraction.property.regex">Regex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsExtraction.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsExtraction.property.template">Template</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsExtraction.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsExtraction.property.regex">Regex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsExtraction.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsExtraction.property.template">Template</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}. |
 
 ---
 
@@ -1865,7 +1865,7 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}.
 
 ---
 
@@ -1877,7 +1877,7 @@ Regex *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}.
 
 ---
 
@@ -1889,7 +1889,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}.
 
 ---
 
@@ -1901,7 +1901,7 @@ Template *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}.
 
 ---
 
@@ -1910,7 +1910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 &eventorchestrationglobal.EventOrchestrationGlobalSetRuleActionsVariable {
 	Name: *string,
@@ -1924,10 +1924,10 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsVariable.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsVariable.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#path EventOrchestrationGlobal#path}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsVariable.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#type EventOrchestrationGlobal#type}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsVariable.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsVariable.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsVariable.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#path EventOrchestrationGlobal#path}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsVariable.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#type EventOrchestrationGlobal#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsVariable.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}. |
 
 ---
 
@@ -1939,7 +1939,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}.
 
 ---
 
@@ -1951,7 +1951,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#path EventOrchestrationGlobal#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#path EventOrchestrationGlobal#path}.
 
 ---
 
@@ -1963,7 +1963,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#type EventOrchestrationGlobal#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#type EventOrchestrationGlobal#type}.
 
 ---
 
@@ -1975,7 +1975,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}.
 
 ---
 
@@ -1984,7 +1984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 &eventorchestrationglobal.EventOrchestrationGlobalSetRuleCondition {
 	Expression: *string,
@@ -1995,7 +1995,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#expression EventOrchestrationGlobal#expression}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#expression EventOrchestrationGlobal#expression}. |
 
 ---
 
@@ -2007,7 +2007,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.15.3/docs/resources/event_orchestration_global#expression EventOrchestrationGlobal#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/resources/event_orchestration_global#expression EventOrchestrationGlobal#expression}.
 
 ---
 
@@ -2018,7 +2018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationActionHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalCatchAllActionsAutomationActionHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationGlobalCatchAllActionsAutomationActionHeaderList
 ```
@@ -2161,7 +2161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationActionHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalCatchAllActionsAutomationActionHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationGlobalCatchAllActionsAutomationActionHeaderOutputReference
 ```
@@ -2472,7 +2472,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalCatchAllActionsAutomationActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventOrchestrationGlobalCatchAllActionsAutomationActionOutputReference
 ```
@@ -2878,7 +2878,7 @@ func InternalValue() EventOrchestrationGlobalCatchAllActionsAutomationAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationActionParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalCatchAllActionsAutomationActionParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationGlobalCatchAllActionsAutomationActionParameterList
 ```
@@ -3021,7 +3021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsAutomationActionParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalCatchAllActionsAutomationActionParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationGlobalCatchAllActionsAutomationActionParameterOutputReference
 ```
@@ -3332,7 +3332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsExtractionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalCatchAllActionsExtractionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationGlobalCatchAllActionsExtractionList
 ```
@@ -3475,7 +3475,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsExtractionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalCatchAllActionsExtractionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationGlobalCatchAllActionsExtractionOutputReference
 ```
@@ -3851,7 +3851,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalCatchAllActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventOrchestrationGlobalCatchAllActionsOutputReference
 ```
@@ -4458,7 +4458,7 @@ func InternalValue() EventOrchestrationGlobalCatchAllActions
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalCatchAllActionsVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationGlobalCatchAllActionsVariableList
 ```
@@ -4601,7 +4601,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllActionsVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalCatchAllActionsVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationGlobalCatchAllActionsVariableOutputReference
 ```
@@ -4956,7 +4956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalCatchAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalCatchAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventOrchestrationGlobalCatchAllOutputReference
 ```
@@ -5240,7 +5240,7 @@ func InternalValue() EventOrchestrationGlobalCatchAll
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationGlobalSetList
 ```
@@ -5383,7 +5383,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationGlobalSetOutputReference
 ```
@@ -5714,7 +5714,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationActionHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalSetRuleActionsAutomationActionHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationGlobalSetRuleActionsAutomationActionHeaderList
 ```
@@ -5857,7 +5857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationActionHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalSetRuleActionsAutomationActionHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationGlobalSetRuleActionsAutomationActionHeaderOutputReference
 ```
@@ -6168,7 +6168,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalSetRuleActionsAutomationActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventOrchestrationGlobalSetRuleActionsAutomationActionOutputReference
 ```
@@ -6574,7 +6574,7 @@ func InternalValue() EventOrchestrationGlobalSetRuleActionsAutomationAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationActionParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalSetRuleActionsAutomationActionParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationGlobalSetRuleActionsAutomationActionParameterList
 ```
@@ -6717,7 +6717,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsAutomationActionParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalSetRuleActionsAutomationActionParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationGlobalSetRuleActionsAutomationActionParameterOutputReference
 ```
@@ -7028,7 +7028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsExtractionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalSetRuleActionsExtractionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationGlobalSetRuleActionsExtractionList
 ```
@@ -7171,7 +7171,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsExtractionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalSetRuleActionsExtractionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationGlobalSetRuleActionsExtractionOutputReference
 ```
@@ -7547,7 +7547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalSetRuleActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventOrchestrationGlobalSetRuleActionsOutputReference
 ```
@@ -8154,7 +8154,7 @@ func InternalValue() EventOrchestrationGlobalSetRuleActions
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalSetRuleActionsVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationGlobalSetRuleActionsVariableList
 ```
@@ -8297,7 +8297,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleActionsVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalSetRuleActionsVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationGlobalSetRuleActionsVariableOutputReference
 ```
@@ -8652,7 +8652,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalSetRuleConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationGlobalSetRuleConditionList
 ```
@@ -8795,7 +8795,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalSetRuleConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationGlobalSetRuleConditionOutputReference
 ```
@@ -9084,7 +9084,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalSetRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationGlobalSetRuleList
 ```
@@ -9227,7 +9227,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationGlobal.EventOrchestrationGlobalSetRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v9/eventorchestrationglobal"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationglobal"
 
 eventorchestrationglobal.NewEventOrchestrationGlobalSetRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationGlobalSetRuleOutputReference
 ```
