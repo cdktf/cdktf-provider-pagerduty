@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/data-sources/event_orchestration_integration
+// https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs/data-sources/event_orchestration_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +13,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyEventOrchestrationIntegrationAConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/data-sources/event_orchestration_integration#event_orchestration DataPagerdutyEventOrchestrationIntegrationA#event_orchestration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs/data-sources/event_orchestration_integration#event_orchestration DataPagerdutyEventOrchestrationIntegrationA#event_orchestration}
   */
   readonly eventOrchestration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/data-sources/event_orchestration_integration#id DataPagerdutyEventOrchestrationIntegrationA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs/data-sources/event_orchestration_integration#id DataPagerdutyEventOrchestrationIntegrationA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/data-sources/event_orchestration_integration#label DataPagerdutyEventOrchestrationIntegrationA#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs/data-sources/event_orchestration_integration#label DataPagerdutyEventOrchestrationIntegrationA#label}
   */
   readonly label?: string;
 }
@@ -99,7 +99,7 @@ export class DataPagerdutyEventOrchestrationIntegrationParametersAList extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/data-sources/event_orchestration_integration pagerduty_event_orchestration_integration}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs/data-sources/event_orchestration_integration pagerduty_event_orchestration_integration}
 */
 export class DataPagerdutyEventOrchestrationIntegrationA extends cdktf.TerraformDataSource {
 
@@ -113,7 +113,7 @@ export class DataPagerdutyEventOrchestrationIntegrationA extends cdktf.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.0/docs/data-sources/event_orchestration_integration pagerduty_event_orchestration_integration} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs/data-sources/event_orchestration_integration pagerduty_event_orchestration_integration} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -124,7 +124,7 @@ export class DataPagerdutyEventOrchestrationIntegrationA extends cdktf.Terraform
       terraformResourceType: 'pagerduty_event_orchestration_integration',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.16.0',
+        providerVersion: '2.16.1',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
