@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyservice"
 
 datapagerdutyservice.NewDataPagerdutyService(scope Construct, id *string, config DataPagerdutyServiceConfig) DataPagerdutyService
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyservice"
 
 datapagerdutyservice.DataPagerdutyService_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyservice"
 
 datapagerdutyservice.DataPagerdutyService_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datapagerdutyservice.DataPagerdutyService_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyservice"
 
 datapagerdutyservice.DataPagerdutyService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -621,7 +621,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyservice"
 
 &datapagerdutyservice.DataPagerdutyServiceConfig {
 	Connection: interface{},
@@ -754,7 +754,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyservice"
 
 &datapagerdutyservice.DataPagerdutyServiceTeams {
 
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyserv
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyservice"
 
 datapagerdutyservice.NewDataPagerdutyServiceTeamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPagerdutyServiceTeamsList
 ```
@@ -901,7 +901,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceTeamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyservice"
 
 datapagerdutyservice.NewDataPagerdutyServiceTeamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPagerdutyServiceTeamsOutputReference
 ```

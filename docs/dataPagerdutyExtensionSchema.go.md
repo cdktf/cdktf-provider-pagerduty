@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyextensionschema"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyextensionschema"
 
 datapagerdutyextensionschema.NewDataPagerdutyExtensionSchema(scope Construct, id *string, config DataPagerdutyExtensionSchemaConfig) DataPagerdutyExtensionSchema
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyextensionschema"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyextensionschema"
 
 datapagerdutyextensionschema.DataPagerdutyExtensionSchema_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyextensionschema"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyextensionschema"
 
 datapagerdutyextensionschema.DataPagerdutyExtensionSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datapagerdutyextensionschema.DataPagerdutyExtensionSchema_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyextensionschema"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyextensionschema"
 
 datapagerdutyextensionschema.DataPagerdutyExtensionSchema_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyextensionschema"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v10/datapagerdutyextensionschema"
 
 &datapagerdutyextensionschema.DataPagerdutyExtensionSchemaConfig {
 	Connection: interface{},
