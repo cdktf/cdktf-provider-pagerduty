@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs/data-sources/user
+// https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyUserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs/data-sources/user#email DataPagerdutyUser#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/user#email DataPagerdutyUser#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs/data-sources/user#id DataPagerdutyUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/user#id DataPagerdutyUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +21,7 @@ export interface DataPagerdutyUserConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs/data-sources/user pagerduty_user}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/user pagerduty_user}
 */
 export class DataPagerdutyUser extends cdktf.TerraformDataSource {
 
@@ -40,7 +35,7 @@ export class DataPagerdutyUser extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs/data-sources/user pagerduty_user} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/user pagerduty_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +46,7 @@ export class DataPagerdutyUser extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_user',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.16.1',
+        providerVersion: '2.16.2',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`pagerduty`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs).
+Refer to the Terraform Registory for docs: [`pagerduty`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-pagerduty.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`pagerduty`](https://registry.terraf
 
 ### PagerdutyProvider <a name="PagerdutyProvider" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs pagerduty}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs pagerduty}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer"></a>
 
@@ -502,12 +502,12 @@ new PagerdutyProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.token">Token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs#token PagerdutyProvider#token}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.token">Token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#token PagerdutyProvider#token}. |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.alias">Alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.apiUrlOverride">ApiUrlOverride</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs#api_url_override PagerdutyProvider#api_url_override}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.serviceRegion">ServiceRegion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs#service_region PagerdutyProvider#service_region}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.skipCredentialsValidation">SkipCredentialsValidation</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.userToken">UserToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs#user_token PagerdutyProvider#user_token}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.apiUrlOverride">ApiUrlOverride</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#api_url_override PagerdutyProvider#api_url_override}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.serviceRegion">ServiceRegion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#service_region PagerdutyProvider#service_region}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.skipCredentialsValidation">SkipCredentialsValidation</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.userToken">UserToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#user_token PagerdutyProvider#user_token}. |
 
 ---
 
@@ -519,7 +519,7 @@ public string Token { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs#token PagerdutyProvider#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#token PagerdutyProvider#token}.
 
 ---
 
@@ -533,7 +533,7 @@ public string Alias { get; set; }
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs#alias PagerdutyProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#alias PagerdutyProvider#alias}
 
 ---
 
@@ -545,7 +545,7 @@ public string ApiUrlOverride { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs#api_url_override PagerdutyProvider#api_url_override}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#api_url_override PagerdutyProvider#api_url_override}.
 
 ---
 
@@ -557,7 +557,7 @@ public string ServiceRegion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs#service_region PagerdutyProvider#service_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#service_region PagerdutyProvider#service_region}.
 
 ---
 
@@ -569,7 +569,7 @@ public object SkipCredentialsValidation { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}.
 
 ---
 
@@ -581,7 +581,7 @@ public string UserToken { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs#user_token PagerdutyProvider#user_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#user_token PagerdutyProvider#user_token}.
 
 ---
 
