@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs/data-sources/extension_schema
+// https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/extension_schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyExtensionSchemaConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs/data-sources/extension_schema#id DataPagerdutyExtensionSchema#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/extension_schema#id DataPagerdutyExtensionSchema#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs/data-sources/extension_schema#name DataPagerdutyExtensionSchema#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/extension_schema#name DataPagerdutyExtensionSchema#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs/data-sources/extension_schema pagerduty_extension_schema}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/extension_schema pagerduty_extension_schema}
 */
 export class DataPagerdutyExtensionSchema extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataPagerdutyExtensionSchema extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.1/docs/data-sources/extension_schema pagerduty_extension_schema} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/extension_schema pagerduty_extension_schema} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +51,7 @@ export class DataPagerdutyExtensionSchema extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_extension_schema',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.16.1',
+        providerVersion: '2.16.2',
         providerVersionConstraint: '~> 2.5'
       },
       provider: config.provider,
