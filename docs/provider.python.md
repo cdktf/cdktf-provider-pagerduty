@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`pagerduty`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs).
+Refer to the Terraform Registory for docs: [`pagerduty`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-pagerduty.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`pagerduty`](https://registry.terraf
 
 ### PagerdutyProvider <a name="PagerdutyProvider" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs pagerduty}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs pagerduty}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer"></a>
 
@@ -18,11 +18,12 @@ from cdktf_cdktf_provider_pagerduty import provider
 provider.PagerdutyProvider(
   scope: Construct,
   id: str,
-  token: str,
   alias: str = None,
   api_url_override: str = None,
   service_region: str = None,
   skip_credentials_validation: typing.Union[bool, IResolvable] = None,
+  token: str = None,
+  use_app_oauth_scoped_token: PagerdutyProviderUseAppOauthScopedToken = None,
   user_token: str = None
 )
 ```
@@ -31,12 +32,13 @@ provider.PagerdutyProvider(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#token PagerdutyProvider#token}. |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.apiUrlOverride">api_url_override</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#api_url_override PagerdutyProvider#api_url_override}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.serviceRegion">service_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#service_region PagerdutyProvider#service_region}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.skipCredentialsValidation">skip_credentials_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.userToken">user_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#user_token PagerdutyProvider#user_token}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.apiUrlOverride">api_url_override</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#api_url_override PagerdutyProvider#api_url_override}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.serviceRegion">service_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#service_region PagerdutyProvider#service_region}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.skipCredentialsValidation">skip_credentials_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#token PagerdutyProvider#token}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.useAppOauthScopedToken">use_app_oauth_scoped_token</a></code> | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken">PagerdutyProviderUseAppOauthScopedToken</a></code> | use_app_oauth_scoped_token block. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.userToken">user_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#user_token PagerdutyProvider#user_token}. |
 
 ---
 
@@ -58,21 +60,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `token`<sup>Required</sup> <a name="token" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.token"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#token PagerdutyProvider#token}.
-
----
-
 ##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.alias"></a>
 
 - *Type:* str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#alias PagerdutyProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#alias PagerdutyProvider#alias}
 
 ---
 
@@ -80,7 +74,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#api_url_override PagerdutyProvider#api_url_override}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#api_url_override PagerdutyProvider#api_url_override}.
 
 ---
 
@@ -88,7 +82,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#service_region PagerdutyProvider#service_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#service_region PagerdutyProvider#service_region}.
 
 ---
 
@@ -96,7 +90,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}.
+
+---
+
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.token"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#token PagerdutyProvider#token}.
+
+---
+
+##### `use_app_oauth_scoped_token`<sup>Optional</sup> <a name="use_app_oauth_scoped_token" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.useAppOauthScopedToken"></a>
+
+- *Type:* <a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken">PagerdutyProviderUseAppOauthScopedToken</a>
+
+use_app_oauth_scoped_token block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#use_app_oauth_scoped_token PagerdutyProvider#use_app_oauth_scoped_token}
 
 ---
 
@@ -104,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#user_token PagerdutyProvider#user_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#user_token PagerdutyProvider#user_token}.
 
 ---
 
@@ -122,6 +134,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.resetApiUrlOverride">reset_api_url_override</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.resetServiceRegion">reset_service_region</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.resetSkipCredentialsValidation">reset_skip_credentials_validation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.resetToken">reset_token</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.resetUseAppOauthScopedToken">reset_use_app_oauth_scoped_token</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.resetUserToken">reset_user_token</a></code> | *No description.* |
 
 ---
@@ -217,6 +231,18 @@ def reset_service_region() -> None
 
 ```python
 def reset_skip_credentials_validation() -> None
+```
+
+##### `reset_token` <a name="reset_token" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.resetToken"></a>
+
+```python
+def reset_token() -> None
+```
+
+##### `reset_use_app_oauth_scoped_token` <a name="reset_use_app_oauth_scoped_token" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.resetUseAppOauthScopedToken"></a>
+
+```python
+def reset_use_app_oauth_scoped_token() -> None
 ```
 
 ##### `reset_user_token` <a name="reset_user_token" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.resetUserToken"></a>
@@ -319,11 +345,13 @@ provider.PagerdutyProvider.is_terraform_provider(
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.serviceRegionInput">service_region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.skipCredentialsValidationInput">skip_credentials_validation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.useAppOauthScopedTokenInput">use_app_oauth_scoped_token_input</a></code> | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken">PagerdutyProviderUseAppOauthScopedToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.userTokenInput">user_token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.apiUrlOverride">api_url_override</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.serviceRegion">service_region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.skipCredentialsValidation">skip_credentials_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.token">token</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.useAppOauthScopedToken">use_app_oauth_scoped_token</a></code> | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken">PagerdutyProviderUseAppOauthScopedToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.userToken">user_token</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -470,6 +498,16 @@ token_input: str
 
 ---
 
+##### `use_app_oauth_scoped_token_input`<sup>Optional</sup> <a name="use_app_oauth_scoped_token_input" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.useAppOauthScopedTokenInput"></a>
+
+```python
+use_app_oauth_scoped_token_input: PagerdutyProviderUseAppOauthScopedToken
+```
+
+- *Type:* <a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken">PagerdutyProviderUseAppOauthScopedToken</a>
+
+---
+
 ##### `user_token_input`<sup>Optional</sup> <a name="user_token_input" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.userTokenInput"></a>
 
 ```python
@@ -520,6 +558,16 @@ token: str
 
 ---
 
+##### `use_app_oauth_scoped_token`<sup>Optional</sup> <a name="use_app_oauth_scoped_token" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.useAppOauthScopedToken"></a>
+
+```python
+use_app_oauth_scoped_token: PagerdutyProviderUseAppOauthScopedToken
+```
+
+- *Type:* <a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken">PagerdutyProviderUseAppOauthScopedToken</a>
+
+---
+
 ##### `user_token`<sup>Optional</sup> <a name="user_token" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.userToken"></a>
 
 ```python
@@ -558,11 +606,12 @@ tfResourceType: str
 from cdktf_cdktf_provider_pagerduty import provider
 
 provider.PagerdutyProviderConfig(
-  token: str,
   alias: str = None,
   api_url_override: str = None,
   service_region: str = None,
   skip_credentials_validation: typing.Union[bool, IResolvable] = None,
+  token: str = None,
+  use_app_oauth_scoped_token: PagerdutyProviderUseAppOauthScopedToken = None,
   user_token: str = None
 )
 ```
@@ -571,24 +620,13 @@ provider.PagerdutyProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#token PagerdutyProvider#token}. |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.apiUrlOverride">api_url_override</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#api_url_override PagerdutyProvider#api_url_override}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.serviceRegion">service_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#service_region PagerdutyProvider#service_region}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.skipCredentialsValidation">skip_credentials_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.userToken">user_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#user_token PagerdutyProvider#user_token}. |
-
----
-
-##### `token`<sup>Required</sup> <a name="token" id="@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.token"></a>
-
-```python
-token: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#token PagerdutyProvider#token}.
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.apiUrlOverride">api_url_override</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#api_url_override PagerdutyProvider#api_url_override}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.serviceRegion">service_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#service_region PagerdutyProvider#service_region}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.skipCredentialsValidation">skip_credentials_validation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#token PagerdutyProvider#token}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.useAppOauthScopedToken">use_app_oauth_scoped_token</a></code> | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken">PagerdutyProviderUseAppOauthScopedToken</a></code> | use_app_oauth_scoped_token block. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.userToken">user_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#user_token PagerdutyProvider#user_token}. |
 
 ---
 
@@ -602,7 +640,7 @@ alias: str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#alias PagerdutyProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#alias PagerdutyProvider#alias}
 
 ---
 
@@ -614,7 +652,7 @@ api_url_override: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#api_url_override PagerdutyProvider#api_url_override}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#api_url_override PagerdutyProvider#api_url_override}.
 
 ---
 
@@ -626,7 +664,7 @@ service_region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#service_region PagerdutyProvider#service_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#service_region PagerdutyProvider#service_region}.
 
 ---
 
@@ -638,7 +676,33 @@ skip_credentials_validation: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}.
+
+---
+
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.token"></a>
+
+```python
+token: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#token PagerdutyProvider#token}.
+
+---
+
+##### `use_app_oauth_scoped_token`<sup>Optional</sup> <a name="use_app_oauth_scoped_token" id="@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.useAppOauthScopedToken"></a>
+
+```python
+use_app_oauth_scoped_token: PagerdutyProviderUseAppOauthScopedToken
+```
+
+- *Type:* <a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken">PagerdutyProviderUseAppOauthScopedToken</a>
+
+use_app_oauth_scoped_token block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#use_app_oauth_scoped_token PagerdutyProvider#use_app_oauth_scoped_token}
 
 ---
 
@@ -650,7 +714,67 @@ user_token: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#user_token PagerdutyProvider#user_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#user_token PagerdutyProvider#user_token}.
+
+---
+
+### PagerdutyProviderUseAppOauthScopedToken <a name="PagerdutyProviderUseAppOauthScopedToken" id="@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_pagerduty import provider
+
+provider.PagerdutyProviderUseAppOauthScopedToken(
+  pd_client_id: str,
+  pd_client_secret: str,
+  pd_subdomain: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdClientId">pd_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#pd_client_id PagerdutyProvider#pd_client_id}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdClientSecret">pd_client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#pd_client_secret PagerdutyProvider#pd_client_secret}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdSubdomain">pd_subdomain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#pd_subdomain PagerdutyProvider#pd_subdomain}. |
+
+---
+
+##### `pd_client_id`<sup>Required</sup> <a name="pd_client_id" id="@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdClientId"></a>
+
+```python
+pd_client_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#pd_client_id PagerdutyProvider#pd_client_id}.
+
+---
+
+##### `pd_client_secret`<sup>Required</sup> <a name="pd_client_secret" id="@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdClientSecret"></a>
+
+```python
+pd_client_secret: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#pd_client_secret PagerdutyProvider#pd_client_secret}.
+
+---
+
+##### `pd_subdomain`<sup>Required</sup> <a name="pd_subdomain" id="@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdSubdomain"></a>
+
+```python
+pd_subdomain: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#pd_subdomain PagerdutyProvider#pd_subdomain}.
 
 ---
 

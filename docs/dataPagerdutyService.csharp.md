@@ -1,6 +1,6 @@
 # `data_pagerduty_service`
 
-Refer to the Terraform Registory for docs: [`data_pagerduty_service`](https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/service).
+Refer to the Terraform Registory for docs: [`data_pagerduty_service`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/service).
 
 # `dataPagerdutyService` Submodule <a name="`dataPagerdutyService` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyService"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_pagerduty_service`](https://re
 
 ### DataPagerdutyService <a name="DataPagerdutyService" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/service pagerduty_service}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/service pagerduty_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyService.Initializer"></a>
 
@@ -647,8 +647,8 @@ new DataPagerdutyServiceConfig {
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/service#name DataPagerdutyService#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/service#id DataPagerdutyService#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/service#name DataPagerdutyService#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyService.DataPagerdutyServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/service#id DataPagerdutyService#id}. |
 
 ---
 
@@ -730,7 +730,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/service#name DataPagerdutyService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/service#name DataPagerdutyService#name}.
 
 ---
 
@@ -742,7 +742,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs/data-sources/service#id DataPagerdutyService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs/data-sources/service#id DataPagerdutyService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

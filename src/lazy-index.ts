@@ -12,11 +12,6 @@ Object.defineProperty(exports, 'automationActionsRunner', { get: function () { r
 Object.defineProperty(exports, 'automationActionsRunnerTeamAssociation', { get: function () { return require('./automation-actions-runner-team-association'); } });
 Object.defineProperty(exports, 'businessService', { get: function () { return require('./business-service'); } });
 Object.defineProperty(exports, 'businessServiceSubscriber', { get: function () { return require('./business-service-subscriber'); } });
-Object.defineProperty(exports, 'customField', { get: function () { return require('./custom-field'); } });
-Object.defineProperty(exports, 'customFieldOption', { get: function () { return require('./custom-field-option'); } });
-Object.defineProperty(exports, 'customFieldSchema', { get: function () { return require('./custom-field-schema'); } });
-Object.defineProperty(exports, 'customFieldSchemaAssignment', { get: function () { return require('./custom-field-schema-assignment'); } });
-Object.defineProperty(exports, 'customFieldSchemaFieldConfiguration', { get: function () { return require('./custom-field-schema-field-configuration'); } });
 Object.defineProperty(exports, 'escalationPolicy', { get: function () { return require('./escalation-policy'); } });
 Object.defineProperty(exports, 'eventOrchestration', { get: function () { return require('./event-orchestration'); } });
 Object.defineProperty(exports, 'eventOrchestrationGlobal', { get: function () { return require('./event-orchestration-global'); } });
@@ -52,8 +47,6 @@ Object.defineProperty(exports, 'webhookSubscription', { get: function () { retur
 Object.defineProperty(exports, 'dataPagerdutyAutomationActionsAction', { get: function () { return require('./data-pagerduty-automation-actions-action'); } });
 Object.defineProperty(exports, 'dataPagerdutyAutomationActionsRunner', { get: function () { return require('./data-pagerduty-automation-actions-runner'); } });
 Object.defineProperty(exports, 'dataPagerdutyBusinessService', { get: function () { return require('./data-pagerduty-business-service'); } });
-Object.defineProperty(exports, 'dataPagerdutyCustomField', { get: function () { return require('./data-pagerduty-custom-field'); } });
-Object.defineProperty(exports, 'dataPagerdutyCustomFieldSchema', { get: function () { return require('./data-pagerduty-custom-field-schema'); } });
 Object.defineProperty(exports, 'dataPagerdutyEscalationPolicy', { get: function () { return require('./data-pagerduty-escalation-policy'); } });
 Object.defineProperty(exports, 'dataPagerdutyEventOrchestration', { get: function () { return require('./data-pagerduty-event-orchestration'); } });
 Object.defineProperty(exports, 'dataPagerdutyEventOrchestrationIntegration', { get: function () { return require('./data-pagerduty-event-orchestration-integration'); } });

@@ -14,7 +14,7 @@ const actions = require("@actions/core");
 // const { versionMatchesConstraint } = require('cdktf-cli/lib/dependencies/version-constraints');
 
 // set by the projen file that generates this script
-const CONSTRAINT = "~> 2.5";
+const CONSTRAINT = "~> 3.0";
 const FQ_PROVIDER_NAME = "PagerDuty/pagerduty";
 
 (async function main() {

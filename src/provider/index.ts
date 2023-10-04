@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,35 +13,68 @@ import * as cdktf from 'cdktf';
 
 export interface PagerdutyProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#api_url_override PagerdutyProvider#api_url_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#api_url_override PagerdutyProvider#api_url_override}
   */
   readonly apiUrlOverride?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#service_region PagerdutyProvider#service_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#service_region PagerdutyProvider#service_region}
   */
   readonly serviceRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}
   */
   readonly skipCredentialsValidation?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#token PagerdutyProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#token PagerdutyProvider#token}
   */
-  readonly token: string;
+  readonly token?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#user_token PagerdutyProvider#user_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#user_token PagerdutyProvider#user_token}
   */
   readonly userToken?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs#alias PagerdutyProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#alias PagerdutyProvider#alias}
   */
   readonly alias?: string;
+  /**
+  * use_app_oauth_scoped_token block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#use_app_oauth_scoped_token PagerdutyProvider#use_app_oauth_scoped_token}
+  */
+  readonly useAppOauthScopedToken?: PagerdutyProviderUseAppOauthScopedToken;
+}
+export interface PagerdutyProviderUseAppOauthScopedToken {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#pd_client_id PagerdutyProvider#pd_client_id}
+  */
+  readonly pdClientId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#pd_client_secret PagerdutyProvider#pd_client_secret}
+  */
+  readonly pdClientSecret: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs#pd_subdomain PagerdutyProvider#pd_subdomain}
+  */
+  readonly pdSubdomain: string;
 }
 
+export function pagerdutyProviderUseAppOauthScopedTokenToTerraform(struct?: PagerdutyProviderUseAppOauthScopedToken): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    pd_client_id: cdktf.stringToTerraform(struct!.pdClientId),
+    pd_client_secret: cdktf.stringToTerraform(struct!.pdClientSecret),
+    pd_subdomain: cdktf.stringToTerraform(struct!.pdSubdomain),
+  }
+}
+
+
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs pagerduty}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs pagerduty}
 */
 export class PagerdutyProvider extends cdktf.TerraformProvider {
 
@@ -55,19 +88,19 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/2.16.2/docs pagerduty} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.1/docs pagerduty} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options PagerdutyProviderConfig
+  * @param options PagerdutyProviderConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: PagerdutyProviderConfig) {
+  public constructor(scope: Construct, id: string, config: PagerdutyProviderConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'pagerduty',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '2.16.2',
-        providerVersionConstraint: '~> 2.5'
+        providerVersion: '3.0.1',
+        providerVersionConstraint: '~> 3.0'
       },
       terraformProviderSource: 'PagerDuty/pagerduty'
     });
@@ -77,6 +110,7 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
     this._token = config.token;
     this._userToken = config.userToken;
     this._alias = config.alias;
+    this._useAppOauthScopedToken = config.useAppOauthScopedToken;
   }
 
   // ==========
@@ -131,13 +165,16 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
     return this._skipCredentialsValidation;
   }
 
-  // token - computed: false, optional: false, required: true
+  // token - computed: false, optional: true, required: false
   private _token?: string; 
   public get token() {
     return this._token;
   }
   public set token(value: string | undefined) {
     this._token = value;
+  }
+  public resetToken() {
+    this._token = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get tokenInput() {
@@ -176,6 +213,22 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
     return this._alias;
   }
 
+  // use_app_oauth_scoped_token - computed: false, optional: true, required: false
+  private _useAppOauthScopedToken?: PagerdutyProviderUseAppOauthScopedToken; 
+  public get useAppOauthScopedToken() {
+    return this._useAppOauthScopedToken;
+  }
+  public set useAppOauthScopedToken(value: PagerdutyProviderUseAppOauthScopedToken | undefined) {
+    this._useAppOauthScopedToken = value;
+  }
+  public resetUseAppOauthScopedToken() {
+    this._useAppOauthScopedToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useAppOauthScopedTokenInput() {
+    return this._useAppOauthScopedToken;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -188,6 +241,7 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
       token: cdktf.stringToTerraform(this._token),
       user_token: cdktf.stringToTerraform(this._userToken),
       alias: cdktf.stringToTerraform(this._alias),
+      use_app_oauth_scoped_token: pagerdutyProviderUseAppOauthScopedTokenToTerraform(this._useAppOauthScopedToken),
     };
   }
 }
