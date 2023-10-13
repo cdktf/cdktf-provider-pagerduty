@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyincidentworkflow"
 
 datapagerdutyincidentworkflow.NewDataPagerdutyIncidentWorkflow(scope Construct, id *string, config DataPagerdutyIncidentWorkflowConfig) DataPagerdutyIncidentWorkflow
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyincidentworkflow"
 
 datapagerdutyincidentworkflow.DataPagerdutyIncidentWorkflow_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyincidentworkflow"
 
 datapagerdutyincidentworkflow.DataPagerdutyIncidentWorkflow_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datapagerdutyincidentworkflow.DataPagerdutyIncidentWorkflow_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyincidentworkflow"
 
 datapagerdutyincidentworkflow.DataPagerdutyIncidentWorkflow_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyincidentworkflow"
 
 &datapagerdutyincidentworkflow.DataPagerdutyIncidentWorkflowConfig {
 	Connection: interface{},
