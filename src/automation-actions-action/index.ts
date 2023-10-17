@@ -246,6 +246,20 @@ export class AutomationActionsAction extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "pagerduty_automation_actions_action";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a AutomationActionsAction resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the AutomationActionsAction to import
+  * @param importFromId The id of the existing AutomationActionsAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.2/docs/resources/automation_actions_action#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the AutomationActionsAction to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_automation_actions_action", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

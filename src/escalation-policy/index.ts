@@ -302,6 +302,20 @@ export class EscalationPolicy extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "pagerduty_escalation_policy";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a EscalationPolicy resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the EscalationPolicy to import
+  * @param importFromId The id of the existing EscalationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.2/docs/resources/escalation_policy#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the EscalationPolicy to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_escalation_policy", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

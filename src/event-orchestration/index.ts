@@ -204,6 +204,20 @@ export class EventOrchestration extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "pagerduty_event_orchestration";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a EventOrchestration resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the EventOrchestration to import
+  * @param importFromId The id of the existing EventOrchestration that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.2/docs/resources/event_orchestration#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the EventOrchestration to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_event_orchestration", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

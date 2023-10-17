@@ -39,6 +39,20 @@ export class AutomationActionsActionServiceAssociation extends cdktf.TerraformRe
   // =================
   public static readonly tfResourceType = "pagerduty_automation_actions_action_service_association";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a AutomationActionsActionServiceAssociation resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the AutomationActionsActionServiceAssociation to import
+  * @param importFromId The id of the existing AutomationActionsActionServiceAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.2/docs/resources/automation_actions_action_service_association#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the AutomationActionsActionServiceAssociation to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_automation_actions_action_service_association", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
