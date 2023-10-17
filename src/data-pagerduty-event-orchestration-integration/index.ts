@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.2/docs/data-sources/event_orchestration_integration
 // generated from terraform resource schema
 
@@ -107,6 +102,20 @@ export class DataPagerdutyEventOrchestrationIntegrationA extends cdktf.Terraform
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "pagerduty_event_orchestration_integration";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataPagerdutyEventOrchestrationIntegrationA resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataPagerdutyEventOrchestrationIntegrationA to import
+  * @param importFromId The id of the existing DataPagerdutyEventOrchestrationIntegrationA that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.2/docs/data-sources/event_orchestration_integration#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataPagerdutyEventOrchestrationIntegrationA to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "pagerduty_event_orchestration_integration", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationService(scope Construct, id *string, config EventOrchestrationServiceConfig) EventOrchestrationService
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.putCatchAll">PutCatchAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.putSet">PutSet</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.resetEnableEventOrchestrationForService">ResetEnableEventOrchestrationForService</a></code> | *No description.* |
@@ -140,6 +143,22 @@ func ToTerraform() interface{}
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.getAnyMapAttribute"></a>
 
@@ -249,6 +268,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.interpolationForAttribute"></a>
 
 ```go
@@ -258,6 +295,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -304,13 +365,14 @@ func ResetId()
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a EventOrchestrationService resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.EventOrchestrationService_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +404,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.EventOrchestrationService_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +418,7 @@ eventorchestrationservice.EventOrchestrationService_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.EventOrchestrationService_IsTerraformResource(x interface{}) *bool
 ```
@@ -364,6 +426,50 @@ eventorchestrationservice.EventOrchestrationService_IsTerraformResource(x interf
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
+
+eventorchestrationservice.EventOrchestrationService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a EventOrchestrationService resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the EventOrchestrationService to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing EventOrchestrationService that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.2/docs/resources/event_orchestration_service#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the EventOrchestrationService to import is found.
 
 ---
 
@@ -665,10 +771,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAll.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceCatchAll {
-	Actions: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12.eventOrchestrationService.EventOrchestrationServiceCatchAllActions,
+	Actions: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions,
 }
 ```
 
@@ -699,14 +805,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceCatchAllActions {
 	Annotate: *string,
-	AutomationAction: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationAction,
+	AutomationAction: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationAction,
 	EventAction: *string,
 	Extraction: interface{},
-	PagerdutyAutomationAction: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsPagerdutyAutomationAction,
+	PagerdutyAutomationAction: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsPagerdutyAutomationAction,
 	Priority: *string,
 	RouteTo: *string,
 	Severity: *string,
@@ -879,7 +985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceCatchAllActionsAutomationAction {
 	Name: *string,
@@ -971,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceCatchAllActionsAutomationActionHeader {
 	Key: *string,
@@ -1017,7 +1123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceCatchAllActionsAutomationActionParameter {
 	Key: *string,
@@ -1063,7 +1169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceCatchAllActionsExtraction {
 	Target: *string,
@@ -1137,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsPagerdutyAutomationAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceCatchAllActionsPagerdutyAutomationAction {
 	ActionId: *string,
@@ -1169,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceCatchAllActionsVariable {
 	Name: *string,
@@ -1243,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceConfig {
 	Connection: interface{},
@@ -1253,7 +1359,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestr
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	CatchAll: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12.eventOrchestrationService.EventOrchestrationServiceCatchAll,
+	CatchAll: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAll,
 	Service: *string,
 	Set: interface{},
 	EnableEventOrchestrationForService: interface{},
@@ -1422,7 +1528,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceSet {
 	Id: *string,
@@ -1473,10 +1579,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceSetRule {
-	Actions: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12.eventOrchestrationService.EventOrchestrationServiceSetRuleActions,
+	Actions: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions,
 	Condition: interface{},
 	Disabled: interface{},
 	Label: *string,
@@ -1551,14 +1657,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceSetRuleActions {
 	Annotate: *string,
-	AutomationAction: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationAction,
+	AutomationAction: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationAction,
 	EventAction: *string,
 	Extraction: interface{},
-	PagerdutyAutomationAction: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsPagerdutyAutomationAction,
+	PagerdutyAutomationAction: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsPagerdutyAutomationAction,
 	Priority: *string,
 	RouteTo: *string,
 	Severity: *string,
@@ -1731,7 +1837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceSetRuleActionsAutomationAction {
 	Name: *string,
@@ -1823,7 +1929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceSetRuleActionsAutomationActionHeader {
 	Key: *string,
@@ -1869,7 +1975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceSetRuleActionsAutomationActionParameter {
 	Key: *string,
@@ -1915,7 +2021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceSetRuleActionsExtraction {
 	Target: *string,
@@ -1989,7 +2095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsPagerdutyAutomationAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceSetRuleActionsPagerdutyAutomationAction {
 	ActionId: *string,
@@ -2021,7 +2127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceSetRuleActionsVariable {
 	Name: *string,
@@ -2095,7 +2201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 &eventorchestrationservice.EventOrchestrationServiceSetRuleCondition {
 	Expression: *string,
@@ -2129,7 +2235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceCatchAllActionsAutomationActionHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationServiceCatchAllActionsAutomationActionHeaderList
 ```
@@ -2272,7 +2378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceCatchAllActionsAutomationActionHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationServiceCatchAllActionsAutomationActionHeaderOutputReference
 ```
@@ -2583,7 +2689,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceCatchAllActionsAutomationActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference
 ```
@@ -2989,7 +3095,7 @@ func InternalValue() EventOrchestrationServiceCatchAllActionsAutomationAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceCatchAllActionsAutomationActionParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationServiceCatchAllActionsAutomationActionParameterList
 ```
@@ -3132,7 +3238,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceCatchAllActionsAutomationActionParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationServiceCatchAllActionsAutomationActionParameterOutputReference
 ```
@@ -3443,7 +3549,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtractionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceCatchAllActionsExtractionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationServiceCatchAllActionsExtractionList
 ```
@@ -3586,7 +3692,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtractionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceCatchAllActionsExtractionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationServiceCatchAllActionsExtractionOutputReference
 ```
@@ -3962,7 +4068,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceCatchAllActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventOrchestrationServiceCatchAllActionsOutputReference
 ```
@@ -4582,7 +4688,7 @@ func InternalValue() EventOrchestrationServiceCatchAllActions
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventOrchestrationServiceCatchAllActionsPagerdutyAutomationActionOutputReference
 ```
@@ -4853,7 +4959,7 @@ func InternalValue() EventOrchestrationServiceCatchAllActionsPagerdutyAutomation
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceCatchAllActionsVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationServiceCatchAllActionsVariableList
 ```
@@ -4996,7 +5102,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceCatchAllActionsVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationServiceCatchAllActionsVariableOutputReference
 ```
@@ -5351,7 +5457,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceCatchAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventOrchestrationServiceCatchAllOutputReference
 ```
@@ -5635,7 +5741,7 @@ func InternalValue() EventOrchestrationServiceCatchAll
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationServiceSetList
 ```
@@ -5778,7 +5884,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationServiceSetOutputReference
 ```
@@ -6109,7 +6215,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceSetRuleActionsAutomationActionHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationServiceSetRuleActionsAutomationActionHeaderList
 ```
@@ -6252,7 +6358,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceSetRuleActionsAutomationActionHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationServiceSetRuleActionsAutomationActionHeaderOutputReference
 ```
@@ -6563,7 +6669,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceSetRuleActionsAutomationActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference
 ```
@@ -6969,7 +7075,7 @@ func InternalValue() EventOrchestrationServiceSetRuleActionsAutomationAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceSetRuleActionsAutomationActionParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationServiceSetRuleActionsAutomationActionParameterList
 ```
@@ -7112,7 +7218,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceSetRuleActionsAutomationActionParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationServiceSetRuleActionsAutomationActionParameterOutputReference
 ```
@@ -7423,7 +7529,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtractionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceSetRuleActionsExtractionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationServiceSetRuleActionsExtractionList
 ```
@@ -7566,7 +7672,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtractionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceSetRuleActionsExtractionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationServiceSetRuleActionsExtractionOutputReference
 ```
@@ -7942,7 +8048,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceSetRuleActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventOrchestrationServiceSetRuleActionsOutputReference
 ```
@@ -8562,7 +8668,7 @@ func InternalValue() EventOrchestrationServiceSetRuleActions
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsPagerdutyAutomationActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceSetRuleActionsPagerdutyAutomationActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventOrchestrationServiceSetRuleActionsPagerdutyAutomationActionOutputReference
 ```
@@ -8833,7 +8939,7 @@ func InternalValue() EventOrchestrationServiceSetRuleActionsPagerdutyAutomationA
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceSetRuleActionsVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationServiceSetRuleActionsVariableList
 ```
@@ -8976,7 +9082,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceSetRuleActionsVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationServiceSetRuleActionsVariableOutputReference
 ```
@@ -9331,7 +9437,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceSetRuleConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationServiceSetRuleConditionList
 ```
@@ -9474,7 +9580,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceSetRuleConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationServiceSetRuleConditionOutputReference
 ```
@@ -9763,7 +9869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceSetRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationServiceSetRuleList
 ```
@@ -9906,7 +10012,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservice"
 
 eventorchestrationservice.NewEventOrchestrationServiceSetRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationServiceSetRuleOutputReference
 ```
