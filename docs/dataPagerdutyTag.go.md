@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutytag"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutytag"
 
 datapagerdutytag.NewDataPagerdutyTag(scope Construct, id *string, config DataPagerdutyTagConfig) DataPagerdutyTag
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutytag"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutytag"
 
 datapagerdutytag.DataPagerdutyTag_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutytag"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutytag"
 
 datapagerdutytag.DataPagerdutyTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datapagerdutytag.DataPagerdutyTag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutytag"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutytag"
 
 datapagerdutytag.DataPagerdutyTag_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datapagerdutytag.DataPagerdutyTag_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutytag"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutytag"
 
 datapagerdutytag.DataPagerdutyTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -589,7 +589,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutytag"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutytag"
 
 &datapagerdutytag.DataPagerdutyTagConfig {
 	Connection: interface{},
