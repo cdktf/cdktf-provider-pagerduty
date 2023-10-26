@@ -1,6 +1,6 @@
 # `pagerduty_team`
 
-Refer to the Terraform Registory for docs: [`pagerduty_team`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/resources/team).
+Refer to the Terraform Registory for docs: [`pagerduty_team`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/team).
 
 # `team` Submodule <a name="`team` Submodule" id="@cdktf/provider-pagerduty.team"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`pagerduty_team`](https://registry.t
 
 ### Team <a name="Team" id="@cdktf/provider-pagerduty.team.Team"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/resources/team pagerduty_team}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/team pagerduty_team}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.team.Team.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-pagerduty.team.Team.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.team.Team.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.team.Team.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-pagerduty.team.Team.resetDefaultRole">ResetDefaultRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.team.Team.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.team.Team.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.team.Team.resetParent">ResetParent</a></code> | *No description.* |
@@ -321,6 +322,12 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
+##### `ResetDefaultRole` <a name="ResetDefaultRole" id="@cdktf/provider-pagerduty.team.Team.resetDefaultRole"></a>
+
+```csharp
+private void ResetDefaultRole()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-pagerduty.team.Team.resetDescription"></a>
 
 ```csharp
@@ -442,7 +449,7 @@ The construct id used in the generated config for the Team to import.
 
 The id of the existing Team that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/resources/team#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/team#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -473,10 +480,12 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.team.Team.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.team.Team.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.team.Team.property.htmlUrl">HtmlUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.team.Team.property.defaultRoleInput">DefaultRoleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.team.Team.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.team.Team.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.team.Team.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.team.Team.property.parentInput">ParentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.team.Team.property.defaultRole">DefaultRole</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.team.Team.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.team.Team.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.team.Team.property.name">Name</a></code> | <code>string</code> | *No description.* |
@@ -636,6 +645,16 @@ public string HtmlUrl { get; }
 
 ---
 
+##### `DefaultRoleInput`<sup>Optional</sup> <a name="DefaultRoleInput" id="@cdktf/provider-pagerduty.team.Team.property.defaultRoleInput"></a>
+
+```csharp
+public string DefaultRoleInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-pagerduty.team.Team.property.descriptionInput"></a>
 
 ```csharp
@@ -670,6 +689,16 @@ public string NameInput { get; }
 
 ```csharp
 public string ParentInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DefaultRole`<sup>Required</sup> <a name="DefaultRole" id="@cdktf/provider-pagerduty.team.Team.property.defaultRole"></a>
+
+```csharp
+public string DefaultRole { get; }
 ```
 
 - *Type:* string
@@ -752,6 +781,7 @@ new TeamConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string Name,
+    string DefaultRole = null,
     string Description = null,
     string Id = null,
     string Parent = null
@@ -769,10 +799,11 @@ new TeamConfig {
 | <code><a href="#@cdktf/provider-pagerduty.team.TeamConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.team.TeamConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.team.TeamConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.team.TeamConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/resources/team#name Team#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.team.TeamConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/resources/team#description Team#description}. |
-| <code><a href="#@cdktf/provider-pagerduty.team.TeamConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/resources/team#id Team#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.team.TeamConfig.property.parent">Parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/resources/team#parent Team#parent}. |
+| <code><a href="#@cdktf/provider-pagerduty.team.TeamConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/team#name Team#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.team.TeamConfig.property.defaultRole">DefaultRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/team#default_role Team#default_role}. |
+| <code><a href="#@cdktf/provider-pagerduty.team.TeamConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/team#description Team#description}. |
+| <code><a href="#@cdktf/provider-pagerduty.team.TeamConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/team#id Team#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.team.TeamConfig.property.parent">Parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/team#parent Team#parent}. |
 
 ---
 
@@ -854,7 +885,19 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/resources/team#name Team#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/team#name Team#name}.
+
+---
+
+##### `DefaultRole`<sup>Optional</sup> <a name="DefaultRole" id="@cdktf/provider-pagerduty.team.TeamConfig.property.defaultRole"></a>
+
+```csharp
+public string DefaultRole { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/team#default_role Team#default_role}.
 
 ---
 
@@ -866,7 +909,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/resources/team#description Team#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/team#description Team#description}.
 
 ---
 
@@ -878,7 +921,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/resources/team#id Team#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/team#id Team#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -893,7 +936,7 @@ public string Parent { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.0.3/docs/resources/team#parent Team#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/resources/team#parent Team#parent}.
 
 ---
 
