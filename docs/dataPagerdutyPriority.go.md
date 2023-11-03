@@ -1,6 +1,6 @@
 # `data_pagerduty_priority`
 
-Refer to the Terraform Registory for docs: [`data_pagerduty_priority`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/data-sources/priority).
+Refer to the Terraform Registory for docs: [`data_pagerduty_priority`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.1/docs/data-sources/priority).
 
 # `dataPagerdutyPriority` Submodule <a name="`dataPagerdutyPriority` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyPriority"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_pagerduty_priority`](https://r
 
 ### DataPagerdutyPriority <a name="DataPagerdutyPriority" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/data-sources/priority pagerduty_priority}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.1/docs/data-sources/priority pagerduty_priority}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutypriority"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutypriority"
 
 datapagerdutypriority.NewDataPagerdutyPriority(scope Construct, id *string, config DataPagerdutyPriorityConfig) DataPagerdutyPriority
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutypriority"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutypriority"
 
 datapagerdutypriority.DataPagerdutyPriority_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutypriority"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutypriority"
 
 datapagerdutypriority.DataPagerdutyPriority_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datapagerdutypriority.DataPagerdutyPriority_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutypriority"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutypriority"
 
 datapagerdutypriority.DataPagerdutyPriority_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datapagerdutypriority.DataPagerdutyPriority_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutypriority"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutypriority"
 
 datapagerdutypriority.DataPagerdutyPriority_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataPagerdutyPriority to i
 
 The id of the existing DataPagerdutyPriority that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/data-sources/priority#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.1/docs/data-sources/priority#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -600,7 +600,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriorityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutypriority"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutypriority"
 
 &datapagerdutypriority.DataPagerdutyPriorityConfig {
 	Connection: interface{},
@@ -627,7 +627,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerduty
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriorityConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriorityConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriorityConfig.property.name">Name</a></code> | <code>*string</code> | The name of the priority to find in the PagerDuty API. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriorityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/data-sources/priority#id DataPagerdutyPriority#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriorityConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.1/docs/data-sources/priority#id DataPagerdutyPriority#id}. |
 
 ---
 
@@ -711,7 +711,7 @@ Name *string
 
 The name of the priority to find in the PagerDuty API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/data-sources/priority#name DataPagerdutyPriority#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.1/docs/data-sources/priority#name DataPagerdutyPriority#name}
 
 ---
 
@@ -723,7 +723,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.0/docs/data-sources/priority#id DataPagerdutyPriority#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.1/docs/data-sources/priority#id DataPagerdutyPriority#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
