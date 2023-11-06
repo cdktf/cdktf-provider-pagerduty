@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.slackConnection.SlackConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/slackconnection"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/slackconnection"
 
 slackconnection.NewSlackConnection(scope Construct, id *string, config SlackConnectionConfig) SlackConnection
 ```
@@ -352,7 +352,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.slackConnection.SlackConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/slackconnection"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/slackconnection"
 
 slackconnection.SlackConnection_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.slackConnection.SlackConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/slackconnection"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/slackconnection"
 
 slackconnection.SlackConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ slackconnection.SlackConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.slackConnection.SlackConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/slackconnection"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/slackconnection"
 
 slackconnection.SlackConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ slackconnection.SlackConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.slackConnection.SlackConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/slackconnection"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/slackconnection"
 
 slackconnection.SlackConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -817,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.slackConnection.SlackConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/slackconnection"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/slackconnection"
 
 &slackconnection.SlackConnectionConfig {
 	Connection: interface{},
@@ -1022,7 +1022,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.slackConnection.SlackConnectionConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/slackconnection"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/slackconnection"
 
 &slackconnection.SlackConnectionConfigA {
 	Events: *[]*string,
@@ -1084,7 +1084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.slackConnection.SlackConnectionConfigAList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/slackconnection"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/slackconnection"
 
 slackconnection.NewSlackConnectionConfigAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SlackConnectionConfigAList
 ```
@@ -1227,7 +1227,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.slackConnection.SlackConnectionConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/slackconnection"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/slackconnection"
 
 slackconnection.NewSlackConnectionConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SlackConnectionConfigAOutputReference
 ```
