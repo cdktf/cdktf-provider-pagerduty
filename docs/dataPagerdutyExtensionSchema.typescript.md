@@ -1,6 +1,6 @@
 # `data_pagerduty_extension_schema`
 
-Refer to the Terraform Registory for docs: [`data_pagerduty_extension_schema`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.1/docs/data-sources/extension_schema).
+Refer to the Terraform Registory for docs: [`data_pagerduty_extension_schema`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/data-sources/extension_schema).
 
 # `dataPagerdutyExtensionSchema` Submodule <a name="`dataPagerdutyExtensionSchema` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_pagerduty_extension_schema`](h
 
 ### DataPagerdutyExtensionSchema <a name="DataPagerdutyExtensionSchema" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.1/docs/data-sources/extension_schema pagerduty_extension_schema}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/data-sources/extension_schema pagerduty_extension_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.Initializer"></a>
 
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataPagerdutyExtensionSche
 
 The id of the existing DataPagerdutyExtensionSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.1/docs/data-sources/extension_schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/data-sources/extension_schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -616,8 +616,8 @@ const dataPagerdutyExtensionSchemaConfig: dataPagerdutyExtensionSchema.DataPager
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchemaConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchemaConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchemaConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchemaConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.1/docs/data-sources/extension_schema#name DataPagerdutyExtensionSchema#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchemaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.1/docs/data-sources/extension_schema#id DataPagerdutyExtensionSchema#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchemaConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/data-sources/extension_schema#name DataPagerdutyExtensionSchema#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchemaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/data-sources/extension_schema#id DataPagerdutyExtensionSchema#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.1/docs/data-sources/extension_schema#name DataPagerdutyExtensionSchema#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/data-sources/extension_schema#name DataPagerdutyExtensionSchema#name}.
 
 ---
 
@@ -711,7 +711,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.1/docs/data-sources/extension_schema#id DataPagerdutyExtensionSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/data-sources/extension_schema#id DataPagerdutyExtensionSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
