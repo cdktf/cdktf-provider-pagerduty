@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRule(scope Construct, id *string, config RulesetRuleConfig) RulesetRule
 ```
@@ -440,7 +440,7 @@ func ResetVariable()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.RulesetRule_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.RulesetRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ rulesetrule.RulesetRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.RulesetRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ rulesetrule.RulesetRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.RulesetRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -927,7 +927,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleActions {
 	Annotate: interface{},
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleActionsAnnotate {
 	Value: *string,
@@ -1105,7 +1105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleActionsEventAction {
 	Value: *string,
@@ -1137,7 +1137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleActionsExtractions {
 	Regex: *string,
@@ -1211,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriority.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleActionsPriority {
 	Value: *string,
@@ -1243,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleActionsRoute {
 	Value: *string,
@@ -1275,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleActionsSeverity {
 	Value: *string,
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleActionsSuppress {
 	ThresholdTimeAmount: *f64,
@@ -1381,7 +1381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspend.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleActionsSuspend {
 	Value: *f64,
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleConditions {
 	Operator: *string,
@@ -1461,7 +1461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleConditionsSubconditions {
 	Operator: *string,
@@ -1509,7 +1509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleConditionsSubconditionsParameter {
 	Path: *string,
@@ -1555,7 +1555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleConfig {
 	Connection: interface{},
@@ -1566,13 +1566,13 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Ruleset: *string,
-	Actions: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12.rulesetRule.RulesetRuleActions,
+	Actions: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.rulesetRule.RulesetRuleActions,
 	CatchAll: interface{},
-	Conditions: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12.rulesetRule.RulesetRuleConditions,
+	Conditions: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.rulesetRule.RulesetRuleConditions,
 	Disabled: interface{},
 	Id: *string,
 	Position: *f64,
-	TimeFrame: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12.rulesetRule.RulesetRuleTimeFrame,
+	TimeFrame: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.rulesetRule.RulesetRuleTimeFrame,
 	Variable: interface{},
 }
 ```
@@ -1794,7 +1794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrame.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleTimeFrame {
 	ActiveBetween: interface{},
@@ -1844,7 +1844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetween.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleTimeFrameActiveBetween {
 	EndTime: *f64,
@@ -1890,7 +1890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeekly.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleTimeFrameScheduledWeekly {
 	Duration: *f64,
@@ -1964,7 +1964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleVariable {
 	Name: *string,
@@ -2026,7 +2026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 &rulesetrule.RulesetRuleVariableParameters {
 	Path: *string,
@@ -2074,7 +2074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleActionsAnnotateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleActionsAnnotateList
 ```
@@ -2217,7 +2217,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleActionsAnnotateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RulesetRuleActionsAnnotateOutputReference
 ```
@@ -2513,7 +2513,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleActionsEventActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleActionsEventActionList
 ```
@@ -2656,7 +2656,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleActionsEventActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RulesetRuleActionsEventActionOutputReference
 ```
@@ -2952,7 +2952,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleActionsExtractionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleActionsExtractionsList
 ```
@@ -3095,7 +3095,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleActionsExtractionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RulesetRuleActionsExtractionsOutputReference
 ```
@@ -3478,7 +3478,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RulesetRuleActionsOutputReference
 ```
@@ -4063,7 +4063,7 @@ func InternalValue() RulesetRuleActions
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleActionsPriorityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleActionsPriorityList
 ```
@@ -4206,7 +4206,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleActionsPriorityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RulesetRuleActionsPriorityOutputReference
 ```
@@ -4502,7 +4502,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleActionsRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleActionsRouteList
 ```
@@ -4645,7 +4645,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleActionsRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RulesetRuleActionsRouteOutputReference
 ```
@@ -4941,7 +4941,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleActionsSeverityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleActionsSeverityList
 ```
@@ -5084,7 +5084,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleActionsSeverityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RulesetRuleActionsSeverityOutputReference
 ```
@@ -5380,7 +5380,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleActionsSuppressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleActionsSuppressList
 ```
@@ -5523,7 +5523,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleActionsSuppressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RulesetRuleActionsSuppressOutputReference
 ```
@@ -5906,7 +5906,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleActionsSuspendList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleActionsSuspendList
 ```
@@ -6049,7 +6049,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleActionsSuspendOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RulesetRuleActionsSuspendOutputReference
 ```
@@ -6345,7 +6345,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RulesetRuleConditionsOutputReference
 ```
@@ -6665,7 +6665,7 @@ func InternalValue() RulesetRuleConditions
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleConditionsSubconditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleConditionsSubconditionsList
 ```
@@ -6808,7 +6808,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleConditionsSubconditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RulesetRuleConditionsSubconditionsOutputReference
 ```
@@ -7146,7 +7146,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleConditionsSubconditionsParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleConditionsSubconditionsParameterList
 ```
@@ -7289,7 +7289,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleConditionsSubconditionsParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RulesetRuleConditionsSubconditionsParameterOutputReference
 ```
@@ -7614,7 +7614,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleTimeFrameActiveBetweenList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleTimeFrameActiveBetweenList
 ```
@@ -7757,7 +7757,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleTimeFrameActiveBetweenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RulesetRuleTimeFrameActiveBetweenOutputReference
 ```
@@ -8082,7 +8082,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleTimeFrameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RulesetRuleTimeFrameOutputReference
 ```
@@ -8415,7 +8415,7 @@ func InternalValue() RulesetRuleTimeFrame
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleTimeFrameScheduledWeeklyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleTimeFrameScheduledWeeklyList
 ```
@@ -8558,7 +8558,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleTimeFrameScheduledWeeklyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RulesetRuleTimeFrameScheduledWeeklyOutputReference
 ```
@@ -8941,7 +8941,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleVariableList
 ```
@@ -9084,7 +9084,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RulesetRuleVariableOutputReference
 ```
@@ -9451,7 +9451,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleVariableParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RulesetRuleVariableParametersList
 ```
@@ -9594,7 +9594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/rulesetrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/rulesetrule"
 
 rulesetrule.NewRulesetRuleVariableParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RulesetRuleVariableParametersOutputReference
 ```
