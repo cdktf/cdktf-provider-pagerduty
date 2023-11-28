@@ -1,7 +1,3 @@
-# `pagerduty_maintenance_window`
-
-Refer to the Terraform Registory for docs: [`pagerduty_maintenance_window`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/resources/maintenance_window).
-
 # `maintenanceWindow` Submodule <a name="`maintenanceWindow` Submodule" id="@cdktf/provider-pagerduty.maintenanceWindow"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.maintenanceWindow.MaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/maintenancewindow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/maintenancewindow"
 
 maintenancewindow.NewMaintenanceWindow(scope Construct, id *string, config MaintenanceWindowConfig) MaintenanceWindow
 ```
@@ -346,7 +342,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.maintenanceWindow.MaintenanceWindow.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/maintenancewindow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/maintenancewindow"
 
 maintenancewindow.MaintenanceWindow_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.maintenanceWindow.MaintenanceWindow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/maintenancewindow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/maintenancewindow"
 
 maintenancewindow.MaintenanceWindow_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ maintenancewindow.MaintenanceWindow_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.maintenanceWindow.MaintenanceWindow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/maintenancewindow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/maintenancewindow"
 
 maintenancewindow.MaintenanceWindow_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ maintenancewindow.MaintenanceWindow_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.maintenanceWindow.MaintenanceWindow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/maintenancewindow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/maintenancewindow"
 
 maintenancewindow.MaintenanceWindow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -745,7 +741,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.maintenanceWindow.MaintenanceWindowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/maintenancewindow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/maintenancewindow"
 
 &maintenancewindow.MaintenanceWindowConfig {
 	Connection: interface{},

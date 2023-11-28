@@ -1,7 +1,3 @@
-# `data_pagerduty_license`
-
-Refer to the Terraform Registory for docs: [`data_pagerduty_license`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/data-sources/license).
-
 # `dataPagerdutyLicense` Submodule <a name="`dataPagerdutyLicense` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyLicense"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyLicense.DataPagerdutyLicense.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutylicense"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutylicense"
 
 datapagerdutylicense.NewDataPagerdutyLicense(scope Construct, id *string, config DataPagerdutyLicenseConfig) DataPagerdutyLicense
 ```
@@ -348,7 +344,7 @@ func ResetValidRoles()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyLicense.DataPagerdutyLicense.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutylicense"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutylicense"
 
 datapagerdutylicense.DataPagerdutyLicense_IsConstruct(x interface{}) *bool
 ```
@@ -380,7 +376,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyLicense.DataPagerdutyLicense.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutylicense"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutylicense"
 
 datapagerdutylicense.DataPagerdutyLicense_IsTerraformElement(x interface{}) *bool
 ```
@@ -394,7 +390,7 @@ datapagerdutylicense.DataPagerdutyLicense_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyLicense.DataPagerdutyLicense.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutylicense"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutylicense"
 
 datapagerdutylicense.DataPagerdutyLicense_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -408,7 +404,7 @@ datapagerdutylicense.DataPagerdutyLicense_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyLicense.DataPagerdutyLicense.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutylicense"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutylicense"
 
 datapagerdutylicense.DataPagerdutyLicense_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -857,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyLicense.DataPagerdutyLicenseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutylicense"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutylicense"
 
 &datapagerdutylicense.DataPagerdutyLicenseConfig {
 	Connection: interface{},

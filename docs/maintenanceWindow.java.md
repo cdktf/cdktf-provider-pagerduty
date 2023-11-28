@@ -1,7 +1,3 @@
-# `pagerduty_maintenance_window`
-
-Refer to the Terraform Registory for docs: [`pagerduty_maintenance_window`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/resources/maintenance_window).
-
 # `maintenanceWindow` Submodule <a name="`maintenanceWindow` Submodule" id="@cdktf/provider-pagerduty.maintenanceWindow"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

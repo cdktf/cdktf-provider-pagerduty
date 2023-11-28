@@ -1,7 +1,3 @@
-# `pagerduty_user_notification_rule`
-
-Refer to the Terraform Registory for docs: [`pagerduty_user_notification_rule`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/resources/user_notification_rule).
-
 # `userNotificationRule` Submodule <a name="`userNotificationRule` Submodule" id="@cdktf/provider-pagerduty.userNotificationRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.userNotificationRule.UserNotificationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/usernotificationrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/usernotificationrule"
 
 usernotificationrule.NewUserNotificationRule(scope Construct, id *string, config UserNotificationRuleConfig) UserNotificationRule
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.userNotificationRule.UserNotificationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/usernotificationrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/usernotificationrule"
 
 usernotificationrule.UserNotificationRule_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.userNotificationRule.UserNotificationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/usernotificationrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/usernotificationrule"
 
 usernotificationrule.UserNotificationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ usernotificationrule.UserNotificationRule_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.userNotificationRule.UserNotificationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/usernotificationrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/usernotificationrule"
 
 usernotificationrule.UserNotificationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ usernotificationrule.UserNotificationRule_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.userNotificationRule.UserNotificationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/usernotificationrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/usernotificationrule"
 
 usernotificationrule.UserNotificationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -738,7 +734,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.userNotificationRule.UserNotificationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/usernotificationrule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/usernotificationrule"
 
 &usernotificationrule.UserNotificationRuleConfig {
 	Connection: interface{},

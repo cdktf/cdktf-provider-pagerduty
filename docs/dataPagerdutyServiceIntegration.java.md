@@ -1,7 +1,3 @@
-# `data_pagerduty_service_integration`
-
-Refer to the Terraform Registory for docs: [`data_pagerduty_service_integration`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/data-sources/service_integration).
-
 # `dataPagerdutyServiceIntegration` Submodule <a name="`dataPagerdutyServiceIntegration` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `pagerduty_event_orchestration_integration`
-
-Refer to the Terraform Registory for docs: [`pagerduty_event_orchestration_integration`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/resources/event_orchestration_integration).
-
 # `eventOrchestrationIntegration` Submodule <a name="`eventOrchestrationIntegration` Submodule" id="@cdktf/provider-pagerduty.eventOrchestrationIntegration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

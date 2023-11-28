@@ -1,7 +1,3 @@
-# `data_pagerduty_event_orchestrations`
-
-Refer to the Terraform Registory for docs: [`data_pagerduty_event_orchestrations`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/data-sources/event_orchestrations).
-
 # `dataPagerdutyEventOrchestrations` Submodule <a name="`dataPagerdutyEventOrchestrations` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyEventOrchestrations"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

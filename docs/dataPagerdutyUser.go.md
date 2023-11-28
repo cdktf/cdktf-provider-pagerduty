@@ -1,7 +1,3 @@
-# `data_pagerduty_user`
-
-Refer to the Terraform Registory for docs: [`data_pagerduty_user`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/data-sources/user).
-
 # `dataPagerdutyUser` Submodule <a name="`dataPagerdutyUser` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyuser"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyuser"
 
 datapagerdutyuser.NewDataPagerdutyUser(scope Construct, id *string, config DataPagerdutyUserConfig) DataPagerdutyUser
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyuser"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyuser"
 
 datapagerdutyuser.DataPagerdutyUser_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyuser"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyuser"
 
 datapagerdutyuser.DataPagerdutyUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datapagerdutyuser.DataPagerdutyUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyuser"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyuser"
 
 datapagerdutyuser.DataPagerdutyUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datapagerdutyuser.DataPagerdutyUser_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyuser"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyuser"
 
 datapagerdutyuser.DataPagerdutyUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -600,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyuser"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyuser"
 
 &datapagerdutyuser.DataPagerdutyUserConfig {
 	Connection: interface{},

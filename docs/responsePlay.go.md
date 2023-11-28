@@ -1,7 +1,3 @@
-# `pagerduty_response_play`
-
-Refer to the Terraform Registory for docs: [`pagerduty_response_play`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/resources/response_play).
-
 # `responsePlay` Submodule <a name="`responsePlay` Submodule" id="@cdktf/provider-pagerduty.responsePlay"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 responseplay.NewResponsePlay(scope Construct, id *string, config ResponsePlayConfig) ResponsePlay
 ```
@@ -435,7 +431,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 responseplay.ResponsePlay_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +463,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 responseplay.ResponsePlay_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +477,7 @@ responseplay.ResponsePlay_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 responseplay.ResponsePlay_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +491,7 @@ responseplay.ResponsePlay_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 responseplay.ResponsePlay_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1010,7 +1006,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 &responseplay.ResponsePlayConfig {
 	Connection: interface{},
@@ -1301,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 &responseplay.ResponsePlayResponder {
 	Description: *string,
@@ -1378,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderEscalationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 &responseplay.ResponsePlayResponderEscalationRule {
 
@@ -1391,7 +1387,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderEscalationRuleTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 &responseplay.ResponsePlayResponderEscalationRuleTarget {
 
@@ -1404,7 +1400,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 &responseplay.ResponsePlayResponderService {
 
@@ -1417,7 +1413,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderTeam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 &responseplay.ResponsePlayResponderTeam {
 
@@ -1430,7 +1426,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 &responseplay.ResponsePlaySubscriber {
 	Id: *string,
@@ -1481,7 +1477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderEscalationRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 responseplay.NewResponsePlayResponderEscalationRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResponsePlayResponderEscalationRuleList
 ```
@@ -1613,7 +1609,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderEscalationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 responseplay.NewResponsePlayResponderEscalationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ResponsePlayResponderEscalationRuleOutputReference
 ```
@@ -1913,7 +1909,7 @@ func InternalValue() ResponsePlayResponderEscalationRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderEscalationRuleTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 responseplay.NewResponsePlayResponderEscalationRuleTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResponsePlayResponderEscalationRuleTargetList
 ```
@@ -2045,7 +2041,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderEscalationRuleTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 responseplay.NewResponsePlayResponderEscalationRuleTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ResponsePlayResponderEscalationRuleTargetOutputReference
 ```
@@ -2334,7 +2330,7 @@ func InternalValue() ResponsePlayResponderEscalationRuleTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 responseplay.NewResponsePlayResponderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResponsePlayResponderList
 ```
@@ -2477,7 +2473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 responseplay.NewResponsePlayResponderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ResponsePlayResponderOutputReference
 ```
@@ -2915,7 +2911,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 responseplay.NewResponsePlayResponderServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResponsePlayResponderServiceList
 ```
@@ -3047,7 +3043,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 responseplay.NewResponsePlayResponderServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ResponsePlayResponderServiceOutputReference
 ```
@@ -3336,7 +3332,7 @@ func InternalValue() ResponsePlayResponderService
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderTeamList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 responseplay.NewResponsePlayResponderTeamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResponsePlayResponderTeamList
 ```
@@ -3468,7 +3464,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderTeamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 responseplay.NewResponsePlayResponderTeamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ResponsePlayResponderTeamOutputReference
 ```
@@ -3757,7 +3753,7 @@ func InternalValue() ResponsePlayResponderTeam
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 responseplay.NewResponsePlaySubscriberList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResponsePlaySubscriberList
 ```
@@ -3900,7 +3896,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/responseplay"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/responseplay"
 
 responseplay.NewResponsePlaySubscriberOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ResponsePlaySubscriberOutputReference
 ```
