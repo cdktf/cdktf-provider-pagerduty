@@ -1,7 +1,3 @@
-# `pagerduty_response_play`
-
-Refer to the Terraform Registory for docs: [`pagerduty_response_play`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/resources/response_play).
-
 # `responsePlay` Submodule <a name="`responsePlay` Submodule" id="@cdktf/provider-pagerduty.responsePlay"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

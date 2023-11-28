@@ -1,7 +1,3 @@
-# `pagerduty_schedule`
-
-Refer to the Terraform Registory for docs: [`pagerduty_schedule`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/resources/schedule).
-
 # `schedule` Submodule <a name="`schedule` Submodule" id="@cdktf/provider-pagerduty.schedule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

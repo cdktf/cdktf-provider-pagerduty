@@ -1,7 +1,3 @@
-# `data_pagerduty_business_service`
-
-Refer to the Terraform Registory for docs: [`data_pagerduty_business_service`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/data-sources/business_service).
-
 # `dataPagerdutyBusinessService` Submodule <a name="`dataPagerdutyBusinessService` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyBusinessService"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

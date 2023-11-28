@@ -1,7 +1,3 @@
-# `pagerduty_incident_custom_field_option`
-
-Refer to the Terraform Registory for docs: [`pagerduty_incident_custom_field_option`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/resources/incident_custom_field_option).
-
 # `incidentCustomFieldOption` Submodule <a name="`incidentCustomFieldOption` Submodule" id="@cdktf/provider-pagerduty.incidentCustomFieldOption"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `pagerduty_extension_servicenow`
-
-Refer to the Terraform Registory for docs: [`pagerduty_extension_servicenow`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/resources/extension_servicenow).
-
 # `extensionServicenow` Submodule <a name="`extensionServicenow` Submodule" id="@cdktf/provider-pagerduty.extensionServicenow"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

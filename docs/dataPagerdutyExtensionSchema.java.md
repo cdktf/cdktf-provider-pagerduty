@@ -1,7 +1,3 @@
-# `data_pagerduty_extension_schema`
-
-Refer to the Terraform Registory for docs: [`data_pagerduty_extension_schema`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/data-sources/extension_schema).
-
 # `dataPagerdutyExtensionSchema` Submodule <a name="`dataPagerdutyExtensionSchema` Submodule" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

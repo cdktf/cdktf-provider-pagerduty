@@ -1,7 +1,3 @@
-# `pagerduty_user`
-
-Refer to the Terraform Registory for docs: [`pagerduty_user`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs/resources/user).
-
 # `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-pagerduty.user"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `provider`
-
-Refer to the Terraform Registory for docs: [`pagerduty`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.1.2/docs).
-
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-pagerduty.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
