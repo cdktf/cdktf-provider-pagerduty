@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.incidentWorkflow.IncidentWorkflow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/incidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/incidentworkflow"
 
 incidentworkflow.NewIncidentWorkflow(scope Construct, id *string, config IncidentWorkflowConfig) IncidentWorkflow
 ```
@@ -369,7 +369,7 @@ func ResetTeam()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.incidentWorkflow.IncidentWorkflow.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/incidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/incidentworkflow"
 
 incidentworkflow.IncidentWorkflow_IsConstruct(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.incidentWorkflow.IncidentWorkflow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/incidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/incidentworkflow"
 
 incidentworkflow.IncidentWorkflow_IsTerraformElement(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ incidentworkflow.IncidentWorkflow_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.incidentWorkflow.IncidentWorkflow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/incidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/incidentworkflow"
 
 incidentworkflow.IncidentWorkflow_IsTerraformResource(x interface{}) *bool
 ```
@@ -429,7 +429,7 @@ incidentworkflow.IncidentWorkflow_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.incidentWorkflow.IncidentWorkflow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/incidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/incidentworkflow"
 
 incidentworkflow.IncidentWorkflow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -768,7 +768,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.incidentWorkflow.IncidentWorkflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/incidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/incidentworkflow"
 
 &incidentworkflow.IncidentWorkflowConfig {
 	Connection: interface{},
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.incidentWorkflow.IncidentWorkflowStep.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/incidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/incidentworkflow"
 
 &incidentworkflow.IncidentWorkflowStep {
 	Action: *string,
@@ -1007,7 +1007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.incidentWorkflow.IncidentWorkflowStepInput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/incidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/incidentworkflow"
 
 &incidentworkflow.IncidentWorkflowStepInput {
 	Name: *string,
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.incidentWorkflow.IncidentWorkflowStepInputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/incidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/incidentworkflow"
 
 incidentworkflow.NewIncidentWorkflowStepInputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IncidentWorkflowStepInputList
 ```
@@ -1198,7 +1198,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.incidentWorkflow.IncidentWorkflowStepInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/incidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/incidentworkflow"
 
 incidentworkflow.NewIncidentWorkflowStepInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IncidentWorkflowStepInputOutputReference
 ```
@@ -1520,7 +1520,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.incidentWorkflow.IncidentWorkflowStepList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/incidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/incidentworkflow"
 
 incidentworkflow.NewIncidentWorkflowStepList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IncidentWorkflowStepList
 ```
@@ -1663,7 +1663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.incidentWorkflow.IncidentWorkflowStepOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/incidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/incidentworkflow"
 
 incidentworkflow.NewIncidentWorkflowStepOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IncidentWorkflowStepOutputReference
 ```

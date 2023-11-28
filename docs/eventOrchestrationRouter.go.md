@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 eventorchestrationrouter.NewEventOrchestrationRouter(scope Construct, id *string, config EventOrchestrationRouterConfig) EventOrchestrationRouter
 ```
@@ -361,7 +361,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 eventorchestrationrouter.EventOrchestrationRouter_IsConstruct(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 eventorchestrationrouter.EventOrchestrationRouter_IsTerraformElement(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ eventorchestrationrouter.EventOrchestrationRouter_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 eventorchestrationrouter.EventOrchestrationRouter_IsTerraformResource(x interface{}) *bool
 ```
@@ -421,7 +421,7 @@ eventorchestrationrouter.EventOrchestrationRouter_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 eventorchestrationrouter.EventOrchestrationRouter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -738,10 +738,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouterCatchAll.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 &eventorchestrationrouter.EventOrchestrationRouterCatchAll {
-	Actions: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.eventOrchestrationRouter.EventOrchestrationRouterCatchAllActions,
+	Actions: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12.eventOrchestrationRouter.EventOrchestrationRouterCatchAllActions,
 }
 ```
 
@@ -772,7 +772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouterCatchAllActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 &eventorchestrationrouter.EventOrchestrationRouterCatchAllActions {
 	RouteTo: *string,
@@ -804,7 +804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 &eventorchestrationrouter.EventOrchestrationRouterConfig {
 	Connection: interface{},
@@ -814,9 +814,9 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestratio
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	CatchAll: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.eventOrchestrationRouter.EventOrchestrationRouterCatchAll,
+	CatchAll: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12.eventOrchestrationRouter.EventOrchestrationRouterCatchAll,
 	EventOrchestration: *string,
-	Set: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.eventOrchestrationRouter.EventOrchestrationRouterSet,
+	Set: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12.eventOrchestrationRouter.EventOrchestrationRouterSet,
 	Id: *string,
 }
 ```
@@ -969,7 +969,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouterSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 &eventorchestrationrouter.EventOrchestrationRouterSet {
 	Id: *string,
@@ -1020,10 +1020,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouterSetRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 &eventorchestrationrouter.EventOrchestrationRouterSetRule {
-	Actions: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.eventOrchestrationRouter.EventOrchestrationRouterSetRuleActions,
+	Actions: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12.eventOrchestrationRouter.EventOrchestrationRouterSetRuleActions,
 	Condition: interface{},
 	Disabled: interface{},
 	Label: *string,
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouterSetRuleActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 &eventorchestrationrouter.EventOrchestrationRouterSetRuleActions {
 	RouteTo: *string,
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouterSetRuleCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 &eventorchestrationrouter.EventOrchestrationRouterSetRuleCondition {
 	Expression: *string,
@@ -1164,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouterCatchAllActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 eventorchestrationrouter.NewEventOrchestrationRouterCatchAllActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventOrchestrationRouterCatchAllActionsOutputReference
 ```
@@ -1435,7 +1435,7 @@ func InternalValue() EventOrchestrationRouterCatchAllActions
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouterCatchAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 eventorchestrationrouter.NewEventOrchestrationRouterCatchAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventOrchestrationRouterCatchAllOutputReference
 ```
@@ -1719,7 +1719,7 @@ func InternalValue() EventOrchestrationRouterCatchAll
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouterSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 eventorchestrationrouter.NewEventOrchestrationRouterSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventOrchestrationRouterSetOutputReference
 ```
@@ -2032,7 +2032,7 @@ func InternalValue() EventOrchestrationRouterSet
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouterSetRuleActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 eventorchestrationrouter.NewEventOrchestrationRouterSetRuleActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventOrchestrationRouterSetRuleActionsOutputReference
 ```
@@ -2303,7 +2303,7 @@ func InternalValue() EventOrchestrationRouterSetRuleActions
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouterSetRuleConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 eventorchestrationrouter.NewEventOrchestrationRouterSetRuleConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationRouterSetRuleConditionList
 ```
@@ -2446,7 +2446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouterSetRuleConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 eventorchestrationrouter.NewEventOrchestrationRouterSetRuleConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationRouterSetRuleConditionOutputReference
 ```
@@ -2735,7 +2735,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouterSetRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 eventorchestrationrouter.NewEventOrchestrationRouterSetRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationRouterSetRuleList
 ```
@@ -2878,7 +2878,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationRouter.EventOrchestrationRouterSetRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationrouter"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/eventorchestrationrouter"
 
 eventorchestrationrouter.NewEventOrchestrationRouterSetRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationRouterSetRuleOutputReference
 ```
