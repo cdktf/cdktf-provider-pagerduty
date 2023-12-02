@@ -3,7 +3,7 @@
 
 This repo builds and publishes the Terraform pagerduty Provider bindings for [CDK for Terraform](https://cdk.tf).
 
-Is based directly on pagerduty 3.1.2
+Is based directly on pagerduty 3.2.1
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform pagerduty Provider version
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform pagerduty Provider](https://registry.terraform.io/providers/PagerDuty/pagerduty/3.1.2)
+- [Terraform pagerduty Provider](https://registry.terraform.io/providers/PagerDuty/pagerduty/3.2.1)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-pagerduty/releases)
 - [Terraform Engine](https://terraform.io)
 
