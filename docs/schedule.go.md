@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.schedule.Schedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/schedule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/schedule"
 
 schedule.NewSchedule(scope Construct, id *string, config ScheduleConfig) Schedule
 ```
@@ -376,7 +376,7 @@ func ResetTeams()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.schedule.Schedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/schedule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/schedule"
 
 schedule.Schedule_IsConstruct(x interface{}) *bool
 ```
@@ -408,7 +408,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.schedule.Schedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/schedule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/schedule"
 
 schedule.Schedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -422,7 +422,7 @@ schedule.Schedule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.schedule.Schedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/schedule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/schedule"
 
 schedule.Schedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -436,7 +436,7 @@ schedule.Schedule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.schedule.Schedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/schedule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/schedule"
 
 schedule.Schedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -830,7 +830,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.schedule.ScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/schedule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/schedule"
 
 &schedule.ScheduleConfig {
 	Connection: interface{},
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.schedule.ScheduleFinalSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/schedule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/schedule"
 
 &schedule.ScheduleFinalSchedule {
 
@@ -1048,7 +1048,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/schedule"
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.schedule.ScheduleLayer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/schedule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/schedule"
 
 &schedule.ScheduleLayer {
 	RotationTurnLengthSeconds: *f64,
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/schedule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/schedule"
 
 &schedule.ScheduleLayerRestriction {
 	DurationSeconds: *f64,
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.schedule.ScheduleFinalScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/schedule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/schedule"
 
 schedule.NewScheduleFinalScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ScheduleFinalScheduleList
 ```
@@ -1374,7 +1374,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.schedule.ScheduleFinalScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/schedule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/schedule"
 
 schedule.NewScheduleFinalScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ScheduleFinalScheduleOutputReference
 ```
@@ -1663,7 +1663,7 @@ func InternalValue() ScheduleFinalSchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.schedule.ScheduleLayerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/schedule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/schedule"
 
 schedule.NewScheduleLayerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ScheduleLayerList
 ```
@@ -1806,7 +1806,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/schedule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/schedule"
 
 schedule.NewScheduleLayerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ScheduleLayerOutputReference
 ```
@@ -2283,7 +2283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/schedule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/schedule"
 
 schedule.NewScheduleLayerRestrictionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ScheduleLayerRestrictionList
 ```
@@ -2426,7 +2426,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/schedule"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/schedule"
 
 schedule.NewScheduleLayerRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ScheduleLayerRestrictionOutputReference
 ```
