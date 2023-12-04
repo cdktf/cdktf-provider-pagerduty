@@ -66,9 +66,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.hasResourceMove">HasResourceMove</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.putResponder">PutResponder</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.putSubscriber">PutSubscriber</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.resetConferenceNumber">ResetConferenceNumber</a></code> | *No description.* |
@@ -273,6 +276,12 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 
 ---
 
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.hasResourceMove"></a>
+
+```csharp
+private object HasResourceMove()
+```
+
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.importFrom"></a>
 
 ```csharp
@@ -303,6 +312,24 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
+##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.moveFromId"></a>
+
+```csharp
+private void MoveFromId(string Id)
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.moveFromId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.moveTo"></a>
 
 ```csharp
@@ -324,6 +351,22 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 - *Type:* object
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.moveToId"></a>
+
+```csharp
+private void MoveToId(string Id)
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.moveToId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
