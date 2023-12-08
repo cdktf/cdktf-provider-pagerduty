@@ -1,3 +1,3 @@
 # `pagerduty_incident_workflow`
 
-Refer to the Terraform Registory for docs: [`pagerduty_incident_workflow`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/incident_workflow).
+Refer to the Terraform Registory for docs: [`pagerduty_incident_workflow`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/incident_workflow).
