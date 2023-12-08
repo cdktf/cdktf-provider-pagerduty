@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/user_contact_method
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/user_contact_method
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,40 @@ import * as cdktf from 'cdktf';
 
 export interface UserContactMethodConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/user_contact_method#address UserContactMethod#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/user_contact_method#address UserContactMethod#address}
   */
   readonly address: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/user_contact_method#country_code UserContactMethod#country_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/user_contact_method#country_code UserContactMethod#country_code}
   */
   readonly countryCode?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/user_contact_method#id UserContactMethod#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/user_contact_method#id UserContactMethod#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/user_contact_method#label UserContactMethod#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/user_contact_method#label UserContactMethod#label}
   */
   readonly label: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/user_contact_method#send_short_email UserContactMethod#send_short_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/user_contact_method#send_short_email UserContactMethod#send_short_email}
   */
   readonly sendShortEmail?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/user_contact_method#type UserContactMethod#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/user_contact_method#type UserContactMethod#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/user_contact_method#user_id UserContactMethod#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/user_contact_method#user_id UserContactMethod#user_id}
   */
   readonly userId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/user_contact_method pagerduty_user_contact_method}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/user_contact_method pagerduty_user_contact_method}
 */
 export class UserContactMethod extends cdktf.TerraformResource {
 
@@ -62,7 +57,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a UserContactMethod resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserContactMethod to import
-  * @param importFromId The id of the existing UserContactMethod that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/user_contact_method#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserContactMethod that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/user_contact_method#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserContactMethod to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +69,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.2.2/docs/resources/user_contact_method pagerduty_user_contact_method} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.0/docs/resources/user_contact_method pagerduty_user_contact_method} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +80,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_user_contact_method',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.2.2',
+        providerVersion: '3.3.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
