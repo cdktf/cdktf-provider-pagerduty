@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.businessService.BusinessService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/businessservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/businessservice"
 
 businessservice.NewBusinessService(scope Construct, id *string, config BusinessServiceConfig) BusinessService
 ```
@@ -406,7 +406,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.businessService.BusinessService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/businessservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/businessservice"
 
 businessservice.BusinessService_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.businessService.BusinessService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/businessservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/businessservice"
 
 businessservice.BusinessService_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ businessservice.BusinessService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.businessService.BusinessService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/businessservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/businessservice"
 
 businessservice.BusinessService_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ businessservice.BusinessService_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.businessService.BusinessService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/businessservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/businessservice"
 
 businessservice.BusinessService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -860,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.businessService.BusinessServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/businessservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/businessservice"
 
 &businessservice.BusinessServiceConfig {
 	Connection: interface{},
