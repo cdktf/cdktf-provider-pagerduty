@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.webhookSubscription.WebhookSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/webhooksubscription"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/webhooksubscription"
 
 webhooksubscription.NewWebhookSubscription(scope Construct, id *string, config WebhookSubscriptionConfig) WebhookSubscription
 ```
@@ -425,7 +425,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.webhookSubscription.WebhookSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/webhooksubscription"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/webhooksubscription"
 
 webhooksubscription.WebhookSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.webhookSubscription.WebhookSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/webhooksubscription"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/webhooksubscription"
 
 webhooksubscription.WebhookSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ webhooksubscription.WebhookSubscription_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.webhookSubscription.WebhookSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/webhooksubscription"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/webhooksubscription"
 
 webhooksubscription.WebhookSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ webhooksubscription.WebhookSubscription_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.webhookSubscription.WebhookSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/webhooksubscription"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/webhooksubscription"
 
 webhooksubscription.WebhookSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -868,7 +868,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.webhookSubscription.WebhookSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/webhooksubscription"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/webhooksubscription"
 
 &webhooksubscription.WebhookSubscriptionConfig {
 	Connection: interface{},
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.webhookSubscription.WebhookSubscriptionDeliveryMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/webhooksubscription"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/webhooksubscription"
 
 &webhooksubscription.WebhookSubscriptionDeliveryMethod {
 	CustomHeader: interface{},
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.webhookSubscription.WebhookSubscriptionDeliveryMethodCustomHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/webhooksubscription"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/webhooksubscription"
 
 &webhooksubscription.WebhookSubscriptionDeliveryMethodCustomHeader {
 	Name: *string,
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.webhookSubscription.WebhookSubscriptionFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/webhooksubscription"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/webhooksubscription"
 
 &webhooksubscription.WebhookSubscriptionFilter {
 	Type: *string,
@@ -1248,7 +1248,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.webhookSubscription.WebhookSubscriptionDeliveryMethodCustomHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/webhooksubscription"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/webhooksubscription"
 
 webhooksubscription.NewWebhookSubscriptionDeliveryMethodCustomHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WebhookSubscriptionDeliveryMethodCustomHeaderList
 ```
@@ -1391,7 +1391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.webhookSubscription.WebhookSubscriptionDeliveryMethodCustomHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/webhooksubscription"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/webhooksubscription"
 
 webhooksubscription.NewWebhookSubscriptionDeliveryMethodCustomHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WebhookSubscriptionDeliveryMethodCustomHeaderOutputReference
 ```
@@ -1702,7 +1702,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.webhookSubscription.WebhookSubscriptionDeliveryMethodList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/webhooksubscription"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/webhooksubscription"
 
 webhooksubscription.NewWebhookSubscriptionDeliveryMethodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WebhookSubscriptionDeliveryMethodList
 ```
@@ -1845,7 +1845,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.webhookSubscription.WebhookSubscriptionDeliveryMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/webhooksubscription"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/webhooksubscription"
 
 webhooksubscription.NewWebhookSubscriptionDeliveryMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WebhookSubscriptionDeliveryMethodOutputReference
 ```
@@ -2241,7 +2241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.webhookSubscription.WebhookSubscriptionFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/webhooksubscription"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/webhooksubscription"
 
 webhooksubscription.NewWebhookSubscriptionFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WebhookSubscriptionFilterList
 ```
@@ -2384,7 +2384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.webhookSubscription.WebhookSubscriptionFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/webhooksubscription"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/webhooksubscription"
 
 webhooksubscription.NewWebhookSubscriptionFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WebhookSubscriptionFilterOutputReference
 ```
