@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutypriority"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutypriority"
 
 datapagerdutypriority.NewDataPagerdutyPriority(scope Construct, id *string, config DataPagerdutyPriorityConfig) DataPagerdutyPriority
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutypriority"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutypriority"
 
 datapagerdutypriority.DataPagerdutyPriority_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutypriority"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutypriority"
 
 datapagerdutypriority.DataPagerdutyPriority_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datapagerdutypriority.DataPagerdutyPriority_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutypriority"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutypriority"
 
 datapagerdutypriority.DataPagerdutyPriority_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datapagerdutypriority.DataPagerdutyPriority_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutypriority"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutypriority"
 
 datapagerdutypriority.DataPagerdutyPriority_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriorityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutypriority"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutypriority"
 
 &datapagerdutypriority.DataPagerdutyPriorityConfig {
 	Connection: interface{},
