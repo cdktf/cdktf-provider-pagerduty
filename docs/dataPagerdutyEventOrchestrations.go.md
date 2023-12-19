@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyEventOrchestrations.DataPagerdutyEventOrchestrations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeventorchestrations"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyeventorchestrations"
 
 datapagerdutyeventorchestrations.NewDataPagerdutyEventOrchestrations(scope Construct, id *string, config DataPagerdutyEventOrchestrationsConfig) DataPagerdutyEventOrchestrations
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyEventOrchestrations.DataPagerdutyEventOrchestrations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeventorchestrations"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyeventorchestrations"
 
 datapagerdutyeventorchestrations.DataPagerdutyEventOrchestrations_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyEventOrchestrations.DataPagerdutyEventOrchestrations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeventorchestrations"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyeventorchestrations"
 
 datapagerdutyeventorchestrations.DataPagerdutyEventOrchestrations_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datapagerdutyeventorchestrations.DataPagerdutyEventOrchestrations_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyEventOrchestrations.DataPagerdutyEventOrchestrations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeventorchestrations"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyeventorchestrations"
 
 datapagerdutyeventorchestrations.DataPagerdutyEventOrchestrations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datapagerdutyeventorchestrations.DataPagerdutyEventOrchestrations_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyEventOrchestrations.DataPagerdutyEventOrchestrations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeventorchestrations"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyeventorchestrations"
 
 datapagerdutyeventorchestrations.DataPagerdutyEventOrchestrations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyEventOrchestrations.DataPagerdutyEventOrchestrationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeventorchestrations"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyeventorchestrations"
 
 &datapagerdutyeventorchestrations.DataPagerdutyEventOrchestrationsConfig {
 	Connection: interface{},
@@ -729,7 +729,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyEventOrchestrations.DataPagerdutyEventOrchestrationsEventOrchestrations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeventorchestrations"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyeventorchestrations"
 
 &datapagerdutyeventorchestrations.DataPagerdutyEventOrchestrationsEventOrchestrations {
 
@@ -742,7 +742,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeven
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyEventOrchestrations.DataPagerdutyEventOrchestrationsEventOrchestrationsIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeventorchestrations"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyeventorchestrations"
 
 &datapagerdutyeventorchestrations.DataPagerdutyEventOrchestrationsEventOrchestrationsIntegration {
 
@@ -755,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeven
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyEventOrchestrations.DataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeventorchestrations"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyeventorchestrations"
 
 &datapagerdutyeventorchestrations.DataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationParameters {
 
@@ -770,7 +770,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeven
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyEventOrchestrations.DataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeventorchestrations"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyeventorchestrations"
 
 datapagerdutyeventorchestrations.NewDataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationList
 ```
@@ -902,7 +902,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyEventOrchestrations.DataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeventorchestrations"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyeventorchestrations"
 
 datapagerdutyeventorchestrations.NewDataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationOutputReference
 ```
@@ -1202,7 +1202,7 @@ func InternalValue() DataPagerdutyEventOrchestrationsEventOrchestrationsIntegrat
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyEventOrchestrations.DataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeventorchestrations"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyeventorchestrations"
 
 datapagerdutyeventorchestrations.NewDataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationParametersList
 ```
@@ -1334,7 +1334,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyEventOrchestrations.DataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeventorchestrations"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyeventorchestrations"
 
 datapagerdutyeventorchestrations.NewDataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPagerdutyEventOrchestrationsEventOrchestrationsIntegrationParametersOutputReference
 ```
@@ -1623,7 +1623,7 @@ func InternalValue() DataPagerdutyEventOrchestrationsEventOrchestrationsIntegrat
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyEventOrchestrations.DataPagerdutyEventOrchestrationsEventOrchestrationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeventorchestrations"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyeventorchestrations"
 
 datapagerdutyeventorchestrations.NewDataPagerdutyEventOrchestrationsEventOrchestrationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPagerdutyEventOrchestrationsEventOrchestrationsList
 ```
@@ -1755,7 +1755,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyEventOrchestrations.DataPagerdutyEventOrchestrationsEventOrchestrationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyeventorchestrations"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyeventorchestrations"
 
 datapagerdutyeventorchestrations.NewDataPagerdutyEventOrchestrationsEventOrchestrationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPagerdutyEventOrchestrationsEventOrchestrationsOutputReference
 ```
