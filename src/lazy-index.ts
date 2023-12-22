@@ -63,6 +63,7 @@ Object.defineProperty(exports, 'dataPagerdutyService', { get: function () { retu
 Object.defineProperty(exports, 'dataPagerdutyServiceIntegration', { get: function () { return require('./data-pagerduty-service-integration'); } });
 Object.defineProperty(exports, 'dataPagerdutyTag', { get: function () { return require('./data-pagerduty-tag'); } });
 Object.defineProperty(exports, 'dataPagerdutyTeam', { get: function () { return require('./data-pagerduty-team'); } });
+Object.defineProperty(exports, 'dataPagerdutyTeamMembers', { get: function () { return require('./data-pagerduty-team-members'); } });
 Object.defineProperty(exports, 'dataPagerdutyUser', { get: function () { return require('./data-pagerduty-user'); } });
 Object.defineProperty(exports, 'dataPagerdutyUserContactMethod', { get: function () { return require('./data-pagerduty-user-contact-method'); } });
 Object.defineProperty(exports, 'dataPagerdutyUsers', { get: function () { return require('./data-pagerduty-users'); } });

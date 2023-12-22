@@ -1,3 +1,3 @@
 # `pagerduty_team_membership`
 
-Refer to the Terraform Registory for docs: [`pagerduty_team_membership`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.1/docs/resources/team_membership).
+Refer to the Terraform Registory for docs: [`pagerduty_team_membership`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/resources/team_membership).

@@ -63,6 +63,7 @@ export * as dataPagerdutyService from './data-pagerduty-service';
 export * as dataPagerdutyServiceIntegration from './data-pagerduty-service-integration';
 export * as dataPagerdutyTag from './data-pagerduty-tag';
 export * as dataPagerdutyTeam from './data-pagerduty-team';
+export * as dataPagerdutyTeamMembers from './data-pagerduty-team-members';
 export * as dataPagerdutyUser from './data-pagerduty-user';
 export * as dataPagerdutyUserContactMethod from './data-pagerduty-user-contact-method';
 export * as dataPagerdutyUsers from './data-pagerduty-users';
