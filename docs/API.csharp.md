@@ -28,6 +28,7 @@ The following submodules are available:
 - [dataPagerdutyServiceIntegration](./dataPagerdutyServiceIntegration.csharp.md)
 - [dataPagerdutyTag](./dataPagerdutyTag.csharp.md)
 - [dataPagerdutyTeam](./dataPagerdutyTeam.csharp.md)
+- [dataPagerdutyTeamMembers](./dataPagerdutyTeamMembers.csharp.md)
 - [dataPagerdutyUser](./dataPagerdutyUser.csharp.md)
 - [dataPagerdutyUserContactMethod](./dataPagerdutyUserContactMethod.csharp.md)
 - [dataPagerdutyUsers](./dataPagerdutyUsers.csharp.md)

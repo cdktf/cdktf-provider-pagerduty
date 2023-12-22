@@ -4,12 +4,12 @@
 
 ### DataPagerdutyVendor <a name="DataPagerdutyVendor" id="@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.1/docs/data-sources/vendor pagerduty_vendor}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/data-sources/vendor pagerduty_vendor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyvendor"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyvendor"
 
 datapagerdutyvendor.NewDataPagerdutyVendor(scope Construct, id *string, config DataPagerdutyVendorConfig) DataPagerdutyVendor
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyvendor"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyvendor"
 
 datapagerdutyvendor.DataPagerdutyVendor_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyvendor"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyvendor"
 
 datapagerdutyvendor.DataPagerdutyVendor_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datapagerdutyvendor.DataPagerdutyVendor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyvendor"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyvendor"
 
 datapagerdutyvendor.DataPagerdutyVendor_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datapagerdutyvendor.DataPagerdutyVendor_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyvendor"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyvendor"
 
 datapagerdutyvendor.DataPagerdutyVendor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataPagerdutyVendor to imp
 
 The id of the existing DataPagerdutyVendor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.1/docs/data-sources/vendor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/data-sources/vendor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -596,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyvendor"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyvendor"
 
 &datapagerdutyvendor.DataPagerdutyVendorConfig {
 	Connection: interface{},
@@ -622,8 +622,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerduty
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.1/docs/data-sources/vendor#name DataPagerdutyVendor#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.1/docs/data-sources/vendor#id DataPagerdutyVendor#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/data-sources/vendor#name DataPagerdutyVendor#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyVendor.DataPagerdutyVendorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/data-sources/vendor#id DataPagerdutyVendor#id}. |
 
 ---
 
@@ -705,7 +705,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.1/docs/data-sources/vendor#name DataPagerdutyVendor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/data-sources/vendor#name DataPagerdutyVendor#name}.
 
 ---
 
@@ -717,7 +717,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.3.1/docs/data-sources/vendor#id DataPagerdutyVendor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/data-sources/vendor#id DataPagerdutyVendor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

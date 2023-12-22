@@ -28,6 +28,7 @@ The following submodules are available:
 - [dataPagerdutyServiceIntegration](./dataPagerdutyServiceIntegration.java.md)
 - [dataPagerdutyTag](./dataPagerdutyTag.java.md)
 - [dataPagerdutyTeam](./dataPagerdutyTeam.java.md)
+- [dataPagerdutyTeamMembers](./dataPagerdutyTeamMembers.java.md)
 - [dataPagerdutyUser](./dataPagerdutyUser.java.md)
 - [dataPagerdutyUserContactMethod](./dataPagerdutyUserContactMethod.java.md)
 - [dataPagerdutyUsers](./dataPagerdutyUsers.java.md)
