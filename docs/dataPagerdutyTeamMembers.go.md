@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyteammembers"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyteammembers"
 
 datapagerdutyteammembers.NewDataPagerdutyTeamMembers(scope Construct, id *string, config DataPagerdutyTeamMembersConfig) DataPagerdutyTeamMembers
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyteammembers"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyteammembers"
 
 datapagerdutyteammembers.DataPagerdutyTeamMembers_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyteammembers"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyteammembers"
 
 datapagerdutyteammembers.DataPagerdutyTeamMembers_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datapagerdutyteammembers.DataPagerdutyTeamMembers_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyteammembers"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyteammembers"
 
 datapagerdutyteammembers.DataPagerdutyTeamMembers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datapagerdutyteammembers.DataPagerdutyTeamMembers_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyteammembers"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyteammembers"
 
 datapagerdutyteammembers.DataPagerdutyTeamMembers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyteammembers"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyteammembers"
 
 &datapagerdutyteammembers.DataPagerdutyTeamMembersConfig {
 	Connection: interface{},
@@ -731,7 +731,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembersMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyteammembers"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyteammembers"
 
 &datapagerdutyteammembers.DataPagerdutyTeamMembersMembers {
 
@@ -746,7 +746,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerduty
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembersMembersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyteammembers"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyteammembers"
 
 datapagerdutyteammembers.NewDataPagerdutyTeamMembersMembersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPagerdutyTeamMembersMembersList
 ```
@@ -878,7 +878,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembersMembersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyteammembers"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyteammembers"
 
 datapagerdutyteammembers.NewDataPagerdutyTeamMembersMembersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPagerdutyTeamMembersMembersOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 serviceintegration.NewServiceIntegration(scope Construct, id *string, config ServiceIntegrationConfig) ServiceIntegration
 ```
@@ -474,7 +474,7 @@ func ResetVendor()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 serviceintegration.ServiceIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 serviceintegration.ServiceIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ serviceintegration.ServiceIntegration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 serviceintegration.ServiceIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ serviceintegration.ServiceIntegration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 serviceintegration.ServiceIntegration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1038,7 +1038,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 &serviceintegration.ServiceIntegrationConfig {
 	Connection: interface{},
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 &serviceintegration.ServiceIntegrationEmailFilter {
 	BodyMode: *string,
@@ -1417,11 +1417,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 &serviceintegration.ServiceIntegrationEmailParser {
 	Action: *string,
-	MatchPredicate: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12.serviceIntegration.ServiceIntegrationEmailParserMatchPredicate,
+	MatchPredicate: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicate,
 	ValueExtractor: interface{},
 }
 ```
@@ -1481,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 &serviceintegration.ServiceIntegrationEmailParserMatchPredicate {
 	Type: *string,
@@ -1529,7 +1529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 &serviceintegration.ServiceIntegrationEmailParserMatchPredicatePredicate {
 	Type: *string,
@@ -1605,7 +1605,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 &serviceintegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate {
 	Matcher: *string,
@@ -1665,7 +1665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 &serviceintegration.ServiceIntegrationEmailParserValueExtractor {
 	Part: *string,
@@ -1769,7 +1769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 serviceintegration.NewServiceIntegrationEmailFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceIntegrationEmailFilterList
 ```
@@ -1912,7 +1912,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 serviceintegration.NewServiceIntegrationEmailFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceIntegrationEmailFilterOutputReference
 ```
@@ -2364,7 +2364,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 serviceintegration.NewServiceIntegrationEmailParserList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceIntegrationEmailParserList
 ```
@@ -2507,7 +2507,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 serviceintegration.NewServiceIntegrationEmailParserMatchPredicateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceIntegrationEmailParserMatchPredicateOutputReference
 ```
@@ -2820,7 +2820,7 @@ func InternalValue() ServiceIntegrationEmailParserMatchPredicate
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 serviceintegration.NewServiceIntegrationEmailParserMatchPredicatePredicateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceIntegrationEmailParserMatchPredicatePredicateList
 ```
@@ -2963,7 +2963,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 serviceintegration.NewServiceIntegrationEmailParserMatchPredicatePredicateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference
 ```
@@ -3352,7 +3352,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 serviceintegration.NewServiceIntegrationEmailParserMatchPredicatePredicatePredicateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceIntegrationEmailParserMatchPredicatePredicatePredicateList
 ```
@@ -3495,7 +3495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 serviceintegration.NewServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference
 ```
@@ -3828,7 +3828,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 serviceintegration.NewServiceIntegrationEmailParserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceIntegrationEmailParserOutputReference
 ```
@@ -4205,7 +4205,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 serviceintegration.NewServiceIntegrationEmailParserValueExtractorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceIntegrationEmailParserValueExtractorList
 ```
@@ -4348,7 +4348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/serviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/serviceintegration"
 
 serviceintegration.NewServiceIntegrationEmailParserValueExtractorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceIntegrationEmailParserValueExtractorOutputReference
 ```
