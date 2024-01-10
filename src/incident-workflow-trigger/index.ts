@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/resources/incident_workflow_trigger
 // generated from terraform resource schema
 
@@ -204,5 +199,49 @@ export class IncidentWorkflowTrigger extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       workflow: cdktf.stringToTerraform(this._workflow),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      condition: {
+        value: cdktf.stringToHclTerraform(this._condition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      services: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._services),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      subscribed_to_all_services: {
+        value: cdktf.booleanToHclTerraform(this._subscribedToAllServices),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workflow: {
+        value: cdktf.stringToHclTerraform(this._workflow),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

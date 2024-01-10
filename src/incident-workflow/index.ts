@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/resources/incident_workflow
 // generated from terraform resource schema
 
@@ -58,6 +53,31 @@ export function incidentWorkflowStepInlineStepsInputStepInputToTerraform(struct?
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function incidentWorkflowStepInlineStepsInputStepInputToHclTerraform(struct?: IncidentWorkflowStepInlineStepsInputStepInput | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IncidentWorkflowStepInlineStepsInputStepInputOutputReference extends cdktf.ComplexObject {
@@ -188,6 +208,37 @@ export function incidentWorkflowStepInlineStepsInputStepToTerraform(struct?: Inc
     name: cdktf.stringToTerraform(struct!.name),
     input: cdktf.listMapper(incidentWorkflowStepInlineStepsInputStepInputToTerraform, true)(struct!.input),
   }
+}
+
+
+export function incidentWorkflowStepInlineStepsInputStepToHclTerraform(struct?: IncidentWorkflowStepInlineStepsInputStep | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    input: {
+      value: cdktf.listMapperHcl(incidentWorkflowStepInlineStepsInputStepInputToHclTerraform, true)(struct!.input),
+      isBlock: true,
+      type: "list",
+      storageClassType: "IncidentWorkflowStepInlineStepsInputStepInputList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IncidentWorkflowStepInlineStepsInputStepOutputReference extends cdktf.ComplexObject {
@@ -332,6 +383,31 @@ export function incidentWorkflowStepInlineStepsInputToTerraform(struct?: Inciden
   }
 }
 
+
+export function incidentWorkflowStepInlineStepsInputToHclTerraform(struct?: IncidentWorkflowStepInlineStepsInput | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    step: {
+      value: cdktf.listMapperHcl(incidentWorkflowStepInlineStepsInputStepToHclTerraform, true)(struct!.step),
+      isBlock: true,
+      type: "list",
+      storageClassType: "IncidentWorkflowStepInlineStepsInputStepList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class IncidentWorkflowStepInlineStepsInputOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -451,6 +527,31 @@ export function incidentWorkflowStepInputToTerraform(struct?: IncidentWorkflowSt
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function incidentWorkflowStepInputToHclTerraform(struct?: IncidentWorkflowStepInput | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IncidentWorkflowStepInputOutputReference extends cdktf.ComplexObject {
@@ -588,6 +689,43 @@ export function incidentWorkflowStepToTerraform(struct?: IncidentWorkflowStep | 
     inline_steps_input: cdktf.listMapper(incidentWorkflowStepInlineStepsInputToTerraform, true)(struct!.inlineStepsInput),
     input: cdktf.listMapper(incidentWorkflowStepInputToTerraform, true)(struct!.input),
   }
+}
+
+
+export function incidentWorkflowStepToHclTerraform(struct?: IncidentWorkflowStep | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    inline_steps_input: {
+      value: cdktf.listMapperHcl(incidentWorkflowStepInlineStepsInputToHclTerraform, true)(struct!.inlineStepsInput),
+      isBlock: true,
+      type: "list",
+      storageClassType: "IncidentWorkflowStepInlineStepsInputList",
+    },
+    input: {
+      value: cdktf.listMapperHcl(incidentWorkflowStepInputToHclTerraform, true)(struct!.input),
+      isBlock: true,
+      type: "list",
+      storageClassType: "IncidentWorkflowStepInputList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IncidentWorkflowStepOutputReference extends cdktf.ComplexObject {
@@ -887,5 +1025,43 @@ export class IncidentWorkflow extends cdktf.TerraformResource {
       team: cdktf.stringToTerraform(this._team),
       step: cdktf.listMapper(incidentWorkflowStepToTerraform, true)(this._step.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      team: {
+        value: cdktf.stringToHclTerraform(this._team),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      step: {
+        value: cdktf.listMapperHcl(incidentWorkflowStepToHclTerraform, true)(this._step.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "IncidentWorkflowStepList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

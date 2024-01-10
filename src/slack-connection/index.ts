@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/resources/slack_connection
 // generated from terraform resource schema
 
@@ -71,6 +66,37 @@ export function slackConnectionConfigAToTerraform(struct?: SlackConnectionConfig
     priorities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.priorities),
     urgency: cdktf.stringToTerraform(struct!.urgency),
   }
+}
+
+
+export function slackConnectionConfigAToHclTerraform(struct?: SlackConnectionConfigA | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    events: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    priorities: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.priorities),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    urgency: {
+      value: cdktf.stringToHclTerraform(struct!.urgency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SlackConnectionConfigAOutputReference extends cdktf.ComplexObject {
@@ -377,5 +403,55 @@ export class SlackConnection extends cdktf.TerraformResource {
       workspace_id: cdktf.stringToTerraform(this._workspaceId),
       config: cdktf.listMapper(slackConnectionConfigAToTerraform, true)(this._config.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      channel_id: {
+        value: cdktf.stringToHclTerraform(this._channelId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notification_type: {
+        value: cdktf.stringToHclTerraform(this._notificationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_id: {
+        value: cdktf.stringToHclTerraform(this._sourceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_type: {
+        value: cdktf.stringToHclTerraform(this._sourceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      workspace_id: {
+        value: cdktf.stringToHclTerraform(this._workspaceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      config: {
+        value: cdktf.listMapperHcl(slackConnectionConfigAToHclTerraform, true)(this._config.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SlackConnectionConfigAList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/resources/service_dependency
 // generated from terraform resource schema
 
@@ -49,6 +44,31 @@ export function serviceDependencyDependencyDependentServiceToTerraform(struct?: 
     id: cdktf.stringToTerraform(struct!.id),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function serviceDependencyDependencyDependentServiceToHclTerraform(struct?: ServiceDependencyDependencyDependentService | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServiceDependencyDependencyDependentServiceOutputReference extends cdktf.ComplexObject {
@@ -170,6 +190,31 @@ export function serviceDependencyDependencySupportingServiceToTerraform(struct?:
     id: cdktf.stringToTerraform(struct!.id),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function serviceDependencyDependencySupportingServiceToHclTerraform(struct?: ServiceDependencyDependencySupportingService | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServiceDependencyDependencySupportingServiceOutputReference extends cdktf.ComplexObject {
@@ -297,6 +342,37 @@ export function serviceDependencyDependencyToTerraform(struct?: ServiceDependenc
     dependent_service: cdktf.listMapper(serviceDependencyDependencyDependentServiceToTerraform, true)(struct!.dependentService),
     supporting_service: cdktf.listMapper(serviceDependencyDependencySupportingServiceToTerraform, true)(struct!.supportingService),
   }
+}
+
+
+export function serviceDependencyDependencyToHclTerraform(struct?: ServiceDependencyDependencyOutputReference | ServiceDependencyDependency): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dependent_service: {
+      value: cdktf.listMapperHcl(serviceDependencyDependencyDependentServiceToHclTerraform, true)(struct!.dependentService),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ServiceDependencyDependencyDependentServiceList",
+    },
+    supporting_service: {
+      value: cdktf.listMapperHcl(serviceDependencyDependencySupportingServiceToHclTerraform, true)(struct!.supportingService),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ServiceDependencyDependencySupportingServiceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServiceDependencyDependencyOutputReference extends cdktf.ComplexObject {
@@ -483,5 +559,25 @@ export class ServiceDependency extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       dependency: serviceDependencyDependencyToTerraform(this._dependency.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dependency: {
+        value: serviceDependencyDependencyToHclTerraform(this._dependency.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServiceDependencyDependencyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/resources/user
 // generated from terraform resource schema
 
@@ -310,5 +305,73 @@ export class User extends cdktf.TerraformResource {
       teams: cdktf.listMapper(cdktf.stringToTerraform, false)(this._teams),
       time_zone: cdktf.stringToTerraform(this._timeZone),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      color: {
+        value: cdktf.stringToHclTerraform(this._color),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      email: {
+        value: cdktf.stringToHclTerraform(this._email),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      job_title: {
+        value: cdktf.stringToHclTerraform(this._jobTitle),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      license: {
+        value: cdktf.stringToHclTerraform(this._license),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      teams: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._teams),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      time_zone: {
+        value: cdktf.stringToHclTerraform(this._timeZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

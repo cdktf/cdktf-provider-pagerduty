@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/resources/webhook_subscription
 // generated from terraform resource schema
 
@@ -68,6 +63,31 @@ export function webhookSubscriptionDeliveryMethodCustomHeaderToTerraform(struct?
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function webhookSubscriptionDeliveryMethodCustomHeaderToHclTerraform(struct?: WebhookSubscriptionDeliveryMethodCustomHeader | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WebhookSubscriptionDeliveryMethodCustomHeaderOutputReference extends cdktf.ComplexObject {
@@ -198,6 +218,43 @@ export function webhookSubscriptionDeliveryMethodToTerraform(struct?: WebhookSub
     url: cdktf.stringToTerraform(struct!.url),
     custom_header: cdktf.listMapper(webhookSubscriptionDeliveryMethodCustomHeaderToTerraform, true)(struct!.customHeader),
   }
+}
+
+
+export function webhookSubscriptionDeliveryMethodToHclTerraform(struct?: WebhookSubscriptionDeliveryMethod | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    temporarily_disabled: {
+      value: cdktf.booleanToHclTerraform(struct!.temporarilyDisabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    url: {
+      value: cdktf.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_header: {
+      value: cdktf.listMapperHcl(webhookSubscriptionDeliveryMethodCustomHeaderToHclTerraform, true)(struct!.customHeader),
+      isBlock: true,
+      type: "list",
+      storageClassType: "WebhookSubscriptionDeliveryMethodCustomHeaderList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WebhookSubscriptionDeliveryMethodOutputReference extends cdktf.ComplexObject {
@@ -369,6 +426,31 @@ export function webhookSubscriptionFilterToTerraform(struct?: WebhookSubscriptio
     id: cdktf.stringToTerraform(struct!.id),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function webhookSubscriptionFilterToHclTerraform(struct?: WebhookSubscriptionFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WebhookSubscriptionFilterOutputReference extends cdktf.ComplexObject {
@@ -652,5 +734,55 @@ export class WebhookSubscription extends cdktf.TerraformResource {
       delivery_method: cdktf.listMapper(webhookSubscriptionDeliveryMethodToTerraform, true)(this._deliveryMethod.internalValue),
       filter: cdktf.listMapper(webhookSubscriptionFilterToTerraform, true)(this._filter.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      active: {
+        value: cdktf.booleanToHclTerraform(this._active),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      events: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._events),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delivery_method: {
+        value: cdktf.listMapperHcl(webhookSubscriptionDeliveryMethodToHclTerraform, true)(this._deliveryMethod.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WebhookSubscriptionDeliveryMethodList",
+      },
+      filter: {
+        value: cdktf.listMapperHcl(webhookSubscriptionFilterToHclTerraform, true)(this._filter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WebhookSubscriptionFilterList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

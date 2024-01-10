@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/resources/automation_actions_action
 // generated from terraform resource schema
 
@@ -97,6 +92,49 @@ export function automationActionsActionActionDataReferenceToTerraform(struct?: A
     process_automation_node_filter: cdktf.stringToTerraform(struct!.processAutomationNodeFilter),
     script: cdktf.stringToTerraform(struct!.script),
   }
+}
+
+
+export function automationActionsActionActionDataReferenceToHclTerraform(struct?: AutomationActionsActionActionDataReferenceOutputReference | AutomationActionsActionActionDataReference): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    invocation_command: {
+      value: cdktf.stringToHclTerraform(struct!.invocationCommand),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    process_automation_job_arguments: {
+      value: cdktf.stringToHclTerraform(struct!.processAutomationJobArguments),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    process_automation_job_id: {
+      value: cdktf.stringToHclTerraform(struct!.processAutomationJobId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    process_automation_node_filter: {
+      value: cdktf.stringToHclTerraform(struct!.processAutomationNodeFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    script: {
+      value: cdktf.stringToHclTerraform(struct!.script),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AutomationActionsActionActionDataReferenceOutputReference extends cdktf.ComplexObject {
@@ -489,5 +527,79 @@ export class AutomationActionsAction extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       action_data_reference: automationActionsActionActionDataReferenceToTerraform(this._actionDataReference.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      action_classification: {
+        value: cdktf.stringToHclTerraform(this._actionClassification),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      action_type: {
+        value: cdktf.stringToHclTerraform(this._actionType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      creation_time: {
+        value: cdktf.stringToHclTerraform(this._creationTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      modify_time: {
+        value: cdktf.stringToHclTerraform(this._modifyTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      runner_id: {
+        value: cdktf.stringToHclTerraform(this._runnerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      runner_type: {
+        value: cdktf.stringToHclTerraform(this._runnerType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      action_data_reference: {
+        value: automationActionsActionActionDataReferenceToHclTerraform(this._actionDataReference.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AutomationActionsActionActionDataReferenceList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

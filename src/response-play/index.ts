@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/resources/response_play
 // generated from terraform resource schema
 
@@ -84,6 +79,17 @@ export function responsePlayResponderEscalationRuleTargetToTerraform(struct?: Re
   }
 }
 
+
+export function responsePlayResponderEscalationRuleTargetToHclTerraform(struct?: ResponsePlayResponderEscalationRuleTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ResponsePlayResponderEscalationRuleTargetOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -151,6 +157,17 @@ export function responsePlayResponderEscalationRuleToTerraform(struct?: Response
   }
   return {
   }
+}
+
+
+export function responsePlayResponderEscalationRuleToHclTerraform(struct?: ResponsePlayResponderEscalationRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ResponsePlayResponderEscalationRuleOutputReference extends cdktf.ComplexObject {
@@ -228,6 +245,17 @@ export function responsePlayResponderServiceToTerraform(struct?: ResponsePlayRes
   }
 }
 
+
+export function responsePlayResponderServiceToHclTerraform(struct?: ResponsePlayResponderService): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ResponsePlayResponderServiceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -295,6 +323,17 @@ export function responsePlayResponderTeamToTerraform(struct?: ResponsePlayRespon
   }
   return {
   }
+}
+
+
+export function responsePlayResponderTeamToHclTerraform(struct?: ResponsePlayResponderTeam): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class ResponsePlayResponderTeamOutputReference extends cdktf.ComplexObject {
@@ -387,6 +426,43 @@ export function responsePlayResponderToTerraform(struct?: ResponsePlayResponder 
     name: cdktf.stringToTerraform(struct!.name),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function responsePlayResponderToHclTerraform(struct?: ResponsePlayResponder | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ResponsePlayResponderOutputReference extends cdktf.ComplexObject {
@@ -586,6 +662,31 @@ export function responsePlaySubscriberToTerraform(struct?: ResponsePlaySubscribe
     id: cdktf.stringToTerraform(struct!.id),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function responsePlaySubscriberToHclTerraform(struct?: ResponsePlaySubscriber | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ResponsePlaySubscriberOutputReference extends cdktf.ComplexObject {
@@ -983,5 +1084,91 @@ export class ResponsePlay extends cdktf.TerraformResource {
       responder: cdktf.listMapper(responsePlayResponderToTerraform, true)(this._responder.internalValue),
       subscriber: cdktf.listMapper(responsePlaySubscriberToTerraform, true)(this._subscriber.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      conference_number: {
+        value: cdktf.stringToHclTerraform(this._conferenceNumber),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      conference_url: {
+        value: cdktf.stringToHclTerraform(this._conferenceUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      from: {
+        value: cdktf.stringToHclTerraform(this._from),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      responders_message: {
+        value: cdktf.stringToHclTerraform(this._respondersMessage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      runnability: {
+        value: cdktf.stringToHclTerraform(this._runnability),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subscribers_message: {
+        value: cdktf.stringToHclTerraform(this._subscribersMessage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      team: {
+        value: cdktf.stringToHclTerraform(this._team),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      responder: {
+        value: cdktf.listMapperHcl(responsePlayResponderToHclTerraform, true)(this._responder.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ResponsePlayResponderList",
+      },
+      subscriber: {
+        value: cdktf.listMapperHcl(responsePlaySubscriberToHclTerraform, true)(this._subscriber.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ResponsePlaySubscriberList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyautomationactionsrunner"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyautomationactionsrunner"
 
 datapagerdutyautomationactionsrunner.NewDataPagerdutyAutomationActionsRunner(scope Construct, id *string, config DataPagerdutyAutomationActionsRunnerConfig) DataPagerdutyAutomationActionsRunner
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -121,6 +122,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.toMetadata"></a>
 
@@ -288,7 +297,7 @@ func ResetRunbookBaseUri()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyautomationactionsrunner"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyautomationactionsrunner"
 
 datapagerdutyautomationactionsrunner.DataPagerdutyAutomationActionsRunner_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyautomationactionsrunner"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyautomationactionsrunner"
 
 datapagerdutyautomationactionsrunner.DataPagerdutyAutomationActionsRunner_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ datapagerdutyautomationactionsrunner.DataPagerdutyAutomationActionsRunner_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyautomationactionsrunner"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyautomationactionsrunner"
 
 datapagerdutyautomationactionsrunner.DataPagerdutyAutomationActionsRunner_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +357,7 @@ datapagerdutyautomationactionsrunner.DataPagerdutyAutomationActionsRunner_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunner.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyautomationactionsrunner"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyautomationactionsrunner"
 
 datapagerdutyautomationactionsrunner.DataPagerdutyAutomationActionsRunner_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -687,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyAutomationActionsRunner.DataPagerdutyAutomationActionsRunnerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyautomationactionsrunner"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyautomationactionsrunner"
 
 &datapagerdutyautomationactionsrunner.DataPagerdutyAutomationActionsRunnerConfig {
 	Connection: interface{},

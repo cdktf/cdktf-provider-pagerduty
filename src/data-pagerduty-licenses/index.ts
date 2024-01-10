@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/data-sources/licenses
 // generated from terraform resource schema
 
@@ -94,6 +89,85 @@ export function dataPagerdutyLicensesLicensesToTerraform(struct?: DataPagerdutyL
     type: cdktf.stringToTerraform(struct!.type),
     valid_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.validRoles),
   }
+}
+
+
+export function dataPagerdutyLicensesLicensesToHclTerraform(struct?: DataPagerdutyLicensesLicenses | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allocations_available: {
+      value: cdktf.numberToHclTerraform(struct!.allocationsAvailable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    current_value: {
+      value: cdktf.numberToHclTerraform(struct!.currentValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    html_url: {
+      value: cdktf.stringToHclTerraform(struct!.htmlUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    role_group: {
+      value: cdktf.stringToHclTerraform(struct!.roleGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    self: {
+      value: cdktf.stringToHclTerraform(struct!.selfAttribute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    summary: {
+      value: cdktf.stringToHclTerraform(struct!.summary),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    valid_roles: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.validRoles),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataPagerdutyLicensesLicensesOutputReference extends cdktf.ComplexObject {
@@ -497,5 +571,25 @@ export class DataPagerdutyLicenses extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       licenses: cdktf.listMapper(dataPagerdutyLicensesLicensesToTerraform, true)(this._licenses.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      licenses: {
+        value: cdktf.listMapperHcl(dataPagerdutyLicensesLicensesToHclTerraform, true)(this._licenses.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataPagerdutyLicensesLicensesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/resources/ruleset
 // generated from terraform resource schema
 
@@ -48,6 +43,25 @@ export function rulesetTeamToTerraform(struct?: RulesetTeamOutputReference | Rul
   return {
     id: cdktf.stringToTerraform(struct!.id),
   }
+}
+
+
+export function rulesetTeamToHclTerraform(struct?: RulesetTeamOutputReference | RulesetTeam): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RulesetTeamOutputReference extends cdktf.ComplexObject {
@@ -221,5 +235,31 @@ export class Ruleset extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       team: rulesetTeamToTerraform(this._team.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      team: {
+        value: rulesetTeamToHclTerraform(this._team.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RulesetTeamList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

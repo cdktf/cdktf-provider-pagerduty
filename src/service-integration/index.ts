@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/resources/service_integration
 // generated from terraform resource schema
 
@@ -108,6 +103,55 @@ export function serviceIntegrationEmailFilterToTerraform(struct?: ServiceIntegra
     subject_mode: cdktf.stringToTerraform(struct!.subjectMode),
     subject_regex: cdktf.stringToTerraform(struct!.subjectRegex),
   }
+}
+
+
+export function serviceIntegrationEmailFilterToHclTerraform(struct?: ServiceIntegrationEmailFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    body_mode: {
+      value: cdktf.stringToHclTerraform(struct!.bodyMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    body_regex: {
+      value: cdktf.stringToHclTerraform(struct!.bodyRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    from_email_mode: {
+      value: cdktf.stringToHclTerraform(struct!.fromEmailMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    from_email_regex: {
+      value: cdktf.stringToHclTerraform(struct!.fromEmailRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subject_mode: {
+      value: cdktf.stringToHclTerraform(struct!.subjectMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subject_regex: {
+      value: cdktf.stringToHclTerraform(struct!.subjectRegex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServiceIntegrationEmailFilterOutputReference extends cdktf.ComplexObject {
@@ -332,6 +376,37 @@ export function serviceIntegrationEmailParserMatchPredicatePredicatePredicateToT
   }
 }
 
+
+export function serviceIntegrationEmailParserMatchPredicatePredicatePredicateToHclTerraform(struct?: ServiceIntegrationEmailParserMatchPredicatePredicatePredicate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    matcher: {
+      value: cdktf.stringToHclTerraform(struct!.matcher),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    part: {
+      value: cdktf.stringToHclTerraform(struct!.part),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -479,6 +554,43 @@ export function serviceIntegrationEmailParserMatchPredicatePredicateToTerraform(
     type: cdktf.stringToTerraform(struct!.type),
     predicate: cdktf.listMapper(serviceIntegrationEmailParserMatchPredicatePredicatePredicateToTerraform, true)(struct!.predicate),
   }
+}
+
+
+export function serviceIntegrationEmailParserMatchPredicatePredicateToHclTerraform(struct?: ServiceIntegrationEmailParserMatchPredicatePredicate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    matcher: {
+      value: cdktf.stringToHclTerraform(struct!.matcher),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    part: {
+      value: cdktf.stringToHclTerraform(struct!.part),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    predicate: {
+      value: cdktf.listMapperHcl(serviceIntegrationEmailParserMatchPredicatePredicatePredicateToHclTerraform, true)(struct!.predicate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ServiceIntegrationEmailParserMatchPredicatePredicatePredicateList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference extends cdktf.ComplexObject {
@@ -648,6 +760,31 @@ export function serviceIntegrationEmailParserMatchPredicateToTerraform(struct?: 
   }
 }
 
+
+export function serviceIntegrationEmailParserMatchPredicateToHclTerraform(struct?: ServiceIntegrationEmailParserMatchPredicateOutputReference | ServiceIntegrationEmailParserMatchPredicate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    predicate: {
+      value: cdktf.listMapperHcl(serviceIntegrationEmailParserMatchPredicatePredicateToHclTerraform, true)(struct!.predicate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ServiceIntegrationEmailParserMatchPredicatePredicateList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ServiceIntegrationEmailParserMatchPredicateOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -755,6 +892,55 @@ export function serviceIntegrationEmailParserValueExtractorToTerraform(struct?: 
     type: cdktf.stringToTerraform(struct!.type),
     value_name: cdktf.stringToTerraform(struct!.valueName),
   }
+}
+
+
+export function serviceIntegrationEmailParserValueExtractorToHclTerraform(struct?: ServiceIntegrationEmailParserValueExtractor | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ends_before: {
+      value: cdktf.stringToHclTerraform(struct!.endsBefore),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    part: {
+      value: cdktf.stringToHclTerraform(struct!.part),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    regex: {
+      value: cdktf.stringToHclTerraform(struct!.regex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    starts_after: {
+      value: cdktf.stringToHclTerraform(struct!.startsAfter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value_name: {
+      value: cdktf.stringToHclTerraform(struct!.valueName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServiceIntegrationEmailParserValueExtractorOutputReference extends cdktf.ComplexObject {
@@ -967,6 +1153,37 @@ export function serviceIntegrationEmailParserToTerraform(struct?: ServiceIntegra
     match_predicate: serviceIntegrationEmailParserMatchPredicateToTerraform(struct!.matchPredicate),
     value_extractor: cdktf.listMapper(serviceIntegrationEmailParserValueExtractorToTerraform, true)(struct!.valueExtractor),
   }
+}
+
+
+export function serviceIntegrationEmailParserToHclTerraform(struct?: ServiceIntegrationEmailParser | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    match_predicate: {
+      value: serviceIntegrationEmailParserMatchPredicateToHclTerraform(struct!.matchPredicate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ServiceIntegrationEmailParserMatchPredicateList",
+    },
+    value_extractor: {
+      value: cdktf.listMapperHcl(serviceIntegrationEmailParserValueExtractorToHclTerraform, true)(struct!.valueExtractor),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ServiceIntegrationEmailParserValueExtractorList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServiceIntegrationEmailParserOutputReference extends cdktf.ComplexObject {
@@ -1375,5 +1592,85 @@ export class ServiceIntegration extends cdktf.TerraformResource {
       email_filter: cdktf.listMapper(serviceIntegrationEmailFilterToTerraform, true)(this._emailFilter.internalValue),
       email_parser: cdktf.listMapper(serviceIntegrationEmailParserToTerraform, true)(this._emailParser.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      email_filter_mode: {
+        value: cdktf.stringToHclTerraform(this._emailFilterMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      email_incident_creation: {
+        value: cdktf.stringToHclTerraform(this._emailIncidentCreation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      email_parsing_fallback: {
+        value: cdktf.stringToHclTerraform(this._emailParsingFallback),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      integration_email: {
+        value: cdktf.stringToHclTerraform(this._integrationEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      integration_key: {
+        value: cdktf.stringToHclTerraform(this._integrationKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service: {
+        value: cdktf.stringToHclTerraform(this._service),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vendor: {
+        value: cdktf.stringToHclTerraform(this._vendor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      email_filter: {
+        value: cdktf.listMapperHcl(serviceIntegrationEmailFilterToHclTerraform, true)(this._emailFilter.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServiceIntegrationEmailFilterList",
+      },
+      email_parser: {
+        value: cdktf.listMapperHcl(serviceIntegrationEmailParserToHclTerraform, true)(this._emailParser.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServiceIntegrationEmailParserList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/resources/incident_custom_field_option
 // generated from terraform resource schema
 
@@ -160,5 +155,37 @@ export class IncidentCustomFieldOption extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       value: cdktf.stringToTerraform(this._value),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      data_type: {
+        value: cdktf.stringToHclTerraform(this._dataType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      field: {
+        value: cdktf.stringToHclTerraform(this._field),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value: {
+        value: cdktf.stringToHclTerraform(this._value),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

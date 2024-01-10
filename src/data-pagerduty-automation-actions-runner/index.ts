@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs/data-sources/automation_actions_runner
 // generated from terraform resource schema
 
@@ -186,5 +181,37 @@ export class DataPagerdutyAutomationActionsRunner extends cdktf.TerraformDataSou
       last_seen: cdktf.stringToTerraform(this._lastSeen),
       runbook_base_uri: cdktf.stringToTerraform(this._runbookBaseUri),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      last_seen: {
+        value: cdktf.stringToHclTerraform(this._lastSeen),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      runbook_base_uri: {
+        value: cdktf.stringToHclTerraform(this._runbookBaseUri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
