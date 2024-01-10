@@ -240,4 +240,54 @@ export class AutomationActionsRunner extends cdktf.TerraformResource {
       runner_type: cdktf.stringToTerraform(this._runnerType),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      last_seen: {
+        value: cdktf.stringToHclTerraform(this._lastSeen),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      runbook_api_key: {
+        value: cdktf.stringToHclTerraform(this._runbookApiKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      runbook_base_uri: {
+        value: cdktf.stringToHclTerraform(this._runbookBaseUri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      runner_type: {
+        value: cdktf.stringToHclTerraform(this._runnerType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

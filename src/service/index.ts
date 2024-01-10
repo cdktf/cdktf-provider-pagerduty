@@ -118,6 +118,43 @@ export function serviceAlertGroupingParametersConfigToTerraform(struct?: Service
   }
 }
 
+
+export function serviceAlertGroupingParametersConfigToHclTerraform(struct?: ServiceAlertGroupingParametersConfigOutputReference | ServiceAlertGroupingParametersConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregate: {
+      value: cdktf.stringToHclTerraform(struct!.aggregate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    fields: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fields),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    time_window: {
+      value: cdktf.numberToHclTerraform(struct!.timeWindow),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    timeout: {
+      value: cdktf.numberToHclTerraform(struct!.timeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ServiceAlertGroupingParametersConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -256,6 +293,31 @@ export function serviceAlertGroupingParametersToTerraform(struct?: ServiceAlertG
   }
 }
 
+
+export function serviceAlertGroupingParametersToHclTerraform(struct?: ServiceAlertGroupingParametersOutputReference | ServiceAlertGroupingParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    config: {
+      value: serviceAlertGroupingParametersConfigToHclTerraform(struct!.config),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ServiceAlertGroupingParametersConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ServiceAlertGroupingParametersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -346,6 +408,31 @@ export function serviceAutoPauseNotificationsParametersToTerraform(struct?: Serv
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     timeout: cdktf.numberToTerraform(struct!.timeout),
   }
+}
+
+
+export function serviceAutoPauseNotificationsParametersToHclTerraform(struct?: ServiceAutoPauseNotificationsParametersOutputReference | ServiceAutoPauseNotificationsParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    timeout: {
+      value: cdktf.numberToHclTerraform(struct!.timeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServiceAutoPauseNotificationsParametersOutputReference extends cdktf.ComplexObject {
@@ -440,6 +527,31 @@ export function serviceIncidentUrgencyRuleDuringSupportHoursToTerraform(struct?:
   }
 }
 
+
+export function serviceIncidentUrgencyRuleDuringSupportHoursToHclTerraform(struct?: ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference | ServiceIncidentUrgencyRuleDuringSupportHours): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    urgency: {
+      value: cdktf.stringToHclTerraform(struct!.urgency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ServiceIncidentUrgencyRuleDuringSupportHoursOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -530,6 +642,31 @@ export function serviceIncidentUrgencyRuleOutsideSupportHoursToTerraform(struct?
     type: cdktf.stringToTerraform(struct!.type),
     urgency: cdktf.stringToTerraform(struct!.urgency),
   }
+}
+
+
+export function serviceIncidentUrgencyRuleOutsideSupportHoursToHclTerraform(struct?: ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference | ServiceIncidentUrgencyRuleOutsideSupportHours): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    urgency: {
+      value: cdktf.stringToHclTerraform(struct!.urgency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServiceIncidentUrgencyRuleOutsideSupportHoursOutputReference extends cdktf.ComplexObject {
@@ -636,6 +773,43 @@ export function serviceIncidentUrgencyRuleToTerraform(struct?: ServiceIncidentUr
     during_support_hours: serviceIncidentUrgencyRuleDuringSupportHoursToTerraform(struct!.duringSupportHours),
     outside_support_hours: serviceIncidentUrgencyRuleOutsideSupportHoursToTerraform(struct!.outsideSupportHours),
   }
+}
+
+
+export function serviceIncidentUrgencyRuleToHclTerraform(struct?: ServiceIncidentUrgencyRuleOutputReference | ServiceIncidentUrgencyRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    urgency: {
+      value: cdktf.stringToHclTerraform(struct!.urgency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    during_support_hours: {
+      value: serviceIncidentUrgencyRuleDuringSupportHoursToHclTerraform(struct!.duringSupportHours),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ServiceIncidentUrgencyRuleDuringSupportHoursList",
+    },
+    outside_support_hours: {
+      value: serviceIncidentUrgencyRuleOutsideSupportHoursToHclTerraform(struct!.outsideSupportHours),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ServiceIncidentUrgencyRuleOutsideSupportHoursList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServiceIncidentUrgencyRuleOutputReference extends cdktf.ComplexObject {
@@ -771,6 +945,31 @@ export function serviceScheduledActionsAtToTerraform(struct?: ServiceScheduledAc
   }
 }
 
+
+export function serviceScheduledActionsAtToHclTerraform(struct?: ServiceScheduledActionsAt | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ServiceScheduledActionsAtOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -900,6 +1099,37 @@ export function serviceScheduledActionsToTerraform(struct?: ServiceScheduledActi
     type: cdktf.stringToTerraform(struct!.type),
     at: cdktf.listMapper(serviceScheduledActionsAtToTerraform, true)(struct!.at),
   }
+}
+
+
+export function serviceScheduledActionsToHclTerraform(struct?: ServiceScheduledActions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    to_urgency: {
+      value: cdktf.stringToHclTerraform(struct!.toUrgency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    at: {
+      value: cdktf.listMapperHcl(serviceScheduledActionsAtToHclTerraform, true)(struct!.at),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ServiceScheduledActionsAtList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServiceScheduledActionsOutputReference extends cdktf.ComplexObject {
@@ -1061,6 +1291,49 @@ export function serviceSupportHoursToTerraform(struct?: ServiceSupportHoursOutpu
     time_zone: cdktf.stringToTerraform(struct!.timeZone),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function serviceSupportHoursToHclTerraform(struct?: ServiceSupportHoursOutputReference | ServiceSupportHours): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    days_of_week: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.daysOfWeek),
+      isBlock: false,
+      type: "list",
+      storageClassType: "numberList",
+    },
+    end_time: {
+      value: cdktf.stringToHclTerraform(struct!.endTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start_time: {
+      value: cdktf.stringToHclTerraform(struct!.startTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time_zone: {
+      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServiceSupportHoursOutputReference extends cdktf.ComplexObject {
@@ -1553,5 +1826,103 @@ export class Service extends cdktf.TerraformResource {
       scheduled_actions: cdktf.listMapper(serviceScheduledActionsToTerraform, true)(this._scheduledActions.internalValue),
       support_hours: serviceSupportHoursToTerraform(this._supportHours.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      acknowledgement_timeout: {
+        value: cdktf.stringToHclTerraform(this._acknowledgementTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alert_creation: {
+        value: cdktf.stringToHclTerraform(this._alertCreation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alert_grouping: {
+        value: cdktf.stringToHclTerraform(this._alertGrouping),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alert_grouping_timeout: {
+        value: cdktf.stringToHclTerraform(this._alertGroupingTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auto_resolve_timeout: {
+        value: cdktf.stringToHclTerraform(this._autoResolveTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      escalation_policy: {
+        value: cdktf.stringToHclTerraform(this._escalationPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      response_play: {
+        value: cdktf.stringToHclTerraform(this._responsePlay),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alert_grouping_parameters: {
+        value: serviceAlertGroupingParametersToHclTerraform(this._alertGroupingParameters.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServiceAlertGroupingParametersList",
+      },
+      auto_pause_notifications_parameters: {
+        value: serviceAutoPauseNotificationsParametersToHclTerraform(this._autoPauseNotificationsParameters.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServiceAutoPauseNotificationsParametersList",
+      },
+      incident_urgency_rule: {
+        value: serviceIncidentUrgencyRuleToHclTerraform(this._incidentUrgencyRule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServiceIncidentUrgencyRuleList",
+      },
+      scheduled_actions: {
+        value: cdktf.listMapperHcl(serviceScheduledActionsToHclTerraform, true)(this._scheduledActions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServiceScheduledActionsList",
+      },
+      support_hours: {
+        value: serviceSupportHoursToHclTerraform(this._supportHours.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServiceSupportHoursList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

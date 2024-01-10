@@ -73,6 +73,37 @@ export function pagerdutyProviderUseAppOauthScopedTokenToTerraform(struct?: Page
 }
 
 
+export function pagerdutyProviderUseAppOauthScopedTokenToHclTerraform(struct?: PagerdutyProviderUseAppOauthScopedToken): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    pd_client_id: {
+      value: cdktf.stringToHclTerraform(struct!.pdClientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pd_client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.pdClientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pd_subdomain: {
+      value: cdktf.stringToHclTerraform(struct!.pdSubdomain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 /**
 * Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.0/docs pagerduty}
 */
@@ -257,5 +288,55 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
       alias: cdktf.stringToTerraform(this._alias),
       use_app_oauth_scoped_token: pagerdutyProviderUseAppOauthScopedTokenToTerraform(this._useAppOauthScopedToken),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_url_override: {
+        value: cdktf.stringToHclTerraform(this._apiUrlOverride),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_region: {
+        value: cdktf.stringToHclTerraform(this._serviceRegion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      skip_credentials_validation: {
+        value: cdktf.booleanToHclTerraform(this._skipCredentialsValidation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_token: {
+        value: cdktf.stringToHclTerraform(this._userToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      use_app_oauth_scoped_token: {
+        value: pagerdutyProviderUseAppOauthScopedTokenToHclTerraform(this._useAppOauthScopedToken),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PagerdutyProviderUseAppOauthScopedTokenList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

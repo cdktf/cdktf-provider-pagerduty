@@ -161,4 +161,36 @@ export class BusinessServiceSubscriber extends cdktf.TerraformResource {
       subscriber_type: cdktf.stringToTerraform(this._subscriberType),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      business_service_id: {
+        value: cdktf.stringToHclTerraform(this._businessServiceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subscriber_id: {
+        value: cdktf.stringToHclTerraform(this._subscriberId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subscriber_type: {
+        value: cdktf.stringToHclTerraform(this._subscriberType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

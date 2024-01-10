@@ -240,4 +240,54 @@ export class Extension extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      config: {
+        value: cdktf.stringToHclTerraform(this._config),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      endpoint_url: {
+        value: cdktf.stringToHclTerraform(this._endpointUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      extension_objects: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._extensionObjects),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      extension_schema: {
+        value: cdktf.stringToHclTerraform(this._extensionSchema),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

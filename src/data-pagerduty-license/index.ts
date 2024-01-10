@@ -324,4 +324,78 @@ export class DataPagerdutyLicense extends cdktf.TerraformDataSource {
       valid_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._validRoles),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allocations_available: {
+        value: cdktf.numberToHclTerraform(this._allocationsAvailable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      current_value: {
+        value: cdktf.numberToHclTerraform(this._currentValue),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      html_url: {
+        value: cdktf.stringToHclTerraform(this._htmlUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_group: {
+        value: cdktf.stringToHclTerraform(this._roleGroup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      self: {
+        value: cdktf.stringToHclTerraform(this._self),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      summary: {
+        value: cdktf.stringToHclTerraform(this._summary),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      valid_roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._validRoles),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

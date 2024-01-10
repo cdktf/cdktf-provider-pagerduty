@@ -169,4 +169,36 @@ export class EventRule extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      action_json: {
+        value: cdktf.stringToHclTerraform(this._actionJson),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      advanced_condition_json: {
+        value: cdktf.stringToHclTerraform(this._advancedConditionJson),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      condition_json: {
+        value: cdktf.stringToHclTerraform(this._conditionJson),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

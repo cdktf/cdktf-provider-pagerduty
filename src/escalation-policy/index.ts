@@ -59,6 +59,25 @@ export function escalationPolicyRuleEscalationRuleAssignmentStrategyToTerraform(
   }
 }
 
+
+export function escalationPolicyRuleEscalationRuleAssignmentStrategyToHclTerraform(struct?: EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference | EscalationPolicyRuleEscalationRuleAssignmentStrategy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -130,6 +149,31 @@ export function escalationPolicyRuleTargetToTerraform(struct?: EscalationPolicyR
     id: cdktf.stringToTerraform(struct!.id),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function escalationPolicyRuleTargetToHclTerraform(struct?: EscalationPolicyRuleTarget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EscalationPolicyRuleTargetOutputReference extends cdktf.ComplexObject {
@@ -260,6 +304,37 @@ export function escalationPolicyRuleToTerraform(struct?: EscalationPolicyRule | 
     escalation_rule_assignment_strategy: escalationPolicyRuleEscalationRuleAssignmentStrategyToTerraform(struct!.escalationRuleAssignmentStrategy),
     target: cdktf.listMapper(escalationPolicyRuleTargetToTerraform, true)(struct!.target),
   }
+}
+
+
+export function escalationPolicyRuleToHclTerraform(struct?: EscalationPolicyRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    escalation_delay_in_minutes: {
+      value: cdktf.numberToHclTerraform(struct!.escalationDelayInMinutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    escalation_rule_assignment_strategy: {
+      value: escalationPolicyRuleEscalationRuleAssignmentStrategyToHclTerraform(struct!.escalationRuleAssignmentStrategy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EscalationPolicyRuleEscalationRuleAssignmentStrategyList",
+    },
+    target: {
+      value: cdktf.listMapperHcl(escalationPolicyRuleTargetToHclTerraform, true)(struct!.target),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EscalationPolicyRuleTargetList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EscalationPolicyRuleOutputReference extends cdktf.ComplexObject {
@@ -552,5 +627,49 @@ export class EscalationPolicy extends cdktf.TerraformResource {
       teams: cdktf.listMapper(cdktf.stringToTerraform, false)(this._teams),
       rule: cdktf.listMapper(escalationPolicyRuleToTerraform, true)(this._rule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      num_loops: {
+        value: cdktf.numberToHclTerraform(this._numLoops),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      teams: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._teams),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      rule: {
+        value: cdktf.listMapperHcl(escalationPolicyRuleToHclTerraform, true)(this._rule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EscalationPolicyRuleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

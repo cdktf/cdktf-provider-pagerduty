@@ -180,4 +180,42 @@ export class UserNotificationRule extends cdktf.TerraformResource {
       user_id: cdktf.stringToTerraform(this._userId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      contact_method: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._contactMethod),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start_delay_in_minutes: {
+        value: cdktf.numberToHclTerraform(this._startDelayInMinutes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      urgency: {
+        value: cdktf.stringToHclTerraform(this._urgency),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_id: {
+        value: cdktf.stringToHclTerraform(this._userId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

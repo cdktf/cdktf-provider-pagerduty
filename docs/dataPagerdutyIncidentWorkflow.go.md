@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyincidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidentworkflow"
 
 datapagerdutyincidentworkflow.NewDataPagerdutyIncidentWorkflow(scope Construct, id *string, config DataPagerdutyIncidentWorkflowConfig) DataPagerdutyIncidentWorkflow
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyincidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidentworkflow"
 
 datapagerdutyincidentworkflow.DataPagerdutyIncidentWorkflow_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyincidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidentworkflow"
 
 datapagerdutyincidentworkflow.DataPagerdutyIncidentWorkflow_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ datapagerdutyincidentworkflow.DataPagerdutyIncidentWorkflow_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyincidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidentworkflow"
 
 datapagerdutyincidentworkflow.DataPagerdutyIncidentWorkflow_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ datapagerdutyincidentworkflow.DataPagerdutyIncidentWorkflow_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyincidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidentworkflow"
 
 datapagerdutyincidentworkflow.DataPagerdutyIncidentWorkflow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentWorkflow.DataPagerdutyIncidentWorkflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v12/datapagerdutyincidentworkflow"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidentworkflow"
 
 &datapagerdutyincidentworkflow.DataPagerdutyIncidentWorkflowConfig {
 	Connection: interface{},
