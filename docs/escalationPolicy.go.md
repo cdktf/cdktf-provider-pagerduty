@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.escalationPolicy.EscalationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/escalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/escalationpolicy"
 
 escalationpolicy.NewEscalationPolicy(scope Construct, id *string, config EscalationPolicyConfig) EscalationPolicy
 ```
@@ -419,7 +419,7 @@ func ResetTeams()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.escalationPolicy.EscalationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/escalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/escalationpolicy"
 
 escalationpolicy.EscalationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.escalationPolicy.EscalationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/escalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/escalationpolicy"
 
 escalationpolicy.EscalationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ escalationpolicy.EscalationPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.escalationPolicy.EscalationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/escalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/escalationpolicy"
 
 escalationpolicy.EscalationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ escalationpolicy.EscalationPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.escalationPolicy.EscalationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/escalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/escalationpolicy"
 
 escalationpolicy.EscalationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -840,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.escalationPolicy.EscalationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/escalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/escalationpolicy"
 
 &escalationpolicy.EscalationPolicyConfig {
 	Connection: interface{},
@@ -1031,12 +1031,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.escalationPolicy.EscalationPolicyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/escalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/escalationpolicy"
 
 &escalationpolicy.EscalationPolicyRule {
 	EscalationDelayInMinutes: *f64,
 	Target: interface{},
-	EscalationRuleAssignmentStrategy: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.escalationPolicy.EscalationPolicyRuleEscalationRuleAssignmentStrategy,
+	EscalationRuleAssignmentStrategy: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13.escalationPolicy.EscalationPolicyRuleEscalationRuleAssignmentStrategy,
 }
 ```
 
@@ -1095,7 +1095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.escalationPolicy.EscalationPolicyRuleEscalationRuleAssignmentStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/escalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/escalationpolicy"
 
 &escalationpolicy.EscalationPolicyRuleEscalationRuleAssignmentStrategy {
 	Type: *string,
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.escalationPolicy.EscalationPolicyRuleTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/escalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/escalationpolicy"
 
 &escalationpolicy.EscalationPolicyRuleTarget {
 	Id: *string,
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.escalationPolicy.EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/escalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/escalationpolicy"
 
 escalationpolicy.NewEscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EscalationPolicyRuleEscalationRuleAssignmentStrategyOutputReference
 ```
@@ -1456,7 +1456,7 @@ func InternalValue() EscalationPolicyRuleEscalationRuleAssignmentStrategy
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.escalationPolicy.EscalationPolicyRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/escalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/escalationpolicy"
 
 escalationpolicy.NewEscalationPolicyRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EscalationPolicyRuleList
 ```
@@ -1616,7 +1616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.escalationPolicy.EscalationPolicyRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/escalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/escalationpolicy"
 
 escalationpolicy.NewEscalationPolicyRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EscalationPolicyRuleOutputReference
 ```
@@ -1993,7 +1993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.escalationPolicy.EscalationPolicyRuleTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/escalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/escalationpolicy"
 
 escalationpolicy.NewEscalationPolicyRuleTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EscalationPolicyRuleTargetList
 ```
@@ -2153,7 +2153,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.escalationPolicy.EscalationPolicyRuleTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/escalationpolicy"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/escalationpolicy"
 
 escalationpolicy.NewEscalationPolicyRuleTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EscalationPolicyRuleTargetOutputReference
 ```
