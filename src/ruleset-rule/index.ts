@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.1/docs/resources/ruleset_rule
 // generated from terraform resource schema
 
