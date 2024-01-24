@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.1/docs/resources/business_service
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.0/docs/resources/business_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +8,36 @@ import * as cdktf from 'cdktf';
 
 export interface BusinessServiceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.1/docs/resources/business_service#description BusinessService#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.0/docs/resources/business_service#description BusinessService#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.1/docs/resources/business_service#id BusinessService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.0/docs/resources/business_service#id BusinessService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.1/docs/resources/business_service#name BusinessService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.0/docs/resources/business_service#name BusinessService#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.1/docs/resources/business_service#point_of_contact BusinessService#point_of_contact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.0/docs/resources/business_service#point_of_contact BusinessService#point_of_contact}
   */
   readonly pointOfContact?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.1/docs/resources/business_service#team BusinessService#team}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.0/docs/resources/business_service#team BusinessService#team}
   */
   readonly team?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.1/docs/resources/business_service#type BusinessService#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.0/docs/resources/business_service#type BusinessService#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.1/docs/resources/business_service pagerduty_business_service}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.0/docs/resources/business_service pagerduty_business_service}
 */
 export class BusinessService extends cdktf.TerraformResource {
 
@@ -58,7 +53,7 @@ export class BusinessService extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BusinessService resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BusinessService to import
-  * @param importFromId The id of the existing BusinessService that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.1/docs/resources/business_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BusinessService that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.0/docs/resources/business_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BusinessService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -70,7 +65,7 @@ export class BusinessService extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.4.1/docs/resources/business_service pagerduty_business_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.0/docs/resources/business_service pagerduty_business_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,7 +76,7 @@ export class BusinessService extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_business_service',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.4.1',
+        providerVersion: '3.5.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
