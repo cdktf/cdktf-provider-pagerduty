@@ -4,7 +4,7 @@
 
 ### Tag <a name="Tag" id="@cdktf/provider-pagerduty.tag.Tag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.0/docs/resources/tag pagerduty_tag}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.1/docs/resources/tag pagerduty_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.tag.Tag.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the Tag to import.
 
 The id of the existing Tag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.0/docs/resources/tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.1/docs/resources/tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -756,8 +756,8 @@ const tagConfig: tag.TagConfig = { ... }
 | <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.label">label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.0/docs/resources/tag#label Tag#label}. |
-| <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.0/docs/resources/tag#id Tag#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.label">label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.1/docs/resources/tag#label Tag#label}. |
+| <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.1/docs/resources/tag#id Tag#id}. |
 
 ---
 
@@ -839,7 +839,7 @@ public readonly label: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.0/docs/resources/tag#label Tag#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.1/docs/resources/tag#label Tag#label}.
 
 ---
 
@@ -851,7 +851,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.0/docs/resources/tag#id Tag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.1/docs/resources/tag#id Tag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
