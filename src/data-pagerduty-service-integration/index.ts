@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.2/docs/data-sources/service_integration
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/data-sources/service_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyServiceIntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.2/docs/data-sources/service_integration#id DataPagerdutyServiceIntegration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/data-sources/service_integration#id DataPagerdutyServiceIntegration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,17 +22,17 @@ export interface DataPagerdutyServiceIntegrationConfig extends cdktf.TerraformMe
   /**
   * examples 'Amazon CloudWatch', 'New Relic
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.2/docs/data-sources/service_integration#integration_summary DataPagerdutyServiceIntegration#integration_summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/data-sources/service_integration#integration_summary DataPagerdutyServiceIntegration#integration_summary}
   */
   readonly integrationSummary: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.2/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}
   */
   readonly serviceName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.2/docs/data-sources/service_integration pagerduty_service_integration}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/data-sources/service_integration pagerduty_service_integration}
 */
 export class DataPagerdutyServiceIntegration extends cdktf.TerraformDataSource {
 
@@ -48,7 +48,7 @@ export class DataPagerdutyServiceIntegration extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataPagerdutyServiceIntegration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyServiceIntegration to import
-  * @param importFromId The id of the existing DataPagerdutyServiceIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.2/docs/data-sources/service_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyServiceIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/data-sources/service_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyServiceIntegration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -60,7 +60,7 @@ export class DataPagerdutyServiceIntegration extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.5.2/docs/data-sources/service_integration pagerduty_service_integration} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/data-sources/service_integration pagerduty_service_integration} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,7 @@ export class DataPagerdutyServiceIntegration extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_service_integration',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.5.2',
+        providerVersion: '3.6.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
