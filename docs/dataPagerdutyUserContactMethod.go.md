@@ -4,12 +4,12 @@
 
 ### DataPagerdutyUserContactMethod <a name="DataPagerdutyUserContactMethod" id="@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethod"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/data-sources/user_contact_method pagerduty_user_contact_method}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/data-sources/user_contact_method pagerduty_user_contact_method}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyusercontactmethod"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyusercontactmethod"
 
 datapagerdutyusercontactmethod.NewDataPagerdutyUserContactMethod(scope Construct, id *string, config DataPagerdutyUserContactMethodConfig) DataPagerdutyUserContactMethod
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethod.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyusercontactmethod"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyusercontactmethod"
 
 datapagerdutyusercontactmethod.DataPagerdutyUserContactMethod_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethod.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyusercontactmethod"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyusercontactmethod"
 
 datapagerdutyusercontactmethod.DataPagerdutyUserContactMethod_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datapagerdutyusercontactmethod.DataPagerdutyUserContactMethod_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethod.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyusercontactmethod"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyusercontactmethod"
 
 datapagerdutyusercontactmethod.DataPagerdutyUserContactMethod_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datapagerdutyusercontactmethod.DataPagerdutyUserContactMethod_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethod.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyusercontactmethod"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyusercontactmethod"
 
 datapagerdutyusercontactmethod.DataPagerdutyUserContactMethod_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataPagerdutyUserContactMe
 
 The id of the existing DataPagerdutyUserContactMethod that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/data-sources/user_contact_method#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/data-sources/user_contact_method#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethodConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyusercontactmethod"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyusercontactmethod"
 
 &datapagerdutyusercontactmethod.DataPagerdutyUserContactMethodConfig {
 	Connection: interface{},
@@ -734,8 +734,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerduty
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethodConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethodConfig.property.label">Label</a></code> | <code>*string</code> | The name of the contact method to find in the PagerDuty API. |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethodConfig.property.type">Type</a></code> | <code>*string</code> | The type of the contact method. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethodConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/data-sources/user_contact_method#user_id DataPagerdutyUserContactMethod#user_id}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethodConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/data-sources/user_contact_method#id DataPagerdutyUserContactMethod#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethodConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/data-sources/user_contact_method#user_id DataPagerdutyUserContactMethod#user_id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethodConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/data-sources/user_contact_method#id DataPagerdutyUserContactMethod#id}. |
 
 ---
 
@@ -819,7 +819,7 @@ Label *string
 
 The name of the contact method to find in the PagerDuty API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/data-sources/user_contact_method#label DataPagerdutyUserContactMethod#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/data-sources/user_contact_method#label DataPagerdutyUserContactMethod#label}
 
 ---
 
@@ -833,7 +833,7 @@ Type *string
 
 The type of the contact method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/data-sources/user_contact_method#type DataPagerdutyUserContactMethod#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/data-sources/user_contact_method#type DataPagerdutyUserContactMethod#type}
 
 ---
 
@@ -845,7 +845,7 @@ UserId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/data-sources/user_contact_method#user_id DataPagerdutyUserContactMethod#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/data-sources/user_contact_method#user_id DataPagerdutyUserContactMethod#user_id}.
 
 ---
 
@@ -857,7 +857,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/data-sources/user_contact_method#id DataPagerdutyUserContactMethod#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/data-sources/user_contact_method#id DataPagerdutyUserContactMethod#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

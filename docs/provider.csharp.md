@@ -4,7 +4,7 @@
 
 ### PagerdutyProvider <a name="PagerdutyProvider" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs pagerduty}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs pagerduty}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer"></a>
 
@@ -282,7 +282,7 @@ The construct id used in the generated config for the PagerdutyProvider to impor
 
 The id of the existing PagerdutyProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -588,12 +588,12 @@ new PagerdutyProviderConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.alias">Alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.apiUrlOverride">ApiUrlOverride</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#api_url_override PagerdutyProvider#api_url_override}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.serviceRegion">ServiceRegion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#service_region PagerdutyProvider#service_region}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.skipCredentialsValidation">SkipCredentialsValidation</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.token">Token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#token PagerdutyProvider#token}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.apiUrlOverride">ApiUrlOverride</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#api_url_override PagerdutyProvider#api_url_override}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.serviceRegion">ServiceRegion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#service_region PagerdutyProvider#service_region}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.skipCredentialsValidation">SkipCredentialsValidation</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.token">Token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#token PagerdutyProvider#token}. |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.useAppOauthScopedToken">UseAppOauthScopedToken</a></code> | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken">PagerdutyProviderUseAppOauthScopedToken</a></code> | use_app_oauth_scoped_token block. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.userToken">UserToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#user_token PagerdutyProvider#user_token}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.userToken">UserToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#user_token PagerdutyProvider#user_token}. |
 
 ---
 
@@ -607,7 +607,7 @@ public string Alias { get; set; }
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#alias PagerdutyProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#alias PagerdutyProvider#alias}
 
 ---
 
@@ -619,7 +619,7 @@ public string ApiUrlOverride { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#api_url_override PagerdutyProvider#api_url_override}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#api_url_override PagerdutyProvider#api_url_override}.
 
 ---
 
@@ -631,7 +631,7 @@ public string ServiceRegion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#service_region PagerdutyProvider#service_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#service_region PagerdutyProvider#service_region}.
 
 ---
 
@@ -643,7 +643,7 @@ public object SkipCredentialsValidation { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}.
 
 ---
 
@@ -655,7 +655,7 @@ public string Token { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#token PagerdutyProvider#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#token PagerdutyProvider#token}.
 
 ---
 
@@ -669,7 +669,7 @@ public PagerdutyProviderUseAppOauthScopedToken UseAppOauthScopedToken { get; set
 
 use_app_oauth_scoped_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#use_app_oauth_scoped_token PagerdutyProvider#use_app_oauth_scoped_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#use_app_oauth_scoped_token PagerdutyProvider#use_app_oauth_scoped_token}
 
 ---
 
@@ -681,7 +681,7 @@ public string UserToken { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#user_token PagerdutyProvider#user_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#user_token PagerdutyProvider#user_token}.
 
 ---
 
@@ -693,9 +693,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new PagerdutyProviderUseAppOauthScopedToken {
-    string PdClientId,
-    string PdClientSecret,
-    string PdSubdomain
+    string PdClientId = null,
+    string PdClientSecret = null,
+    string PdSubdomain = null
 };
 ```
 
@@ -703,13 +703,13 @@ new PagerdutyProviderUseAppOauthScopedToken {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdClientId">PdClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#pd_client_id PagerdutyProvider#pd_client_id}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdClientSecret">PdClientSecret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#pd_client_secret PagerdutyProvider#pd_client_secret}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdSubdomain">PdSubdomain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#pd_subdomain PagerdutyProvider#pd_subdomain}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdClientId">PdClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#pd_client_id PagerdutyProvider#pd_client_id}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdClientSecret">PdClientSecret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#pd_client_secret PagerdutyProvider#pd_client_secret}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdSubdomain">PdSubdomain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#pd_subdomain PagerdutyProvider#pd_subdomain}. |
 
 ---
 
-##### `PdClientId`<sup>Required</sup> <a name="PdClientId" id="@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdClientId"></a>
+##### `PdClientId`<sup>Optional</sup> <a name="PdClientId" id="@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdClientId"></a>
 
 ```csharp
 public string PdClientId { get; set; }
@@ -717,11 +717,11 @@ public string PdClientId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#pd_client_id PagerdutyProvider#pd_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#pd_client_id PagerdutyProvider#pd_client_id}.
 
 ---
 
-##### `PdClientSecret`<sup>Required</sup> <a name="PdClientSecret" id="@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdClientSecret"></a>
+##### `PdClientSecret`<sup>Optional</sup> <a name="PdClientSecret" id="@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdClientSecret"></a>
 
 ```csharp
 public string PdClientSecret { get; set; }
@@ -729,11 +729,11 @@ public string PdClientSecret { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#pd_client_secret PagerdutyProvider#pd_client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#pd_client_secret PagerdutyProvider#pd_client_secret}.
 
 ---
 
-##### `PdSubdomain`<sup>Required</sup> <a name="PdSubdomain" id="@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdSubdomain"></a>
+##### `PdSubdomain`<sup>Optional</sup> <a name="PdSubdomain" id="@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken.property.pdSubdomain"></a>
 
 ```csharp
 public string PdSubdomain { get; set; }
@@ -741,7 +741,7 @@ public string PdSubdomain { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs#pd_subdomain PagerdutyProvider#pd_subdomain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs#pd_subdomain PagerdutyProvider#pd_subdomain}.
 
 ---
 

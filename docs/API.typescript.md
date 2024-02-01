@@ -29,6 +29,7 @@ The following submodules are available:
 - [dataPagerdutySchedule](./dataPagerdutySchedule.typescript.md)
 - [dataPagerdutyService](./dataPagerdutyService.typescript.md)
 - [dataPagerdutyServiceIntegration](./dataPagerdutyServiceIntegration.typescript.md)
+- [dataPagerdutyStandards](./dataPagerdutyStandards.typescript.md)
 - [dataPagerdutyTag](./dataPagerdutyTag.typescript.md)
 - [dataPagerdutyTeam](./dataPagerdutyTeam.typescript.md)
 - [dataPagerdutyTeamMembers](./dataPagerdutyTeamMembers.typescript.md)
