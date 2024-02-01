@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/extension
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/resources/extension
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,40 @@ import * as cdktf from 'cdktf';
 
 export interface ExtensionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/extension#config Extension#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/resources/extension#config Extension#config}
   */
   readonly config?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/extension#endpoint_url Extension#endpoint_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/resources/extension#endpoint_url Extension#endpoint_url}
   */
   readonly endpointUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/extension#extension_objects Extension#extension_objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/resources/extension#extension_objects Extension#extension_objects}
   */
   readonly extensionObjects: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/extension#extension_schema Extension#extension_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/resources/extension#extension_schema Extension#extension_schema}
   */
   readonly extensionSchema: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/extension#id Extension#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/resources/extension#id Extension#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/extension#name Extension#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/resources/extension#name Extension#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/extension#type Extension#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/resources/extension#type Extension#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/extension pagerduty_extension}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/resources/extension pagerduty_extension}
 */
 export class Extension extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class Extension extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Extension resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Extension to import
-  * @param importFromId The id of the existing Extension that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/extension#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Extension that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/resources/extension#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Extension to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class Extension extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.6.0/docs/resources/extension pagerduty_extension} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.7.0/docs/resources/extension pagerduty_extension} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class Extension extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_extension',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.6.0',
+        providerVersion: '3.7.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

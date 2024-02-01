@@ -61,6 +61,7 @@ Object.defineProperty(exports, 'dataPagerdutyRuleset', { get: function () { retu
 Object.defineProperty(exports, 'dataPagerdutySchedule', { get: function () { return require('./data-pagerduty-schedule'); } });
 Object.defineProperty(exports, 'dataPagerdutyService', { get: function () { return require('./data-pagerduty-service'); } });
 Object.defineProperty(exports, 'dataPagerdutyServiceIntegration', { get: function () { return require('./data-pagerduty-service-integration'); } });
+Object.defineProperty(exports, 'dataPagerdutyStandards', { get: function () { return require('./data-pagerduty-standards'); } });
 Object.defineProperty(exports, 'dataPagerdutyTag', { get: function () { return require('./data-pagerduty-tag'); } });
 Object.defineProperty(exports, 'dataPagerdutyTeam', { get: function () { return require('./data-pagerduty-team'); } });
 Object.defineProperty(exports, 'dataPagerdutyTeamMembers', { get: function () { return require('./data-pagerduty-team-members'); } });

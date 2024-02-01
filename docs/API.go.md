@@ -29,6 +29,7 @@ The following submodules are available:
 - [dataPagerdutySchedule](./dataPagerdutySchedule.go.md)
 - [dataPagerdutyService](./dataPagerdutyService.go.md)
 - [dataPagerdutyServiceIntegration](./dataPagerdutyServiceIntegration.go.md)
+- [dataPagerdutyStandards](./dataPagerdutyStandards.go.md)
 - [dataPagerdutyTag](./dataPagerdutyTag.go.md)
 - [dataPagerdutyTeam](./dataPagerdutyTeam.go.md)
 - [dataPagerdutyTeamMembers](./dataPagerdutyTeamMembers.go.md)

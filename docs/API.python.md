@@ -29,6 +29,7 @@ The following submodules are available:
 - [dataPagerdutySchedule](./dataPagerdutySchedule.python.md)
 - [dataPagerdutyService](./dataPagerdutyService.python.md)
 - [dataPagerdutyServiceIntegration](./dataPagerdutyServiceIntegration.python.md)
+- [dataPagerdutyStandards](./dataPagerdutyStandards.python.md)
 - [dataPagerdutyTag](./dataPagerdutyTag.python.md)
 - [dataPagerdutyTeam](./dataPagerdutyTeam.python.md)
 - [dataPagerdutyTeamMembers](./dataPagerdutyTeamMembers.python.md)
