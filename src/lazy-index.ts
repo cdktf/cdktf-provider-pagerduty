@@ -62,6 +62,8 @@ Object.defineProperty(exports, 'dataPagerdutySchedule', { get: function () { ret
 Object.defineProperty(exports, 'dataPagerdutyService', { get: function () { return require('./data-pagerduty-service'); } });
 Object.defineProperty(exports, 'dataPagerdutyServiceIntegration', { get: function () { return require('./data-pagerduty-service-integration'); } });
 Object.defineProperty(exports, 'dataPagerdutyStandards', { get: function () { return require('./data-pagerduty-standards'); } });
+Object.defineProperty(exports, 'dataPagerdutyStandardsResourceScores', { get: function () { return require('./data-pagerduty-standards-resource-scores'); } });
+Object.defineProperty(exports, 'dataPagerdutyStandardsResourcesScores', { get: function () { return require('./data-pagerduty-standards-resources-scores'); } });
 Object.defineProperty(exports, 'dataPagerdutyTag', { get: function () { return require('./data-pagerduty-tag'); } });
 Object.defineProperty(exports, 'dataPagerdutyTeam', { get: function () { return require('./data-pagerduty-team'); } });
 Object.defineProperty(exports, 'dataPagerdutyTeamMembers', { get: function () { return require('./data-pagerduty-team-members'); } });

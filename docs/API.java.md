@@ -30,6 +30,8 @@ The following submodules are available:
 - [dataPagerdutyService](./dataPagerdutyService.java.md)
 - [dataPagerdutyServiceIntegration](./dataPagerdutyServiceIntegration.java.md)
 - [dataPagerdutyStandards](./dataPagerdutyStandards.java.md)
+- [dataPagerdutyStandardsResourceScores](./dataPagerdutyStandardsResourceScores.java.md)
+- [dataPagerdutyStandardsResourcesScores](./dataPagerdutyStandardsResourcesScores.java.md)
 - [dataPagerdutyTag](./dataPagerdutyTag.java.md)
 - [dataPagerdutyTeam](./dataPagerdutyTeam.java.md)
 - [dataPagerdutyTeamMembers](./dataPagerdutyTeamMembers.java.md)

@@ -62,6 +62,8 @@ export * as dataPagerdutySchedule from './data-pagerduty-schedule';
 export * as dataPagerdutyService from './data-pagerduty-service';
 export * as dataPagerdutyServiceIntegration from './data-pagerduty-service-integration';
 export * as dataPagerdutyStandards from './data-pagerduty-standards';
+export * as dataPagerdutyStandardsResourceScores from './data-pagerduty-standards-resource-scores';
+export * as dataPagerdutyStandardsResourcesScores from './data-pagerduty-standards-resources-scores';
 export * as dataPagerdutyTag from './data-pagerduty-tag';
 export * as dataPagerdutyTeam from './data-pagerduty-team';
 export * as dataPagerdutyTeamMembers from './data-pagerduty-team-members';

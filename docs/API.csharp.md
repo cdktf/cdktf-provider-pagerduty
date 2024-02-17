@@ -30,6 +30,8 @@ The following submodules are available:
 - [dataPagerdutyService](./dataPagerdutyService.csharp.md)
 - [dataPagerdutyServiceIntegration](./dataPagerdutyServiceIntegration.csharp.md)
 - [dataPagerdutyStandards](./dataPagerdutyStandards.csharp.md)
+- [dataPagerdutyStandardsResourceScores](./dataPagerdutyStandardsResourceScores.csharp.md)
+- [dataPagerdutyStandardsResourcesScores](./dataPagerdutyStandardsResourcesScores.csharp.md)
 - [dataPagerdutyTag](./dataPagerdutyTag.csharp.md)
 - [dataPagerdutyTeam](./dataPagerdutyTeam.csharp.md)
 - [dataPagerdutyTeamMembers](./dataPagerdutyTeamMembers.csharp.md)

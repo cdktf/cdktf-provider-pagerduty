@@ -30,6 +30,8 @@ The following submodules are available:
 - [dataPagerdutyService](./dataPagerdutyService.go.md)
 - [dataPagerdutyServiceIntegration](./dataPagerdutyServiceIntegration.go.md)
 - [dataPagerdutyStandards](./dataPagerdutyStandards.go.md)
+- [dataPagerdutyStandardsResourceScores](./dataPagerdutyStandardsResourceScores.go.md)
+- [dataPagerdutyStandardsResourcesScores](./dataPagerdutyStandardsResourcesScores.go.md)
 - [dataPagerdutyTag](./dataPagerdutyTag.go.md)
 - [dataPagerdutyTeam](./dataPagerdutyTeam.go.md)
 - [dataPagerdutyTeamMembers](./dataPagerdutyTeamMembers.go.md)
