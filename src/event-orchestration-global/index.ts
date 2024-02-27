@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface EventOrchestrationGlobalConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#event_orchestration EventOrchestrationGlobal#event_orchestration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#event_orchestration EventOrchestrationGlobal#event_orchestration}
   */
   readonly eventOrchestration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,23 +26,23 @@ export interface EventOrchestrationGlobalConfig extends cdktf.TerraformMetaArgum
   /**
   * catch_all block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#catch_all EventOrchestrationGlobal#catch_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#catch_all EventOrchestrationGlobal#catch_all}
   */
   readonly catchAll: EventOrchestrationGlobalCatchAll;
   /**
   * set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#set EventOrchestrationGlobal#set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#set EventOrchestrationGlobal#set}
   */
   readonly set: EventOrchestrationGlobalSet[] | cdktf.IResolvable;
 }
 export interface EventOrchestrationGlobalCatchAllActionsAutomationActionHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
   */
   readonly value: string;
 }
@@ -181,11 +181,11 @@ export class EventOrchestrationGlobalCatchAllActionsAutomationActionHeaderList e
 }
 export interface EventOrchestrationGlobalCatchAllActionsAutomationActionParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
   */
   readonly value: string;
 }
@@ -324,27 +324,27 @@ export class EventOrchestrationGlobalCatchAllActionsAutomationActionParameterLis
 }
 export interface EventOrchestrationGlobalCatchAllActionsAutomationAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#auto_send EventOrchestrationGlobal#auto_send}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#auto_send EventOrchestrationGlobal#auto_send}
   */
   readonly autoSend?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#url EventOrchestrationGlobal#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#url EventOrchestrationGlobal#url}
   */
   readonly url: string;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#header EventOrchestrationGlobal#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#header EventOrchestrationGlobal#header}
   */
   readonly header?: EventOrchestrationGlobalCatchAllActionsAutomationActionHeader[] | cdktf.IResolvable;
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#parameter EventOrchestrationGlobal#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#parameter EventOrchestrationGlobal#parameter}
   */
   readonly parameter?: EventOrchestrationGlobalCatchAllActionsAutomationActionParameter[] | cdktf.IResolvable;
 }
@@ -538,19 +538,19 @@ export class EventOrchestrationGlobalCatchAllActionsAutomationActionOutputRefere
 }
 export interface EventOrchestrationGlobalCatchAllActionsExtraction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}
   */
   readonly regex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}
   */
   readonly target: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}
   */
   readonly template?: string;
 }
@@ -748,21 +748,167 @@ export class EventOrchestrationGlobalCatchAllActionsExtractionList extends cdktf
     return new EventOrchestrationGlobalCatchAllActionsExtractionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdate {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
+  */
+  readonly value: string;
+}
+
+export function eventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdateToTerraform(struct?: EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function eventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdateToHclTerraform(struct?: EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdate | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdate | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._value = value.value;
+    }
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdateList extends cdktf.ComplexList {
+  public internalValue? : EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdate[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdateOutputReference {
+    return new EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdateOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EventOrchestrationGlobalCatchAllActionsVariable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#path EventOrchestrationGlobal#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#path EventOrchestrationGlobal#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#type EventOrchestrationGlobal#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#type EventOrchestrationGlobal#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
   */
   readonly value: string;
 }
@@ -953,53 +1099,59 @@ export class EventOrchestrationGlobalCatchAllActionsVariableList extends cdktf.C
 }
 export interface EventOrchestrationGlobalCatchAllActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#annotate EventOrchestrationGlobal#annotate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#annotate EventOrchestrationGlobal#annotate}
   */
   readonly annotate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#drop_event EventOrchestrationGlobal#drop_event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#drop_event EventOrchestrationGlobal#drop_event}
   */
   readonly dropEvent?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#event_action EventOrchestrationGlobal#event_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#event_action EventOrchestrationGlobal#event_action}
   */
   readonly eventAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#priority EventOrchestrationGlobal#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#priority EventOrchestrationGlobal#priority}
   */
   readonly priority?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#route_to EventOrchestrationGlobal#route_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#route_to EventOrchestrationGlobal#route_to}
   */
   readonly routeTo?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#severity EventOrchestrationGlobal#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#severity EventOrchestrationGlobal#severity}
   */
   readonly severity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#suppress EventOrchestrationGlobal#suppress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#suppress EventOrchestrationGlobal#suppress}
   */
   readonly suppress?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#suspend EventOrchestrationGlobal#suspend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#suspend EventOrchestrationGlobal#suspend}
   */
   readonly suspend?: number;
   /**
   * automation_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#automation_action EventOrchestrationGlobal#automation_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#automation_action EventOrchestrationGlobal#automation_action}
   */
   readonly automationAction?: EventOrchestrationGlobalCatchAllActionsAutomationAction;
   /**
   * extraction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#extraction EventOrchestrationGlobal#extraction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#extraction EventOrchestrationGlobal#extraction}
   */
   readonly extraction?: EventOrchestrationGlobalCatchAllActionsExtraction[] | cdktf.IResolvable;
   /**
+  * incident_custom_field_update block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#incident_custom_field_update EventOrchestrationGlobal#incident_custom_field_update}
+  */
+  readonly incidentCustomFieldUpdate?: EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdate[] | cdktf.IResolvable;
+  /**
   * variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#variable EventOrchestrationGlobal#variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#variable EventOrchestrationGlobal#variable}
   */
   readonly variable?: EventOrchestrationGlobalCatchAllActionsVariable[] | cdktf.IResolvable;
 }
@@ -1020,6 +1172,7 @@ export function eventOrchestrationGlobalCatchAllActionsToTerraform(struct?: Even
     suspend: cdktf.numberToTerraform(struct!.suspend),
     automation_action: eventOrchestrationGlobalCatchAllActionsAutomationActionToTerraform(struct!.automationAction),
     extraction: cdktf.listMapper(eventOrchestrationGlobalCatchAllActionsExtractionToTerraform, true)(struct!.extraction),
+    incident_custom_field_update: cdktf.listMapper(eventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdateToTerraform, true)(struct!.incidentCustomFieldUpdate),
     variable: cdktf.listMapper(eventOrchestrationGlobalCatchAllActionsVariableToTerraform, true)(struct!.variable),
   }
 }
@@ -1091,6 +1244,12 @@ export function eventOrchestrationGlobalCatchAllActionsToHclTerraform(struct?: E
       type: "list",
       storageClassType: "EventOrchestrationGlobalCatchAllActionsExtractionList",
     },
+    incident_custom_field_update: {
+      value: cdktf.listMapperHcl(eventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdateToHclTerraform, true)(struct!.incidentCustomFieldUpdate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdateList",
+    },
     variable: {
       value: cdktf.listMapperHcl(eventOrchestrationGlobalCatchAllActionsVariableToHclTerraform, true)(struct!.variable),
       isBlock: true,
@@ -1157,6 +1316,10 @@ export class EventOrchestrationGlobalCatchAllActionsOutputReference extends cdkt
       hasAnyValues = true;
       internalValueResult.extraction = this._extraction?.internalValue;
     }
+    if (this._incidentCustomFieldUpdate?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.incidentCustomFieldUpdate = this._incidentCustomFieldUpdate?.internalValue;
+    }
     if (this._variable?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.variable = this._variable?.internalValue;
@@ -1177,6 +1340,7 @@ export class EventOrchestrationGlobalCatchAllActionsOutputReference extends cdkt
       this._suspend = undefined;
       this._automationAction.internalValue = undefined;
       this._extraction.internalValue = undefined;
+      this._incidentCustomFieldUpdate.internalValue = undefined;
       this._variable.internalValue = undefined;
     }
     else {
@@ -1191,6 +1355,7 @@ export class EventOrchestrationGlobalCatchAllActionsOutputReference extends cdkt
       this._suspend = value.suspend;
       this._automationAction.internalValue = value.automationAction;
       this._extraction.internalValue = value.extraction;
+      this._incidentCustomFieldUpdate.internalValue = value.incidentCustomFieldUpdate;
       this._variable.internalValue = value.variable;
     }
   }
@@ -1355,6 +1520,22 @@ export class EventOrchestrationGlobalCatchAllActionsOutputReference extends cdkt
     return this._extraction.internalValue;
   }
 
+  // incident_custom_field_update - computed: false, optional: true, required: false
+  private _incidentCustomFieldUpdate = new EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdateList(this, "incident_custom_field_update", false);
+  public get incidentCustomFieldUpdate() {
+    return this._incidentCustomFieldUpdate;
+  }
+  public putIncidentCustomFieldUpdate(value: EventOrchestrationGlobalCatchAllActionsIncidentCustomFieldUpdate[] | cdktf.IResolvable) {
+    this._incidentCustomFieldUpdate.internalValue = value;
+  }
+  public resetIncidentCustomFieldUpdate() {
+    this._incidentCustomFieldUpdate.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get incidentCustomFieldUpdateInput() {
+    return this._incidentCustomFieldUpdate.internalValue;
+  }
+
   // variable - computed: false, optional: true, required: false
   private _variable = new EventOrchestrationGlobalCatchAllActionsVariableList(this, "variable", false);
   public get variable() {
@@ -1375,7 +1556,7 @@ export interface EventOrchestrationGlobalCatchAll {
   /**
   * actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#actions EventOrchestrationGlobal#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#actions EventOrchestrationGlobal#actions}
   */
   readonly actions: EventOrchestrationGlobalCatchAllActions;
 }
@@ -1456,11 +1637,11 @@ export class EventOrchestrationGlobalCatchAllOutputReference extends cdktf.Compl
 }
 export interface EventOrchestrationGlobalSetRuleActionsAutomationActionHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
   */
   readonly value: string;
 }
@@ -1599,11 +1780,11 @@ export class EventOrchestrationGlobalSetRuleActionsAutomationActionHeaderList ex
 }
 export interface EventOrchestrationGlobalSetRuleActionsAutomationActionParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#key EventOrchestrationGlobal#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
   */
   readonly value: string;
 }
@@ -1742,27 +1923,27 @@ export class EventOrchestrationGlobalSetRuleActionsAutomationActionParameterList
 }
 export interface EventOrchestrationGlobalSetRuleActionsAutomationAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#auto_send EventOrchestrationGlobal#auto_send}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#auto_send EventOrchestrationGlobal#auto_send}
   */
   readonly autoSend?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#url EventOrchestrationGlobal#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#url EventOrchestrationGlobal#url}
   */
   readonly url: string;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#header EventOrchestrationGlobal#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#header EventOrchestrationGlobal#header}
   */
   readonly header?: EventOrchestrationGlobalSetRuleActionsAutomationActionHeader[] | cdktf.IResolvable;
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#parameter EventOrchestrationGlobal#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#parameter EventOrchestrationGlobal#parameter}
   */
   readonly parameter?: EventOrchestrationGlobalSetRuleActionsAutomationActionParameter[] | cdktf.IResolvable;
 }
@@ -1956,19 +2137,19 @@ export class EventOrchestrationGlobalSetRuleActionsAutomationActionOutputReferen
 }
 export interface EventOrchestrationGlobalSetRuleActionsExtraction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#regex EventOrchestrationGlobal#regex}
   */
   readonly regex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#source EventOrchestrationGlobal#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#target EventOrchestrationGlobal#target}
   */
   readonly target: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#template EventOrchestrationGlobal#template}
   */
   readonly template?: string;
 }
@@ -2166,21 +2347,167 @@ export class EventOrchestrationGlobalSetRuleActionsExtractionList extends cdktf.
     return new EventOrchestrationGlobalSetRuleActionsExtractionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdate {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
+  */
+  readonly value: string;
+}
+
+export function eventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateToTerraform(struct?: EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function eventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateToHclTerraform(struct?: EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdate | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdate | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdate | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._value = value.value;
+    }
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateList extends cdktf.ComplexList {
+  public internalValue? : EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdate[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateOutputReference {
+    return new EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EventOrchestrationGlobalSetRuleActionsVariable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#name EventOrchestrationGlobal#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#path EventOrchestrationGlobal#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#path EventOrchestrationGlobal#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#type EventOrchestrationGlobal#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#type EventOrchestrationGlobal#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#value EventOrchestrationGlobal#value}
   */
   readonly value: string;
 }
@@ -2371,53 +2698,59 @@ export class EventOrchestrationGlobalSetRuleActionsVariableList extends cdktf.Co
 }
 export interface EventOrchestrationGlobalSetRuleActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#annotate EventOrchestrationGlobal#annotate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#annotate EventOrchestrationGlobal#annotate}
   */
   readonly annotate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#drop_event EventOrchestrationGlobal#drop_event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#drop_event EventOrchestrationGlobal#drop_event}
   */
   readonly dropEvent?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#event_action EventOrchestrationGlobal#event_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#event_action EventOrchestrationGlobal#event_action}
   */
   readonly eventAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#priority EventOrchestrationGlobal#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#priority EventOrchestrationGlobal#priority}
   */
   readonly priority?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#route_to EventOrchestrationGlobal#route_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#route_to EventOrchestrationGlobal#route_to}
   */
   readonly routeTo?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#severity EventOrchestrationGlobal#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#severity EventOrchestrationGlobal#severity}
   */
   readonly severity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#suppress EventOrchestrationGlobal#suppress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#suppress EventOrchestrationGlobal#suppress}
   */
   readonly suppress?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#suspend EventOrchestrationGlobal#suspend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#suspend EventOrchestrationGlobal#suspend}
   */
   readonly suspend?: number;
   /**
   * automation_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#automation_action EventOrchestrationGlobal#automation_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#automation_action EventOrchestrationGlobal#automation_action}
   */
   readonly automationAction?: EventOrchestrationGlobalSetRuleActionsAutomationAction;
   /**
   * extraction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#extraction EventOrchestrationGlobal#extraction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#extraction EventOrchestrationGlobal#extraction}
   */
   readonly extraction?: EventOrchestrationGlobalSetRuleActionsExtraction[] | cdktf.IResolvable;
   /**
+  * incident_custom_field_update block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#incident_custom_field_update EventOrchestrationGlobal#incident_custom_field_update}
+  */
+  readonly incidentCustomFieldUpdate?: EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdate[] | cdktf.IResolvable;
+  /**
   * variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#variable EventOrchestrationGlobal#variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#variable EventOrchestrationGlobal#variable}
   */
   readonly variable?: EventOrchestrationGlobalSetRuleActionsVariable[] | cdktf.IResolvable;
 }
@@ -2438,6 +2771,7 @@ export function eventOrchestrationGlobalSetRuleActionsToTerraform(struct?: Event
     suspend: cdktf.numberToTerraform(struct!.suspend),
     automation_action: eventOrchestrationGlobalSetRuleActionsAutomationActionToTerraform(struct!.automationAction),
     extraction: cdktf.listMapper(eventOrchestrationGlobalSetRuleActionsExtractionToTerraform, true)(struct!.extraction),
+    incident_custom_field_update: cdktf.listMapper(eventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateToTerraform, true)(struct!.incidentCustomFieldUpdate),
     variable: cdktf.listMapper(eventOrchestrationGlobalSetRuleActionsVariableToTerraform, true)(struct!.variable),
   }
 }
@@ -2509,6 +2843,12 @@ export function eventOrchestrationGlobalSetRuleActionsToHclTerraform(struct?: Ev
       type: "list",
       storageClassType: "EventOrchestrationGlobalSetRuleActionsExtractionList",
     },
+    incident_custom_field_update: {
+      value: cdktf.listMapperHcl(eventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateToHclTerraform, true)(struct!.incidentCustomFieldUpdate),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateList",
+    },
     variable: {
       value: cdktf.listMapperHcl(eventOrchestrationGlobalSetRuleActionsVariableToHclTerraform, true)(struct!.variable),
       isBlock: true,
@@ -2575,6 +2915,10 @@ export class EventOrchestrationGlobalSetRuleActionsOutputReference extends cdktf
       hasAnyValues = true;
       internalValueResult.extraction = this._extraction?.internalValue;
     }
+    if (this._incidentCustomFieldUpdate?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.incidentCustomFieldUpdate = this._incidentCustomFieldUpdate?.internalValue;
+    }
     if (this._variable?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.variable = this._variable?.internalValue;
@@ -2595,6 +2939,7 @@ export class EventOrchestrationGlobalSetRuleActionsOutputReference extends cdktf
       this._suspend = undefined;
       this._automationAction.internalValue = undefined;
       this._extraction.internalValue = undefined;
+      this._incidentCustomFieldUpdate.internalValue = undefined;
       this._variable.internalValue = undefined;
     }
     else {
@@ -2609,6 +2954,7 @@ export class EventOrchestrationGlobalSetRuleActionsOutputReference extends cdktf
       this._suspend = value.suspend;
       this._automationAction.internalValue = value.automationAction;
       this._extraction.internalValue = value.extraction;
+      this._incidentCustomFieldUpdate.internalValue = value.incidentCustomFieldUpdate;
       this._variable.internalValue = value.variable;
     }
   }
@@ -2773,6 +3119,22 @@ export class EventOrchestrationGlobalSetRuleActionsOutputReference extends cdktf
     return this._extraction.internalValue;
   }
 
+  // incident_custom_field_update - computed: false, optional: true, required: false
+  private _incidentCustomFieldUpdate = new EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdateList(this, "incident_custom_field_update", false);
+  public get incidentCustomFieldUpdate() {
+    return this._incidentCustomFieldUpdate;
+  }
+  public putIncidentCustomFieldUpdate(value: EventOrchestrationGlobalSetRuleActionsIncidentCustomFieldUpdate[] | cdktf.IResolvable) {
+    this._incidentCustomFieldUpdate.internalValue = value;
+  }
+  public resetIncidentCustomFieldUpdate() {
+    this._incidentCustomFieldUpdate.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get incidentCustomFieldUpdateInput() {
+    return this._incidentCustomFieldUpdate.internalValue;
+  }
+
   // variable - computed: false, optional: true, required: false
   private _variable = new EventOrchestrationGlobalSetRuleActionsVariableList(this, "variable", false);
   public get variable() {
@@ -2791,7 +3153,7 @@ export class EventOrchestrationGlobalSetRuleActionsOutputReference extends cdktf
 }
 export interface EventOrchestrationGlobalSetRuleCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#expression EventOrchestrationGlobal#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#expression EventOrchestrationGlobal#expression}
   */
   readonly expression: string;
 }
@@ -2904,23 +3266,23 @@ export class EventOrchestrationGlobalSetRuleConditionList extends cdktf.ComplexL
 }
 export interface EventOrchestrationGlobalSetRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#disabled EventOrchestrationGlobal#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#disabled EventOrchestrationGlobal#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#label EventOrchestrationGlobal#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#label EventOrchestrationGlobal#label}
   */
   readonly label?: string;
   /**
   * actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#actions EventOrchestrationGlobal#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#actions EventOrchestrationGlobal#actions}
   */
   readonly actions: EventOrchestrationGlobalSetRuleActions;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#condition EventOrchestrationGlobal#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#condition EventOrchestrationGlobal#condition}
   */
   readonly condition?: EventOrchestrationGlobalSetRuleCondition[] | cdktf.IResolvable;
 }
@@ -3125,7 +3487,7 @@ export class EventOrchestrationGlobalSetRuleList extends cdktf.ComplexList {
 }
 export interface EventOrchestrationGlobalSet {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#id EventOrchestrationGlobal#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3134,7 +3496,7 @@ export interface EventOrchestrationGlobalSet {
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#rule EventOrchestrationGlobal#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#rule EventOrchestrationGlobal#rule}
   */
   readonly rule?: EventOrchestrationGlobalSetRule[] | cdktf.IResolvable;
 }
@@ -3276,7 +3638,7 @@ export class EventOrchestrationGlobalSetList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global pagerduty_event_orchestration_global}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global pagerduty_event_orchestration_global}
 */
 export class EventOrchestrationGlobal extends cdktf.TerraformResource {
 
@@ -3292,7 +3654,7 @@ export class EventOrchestrationGlobal extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EventOrchestrationGlobal resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventOrchestrationGlobal to import
-  * @param importFromId The id of the existing EventOrchestrationGlobal that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventOrchestrationGlobal that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventOrchestrationGlobal to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3304,7 +3666,7 @@ export class EventOrchestrationGlobal extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.8.1/docs/resources/event_orchestration_global pagerduty_event_orchestration_global} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_orchestration_global pagerduty_event_orchestration_global} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3315,7 +3677,7 @@ export class EventOrchestrationGlobal extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_event_orchestration_global',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.8.1',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
