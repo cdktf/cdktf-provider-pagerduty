@@ -4,7 +4,7 @@
 
 ### DataPagerdutyUsers <a name="DataPagerdutyUsers" id="@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/users pagerduty_users}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/users pagerduty_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsers.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataPagerdutyUsers.DataPagerdutyUsers(
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsers.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsers.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsers.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsers.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/users#id DataPagerdutyUsers#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsers.Initializer.parameter.teamIds">team_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsers.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/users#id DataPagerdutyUsers#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsers.Initializer.parameter.teamIds">team_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/users#id DataPagerdutyUsers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/users#id DataPagerdutyUsers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -117,7 +117,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}.
 
 ---
 
@@ -490,7 +490,7 @@ The construct id used in the generated config for the DataPagerdutyUsers to impo
 
 The id of the existing DataPagerdutyUsers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -749,8 +749,8 @@ dataPagerdutyUsers.DataPagerdutyUsersConfig(
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/users#id DataPagerdutyUsers#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersConfig.property.teamIds">team_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/users#id DataPagerdutyUsers#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersConfig.property.teamIds">team_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}. |
 
 ---
 
@@ -832,7 +832,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/users#id DataPagerdutyUsers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/users#id DataPagerdutyUsers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -847,7 +847,7 @@ team_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/users#team_ids DataPagerdutyUsers#team_ids}.
 
 ---
 
@@ -1278,9 +1278,14 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.email">email</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.jobTitle">job_title</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.role">role</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.timeZone">time_zone</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsers">DataPagerdutyUsersUsers</a></code> | *No description.* |
 
 ---
@@ -1309,6 +1314,16 @@ fqn: str
 
 ---
 
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
 ##### `email`<sup>Required</sup> <a name="email" id="@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.email"></a>
 
 ```python
@@ -1329,10 +1344,50 @@ id: str
 
 ---
 
+##### `job_title`<sup>Required</sup> <a name="job_title" id="@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.jobTitle"></a>
+
+```python
+job_title: str
+```
+
+- *Type:* str
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.name"></a>
 
 ```python
 name: str
+```
+
+- *Type:* str
+
+---
+
+##### `role`<sup>Required</sup> <a name="role" id="@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.role"></a>
+
+```python
+role: str
+```
+
+- *Type:* str
+
+---
+
+##### `time_zone`<sup>Required</sup> <a name="time_zone" id="@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.timeZone"></a>
+
+```python
+time_zone: str
+```
+
+- *Type:* str
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-pagerduty.dataPagerdutyUsers.DataPagerdutyUsersUsersOutputReference.property.type"></a>
+
+```python
+type: str
 ```
 
 - *Type:* str

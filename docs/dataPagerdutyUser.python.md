@@ -4,7 +4,7 @@
 
 ### DataPagerdutyUser <a name="DataPagerdutyUser" id="@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/user pagerduty_user}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/user pagerduty_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataPagerdutyUser.DataPagerdutyUser(
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.Initializer.parameter.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/user#email DataPagerdutyUser#email}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/user#id DataPagerdutyUser#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.Initializer.parameter.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/user#email DataPagerdutyUser#email}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/user#id DataPagerdutyUser#id}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/user#email DataPagerdutyUser#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/user#email DataPagerdutyUser#email}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/user#id DataPagerdutyUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/user#id DataPagerdutyUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -483,7 +483,7 @@ The construct id used in the generated config for the DataPagerdutyUser to impor
 
 The id of the existing DataPagerdutyUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -511,7 +511,11 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.property.jobTitle">job_title</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.property.role">role</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.property.timeZone">time_zone</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.property.emailInput">email_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.property.email">email</a></code> | <code>str</code> | *No description.* |
@@ -641,10 +645,50 @@ provider: TerraformProvider
 
 ---
 
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `job_title`<sup>Required</sup> <a name="job_title" id="@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.property.jobTitle"></a>
+
+```python
+job_title: str
+```
+
+- *Type:* str
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.property.name"></a>
 
 ```python
 name: str
+```
+
+- *Type:* str
+
+---
+
+##### `role`<sup>Required</sup> <a name="role" id="@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.property.role"></a>
+
+```python
+role: str
+```
+
+- *Type:* str
+
+---
+
+##### `time_zone`<sup>Required</sup> <a name="time_zone" id="@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUser.property.timeZone"></a>
+
+```python
+time_zone: str
 ```
 
 - *Type:* str
@@ -742,8 +786,8 @@ dataPagerdutyUser.DataPagerdutyUserConfig(
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUserConfig.property.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/user#email DataPagerdutyUser#email}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/user#id DataPagerdutyUser#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUserConfig.property.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/user#email DataPagerdutyUser#email}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyUser.DataPagerdutyUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/user#id DataPagerdutyUser#id}. |
 
 ---
 
@@ -825,7 +869,7 @@ email: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/user#email DataPagerdutyUser#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/user#email DataPagerdutyUser#email}.
 
 ---
 
@@ -837,7 +881,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/user#id DataPagerdutyUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/user#id DataPagerdutyUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/automation_actions_action
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/automation_actions_action
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyAutomationActionsActionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/automation_actions_action#action_classification DataPagerdutyAutomationActionsAction#action_classification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/automation_actions_action#action_classification DataPagerdutyAutomationActionsAction#action_classification}
   */
   readonly actionClassification?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/automation_actions_action#creation_time DataPagerdutyAutomationActionsAction#creation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/automation_actions_action#creation_time DataPagerdutyAutomationActionsAction#creation_time}
   */
   readonly creationTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/automation_actions_action#description DataPagerdutyAutomationActionsAction#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/automation_actions_action#description DataPagerdutyAutomationActionsAction#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/automation_actions_action#id DataPagerdutyAutomationActionsAction#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/automation_actions_action#id DataPagerdutyAutomationActionsAction#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/automation_actions_action#modify_time DataPagerdutyAutomationActionsAction#modify_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/automation_actions_action#modify_time DataPagerdutyAutomationActionsAction#modify_time}
   */
   readonly modifyTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/automation_actions_action#runner_id DataPagerdutyAutomationActionsAction#runner_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/automation_actions_action#runner_id DataPagerdutyAutomationActionsAction#runner_id}
   */
   readonly runnerId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/automation_actions_action#runner_type DataPagerdutyAutomationActionsAction#runner_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/automation_actions_action#runner_type DataPagerdutyAutomationActionsAction#runner_type}
   */
   readonly runnerType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/automation_actions_action#type DataPagerdutyAutomationActionsAction#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/automation_actions_action#type DataPagerdutyAutomationActionsAction#type}
   */
   readonly type?: string;
 }
@@ -145,7 +145,7 @@ export class DataPagerdutyAutomationActionsActionActionDataReferenceList extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/automation_actions_action pagerduty_automation_actions_action}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/automation_actions_action pagerduty_automation_actions_action}
 */
 export class DataPagerdutyAutomationActionsAction extends cdktf.TerraformDataSource {
 
@@ -161,7 +161,7 @@ export class DataPagerdutyAutomationActionsAction extends cdktf.TerraformDataSou
   * Generates CDKTF code for importing a DataPagerdutyAutomationActionsAction resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyAutomationActionsAction to import
-  * @param importFromId The id of the existing DataPagerdutyAutomationActionsAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/automation_actions_action#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyAutomationActionsAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/automation_actions_action#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyAutomationActionsAction to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -173,7 +173,7 @@ export class DataPagerdutyAutomationActionsAction extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/data-sources/automation_actions_action pagerduty_automation_actions_action} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/data-sources/automation_actions_action pagerduty_automation_actions_action} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -184,7 +184,7 @@ export class DataPagerdutyAutomationActionsAction extends cdktf.TerraformDataSou
       terraformResourceType: 'pagerduty_automation_actions_action',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.9.0',
+        providerVersion: '3.10.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

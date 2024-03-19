@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_rule
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/resources/event_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,19 @@ import * as cdktf from 'cdktf';
 
 export interface EventRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_rule#action_json EventRule#action_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/resources/event_rule#action_json EventRule#action_json}
   */
   readonly actionJson: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_rule#advanced_condition_json EventRule#advanced_condition_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/resources/event_rule#advanced_condition_json EventRule#advanced_condition_json}
   */
   readonly advancedConditionJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_rule#condition_json EventRule#condition_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/resources/event_rule#condition_json EventRule#condition_json}
   */
   readonly conditionJson: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_rule#id EventRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/resources/event_rule#id EventRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,7 +34,7 @@ export interface EventRuleConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_rule pagerduty_event_rule}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/resources/event_rule pagerduty_event_rule}
 */
 export class EventRule extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class EventRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EventRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventRule to import
-  * @param importFromId The id of the existing EventRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/resources/event_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class EventRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.9.0/docs/resources/event_rule pagerduty_event_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.0/docs/resources/event_rule pagerduty_event_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class EventRule extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_event_rule',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.9.0',
+        providerVersion: '3.10.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
