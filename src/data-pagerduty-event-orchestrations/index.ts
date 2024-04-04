@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.1/docs/data-sources/event_orchestrations
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/data-sources/event_orchestrations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +13,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyEventOrchestrationsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.1/docs/data-sources/event_orchestrations#id DataPagerdutyEventOrchestrations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/data-sources/event_orchestrations#id DataPagerdutyEventOrchestrations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.1/docs/data-sources/event_orchestrations#name_filter DataPagerdutyEventOrchestrations#name_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/data-sources/event_orchestrations#name_filter DataPagerdutyEventOrchestrations#name_filter}
   */
   readonly nameFilter: string;
 }
@@ -278,7 +278,7 @@ export class DataPagerdutyEventOrchestrationsEventOrchestrationsList extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.1/docs/data-sources/event_orchestrations pagerduty_event_orchestrations}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/data-sources/event_orchestrations pagerduty_event_orchestrations}
 */
 export class DataPagerdutyEventOrchestrations extends cdktf.TerraformDataSource {
 
@@ -294,7 +294,7 @@ export class DataPagerdutyEventOrchestrations extends cdktf.TerraformDataSource 
   * Generates CDKTF code for importing a DataPagerdutyEventOrchestrations resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyEventOrchestrations to import
-  * @param importFromId The id of the existing DataPagerdutyEventOrchestrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.1/docs/data-sources/event_orchestrations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyEventOrchestrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/data-sources/event_orchestrations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyEventOrchestrations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -306,7 +306,7 @@ export class DataPagerdutyEventOrchestrations extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.1/docs/data-sources/event_orchestrations pagerduty_event_orchestrations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/data-sources/event_orchestrations pagerduty_event_orchestrations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -317,7 +317,7 @@ export class DataPagerdutyEventOrchestrations extends cdktf.TerraformDataSource 
       terraformResourceType: 'pagerduty_event_orchestrations',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.10.1',
+        providerVersion: '3.11.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
