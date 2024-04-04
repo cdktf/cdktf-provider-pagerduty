@@ -4,12 +4,12 @@
 
 ### DataPagerdutyRuleset <a name="DataPagerdutyRuleset" id="@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRuleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.1/docs/data-sources/ruleset pagerduty_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/data-sources/ruleset pagerduty_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRuleset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyruleset"
 
 datapagerdutyruleset.NewDataPagerdutyRuleset(scope Construct, id *string, config DataPagerdutyRulesetConfig) DataPagerdutyRuleset
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRuleset.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyruleset"
 
 datapagerdutyruleset.DataPagerdutyRuleset_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRuleset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyruleset"
 
 datapagerdutyruleset.DataPagerdutyRuleset_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datapagerdutyruleset.DataPagerdutyRuleset_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRuleset.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyruleset"
 
 datapagerdutyruleset.DataPagerdutyRuleset_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datapagerdutyruleset.DataPagerdutyRuleset_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRuleset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyruleset"
 
 datapagerdutyruleset.DataPagerdutyRuleset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataPagerdutyRuleset to im
 
 The id of the existing DataPagerdutyRuleset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.1/docs/data-sources/ruleset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/data-sources/ruleset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRulesetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyruleset"
 
 &datapagerdutyruleset.DataPagerdutyRulesetConfig {
 	Connection: interface{},
@@ -631,8 +631,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerduty
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRulesetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRulesetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRulesetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRulesetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.1/docs/data-sources/ruleset#name DataPagerdutyRuleset#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRulesetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.1/docs/data-sources/ruleset#id DataPagerdutyRuleset#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRulesetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/data-sources/ruleset#name DataPagerdutyRuleset#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyRuleset.DataPagerdutyRulesetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/data-sources/ruleset#id DataPagerdutyRuleset#id}. |
 
 ---
 
@@ -714,7 +714,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.1/docs/data-sources/ruleset#name DataPagerdutyRuleset#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/data-sources/ruleset#name DataPagerdutyRuleset#name}.
 
 ---
 
@@ -726,7 +726,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.10.1/docs/data-sources/ruleset#id DataPagerdutyRuleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/data-sources/ruleset#id DataPagerdutyRuleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
