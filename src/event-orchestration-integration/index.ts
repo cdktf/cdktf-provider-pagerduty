@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/resources/event_orchestration_integration
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.1/docs/resources/event_orchestration_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface EventOrchestrationIntegrationAConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/resources/event_orchestration_integration#event_orchestration EventOrchestrationIntegrationA#event_orchestration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.1/docs/resources/event_orchestration_integration#event_orchestration EventOrchestrationIntegrationA#event_orchestration}
   */
   readonly eventOrchestration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/resources/event_orchestration_integration#label EventOrchestrationIntegrationA#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.1/docs/resources/event_orchestration_integration#label EventOrchestrationIntegrationA#label}
   */
   readonly label: string;
 }
@@ -103,7 +98,7 @@ export class EventOrchestrationIntegrationParametersAList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/resources/event_orchestration_integration pagerduty_event_orchestration_integration}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.1/docs/resources/event_orchestration_integration pagerduty_event_orchestration_integration}
 */
 export class EventOrchestrationIntegrationA extends cdktf.TerraformResource {
 
@@ -119,7 +114,7 @@ export class EventOrchestrationIntegrationA extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EventOrchestrationIntegrationA resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventOrchestrationIntegrationA to import
-  * @param importFromId The id of the existing EventOrchestrationIntegrationA that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/resources/event_orchestration_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventOrchestrationIntegrationA that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.1/docs/resources/event_orchestration_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventOrchestrationIntegrationA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -131,7 +126,7 @@ export class EventOrchestrationIntegrationA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.0/docs/resources/event_orchestration_integration pagerduty_event_orchestration_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.1/docs/resources/event_orchestration_integration pagerduty_event_orchestration_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -142,7 +137,7 @@ export class EventOrchestrationIntegrationA extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_event_orchestration_integration',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.11.0',
+        providerVersion: '3.11.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
