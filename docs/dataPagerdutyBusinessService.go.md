@@ -4,12 +4,12 @@
 
 ### DataPagerdutyBusinessService <a name="DataPagerdutyBusinessService" id="@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.1/docs/data-sources/business_service pagerduty_business_service}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.2/docs/data-sources/business_service pagerduty_business_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutybusinessservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutybusinessservice"
 
 datapagerdutybusinessservice.NewDataPagerdutyBusinessService(scope Construct, id *string, config DataPagerdutyBusinessServiceConfig) DataPagerdutyBusinessService
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutybusinessservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutybusinessservice"
 
 datapagerdutybusinessservice.DataPagerdutyBusinessService_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutybusinessservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutybusinessservice"
 
 datapagerdutybusinessservice.DataPagerdutyBusinessService_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datapagerdutybusinessservice.DataPagerdutyBusinessService_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutybusinessservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutybusinessservice"
 
 datapagerdutybusinessservice.DataPagerdutyBusinessService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datapagerdutybusinessservice.DataPagerdutyBusinessService_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutybusinessservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutybusinessservice"
 
 datapagerdutybusinessservice.DataPagerdutyBusinessService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataPagerdutyBusinessServi
 
 The id of the existing DataPagerdutyBusinessService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.1/docs/data-sources/business_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.2/docs/data-sources/business_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutybusinessservice"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutybusinessservice"
 
 &datapagerdutybusinessservice.DataPagerdutyBusinessServiceConfig {
 	Connection: interface{},
@@ -612,7 +612,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerduty
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.1/docs/data-sources/business_service#name DataPagerdutyBusinessService#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyBusinessService.DataPagerdutyBusinessServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.2/docs/data-sources/business_service#name DataPagerdutyBusinessService#name}. |
 
 ---
 
@@ -694,7 +694,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.1/docs/data-sources/business_service#name DataPagerdutyBusinessService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.2/docs/data-sources/business_service#name DataPagerdutyBusinessService#name}.
 
 ---
 
