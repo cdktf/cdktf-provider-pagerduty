@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.3/docs/data-sources/event_orchestration_service_cache_variable
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/event_orchestration_service_cache_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyEventOrchestrationServiceCacheVariableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.3/docs/data-sources/event_orchestration_service_cache_variable#id DataPagerdutyEventOrchestrationServiceCacheVariable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/event_orchestration_service_cache_variable#id DataPagerdutyEventOrchestrationServiceCacheVariable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.3/docs/data-sources/event_orchestration_service_cache_variable#name DataPagerdutyEventOrchestrationServiceCacheVariable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/event_orchestration_service_cache_variable#name DataPagerdutyEventOrchestrationServiceCacheVariable#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.3/docs/data-sources/event_orchestration_service_cache_variable#service DataPagerdutyEventOrchestrationServiceCacheVariable#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/event_orchestration_service_cache_variable#service DataPagerdutyEventOrchestrationServiceCacheVariable#service}
   */
   readonly service: string;
 }
@@ -195,7 +190,7 @@ export class DataPagerdutyEventOrchestrationServiceCacheVariableConfigurationLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.3/docs/data-sources/event_orchestration_service_cache_variable pagerduty_event_orchestration_service_cache_variable}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/event_orchestration_service_cache_variable pagerduty_event_orchestration_service_cache_variable}
 */
 export class DataPagerdutyEventOrchestrationServiceCacheVariable extends cdktf.TerraformDataSource {
 
@@ -211,7 +206,7 @@ export class DataPagerdutyEventOrchestrationServiceCacheVariable extends cdktf.T
   * Generates CDKTF code for importing a DataPagerdutyEventOrchestrationServiceCacheVariable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyEventOrchestrationServiceCacheVariable to import
-  * @param importFromId The id of the existing DataPagerdutyEventOrchestrationServiceCacheVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.3/docs/data-sources/event_orchestration_service_cache_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyEventOrchestrationServiceCacheVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/event_orchestration_service_cache_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyEventOrchestrationServiceCacheVariable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -223,7 +218,7 @@ export class DataPagerdutyEventOrchestrationServiceCacheVariable extends cdktf.T
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.3/docs/data-sources/event_orchestration_service_cache_variable pagerduty_event_orchestration_service_cache_variable} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/event_orchestration_service_cache_variable pagerduty_event_orchestration_service_cache_variable} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -234,7 +229,7 @@ export class DataPagerdutyEventOrchestrationServiceCacheVariable extends cdktf.T
       terraformResourceType: 'pagerduty_event_orchestration_service_cache_variable',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.11.3',
+        providerVersion: '3.11.4',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
