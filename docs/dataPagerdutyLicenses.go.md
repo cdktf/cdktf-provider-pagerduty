@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyLicenses.DataPagerdutyLicenses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutylicenses"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutylicenses"
 
 datapagerdutylicenses.NewDataPagerdutyLicenses(scope Construct, id *string, config DataPagerdutyLicensesConfig) DataPagerdutyLicenses
 ```
@@ -303,7 +303,7 @@ func ResetLicenses()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyLicenses.DataPagerdutyLicenses.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutylicenses"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutylicenses"
 
 datapagerdutylicenses.DataPagerdutyLicenses_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyLicenses.DataPagerdutyLicenses.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutylicenses"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutylicenses"
 
 datapagerdutylicenses.DataPagerdutyLicenses_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datapagerdutylicenses.DataPagerdutyLicenses_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyLicenses.DataPagerdutyLicenses.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutylicenses"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutylicenses"
 
 datapagerdutylicenses.DataPagerdutyLicenses_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datapagerdutylicenses.DataPagerdutyLicenses_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyLicenses.DataPagerdutyLicenses.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutylicenses"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutylicenses"
 
 datapagerdutylicenses.DataPagerdutyLicenses_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -614,7 +614,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyLicenses.DataPagerdutyLicensesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutylicenses"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutylicenses"
 
 &datapagerdutylicenses.DataPagerdutyLicensesConfig {
 	Connection: interface{},
@@ -749,7 +749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyLicenses.DataPagerdutyLicensesLicenses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutylicenses"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutylicenses"
 
 &datapagerdutylicenses.DataPagerdutyLicensesLicenses {
 	AllocationsAvailable: *f64,
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyLicenses.DataPagerdutyLicensesLicensesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutylicenses"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutylicenses"
 
 datapagerdutylicenses.NewDataPagerdutyLicensesLicensesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPagerdutyLicensesLicensesList
 ```
@@ -1086,7 +1086,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyLicenses.DataPagerdutyLicensesLicensesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutylicenses"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutylicenses"
 
 datapagerdutylicenses.NewDataPagerdutyLicensesLicensesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPagerdutyLicensesLicensesOutputReference
 ```
