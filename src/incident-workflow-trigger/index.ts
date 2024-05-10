@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/incident_workflow_trigger
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/incident_workflow_trigger
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +13,159 @@ import * as cdktf from 'cdktf';
 
 export interface IncidentWorkflowTriggerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/incident_workflow_trigger#condition IncidentWorkflowTrigger#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/incident_workflow_trigger#condition IncidentWorkflowTrigger#condition}
   */
   readonly condition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/incident_workflow_trigger#id IncidentWorkflowTrigger#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/incident_workflow_trigger#id IncidentWorkflowTrigger#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/incident_workflow_trigger#services IncidentWorkflowTrigger#services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/incident_workflow_trigger#services IncidentWorkflowTrigger#services}
   */
   readonly services?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/incident_workflow_trigger#subscribed_to_all_services IncidentWorkflowTrigger#subscribed_to_all_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/incident_workflow_trigger#subscribed_to_all_services IncidentWorkflowTrigger#subscribed_to_all_services}
   */
   readonly subscribedToAllServices: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/incident_workflow_trigger#type IncidentWorkflowTrigger#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/incident_workflow_trigger#type IncidentWorkflowTrigger#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/incident_workflow_trigger#workflow IncidentWorkflowTrigger#workflow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/incident_workflow_trigger#workflow IncidentWorkflowTrigger#workflow}
   */
   readonly workflow: string;
+  /**
+  * permissions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/incident_workflow_trigger#permissions IncidentWorkflowTrigger#permissions}
+  */
+  readonly permissions?: IncidentWorkflowTriggerPermissions;
+}
+export interface IncidentWorkflowTriggerPermissions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/incident_workflow_trigger#restricted IncidentWorkflowTrigger#restricted}
+  */
+  readonly restricted?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/incident_workflow_trigger#team_id IncidentWorkflowTrigger#team_id}
+  */
+  readonly teamId?: string;
+}
+
+export function incidentWorkflowTriggerPermissionsToTerraform(struct?: IncidentWorkflowTriggerPermissionsOutputReference | IncidentWorkflowTriggerPermissions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    restricted: cdktf.booleanToTerraform(struct!.restricted),
+    team_id: cdktf.stringToTerraform(struct!.teamId),
+  }
+}
+
+
+export function incidentWorkflowTriggerPermissionsToHclTerraform(struct?: IncidentWorkflowTriggerPermissionsOutputReference | IncidentWorkflowTriggerPermissions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    restricted: {
+      value: cdktf.booleanToHclTerraform(struct!.restricted),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    team_id: {
+      value: cdktf.stringToHclTerraform(struct!.teamId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class IncidentWorkflowTriggerPermissionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): IncidentWorkflowTriggerPermissions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._restricted !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.restricted = this._restricted;
+    }
+    if (this._teamId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.teamId = this._teamId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IncidentWorkflowTriggerPermissions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._restricted = undefined;
+      this._teamId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._restricted = value.restricted;
+      this._teamId = value.teamId;
+    }
+  }
+
+  // restricted - computed: true, optional: true, required: false
+  private _restricted?: boolean | cdktf.IResolvable; 
+  public get restricted() {
+    return this.getBooleanAttribute('restricted');
+  }
+  public set restricted(value: boolean | cdktf.IResolvable) {
+    this._restricted = value;
+  }
+  public resetRestricted() {
+    this._restricted = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restrictedInput() {
+    return this._restricted;
+  }
+
+  // team_id - computed: false, optional: true, required: false
+  private _teamId?: string; 
+  public get teamId() {
+    return this.getStringAttribute('team_id');
+  }
+  public set teamId(value: string) {
+    this._teamId = value;
+  }
+  public resetTeamId() {
+    this._teamId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get teamIdInput() {
+    return this._teamId;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger}
 */
 export class IncidentWorkflowTrigger extends cdktf.TerraformResource {
 
@@ -58,7 +181,7 @@ export class IncidentWorkflowTrigger extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IncidentWorkflowTrigger resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IncidentWorkflowTrigger to import
-  * @param importFromId The id of the existing IncidentWorkflowTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/incident_workflow_trigger#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IncidentWorkflowTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/incident_workflow_trigger#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IncidentWorkflowTrigger to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -70,7 +193,7 @@ export class IncidentWorkflowTrigger extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,7 +204,7 @@ export class IncidentWorkflowTrigger extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_incident_workflow_trigger',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.11.4',
+        providerVersion: '3.12.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -98,6 +221,7 @@ export class IncidentWorkflowTrigger extends cdktf.TerraformResource {
     this._subscribedToAllServices = config.subscribedToAllServices;
     this._type = config.type;
     this._workflow = config.workflow;
+    this._permissions.internalValue = config.permissions;
   }
 
   // ==========
@@ -191,6 +315,22 @@ export class IncidentWorkflowTrigger extends cdktf.TerraformResource {
     return this._workflow;
   }
 
+  // permissions - computed: false, optional: true, required: false
+  private _permissions = new IncidentWorkflowTriggerPermissionsOutputReference(this, "permissions");
+  public get permissions() {
+    return this._permissions;
+  }
+  public putPermissions(value: IncidentWorkflowTriggerPermissions) {
+    this._permissions.internalValue = value;
+  }
+  public resetPermissions() {
+    this._permissions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionsInput() {
+    return this._permissions.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -203,6 +343,7 @@ export class IncidentWorkflowTrigger extends cdktf.TerraformResource {
       subscribed_to_all_services: cdktf.booleanToTerraform(this._subscribedToAllServices),
       type: cdktf.stringToTerraform(this._type),
       workflow: cdktf.stringToTerraform(this._workflow),
+      permissions: incidentWorkflowTriggerPermissionsToTerraform(this._permissions.internalValue),
     };
   }
 
@@ -243,6 +384,12 @@ export class IncidentWorkflowTrigger extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      permissions: {
+        value: incidentWorkflowTriggerPermissionsToHclTerraform(this._permissions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "IncidentWorkflowTriggerPermissionsList",
       },
     };
 

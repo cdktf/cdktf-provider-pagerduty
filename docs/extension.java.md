@@ -4,7 +4,7 @@
 
 ### Extension <a name="Extension" id="@cdktf/provider-pagerduty.extension.Extension"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension pagerduty_extension}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension pagerduty_extension}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.extension.Extension.Initializer"></a>
 
@@ -27,7 +27,6 @@ Extension.Builder.create(Construct scope, java.lang.String id)
     .extensionSchema(java.lang.String)
 //  .config(java.lang.String)
 //  .endpointUrl(java.lang.String)
-//  .id(java.lang.String)
 //  .name(java.lang.String)
 //  .type(java.lang.String)
     .build();
@@ -44,13 +43,12 @@ Extension.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.Initializer.parameter.extensionObjects">extensionObjects</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#extension_objects Extension#extension_objects}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.Initializer.parameter.extensionSchema">extensionSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#extension_schema Extension#extension_schema}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.Initializer.parameter.config">config</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#config Extension#config}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.Initializer.parameter.endpointUrl">endpointUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#endpoint_url Extension#endpoint_url}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#id Extension#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#name Extension#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#type Extension#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.Initializer.parameter.extensionObjects">extensionObjects</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#extension_objects Extension#extension_objects}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.Initializer.parameter.extensionSchema">extensionSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#extension_schema Extension#extension_schema}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.Initializer.parameter.config">config</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#config Extension#config}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.Initializer.parameter.endpointUrl">endpointUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#endpoint_url Extension#endpoint_url}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#name Extension#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#type Extension#type}. |
 
 ---
 
@@ -118,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#extension_objects Extension#extension_objects}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#extension_objects Extension#extension_objects}.
 
 ---
 
@@ -126,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#extension_schema Extension#extension_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#extension_schema Extension#extension_schema}.
 
 ---
 
@@ -134,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#config Extension#config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#config Extension#config}.
 
 ---
 
@@ -142,18 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#endpoint_url Extension#endpoint_url}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-pagerduty.extension.Extension.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#id Extension#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#endpoint_url Extension#endpoint_url}.
 
 ---
 
@@ -161,7 +148,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#name Extension#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#name Extension#name}.
 
 ---
 
@@ -169,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#type Extension#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#type Extension#type}.
 
 ---
 
@@ -202,7 +189,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.resetConfig">resetConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.resetEndpointUrl">resetEndpointUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.resetType">resetType</a></code> | *No description.* |
 
@@ -510,12 +496,6 @@ public void resetConfig()
 public void resetEndpointUrl()
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-pagerduty.extension.Extension.resetId"></a>
-
-```java
-public void resetId()
-```
-
 ##### `resetName` <a name="resetName" id="@cdktf/provider-pagerduty.extension.Extension.resetName"></a>
 
 ```java
@@ -631,7 +611,7 @@ The construct id used in the generated config for the Extension to import.
 
 The id of the existing Extension that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -662,19 +642,18 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.htmlUrl">htmlUrl</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.summary">summary</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.configInput">configInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.endpointUrlInput">endpointUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.extensionObjectsInput">extensionObjectsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.extensionSchemaInput">extensionSchemaInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.config">config</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.endpointUrl">endpointUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.extensionObjects">extensionObjects</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.extensionSchema">extensionSchema</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -832,6 +811,16 @@ public java.lang.String getHtmlUrl();
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-pagerduty.extension.Extension.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `summary`<sup>Required</sup> <a name="summary" id="@cdktf/provider-pagerduty.extension.Extension.property.summary"></a>
 
 ```java
@@ -876,16 +865,6 @@ public java.util.List<java.lang.String> getExtensionObjectsInput();
 
 ```java
 public java.lang.String getExtensionSchemaInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-pagerduty.extension.Extension.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
 ```
 
 - *Type:* java.lang.String
@@ -946,16 +925,6 @@ public java.util.List<java.lang.String> getExtensionObjects();
 
 ```java
 public java.lang.String getExtensionSchema();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-pagerduty.extension.Extension.property.id"></a>
-
-```java
-public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
@@ -1025,7 +994,6 @@ ExtensionConfig.builder()
     .extensionSchema(java.lang.String)
 //  .config(java.lang.String)
 //  .endpointUrl(java.lang.String)
-//  .id(java.lang.String)
 //  .name(java.lang.String)
 //  .type(java.lang.String)
     .build();
@@ -1042,13 +1010,12 @@ ExtensionConfig.builder()
 | <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.extensionObjects">extensionObjects</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#extension_objects Extension#extension_objects}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.extensionSchema">extensionSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#extension_schema Extension#extension_schema}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.config">config</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#config Extension#config}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.endpointUrl">endpointUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#endpoint_url Extension#endpoint_url}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#id Extension#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#name Extension#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#type Extension#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.extensionObjects">extensionObjects</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#extension_objects Extension#extension_objects}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.extensionSchema">extensionSchema</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#extension_schema Extension#extension_schema}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.config">config</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#config Extension#config}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.endpointUrl">endpointUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#endpoint_url Extension#endpoint_url}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#name Extension#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#type Extension#type}. |
 
 ---
 
@@ -1130,7 +1097,7 @@ public java.util.List<java.lang.String> getExtensionObjects();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#extension_objects Extension#extension_objects}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#extension_objects Extension#extension_objects}.
 
 ---
 
@@ -1142,7 +1109,7 @@ public java.lang.String getExtensionSchema();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#extension_schema Extension#extension_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#extension_schema Extension#extension_schema}.
 
 ---
 
@@ -1154,7 +1121,7 @@ public java.lang.String getConfig();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#config Extension#config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#config Extension#config}.
 
 ---
 
@@ -1166,22 +1133,7 @@ public java.lang.String getEndpointUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#endpoint_url Extension#endpoint_url}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-pagerduty.extension.ExtensionConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#id Extension#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#endpoint_url Extension#endpoint_url}.
 
 ---
 
@@ -1193,7 +1145,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#name Extension#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#name Extension#name}.
 
 ---
 
@@ -1205,7 +1157,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#type Extension#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#type Extension#type}.
 
 ---
 

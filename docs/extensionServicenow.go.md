@@ -4,7 +4,7 @@
 
 ### ExtensionServicenow <a name="ExtensionServicenow" id="@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow pagerduty_extension_servicenow}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow pagerduty_extension_servicenow}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.resetEndpointUrl">ResetEndpointUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.resetSummary">ResetSummary</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.resetType">ResetType</a></code> | *No description.* |
@@ -375,12 +374,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetEndpointUrl()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.resetId"></a>
-
-```go
-func ResetId()
-```
-
 ##### `ResetName` <a name="ResetName" id="@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.resetName"></a>
 
 ```go
@@ -502,7 +495,7 @@ The construct id used in the generated config for the ExtensionServicenow to imp
 
 The id of the existing ExtensionServicenow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -533,10 +526,10 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.htmlUrl">HtmlUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.endpointUrlInput">EndpointUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.extensionObjectsInput">ExtensionObjectsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.extensionSchemaInput">ExtensionSchemaInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.refererInput">RefererInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.snowPasswordInput">SnowPasswordInput</a></code> | <code>*string</code> | *No description.* |
@@ -549,7 +542,6 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.endpointUrl">EndpointUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.extensionObjects">ExtensionObjects</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.extensionSchema">ExtensionSchema</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.referer">Referer</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.snowPassword">SnowPassword</a></code> | <code>*string</code> | *No description.* |
@@ -714,6 +706,16 @@ func HtmlUrl() *string
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `EndpointUrlInput`<sup>Optional</sup> <a name="EndpointUrlInput" id="@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.endpointUrlInput"></a>
 
 ```go
@@ -738,16 +740,6 @@ func ExtensionObjectsInput() *[]*string
 
 ```go
 func ExtensionSchemaInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.idInput"></a>
-
-```go
-func IdInput() *string
 ```
 
 - *Type:* *string
@@ -868,16 +860,6 @@ func ExtensionObjects() *[]*string
 
 ```go
 func ExtensionSchema() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenow.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -1018,7 +1000,6 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/extensionserv
 	Target: *string,
 	TaskType: *string,
 	EndpointUrl: *string,
-	Id: *string,
 	Name: *string,
 	Summary: *string,
 	Type: *string,
@@ -1036,19 +1017,18 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/extensionserv
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.extensionObjects">ExtensionObjects</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#extension_objects ExtensionServicenow#extension_objects}. |
-| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.extensionSchema">ExtensionSchema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#extension_schema ExtensionServicenow#extension_schema}. |
-| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.referer">Referer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#referer ExtensionServicenow#referer}. |
-| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.snowPassword">SnowPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#snow_password ExtensionServicenow#snow_password}. |
-| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.snowUser">SnowUser</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#snow_user ExtensionServicenow#snow_user}. |
-| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.syncOptions">SyncOptions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#sync_options ExtensionServicenow#sync_options}. |
-| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#target ExtensionServicenow#target}. |
-| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.taskType">TaskType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#task_type ExtensionServicenow#task_type}. |
-| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.endpointUrl">EndpointUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#endpoint_url ExtensionServicenow#endpoint_url}. |
-| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#id ExtensionServicenow#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#name ExtensionServicenow#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.summary">Summary</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#summary ExtensionServicenow#summary}. |
-| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#type ExtensionServicenow#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.extensionObjects">ExtensionObjects</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#extension_objects ExtensionServicenow#extension_objects}. |
+| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.extensionSchema">ExtensionSchema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#extension_schema ExtensionServicenow#extension_schema}. |
+| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.referer">Referer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#referer ExtensionServicenow#referer}. |
+| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.snowPassword">SnowPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#snow_password ExtensionServicenow#snow_password}. |
+| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.snowUser">SnowUser</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#snow_user ExtensionServicenow#snow_user}. |
+| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.syncOptions">SyncOptions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#sync_options ExtensionServicenow#sync_options}. |
+| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#target ExtensionServicenow#target}. |
+| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.taskType">TaskType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#task_type ExtensionServicenow#task_type}. |
+| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.endpointUrl">EndpointUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#endpoint_url ExtensionServicenow#endpoint_url}. |
+| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#name ExtensionServicenow#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.summary">Summary</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#summary ExtensionServicenow#summary}. |
+| <code><a href="#@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#type ExtensionServicenow#type}. |
 
 ---
 
@@ -1130,7 +1110,7 @@ ExtensionObjects *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#extension_objects ExtensionServicenow#extension_objects}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#extension_objects ExtensionServicenow#extension_objects}.
 
 ---
 
@@ -1142,7 +1122,7 @@ ExtensionSchema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#extension_schema ExtensionServicenow#extension_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#extension_schema ExtensionServicenow#extension_schema}.
 
 ---
 
@@ -1154,7 +1134,7 @@ Referer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#referer ExtensionServicenow#referer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#referer ExtensionServicenow#referer}.
 
 ---
 
@@ -1166,7 +1146,7 @@ SnowPassword *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#snow_password ExtensionServicenow#snow_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#snow_password ExtensionServicenow#snow_password}.
 
 ---
 
@@ -1178,7 +1158,7 @@ SnowUser *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#snow_user ExtensionServicenow#snow_user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#snow_user ExtensionServicenow#snow_user}.
 
 ---
 
@@ -1190,7 +1170,7 @@ SyncOptions *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#sync_options ExtensionServicenow#sync_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#sync_options ExtensionServicenow#sync_options}.
 
 ---
 
@@ -1202,7 +1182,7 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#target ExtensionServicenow#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#target ExtensionServicenow#target}.
 
 ---
 
@@ -1214,7 +1194,7 @@ TaskType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#task_type ExtensionServicenow#task_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#task_type ExtensionServicenow#task_type}.
 
 ---
 
@@ -1226,22 +1206,7 @@ EndpointUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#endpoint_url ExtensionServicenow#endpoint_url}.
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-pagerduty.extensionServicenow.ExtensionServicenowConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#id ExtensionServicenow#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#endpoint_url ExtensionServicenow#endpoint_url}.
 
 ---
 
@@ -1253,7 +1218,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#name ExtensionServicenow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#name ExtensionServicenow#name}.
 
 ---
 
@@ -1265,7 +1230,7 @@ Summary *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#summary ExtensionServicenow#summary}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#summary ExtensionServicenow#summary}.
 
 ---
 
@@ -1277,7 +1242,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension_servicenow#type ExtensionServicenow#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension_servicenow#type ExtensionServicenow#type}.
 
 ---
 

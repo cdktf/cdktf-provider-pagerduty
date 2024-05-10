@@ -4,7 +4,7 @@
 
 ### Tag <a name="Tag" id="@cdktf/provider-pagerduty.tag.Tag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag pagerduty_tag}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag pagerduty_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.tag.Tag.Initializer"></a>
 
@@ -24,7 +24,6 @@ Tag.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .label(java.lang.String)
-//  .id(java.lang.String)
     .build();
 ```
 
@@ -39,8 +38,7 @@ Tag.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.tag.Tag.Initializer.parameter.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag#label Tag#label}. |
-| <code><a href="#@cdktf/provider-pagerduty.tag.Tag.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag#id Tag#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.tag.Tag.Initializer.parameter.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag#label Tag#label}. |
 
 ---
 
@@ -108,18 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag#label Tag#label}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-pagerduty.tag.Tag.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag#id Tag#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag#label Tag#label}.
 
 ---
 
@@ -150,7 +137,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-pagerduty.tag.Tag.resetId">resetId</a></code> | *No description.* |
 
 ---
 
@@ -444,12 +430,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-pagerduty.tag.Tag.resetId"></a>
-
-```java
-public void resetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -553,7 +533,7 @@ The construct id used in the generated config for the Tag to import.
 
 The id of the existing Tag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -584,10 +564,9 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.htmlUrl">htmlUrl</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.summary">summary</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.labelInput">labelInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.summary">summary</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.labelInput">labelInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.label">label</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -744,6 +723,16 @@ public java.lang.String getHtmlUrl();
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-pagerduty.tag.Tag.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `summary`<sup>Required</sup> <a name="summary" id="@cdktf/provider-pagerduty.tag.Tag.property.summary"></a>
 
 ```java
@@ -754,30 +743,10 @@ public java.lang.String getSummary();
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-pagerduty.tag.Tag.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `labelInput`<sup>Optional</sup> <a name="labelInput" id="@cdktf/provider-pagerduty.tag.Tag.property.labelInput"></a>
 
 ```java
 public java.lang.String getLabelInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-pagerduty.tag.Tag.property.id"></a>
-
-```java
-public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
@@ -834,7 +803,6 @@ TagConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .label(java.lang.String)
-//  .id(java.lang.String)
     .build();
 ```
 
@@ -849,8 +817,7 @@ TagConfig.builder()
 | <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag#label Tag#label}. |
-| <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag#id Tag#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag#label Tag#label}. |
 
 ---
 
@@ -932,22 +899,7 @@ public java.lang.String getLabel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag#label Tag#label}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-pagerduty.tag.TagConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag#id Tag#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag#label Tag#label}.
 
 ---
 

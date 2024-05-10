@@ -4,7 +4,7 @@
 
 ### DataPagerdutyTag <a name="DataPagerdutyTag" id="@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/tag pagerduty_tag}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/tag pagerduty_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.Initializer"></a>
 
@@ -67,7 +67,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.resetId">resetId</a></code> | *No description.* |
 
 ---
 
@@ -263,12 +262,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -372,7 +365,7 @@ The construct id used in the generated config for the DataPagerdutyTag to import
 
 The id of the existing DataPagerdutyTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -400,9 +393,8 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.labelInput">labelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.labelInput">labelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.label">label</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -529,10 +521,10 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.idInput"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.id"></a>
 
 ```typescript
-public readonly idInput: string;
+public readonly id: string;
 ```
 
 - *Type:* string
@@ -543,16 +535,6 @@ public readonly idInput: string;
 
 ```typescript
 public readonly labelInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTag.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* string
@@ -611,7 +593,6 @@ const dataPagerdutyTagConfig: dataPagerdutyTag.DataPagerdutyTagConfig = { ... }
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.property.label">label</a></code> | <code>string</code> | The label of the tag to find in the PagerDuty API. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/tag#id DataPagerdutyTag#id}. |
 
 ---
 
@@ -695,22 +676,7 @@ public readonly label: string;
 
 The label of the tag to find in the PagerDuty API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/tag#label DataPagerdutyTag#label}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-pagerduty.dataPagerdutyTag.DataPagerdutyTagConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/tag#id DataPagerdutyTag#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/tag#label DataPagerdutyTag#label}
 
 ---
 

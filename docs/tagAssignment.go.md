@@ -4,7 +4,7 @@
 
 ### TagAssignment <a name="TagAssignment" id="@cdktf/provider-pagerduty.tagAssignment.TagAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag_assignment pagerduty_tag_assignment}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag_assignment pagerduty_tag_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.tagAssignment.TagAssignment.Initializer"></a>
 
@@ -73,7 +73,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignment.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignment.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignment.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignment.resetId">ResetId</a></code> | *No description.* |
 
 ---
 
@@ -365,12 +364,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-pagerduty.tagAssignment.TagAssignment.resetId"></a>
-
-```go
-func ResetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -474,7 +467,7 @@ The construct id used in the generated config for the TagAssignment to import.
 
 The id of the existing TagAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -504,13 +497,12 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignment.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignment.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignment.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignment.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignment.property.entityIdInput">EntityIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignment.property.entityTypeInput">EntityTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignment.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignment.property.tagIdInput">TagIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignment.property.entityId">EntityId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignment.property.entityType">EntityType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignment.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignment.property.tagId">TagId</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -657,6 +649,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-pagerduty.tagAssignment.TagAssignment.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `EntityIdInput`<sup>Optional</sup> <a name="EntityIdInput" id="@cdktf/provider-pagerduty.tagAssignment.TagAssignment.property.entityIdInput"></a>
 
 ```go
@@ -671,16 +673,6 @@ func EntityIdInput() *string
 
 ```go
 func EntityTypeInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-pagerduty.tagAssignment.TagAssignment.property.idInput"></a>
-
-```go
-func IdInput() *string
 ```
 
 - *Type:* *string
@@ -711,16 +703,6 @@ func EntityId() *string
 
 ```go
 func EntityType() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-pagerduty.tagAssignment.TagAssignment.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -775,7 +757,6 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/tagassignment
 	EntityId: *string,
 	EntityType: *string,
 	TagId: *string,
-	Id: *string,
 }
 ```
 
@@ -790,10 +771,9 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/tagassignment
 | <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.entityId">EntityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag_assignment#entity_id TagAssignment#entity_id}. |
-| <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.entityType">EntityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag_assignment#entity_type TagAssignment#entity_type}. |
-| <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.tagId">TagId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag_assignment#tag_id TagAssignment#tag_id}. |
-| <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag_assignment#id TagAssignment#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.entityId">EntityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag_assignment#entity_id TagAssignment#entity_id}. |
+| <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.entityType">EntityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag_assignment#entity_type TagAssignment#entity_type}. |
+| <code><a href="#@cdktf/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.tagId">TagId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag_assignment#tag_id TagAssignment#tag_id}. |
 
 ---
 
@@ -875,7 +855,7 @@ EntityId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag_assignment#entity_id TagAssignment#entity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag_assignment#entity_id TagAssignment#entity_id}.
 
 ---
 
@@ -887,7 +867,7 @@ EntityType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag_assignment#entity_type TagAssignment#entity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag_assignment#entity_type TagAssignment#entity_type}.
 
 ---
 
@@ -899,22 +879,7 @@ TagId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag_assignment#tag_id TagAssignment#tag_id}.
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-pagerduty.tagAssignment.TagAssignmentConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag_assignment#id TagAssignment#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag_assignment#tag_id TagAssignment#tag_id}.
 
 ---
 

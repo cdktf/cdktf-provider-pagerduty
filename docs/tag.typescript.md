@@ -4,7 +4,7 @@
 
 ### Tag <a name="Tag" id="@cdktf/provider-pagerduty.tag.Tag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag pagerduty_tag}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag pagerduty_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.tag.Tag.Initializer"></a>
 
@@ -73,7 +73,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-pagerduty.tag.Tag.resetId">resetId</a></code> | *No description.* |
 
 ---
 
@@ -365,12 +364,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-pagerduty.tag.Tag.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -474,7 +467,7 @@ The construct id used in the generated config for the Tag to import.
 
 The id of the existing Tag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -505,10 +498,9 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.htmlUrl">htmlUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.summary">summary</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.labelInput">labelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.summary">summary</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.labelInput">labelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tag.Tag.property.label">label</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -665,6 +657,16 @@ public readonly htmlUrl: string;
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-pagerduty.tag.Tag.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `summary`<sup>Required</sup> <a name="summary" id="@cdktf/provider-pagerduty.tag.Tag.property.summary"></a>
 
 ```typescript
@@ -675,30 +677,10 @@ public readonly summary: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-pagerduty.tag.Tag.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `labelInput`<sup>Optional</sup> <a name="labelInput" id="@cdktf/provider-pagerduty.tag.Tag.property.labelInput"></a>
 
 ```typescript
 public readonly labelInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-pagerduty.tag.Tag.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* string
@@ -756,8 +738,7 @@ const tagConfig: tag.TagConfig = { ... }
 | <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.label">label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag#label Tag#label}. |
-| <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag#id Tag#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.tag.TagConfig.property.label">label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag#label Tag#label}. |
 
 ---
 
@@ -839,22 +820,7 @@ public readonly label: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag#label Tag#label}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-pagerduty.tag.TagConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/tag#id Tag#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/tag#label Tag#label}.
 
 ---
 

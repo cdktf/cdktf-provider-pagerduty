@@ -4,7 +4,7 @@
 
 ### Extension <a name="Extension" id="@cdktf/provider-pagerduty.extension.Extension"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension pagerduty_extension}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension pagerduty_extension}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.extension.Extension.Initializer"></a>
 
@@ -75,7 +75,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.resetConfig">ResetConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.resetEndpointUrl">ResetEndpointUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.resetType">ResetType</a></code> | *No description.* |
 
@@ -381,12 +380,6 @@ func ResetConfig()
 func ResetEndpointUrl()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-pagerduty.extension.Extension.resetId"></a>
-
-```go
-func ResetId()
-```
-
 ##### `ResetName` <a name="ResetName" id="@cdktf/provider-pagerduty.extension.Extension.resetName"></a>
 
 ```go
@@ -502,7 +495,7 @@ The construct id used in the generated config for the Extension to import.
 
 The id of the existing Extension that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -533,19 +526,18 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.htmlUrl">HtmlUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.summary">Summary</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.configInput">ConfigInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.endpointUrlInput">EndpointUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.extensionObjectsInput">ExtensionObjectsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.extensionSchemaInput">ExtensionSchemaInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.config">Config</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.endpointUrl">EndpointUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.extensionObjects">ExtensionObjects</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.extensionSchema">ExtensionSchema</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.Extension.property.type">Type</a></code> | <code>*string</code> | *No description.* |
 
@@ -703,6 +695,16 @@ func HtmlUrl() *string
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-pagerduty.extension.Extension.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Summary`<sup>Required</sup> <a name="Summary" id="@cdktf/provider-pagerduty.extension.Extension.property.summary"></a>
 
 ```go
@@ -747,16 +749,6 @@ func ExtensionObjectsInput() *[]*string
 
 ```go
 func ExtensionSchemaInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-pagerduty.extension.Extension.property.idInput"></a>
-
-```go
-func IdInput() *string
 ```
 
 - *Type:* *string
@@ -823,16 +815,6 @@ func ExtensionSchema() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-pagerduty.extension.Extension.property.id"></a>
-
-```go
-func Id() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-pagerduty.extension.Extension.property.name"></a>
 
 ```go
@@ -892,7 +874,6 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/extension"
 	ExtensionSchema: *string,
 	Config: *string,
 	EndpointUrl: *string,
-	Id: *string,
 	Name: *string,
 	Type: *string,
 }
@@ -909,13 +890,12 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/extension"
 | <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.extensionObjects">ExtensionObjects</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#extension_objects Extension#extension_objects}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.extensionSchema">ExtensionSchema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#extension_schema Extension#extension_schema}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.config">Config</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#config Extension#config}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.endpointUrl">EndpointUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#endpoint_url Extension#endpoint_url}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#id Extension#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#name Extension#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#type Extension#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.extensionObjects">ExtensionObjects</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#extension_objects Extension#extension_objects}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.extensionSchema">ExtensionSchema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#extension_schema Extension#extension_schema}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.config">Config</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#config Extension#config}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.endpointUrl">EndpointUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#endpoint_url Extension#endpoint_url}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#name Extension#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.extension.ExtensionConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#type Extension#type}. |
 
 ---
 
@@ -997,7 +977,7 @@ ExtensionObjects *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#extension_objects Extension#extension_objects}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#extension_objects Extension#extension_objects}.
 
 ---
 
@@ -1009,7 +989,7 @@ ExtensionSchema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#extension_schema Extension#extension_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#extension_schema Extension#extension_schema}.
 
 ---
 
@@ -1021,7 +1001,7 @@ Config *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#config Extension#config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#config Extension#config}.
 
 ---
 
@@ -1033,22 +1013,7 @@ EndpointUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#endpoint_url Extension#endpoint_url}.
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-pagerduty.extension.ExtensionConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#id Extension#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#endpoint_url Extension#endpoint_url}.
 
 ---
 
@@ -1060,7 +1025,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#name Extension#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#name Extension#name}.
 
 ---
 
@@ -1072,7 +1037,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/resources/extension#type Extension#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/resources/extension#type Extension#type}.
 
 ---
 

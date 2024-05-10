@@ -4,7 +4,7 @@
 
 ### DataPagerdutyExtensionSchema <a name="DataPagerdutyExtensionSchema" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/extension_schema pagerduty_extension_schema}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/extension_schema pagerduty_extension_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.Initializer"></a>
 
@@ -67,7 +67,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.resetId">ResetId</a></code> | *No description.* |
 
 ---
 
@@ -263,12 +262,6 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.resetId"></a>
-
-```csharp
-private void ResetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -372,7 +365,7 @@ The construct id used in the generated config for the DataPagerdutyExtensionSche
 
 The id of the existing DataPagerdutyExtensionSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/extension_schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/extension_schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -400,10 +393,9 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.property.type">Type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.property.name">Name</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -530,6 +522,16 @@ public TerraformProvider Provider { get; }
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.property.type"></a>
 
 ```csharp
@@ -540,30 +542,10 @@ public string Type { get; }
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.property.idInput"></a>
-
-```csharp
-public string IdInput { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.property.nameInput"></a>
 
 ```csharp
 public string NameInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchema.property.id"></a>
-
-```csharp
-public string Id { get; }
 ```
 
 - *Type:* string
@@ -615,8 +597,7 @@ new DataPagerdutyExtensionSchemaConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     object[] Provisioners = null,
-    string Name,
-    string Id = null
+    string Name
 };
 ```
 
@@ -631,8 +612,7 @@ new DataPagerdutyExtensionSchemaConfig {
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchemaConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchemaConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchemaConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchemaConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/extension_schema#name DataPagerdutyExtensionSchema#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchemaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/extension_schema#id DataPagerdutyExtensionSchema#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchemaConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/extension_schema#name DataPagerdutyExtensionSchema#name}. |
 
 ---
 
@@ -714,22 +694,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/extension_schema#name DataPagerdutyExtensionSchema#name}.
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-pagerduty.dataPagerdutyExtensionSchema.DataPagerdutyExtensionSchemaConfig.property.id"></a>
-
-```csharp
-public string Id { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.11.4/docs/data-sources/extension_schema#id DataPagerdutyExtensionSchema#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/extension_schema#name DataPagerdutyExtensionSchema#name}.
 
 ---
 
