@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/license
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.1/docs/data-sources/license
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +8,56 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyLicenseConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/license#allocations_available DataPagerdutyLicense#allocations_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.1/docs/data-sources/license#allocations_available DataPagerdutyLicense#allocations_available}
   */
   readonly allocationsAvailable?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/license#current_value DataPagerdutyLicense#current_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.1/docs/data-sources/license#current_value DataPagerdutyLicense#current_value}
   */
   readonly currentValue?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/license#description DataPagerdutyLicense#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.1/docs/data-sources/license#description DataPagerdutyLicense#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/license#html_url DataPagerdutyLicense#html_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.1/docs/data-sources/license#html_url DataPagerdutyLicense#html_url}
   */
   readonly htmlUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/license#id DataPagerdutyLicense#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.1/docs/data-sources/license#id DataPagerdutyLicense#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/license#name DataPagerdutyLicense#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.1/docs/data-sources/license#name DataPagerdutyLicense#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/license#role_group DataPagerdutyLicense#role_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.1/docs/data-sources/license#role_group DataPagerdutyLicense#role_group}
   */
   readonly roleGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/license#self DataPagerdutyLicense#self}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.1/docs/data-sources/license#self DataPagerdutyLicense#self}
   */
   readonly selfAttribute?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/license#summary DataPagerdutyLicense#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.1/docs/data-sources/license#summary DataPagerdutyLicense#summary}
   */
   readonly summary?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/license#type DataPagerdutyLicense#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.1/docs/data-sources/license#type DataPagerdutyLicense#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/license#valid_roles DataPagerdutyLicense#valid_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.1/docs/data-sources/license#valid_roles DataPagerdutyLicense#valid_roles}
   */
   readonly validRoles?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/license pagerduty_license}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.1/docs/data-sources/license pagerduty_license}
 */
 export class DataPagerdutyLicense extends cdktf.TerraformDataSource {
 
@@ -78,7 +73,7 @@ export class DataPagerdutyLicense extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataPagerdutyLicense resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyLicense to import
-  * @param importFromId The id of the existing DataPagerdutyLicense that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/license#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyLicense that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.1/docs/data-sources/license#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyLicense to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -90,7 +85,7 @@ export class DataPagerdutyLicense extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.0/docs/data-sources/license pagerduty_license} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.12.1/docs/data-sources/license pagerduty_license} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +96,7 @@ export class DataPagerdutyLicense extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_license',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.12.0',
+        providerVersion: '3.12.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
