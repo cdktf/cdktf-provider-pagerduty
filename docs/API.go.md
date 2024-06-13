@@ -74,6 +74,7 @@ The following submodules are available:
 - [teamMembership](./teamMembership.go.md)
 - [user](./user.go.md)
 - [userContactMethod](./userContactMethod.go.md)
+- [userHandoffNotificationRule](./userHandoffNotificationRule.go.md)
 - [userNotificationRule](./userNotificationRule.go.md)
 - [webhookSubscription](./webhookSubscription.go.md)
 

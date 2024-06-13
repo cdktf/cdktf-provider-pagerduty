@@ -74,6 +74,7 @@ The following submodules are available:
 - [teamMembership](./teamMembership.csharp.md)
 - [user](./user.csharp.md)
 - [userContactMethod](./userContactMethod.csharp.md)
+- [userHandoffNotificationRule](./userHandoffNotificationRule.csharp.md)
 - [userNotificationRule](./userNotificationRule.csharp.md)
 - [webhookSubscription](./webhookSubscription.csharp.md)
 

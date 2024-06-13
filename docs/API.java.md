@@ -74,6 +74,7 @@ The following submodules are available:
 - [teamMembership](./teamMembership.java.md)
 - [user](./user.java.md)
 - [userContactMethod](./userContactMethod.java.md)
+- [userHandoffNotificationRule](./userHandoffNotificationRule.java.md)
 - [userNotificationRule](./userNotificationRule.java.md)
 - [webhookSubscription](./webhookSubscription.java.md)
 

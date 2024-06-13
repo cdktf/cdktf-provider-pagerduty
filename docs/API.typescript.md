@@ -74,6 +74,7 @@ The following submodules are available:
 - [teamMembership](./teamMembership.typescript.md)
 - [user](./user.typescript.md)
 - [userContactMethod](./userContactMethod.typescript.md)
+- [userHandoffNotificationRule](./userHandoffNotificationRule.typescript.md)
 - [userNotificationRule](./userNotificationRule.typescript.md)
 - [webhookSubscription](./webhookSubscription.typescript.md)
 

@@ -74,6 +74,7 @@ The following submodules are available:
 - [teamMembership](./teamMembership.python.md)
 - [user](./user.python.md)
 - [userContactMethod](./userContactMethod.python.md)
+- [userHandoffNotificationRule](./userHandoffNotificationRule.python.md)
 - [userNotificationRule](./userNotificationRule.python.md)
 - [webhookSubscription](./webhookSubscription.python.md)
 
