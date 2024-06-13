@@ -44,6 +44,7 @@ export * as team from './team';
 export * as teamMembership from './team-membership';
 export * as user from './user';
 export * as userContactMethod from './user-contact-method';
+export * as userHandoffNotificationRule from './user-handoff-notification-rule';
 export * as userNotificationRule from './user-notification-rule';
 export * as webhookSubscription from './webhook-subscription';
 export * as dataPagerdutyAutomationActionsAction from './data-pagerduty-automation-actions-action';

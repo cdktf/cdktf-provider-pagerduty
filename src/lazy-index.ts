@@ -44,6 +44,7 @@ Object.defineProperty(exports, 'team', { get: function () { return require('./te
 Object.defineProperty(exports, 'teamMembership', { get: function () { return require('./team-membership'); } });
 Object.defineProperty(exports, 'user', { get: function () { return require('./user'); } });
 Object.defineProperty(exports, 'userContactMethod', { get: function () { return require('./user-contact-method'); } });
+Object.defineProperty(exports, 'userHandoffNotificationRule', { get: function () { return require('./user-handoff-notification-rule'); } });
 Object.defineProperty(exports, 'userNotificationRule', { get: function () { return require('./user-notification-rule'); } });
 Object.defineProperty(exports, 'webhookSubscription', { get: function () { return require('./webhook-subscription'); } });
 Object.defineProperty(exports, 'dataPagerdutyAutomationActionsAction', { get: function () { return require('./data-pagerduty-automation-actions-action'); } });
