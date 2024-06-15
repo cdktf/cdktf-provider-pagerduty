@@ -4,12 +4,12 @@
 
 ### ServiceDependency <a name="ServiceDependency" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependency"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency pagerduty_service_dependency}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency pagerduty_service_dependency}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedependency"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/servicedependency"
 
 servicedependency.NewServiceDependency(scope Construct, id *string, config ServiceDependencyConfig) ServiceDependency
 ```
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyConfig">ServiceDependencyConfig</a>
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.putDependency">PutDependency</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.resetDependency">ResetDependency</a></code> | *No description.* |
 
 ---
 
@@ -369,19 +369,19 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutDependency` <a name="PutDependency" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.putDependency"></a>
 
 ```go
-func PutDependency(value ServiceDependencyDependency)
+func PutDependency(value interface{})
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.putDependency.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependency">ServiceDependencyDependency</a>
+- *Type:* interface{}
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.resetId"></a>
+##### `ResetDependency` <a name="ResetDependency" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.resetDependency"></a>
 
 ```go
-func ResetId()
+func ResetDependency()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -398,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedependency"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/servicedependency"
 
 servicedependency.ServiceDependency_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedependency"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/servicedependency"
 
 servicedependency.ServiceDependency_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ servicedependency.ServiceDependency_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedependency"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/servicedependency"
 
 servicedependency.ServiceDependency_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ servicedependency.ServiceDependency_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedependency"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/servicedependency"
 
 servicedependency.ServiceDependency_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -487,7 +487,7 @@ The construct id used in the generated config for the ServiceDependency to impor
 
 The id of the existing ServiceDependency that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -517,10 +517,9 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.property.dependency">Dependency</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference">ServiceDependencyDependencyOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.property.dependencyInput">DependencyInput</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependency">ServiceDependencyDependency</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.property.dependency">Dependency</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList">ServiceDependencyDependencyList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.property.dependencyInput">DependencyInput</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -669,30 +668,10 @@ func Provisioners() *[]interface{}
 ##### `Dependency`<sup>Required</sup> <a name="Dependency" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.property.dependency"></a>
 
 ```go
-func Dependency() ServiceDependencyDependencyOutputReference
+func Dependency() ServiceDependencyDependencyList
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference">ServiceDependencyDependencyOutputReference</a>
-
----
-
-##### `DependencyInput`<sup>Optional</sup> <a name="DependencyInput" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.property.dependencyInput"></a>
-
-```go
-func DependencyInput() ServiceDependencyDependency
-```
-
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependency">ServiceDependencyDependency</a>
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
+- *Type:* <a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList">ServiceDependencyDependencyList</a>
 
 ---
 
@@ -703,6 +682,16 @@ func Id() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `DependencyInput`<sup>Optional</sup> <a name="DependencyInput" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependency.property.dependencyInput"></a>
+
+```go
+func DependencyInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -731,7 +720,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedependency"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/servicedependency"
 
 &servicedependency.ServiceDependencyConfig {
 	Connection: interface{},
@@ -741,8 +730,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedepend
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Dependency: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13.serviceDependency.ServiceDependencyDependency,
-	Id: *string,
+	Dependency: interface{},
 }
 ```
 
@@ -757,8 +745,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedepend
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyConfig.property.dependency">Dependency</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependency">ServiceDependencyDependency</a></code> | dependency block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency#id ServiceDependency#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyConfig.property.dependency">Dependency</a></code> | <code>interface{}</code> | dependency block. |
 
 ---
 
@@ -832,32 +819,17 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Dependency`<sup>Required</sup> <a name="Dependency" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyConfig.property.dependency"></a>
+##### `Dependency`<sup>Optional</sup> <a name="Dependency" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyConfig.property.dependency"></a>
 
 ```go
-Dependency ServiceDependencyDependency
+Dependency interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependency">ServiceDependencyDependency</a>
+- *Type:* interface{}
 
 dependency block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency#dependency ServiceDependency#dependency}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency#id ServiceDependency#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency#dependency ServiceDependency#dependency}
 
 ---
 
@@ -866,7 +838,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependency.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedependency"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/servicedependency"
 
 &servicedependency.ServiceDependencyDependency {
 	DependentService: interface{},
@@ -881,11 +853,11 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedepend
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependency.property.dependentService">DependentService</a></code> | <code>interface{}</code> | dependent_service block. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependency.property.supportingService">SupportingService</a></code> | <code>interface{}</code> | supporting_service block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependency.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency#type ServiceDependency#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependency.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency#type ServiceDependency#type}. |
 
 ---
 
-##### `DependentService`<sup>Required</sup> <a name="DependentService" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependency.property.dependentService"></a>
+##### `DependentService`<sup>Optional</sup> <a name="DependentService" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependency.property.dependentService"></a>
 
 ```go
 DependentService interface{}
@@ -895,11 +867,11 @@ DependentService interface{}
 
 dependent_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency#dependent_service ServiceDependency#dependent_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency#dependent_service ServiceDependency#dependent_service}
 
 ---
 
-##### `SupportingService`<sup>Required</sup> <a name="SupportingService" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependency.property.supportingService"></a>
+##### `SupportingService`<sup>Optional</sup> <a name="SupportingService" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependency.property.supportingService"></a>
 
 ```go
 SupportingService interface{}
@@ -909,7 +881,7 @@ SupportingService interface{}
 
 supporting_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency#supporting_service ServiceDependency#supporting_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency#supporting_service ServiceDependency#supporting_service}
 
 ---
 
@@ -921,7 +893,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency#type ServiceDependency#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency#type ServiceDependency#type}.
 
 ---
 
@@ -930,7 +902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyDependentService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedependency"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/servicedependency"
 
 &servicedependency.ServiceDependencyDependencyDependentService {
 	Id: *string,
@@ -942,8 +914,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedepend
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyDependentService.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency#id ServiceDependency#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyDependentService.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency#type ServiceDependency#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyDependentService.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency#id ServiceDependency#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyDependentService.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency#type ServiceDependency#type}. |
 
 ---
 
@@ -955,7 +927,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency#id ServiceDependency#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency#id ServiceDependency#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -970,7 +942,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency#type ServiceDependency#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency#type ServiceDependency#type}.
 
 ---
 
@@ -979,7 +951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencySupportingService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedependency"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/servicedependency"
 
 &servicedependency.ServiceDependencyDependencySupportingService {
 	Id: *string,
@@ -991,8 +963,8 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedepend
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencySupportingService.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency#id ServiceDependency#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencySupportingService.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency#type ServiceDependency#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencySupportingService.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency#id ServiceDependency#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencySupportingService.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency#type ServiceDependency#type}. |
 
 ---
 
@@ -1004,7 +976,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency#id ServiceDependency#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency#id ServiceDependency#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1019,7 +991,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/service_dependency#type ServiceDependency#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/service_dependency#type ServiceDependency#type}.
 
 ---
 
@@ -1030,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyDependentServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedependency"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/servicedependency"
 
 servicedependency.NewServiceDependencyDependencyDependentServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceDependencyDependencyDependentServiceList
 ```
@@ -1190,7 +1162,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyDependentServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedependency"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/servicedependency"
 
 servicedependency.NewServiceDependencyDependencyDependentServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceDependencyDependencyDependentServiceOutputReference
 ```
@@ -1496,20 +1468,182 @@ func InternalValue() interface{}
 ---
 
 
+### ServiceDependencyDependencyList <a name="ServiceDependencyDependencyList" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/servicedependency"
+
+servicedependency.NewServiceDependencyDependencyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceDependencyDependencyList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.get"></a>
+
+```go
+func Get(index *f64) ServiceDependencyDependencyOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
 ### ServiceDependencyDependencyOutputReference <a name="ServiceDependencyDependencyOutputReference" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedependency"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/servicedependency"
 
-servicedependency.NewServiceDependencyDependencyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceDependencyDependencyOutputReference
+servicedependency.NewServiceDependencyDependencyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceDependencyDependencyOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -1526,6 +1660,22 @@ The parent resource.
 - *Type:* *string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -1548,6 +1698,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.putDependentService">PutDependentService</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.putSupportingService">PutSupportingService</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.resetDependentService">ResetDependentService</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.resetSupportingService">ResetSupportingService</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.resetType">ResetType</a></code> | *No description.* |
 
 ---
@@ -1726,6 +1878,18 @@ func PutSupportingService(value interface{})
 
 ---
 
+##### `ResetDependentService` <a name="ResetDependentService" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.resetDependentService"></a>
+
+```go
+func ResetDependentService()
+```
+
+##### `ResetSupportingService` <a name="ResetSupportingService" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.resetSupportingService"></a>
+
+```go
+func ResetSupportingService()
+```
+
 ##### `ResetType` <a name="ResetType" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.resetType"></a>
 
 ```go
@@ -1745,7 +1909,7 @@ func ResetType()
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.property.supportingServiceInput">SupportingServiceInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependency">ServiceDependencyDependency</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -1836,10 +2000,10 @@ func Type() *string
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencyOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() ServiceDependencyDependency
+func InternalValue() interface{}
 ```
 
-- *Type:* <a href="#@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependency">ServiceDependencyDependency</a>
+- *Type:* interface{}
 
 ---
 
@@ -1849,7 +2013,7 @@ func InternalValue() ServiceDependencyDependency
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencySupportingServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedependency"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/servicedependency"
 
 servicedependency.NewServiceDependencyDependencySupportingServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceDependencyDependencySupportingServiceList
 ```
@@ -2009,7 +2173,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceDependency.ServiceDependencyDependencySupportingServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/servicedependency"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/servicedependency"
 
 servicedependency.NewServiceDependencyDependencySupportingServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceDependencyDependencySupportingServiceOutputReference
 ```

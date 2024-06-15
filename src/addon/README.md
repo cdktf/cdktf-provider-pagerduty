@@ -1,3 +1,3 @@
 # `pagerduty_addon`
 
-Refer to the Terraform Registry for docs: [`pagerduty_addon`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/resources/addon).
+Refer to the Terraform Registry for docs: [`pagerduty_addon`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/resources/addon).
