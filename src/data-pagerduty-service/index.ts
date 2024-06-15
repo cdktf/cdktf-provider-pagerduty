@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/data-sources/service
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/data-sources/service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyServiceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/data-sources/service#id DataPagerdutyService#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/data-sources/service#name DataPagerdutyService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/data-sources/service#name DataPagerdutyService#name}
   */
   readonly name: string;
 }
@@ -106,7 +99,7 @@ export class DataPagerdutyServiceTeamsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/data-sources/service pagerduty_service}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/data-sources/service pagerduty_service}
 */
 export class DataPagerdutyService extends cdktf.TerraformDataSource {
 
@@ -122,7 +115,7 @@ export class DataPagerdutyService extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataPagerdutyService resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyService to import
-  * @param importFromId The id of the existing DataPagerdutyService that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/data-sources/service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyService that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/data-sources/service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -134,7 +127,7 @@ export class DataPagerdutyService extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.13.1/docs/data-sources/service pagerduty_service} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.0/docs/data-sources/service pagerduty_service} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -145,7 +138,7 @@ export class DataPagerdutyService extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_service',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.13.1',
+        providerVersion: '3.14.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -156,7 +149,6 @@ export class DataPagerdutyService extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._name = config.name;
   }
 
@@ -189,20 +181,9 @@ export class DataPagerdutyService extends cdktf.TerraformDataSource {
     return this.getStringAttribute('escalation_policy');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -235,19 +216,12 @@ export class DataPagerdutyService extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
         isBlock: false,
