@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/resources/team
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/team
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,25 @@ import * as cdktf from 'cdktf';
 
 export interface TeamConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/resources/team#default_role Team#default_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/team#default_role Team#default_role}
   */
   readonly defaultRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/resources/team#description Team#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/team#description Team#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/resources/team#id Team#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/resources/team#name Team#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/team#name Team#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/resources/team#parent Team#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/team#parent Team#parent}
   */
   readonly parent?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/resources/team pagerduty_team}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/team pagerduty_team}
 */
 export class Team extends cdktf.TerraformResource {
 
@@ -54,7 +47,7 @@ export class Team extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Team resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Team to import
-  * @param importFromId The id of the existing Team that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/resources/team#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Team that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/team#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Team to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +59,7 @@ export class Team extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/resources/team pagerduty_team} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/team pagerduty_team} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +70,7 @@ export class Team extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_team',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.14.4',
+        providerVersion: '3.14.5',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -90,7 +83,6 @@ export class Team extends cdktf.TerraformResource {
     });
     this._defaultRole = config.defaultRole;
     this._description = config.description;
-    this._id = config.id;
     this._name = config.name;
     this._parent = config.parent;
   }
@@ -115,7 +107,7 @@ export class Team extends cdktf.TerraformResource {
     return this._defaultRole;
   }
 
-  // description - computed: false, optional: true, required: false
+  // description - computed: true, optional: true, required: false
   private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
@@ -136,20 +128,9 @@ export class Team extends cdktf.TerraformResource {
     return this.getStringAttribute('html_url');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -189,7 +170,6 @@ export class Team extends cdktf.TerraformResource {
     return {
       default_role: cdktf.stringToTerraform(this._defaultRole),
       description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       parent: cdktf.stringToTerraform(this._parent),
     };
@@ -205,12 +185,6 @@ export class Team extends cdktf.TerraformResource {
       },
       description: {
         value: cdktf.stringToHclTerraform(this._description),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
