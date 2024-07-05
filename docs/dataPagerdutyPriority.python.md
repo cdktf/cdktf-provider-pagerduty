@@ -4,7 +4,7 @@
 
 ### DataPagerdutyPriority <a name="DataPagerdutyPriority" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/data-sources/priority pagerduty_priority}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/data-sources/priority pagerduty_priority}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.Initializer"></a>
 
@@ -21,8 +21,7 @@ dataPagerdutyPriority.DataPagerdutyPriority(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  name: str,
-  id: str = None
+  name: str
 )
 ```
 
@@ -38,7 +37,6 @@ dataPagerdutyPriority.DataPagerdutyPriority(
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the priority to find in the PagerDuty API. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/data-sources/priority#id DataPagerdutyPriority#id}. |
 
 ---
 
@@ -108,18 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the priority to find in the PagerDuty API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/data-sources/priority#name DataPagerdutyPriority#name}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/data-sources/priority#id DataPagerdutyPriority#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/data-sources/priority#name DataPagerdutyPriority#name}
 
 ---
 
@@ -144,7 +131,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.resetId">reset_id</a></code> | *No description.* |
 
 ---
 
@@ -365,12 +351,6 @@ def interpolation_for_attribute(
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -485,7 +465,7 @@ The construct id used in the generated config for the DataPagerdutyPriority to i
 
 The id of the existing DataPagerdutyPriority that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/data-sources/priority#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/data-sources/priority#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -514,9 +494,8 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.property.name">name</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -653,10 +632,10 @@ description: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.property.idInput"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.property.id"></a>
 
 ```python
-id_input: str
+id: str
 ```
 
 - *Type:* str
@@ -667,16 +646,6 @@ id_input: str
 
 ```python
 name_input: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.property.id"></a>
-
-```python
-id: str
 ```
 
 - *Type:* str
@@ -728,8 +697,7 @@ dataPagerdutyPriority.DataPagerdutyPriorityConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  name: str,
-  id: str = None
+  name: str
 )
 ```
 
@@ -745,7 +713,6 @@ dataPagerdutyPriority.DataPagerdutyPriorityConfig(
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriorityConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriorityConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriorityConfig.property.name">name</a></code> | <code>str</code> | The name of the priority to find in the PagerDuty API. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriorityConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/data-sources/priority#id DataPagerdutyPriority#id}. |
 
 ---
 
@@ -829,22 +796,7 @@ name: str
 
 The name of the priority to find in the PagerDuty API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/data-sources/priority#name DataPagerdutyPriority#name}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriorityConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.4/docs/data-sources/priority#id DataPagerdutyPriority#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/data-sources/priority#name DataPagerdutyPriority#name}
 
 ---
 
