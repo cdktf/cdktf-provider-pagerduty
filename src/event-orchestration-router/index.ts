@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface EventOrchestrationRouterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router#event_orchestration EventOrchestrationRouter#event_orchestration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#event_orchestration EventOrchestrationRouter#event_orchestration}
   */
   readonly eventOrchestration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router#id EventOrchestrationRouter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#id EventOrchestrationRouter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,19 +21,19 @@ export interface EventOrchestrationRouterConfig extends cdktf.TerraformMetaArgum
   /**
   * catch_all block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router#catch_all EventOrchestrationRouter#catch_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#catch_all EventOrchestrationRouter#catch_all}
   */
   readonly catchAll: EventOrchestrationRouterCatchAll;
   /**
   * set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router#set EventOrchestrationRouter#set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#set EventOrchestrationRouter#set}
   */
   readonly set: EventOrchestrationRouterSet;
 }
 export interface EventOrchestrationRouterCatchAllActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router#route_to EventOrchestrationRouter#route_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#route_to EventOrchestrationRouter#route_to}
   */
   readonly routeTo: string;
 }
@@ -121,7 +116,7 @@ export interface EventOrchestrationRouterCatchAll {
   /**
   * actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router#actions EventOrchestrationRouter#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#actions EventOrchestrationRouter#actions}
   */
   readonly actions: EventOrchestrationRouterCatchAllActions;
 }
@@ -200,11 +195,190 @@ export class EventOrchestrationRouterCatchAllOutputReference extends cdktf.Compl
     return this._actions.internalValue;
   }
 }
+export interface EventOrchestrationRouterSetRuleActionsDynamicRouteTo {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#lookup_by EventOrchestrationRouter#lookup_by}
+  */
+  readonly lookupBy: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#regex EventOrchestrationRouter#regex}
+  */
+  readonly regex: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#source EventOrchestrationRouter#source}
+  */
+  readonly source: string;
+}
+
+export function eventOrchestrationRouterSetRuleActionsDynamicRouteToToTerraform(struct?: EventOrchestrationRouterSetRuleActionsDynamicRouteTo | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    lookup_by: cdktf.stringToTerraform(struct!.lookupBy),
+    regex: cdktf.stringToTerraform(struct!.regex),
+    source: cdktf.stringToTerraform(struct!.source),
+  }
+}
+
+
+export function eventOrchestrationRouterSetRuleActionsDynamicRouteToToHclTerraform(struct?: EventOrchestrationRouterSetRuleActionsDynamicRouteTo | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    lookup_by: {
+      value: cdktf.stringToHclTerraform(struct!.lookupBy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    regex: {
+      value: cdktf.stringToHclTerraform(struct!.regex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source: {
+      value: cdktf.stringToHclTerraform(struct!.source),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EventOrchestrationRouterSetRuleActionsDynamicRouteToOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EventOrchestrationRouterSetRuleActionsDynamicRouteTo | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._lookupBy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lookupBy = this._lookupBy;
+    }
+    if (this._regex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regex = this._regex;
+    }
+    if (this._source !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EventOrchestrationRouterSetRuleActionsDynamicRouteTo | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._lookupBy = undefined;
+      this._regex = undefined;
+      this._source = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._lookupBy = value.lookupBy;
+      this._regex = value.regex;
+      this._source = value.source;
+    }
+  }
+
+  // lookup_by - computed: false, optional: false, required: true
+  private _lookupBy?: string; 
+  public get lookupBy() {
+    return this.getStringAttribute('lookup_by');
+  }
+  public set lookupBy(value: string) {
+    this._lookupBy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lookupByInput() {
+    return this._lookupBy;
+  }
+
+  // regex - computed: false, optional: false, required: true
+  private _regex?: string; 
+  public get regex() {
+    return this.getStringAttribute('regex');
+  }
+  public set regex(value: string) {
+    this._regex = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regexInput() {
+    return this._regex;
+  }
+
+  // source - computed: false, optional: false, required: true
+  private _source?: string; 
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+  public set source(value: string) {
+    this._source = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source;
+  }
+}
+
+export class EventOrchestrationRouterSetRuleActionsDynamicRouteToList extends cdktf.ComplexList {
+  public internalValue? : EventOrchestrationRouterSetRuleActionsDynamicRouteTo[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EventOrchestrationRouterSetRuleActionsDynamicRouteToOutputReference {
+    return new EventOrchestrationRouterSetRuleActionsDynamicRouteToOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EventOrchestrationRouterSetRuleActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router#route_to EventOrchestrationRouter#route_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#route_to EventOrchestrationRouter#route_to}
   */
-  readonly routeTo: string;
+  readonly routeTo?: string;
+  /**
+  * dynamic_route_to block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#dynamic_route_to EventOrchestrationRouter#dynamic_route_to}
+  */
+  readonly dynamicRouteTo?: EventOrchestrationRouterSetRuleActionsDynamicRouteTo[] | cdktf.IResolvable;
 }
 
 export function eventOrchestrationRouterSetRuleActionsToTerraform(struct?: EventOrchestrationRouterSetRuleActionsOutputReference | EventOrchestrationRouterSetRuleActions): any {
@@ -214,6 +388,7 @@ export function eventOrchestrationRouterSetRuleActionsToTerraform(struct?: Event
   }
   return {
     route_to: cdktf.stringToTerraform(struct!.routeTo),
+    dynamic_route_to: cdktf.listMapper(eventOrchestrationRouterSetRuleActionsDynamicRouteToToTerraform, true)(struct!.dynamicRouteTo),
   }
 }
 
@@ -229,6 +404,12 @@ export function eventOrchestrationRouterSetRuleActionsToHclTerraform(struct?: Ev
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    dynamic_route_to: {
+      value: cdktf.listMapperHcl(eventOrchestrationRouterSetRuleActionsDynamicRouteToToHclTerraform, true)(struct!.dynamicRouteTo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "EventOrchestrationRouterSetRuleActionsDynamicRouteToList",
     },
   };
 
@@ -254,6 +435,10 @@ export class EventOrchestrationRouterSetRuleActionsOutputReference extends cdktf
       hasAnyValues = true;
       internalValueResult.routeTo = this._routeTo;
     }
+    if (this._dynamicRouteTo?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dynamicRouteTo = this._dynamicRouteTo?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -261,14 +446,16 @@ export class EventOrchestrationRouterSetRuleActionsOutputReference extends cdktf
     if (value === undefined) {
       this.isEmptyObject = false;
       this._routeTo = undefined;
+      this._dynamicRouteTo.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._routeTo = value.routeTo;
+      this._dynamicRouteTo.internalValue = value.dynamicRouteTo;
     }
   }
 
-  // route_to - computed: false, optional: false, required: true
+  // route_to - computed: false, optional: true, required: false
   private _routeTo?: string; 
   public get routeTo() {
     return this.getStringAttribute('route_to');
@@ -276,14 +463,33 @@ export class EventOrchestrationRouterSetRuleActionsOutputReference extends cdktf
   public set routeTo(value: string) {
     this._routeTo = value;
   }
+  public resetRouteTo() {
+    this._routeTo = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get routeToInput() {
     return this._routeTo;
   }
+
+  // dynamic_route_to - computed: false, optional: true, required: false
+  private _dynamicRouteTo = new EventOrchestrationRouterSetRuleActionsDynamicRouteToList(this, "dynamic_route_to", false);
+  public get dynamicRouteTo() {
+    return this._dynamicRouteTo;
+  }
+  public putDynamicRouteTo(value: EventOrchestrationRouterSetRuleActionsDynamicRouteTo[] | cdktf.IResolvable) {
+    this._dynamicRouteTo.internalValue = value;
+  }
+  public resetDynamicRouteTo() {
+    this._dynamicRouteTo.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dynamicRouteToInput() {
+    return this._dynamicRouteTo.internalValue;
+  }
 }
 export interface EventOrchestrationRouterSetRuleCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router#expression EventOrchestrationRouter#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#expression EventOrchestrationRouter#expression}
   */
   readonly expression: string;
 }
@@ -396,23 +602,23 @@ export class EventOrchestrationRouterSetRuleConditionList extends cdktf.ComplexL
 }
 export interface EventOrchestrationRouterSetRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router#disabled EventOrchestrationRouter#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#disabled EventOrchestrationRouter#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router#label EventOrchestrationRouter#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#label EventOrchestrationRouter#label}
   */
   readonly label?: string;
   /**
   * actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router#actions EventOrchestrationRouter#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#actions EventOrchestrationRouter#actions}
   */
   readonly actions: EventOrchestrationRouterSetRuleActions;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router#condition EventOrchestrationRouter#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#condition EventOrchestrationRouter#condition}
   */
   readonly condition?: EventOrchestrationRouterSetRuleCondition[] | cdktf.IResolvable;
 }
@@ -617,7 +823,7 @@ export class EventOrchestrationRouterSetRuleList extends cdktf.ComplexList {
 }
 export interface EventOrchestrationRouterSet {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router#id EventOrchestrationRouter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#id EventOrchestrationRouter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -626,7 +832,7 @@ export interface EventOrchestrationRouterSet {
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router#rule EventOrchestrationRouter#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#rule EventOrchestrationRouter#rule}
   */
   readonly rule?: EventOrchestrationRouterSetRule[] | cdktf.IResolvable;
 }
@@ -736,7 +942,7 @@ export class EventOrchestrationRouterSetOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router pagerduty_event_orchestration_router}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router pagerduty_event_orchestration_router}
 */
 export class EventOrchestrationRouter extends cdktf.TerraformResource {
 
@@ -752,7 +958,7 @@ export class EventOrchestrationRouter extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EventOrchestrationRouter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventOrchestrationRouter to import
-  * @param importFromId The id of the existing EventOrchestrationRouter that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventOrchestrationRouter that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventOrchestrationRouter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -764,7 +970,7 @@ export class EventOrchestrationRouter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/event_orchestration_router pagerduty_event_orchestration_router} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/event_orchestration_router pagerduty_event_orchestration_router} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -775,7 +981,7 @@ export class EventOrchestrationRouter extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_event_orchestration_router',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.14.5',
+        providerVersion: '3.15.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

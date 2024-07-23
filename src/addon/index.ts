@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/addon
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/addon
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface AddonConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/addon#name Addon#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/addon#name Addon#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/addon#src Addon#src}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/addon#src Addon#src}
   */
   readonly src: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/addon pagerduty_addon}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/addon pagerduty_addon}
 */
 export class Addon extends cdktf.TerraformResource {
 
@@ -39,7 +34,7 @@ export class Addon extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Addon resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Addon to import
-  * @param importFromId The id of the existing Addon that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/addon#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Addon that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/addon#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Addon to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -51,7 +46,7 @@ export class Addon extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.14.5/docs/resources/addon pagerduty_addon} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.0/docs/resources/addon pagerduty_addon} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -62,7 +57,7 @@ export class Addon extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_addon',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.14.5',
+        providerVersion: '3.15.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
