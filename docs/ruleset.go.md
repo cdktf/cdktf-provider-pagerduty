@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.ruleset.Ruleset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/ruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/ruleset"
 
 ruleset.NewRuleset(scope Construct, id *string, config RulesetConfig) Ruleset
 ```
@@ -405,7 +405,7 @@ func ResetTeam()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.ruleset.Ruleset.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/ruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/ruleset"
 
 ruleset.Ruleset_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.ruleset.Ruleset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/ruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/ruleset"
 
 ruleset.Ruleset_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ ruleset.Ruleset_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.ruleset.Ruleset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/ruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/ruleset"
 
 ruleset.Ruleset_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ ruleset.Ruleset_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.ruleset.Ruleset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/ruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/ruleset"
 
 ruleset.Ruleset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.ruleset.RulesetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/ruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/ruleset"
 
 &ruleset.RulesetConfig {
 	Connection: interface{},
@@ -794,7 +794,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/ruleset"
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
-	Team: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13.ruleset.RulesetTeam,
+	Team: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.ruleset.RulesetTeam,
 }
 ```
 
@@ -931,7 +931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.ruleset.RulesetTeam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/ruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/ruleset"
 
 &ruleset.RulesetTeam {
 	Id: *string,
@@ -968,7 +968,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.ruleset.RulesetTeamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/ruleset"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/ruleset"
 
 ruleset.NewRulesetTeamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RulesetTeamOutputReference
 ```
