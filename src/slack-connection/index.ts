@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/slack_connection
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/slack_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface SlackConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/slack_connection#channel_id SlackConnection#channel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/slack_connection#channel_id SlackConnection#channel_id}
   */
   readonly channelId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/slack_connection#id SlackConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/slack_connection#id SlackConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/slack_connection#notification_type SlackConnection#notification_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/slack_connection#notification_type SlackConnection#notification_type}
   */
   readonly notificationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/slack_connection#source_id SlackConnection#source_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/slack_connection#source_id SlackConnection#source_id}
   */
   readonly sourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/slack_connection#source_type SlackConnection#source_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/slack_connection#source_type SlackConnection#source_type}
   */
   readonly sourceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/slack_connection#workspace_id SlackConnection#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/slack_connection#workspace_id SlackConnection#workspace_id}
   */
   readonly workspaceId: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/slack_connection#config SlackConnection#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/slack_connection#config SlackConnection#config}
   */
   readonly config: SlackConnectionConfigA[] | cdktf.IResolvable;
 }
 export interface SlackConnectionConfigA {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/slack_connection#events SlackConnection#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/slack_connection#events SlackConnection#events}
   */
   readonly events: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/slack_connection#priorities SlackConnection#priorities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/slack_connection#priorities SlackConnection#priorities}
   */
   readonly priorities?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/slack_connection#urgency SlackConnection#urgency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/slack_connection#urgency SlackConnection#urgency}
   */
   readonly urgency?: string;
 }
@@ -227,7 +227,7 @@ export class SlackConnectionConfigAList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/slack_connection pagerduty_slack_connection}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/slack_connection pagerduty_slack_connection}
 */
 export class SlackConnection extends cdktf.TerraformResource {
 
@@ -243,7 +243,7 @@ export class SlackConnection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SlackConnection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SlackConnection to import
-  * @param importFromId The id of the existing SlackConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/slack_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SlackConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/slack_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SlackConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -255,7 +255,7 @@ export class SlackConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.1/docs/resources/slack_connection pagerduty_slack_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/resources/slack_connection pagerduty_slack_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -266,7 +266,7 @@ export class SlackConnection extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_slack_connection',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.15.1',
+        providerVersion: '3.15.2',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
