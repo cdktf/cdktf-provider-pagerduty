@@ -4,12 +4,12 @@
 
 ### DataPagerdutyStandards <a name="DataPagerdutyStandards" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandards"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/data-sources/standards pagerduty_standards}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.3/docs/data-sources/standards pagerduty_standards}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandards.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandards"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutystandards"
 
 datapagerdutystandards.NewDataPagerdutyStandards(scope Construct, id *string, config DataPagerdutyStandardsConfig) DataPagerdutyStandards
 ```
@@ -283,7 +283,7 @@ func ResetResourceType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandards.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandards"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutystandards"
 
 datapagerdutystandards.DataPagerdutyStandards_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandards.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandards"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutystandards"
 
 datapagerdutystandards.DataPagerdutyStandards_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datapagerdutystandards.DataPagerdutyStandards_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandards.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandards"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutystandards"
 
 datapagerdutystandards.DataPagerdutyStandards_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datapagerdutystandards.DataPagerdutyStandards_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandards.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandards"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutystandards"
 
 datapagerdutystandards.DataPagerdutyStandards_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataPagerdutyStandards to 
 
 The id of the existing DataPagerdutyStandards that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/data-sources/standards#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.3/docs/data-sources/standards#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandards"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutystandards"
 
 &datapagerdutystandards.DataPagerdutyStandardsConfig {
 	Connection: interface{},
@@ -608,7 +608,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerduty
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsConfig.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/data-sources/standards#resource_type DataPagerdutyStandards#resource_type}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsConfig.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.3/docs/data-sources/standards#resource_type DataPagerdutyStandards#resource_type}. |
 
 ---
 
@@ -690,7 +690,7 @@ ResourceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.2/docs/data-sources/standards#resource_type DataPagerdutyStandards#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.3/docs/data-sources/standards#resource_type DataPagerdutyStandards#resource_type}.
 
 ---
 
@@ -699,7 +699,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsStandards.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandards"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutystandards"
 
 &datapagerdutystandards.DataPagerdutyStandardsStandards {
 
@@ -712,7 +712,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerduty
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsStandardsExclusions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandards"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutystandards"
 
 &datapagerdutystandards.DataPagerdutyStandardsStandardsExclusions {
 
@@ -725,7 +725,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerduty
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsStandardsInclusions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandards"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutystandards"
 
 &datapagerdutystandards.DataPagerdutyStandardsStandardsInclusions {
 
@@ -740,7 +740,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerduty
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsStandardsExclusionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandards"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutystandards"
 
 datapagerdutystandards.NewDataPagerdutyStandardsStandardsExclusionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPagerdutyStandardsStandardsExclusionsList
 ```
@@ -889,7 +889,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsStandardsExclusionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandards"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutystandards"
 
 datapagerdutystandards.NewDataPagerdutyStandardsStandardsExclusionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPagerdutyStandardsStandardsExclusionsOutputReference
 ```
@@ -1178,7 +1178,7 @@ func InternalValue() DataPagerdutyStandardsStandardsExclusions
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsStandardsInclusionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandards"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutystandards"
 
 datapagerdutystandards.NewDataPagerdutyStandardsStandardsInclusionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPagerdutyStandardsStandardsInclusionsList
 ```
@@ -1327,7 +1327,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsStandardsInclusionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandards"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutystandards"
 
 datapagerdutystandards.NewDataPagerdutyStandardsStandardsInclusionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPagerdutyStandardsStandardsInclusionsOutputReference
 ```
@@ -1616,7 +1616,7 @@ func InternalValue() DataPagerdutyStandardsStandardsInclusions
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsStandardsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandards"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutystandards"
 
 datapagerdutystandards.NewDataPagerdutyStandardsStandardsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPagerdutyStandardsStandardsList
 ```
@@ -1765,7 +1765,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsStandardsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandards"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutystandards"
 
 datapagerdutystandards.NewDataPagerdutyStandardsStandardsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPagerdutyStandardsStandardsOutputReference
 ```
