@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.6/docs/data-sources/licenses
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.7/docs/data-sources/licenses
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyLicensesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.6/docs/data-sources/licenses#id DataPagerdutyLicenses#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.7/docs/data-sources/licenses#id DataPagerdutyLicenses#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +142,7 @@ export class DataPagerdutyLicensesLicensesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.6/docs/data-sources/licenses pagerduty_licenses}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.7/docs/data-sources/licenses pagerduty_licenses}
 */
 export class DataPagerdutyLicenses extends cdktf.TerraformDataSource {
 
@@ -163,7 +158,7 @@ export class DataPagerdutyLicenses extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataPagerdutyLicenses resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyLicenses to import
-  * @param importFromId The id of the existing DataPagerdutyLicenses that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.6/docs/data-sources/licenses#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyLicenses that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.7/docs/data-sources/licenses#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyLicenses to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -175,7 +170,7 @@ export class DataPagerdutyLicenses extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.6/docs/data-sources/licenses pagerduty_licenses} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.7/docs/data-sources/licenses pagerduty_licenses} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -186,7 +181,7 @@ export class DataPagerdutyLicenses extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_licenses',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.15.6',
+        providerVersion: '3.15.7',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
