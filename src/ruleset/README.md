@@ -1,3 +1,3 @@
 # `pagerduty_ruleset`
 
-Refer to the Terraform Registry for docs: [`pagerduty_ruleset`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.15.7/docs/resources/ruleset).
+Refer to the Terraform Registry for docs: [`pagerduty_ruleset`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/resources/ruleset).

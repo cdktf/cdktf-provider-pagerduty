@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [addon](./addon.typescript.md)
+- [alertGroupingSetting](./alertGroupingSetting.typescript.md)
 - [automationActionsAction](./automationActionsAction.typescript.md)
 - [automationActionsActionServiceAssociation](./automationActionsActionServiceAssociation.typescript.md)
 - [automationActionsActionTeamAssociation](./automationActionsActionTeamAssociation.typescript.md)
@@ -12,6 +13,7 @@ The following submodules are available:
 - [automationActionsRunnerTeamAssociation](./automationActionsRunnerTeamAssociation.typescript.md)
 - [businessService](./businessService.typescript.md)
 - [businessServiceSubscriber](./businessServiceSubscriber.typescript.md)
+- [dataPagerdutyAlertGroupingSetting](./dataPagerdutyAlertGroupingSetting.typescript.md)
 - [dataPagerdutyAutomationActionsAction](./dataPagerdutyAutomationActionsAction.typescript.md)
 - [dataPagerdutyAutomationActionsRunner](./dataPagerdutyAutomationActionsRunner.typescript.md)
 - [dataPagerdutyBusinessService](./dataPagerdutyBusinessService.typescript.md)
