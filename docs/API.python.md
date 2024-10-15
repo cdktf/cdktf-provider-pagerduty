@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [addon](./addon.python.md)
+- [alertGroupingSetting](./alertGroupingSetting.python.md)
 - [automationActionsAction](./automationActionsAction.python.md)
 - [automationActionsActionServiceAssociation](./automationActionsActionServiceAssociation.python.md)
 - [automationActionsActionTeamAssociation](./automationActionsActionTeamAssociation.python.md)
@@ -12,6 +13,7 @@ The following submodules are available:
 - [automationActionsRunnerTeamAssociation](./automationActionsRunnerTeamAssociation.python.md)
 - [businessService](./businessService.python.md)
 - [businessServiceSubscriber](./businessServiceSubscriber.python.md)
+- [dataPagerdutyAlertGroupingSetting](./dataPagerdutyAlertGroupingSetting.python.md)
 - [dataPagerdutyAutomationActionsAction](./dataPagerdutyAutomationActionsAction.python.md)
 - [dataPagerdutyAutomationActionsRunner](./dataPagerdutyAutomationActionsRunner.python.md)
 - [dataPagerdutyBusinessService](./dataPagerdutyBusinessService.python.md)

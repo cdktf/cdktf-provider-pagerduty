@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [addon](./addon.java.md)
+- [alertGroupingSetting](./alertGroupingSetting.java.md)
 - [automationActionsAction](./automationActionsAction.java.md)
 - [automationActionsActionServiceAssociation](./automationActionsActionServiceAssociation.java.md)
 - [automationActionsActionTeamAssociation](./automationActionsActionTeamAssociation.java.md)
@@ -12,6 +13,7 @@ The following submodules are available:
 - [automationActionsRunnerTeamAssociation](./automationActionsRunnerTeamAssociation.java.md)
 - [businessService](./businessService.java.md)
 - [businessServiceSubscriber](./businessServiceSubscriber.java.md)
+- [dataPagerdutyAlertGroupingSetting](./dataPagerdutyAlertGroupingSetting.java.md)
 - [dataPagerdutyAutomationActionsAction](./dataPagerdutyAutomationActionsAction.java.md)
 - [dataPagerdutyAutomationActionsRunner](./dataPagerdutyAutomationActionsRunner.java.md)
 - [dataPagerdutyBusinessService](./dataPagerdutyBusinessService.java.md)

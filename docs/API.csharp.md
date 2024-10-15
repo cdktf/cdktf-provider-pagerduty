@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [addon](./addon.csharp.md)
+- [alertGroupingSetting](./alertGroupingSetting.csharp.md)
 - [automationActionsAction](./automationActionsAction.csharp.md)
 - [automationActionsActionServiceAssociation](./automationActionsActionServiceAssociation.csharp.md)
 - [automationActionsActionTeamAssociation](./automationActionsActionTeamAssociation.csharp.md)
@@ -12,6 +13,7 @@ The following submodules are available:
 - [automationActionsRunnerTeamAssociation](./automationActionsRunnerTeamAssociation.csharp.md)
 - [businessService](./businessService.csharp.md)
 - [businessServiceSubscriber](./businessServiceSubscriber.csharp.md)
+- [dataPagerdutyAlertGroupingSetting](./dataPagerdutyAlertGroupingSetting.csharp.md)
 - [dataPagerdutyAutomationActionsAction](./dataPagerdutyAutomationActionsAction.csharp.md)
 - [dataPagerdutyAutomationActionsRunner](./dataPagerdutyAutomationActionsRunner.csharp.md)
 - [dataPagerdutyBusinessService](./dataPagerdutyBusinessService.csharp.md)

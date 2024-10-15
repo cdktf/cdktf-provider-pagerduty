@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [addon](./addon.go.md)
+- [alertGroupingSetting](./alertGroupingSetting.go.md)
 - [automationActionsAction](./automationActionsAction.go.md)
 - [automationActionsActionServiceAssociation](./automationActionsActionServiceAssociation.go.md)
 - [automationActionsActionTeamAssociation](./automationActionsActionTeamAssociation.go.md)
@@ -12,6 +13,7 @@ The following submodules are available:
 - [automationActionsRunnerTeamAssociation](./automationActionsRunnerTeamAssociation.go.md)
 - [businessService](./businessService.go.md)
 - [businessServiceSubscriber](./businessServiceSubscriber.go.md)
+- [dataPagerdutyAlertGroupingSetting](./dataPagerdutyAlertGroupingSetting.go.md)
 - [dataPagerdutyAutomationActionsAction](./dataPagerdutyAutomationActionsAction.go.md)
 - [dataPagerdutyAutomationActionsRunner](./dataPagerdutyAutomationActionsRunner.go.md)
 - [dataPagerdutyBusinessService](./dataPagerdutyBusinessService.go.md)
