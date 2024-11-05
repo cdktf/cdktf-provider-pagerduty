@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/data-sources/standards_resource_scores
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/data-sources/standards_resource_scores
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyStandardsResourceScoresConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/data-sources/standards_resource_scores#id DataPagerdutyStandardsResourceScores#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/data-sources/standards_resource_scores#id DataPagerdutyStandardsResourceScores#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/data-sources/standards_resource_scores#resource_type DataPagerdutyStandardsResourceScores#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/data-sources/standards_resource_scores#resource_type DataPagerdutyStandardsResourceScores#resource_type}
   */
   readonly resourceType: string;
 }
@@ -185,7 +180,7 @@ export class DataPagerdutyStandardsResourceScoresStandardsList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/data-sources/standards_resource_scores pagerduty_standards_resource_scores}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/data-sources/standards_resource_scores pagerduty_standards_resource_scores}
 */
 export class DataPagerdutyStandardsResourceScores extends cdktf.TerraformDataSource {
 
@@ -201,7 +196,7 @@ export class DataPagerdutyStandardsResourceScores extends cdktf.TerraformDataSou
   * Generates CDKTF code for importing a DataPagerdutyStandardsResourceScores resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyStandardsResourceScores to import
-  * @param importFromId The id of the existing DataPagerdutyStandardsResourceScores that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/data-sources/standards_resource_scores#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyStandardsResourceScores that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/data-sources/standards_resource_scores#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyStandardsResourceScores to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -213,7 +208,7 @@ export class DataPagerdutyStandardsResourceScores extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/data-sources/standards_resource_scores pagerduty_standards_resource_scores} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/data-sources/standards_resource_scores pagerduty_standards_resource_scores} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -224,7 +219,7 @@ export class DataPagerdutyStandardsResourceScores extends cdktf.TerraformDataSou
       terraformResourceType: 'pagerduty_standards_resource_scores',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.16.0',
+        providerVersion: '3.17.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
