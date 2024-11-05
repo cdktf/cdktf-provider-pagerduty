@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/data-sources/event_orchestration_global_cache_variable
 // generated from terraform resource schema
 
