@@ -29,6 +29,7 @@ export * as incidentCustomField from './incident-custom-field';
 export * as incidentCustomFieldOption from './incident-custom-field-option';
 export * as incidentWorkflow from './incident-workflow';
 export * as incidentWorkflowTrigger from './incident-workflow-trigger';
+export * as jiraCloudAccountMappingRule from './jira-cloud-account-mapping-rule';
 export * as maintenanceWindow from './maintenance-window';
 export * as responsePlay from './response-play';
 export * as ruleset from './ruleset';
@@ -61,6 +62,7 @@ export * as dataPagerdutyEventOrchestrations from './data-pagerduty-event-orches
 export * as dataPagerdutyExtensionSchema from './data-pagerduty-extension-schema';
 export * as dataPagerdutyIncidentCustomField from './data-pagerduty-incident-custom-field';
 export * as dataPagerdutyIncidentWorkflow from './data-pagerduty-incident-workflow';
+export * as dataPagerdutyJiraCloudAccountMapping from './data-pagerduty-jira-cloud-account-mapping';
 export * as dataPagerdutyLicense from './data-pagerduty-license';
 export * as dataPagerdutyLicenses from './data-pagerduty-licenses';
 export * as dataPagerdutyPriority from './data-pagerduty-priority';

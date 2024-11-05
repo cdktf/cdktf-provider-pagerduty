@@ -29,6 +29,7 @@ Object.defineProperty(exports, 'incidentCustomField', { get: function () { retur
 Object.defineProperty(exports, 'incidentCustomFieldOption', { get: function () { return require('./incident-custom-field-option'); } });
 Object.defineProperty(exports, 'incidentWorkflow', { get: function () { return require('./incident-workflow'); } });
 Object.defineProperty(exports, 'incidentWorkflowTrigger', { get: function () { return require('./incident-workflow-trigger'); } });
+Object.defineProperty(exports, 'jiraCloudAccountMappingRule', { get: function () { return require('./jira-cloud-account-mapping-rule'); } });
 Object.defineProperty(exports, 'maintenanceWindow', { get: function () { return require('./maintenance-window'); } });
 Object.defineProperty(exports, 'responsePlay', { get: function () { return require('./response-play'); } });
 Object.defineProperty(exports, 'ruleset', { get: function () { return require('./ruleset'); } });
@@ -61,6 +62,7 @@ Object.defineProperty(exports, 'dataPagerdutyEventOrchestrations', { get: functi
 Object.defineProperty(exports, 'dataPagerdutyExtensionSchema', { get: function () { return require('./data-pagerduty-extension-schema'); } });
 Object.defineProperty(exports, 'dataPagerdutyIncidentCustomField', { get: function () { return require('./data-pagerduty-incident-custom-field'); } });
 Object.defineProperty(exports, 'dataPagerdutyIncidentWorkflow', { get: function () { return require('./data-pagerduty-incident-workflow'); } });
+Object.defineProperty(exports, 'dataPagerdutyJiraCloudAccountMapping', { get: function () { return require('./data-pagerduty-jira-cloud-account-mapping'); } });
 Object.defineProperty(exports, 'dataPagerdutyLicense', { get: function () { return require('./data-pagerduty-license'); } });
 Object.defineProperty(exports, 'dataPagerdutyLicenses', { get: function () { return require('./data-pagerduty-licenses'); } });
 Object.defineProperty(exports, 'dataPagerdutyPriority', { get: function () { return require('./data-pagerduty-priority'); } });

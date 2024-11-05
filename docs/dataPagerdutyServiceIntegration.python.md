@@ -4,7 +4,7 @@
 
 ### DataPagerdutyServiceIntegration <a name="DataPagerdutyServiceIntegration" id="@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/data-sources/service_integration pagerduty_service_integration}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/data-sources/service_integration pagerduty_service_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegration.Initializer"></a>
 
@@ -38,7 +38,7 @@ dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegration(
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegration.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegration.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegration.Initializer.parameter.integrationSummary">integration_summary</a></code> | <code>str</code> | examples "Amazon CloudWatch", "New Relic". |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegration.Initializer.parameter.serviceName">service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegration.Initializer.parameter.serviceName">service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 examples "Amazon CloudWatch", "New Relic".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/data-sources/service_integration#integration_summary DataPagerdutyServiceIntegration#integration_summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/data-sources/service_integration#integration_summary DataPagerdutyServiceIntegration#integration_summary}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}.
 
 ---
 
@@ -475,7 +475,7 @@ The construct id used in the generated config for the DataPagerdutyServiceIntegr
 
 The id of the existing DataPagerdutyServiceIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/data-sources/service_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/data-sources/service_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -746,7 +746,7 @@ dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegrationConfig(
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegrationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegrationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegrationConfig.property.integrationSummary">integration_summary</a></code> | <code>str</code> | examples "Amazon CloudWatch", "New Relic". |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegrationConfig.property.serviceName">service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegrationConfig.property.serviceName">service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}. |
 
 ---
 
@@ -830,7 +830,7 @@ integration_summary: str
 
 examples "Amazon CloudWatch", "New Relic".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/data-sources/service_integration#integration_summary DataPagerdutyServiceIntegration#integration_summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/data-sources/service_integration#integration_summary DataPagerdutyServiceIntegration#integration_summary}
 
 ---
 
@@ -842,7 +842,7 @@ service_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.16.0/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}.
 
 ---
 
