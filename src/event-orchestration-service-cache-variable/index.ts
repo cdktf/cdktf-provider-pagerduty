@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/event_orchestration_service_cache_variable
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.1/docs/resources/event_orchestration_service_cache_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +8,33 @@ import * as cdktf from 'cdktf';
 
 export interface EventOrchestrationServiceCacheVariableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/event_orchestration_service_cache_variable#disabled EventOrchestrationServiceCacheVariable#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.1/docs/resources/event_orchestration_service_cache_variable#disabled EventOrchestrationServiceCacheVariable#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/event_orchestration_service_cache_variable#name EventOrchestrationServiceCacheVariable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.1/docs/resources/event_orchestration_service_cache_variable#name EventOrchestrationServiceCacheVariable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/event_orchestration_service_cache_variable#service EventOrchestrationServiceCacheVariable#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.1/docs/resources/event_orchestration_service_cache_variable#service EventOrchestrationServiceCacheVariable#service}
   */
   readonly service: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/event_orchestration_service_cache_variable#condition EventOrchestrationServiceCacheVariable#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.1/docs/resources/event_orchestration_service_cache_variable#condition EventOrchestrationServiceCacheVariable#condition}
   */
   readonly condition?: EventOrchestrationServiceCacheVariableCondition[] | cdktf.IResolvable;
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/event_orchestration_service_cache_variable#configuration EventOrchestrationServiceCacheVariable#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.1/docs/resources/event_orchestration_service_cache_variable#configuration EventOrchestrationServiceCacheVariable#configuration}
   */
   readonly configuration: EventOrchestrationServiceCacheVariableConfiguration;
 }
 export interface EventOrchestrationServiceCacheVariableCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/event_orchestration_service_cache_variable#expression EventOrchestrationServiceCacheVariable#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.1/docs/resources/event_orchestration_service_cache_variable#expression EventOrchestrationServiceCacheVariable#expression}
   */
   readonly expression: string;
 }
@@ -152,19 +147,19 @@ export class EventOrchestrationServiceCacheVariableConditionList extends cdktf.C
 }
 export interface EventOrchestrationServiceCacheVariableConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/event_orchestration_service_cache_variable#regex EventOrchestrationServiceCacheVariable#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.1/docs/resources/event_orchestration_service_cache_variable#regex EventOrchestrationServiceCacheVariable#regex}
   */
   readonly regex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/event_orchestration_service_cache_variable#source EventOrchestrationServiceCacheVariable#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.1/docs/resources/event_orchestration_service_cache_variable#source EventOrchestrationServiceCacheVariable#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/event_orchestration_service_cache_variable#ttl_seconds EventOrchestrationServiceCacheVariable#ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.1/docs/resources/event_orchestration_service_cache_variable#ttl_seconds EventOrchestrationServiceCacheVariable#ttl_seconds}
   */
   readonly ttlSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/event_orchestration_service_cache_variable#type EventOrchestrationServiceCacheVariable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.1/docs/resources/event_orchestration_service_cache_variable#type EventOrchestrationServiceCacheVariable#type}
   */
   readonly type: string;
 }
@@ -332,7 +327,7 @@ export class EventOrchestrationServiceCacheVariableConfigurationOutputReference 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/event_orchestration_service_cache_variable pagerduty_event_orchestration_service_cache_variable}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.1/docs/resources/event_orchestration_service_cache_variable pagerduty_event_orchestration_service_cache_variable}
 */
 export class EventOrchestrationServiceCacheVariable extends cdktf.TerraformResource {
 
@@ -348,7 +343,7 @@ export class EventOrchestrationServiceCacheVariable extends cdktf.TerraformResou
   * Generates CDKTF code for importing a EventOrchestrationServiceCacheVariable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventOrchestrationServiceCacheVariable to import
-  * @param importFromId The id of the existing EventOrchestrationServiceCacheVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/event_orchestration_service_cache_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventOrchestrationServiceCacheVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.1/docs/resources/event_orchestration_service_cache_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventOrchestrationServiceCacheVariable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -360,7 +355,7 @@ export class EventOrchestrationServiceCacheVariable extends cdktf.TerraformResou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.0/docs/resources/event_orchestration_service_cache_variable pagerduty_event_orchestration_service_cache_variable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.17.1/docs/resources/event_orchestration_service_cache_variable pagerduty_event_orchestration_service_cache_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -371,7 +366,7 @@ export class EventOrchestrationServiceCacheVariable extends cdktf.TerraformResou
       terraformResourceType: 'pagerduty_event_orchestration_service_cache_variable',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.17.0',
+        providerVersion: '3.17.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
