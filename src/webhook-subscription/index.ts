@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +8,48 @@ import * as cdktf from 'cdktf';
 
 export interface WebhookSubscriptionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription#active WebhookSubscription#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription#active WebhookSubscription#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription#description WebhookSubscription#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription#description WebhookSubscription#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription#events WebhookSubscription#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription#events WebhookSubscription#events}
   */
   readonly events: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription#id WebhookSubscription#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription#id WebhookSubscription#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription#type WebhookSubscription#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription#type WebhookSubscription#type}
   */
   readonly type?: string;
   /**
   * delivery_method block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription#delivery_method WebhookSubscription#delivery_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription#delivery_method WebhookSubscription#delivery_method}
   */
   readonly deliveryMethod: WebhookSubscriptionDeliveryMethod[] | cdktf.IResolvable;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription#filter WebhookSubscription#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription#filter WebhookSubscription#filter}
   */
   readonly filter: WebhookSubscriptionFilter[] | cdktf.IResolvable;
 }
 export interface WebhookSubscriptionDeliveryMethodCustomHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription#name WebhookSubscription#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription#name WebhookSubscription#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription#value WebhookSubscription#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription#value WebhookSubscription#value}
   */
   readonly value: string;
 }
@@ -193,21 +188,21 @@ export class WebhookSubscriptionDeliveryMethodCustomHeaderList extends cdktf.Com
 }
 export interface WebhookSubscriptionDeliveryMethod {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription#temporarily_disabled WebhookSubscription#temporarily_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription#temporarily_disabled WebhookSubscription#temporarily_disabled}
   */
   readonly temporarilyDisabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription#type WebhookSubscription#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription#type WebhookSubscription#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription#url WebhookSubscription#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription#url WebhookSubscription#url}
   */
   readonly url?: string;
   /**
   * custom_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription#custom_header WebhookSubscription#custom_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription#custom_header WebhookSubscription#custom_header}
   */
   readonly customHeader?: WebhookSubscriptionDeliveryMethodCustomHeader[] | cdktf.IResolvable;
 }
@@ -410,14 +405,14 @@ export class WebhookSubscriptionDeliveryMethodList extends cdktf.ComplexList {
 }
 export interface WebhookSubscriptionFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription#id WebhookSubscription#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription#id WebhookSubscription#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription#type WebhookSubscription#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription#type WebhookSubscription#type}
   */
   readonly type: string;
 }
@@ -559,7 +554,7 @@ export class WebhookSubscriptionFilterList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription pagerduty_webhook_subscription}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription pagerduty_webhook_subscription}
 */
 export class WebhookSubscription extends cdktf.TerraformResource {
 
@@ -575,7 +570,7 @@ export class WebhookSubscription extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WebhookSubscription resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WebhookSubscription to import
-  * @param importFromId The id of the existing WebhookSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WebhookSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WebhookSubscription to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -587,7 +582,7 @@ export class WebhookSubscription extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.0/docs/resources/webhook_subscription pagerduty_webhook_subscription} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/webhook_subscription pagerduty_webhook_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -598,7 +593,7 @@ export class WebhookSubscription extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_webhook_subscription',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.18.0',
+        providerVersion: '3.18.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
