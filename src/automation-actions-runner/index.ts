@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/automation_actions_runner
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/automation_actions_runner
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +8,40 @@ import * as cdktf from 'cdktf';
 
 export interface AutomationActionsRunnerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/automation_actions_runner#description AutomationActionsRunner#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/automation_actions_runner#description AutomationActionsRunner#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/automation_actions_runner#id AutomationActionsRunner#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/automation_actions_runner#id AutomationActionsRunner#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/automation_actions_runner#last_seen AutomationActionsRunner#last_seen}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/automation_actions_runner#last_seen AutomationActionsRunner#last_seen}
   */
   readonly lastSeen?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/automation_actions_runner#name AutomationActionsRunner#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/automation_actions_runner#name AutomationActionsRunner#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/automation_actions_runner#runbook_api_key AutomationActionsRunner#runbook_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/automation_actions_runner#runbook_api_key AutomationActionsRunner#runbook_api_key}
   */
   readonly runbookApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/automation_actions_runner#runbook_base_uri AutomationActionsRunner#runbook_base_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/automation_actions_runner#runbook_base_uri AutomationActionsRunner#runbook_base_uri}
   */
   readonly runbookBaseUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/automation_actions_runner#runner_type AutomationActionsRunner#runner_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/automation_actions_runner#runner_type AutomationActionsRunner#runner_type}
   */
   readonly runnerType: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/automation_actions_runner pagerduty_automation_actions_runner}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/automation_actions_runner pagerduty_automation_actions_runner}
 */
 export class AutomationActionsRunner extends cdktf.TerraformResource {
 
@@ -62,7 +57,7 @@ export class AutomationActionsRunner extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AutomationActionsRunner resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutomationActionsRunner to import
-  * @param importFromId The id of the existing AutomationActionsRunner that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/automation_actions_runner#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AutomationActionsRunner that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/automation_actions_runner#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutomationActionsRunner to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +69,7 @@ export class AutomationActionsRunner extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/automation_actions_runner pagerduty_automation_actions_runner} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/automation_actions_runner pagerduty_automation_actions_runner} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +80,7 @@ export class AutomationActionsRunner extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_automation_actions_runner',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.18.1',
+        providerVersion: '3.18.2',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

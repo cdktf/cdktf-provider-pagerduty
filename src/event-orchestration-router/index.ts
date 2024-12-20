@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface EventOrchestrationRouterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#event_orchestration EventOrchestrationRouter#event_orchestration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#event_orchestration EventOrchestrationRouter#event_orchestration}
   */
   readonly eventOrchestration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#id EventOrchestrationRouter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#id EventOrchestrationRouter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,19 +21,19 @@ export interface EventOrchestrationRouterConfig extends cdktf.TerraformMetaArgum
   /**
   * catch_all block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#catch_all EventOrchestrationRouter#catch_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#catch_all EventOrchestrationRouter#catch_all}
   */
   readonly catchAll: EventOrchestrationRouterCatchAll;
   /**
   * set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#set EventOrchestrationRouter#set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#set EventOrchestrationRouter#set}
   */
   readonly set: EventOrchestrationRouterSet;
 }
 export interface EventOrchestrationRouterCatchAllActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#route_to EventOrchestrationRouter#route_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#route_to EventOrchestrationRouter#route_to}
   */
   readonly routeTo: string;
 }
@@ -121,7 +116,7 @@ export interface EventOrchestrationRouterCatchAll {
   /**
   * actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#actions EventOrchestrationRouter#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#actions EventOrchestrationRouter#actions}
   */
   readonly actions: EventOrchestrationRouterCatchAllActions;
 }
@@ -202,15 +197,15 @@ export class EventOrchestrationRouterCatchAllOutputReference extends cdktf.Compl
 }
 export interface EventOrchestrationRouterSetRuleActionsDynamicRouteTo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#lookup_by EventOrchestrationRouter#lookup_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#lookup_by EventOrchestrationRouter#lookup_by}
   */
   readonly lookupBy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#regex EventOrchestrationRouter#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#regex EventOrchestrationRouter#regex}
   */
   readonly regex: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#source EventOrchestrationRouter#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#source EventOrchestrationRouter#source}
   */
   readonly source: string;
 }
@@ -375,13 +370,13 @@ export class EventOrchestrationRouterSetRuleActionsDynamicRouteToList extends cd
 }
 export interface EventOrchestrationRouterSetRuleActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#route_to EventOrchestrationRouter#route_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#route_to EventOrchestrationRouter#route_to}
   */
   readonly routeTo?: string;
   /**
   * dynamic_route_to block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#dynamic_route_to EventOrchestrationRouter#dynamic_route_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#dynamic_route_to EventOrchestrationRouter#dynamic_route_to}
   */
   readonly dynamicRouteTo?: EventOrchestrationRouterSetRuleActionsDynamicRouteTo[] | cdktf.IResolvable;
 }
@@ -494,7 +489,7 @@ export class EventOrchestrationRouterSetRuleActionsOutputReference extends cdktf
 }
 export interface EventOrchestrationRouterSetRuleCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#expression EventOrchestrationRouter#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#expression EventOrchestrationRouter#expression}
   */
   readonly expression: string;
 }
@@ -607,23 +602,23 @@ export class EventOrchestrationRouterSetRuleConditionList extends cdktf.ComplexL
 }
 export interface EventOrchestrationRouterSetRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#disabled EventOrchestrationRouter#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#disabled EventOrchestrationRouter#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#label EventOrchestrationRouter#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#label EventOrchestrationRouter#label}
   */
   readonly label?: string;
   /**
   * actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#actions EventOrchestrationRouter#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#actions EventOrchestrationRouter#actions}
   */
   readonly actions: EventOrchestrationRouterSetRuleActions;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#condition EventOrchestrationRouter#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#condition EventOrchestrationRouter#condition}
   */
   readonly condition?: EventOrchestrationRouterSetRuleCondition[] | cdktf.IResolvable;
 }
@@ -828,7 +823,7 @@ export class EventOrchestrationRouterSetRuleList extends cdktf.ComplexList {
 }
 export interface EventOrchestrationRouterSet {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#id EventOrchestrationRouter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#id EventOrchestrationRouter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -837,7 +832,7 @@ export interface EventOrchestrationRouterSet {
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#rule EventOrchestrationRouter#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#rule EventOrchestrationRouter#rule}
   */
   readonly rule?: EventOrchestrationRouterSetRule[] | cdktf.IResolvable;
 }
@@ -947,7 +942,7 @@ export class EventOrchestrationRouterSetOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router pagerduty_event_orchestration_router}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router pagerduty_event_orchestration_router}
 */
 export class EventOrchestrationRouter extends cdktf.TerraformResource {
 
@@ -963,7 +958,7 @@ export class EventOrchestrationRouter extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EventOrchestrationRouter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventOrchestrationRouter to import
-  * @param importFromId The id of the existing EventOrchestrationRouter that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventOrchestrationRouter that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventOrchestrationRouter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -975,7 +970,7 @@ export class EventOrchestrationRouter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.1/docs/resources/event_orchestration_router pagerduty_event_orchestration_router} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/event_orchestration_router pagerduty_event_orchestration_router} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -986,7 +981,7 @@ export class EventOrchestrationRouter extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_event_orchestration_router',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.18.1',
+        providerVersion: '3.18.2',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
