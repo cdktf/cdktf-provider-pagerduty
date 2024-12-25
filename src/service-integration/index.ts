@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,84 +8,84 @@ import * as cdktf from 'cdktf';
 
 export interface ServiceIntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#email_filter_mode ServiceIntegration#email_filter_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#email_filter_mode ServiceIntegration#email_filter_mode}
   */
   readonly emailFilterMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#email_incident_creation ServiceIntegration#email_incident_creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#email_incident_creation ServiceIntegration#email_incident_creation}
   */
   readonly emailIncidentCreation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#email_parsing_fallback ServiceIntegration#email_parsing_fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#email_parsing_fallback ServiceIntegration#email_parsing_fallback}
   */
   readonly emailParsingFallback?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#id ServiceIntegration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#id ServiceIntegration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#integration_email ServiceIntegration#integration_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#integration_email ServiceIntegration#integration_email}
   */
   readonly integrationEmail?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#integration_key ServiceIntegration#integration_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#integration_key ServiceIntegration#integration_key}
   */
   readonly integrationKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#name ServiceIntegration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#name ServiceIntegration#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#service ServiceIntegration#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#service ServiceIntegration#service}
   */
   readonly service: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#type ServiceIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#type ServiceIntegration#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#vendor ServiceIntegration#vendor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#vendor ServiceIntegration#vendor}
   */
   readonly vendor?: string;
   /**
   * email_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#email_filter ServiceIntegration#email_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#email_filter ServiceIntegration#email_filter}
   */
   readonly emailFilter?: ServiceIntegrationEmailFilter[] | cdktf.IResolvable;
   /**
   * email_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#email_parser ServiceIntegration#email_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#email_parser ServiceIntegration#email_parser}
   */
   readonly emailParser?: ServiceIntegrationEmailParser[] | cdktf.IResolvable;
 }
 export interface ServiceIntegrationEmailFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#body_mode ServiceIntegration#body_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#body_mode ServiceIntegration#body_mode}
   */
   readonly bodyMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#body_regex ServiceIntegration#body_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#body_regex ServiceIntegration#body_regex}
   */
   readonly bodyRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#from_email_mode ServiceIntegration#from_email_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#from_email_mode ServiceIntegration#from_email_mode}
   */
   readonly fromEmailMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#from_email_regex ServiceIntegration#from_email_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#from_email_regex ServiceIntegration#from_email_regex}
   */
   readonly fromEmailRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#subject_mode ServiceIntegration#subject_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#subject_mode ServiceIntegration#subject_mode}
   */
   readonly subjectMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#subject_regex ServiceIntegration#subject_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#subject_regex ServiceIntegration#subject_regex}
   */
   readonly subjectRegex?: string;
 }
@@ -356,15 +351,15 @@ export class ServiceIntegrationEmailFilterList extends cdktf.ComplexList {
 }
 export interface ServiceIntegrationEmailParserMatchPredicatePredicatePredicate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#matcher ServiceIntegration#matcher}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#matcher ServiceIntegration#matcher}
   */
   readonly matcher: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#part ServiceIntegration#part}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#part ServiceIntegration#part}
   */
   readonly part: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#type ServiceIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#type ServiceIntegration#type}
   */
   readonly type: string;
 }
@@ -529,21 +524,21 @@ export class ServiceIntegrationEmailParserMatchPredicatePredicatePredicateList e
 }
 export interface ServiceIntegrationEmailParserMatchPredicatePredicate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#matcher ServiceIntegration#matcher}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#matcher ServiceIntegration#matcher}
   */
   readonly matcher?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#part ServiceIntegration#part}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#part ServiceIntegration#part}
   */
   readonly part?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#type ServiceIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#type ServiceIntegration#type}
   */
   readonly type: string;
   /**
   * predicate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#predicate ServiceIntegration#predicate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#predicate ServiceIntegration#predicate}
   */
   readonly predicate?: ServiceIntegrationEmailParserMatchPredicatePredicatePredicate[] | cdktf.IResolvable;
 }
@@ -743,13 +738,13 @@ export class ServiceIntegrationEmailParserMatchPredicatePredicateList extends cd
 }
 export interface ServiceIntegrationEmailParserMatchPredicate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#type ServiceIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#type ServiceIntegration#type}
   */
   readonly type: string;
   /**
   * predicate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#predicate ServiceIntegration#predicate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#predicate ServiceIntegration#predicate}
   */
   readonly predicate?: ServiceIntegrationEmailParserMatchPredicatePredicate[] | cdktf.IResolvable;
 }
@@ -859,27 +854,27 @@ export class ServiceIntegrationEmailParserMatchPredicateOutputReference extends 
 }
 export interface ServiceIntegrationEmailParserValueExtractor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#ends_before ServiceIntegration#ends_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#ends_before ServiceIntegration#ends_before}
   */
   readonly endsBefore?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#part ServiceIntegration#part}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#part ServiceIntegration#part}
   */
   readonly part: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#regex ServiceIntegration#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#regex ServiceIntegration#regex}
   */
   readonly regex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#starts_after ServiceIntegration#starts_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#starts_after ServiceIntegration#starts_after}
   */
   readonly startsAfter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#type ServiceIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#type ServiceIntegration#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#value_name ServiceIntegration#value_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#value_name ServiceIntegration#value_name}
   */
   readonly valueName: string;
 }
@@ -1131,19 +1126,19 @@ export class ServiceIntegrationEmailParserValueExtractorList extends cdktf.Compl
 }
 export interface ServiceIntegrationEmailParser {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#action ServiceIntegration#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#action ServiceIntegration#action}
   */
   readonly action: string;
   /**
   * match_predicate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#match_predicate ServiceIntegration#match_predicate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#match_predicate ServiceIntegration#match_predicate}
   */
   readonly matchPredicate: ServiceIntegrationEmailParserMatchPredicate;
   /**
   * value_extractor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#value_extractor ServiceIntegration#value_extractor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#value_extractor ServiceIntegration#value_extractor}
   */
   readonly valueExtractor?: ServiceIntegrationEmailParserValueExtractor[] | cdktf.IResolvable;
 }
@@ -1316,7 +1311,7 @@ export class ServiceIntegrationEmailParserList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration pagerduty_service_integration}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration pagerduty_service_integration}
 */
 export class ServiceIntegration extends cdktf.TerraformResource {
 
@@ -1332,7 +1327,7 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ServiceIntegration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceIntegration to import
-  * @param importFromId The id of the existing ServiceIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceIntegration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1344,7 +1339,7 @@ export class ServiceIntegration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.2/docs/resources/service_integration pagerduty_service_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.18.3/docs/resources/service_integration pagerduty_service_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1355,7 +1350,7 @@ export class ServiceIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_service_integration',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.18.2',
+        providerVersion: '3.18.3',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
