@@ -4,7 +4,7 @@
 
 ### DataPagerdutyStandardsResourceScores <a name="DataPagerdutyStandardsResourceScores" id="@cdktf/provider-pagerduty.dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScores"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.1/docs/data-sources/standards_resource_scores pagerduty_standards_resource_scores}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.2/docs/data-sources/standards_resource_scores pagerduty_standards_resource_scores}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScores.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScores(
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScores.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScores.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScores.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScores.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.1/docs/data-sources/standards_resource_scores#id DataPagerdutyStandardsResourceScores#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScores.Initializer.parameter.resourceType">resource_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.1/docs/data-sources/standards_resource_scores#resource_type DataPagerdutyStandardsResourceScores#resource_type}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScores.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.2/docs/data-sources/standards_resource_scores#id DataPagerdutyStandardsResourceScores#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScores.Initializer.parameter.resourceType">resource_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.2/docs/data-sources/standards_resource_scores#resource_type DataPagerdutyStandardsResourceScores#resource_type}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.1/docs/data-sources/standards_resource_scores#id DataPagerdutyStandardsResourceScores#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.2/docs/data-sources/standards_resource_scores#id DataPagerdutyStandardsResourceScores#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -117,7 +117,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.1/docs/data-sources/standards_resource_scores#resource_type DataPagerdutyStandardsResourceScores#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.2/docs/data-sources/standards_resource_scores#resource_type DataPagerdutyStandardsResourceScores#resource_type}.
 
 ---
 
@@ -476,7 +476,7 @@ The construct id used in the generated config for the DataPagerdutyStandardsReso
 
 The id of the existing DataPagerdutyStandardsResourceScores that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.1/docs/data-sources/standards_resource_scores#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.2/docs/data-sources/standards_resource_scores#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -746,8 +746,8 @@ dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScoresConfig(
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScoresConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScoresConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScoresConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScoresConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.1/docs/data-sources/standards_resource_scores#id DataPagerdutyStandardsResourceScores#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScoresConfig.property.resourceType">resource_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.1/docs/data-sources/standards_resource_scores#resource_type DataPagerdutyStandardsResourceScores#resource_type}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScoresConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.2/docs/data-sources/standards_resource_scores#id DataPagerdutyStandardsResourceScores#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandardsResourceScores.DataPagerdutyStandardsResourceScoresConfig.property.resourceType">resource_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.2/docs/data-sources/standards_resource_scores#resource_type DataPagerdutyStandardsResourceScores#resource_type}. |
 
 ---
 
@@ -829,7 +829,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.1/docs/data-sources/standards_resource_scores#id DataPagerdutyStandardsResourceScores#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.2/docs/data-sources/standards_resource_scores#id DataPagerdutyStandardsResourceScores#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -844,7 +844,7 @@ resource_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.1/docs/data-sources/standards_resource_scores#resource_type DataPagerdutyStandardsResourceScores#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.2/docs/data-sources/standards_resource_scores#resource_type DataPagerdutyStandardsResourceScores#resource_type}.
 
 ---
 
