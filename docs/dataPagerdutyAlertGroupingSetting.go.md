@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyalertgroupingsetting"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyalertgroupingsetting"
 
 datapagerdutyalertgroupingsetting.NewDataPagerdutyAlertGroupingSetting(scope Construct, id *string, config DataPagerdutyAlertGroupingSettingConfig) DataPagerdutyAlertGroupingSetting
 ```
@@ -296,7 +296,7 @@ func ResetConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyalertgroupingsetting"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyalertgroupingsetting"
 
 datapagerdutyalertgroupingsetting.DataPagerdutyAlertGroupingSetting_IsConstruct(x interface{}) *bool
 ```
@@ -328,7 +328,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyalertgroupingsetting"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyalertgroupingsetting"
 
 datapagerdutyalertgroupingsetting.DataPagerdutyAlertGroupingSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ datapagerdutyalertgroupingsetting.DataPagerdutyAlertGroupingSetting_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyalertgroupingsetting"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyalertgroupingsetting"
 
 datapagerdutyalertgroupingsetting.DataPagerdutyAlertGroupingSetting_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ datapagerdutyalertgroupingsetting.DataPagerdutyAlertGroupingSetting_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyalertgroupingsetting"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyalertgroupingsetting"
 
 datapagerdutyalertgroupingsetting.DataPagerdutyAlertGroupingSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -651,7 +651,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyalertgroupingsetting"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyalertgroupingsetting"
 
 &datapagerdutyalertgroupingsetting.DataPagerdutyAlertGroupingSettingConfig {
 	Connection: interface{},
@@ -662,7 +662,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerduty
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Config: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfigA,
+	Config: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfigA,
 }
 ```
 
@@ -783,7 +783,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyalertgroupingsetting"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyalertgroupingsetting"
 
 &datapagerdutyalertgroupingsetting.DataPagerdutyAlertGroupingSettingConfigA {
 	Aggregate: *string,
@@ -831,7 +831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyalertgroupingsetting"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyalertgroupingsetting"
 
 datapagerdutyalertgroupingsetting.NewDataPagerdutyAlertGroupingSettingConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataPagerdutyAlertGroupingSettingConfigAOutputReference
 ```
