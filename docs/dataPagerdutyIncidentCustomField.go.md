@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentCustomField.DataPagerdutyIncidentCustomField.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidentcustomfield"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidentcustomfield"
 
 datapagerdutyincidentcustomfield.NewDataPagerdutyIncidentCustomField(scope Construct, id *string, config DataPagerdutyIncidentCustomFieldConfig) DataPagerdutyIncidentCustomField
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentCustomField.DataPagerdutyIncidentCustomField.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidentcustomfield"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidentcustomfield"
 
 datapagerdutyincidentcustomfield.DataPagerdutyIncidentCustomField_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentCustomField.DataPagerdutyIncidentCustomField.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidentcustomfield"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidentcustomfield"
 
 datapagerdutyincidentcustomfield.DataPagerdutyIncidentCustomField_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datapagerdutyincidentcustomfield.DataPagerdutyIncidentCustomField_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentCustomField.DataPagerdutyIncidentCustomField.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidentcustomfield"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidentcustomfield"
 
 datapagerdutyincidentcustomfield.DataPagerdutyIncidentCustomField_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datapagerdutyincidentcustomfield.DataPagerdutyIncidentCustomField_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentCustomField.DataPagerdutyIncidentCustomField.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidentcustomfield"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidentcustomfield"
 
 datapagerdutyincidentcustomfield.DataPagerdutyIncidentCustomField_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentCustomField.DataPagerdutyIncidentCustomFieldConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidentcustomfield"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidentcustomfield"
 
 &datapagerdutyincidentcustomfield.DataPagerdutyIncidentCustomFieldConfig {
 	Connection: interface{},
