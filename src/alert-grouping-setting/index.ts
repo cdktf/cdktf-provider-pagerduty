@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.3/docs/resources/alert_grouping_setting
 // generated from terraform resource schema
 
