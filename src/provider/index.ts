@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.3/docs
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,53 +8,53 @@ import * as cdktf from 'cdktf';
 
 export interface PagerdutyProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.3/docs#api_url_override PagerdutyProvider#api_url_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs#api_url_override PagerdutyProvider#api_url_override}
   */
   readonly apiUrlOverride?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.3/docs#insecure_tls PagerdutyProvider#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs#insecure_tls PagerdutyProvider#insecure_tls}
   */
   readonly insecureTls?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.3/docs#service_region PagerdutyProvider#service_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs#service_region PagerdutyProvider#service_region}
   */
   readonly serviceRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.3/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}
   */
   readonly skipCredentialsValidation?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.3/docs#token PagerdutyProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs#token PagerdutyProvider#token}
   */
   readonly token?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.3/docs#user_token PagerdutyProvider#user_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs#user_token PagerdutyProvider#user_token}
   */
   readonly userToken?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.3/docs#alias PagerdutyProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs#alias PagerdutyProvider#alias}
   */
   readonly alias?: string;
   /**
   * use_app_oauth_scoped_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.3/docs#use_app_oauth_scoped_token PagerdutyProvider#use_app_oauth_scoped_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs#use_app_oauth_scoped_token PagerdutyProvider#use_app_oauth_scoped_token}
   */
   readonly useAppOauthScopedToken?: PagerdutyProviderUseAppOauthScopedToken;
 }
 export interface PagerdutyProviderUseAppOauthScopedToken {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.3/docs#pd_client_id PagerdutyProvider#pd_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs#pd_client_id PagerdutyProvider#pd_client_id}
   */
   readonly pdClientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.3/docs#pd_client_secret PagerdutyProvider#pd_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs#pd_client_secret PagerdutyProvider#pd_client_secret}
   */
   readonly pdClientSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.3/docs#pd_subdomain PagerdutyProvider#pd_subdomain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs#pd_subdomain PagerdutyProvider#pd_subdomain}
   */
   readonly pdSubdomain?: string;
 }
@@ -109,7 +104,7 @@ export function pagerdutyProviderUseAppOauthScopedTokenToHclTerraform(struct?: P
 
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.3/docs pagerduty}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs pagerduty}
 */
 export class PagerdutyProvider extends cdktf.TerraformProvider {
 
@@ -125,7 +120,7 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   * Generates CDKTF code for importing a PagerdutyProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PagerdutyProvider to import
-  * @param importFromId The id of the existing PagerdutyProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.3/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PagerdutyProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PagerdutyProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -137,7 +132,7 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.3/docs pagerduty} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.19.4/docs pagerduty} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -148,7 +143,7 @@ export class PagerdutyProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'pagerduty',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.19.3',
+        providerVersion: '3.19.4',
         providerVersionConstraint: '~> 3.0'
       },
       terraformProviderSource: 'PagerDuty/pagerduty'
