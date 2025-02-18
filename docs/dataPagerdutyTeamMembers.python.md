@@ -4,7 +4,7 @@
 
 ### DataPagerdutyTeamMembers <a name="DataPagerdutyTeamMembers" id="@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/data-sources/team_members pagerduty_team_members}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/data-sources/team_members pagerduty_team_members}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembers.Initializer"></a>
 
@@ -38,7 +38,7 @@ dataPagerdutyTeamMembers.DataPagerdutyTeamMembers(
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembers.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembers.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembers.Initializer.parameter.teamId">team_id</a></code> | <code>str</code> | The ID of the team to find via the PagerDuty API. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembers.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/data-sources/team_members#id DataPagerdutyTeamMembers#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembers.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/data-sources/team_members#id DataPagerdutyTeamMembers#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the team to find via the PagerDuty API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/data-sources/team_members#team_id DataPagerdutyTeamMembers#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/data-sources/team_members#team_id DataPagerdutyTeamMembers#team_id}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/data-sources/team_members#id DataPagerdutyTeamMembers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/data-sources/team_members#id DataPagerdutyTeamMembers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -485,7 +485,7 @@ The construct id used in the generated config for the DataPagerdutyTeamMembers t
 
 The id of the existing DataPagerdutyTeamMembers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/data-sources/team_members#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/data-sources/team_members#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -745,7 +745,7 @@ dataPagerdutyTeamMembers.DataPagerdutyTeamMembersConfig(
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembersConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembersConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembersConfig.property.teamId">team_id</a></code> | <code>str</code> | The ID of the team to find via the PagerDuty API. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembersConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/data-sources/team_members#id DataPagerdutyTeamMembers#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyTeamMembers.DataPagerdutyTeamMembersConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/data-sources/team_members#id DataPagerdutyTeamMembers#id}. |
 
 ---
 
@@ -829,7 +829,7 @@ team_id: str
 
 The ID of the team to find via the PagerDuty API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/data-sources/team_members#team_id DataPagerdutyTeamMembers#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/data-sources/team_members#team_id DataPagerdutyTeamMembers#team_id}
 
 ---
 
@@ -841,7 +841,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/data-sources/team_members#id DataPagerdutyTeamMembers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/data-sources/team_members#id DataPagerdutyTeamMembers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

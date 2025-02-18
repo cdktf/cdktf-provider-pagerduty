@@ -4,12 +4,12 @@
 
 ### DataPagerdutyServiceIntegration <a name="DataPagerdutyServiceIntegration" id="@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/data-sources/service_integration pagerduty_service_integration}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/data-sources/service_integration pagerduty_service_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyserviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyserviceintegration"
 
 datapagerdutyserviceintegration.NewDataPagerdutyServiceIntegration(scope Construct, id *string, config DataPagerdutyServiceIntegrationConfig) DataPagerdutyServiceIntegration
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyserviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyserviceintegration"
 
 datapagerdutyserviceintegration.DataPagerdutyServiceIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyserviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyserviceintegration"
 
 datapagerdutyserviceintegration.DataPagerdutyServiceIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datapagerdutyserviceintegration.DataPagerdutyServiceIntegration_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyserviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyserviceintegration"
 
 datapagerdutyserviceintegration.DataPagerdutyServiceIntegration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datapagerdutyserviceintegration.DataPagerdutyServiceIntegration_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyserviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyserviceintegration"
 
 datapagerdutyserviceintegration.DataPagerdutyServiceIntegration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataPagerdutyServiceIntegr
 
 The id of the existing DataPagerdutyServiceIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/data-sources/service_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/data-sources/service_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyserviceintegration"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyserviceintegration"
 
 &datapagerdutyserviceintegration.DataPagerdutyServiceIntegrationConfig {
 	Connection: interface{},
@@ -636,7 +636,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerduty
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegrationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegrationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegrationConfig.property.integrationSummary">IntegrationSummary</a></code> | <code>*string</code> | examples "Amazon CloudWatch", "New Relic". |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegrationConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegrationConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}. |
 
 ---
 
@@ -720,7 +720,7 @@ IntegrationSummary *string
 
 examples "Amazon CloudWatch", "New Relic".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/data-sources/service_integration#integration_summary DataPagerdutyServiceIntegration#integration_summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/data-sources/service_integration#integration_summary DataPagerdutyServiceIntegration#integration_summary}
 
 ---
 
@@ -732,7 +732,7 @@ ServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.20.0/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.0/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}.
 
 ---
 
