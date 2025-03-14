@@ -4,7 +4,7 @@
 
 ### AutomationActionsAction <a name="AutomationActionsAction" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action pagerduty_automation_actions_action}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action pagerduty_automation_actions_action}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer"></a>
 
@@ -25,9 +25,12 @@ automationActionsAction.AutomationActionsAction(
   action_type: str,
   name: str,
   action_classification: str = None,
+  allow_invocation_from_event_orchestration: str = None,
+  allow_invocation_manually: str = None,
   creation_time: str = None,
   description: str = None,
   id: str = None,
+  map_to_all_services: typing.Union[bool, IResolvable] = None,
   modify_time: str = None,
   only_invocable_on_unresolved_incidents: typing.Union[bool, IResolvable] = None,
   runner_id: str = None,
@@ -48,17 +51,20 @@ automationActionsAction.AutomationActionsAction(
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.actionDataReference">action_data_reference</a></code> | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference">AutomationActionsActionActionDataReference</a></code> | action_data_reference block. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.actionType">action_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#action_type AutomationActionsAction#action_type}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#name AutomationActionsAction#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.actionClassification">action_classification</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#action_classification AutomationActionsAction#action_classification}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.creationTime">creation_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#creation_time AutomationActionsAction#creation_time}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#description AutomationActionsAction#description}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#id AutomationActionsAction#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.modifyTime">modify_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#modify_time AutomationActionsAction#modify_time}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.onlyInvocableOnUnresolvedIncidents">only_invocable_on_unresolved_incidents</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#only_invocable_on_unresolved_incidents AutomationActionsAction#only_invocable_on_unresolved_incidents}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.runnerId">runner_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#runner_id AutomationActionsAction#runner_id}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.runnerType">runner_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#runner_type AutomationActionsAction#runner_type}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#type AutomationActionsAction#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.actionType">action_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#action_type AutomationActionsAction#action_type}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#name AutomationActionsAction#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.actionClassification">action_classification</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#action_classification AutomationActionsAction#action_classification}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.allowInvocationFromEventOrchestration">allow_invocation_from_event_orchestration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#allow_invocation_from_event_orchestration AutomationActionsAction#allow_invocation_from_event_orchestration}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.allowInvocationManually">allow_invocation_manually</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#allow_invocation_manually AutomationActionsAction#allow_invocation_manually}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.creationTime">creation_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#creation_time AutomationActionsAction#creation_time}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#description AutomationActionsAction#description}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#id AutomationActionsAction#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.mapToAllServices">map_to_all_services</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#map_to_all_services AutomationActionsAction#map_to_all_services}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.modifyTime">modify_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#modify_time AutomationActionsAction#modify_time}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.onlyInvocableOnUnresolvedIncidents">only_invocable_on_unresolved_incidents</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#only_invocable_on_unresolved_incidents AutomationActionsAction#only_invocable_on_unresolved_incidents}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.runnerId">runner_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#runner_id AutomationActionsAction#runner_id}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.runnerType">runner_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#runner_type AutomationActionsAction#runner_type}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#type AutomationActionsAction#type}. |
 
 ---
 
@@ -128,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 action_data_reference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#action_data_reference AutomationActionsAction#action_data_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#action_data_reference AutomationActionsAction#action_data_reference}
 
 ---
 
@@ -136,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#action_type AutomationActionsAction#action_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#action_type AutomationActionsAction#action_type}.
 
 ---
 
@@ -144,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#name AutomationActionsAction#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#name AutomationActionsAction#name}.
 
 ---
 
@@ -152,7 +158,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#action_classification AutomationActionsAction#action_classification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#action_classification AutomationActionsAction#action_classification}.
+
+---
+
+##### `allow_invocation_from_event_orchestration`<sup>Optional</sup> <a name="allow_invocation_from_event_orchestration" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.allowInvocationFromEventOrchestration"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#allow_invocation_from_event_orchestration AutomationActionsAction#allow_invocation_from_event_orchestration}.
+
+---
+
+##### `allow_invocation_manually`<sup>Optional</sup> <a name="allow_invocation_manually" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.allowInvocationManually"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#allow_invocation_manually AutomationActionsAction#allow_invocation_manually}.
 
 ---
 
@@ -160,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#creation_time AutomationActionsAction#creation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#creation_time AutomationActionsAction#creation_time}.
 
 ---
 
@@ -168,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#description AutomationActionsAction#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#description AutomationActionsAction#description}.
 
 ---
 
@@ -176,10 +198,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#id AutomationActionsAction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#id AutomationActionsAction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `map_to_all_services`<sup>Optional</sup> <a name="map_to_all_services" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer.parameter.mapToAllServices"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#map_to_all_services AutomationActionsAction#map_to_all_services}.
 
 ---
 
@@ -187,7 +217,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#modify_time AutomationActionsAction#modify_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#modify_time AutomationActionsAction#modify_time}.
 
 ---
 
@@ -195,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#only_invocable_on_unresolved_incidents AutomationActionsAction#only_invocable_on_unresolved_incidents}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#only_invocable_on_unresolved_incidents AutomationActionsAction#only_invocable_on_unresolved_incidents}.
 
 ---
 
@@ -203,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#runner_id AutomationActionsAction#runner_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#runner_id AutomationActionsAction#runner_id}.
 
 ---
 
@@ -211,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#runner_type AutomationActionsAction#runner_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#runner_type AutomationActionsAction#runner_type}.
 
 ---
 
@@ -219,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#type AutomationActionsAction#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#type AutomationActionsAction#type}.
 
 ---
 
@@ -252,9 +282,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.putActionDataReference">put_action_data_reference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.resetActionClassification">reset_action_classification</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.resetAllowInvocationFromEventOrchestration">reset_allow_invocation_from_event_orchestration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.resetAllowInvocationManually">reset_allow_invocation_manually</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.resetCreationTime">reset_creation_time</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.resetMapToAllServices">reset_map_to_all_services</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.resetModifyTime">reset_modify_time</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.resetOnlyInvocableOnUnresolvedIncidents">reset_only_invocable_on_unresolved_incidents</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.resetRunnerId">reset_runner_id</a></code> | *No description.* |
@@ -604,7 +637,7 @@ def put_action_data_reference(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#invocation_command AutomationActionsAction#invocation_command}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#invocation_command AutomationActionsAction#invocation_command}.
 
 ---
 
@@ -612,7 +645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#process_automation_job_arguments AutomationActionsAction#process_automation_job_arguments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#process_automation_job_arguments AutomationActionsAction#process_automation_job_arguments}.
 
 ---
 
@@ -620,7 +653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#process_automation_job_id AutomationActionsAction#process_automation_job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#process_automation_job_id AutomationActionsAction#process_automation_job_id}.
 
 ---
 
@@ -628,7 +661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#process_automation_node_filter AutomationActionsAction#process_automation_node_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#process_automation_node_filter AutomationActionsAction#process_automation_node_filter}.
 
 ---
 
@@ -636,7 +669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#script AutomationActionsAction#script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#script AutomationActionsAction#script}.
 
 ---
 
@@ -644,6 +677,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ```python
 def reset_action_classification() -> None
+```
+
+##### `reset_allow_invocation_from_event_orchestration` <a name="reset_allow_invocation_from_event_orchestration" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.resetAllowInvocationFromEventOrchestration"></a>
+
+```python
+def reset_allow_invocation_from_event_orchestration() -> None
+```
+
+##### `reset_allow_invocation_manually` <a name="reset_allow_invocation_manually" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.resetAllowInvocationManually"></a>
+
+```python
+def reset_allow_invocation_manually() -> None
 ```
 
 ##### `reset_creation_time` <a name="reset_creation_time" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.resetCreationTime"></a>
@@ -662,6 +707,12 @@ def reset_description() -> None
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_map_to_all_services` <a name="reset_map_to_all_services" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.resetMapToAllServices"></a>
+
+```python
+def reset_map_to_all_services() -> None
 ```
 
 ##### `reset_modify_time` <a name="reset_modify_time" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.resetModifyTime"></a>
@@ -808,7 +859,7 @@ The construct id used in the generated config for the AutomationActionsAction to
 
 The id of the existing AutomationActionsAction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,9 +893,12 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.actionClassificationInput">action_classification_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.actionDataReferenceInput">action_data_reference_input</a></code> | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference">AutomationActionsActionActionDataReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.actionTypeInput">action_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.allowInvocationFromEventOrchestrationInput">allow_invocation_from_event_orchestration_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.allowInvocationManuallyInput">allow_invocation_manually_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.creationTimeInput">creation_time_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.mapToAllServicesInput">map_to_all_services_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.modifyTimeInput">modify_time_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.onlyInvocableOnUnresolvedIncidentsInput">only_invocable_on_unresolved_incidents_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -853,9 +907,12 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.actionClassification">action_classification</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.actionType">action_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.allowInvocationFromEventOrchestration">allow_invocation_from_event_orchestration</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.allowInvocationManually">allow_invocation_manually</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.creationTime">creation_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.mapToAllServices">map_to_all_services</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.modifyTime">modify_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.onlyInvocableOnUnresolvedIncidents">only_invocable_on_unresolved_incidents</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1047,6 +1104,26 @@ action_type_input: str
 
 ---
 
+##### `allow_invocation_from_event_orchestration_input`<sup>Optional</sup> <a name="allow_invocation_from_event_orchestration_input" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.allowInvocationFromEventOrchestrationInput"></a>
+
+```python
+allow_invocation_from_event_orchestration_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `allow_invocation_manually_input`<sup>Optional</sup> <a name="allow_invocation_manually_input" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.allowInvocationManuallyInput"></a>
+
+```python
+allow_invocation_manually_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `creation_time_input`<sup>Optional</sup> <a name="creation_time_input" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.creationTimeInput"></a>
 
 ```python
@@ -1074,6 +1151,16 @@ id_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `map_to_all_services_input`<sup>Optional</sup> <a name="map_to_all_services_input" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.mapToAllServicesInput"></a>
+
+```python
+map_to_all_services_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1157,6 +1244,26 @@ action_type: str
 
 ---
 
+##### `allow_invocation_from_event_orchestration`<sup>Required</sup> <a name="allow_invocation_from_event_orchestration" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.allowInvocationFromEventOrchestration"></a>
+
+```python
+allow_invocation_from_event_orchestration: str
+```
+
+- *Type:* str
+
+---
+
+##### `allow_invocation_manually`<sup>Required</sup> <a name="allow_invocation_manually" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.allowInvocationManually"></a>
+
+```python
+allow_invocation_manually: str
+```
+
+- *Type:* str
+
+---
+
 ##### `creation_time`<sup>Required</sup> <a name="creation_time" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.creationTime"></a>
 
 ```python
@@ -1184,6 +1291,16 @@ id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `map_to_all_services`<sup>Required</sup> <a name="map_to_all_services" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.property.mapToAllServices"></a>
+
+```python
+map_to_all_services: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1287,11 +1404,11 @@ automationActionsAction.AutomationActionsActionActionDataReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.property.invocationCommand">invocation_command</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#invocation_command AutomationActionsAction#invocation_command}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.property.processAutomationJobArguments">process_automation_job_arguments</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#process_automation_job_arguments AutomationActionsAction#process_automation_job_arguments}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.property.processAutomationJobId">process_automation_job_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#process_automation_job_id AutomationActionsAction#process_automation_job_id}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.property.processAutomationNodeFilter">process_automation_node_filter</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#process_automation_node_filter AutomationActionsAction#process_automation_node_filter}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.property.script">script</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#script AutomationActionsAction#script}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.property.invocationCommand">invocation_command</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#invocation_command AutomationActionsAction#invocation_command}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.property.processAutomationJobArguments">process_automation_job_arguments</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#process_automation_job_arguments AutomationActionsAction#process_automation_job_arguments}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.property.processAutomationJobId">process_automation_job_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#process_automation_job_id AutomationActionsAction#process_automation_job_id}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.property.processAutomationNodeFilter">process_automation_node_filter</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#process_automation_node_filter AutomationActionsAction#process_automation_node_filter}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.property.script">script</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#script AutomationActionsAction#script}. |
 
 ---
 
@@ -1303,7 +1420,7 @@ invocation_command: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#invocation_command AutomationActionsAction#invocation_command}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#invocation_command AutomationActionsAction#invocation_command}.
 
 ---
 
@@ -1315,7 +1432,7 @@ process_automation_job_arguments: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#process_automation_job_arguments AutomationActionsAction#process_automation_job_arguments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#process_automation_job_arguments AutomationActionsAction#process_automation_job_arguments}.
 
 ---
 
@@ -1327,7 +1444,7 @@ process_automation_job_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#process_automation_job_id AutomationActionsAction#process_automation_job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#process_automation_job_id AutomationActionsAction#process_automation_job_id}.
 
 ---
 
@@ -1339,7 +1456,7 @@ process_automation_node_filter: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#process_automation_node_filter AutomationActionsAction#process_automation_node_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#process_automation_node_filter AutomationActionsAction#process_automation_node_filter}.
 
 ---
 
@@ -1351,7 +1468,7 @@ script: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#script AutomationActionsAction#script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#script AutomationActionsAction#script}.
 
 ---
 
@@ -1374,9 +1491,12 @@ automationActionsAction.AutomationActionsActionConfig(
   action_type: str,
   name: str,
   action_classification: str = None,
+  allow_invocation_from_event_orchestration: str = None,
+  allow_invocation_manually: str = None,
   creation_time: str = None,
   description: str = None,
   id: str = None,
+  map_to_all_services: typing.Union[bool, IResolvable] = None,
   modify_time: str = None,
   only_invocable_on_unresolved_incidents: typing.Union[bool, IResolvable] = None,
   runner_id: str = None,
@@ -1397,17 +1517,20 @@ automationActionsAction.AutomationActionsActionConfig(
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.actionDataReference">action_data_reference</a></code> | <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference">AutomationActionsActionActionDataReference</a></code> | action_data_reference block. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.actionType">action_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#action_type AutomationActionsAction#action_type}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#name AutomationActionsAction#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.actionClassification">action_classification</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#action_classification AutomationActionsAction#action_classification}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.creationTime">creation_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#creation_time AutomationActionsAction#creation_time}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#description AutomationActionsAction#description}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#id AutomationActionsAction#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.modifyTime">modify_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#modify_time AutomationActionsAction#modify_time}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.onlyInvocableOnUnresolvedIncidents">only_invocable_on_unresolved_incidents</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#only_invocable_on_unresolved_incidents AutomationActionsAction#only_invocable_on_unresolved_incidents}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.runnerId">runner_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#runner_id AutomationActionsAction#runner_id}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.runnerType">runner_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#runner_type AutomationActionsAction#runner_type}. |
-| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#type AutomationActionsAction#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.actionType">action_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#action_type AutomationActionsAction#action_type}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#name AutomationActionsAction#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.actionClassification">action_classification</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#action_classification AutomationActionsAction#action_classification}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.allowInvocationFromEventOrchestration">allow_invocation_from_event_orchestration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#allow_invocation_from_event_orchestration AutomationActionsAction#allow_invocation_from_event_orchestration}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.allowInvocationManually">allow_invocation_manually</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#allow_invocation_manually AutomationActionsAction#allow_invocation_manually}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.creationTime">creation_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#creation_time AutomationActionsAction#creation_time}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#description AutomationActionsAction#description}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#id AutomationActionsAction#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.mapToAllServices">map_to_all_services</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#map_to_all_services AutomationActionsAction#map_to_all_services}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.modifyTime">modify_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#modify_time AutomationActionsAction#modify_time}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.onlyInvocableOnUnresolvedIncidents">only_invocable_on_unresolved_incidents</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#only_invocable_on_unresolved_incidents AutomationActionsAction#only_invocable_on_unresolved_incidents}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.runnerId">runner_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#runner_id AutomationActionsAction#runner_id}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.runnerType">runner_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#runner_type AutomationActionsAction#runner_type}. |
+| <code><a href="#@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#type AutomationActionsAction#type}. |
 
 ---
 
@@ -1491,7 +1614,7 @@ action_data_reference: AutomationActionsActionActionDataReference
 
 action_data_reference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#action_data_reference AutomationActionsAction#action_data_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#action_data_reference AutomationActionsAction#action_data_reference}
 
 ---
 
@@ -1503,7 +1626,7 @@ action_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#action_type AutomationActionsAction#action_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#action_type AutomationActionsAction#action_type}.
 
 ---
 
@@ -1515,7 +1638,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#name AutomationActionsAction#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#name AutomationActionsAction#name}.
 
 ---
 
@@ -1527,7 +1650,31 @@ action_classification: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#action_classification AutomationActionsAction#action_classification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#action_classification AutomationActionsAction#action_classification}.
+
+---
+
+##### `allow_invocation_from_event_orchestration`<sup>Optional</sup> <a name="allow_invocation_from_event_orchestration" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.allowInvocationFromEventOrchestration"></a>
+
+```python
+allow_invocation_from_event_orchestration: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#allow_invocation_from_event_orchestration AutomationActionsAction#allow_invocation_from_event_orchestration}.
+
+---
+
+##### `allow_invocation_manually`<sup>Optional</sup> <a name="allow_invocation_manually" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.allowInvocationManually"></a>
+
+```python
+allow_invocation_manually: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#allow_invocation_manually AutomationActionsAction#allow_invocation_manually}.
 
 ---
 
@@ -1539,7 +1686,7 @@ creation_time: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#creation_time AutomationActionsAction#creation_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#creation_time AutomationActionsAction#creation_time}.
 
 ---
 
@@ -1551,7 +1698,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#description AutomationActionsAction#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#description AutomationActionsAction#description}.
 
 ---
 
@@ -1563,10 +1710,22 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#id AutomationActionsAction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#id AutomationActionsAction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `map_to_all_services`<sup>Optional</sup> <a name="map_to_all_services" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.property.mapToAllServices"></a>
+
+```python
+map_to_all_services: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#map_to_all_services AutomationActionsAction#map_to_all_services}.
 
 ---
 
@@ -1578,7 +1737,7 @@ modify_time: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#modify_time AutomationActionsAction#modify_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#modify_time AutomationActionsAction#modify_time}.
 
 ---
 
@@ -1590,7 +1749,7 @@ only_invocable_on_unresolved_incidents: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#only_invocable_on_unresolved_incidents AutomationActionsAction#only_invocable_on_unresolved_incidents}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#only_invocable_on_unresolved_incidents AutomationActionsAction#only_invocable_on_unresolved_incidents}.
 
 ---
 
@@ -1602,7 +1761,7 @@ runner_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#runner_id AutomationActionsAction#runner_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#runner_id AutomationActionsAction#runner_id}.
 
 ---
 
@@ -1614,7 +1773,7 @@ runner_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#runner_type AutomationActionsAction#runner_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#runner_type AutomationActionsAction#runner_type}.
 
 ---
 
@@ -1626,7 +1785,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/resources/automation_actions_action#type AutomationActionsAction#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/resources/automation_actions_action#type AutomationActionsAction#type}.
 
 ---
 

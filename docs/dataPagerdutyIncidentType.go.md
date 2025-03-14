@@ -4,12 +4,12 @@
 
 ### DataPagerdutyIncidentType <a name="DataPagerdutyIncidentType" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/data-sources/incident_type pagerduty_incident_type}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/data-sources/incident_type pagerduty_incident_type}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidenttype"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidenttype"
 
 datapagerdutyincidenttype.NewDataPagerdutyIncidentType(scope Construct, id *string, config DataPagerdutyIncidentTypeConfig) DataPagerdutyIncidentType
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentType.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidenttype"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidenttype"
 
 datapagerdutyincidenttype.DataPagerdutyIncidentType_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidenttype"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidenttype"
 
 datapagerdutyincidenttype.DataPagerdutyIncidentType_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datapagerdutyincidenttype.DataPagerdutyIncidentType_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentType.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidenttype"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidenttype"
 
 datapagerdutyincidenttype.DataPagerdutyIncidentType_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datapagerdutyincidenttype.DataPagerdutyIncidentType_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidenttype"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidenttype"
 
 datapagerdutyincidenttype.DataPagerdutyIncidentType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataPagerdutyIncidentType 
 
 The id of the existing DataPagerdutyIncidentType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/data-sources/incident_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/data-sources/incident_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidenttype"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidenttype"
 
 &datapagerdutyincidenttype.DataPagerdutyIncidentTypeConfig {
 	Connection: interface{},
@@ -656,7 +656,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerduty
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentTypeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentTypeConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentTypeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentTypeConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/data-sources/incident_type#display_name DataPagerdutyIncidentType#display_name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentTypeConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/data-sources/incident_type#display_name DataPagerdutyIncidentType#display_name}. |
 
 ---
 
@@ -738,7 +738,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.21.1/docs/data-sources/incident_type#display_name DataPagerdutyIncidentType#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.22.0/docs/data-sources/incident_type#display_name DataPagerdutyIncidentType#display_name}.
 
 ---
 
