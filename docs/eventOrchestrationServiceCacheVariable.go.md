@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationServiceCacheVariable.EventOrchestrationServiceCacheVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservicecachevariable"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/eventorchestrationservicecachevariable"
 
 eventorchestrationservicecachevariable.NewEventOrchestrationServiceCacheVariable(scope Construct, id *string, config EventOrchestrationServiceCacheVariableConfig) EventOrchestrationServiceCacheVariable
 ```
@@ -418,7 +418,7 @@ func ResetDisabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.eventOrchestrationServiceCacheVariable.EventOrchestrationServiceCacheVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservicecachevariable"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/eventorchestrationservicecachevariable"
 
 eventorchestrationservicecachevariable.EventOrchestrationServiceCacheVariable_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.eventOrchestrationServiceCacheVariable.EventOrchestrationServiceCacheVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservicecachevariable"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/eventorchestrationservicecachevariable"
 
 eventorchestrationservicecachevariable.EventOrchestrationServiceCacheVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ eventorchestrationservicecachevariable.EventOrchestrationServiceCacheVariable_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.eventOrchestrationServiceCacheVariable.EventOrchestrationServiceCacheVariable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservicecachevariable"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/eventorchestrationservicecachevariable"
 
 eventorchestrationservicecachevariable.EventOrchestrationServiceCacheVariable_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ eventorchestrationservicecachevariable.EventOrchestrationServiceCacheVariable_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.eventOrchestrationServiceCacheVariable.EventOrchestrationServiceCacheVariable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservicecachevariable"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/eventorchestrationservicecachevariable"
 
 eventorchestrationservicecachevariable.EventOrchestrationServiceCacheVariable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -828,7 +828,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationServiceCacheVariable.EventOrchestrationServiceCacheVariableCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservicecachevariable"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/eventorchestrationservicecachevariable"
 
 &eventorchestrationservicecachevariable.EventOrchestrationServiceCacheVariableCondition {
 	Expression: *string,
@@ -860,7 +860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationServiceCacheVariable.EventOrchestrationServiceCacheVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservicecachevariable"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/eventorchestrationservicecachevariable"
 
 &eventorchestrationservicecachevariable.EventOrchestrationServiceCacheVariableConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestratio
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Configuration: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.eventOrchestrationServiceCacheVariable.EventOrchestrationServiceCacheVariableConfiguration,
+	Configuration: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13.eventOrchestrationServiceCacheVariable.EventOrchestrationServiceCacheVariableConfiguration,
 	Name: *string,
 	Service: *string,
 	Condition: interface{},
@@ -1036,7 +1036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.eventOrchestrationServiceCacheVariable.EventOrchestrationServiceCacheVariableConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservicecachevariable"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/eventorchestrationservicecachevariable"
 
 &eventorchestrationservicecachevariable.EventOrchestrationServiceCacheVariableConfiguration {
 	Type: *string,
@@ -1126,7 +1126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationServiceCacheVariable.EventOrchestrationServiceCacheVariableConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservicecachevariable"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/eventorchestrationservicecachevariable"
 
 eventorchestrationservicecachevariable.NewEventOrchestrationServiceCacheVariableConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventOrchestrationServiceCacheVariableConditionList
 ```
@@ -1286,7 +1286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationServiceCacheVariable.EventOrchestrationServiceCacheVariableConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservicecachevariable"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/eventorchestrationservicecachevariable"
 
 eventorchestrationservicecachevariable.NewEventOrchestrationServiceCacheVariableConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventOrchestrationServiceCacheVariableConditionOutputReference
 ```
@@ -1575,7 +1575,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.eventOrchestrationServiceCacheVariable.EventOrchestrationServiceCacheVariableConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/eventorchestrationservicecachevariable"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/eventorchestrationservicecachevariable"
 
 eventorchestrationservicecachevariable.NewEventOrchestrationServiceCacheVariableConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventOrchestrationServiceCacheVariableConfigurationOutputReference
 ```
