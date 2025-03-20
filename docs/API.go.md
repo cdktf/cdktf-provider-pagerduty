@@ -42,6 +42,7 @@ The following submodules are available:
 - [dataPagerdutyTag](./dataPagerdutyTag.go.md)
 - [dataPagerdutyTeam](./dataPagerdutyTeam.go.md)
 - [dataPagerdutyTeamMembers](./dataPagerdutyTeamMembers.go.md)
+- [dataPagerdutyTeams](./dataPagerdutyTeams.go.md)
 - [dataPagerdutyUser](./dataPagerdutyUser.go.md)
 - [dataPagerdutyUserContactMethod](./dataPagerdutyUserContactMethod.go.md)
 - [dataPagerdutyUsers](./dataPagerdutyUsers.go.md)

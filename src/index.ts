@@ -80,6 +80,7 @@ export * as dataPagerdutyStandardsResourcesScores from './data-pagerduty-standar
 export * as dataPagerdutyTag from './data-pagerduty-tag';
 export * as dataPagerdutyTeam from './data-pagerduty-team';
 export * as dataPagerdutyTeamMembers from './data-pagerduty-team-members';
+export * as dataPagerdutyTeams from './data-pagerduty-teams';
 export * as dataPagerdutyUser from './data-pagerduty-user';
 export * as dataPagerdutyUserContactMethod from './data-pagerduty-user-contact-method';
 export * as dataPagerdutyUsers from './data-pagerduty-users';
