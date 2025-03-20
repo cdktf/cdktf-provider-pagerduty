@@ -42,6 +42,7 @@ The following submodules are available:
 - [dataPagerdutyTag](./dataPagerdutyTag.python.md)
 - [dataPagerdutyTeam](./dataPagerdutyTeam.python.md)
 - [dataPagerdutyTeamMembers](./dataPagerdutyTeamMembers.python.md)
+- [dataPagerdutyTeams](./dataPagerdutyTeams.python.md)
 - [dataPagerdutyUser](./dataPagerdutyUser.python.md)
 - [dataPagerdutyUserContactMethod](./dataPagerdutyUserContactMethod.python.md)
 - [dataPagerdutyUsers](./dataPagerdutyUsers.python.md)
