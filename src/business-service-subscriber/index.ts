@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/pagerduty/pagerduty/3.23.1/docs/resources/business_service_subscriber
 // generated from terraform resource schema
 
