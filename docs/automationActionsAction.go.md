@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/automationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/automationactionsaction"
 
 automationactionsaction.NewAutomationActionsAction(scope Construct, id *string, config AutomationActionsActionConfig) AutomationActionsAction
 ```
@@ -475,7 +475,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/automationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/automationactionsaction"
 
 automationactionsaction.AutomationActionsAction_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/automationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/automationactionsaction"
 
 automationactionsaction.AutomationActionsAction_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ automationactionsaction.AutomationActionsAction_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/automationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/automationactionsaction"
 
 automationactionsaction.AutomationActionsAction_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ automationactionsaction.AutomationActionsAction_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsAction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/automationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/automationactionsaction"
 
 automationactionsaction.AutomationActionsAction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1094,7 +1094,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/automationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/automationactionsaction"
 
 &automationactionsaction.AutomationActionsActionActionDataReference {
 	InvocationCommand: *string,
@@ -1182,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/automationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/automationactionsaction"
 
 &automationactionsaction.AutomationActionsActionConfig {
 	Connection: interface{},
@@ -1192,7 +1192,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/automationact
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	ActionDataReference: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13.automationActionsAction.AutomationActionsActionActionDataReference,
+	ActionDataReference: github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty.automationActionsAction.AutomationActionsActionActionDataReference,
 	ActionType: *string,
 	Name: *string,
 	ActionClassification: *string,
@@ -1501,7 +1501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.automationActionsAction.AutomationActionsActionActionDataReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/automationactionsaction"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/automationactionsaction"
 
 automationactionsaction.NewAutomationActionsActionActionDataReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutomationActionsActionActionDataReferenceOutputReference
 ```
