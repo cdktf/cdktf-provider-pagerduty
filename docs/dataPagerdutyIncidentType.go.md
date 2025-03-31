@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidenttype"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidenttype"
 
 datapagerdutyincidenttype.NewDataPagerdutyIncidentType(scope Construct, id *string, config DataPagerdutyIncidentTypeConfig) DataPagerdutyIncidentType
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentType.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidenttype"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidenttype"
 
 datapagerdutyincidenttype.DataPagerdutyIncidentType_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidenttype"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidenttype"
 
 datapagerdutyincidenttype.DataPagerdutyIncidentType_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datapagerdutyincidenttype.DataPagerdutyIncidentType_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentType.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidenttype"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidenttype"
 
 datapagerdutyincidenttype.DataPagerdutyIncidentType_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datapagerdutyincidenttype.DataPagerdutyIncidentType_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidenttype"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidenttype"
 
 datapagerdutyincidenttype.DataPagerdutyIncidentType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyincidenttype"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/datapagerdutyincidenttype"
 
 &datapagerdutyincidenttype.DataPagerdutyIncidentTypeConfig {
 	Connection: interface{},
