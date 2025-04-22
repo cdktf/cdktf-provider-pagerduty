@@ -4,7 +4,7 @@
 
 ### DataPagerdutySchedule <a name="DataPagerdutySchedule" id="@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/data-sources/schedule pagerduty_schedule}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/schedule pagerduty_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.Initializer"></a>
 
@@ -21,8 +21,7 @@ dataPagerdutySchedule.DataPagerdutySchedule(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  name: str,
-  id: str = None
+  name: str
 )
 ```
 
@@ -37,8 +36,7 @@ dataPagerdutySchedule.DataPagerdutySchedule(
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/data-sources/schedule#name DataPagerdutySchedule#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/data-sources/schedule#id DataPagerdutySchedule#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/schedule#name DataPagerdutySchedule#name}. |
 
 ---
 
@@ -106,18 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/data-sources/schedule#name DataPagerdutySchedule#name}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/data-sources/schedule#id DataPagerdutySchedule#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/schedule#name DataPagerdutySchedule#name}.
 
 ---
 
@@ -142,7 +129,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.resetId">reset_id</a></code> | *No description.* |
 
 ---
 
@@ -363,12 +349,6 @@ def interpolation_for_attribute(
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -483,7 +463,7 @@ The construct id used in the generated config for the DataPagerdutySchedule to i
 
 The id of the existing DataPagerdutySchedule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/data-sources/schedule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/schedule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -511,9 +491,8 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.name">name</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -640,10 +619,10 @@ provider: TerraformProvider
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.idInput"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.id"></a>
 
 ```python
-id_input: str
+id: str
 ```
 
 - *Type:* str
@@ -654,16 +633,6 @@ id_input: str
 
 ```python
 name_input: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutySchedule.property.id"></a>
-
-```python
-id: str
 ```
 
 - *Type:* str
@@ -715,8 +684,7 @@ dataPagerdutySchedule.DataPagerdutyScheduleConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  name: str,
-  id: str = None
+  name: str
 )
 ```
 
@@ -731,8 +699,7 @@ dataPagerdutySchedule.DataPagerdutyScheduleConfig(
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/data-sources/schedule#name DataPagerdutySchedule#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/data-sources/schedule#id DataPagerdutySchedule#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/schedule#name DataPagerdutySchedule#name}. |
 
 ---
 
@@ -814,22 +781,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/data-sources/schedule#name DataPagerdutySchedule#name}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-pagerduty.dataPagerdutySchedule.DataPagerdutyScheduleConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/data-sources/schedule#id DataPagerdutySchedule#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/schedule#name DataPagerdutySchedule#name}.
 
 ---
 

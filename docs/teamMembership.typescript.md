@@ -4,7 +4,7 @@
 
 ### TeamMembership <a name="TeamMembership" id="@cdktf/provider-pagerduty.teamMembership.TeamMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/resources/team_membership pagerduty_team_membership}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/team_membership pagerduty_team_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.teamMembership.TeamMembership.Initializer"></a>
 
@@ -73,7 +73,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembership.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembership.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembership.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembership.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembership.resetRole">resetRole</a></code> | *No description.* |
 
 ---
@@ -366,12 +365,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-pagerduty.teamMembership.TeamMembership.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 ##### `resetRole` <a name="resetRole" id="@cdktf/provider-pagerduty.teamMembership.TeamMembership.resetRole"></a>
 
 ```typescript
@@ -481,7 +474,7 @@ The construct id used in the generated config for the TeamMembership to import.
 
 The id of the existing TeamMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/resources/team_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/team_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -511,11 +504,10 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembership.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembership.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembership.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembership.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembership.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembership.property.roleInput">roleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembership.property.teamIdInput">teamIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembership.property.userIdInput">userIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembership.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembership.property.role">role</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembership.property.teamId">teamId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembership.property.userId">userId</a></code> | <code>string</code> | *No description.* |
@@ -664,10 +656,10 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-pagerduty.teamMembership.TeamMembership.property.idInput"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-pagerduty.teamMembership.TeamMembership.property.id"></a>
 
 ```typescript
-public readonly idInput: string;
+public readonly id: string;
 ```
 
 - *Type:* string
@@ -698,16 +690,6 @@ public readonly teamIdInput: string;
 
 ```typescript
 public readonly userIdInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-pagerduty.teamMembership.TeamMembership.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* string
@@ -785,10 +767,9 @@ const teamMembershipConfig: teamMembership.TeamMembershipConfig = { ... }
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.teamId">teamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/resources/team_membership#team_id TeamMembership#team_id}. |
-| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.userId">userId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/resources/team_membership#user_id TeamMembership#user_id}. |
-| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/resources/team_membership#id TeamMembership#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/resources/team_membership#role TeamMembership#role}. |
+| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.teamId">teamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/team_membership#team_id TeamMembership#team_id}. |
+| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.userId">userId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/team_membership#user_id TeamMembership#user_id}. |
+| <code><a href="#@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/team_membership#role TeamMembership#role}. |
 
 ---
 
@@ -870,7 +851,7 @@ public readonly teamId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/resources/team_membership#team_id TeamMembership#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/team_membership#team_id TeamMembership#team_id}.
 
 ---
 
@@ -882,22 +863,7 @@ public readonly userId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/resources/team_membership#user_id TeamMembership#user_id}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-pagerduty.teamMembership.TeamMembershipConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/resources/team_membership#id TeamMembership#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/team_membership#user_id TeamMembership#user_id}.
 
 ---
 
@@ -909,7 +875,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.0/docs/resources/team_membership#role TeamMembership#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/team_membership#role TeamMembership#role}.
 
 ---
 
