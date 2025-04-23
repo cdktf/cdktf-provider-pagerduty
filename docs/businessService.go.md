@@ -4,7 +4,7 @@
 
 ### BusinessService <a name="BusinessService" id="@cdktf/provider-pagerduty.businessService.BusinessService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/business_service pagerduty_business_service}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/business_service pagerduty_business_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.businessService.BusinessService.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the BusinessService to import.
 
 The id of the existing BusinessService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/business_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/business_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -878,11 +878,11 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/businessservi
 | <code><a href="#@cdktf/provider-pagerduty.businessService.BusinessServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.businessService.BusinessServiceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.businessService.BusinessServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.businessService.BusinessServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/business_service#name BusinessService#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.businessService.BusinessServiceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/business_service#description BusinessService#description}. |
-| <code><a href="#@cdktf/provider-pagerduty.businessService.BusinessServiceConfig.property.pointOfContact">PointOfContact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/business_service#point_of_contact BusinessService#point_of_contact}. |
-| <code><a href="#@cdktf/provider-pagerduty.businessService.BusinessServiceConfig.property.team">Team</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/business_service#team BusinessService#team}. |
-| <code><a href="#@cdktf/provider-pagerduty.businessService.BusinessServiceConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/business_service#type BusinessService#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.businessService.BusinessServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/business_service#name BusinessService#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.businessService.BusinessServiceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/business_service#description BusinessService#description}. |
+| <code><a href="#@cdktf/provider-pagerduty.businessService.BusinessServiceConfig.property.pointOfContact">PointOfContact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/business_service#point_of_contact BusinessService#point_of_contact}. |
+| <code><a href="#@cdktf/provider-pagerduty.businessService.BusinessServiceConfig.property.team">Team</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/business_service#team BusinessService#team}. |
+| <code><a href="#@cdktf/provider-pagerduty.businessService.BusinessServiceConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/business_service#type BusinessService#type}. |
 
 ---
 
@@ -964,7 +964,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/business_service#name BusinessService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/business_service#name BusinessService#name}.
 
 ---
 
@@ -976,7 +976,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/business_service#description BusinessService#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/business_service#description BusinessService#description}.
 
 ---
 
@@ -988,7 +988,7 @@ PointOfContact *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/business_service#point_of_contact BusinessService#point_of_contact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/business_service#point_of_contact BusinessService#point_of_contact}.
 
 ---
 
@@ -1000,7 +1000,7 @@ Team *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/business_service#team BusinessService#team}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/business_service#team BusinessService#team}.
 
 ---
 
@@ -1012,7 +1012,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/business_service#type BusinessService#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/business_service#type BusinessService#type}.
 
 ---
 

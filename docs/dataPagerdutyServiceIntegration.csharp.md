@@ -4,7 +4,7 @@
 
 ### DataPagerdutyServiceIntegration <a name="DataPagerdutyServiceIntegration" id="@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/service_integration pagerduty_service_integration}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/data-sources/service_integration pagerduty_service_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegration.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataPagerdutyServiceIntegr
 
 The id of the existing DataPagerdutyServiceIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/service_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/data-sources/service_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -636,7 +636,7 @@ new DataPagerdutyServiceIntegrationConfig {
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegrationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegrationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegrationConfig.property.integrationSummary">IntegrationSummary</a></code> | <code>string</code> | examples "Amazon CloudWatch", "New Relic". |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegrationConfig.property.serviceName">ServiceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyServiceIntegration.DataPagerdutyServiceIntegrationConfig.property.serviceName">ServiceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}. |
 
 ---
 
@@ -720,7 +720,7 @@ public string IntegrationSummary { get; set; }
 
 examples "Amazon CloudWatch", "New Relic".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/service_integration#integration_summary DataPagerdutyServiceIntegration#integration_summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/data-sources/service_integration#integration_summary DataPagerdutyServiceIntegration#integration_summary}
 
 ---
 
@@ -732,7 +732,7 @@ public string ServiceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/data-sources/service_integration#service_name DataPagerdutyServiceIntegration#service_name}.
 
 ---
 

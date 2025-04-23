@@ -4,7 +4,7 @@
 
 ### Schedule <a name="Schedule" id="@cdktf/provider-pagerduty.schedule.Schedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule pagerduty_schedule}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule pagerduty_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.schedule.Schedule.Initializer"></a>
 
@@ -47,12 +47,12 @@ Schedule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.Initializer.parameter.layer">layer</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer">ScheduleLayer</a>></code> | layer block. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.Initializer.parameter.timeZone">timeZone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#time_zone Schedule#time_zone}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#description Schedule#description}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#id Schedule#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#name Schedule#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.Initializer.parameter.overflow">overflow</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#overflow Schedule#overflow}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.Initializer.parameter.teams">teams</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#teams Schedule#teams}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.Initializer.parameter.timeZone">timeZone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#time_zone Schedule#time_zone}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#description Schedule#description}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#id Schedule#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#name Schedule#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.Initializer.parameter.overflow">overflow</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#overflow Schedule#overflow}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.Initializer.parameter.teams">teams</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#teams Schedule#teams}. |
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 layer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#layer Schedule#layer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#layer Schedule#layer}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#time_zone Schedule#time_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#time_zone Schedule#time_zone}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#description Schedule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#description Schedule#description}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#id Schedule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#id Schedule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#name Schedule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#name Schedule#name}.
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#overflow Schedule#overflow}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#overflow Schedule#overflow}.
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#teams Schedule#teams}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#teams Schedule#teams}.
 
 ---
 
@@ -648,7 +648,7 @@ The construct id used in the generated config for the Schedule to import.
 
 The id of the existing Schedule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1051,12 +1051,12 @@ ScheduleConfig.builder()
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.layer">layer</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer">ScheduleLayer</a>></code> | layer block. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.timeZone">timeZone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#time_zone Schedule#time_zone}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#description Schedule#description}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#id Schedule#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#name Schedule#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.overflow">overflow</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#overflow Schedule#overflow}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.teams">teams</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#teams Schedule#teams}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.timeZone">timeZone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#time_zone Schedule#time_zone}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#description Schedule#description}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#id Schedule#id}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#name Schedule#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.overflow">overflow</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#overflow Schedule#overflow}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.teams">teams</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#teams Schedule#teams}. |
 
 ---
 
@@ -1140,7 +1140,7 @@ public java.lang.Object getLayer();
 
 layer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#layer Schedule#layer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#layer Schedule#layer}
 
 ---
 
@@ -1152,7 +1152,7 @@ public java.lang.String getTimeZone();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#time_zone Schedule#time_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#time_zone Schedule#time_zone}.
 
 ---
 
@@ -1164,7 +1164,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#description Schedule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#description Schedule#description}.
 
 ---
 
@@ -1176,7 +1176,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#id Schedule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#id Schedule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1191,7 +1191,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#name Schedule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#name Schedule#name}.
 
 ---
 
@@ -1203,7 +1203,7 @@ public java.lang.Object getOverflow();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#overflow Schedule#overflow}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#overflow Schedule#overflow}.
 
 ---
 
@@ -1215,7 +1215,7 @@ public java.util.List<java.lang.String> getTeams();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#teams Schedule#teams}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#teams Schedule#teams}.
 
 ---
 
@@ -1254,12 +1254,12 @@ ScheduleLayer.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.rotationTurnLengthSeconds">rotationTurnLengthSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#rotation_turn_length_seconds Schedule#rotation_turn_length_seconds}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.rotationVirtualStart">rotationVirtualStart</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#rotation_virtual_start Schedule#rotation_virtual_start}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#start Schedule#start}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.users">users</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#users Schedule#users}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.end">end</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#end Schedule#end}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#name Schedule#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.rotationTurnLengthSeconds">rotationTurnLengthSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#rotation_turn_length_seconds Schedule#rotation_turn_length_seconds}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.rotationVirtualStart">rotationVirtualStart</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#rotation_virtual_start Schedule#rotation_virtual_start}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#start Schedule#start}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.users">users</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#users Schedule#users}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.end">end</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#end Schedule#end}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#name Schedule#name}. |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.restriction">restriction</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction">ScheduleLayerRestriction</a>></code> | restriction block. |
 
 ---
@@ -1272,7 +1272,7 @@ public java.lang.Number getRotationTurnLengthSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#rotation_turn_length_seconds Schedule#rotation_turn_length_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#rotation_turn_length_seconds Schedule#rotation_turn_length_seconds}.
 
 ---
 
@@ -1284,7 +1284,7 @@ public java.lang.String getRotationVirtualStart();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#rotation_virtual_start Schedule#rotation_virtual_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#rotation_virtual_start Schedule#rotation_virtual_start}.
 
 ---
 
@@ -1296,7 +1296,7 @@ public java.lang.String getStart();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#start Schedule#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#start Schedule#start}.
 
 ---
 
@@ -1308,7 +1308,7 @@ public java.util.List<java.lang.String> getUsers();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#users Schedule#users}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#users Schedule#users}.
 
 ---
 
@@ -1320,7 +1320,7 @@ public java.lang.String getEnd();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#end Schedule#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#end Schedule#end}.
 
 ---
 
@@ -1332,7 +1332,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#name Schedule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#name Schedule#name}.
 
 ---
 
@@ -1346,7 +1346,7 @@ public java.lang.Object getRestriction();
 
 restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#restriction Schedule#restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#restriction Schedule#restriction}
 
 ---
 
@@ -1369,10 +1369,10 @@ ScheduleLayerRestriction.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction.property.durationSeconds">durationSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#duration_seconds Schedule#duration_seconds}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction.property.startTimeOfDay">startTimeOfDay</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#start_time_of_day Schedule#start_time_of_day}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#type Schedule#type}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction.property.startDayOfWeek">startDayOfWeek</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#start_day_of_week Schedule#start_day_of_week}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction.property.durationSeconds">durationSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#duration_seconds Schedule#duration_seconds}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction.property.startTimeOfDay">startTimeOfDay</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#start_time_of_day Schedule#start_time_of_day}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#type Schedule#type}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction.property.startDayOfWeek">startDayOfWeek</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#start_day_of_week Schedule#start_day_of_week}. |
 
 ---
 
@@ -1384,7 +1384,7 @@ public java.lang.Number getDurationSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#duration_seconds Schedule#duration_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#duration_seconds Schedule#duration_seconds}.
 
 ---
 
@@ -1396,7 +1396,7 @@ public java.lang.String getStartTimeOfDay();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#start_time_of_day Schedule#start_time_of_day}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#start_time_of_day Schedule#start_time_of_day}.
 
 ---
 
@@ -1408,7 +1408,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#type Schedule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#type Schedule#type}.
 
 ---
 
@@ -1420,7 +1420,7 @@ public java.lang.Number getStartDayOfWeek();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/schedule#start_day_of_week Schedule#start_day_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/schedule#start_day_of_week Schedule#start_day_of_week}.
 
 ---
 

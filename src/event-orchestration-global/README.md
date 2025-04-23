@@ -1,3 +1,3 @@
 # `pagerduty_event_orchestration_global`
 
-Refer to the Terraform Registry for docs: [`pagerduty_event_orchestration_global`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/event_orchestration_global).
+Refer to the Terraform Registry for docs: [`pagerduty_event_orchestration_global`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/event_orchestration_global).

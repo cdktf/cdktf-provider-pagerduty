@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/service_dependency
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/service_dependency
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,20 +15,20 @@ export interface ServiceDependencyConfig extends cdktf.TerraformMetaArguments {
   /**
   * dependency block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/service_dependency#dependency ServiceDependency#dependency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/service_dependency#dependency ServiceDependency#dependency}
   */
   readonly dependency?: ServiceDependencyDependency[] | cdktf.IResolvable;
 }
 export interface ServiceDependencyDependencyDependentService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/service_dependency#id ServiceDependency#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/service_dependency#id ServiceDependency#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/service_dependency#type ServiceDependency#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/service_dependency#type ServiceDependency#type}
   */
   readonly type: string;
 }
@@ -167,14 +167,14 @@ export class ServiceDependencyDependencyDependentServiceList extends cdktf.Compl
 }
 export interface ServiceDependencyDependencySupportingService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/service_dependency#id ServiceDependency#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/service_dependency#id ServiceDependency#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/service_dependency#type ServiceDependency#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/service_dependency#type ServiceDependency#type}
   */
   readonly type: string;
 }
@@ -313,19 +313,19 @@ export class ServiceDependencyDependencySupportingServiceList extends cdktf.Comp
 }
 export interface ServiceDependencyDependency {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/service_dependency#type ServiceDependency#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/service_dependency#type ServiceDependency#type}
   */
   readonly type?: string;
   /**
   * dependent_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/service_dependency#dependent_service ServiceDependency#dependent_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/service_dependency#dependent_service ServiceDependency#dependent_service}
   */
   readonly dependentService?: ServiceDependencyDependencyDependentService[] | cdktf.IResolvable;
   /**
   * supporting_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/service_dependency#supporting_service ServiceDependency#supporting_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/service_dependency#supporting_service ServiceDependency#supporting_service}
   */
   readonly supportingService?: ServiceDependencyDependencySupportingService[] | cdktf.IResolvable;
 }
@@ -499,7 +499,7 @@ export class ServiceDependencyDependencyList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/service_dependency pagerduty_service_dependency}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/service_dependency pagerduty_service_dependency}
 */
 export class ServiceDependency extends cdktf.TerraformResource {
 
@@ -515,7 +515,7 @@ export class ServiceDependency extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ServiceDependency resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceDependency to import
-  * @param importFromId The id of the existing ServiceDependency that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/service_dependency#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceDependency that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/service_dependency#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceDependency to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -527,7 +527,7 @@ export class ServiceDependency extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.1/docs/resources/service_dependency pagerduty_service_dependency} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.24.2/docs/resources/service_dependency pagerduty_service_dependency} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -538,7 +538,7 @@ export class ServiceDependency extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_service_dependency',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.24.1',
+        providerVersion: '3.24.2',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
