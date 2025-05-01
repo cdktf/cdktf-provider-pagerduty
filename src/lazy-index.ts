@@ -38,6 +38,8 @@ Object.defineProperty(exports, 'ruleset', { get: function () { return require('.
 Object.defineProperty(exports, 'rulesetRule', { get: function () { return require('./ruleset-rule'); } });
 Object.defineProperty(exports, 'schedule', { get: function () { return require('./schedule'); } });
 Object.defineProperty(exports, 'service', { get: function () { return require('./service'); } });
+Object.defineProperty(exports, 'serviceCustomField', { get: function () { return require('./service-custom-field'); } });
+Object.defineProperty(exports, 'serviceCustomFieldValue', { get: function () { return require('./service-custom-field-value'); } });
 Object.defineProperty(exports, 'serviceDependency', { get: function () { return require('./service-dependency'); } });
 Object.defineProperty(exports, 'serviceEventRule', { get: function () { return require('./service-event-rule'); } });
 Object.defineProperty(exports, 'serviceIntegration', { get: function () { return require('./service-integration'); } });
@@ -73,6 +75,8 @@ Object.defineProperty(exports, 'dataPagerdutyPriority', { get: function () { ret
 Object.defineProperty(exports, 'dataPagerdutyRuleset', { get: function () { return require('./data-pagerduty-ruleset'); } });
 Object.defineProperty(exports, 'dataPagerdutySchedule', { get: function () { return require('./data-pagerduty-schedule'); } });
 Object.defineProperty(exports, 'dataPagerdutyService', { get: function () { return require('./data-pagerduty-service'); } });
+Object.defineProperty(exports, 'dataPagerdutyServiceCustomField', { get: function () { return require('./data-pagerduty-service-custom-field'); } });
+Object.defineProperty(exports, 'dataPagerdutyServiceCustomFieldValue', { get: function () { return require('./data-pagerduty-service-custom-field-value'); } });
 Object.defineProperty(exports, 'dataPagerdutyServiceIntegration', { get: function () { return require('./data-pagerduty-service-integration'); } });
 Object.defineProperty(exports, 'dataPagerdutyStandards', { get: function () { return require('./data-pagerduty-standards'); } });
 Object.defineProperty(exports, 'dataPagerdutyStandardsResourceScores', { get: function () { return require('./data-pagerduty-standards-resource-scores'); } });
