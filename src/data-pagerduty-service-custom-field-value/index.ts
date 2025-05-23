@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.1/docs/data-sources/service_custom_field_value
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/service_custom_field_value
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataPagerdutyServiceCustomFieldValueConfig extends cdktf.Terraf
   /**
   * The ID of the service to get custom field values for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.1/docs/data-sources/service_custom_field_value#service_id DataPagerdutyServiceCustomFieldValue#service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/service_custom_field_value#service_id DataPagerdutyServiceCustomFieldValue#service_id}
   */
   readonly serviceId: string;
 }
@@ -131,7 +131,7 @@ export class DataPagerdutyServiceCustomFieldValueCustomFieldsList extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.1/docs/data-sources/service_custom_field_value pagerduty_service_custom_field_value}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/service_custom_field_value pagerduty_service_custom_field_value}
 */
 export class DataPagerdutyServiceCustomFieldValue extends cdktf.TerraformDataSource {
 
@@ -147,7 +147,7 @@ export class DataPagerdutyServiceCustomFieldValue extends cdktf.TerraformDataSou
   * Generates CDKTF code for importing a DataPagerdutyServiceCustomFieldValue resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyServiceCustomFieldValue to import
-  * @param importFromId The id of the existing DataPagerdutyServiceCustomFieldValue that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.1/docs/data-sources/service_custom_field_value#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyServiceCustomFieldValue that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/service_custom_field_value#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyServiceCustomFieldValue to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -159,7 +159,7 @@ export class DataPagerdutyServiceCustomFieldValue extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.1/docs/data-sources/service_custom_field_value pagerduty_service_custom_field_value} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/service_custom_field_value pagerduty_service_custom_field_value} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -170,7 +170,7 @@ export class DataPagerdutyServiceCustomFieldValue extends cdktf.TerraformDataSou
       terraformResourceType: 'pagerduty_service_custom_field_value',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.25.1',
+        providerVersion: '3.25.2',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
