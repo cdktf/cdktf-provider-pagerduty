@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/standards
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/data-sources/standards
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyStandardsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/standards#resource_type DataPagerdutyStandards#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/data-sources/standards#resource_type DataPagerdutyStandards#resource_type}
   */
   readonly resourceType?: string;
 }
@@ -291,7 +286,7 @@ export class DataPagerdutyStandardsStandardsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/standards pagerduty_standards}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/data-sources/standards pagerduty_standards}
 */
 export class DataPagerdutyStandards extends cdktf.TerraformDataSource {
 
@@ -307,7 +302,7 @@ export class DataPagerdutyStandards extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataPagerdutyStandards resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyStandards to import
-  * @param importFromId The id of the existing DataPagerdutyStandards that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/standards#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyStandards that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/data-sources/standards#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyStandards to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -319,7 +314,7 @@ export class DataPagerdutyStandards extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/standards pagerduty_standards} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/data-sources/standards pagerduty_standards} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -330,7 +325,7 @@ export class DataPagerdutyStandards extends cdktf.TerraformDataSource {
       terraformResourceType: 'pagerduty_standards',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.25.2',
+        providerVersion: '3.26.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
