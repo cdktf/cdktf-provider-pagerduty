@@ -4,7 +4,7 @@
 
 ### DataPagerdutyAlertGroupingSetting <a name="DataPagerdutyAlertGroupingSetting" id="@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/alert_grouping_setting pagerduty_alert_grouping_setting}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/data-sources/alert_grouping_setting pagerduty_alert_grouping_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSetting.Initializer"></a>
 
@@ -385,7 +385,7 @@ The construct id used in the generated config for the DataPagerdutyAlertGrouping
 
 The id of the existing DataPagerdutyAlertGroupingSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/alert_grouping_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/data-sources/alert_grouping_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -667,7 +667,7 @@ const dataPagerdutyAlertGroupingSettingConfig: dataPagerdutyAlertGroupingSetting
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}. |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfig.property.config">config</a></code> | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfigA">DataPagerdutyAlertGroupingSettingConfigA</a></code> | config block. |
 
 ---
@@ -750,7 +750,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/data-sources/alert_grouping_setting#name DataPagerdutyAlertGroupingSetting#name}.
 
 ---
 
@@ -764,7 +764,7 @@ public readonly config: DataPagerdutyAlertGroupingSettingConfigA;
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/alert_grouping_setting#config DataPagerdutyAlertGroupingSetting#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/data-sources/alert_grouping_setting#config DataPagerdutyAlertGroupingSetting#config}
 
 ---
 
@@ -782,8 +782,8 @@ const dataPagerdutyAlertGroupingSettingConfigA: dataPagerdutyAlertGroupingSettin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfigA.property.aggregate">aggregate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/alert_grouping_setting#aggregate DataPagerdutyAlertGroupingSetting#aggregate}. |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfigA.property.fields">fields</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/alert_grouping_setting#fields DataPagerdutyAlertGroupingSetting#fields}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfigA.property.aggregate">aggregate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/data-sources/alert_grouping_setting#aggregate DataPagerdutyAlertGroupingSetting#aggregate}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyAlertGroupingSetting.DataPagerdutyAlertGroupingSettingConfigA.property.fields">fields</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/data-sources/alert_grouping_setting#fields DataPagerdutyAlertGroupingSetting#fields}. |
 
 ---
 
@@ -795,7 +795,7 @@ public readonly aggregate: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/alert_grouping_setting#aggregate DataPagerdutyAlertGroupingSetting#aggregate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/data-sources/alert_grouping_setting#aggregate DataPagerdutyAlertGroupingSetting#aggregate}.
 
 ---
 
@@ -807,7 +807,7 @@ public readonly fields: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.25.2/docs/data-sources/alert_grouping_setting#fields DataPagerdutyAlertGroupingSetting#fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/data-sources/alert_grouping_setting#fields DataPagerdutyAlertGroupingSetting#fields}.
 
 ---
 
