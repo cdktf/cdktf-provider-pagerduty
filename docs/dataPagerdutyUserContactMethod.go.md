@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyusercontactmethod"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutyusercontactmethod"
 
 datapagerdutyusercontactmethod.NewDataPagerdutyUserContactMethod(scope Construct, id *string, config DataPagerdutyUserContactMethodConfig) DataPagerdutyUserContactMethod
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethod.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyusercontactmethod"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutyusercontactmethod"
 
 datapagerdutyusercontactmethod.DataPagerdutyUserContactMethod_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethod.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyusercontactmethod"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutyusercontactmethod"
 
 datapagerdutyusercontactmethod.DataPagerdutyUserContactMethod_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datapagerdutyusercontactmethod.DataPagerdutyUserContactMethod_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethod.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyusercontactmethod"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutyusercontactmethod"
 
 datapagerdutyusercontactmethod.DataPagerdutyUserContactMethod_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datapagerdutyusercontactmethod.DataPagerdutyUserContactMethod_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethod.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyusercontactmethod"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutyusercontactmethod"
 
 datapagerdutyusercontactmethod.DataPagerdutyUserContactMethod_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyUserContactMethod.DataPagerdutyUserContactMethodConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutyusercontactmethod"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutyusercontactmethod"
 
 &datapagerdutyusercontactmethod.DataPagerdutyUserContactMethodConfig {
 	Connection: interface{},

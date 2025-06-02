@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyStandardsResourcesScores.DataPagerdutyStandardsResourcesScores.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandardsresourcesscores"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutystandardsresourcesscores"
 
 datapagerdutystandardsresourcesscores.NewDataPagerdutyStandardsResourcesScores(scope Construct, id *string, config DataPagerdutyStandardsResourcesScoresConfig) DataPagerdutyStandardsResourcesScores
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-pagerduty.dataPagerdutyStandardsResourcesScores.DataPagerdutyStandardsResourcesScores.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandardsresourcesscores"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutystandardsresourcesscores"
 
 datapagerdutystandardsresourcesscores.DataPagerdutyStandardsResourcesScores_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-pagerduty.dataPagerdutyStandardsResourcesScores.DataPagerdutyStandardsResourcesScores.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandardsresourcesscores"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutystandardsresourcesscores"
 
 datapagerdutystandardsresourcesscores.DataPagerdutyStandardsResourcesScores_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datapagerdutystandardsresourcesscores.DataPagerdutyStandardsResourcesScores_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-pagerduty.dataPagerdutyStandardsResourcesScores.DataPagerdutyStandardsResourcesScores.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandardsresourcesscores"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutystandardsresourcesscores"
 
 datapagerdutystandardsresourcesscores.DataPagerdutyStandardsResourcesScores_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datapagerdutystandardsresourcesscores.DataPagerdutyStandardsResourcesScores_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-pagerduty.dataPagerdutyStandardsResourcesScores.DataPagerdutyStandardsResourcesScores.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandardsresourcesscores"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutystandardsresourcesscores"
 
 datapagerdutystandardsresourcesscores.DataPagerdutyStandardsResourcesScores_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyStandardsResourcesScores.DataPagerdutyStandardsResourcesScoresConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandardsresourcesscores"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutystandardsresourcesscores"
 
 &datapagerdutystandardsresourcesscores.DataPagerdutyStandardsResourcesScoresConfig {
 	Connection: interface{},
@@ -728,7 +728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyStandardsResourcesScores.DataPagerdutyStandardsResourcesScoresResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandardsresourcesscores"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutystandardsresourcesscores"
 
 &datapagerdutystandardsresourcesscores.DataPagerdutyStandardsResourcesScoresResources {
 
@@ -741,7 +741,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerduty
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyStandardsResourcesScores.DataPagerdutyStandardsResourcesScoresResourcesScore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandardsresourcesscores"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutystandardsresourcesscores"
 
 &datapagerdutystandardsresourcesscores.DataPagerdutyStandardsResourcesScoresResourcesScore {
 
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerduty
 #### Initializer <a name="Initializer" id="@cdktf/provider-pagerduty.dataPagerdutyStandardsResourcesScores.DataPagerdutyStandardsResourcesScoresResourcesStandards.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandardsresourcesscores"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutystandardsresourcesscores"
 
 &datapagerdutystandardsresourcesscores.DataPagerdutyStandardsResourcesScoresResourcesStandards {
 
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerduty
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyStandardsResourcesScores.DataPagerdutyStandardsResourcesScoresResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandardsresourcesscores"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutystandardsresourcesscores"
 
 datapagerdutystandardsresourcesscores.NewDataPagerdutyStandardsResourcesScoresResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPagerdutyStandardsResourcesScoresResourcesList
 ```
@@ -918,7 +918,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyStandardsResourcesScores.DataPagerdutyStandardsResourcesScoresResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandardsresourcesscores"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutystandardsresourcesscores"
 
 datapagerdutystandardsresourcesscores.NewDataPagerdutyStandardsResourcesScoresResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPagerdutyStandardsResourcesScoresResourcesOutputReference
 ```
@@ -1229,7 +1229,7 @@ func InternalValue() DataPagerdutyStandardsResourcesScoresResources
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyStandardsResourcesScores.DataPagerdutyStandardsResourcesScoresResourcesScoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandardsresourcesscores"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutystandardsresourcesscores"
 
 datapagerdutystandardsresourcesscores.NewDataPagerdutyStandardsResourcesScoresResourcesScoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataPagerdutyStandardsResourcesScoresResourcesScoreOutputReference
 ```
@@ -1500,7 +1500,7 @@ func InternalValue() DataPagerdutyStandardsResourcesScoresResourcesScore
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyStandardsResourcesScores.DataPagerdutyStandardsResourcesScoresResourcesStandardsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandardsresourcesscores"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutystandardsresourcesscores"
 
 datapagerdutystandardsresourcesscores.NewDataPagerdutyStandardsResourcesScoresResourcesStandardsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataPagerdutyStandardsResourcesScoresResourcesStandardsList
 ```
@@ -1649,7 +1649,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyStandardsResourcesScores.DataPagerdutyStandardsResourcesScoresResourcesStandardsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v13/datapagerdutystandardsresourcesscores"
+import "github.com/cdktf/cdktf-provider-pagerduty-go/pagerduty/v14/datapagerdutystandardsresourcesscores"
 
 datapagerdutystandardsresourcesscores.NewDataPagerdutyStandardsResourcesScoresResourcesStandardsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataPagerdutyStandardsResourcesScoresResourcesStandardsOutputReference
 ```
