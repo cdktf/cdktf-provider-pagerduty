@@ -4,7 +4,7 @@
 
 ### DataPagerdutyServiceCustomFieldValue <a name="DataPagerdutyServiceCustomFieldValue" id="@cdktf/provider-pagerduty.dataPagerdutyServiceCustomFieldValue.DataPagerdutyServiceCustomFieldValue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/data-sources/service_custom_field_value pagerduty_service_custom_field_value}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/data-sources/service_custom_field_value pagerduty_service_custom_field_value}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyServiceCustomFieldValue.DataPagerdutyServiceCustomFieldValue.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataPagerdutyServiceCustom
 
 The id of the existing DataPagerdutyServiceCustomFieldValue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/data-sources/service_custom_field_value#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/data-sources/service_custom_field_value#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -696,7 +696,7 @@ ServiceId *string
 
 The ID of the service to get custom field values for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.0/docs/data-sources/service_custom_field_value#service_id DataPagerdutyServiceCustomFieldValue#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/data-sources/service_custom_field_value#service_id DataPagerdutyServiceCustomFieldValue#service_id}
 
 ---
 
