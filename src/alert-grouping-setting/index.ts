@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/alert_grouping_setting
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.2/docs/resources/alert_grouping_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,43 +13,43 @@ import * as cdktf from 'cdktf';
 
 export interface AlertGroupingSettingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/alert_grouping_setting#description AlertGroupingSetting#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.2/docs/resources/alert_grouping_setting#description AlertGroupingSetting#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/alert_grouping_setting#name AlertGroupingSetting#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.2/docs/resources/alert_grouping_setting#name AlertGroupingSetting#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/alert_grouping_setting#services AlertGroupingSetting#services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.2/docs/resources/alert_grouping_setting#services AlertGroupingSetting#services}
   */
   readonly services: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/alert_grouping_setting#type AlertGroupingSetting#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.2/docs/resources/alert_grouping_setting#type AlertGroupingSetting#type}
   */
   readonly type: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/alert_grouping_setting#config AlertGroupingSetting#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.2/docs/resources/alert_grouping_setting#config AlertGroupingSetting#config}
   */
   readonly config?: AlertGroupingSettingConfigA;
 }
 export interface AlertGroupingSettingConfigA {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/alert_grouping_setting#aggregate AlertGroupingSetting#aggregate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.2/docs/resources/alert_grouping_setting#aggregate AlertGroupingSetting#aggregate}
   */
   readonly aggregate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/alert_grouping_setting#fields AlertGroupingSetting#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.2/docs/resources/alert_grouping_setting#fields AlertGroupingSetting#fields}
   */
   readonly fields?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/alert_grouping_setting#time_window AlertGroupingSetting#time_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.2/docs/resources/alert_grouping_setting#time_window AlertGroupingSetting#time_window}
   */
   readonly timeWindow?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/alert_grouping_setting#timeout AlertGroupingSetting#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.2/docs/resources/alert_grouping_setting#timeout AlertGroupingSetting#timeout}
   */
   readonly timeout?: number;
 }
@@ -230,7 +230,7 @@ export class AlertGroupingSettingConfigAOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/alert_grouping_setting pagerduty_alert_grouping_setting}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.2/docs/resources/alert_grouping_setting pagerduty_alert_grouping_setting}
 */
 export class AlertGroupingSetting extends cdktf.TerraformResource {
 
@@ -246,7 +246,7 @@ export class AlertGroupingSetting extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AlertGroupingSetting resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AlertGroupingSetting to import
-  * @param importFromId The id of the existing AlertGroupingSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/alert_grouping_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AlertGroupingSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.2/docs/resources/alert_grouping_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AlertGroupingSetting to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -258,7 +258,7 @@ export class AlertGroupingSetting extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.1/docs/resources/alert_grouping_setting pagerduty_alert_grouping_setting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.2/docs/resources/alert_grouping_setting pagerduty_alert_grouping_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -269,7 +269,7 @@ export class AlertGroupingSetting extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_alert_grouping_setting',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.26.1',
+        providerVersion: '3.26.2',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
