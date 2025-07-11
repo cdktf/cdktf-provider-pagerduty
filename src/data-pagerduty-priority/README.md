@@ -1,3 +1,3 @@
 # `data_pagerduty_priority`
 
-Refer to the Terraform Registry for docs: [`data_pagerduty_priority`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.3/docs/data-sources/priority).
+Refer to the Terraform Registry for docs: [`data_pagerduty_priority`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/data-sources/priority).
