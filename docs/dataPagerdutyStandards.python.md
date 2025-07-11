@@ -4,7 +4,7 @@
 
 ### DataPagerdutyStandards <a name="DataPagerdutyStandards" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandards"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.3/docs/data-sources/standards pagerduty_standards}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/data-sources/standards pagerduty_standards}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandards.Initializer"></a>
 
@@ -36,7 +36,7 @@ dataPagerdutyStandards.DataPagerdutyStandards(
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandards.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandards.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandards.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandards.Initializer.parameter.resourceType">resource_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.3/docs/data-sources/standards#resource_type DataPagerdutyStandards#resource_type}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandards.Initializer.parameter.resourceType">resource_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/data-sources/standards#resource_type DataPagerdutyStandards#resource_type}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.3/docs/data-sources/standards#resource_type DataPagerdutyStandards#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/data-sources/standards#resource_type DataPagerdutyStandards#resource_type}.
 
 ---
 
@@ -470,7 +470,7 @@ The construct id used in the generated config for the DataPagerdutyStandards to 
 
 The id of the existing DataPagerdutyStandards that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.3/docs/data-sources/standards#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/data-sources/standards#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -706,7 +706,7 @@ dataPagerdutyStandards.DataPagerdutyStandardsConfig(
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsConfig.property.resourceType">resource_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.3/docs/data-sources/standards#resource_type DataPagerdutyStandards#resource_type}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyStandards.DataPagerdutyStandardsConfig.property.resourceType">resource_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/data-sources/standards#resource_type DataPagerdutyStandards#resource_type}. |
 
 ---
 
@@ -788,7 +788,7 @@ resource_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.26.3/docs/data-sources/standards#resource_type DataPagerdutyStandards#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/data-sources/standards#resource_type DataPagerdutyStandards#resource_type}.
 
 ---
 
