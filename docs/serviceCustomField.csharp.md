@@ -4,7 +4,7 @@
 
 ### ServiceCustomField <a name="ServiceCustomField" id="@cdktf/provider-pagerduty.serviceCustomField.ServiceCustomField"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/service_custom_field pagerduty_service_custom_field}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/service_custom_field pagerduty_service_custom_field}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.serviceCustomField.ServiceCustomField.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the ServiceCustomField to impo
 
 The id of the existing ServiceCustomField that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/service_custom_field#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/service_custom_field#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1051,7 +1051,7 @@ public string DataType { get; set; }
 
 The kind of data the custom field is allowed to contain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/service_custom_field#data_type ServiceCustomField#data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/service_custom_field#data_type ServiceCustomField#data_type}
 
 ---
 
@@ -1065,7 +1065,7 @@ public string DisplayName { get; set; }
 
 The human-readable name of the field. This must be unique across an account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/service_custom_field#display_name ServiceCustomField#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/service_custom_field#display_name ServiceCustomField#display_name}
 
 ---
 
@@ -1079,7 +1079,7 @@ public string FieldType { get; set; }
 
 The type of data this field contains. In combination with the `data_type` field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/service_custom_field#field_type ServiceCustomField#field_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/service_custom_field#field_type ServiceCustomField#field_type}
 
 ---
 
@@ -1095,7 +1095,7 @@ The name of the field.
 
 May include ASCII characters, specifically lowercase letters, digits, and underescores. The `name` for a Field must be unique and cannot be changed once created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/service_custom_field#name ServiceCustomField#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/service_custom_field#name ServiceCustomField#name}
 
 ---
 
@@ -1109,7 +1109,7 @@ public string DefaultValue { get; set; }
 
 Default value for the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/service_custom_field#default_value ServiceCustomField#default_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/service_custom_field#default_value ServiceCustomField#default_value}
 
 ---
 
@@ -1123,7 +1123,7 @@ public string Description { get; set; }
 
 A description of the data this field contains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/service_custom_field#description ServiceCustomField#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/service_custom_field#description ServiceCustomField#description}
 
 ---
 
@@ -1137,7 +1137,7 @@ public object Enabled { get; set; }
 
 Whether the field is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/service_custom_field#enabled ServiceCustomField#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/service_custom_field#enabled ServiceCustomField#enabled}
 
 ---
 
@@ -1151,7 +1151,7 @@ public object FieldOption { get; set; }
 
 field_option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/service_custom_field#field_option ServiceCustomField#field_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/service_custom_field#field_option ServiceCustomField#field_option}
 
 ---
 
@@ -1172,8 +1172,8 @@ new ServiceCustomFieldFieldOption {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.serviceCustomField.ServiceCustomFieldFieldOption.property.dataType">DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/service_custom_field#data_type ServiceCustomField#data_type}. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceCustomField.ServiceCustomFieldFieldOption.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/service_custom_field#value ServiceCustomField#value}. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceCustomField.ServiceCustomFieldFieldOption.property.dataType">DataType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/service_custom_field#data_type ServiceCustomField#data_type}. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceCustomField.ServiceCustomFieldFieldOption.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/service_custom_field#value ServiceCustomField#value}. |
 
 ---
 
@@ -1185,7 +1185,7 @@ public string DataType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/service_custom_field#data_type ServiceCustomField#data_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/service_custom_field#data_type ServiceCustomField#data_type}.
 
 ---
 
@@ -1197,7 +1197,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.0/docs/resources/service_custom_field#value ServiceCustomField#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/service_custom_field#value ServiceCustomField#value}.
 
 ---
 
