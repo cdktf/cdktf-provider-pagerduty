@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/user_handoff_notification_rule
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/user_handoff_notification_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface UserHandoffNotificationRuleConfig extends cdktf.TerraformMetaAr
   /**
   * The type of handoff to notify for. Possible values are 'both', 'oncall', 'offcall'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/user_handoff_notification_rule#handoff_type UserHandoffNotificationRule#handoff_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/user_handoff_notification_rule#handoff_type UserHandoffNotificationRule#handoff_type}
   */
   readonly handoffType?: string;
   /**
   * The number of minutes before the handoff to notify the user. Must be greater than or equal to 0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/user_handoff_notification_rule#notify_advance_in_minutes UserHandoffNotificationRule#notify_advance_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/user_handoff_notification_rule#notify_advance_in_minutes UserHandoffNotificationRule#notify_advance_in_minutes}
   */
   readonly notifyAdvanceInMinutes: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/user_handoff_notification_rule#user_id UserHandoffNotificationRule#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/user_handoff_notification_rule#user_id UserHandoffNotificationRule#user_id}
   */
   readonly userId: string;
   /**
   * contact_method block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/user_handoff_notification_rule#contact_method UserHandoffNotificationRule#contact_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/user_handoff_notification_rule#contact_method UserHandoffNotificationRule#contact_method}
   */
   readonly contactMethod?: UserHandoffNotificationRuleContactMethod[] | cdktf.IResolvable;
 }
 export interface UserHandoffNotificationRuleContactMethod {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/user_handoff_notification_rule#id UserHandoffNotificationRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/user_handoff_notification_rule#id UserHandoffNotificationRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,7 +46,7 @@ export interface UserHandoffNotificationRuleContactMethod {
   /**
   * The type of contact method to notify for. Possible values are 'email_contact_method', 'email_contact_method_reference', 'phone_contact_method', 'phone_contact_method_reference', 'push_notification_contact_method', 'push_notification_contact_method_reference', 'sms_contact_method', 'sms_contact_method_reference'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/user_handoff_notification_rule#type UserHandoffNotificationRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/user_handoff_notification_rule#type UserHandoffNotificationRule#type}
   */
   readonly type: string;
 }
@@ -185,7 +185,7 @@ export class UserHandoffNotificationRuleContactMethodList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/user_handoff_notification_rule pagerduty_user_handoff_notification_rule}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/user_handoff_notification_rule pagerduty_user_handoff_notification_rule}
 */
 export class UserHandoffNotificationRule extends cdktf.TerraformResource {
 
@@ -201,7 +201,7 @@ export class UserHandoffNotificationRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a UserHandoffNotificationRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserHandoffNotificationRule to import
-  * @param importFromId The id of the existing UserHandoffNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/user_handoff_notification_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserHandoffNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/user_handoff_notification_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserHandoffNotificationRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -213,7 +213,7 @@ export class UserHandoffNotificationRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.1/docs/resources/user_handoff_notification_rule pagerduty_user_handoff_notification_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/user_handoff_notification_rule pagerduty_user_handoff_notification_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -224,7 +224,7 @@ export class UserHandoffNotificationRule extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_user_handoff_notification_rule',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.27.1',
+        providerVersion: '3.27.2',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
