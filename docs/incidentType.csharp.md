@@ -4,7 +4,7 @@
 
 ### IncidentType <a name="IncidentType" id="@cdktf/provider-pagerduty.incidentType.IncidentType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/incident_type pagerduty_incident_type}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_type pagerduty_incident_type}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.incidentType.IncidentType.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the IncidentType to import.
 
 The id of the existing IncidentType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/incident_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,11 +842,11 @@ new IncidentTypeConfig {
 | <code><a href="#@cdktf/provider-pagerduty.incidentType.IncidentTypeConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.incidentType.IncidentTypeConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.incidentType.IncidentTypeConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.incidentType.IncidentTypeConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/incident_type#display_name IncidentType#display_name}. |
-| <code><a href="#@cdktf/provider-pagerduty.incidentType.IncidentTypeConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/incident_type#name IncidentType#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.incidentType.IncidentTypeConfig.property.parentType">ParentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/incident_type#parent_type IncidentType#parent_type}. |
-| <code><a href="#@cdktf/provider-pagerduty.incidentType.IncidentTypeConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/incident_type#description IncidentType#description}. |
-| <code><a href="#@cdktf/provider-pagerduty.incidentType.IncidentTypeConfig.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/incident_type#enabled IncidentType#enabled}. |
+| <code><a href="#@cdktf/provider-pagerduty.incidentType.IncidentTypeConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_type#display_name IncidentType#display_name}. |
+| <code><a href="#@cdktf/provider-pagerduty.incidentType.IncidentTypeConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_type#name IncidentType#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.incidentType.IncidentTypeConfig.property.parentType">ParentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_type#parent_type IncidentType#parent_type}. |
+| <code><a href="#@cdktf/provider-pagerduty.incidentType.IncidentTypeConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_type#description IncidentType#description}. |
+| <code><a href="#@cdktf/provider-pagerduty.incidentType.IncidentTypeConfig.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_type#enabled IncidentType#enabled}. |
 
 ---
 
@@ -928,7 +928,7 @@ public string DisplayName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/incident_type#display_name IncidentType#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_type#display_name IncidentType#display_name}.
 
 ---
 
@@ -940,7 +940,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/incident_type#name IncidentType#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_type#name IncidentType#name}.
 
 ---
 
@@ -952,7 +952,7 @@ public string ParentType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/incident_type#parent_type IncidentType#parent_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_type#parent_type IncidentType#parent_type}.
 
 ---
 
@@ -964,7 +964,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/incident_type#description IncidentType#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_type#description IncidentType#description}.
 
 ---
 
@@ -976,7 +976,7 @@ public object Enabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/resources/incident_type#enabled IncidentType#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_type#enabled IncidentType#enabled}.
 
 ---
 
