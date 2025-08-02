@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/data-sources/standards_resources_scores
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/data-sources/standards_resources_scores
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataPagerdutyStandardsResourcesScoresConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/data-sources/standards_resources_scores#ids DataPagerdutyStandardsResourcesScores#ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/data-sources/standards_resources_scores#ids DataPagerdutyStandardsResourcesScores#ids}
   */
   readonly ids: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/data-sources/standards_resources_scores#resource_type DataPagerdutyStandardsResourcesScores#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/data-sources/standards_resources_scores#resource_type DataPagerdutyStandardsResourcesScores#resource_type}
   */
   readonly resourceType: string;
 }
@@ -274,7 +274,7 @@ export class DataPagerdutyStandardsResourcesScoresResourcesList extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/data-sources/standards_resources_scores pagerduty_standards_resources_scores}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/data-sources/standards_resources_scores pagerduty_standards_resources_scores}
 */
 export class DataPagerdutyStandardsResourcesScores extends cdktf.TerraformDataSource {
 
@@ -290,7 +290,7 @@ export class DataPagerdutyStandardsResourcesScores extends cdktf.TerraformDataSo
   * Generates CDKTF code for importing a DataPagerdutyStandardsResourcesScores resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPagerdutyStandardsResourcesScores to import
-  * @param importFromId The id of the existing DataPagerdutyStandardsResourcesScores that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/data-sources/standards_resources_scores#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataPagerdutyStandardsResourcesScores that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/data-sources/standards_resources_scores#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPagerdutyStandardsResourcesScores to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -302,7 +302,7 @@ export class DataPagerdutyStandardsResourcesScores extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.2/docs/data-sources/standards_resources_scores pagerduty_standards_resources_scores} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/data-sources/standards_resources_scores pagerduty_standards_resources_scores} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -313,7 +313,7 @@ export class DataPagerdutyStandardsResourcesScores extends cdktf.TerraformDataSo
       terraformResourceType: 'pagerduty_standards_resources_scores',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.27.2',
+        providerVersion: '3.27.3',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
