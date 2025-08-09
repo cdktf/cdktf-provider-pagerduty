@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_workflow_trigger
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/incident_workflow_trigger
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,46 @@ import * as cdktf from 'cdktf';
 
 export interface IncidentWorkflowTriggerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_workflow_trigger#condition IncidentWorkflowTrigger#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/incident_workflow_trigger#condition IncidentWorkflowTrigger#condition}
   */
   readonly condition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_workflow_trigger#id IncidentWorkflowTrigger#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/incident_workflow_trigger#id IncidentWorkflowTrigger#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_workflow_trigger#services IncidentWorkflowTrigger#services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/incident_workflow_trigger#services IncidentWorkflowTrigger#services}
   */
   readonly services?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_workflow_trigger#subscribed_to_all_services IncidentWorkflowTrigger#subscribed_to_all_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/incident_workflow_trigger#subscribed_to_all_services IncidentWorkflowTrigger#subscribed_to_all_services}
   */
   readonly subscribedToAllServices: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_workflow_trigger#type IncidentWorkflowTrigger#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/incident_workflow_trigger#type IncidentWorkflowTrigger#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_workflow_trigger#workflow IncidentWorkflowTrigger#workflow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/incident_workflow_trigger#workflow IncidentWorkflowTrigger#workflow}
   */
   readonly workflow: string;
   /**
   * permissions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_workflow_trigger#permissions IncidentWorkflowTrigger#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/incident_workflow_trigger#permissions IncidentWorkflowTrigger#permissions}
   */
   readonly permissions?: IncidentWorkflowTriggerPermissions;
 }
 export interface IncidentWorkflowTriggerPermissions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_workflow_trigger#restricted IncidentWorkflowTrigger#restricted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/incident_workflow_trigger#restricted IncidentWorkflowTrigger#restricted}
   */
   readonly restricted?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_workflow_trigger#team_id IncidentWorkflowTrigger#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/incident_workflow_trigger#team_id IncidentWorkflowTrigger#team_id}
   */
   readonly teamId?: string;
 }
@@ -165,7 +165,7 @@ export class IncidentWorkflowTriggerPermissionsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger}
 */
 export class IncidentWorkflowTrigger extends cdktf.TerraformResource {
 
@@ -181,7 +181,7 @@ export class IncidentWorkflowTrigger extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IncidentWorkflowTrigger resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IncidentWorkflowTrigger to import
-  * @param importFromId The id of the existing IncidentWorkflowTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_workflow_trigger#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IncidentWorkflowTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/incident_workflow_trigger#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IncidentWorkflowTrigger to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -193,7 +193,7 @@ export class IncidentWorkflowTrigger extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.27.3/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/incident_workflow_trigger pagerduty_incident_workflow_trigger} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -204,7 +204,7 @@ export class IncidentWorkflowTrigger extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_incident_workflow_trigger',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.27.3',
+        providerVersion: '3.28.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

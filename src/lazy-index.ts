@@ -13,6 +13,7 @@ Object.defineProperty(exports, 'automationActionsRunner', { get: function () { r
 Object.defineProperty(exports, 'automationActionsRunnerTeamAssociation', { get: function () { return require('./automation-actions-runner-team-association'); } });
 Object.defineProperty(exports, 'businessService', { get: function () { return require('./business-service'); } });
 Object.defineProperty(exports, 'businessServiceSubscriber', { get: function () { return require('./business-service-subscriber'); } });
+Object.defineProperty(exports, 'enablement', { get: function () { return require('./enablement'); } });
 Object.defineProperty(exports, 'escalationPolicy', { get: function () { return require('./escalation-policy'); } });
 Object.defineProperty(exports, 'eventOrchestration', { get: function () { return require('./event-orchestration'); } });
 Object.defineProperty(exports, 'eventOrchestrationGlobal', { get: function () { return require('./event-orchestration-global'); } });
