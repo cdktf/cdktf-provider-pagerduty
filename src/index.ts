@@ -13,6 +13,7 @@ export * as automationActionsRunner from './automation-actions-runner';
 export * as automationActionsRunnerTeamAssociation from './automation-actions-runner-team-association';
 export * as businessService from './business-service';
 export * as businessServiceSubscriber from './business-service-subscriber';
+export * as enablement from './enablement';
 export * as escalationPolicy from './escalation-policy';
 export * as eventOrchestration from './event-orchestration';
 export * as eventOrchestrationGlobal from './event-orchestration-global';

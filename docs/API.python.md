@@ -49,6 +49,7 @@ The following submodules are available:
 - [dataPagerdutyUserContactMethod](./dataPagerdutyUserContactMethod.python.md)
 - [dataPagerdutyUsers](./dataPagerdutyUsers.python.md)
 - [dataPagerdutyVendor](./dataPagerdutyVendor.python.md)
+- [enablement](./enablement.python.md)
 - [escalationPolicy](./escalationPolicy.python.md)
 - [eventOrchestration](./eventOrchestration.python.md)
 - [eventOrchestrationGlobal](./eventOrchestrationGlobal.python.md)

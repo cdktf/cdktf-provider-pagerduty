@@ -49,6 +49,7 @@ The following submodules are available:
 - [dataPagerdutyUserContactMethod](./dataPagerdutyUserContactMethod.csharp.md)
 - [dataPagerdutyUsers](./dataPagerdutyUsers.csharp.md)
 - [dataPagerdutyVendor](./dataPagerdutyVendor.csharp.md)
+- [enablement](./enablement.csharp.md)
 - [escalationPolicy](./escalationPolicy.csharp.md)
 - [eventOrchestration](./eventOrchestration.csharp.md)
 - [eventOrchestrationGlobal](./eventOrchestrationGlobal.csharp.md)

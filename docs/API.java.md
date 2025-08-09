@@ -49,6 +49,7 @@ The following submodules are available:
 - [dataPagerdutyUserContactMethod](./dataPagerdutyUserContactMethod.java.md)
 - [dataPagerdutyUsers](./dataPagerdutyUsers.java.md)
 - [dataPagerdutyVendor](./dataPagerdutyVendor.java.md)
+- [enablement](./enablement.java.md)
 - [escalationPolicy](./escalationPolicy.java.md)
 - [eventOrchestration](./eventOrchestration.java.md)
 - [eventOrchestrationGlobal](./eventOrchestrationGlobal.java.md)
