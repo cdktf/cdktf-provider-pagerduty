@@ -49,6 +49,7 @@ The following submodules are available:
 - [dataPagerdutyUserContactMethod](./dataPagerdutyUserContactMethod.go.md)
 - [dataPagerdutyUsers](./dataPagerdutyUsers.go.md)
 - [dataPagerdutyVendor](./dataPagerdutyVendor.go.md)
+- [enablement](./enablement.go.md)
 - [escalationPolicy](./escalationPolicy.go.md)
 - [eventOrchestration](./eventOrchestration.go.md)
 - [eventOrchestrationGlobal](./eventOrchestrationGlobal.go.md)

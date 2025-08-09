@@ -49,6 +49,7 @@ The following submodules are available:
 - [dataPagerdutyUserContactMethod](./dataPagerdutyUserContactMethod.typescript.md)
 - [dataPagerdutyUsers](./dataPagerdutyUsers.typescript.md)
 - [dataPagerdutyVendor](./dataPagerdutyVendor.typescript.md)
+- [enablement](./enablement.typescript.md)
 - [escalationPolicy](./escalationPolicy.typescript.md)
 - [eventOrchestration](./eventOrchestration.typescript.md)
 - [eventOrchestrationGlobal](./eventOrchestrationGlobal.typescript.md)
