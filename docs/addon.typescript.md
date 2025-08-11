@@ -4,7 +4,7 @@
 
 ### Addon <a name="Addon" id="@cdktf/provider-pagerduty.addon.Addon"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/addon pagerduty_addon}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.1/docs/resources/addon pagerduty_addon}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.addon.Addon.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the Addon to import.
 
 The id of the existing Addon that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/addon#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.1/docs/resources/addon#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -738,8 +738,8 @@ const addonConfig: addon.AddonConfig = { ... }
 | <code><a href="#@cdktf/provider-pagerduty.addon.AddonConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.addon.AddonConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.addon.AddonConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.addon.AddonConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/addon#name Addon#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.addon.AddonConfig.property.src">src</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/addon#src Addon#src}. |
+| <code><a href="#@cdktf/provider-pagerduty.addon.AddonConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.1/docs/resources/addon#name Addon#name}. |
+| <code><a href="#@cdktf/provider-pagerduty.addon.AddonConfig.property.src">src</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.1/docs/resources/addon#src Addon#src}. |
 
 ---
 
@@ -821,7 +821,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/addon#name Addon#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.1/docs/resources/addon#name Addon#name}.
 
 ---
 
@@ -833,7 +833,7 @@ public readonly src: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.0/docs/resources/addon#src Addon#src}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.1/docs/resources/addon#src Addon#src}.
 
 ---
 
