@@ -4,7 +4,7 @@
 
 ### DataPagerdutyIncidentType <a name="DataPagerdutyIncidentType" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.1/docs/data-sources/incident_type pagerduty_incident_type}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/data-sources/incident_type pagerduty_incident_type}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentType.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataPagerdutyIncidentType 
 
 The id of the existing DataPagerdutyIncidentType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.1/docs/data-sources/incident_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/data-sources/incident_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -647,7 +647,7 @@ const dataPagerdutyIncidentTypeConfig: dataPagerdutyIncidentType.DataPagerdutyIn
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentTypeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentTypeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentTypeConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentTypeConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.1/docs/data-sources/incident_type#display_name DataPagerdutyIncidentType#display_name}. |
+| <code><a href="#@cdktf/provider-pagerduty.dataPagerdutyIncidentType.DataPagerdutyIncidentTypeConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/data-sources/incident_type#display_name DataPagerdutyIncidentType#display_name}. |
 
 ---
 
@@ -729,7 +729,7 @@ public readonly displayName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.1/docs/data-sources/incident_type#display_name DataPagerdutyIncidentType#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/data-sources/incident_type#display_name DataPagerdutyIncidentType#display_name}.
 
 ---
 

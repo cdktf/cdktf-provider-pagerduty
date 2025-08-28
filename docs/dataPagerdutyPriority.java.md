@@ -4,7 +4,7 @@
 
 ### DataPagerdutyPriority <a name="DataPagerdutyPriority" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.1/docs/data-sources/priority pagerduty_priority}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/data-sources/priority pagerduty_priority}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyPriority.DataPagerdutyPriority.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the priority to find in the PagerDuty API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.1/docs/data-sources/priority#name DataPagerdutyPriority#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/data-sources/priority#name DataPagerdutyPriority#name}
 
 ---
 
@@ -431,7 +431,7 @@ The construct id used in the generated config for the DataPagerdutyPriority to i
 
 The id of the existing DataPagerdutyPriority that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.1/docs/data-sources/priority#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/data-sources/priority#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,7 +766,7 @@ public java.lang.String getName();
 
 The name of the priority to find in the PagerDuty API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.1/docs/data-sources/priority#name DataPagerdutyPriority#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/data-sources/priority#name DataPagerdutyPriority#name}
 
 ---
 
