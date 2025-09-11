@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/user_contact_method
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/user_contact_method
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,37 @@ import * as cdktf from 'cdktf';
 
 export interface UserContactMethodConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/user_contact_method#address UserContactMethod#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/user_contact_method#address UserContactMethod#address}
   */
   readonly address: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/user_contact_method#country_code UserContactMethod#country_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/user_contact_method#country_code UserContactMethod#country_code}
   */
   readonly countryCode?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/user_contact_method#id UserContactMethod#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/user_contact_method#device_type UserContactMethod#device_type}
   */
-  readonly id?: string;
+  readonly deviceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/user_contact_method#label UserContactMethod#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/user_contact_method#label UserContactMethod#label}
   */
   readonly label: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/user_contact_method#send_short_email UserContactMethod#send_short_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/user_contact_method#send_short_email UserContactMethod#send_short_email}
   */
   readonly sendShortEmail?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/user_contact_method#type UserContactMethod#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/user_contact_method#type UserContactMethod#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/user_contact_method#user_id UserContactMethod#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/user_contact_method#user_id UserContactMethod#user_id}
   */
   readonly userId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/user_contact_method pagerduty_user_contact_method}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/user_contact_method pagerduty_user_contact_method}
 */
 export class UserContactMethod extends cdktf.TerraformResource {
 
@@ -62,7 +59,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a UserContactMethod resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserContactMethod to import
-  * @param importFromId The id of the existing UserContactMethod that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/user_contact_method#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserContactMethod that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/user_contact_method#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserContactMethod to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +71,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.28.2/docs/resources/user_contact_method pagerduty_user_contact_method} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.29.0/docs/resources/user_contact_method pagerduty_user_contact_method} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +82,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_user_contact_method',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.28.2',
+        providerVersion: '3.29.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -98,7 +95,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
     });
     this._address = config.address;
     this._countryCode = config.countryCode;
-    this._id = config.id;
+    this._deviceType = config.deviceType;
     this._label = config.label;
     this._sendShortEmail = config.sendShortEmail;
     this._type = config.type;
@@ -143,25 +140,30 @@ export class UserContactMethod extends cdktf.TerraformResource {
     return this._countryCode;
   }
 
+  // device_type - computed: false, optional: true, required: false
+  private _deviceType?: string; 
+  public get deviceType() {
+    return this.getStringAttribute('device_type');
+  }
+  public set deviceType(value: string) {
+    this._deviceType = value;
+  }
+  public resetDeviceType() {
+    this._deviceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deviceTypeInput() {
+    return this._deviceType;
+  }
+
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // label - computed: false, optional: false, required: true
@@ -177,7 +179,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
     return this._label;
   }
 
-  // send_short_email - computed: false, optional: true, required: false
+  // send_short_email - computed: true, optional: true, required: false
   private _sendShortEmail?: boolean | cdktf.IResolvable; 
   public get sendShortEmail() {
     return this.getBooleanAttribute('send_short_email');
@@ -227,7 +229,7 @@ export class UserContactMethod extends cdktf.TerraformResource {
     return {
       address: cdktf.stringToTerraform(this._address),
       country_code: cdktf.numberToTerraform(this._countryCode),
-      id: cdktf.stringToTerraform(this._id),
+      device_type: cdktf.stringToTerraform(this._deviceType),
       label: cdktf.stringToTerraform(this._label),
       send_short_email: cdktf.booleanToTerraform(this._sendShortEmail),
       type: cdktf.stringToTerraform(this._type),
@@ -249,8 +251,8 @@ export class UserContactMethod extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "number",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
+      device_type: {
+        value: cdktf.stringToHclTerraform(this._deviceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
