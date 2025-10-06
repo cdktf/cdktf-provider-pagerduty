@@ -14,16 +14,16 @@ from cdktf_cdktf_provider_pagerduty import event_orchestration_unrouted
 eventOrchestrationUnrouted.EventOrchestrationUnrouted(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   catch_all: EventOrchestrationUnroutedCatchAll,
   event_orchestration: str,
-  set: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSet]],
+  set: IResolvable | typing.List[EventOrchestrationUnroutedSet],
   id: str = None
 )
 ```
@@ -32,16 +32,16 @@ eventOrchestrationUnrouted.EventOrchestrationUnrouted(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.catchAll">catch_all</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAll">EventOrchestrationUnroutedCatchAll</a></code> | catch_all block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.eventOrchestration">event_orchestration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#event_orchestration EventOrchestrationUnrouted#event_orchestration}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.set">set</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]]</code> | set block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.set">set</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]</code> | set block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#id EventOrchestrationUnrouted#id}. |
 
 ---
@@ -66,13 +66,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -102,7 +102,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ##### `set`<sup>Required</sup> <a name="set" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.Initializer.parameter.set"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]
 
 set block.
 
@@ -400,7 +400,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.importFrom"></a>
@@ -463,7 +463,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -479,7 +479,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -525,13 +525,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ```python
 def put_set(
-  value: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSet]]
+  value: IResolvable | typing.List[EventOrchestrationUnroutedSet]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.putSet.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]
 
 ---
 
@@ -678,19 +678,19 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.catchAll">catch_all</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllOutputReference">EventOrchestrationUnroutedCatchAllOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.set">set</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetList">EventOrchestrationUnroutedSetList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.catchAllInput">catch_all_input</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAll">EventOrchestrationUnroutedCatchAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.eventOrchestrationInput">event_orchestration_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.setInput">set_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.setInput">set_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.eventOrchestration">event_orchestration</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.id">id</a></code> | <code>str</code> | *No description.* |
 
@@ -771,20 +771,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -831,10 +831,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -891,10 +891,10 @@ id_input: str
 ##### `set_input`<sup>Optional</sup> <a name="set_input" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.setInput"></a>
 
 ```python
-set_input: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSet]]
+set_input: IResolvable | typing.List[EventOrchestrationUnroutedSet]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]
 
 ---
 
@@ -981,9 +981,9 @@ from cdktf_cdktf_provider_pagerduty import event_orchestration_unrouted
 
 eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions(
   event_action: str = None,
-  extraction: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedCatchAllActionsExtraction]] = None,
+  extraction: IResolvable | typing.List[EventOrchestrationUnroutedCatchAllActionsExtraction] = None,
   severity: str = None,
-  variable: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedCatchAllActionsVariable]] = None
+  variable: IResolvable | typing.List[EventOrchestrationUnroutedCatchAllActionsVariable] = None
 )
 ```
 
@@ -992,9 +992,9 @@ eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions.property.eventAction">event_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#event_action EventOrchestrationUnrouted#event_action}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions.property.extraction">extraction</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]]</code> | extraction block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions.property.extraction">extraction</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]</code> | extraction block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions.property.severity">severity</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#severity EventOrchestrationUnrouted#severity}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions.property.variable">variable</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]]</code> | variable block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions.property.variable">variable</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]</code> | variable block. |
 
 ---
 
@@ -1013,10 +1013,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `extraction`<sup>Optional</sup> <a name="extraction" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions.property.extraction"></a>
 
 ```python
-extraction: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedCatchAllActionsExtraction]]
+extraction: IResolvable | typing.List[EventOrchestrationUnroutedCatchAllActionsExtraction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]
 
 extraction block.
 
@@ -1039,10 +1039,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `variable`<sup>Optional</sup> <a name="variable" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions.property.variable"></a>
 
 ```python
-variable: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedCatchAllActionsVariable]]
+variable: IResolvable | typing.List[EventOrchestrationUnroutedCatchAllActionsVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]
 
 variable block.
 
@@ -1206,16 +1206,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 from cdktf_cdktf_provider_pagerduty import event_orchestration_unrouted
 
 eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   catch_all: EventOrchestrationUnroutedCatchAll,
   event_orchestration: str,
-  set: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSet]],
+  set: IResolvable | typing.List[EventOrchestrationUnroutedSet],
   id: str = None
 )
 ```
@@ -1224,16 +1224,16 @@ eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.catchAll">catch_all</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAll">EventOrchestrationUnroutedCatchAll</a></code> | catch_all block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.eventOrchestration">event_orchestration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#event_orchestration EventOrchestrationUnrouted#event_orchestration}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.set">set</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]]</code> | set block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.set">set</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]</code> | set block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#id EventOrchestrationUnrouted#id}. |
 
 ---
@@ -1241,20 +1241,20 @@ eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1301,10 +1301,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1337,10 +1337,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `set`<sup>Required</sup> <a name="set" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.set"></a>
 
 ```python
-set: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSet]]
+set: IResolvable | typing.List[EventOrchestrationUnroutedSet]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]
 
 set block.
 
@@ -1372,7 +1372,7 @@ from cdktf_cdktf_provider_pagerduty import event_orchestration_unrouted
 
 eventOrchestrationUnrouted.EventOrchestrationUnroutedSet(
   id: str,
-  rule: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRule]] = None
+  rule: IResolvable | typing.List[EventOrchestrationUnroutedSetRule] = None
 )
 ```
 
@@ -1381,7 +1381,7 @@ eventOrchestrationUnrouted.EventOrchestrationUnroutedSet(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#id EventOrchestrationUnrouted#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet.property.rule">rule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>]]</code> | rule block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet.property.rule">rule</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>]</code> | rule block. |
 
 ---
 
@@ -1403,10 +1403,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `rule`<sup>Optional</sup> <a name="rule" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet.property.rule"></a>
 
 ```python
-rule: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRule]]
+rule: IResolvable | typing.List[EventOrchestrationUnroutedSetRule]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>]
 
 rule block.
 
@@ -1423,8 +1423,8 @@ from cdktf_cdktf_provider_pagerduty import event_orchestration_unrouted
 
 eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule(
   actions: EventOrchestrationUnroutedSetRuleActions,
-  condition: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRuleCondition]] = None,
-  disabled: typing.Union[bool, IResolvable] = None,
+  condition: IResolvable | typing.List[EventOrchestrationUnroutedSetRuleCondition] = None,
+  disabled: bool | IResolvable = None,
   label: str = None
 )
 ```
@@ -1434,8 +1434,8 @@ eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule.property.actions">actions</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions">EventOrchestrationUnroutedSetRuleActions</a></code> | actions block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule.property.condition">condition</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>]]</code> | condition block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#disabled EventOrchestrationUnrouted#disabled}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule.property.condition">condition</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>]</code> | condition block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#disabled EventOrchestrationUnrouted#disabled}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule.property.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#label EventOrchestrationUnrouted#label}. |
 
 ---
@@ -1457,10 +1457,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `condition`<sup>Optional</sup> <a name="condition" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule.property.condition"></a>
 
 ```python
-condition: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRuleCondition]]
+condition: IResolvable | typing.List[EventOrchestrationUnroutedSetRuleCondition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>]
 
 condition block.
 
@@ -1471,10 +1471,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule.property.disabled"></a>
 
 ```python
-disabled: typing.Union[bool, IResolvable]
+disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#disabled EventOrchestrationUnrouted#disabled}.
 
@@ -1501,10 +1501,10 @@ from cdktf_cdktf_provider_pagerduty import event_orchestration_unrouted
 
 eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions(
   event_action: str = None,
-  extraction: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRuleActionsExtraction]] = None,
+  extraction: IResolvable | typing.List[EventOrchestrationUnroutedSetRuleActionsExtraction] = None,
   route_to: str = None,
   severity: str = None,
-  variable: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRuleActionsVariable]] = None
+  variable: IResolvable | typing.List[EventOrchestrationUnroutedSetRuleActionsVariable] = None
 )
 ```
 
@@ -1513,10 +1513,10 @@ eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.eventAction">event_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#event_action EventOrchestrationUnrouted#event_action}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.extraction">extraction</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]]</code> | extraction block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.extraction">extraction</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]</code> | extraction block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.routeTo">route_to</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#route_to EventOrchestrationUnrouted#route_to}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.severity">severity</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#severity EventOrchestrationUnrouted#severity}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.variable">variable</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]]</code> | variable block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.variable">variable</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]</code> | variable block. |
 
 ---
 
@@ -1535,10 +1535,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `extraction`<sup>Optional</sup> <a name="extraction" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.extraction"></a>
 
 ```python
-extraction: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRuleActionsExtraction]]
+extraction: IResolvable | typing.List[EventOrchestrationUnroutedSetRuleActionsExtraction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]
 
 extraction block.
 
@@ -1573,10 +1573,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `variable`<sup>Optional</sup> <a name="variable" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.variable"></a>
 
 ```python
-variable: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRuleActionsVariable]]
+variable: IResolvable | typing.List[EventOrchestrationUnroutedSetRuleActionsVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]
 
 variable block.
 
@@ -1897,7 +1897,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]</code> | *No description.* |
 
 ---
 
@@ -1928,10 +1928,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedCatchAllActionsExtraction]]
+internal_value: IResolvable | typing.List[EventOrchestrationUnroutedCatchAllActionsExtraction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]
 
 ---
 
@@ -2220,7 +2220,7 @@ def reset_template() -> None
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.template">template</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a></code> | *No description.* |
 
 ---
 
@@ -2331,10 +2331,10 @@ template: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EventOrchestrationUnroutedCatchAllActionsExtraction]
+internal_value: IResolvable | EventOrchestrationUnroutedCatchAllActionsExtraction
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>
 
 ---
 
@@ -2577,13 +2577,13 @@ Returns a reversible string representation.
 
 ```python
 def put_extraction(
-  value: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedCatchAllActionsExtraction]]
+  value: IResolvable | typing.List[EventOrchestrationUnroutedCatchAllActionsExtraction]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.putExtraction.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]
 
 ---
 
@@ -2591,13 +2591,13 @@ def put_extraction(
 
 ```python
 def put_variable(
-  value: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedCatchAllActionsVariable]]
+  value: IResolvable | typing.List[EventOrchestrationUnroutedCatchAllActionsVariable]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.putVariable.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]
 
 ---
 
@@ -2636,9 +2636,9 @@ def reset_variable() -> None
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.suppress">suppress</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.variable">variable</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableList">EventOrchestrationUnroutedCatchAllActionsVariableList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.eventActionInput">event_action_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.extractionInput">extraction_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.extractionInput">extraction_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.severityInput">severity_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.variableInput">variable_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.variableInput">variable_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.eventAction">event_action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.severity">severity</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions">EventOrchestrationUnroutedCatchAllActions</a></code> | *No description.* |
@@ -2712,10 +2712,10 @@ event_action_input: str
 ##### `extraction_input`<sup>Optional</sup> <a name="extraction_input" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.extractionInput"></a>
 
 ```python
-extraction_input: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedCatchAllActionsExtraction]]
+extraction_input: IResolvable | typing.List[EventOrchestrationUnroutedCatchAllActionsExtraction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]
 
 ---
 
@@ -2732,10 +2732,10 @@ severity_input: str
 ##### `variable_input`<sup>Optional</sup> <a name="variable_input" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.variableInput"></a>
 
 ```python
-variable_input: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedCatchAllActionsVariable]]
+variable_input: IResolvable | typing.List[EventOrchestrationUnroutedCatchAllActionsVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]
 
 ---
 
@@ -2901,7 +2901,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]</code> | *No description.* |
 
 ---
 
@@ -2932,10 +2932,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedCatchAllActionsVariable]]
+internal_value: IResolvable | typing.List[EventOrchestrationUnroutedCatchAllActionsVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]
 
 ---
 
@@ -3203,7 +3203,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a></code> | *No description.* |
 
 ---
 
@@ -3314,10 +3314,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EventOrchestrationUnroutedCatchAllActionsVariable]
+internal_value: IResolvable | EventOrchestrationUnroutedCatchAllActionsVariable
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>
 
 ---
 
@@ -3556,9 +3556,9 @@ Returns a reversible string representation.
 ```python
 def put_actions(
   event_action: str = None,
-  extraction: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedCatchAllActionsExtraction]] = None,
+  extraction: IResolvable | typing.List[EventOrchestrationUnroutedCatchAllActionsExtraction] = None,
   severity: str = None,
-  variable: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedCatchAllActionsVariable]] = None
+  variable: IResolvable | typing.List[EventOrchestrationUnroutedCatchAllActionsVariable] = None
 ) -> None
 ```
 
@@ -3572,7 +3572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ###### `extraction`<sup>Optional</sup> <a name="extraction" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllOutputReference.putActions.parameter.extraction"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>]
 
 extraction block.
 
@@ -3590,7 +3590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ###### `variable`<sup>Optional</sup> <a name="variable" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllOutputReference.putActions.parameter.variable"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>]
 
 variable block.
 
@@ -3797,7 +3797,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]</code> | *No description.* |
 
 ---
 
@@ -3828,10 +3828,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSet]]
+internal_value: IResolvable | typing.List[EventOrchestrationUnroutedSet]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]
 
 ---
 
@@ -4090,13 +4090,13 @@ Returns a reversible string representation.
 
 ```python
 def put_rule(
-  value: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRule]]
+  value: IResolvable | typing.List[EventOrchestrationUnroutedSetRule]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.putRule.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>]
 
 ---
 
@@ -4115,9 +4115,9 @@ def reset_rule() -> None
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.rule">rule</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleList">EventOrchestrationUnroutedSetRuleList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.ruleInput">rule_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.ruleInput">rule_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a></code> | *No description.* |
 
 ---
 
@@ -4168,10 +4168,10 @@ id_input: str
 ##### `rule_input`<sup>Optional</sup> <a name="rule_input" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.ruleInput"></a>
 
 ```python
-rule_input: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRule]]
+rule_input: IResolvable | typing.List[EventOrchestrationUnroutedSetRule]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>]
 
 ---
 
@@ -4188,10 +4188,10 @@ id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EventOrchestrationUnroutedSet]
+internal_value: IResolvable | EventOrchestrationUnroutedSet
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>
 
 ---
 
@@ -4327,7 +4327,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]</code> | *No description.* |
 
 ---
 
@@ -4358,10 +4358,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRuleActionsExtraction]]
+internal_value: IResolvable | typing.List[EventOrchestrationUnroutedSetRuleActionsExtraction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]
 
 ---
 
@@ -4650,7 +4650,7 @@ def reset_template() -> None
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.template">template</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a></code> | *No description.* |
 
 ---
 
@@ -4761,10 +4761,10 @@ template: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EventOrchestrationUnroutedSetRuleActionsExtraction]
+internal_value: IResolvable | EventOrchestrationUnroutedSetRuleActionsExtraction
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>
 
 ---
 
@@ -5008,13 +5008,13 @@ Returns a reversible string representation.
 
 ```python
 def put_extraction(
-  value: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRuleActionsExtraction]]
+  value: IResolvable | typing.List[EventOrchestrationUnroutedSetRuleActionsExtraction]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.putExtraction.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]
 
 ---
 
@@ -5022,13 +5022,13 @@ def put_extraction(
 
 ```python
 def put_variable(
-  value: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRuleActionsVariable]]
+  value: IResolvable | typing.List[EventOrchestrationUnroutedSetRuleActionsVariable]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.putVariable.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]
 
 ---
 
@@ -5072,10 +5072,10 @@ def reset_variable() -> None
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.extraction">extraction</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionList">EventOrchestrationUnroutedSetRuleActionsExtractionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.variable">variable</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableList">EventOrchestrationUnroutedSetRuleActionsVariableList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.eventActionInput">event_action_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.extractionInput">extraction_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.extractionInput">extraction_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.routeToInput">route_to_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.severityInput">severity_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.variableInput">variable_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.variableInput">variable_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.eventAction">event_action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.routeTo">route_to</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.severity">severity</a></code> | <code>str</code> | *No description.* |
@@ -5140,10 +5140,10 @@ event_action_input: str
 ##### `extraction_input`<sup>Optional</sup> <a name="extraction_input" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.extractionInput"></a>
 
 ```python
-extraction_input: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRuleActionsExtraction]]
+extraction_input: IResolvable | typing.List[EventOrchestrationUnroutedSetRuleActionsExtraction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]
 
 ---
 
@@ -5170,10 +5170,10 @@ severity_input: str
 ##### `variable_input`<sup>Optional</sup> <a name="variable_input" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.variableInput"></a>
 
 ```python
-variable_input: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRuleActionsVariable]]
+variable_input: IResolvable | typing.List[EventOrchestrationUnroutedSetRuleActionsVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]
 
 ---
 
@@ -5349,7 +5349,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]</code> | *No description.* |
 
 ---
 
@@ -5380,10 +5380,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRuleActionsVariable]]
+internal_value: IResolvable | typing.List[EventOrchestrationUnroutedSetRuleActionsVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]
 
 ---
 
@@ -5651,7 +5651,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a></code> | *No description.* |
 
 ---
 
@@ -5762,10 +5762,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EventOrchestrationUnroutedSetRuleActionsVariable]
+internal_value: IResolvable | EventOrchestrationUnroutedSetRuleActionsVariable
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>
 
 ---
 
@@ -5901,7 +5901,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>]</code> | *No description.* |
 
 ---
 
@@ -5932,10 +5932,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRuleCondition]]
+internal_value: IResolvable | typing.List[EventOrchestrationUnroutedSetRuleCondition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>]
 
 ---
 
@@ -6197,7 +6197,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.expressionInput">expression_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.expression">expression</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a></code> | *No description.* |
 
 ---
 
@@ -6248,10 +6248,10 @@ expression: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EventOrchestrationUnroutedSetRuleCondition]
+internal_value: IResolvable | EventOrchestrationUnroutedSetRuleCondition
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>
 
 ---
 
@@ -6387,7 +6387,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>]</code> | *No description.* |
 
 ---
 
@@ -6418,10 +6418,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRule]]
+internal_value: IResolvable | typing.List[EventOrchestrationUnroutedSetRule]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>]
 
 ---
 
@@ -6684,10 +6684,10 @@ Returns a reversible string representation.
 ```python
 def put_actions(
   event_action: str = None,
-  extraction: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRuleActionsExtraction]] = None,
+  extraction: IResolvable | typing.List[EventOrchestrationUnroutedSetRuleActionsExtraction] = None,
   route_to: str = None,
   severity: str = None,
-  variable: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRuleActionsVariable]] = None
+  variable: IResolvable | typing.List[EventOrchestrationUnroutedSetRuleActionsVariable] = None
 ) -> None
 ```
 
@@ -6701,7 +6701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ###### `extraction`<sup>Optional</sup> <a name="extraction" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.putActions.parameter.extraction"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>]
 
 extraction block.
 
@@ -6727,7 +6727,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ###### `variable`<sup>Optional</sup> <a name="variable" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.putActions.parameter.variable"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>]
 
 variable block.
 
@@ -6739,13 +6739,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ```python
 def put_condition(
-  value: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRuleCondition]]
+  value: IResolvable | typing.List[EventOrchestrationUnroutedSetRuleCondition]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.putCondition.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>]
 
 ---
 
@@ -6778,12 +6778,12 @@ def reset_label() -> None
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionList">EventOrchestrationUnroutedSetRuleConditionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.actionsInput">actions_input</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions">EventOrchestrationUnroutedSetRuleActions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.conditionInput">condition_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.disabledInput">disabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.conditionInput">condition_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.disabledInput">disabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.labelInput">label_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.label">label</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a></code> | *No description.* |
 
 ---
 
@@ -6854,20 +6854,20 @@ actions_input: EventOrchestrationUnroutedSetRuleActions
 ##### `condition_input`<sup>Optional</sup> <a name="condition_input" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.conditionInput"></a>
 
 ```python
-condition_input: typing.Union[IResolvable, typing.List[EventOrchestrationUnroutedSetRuleCondition]]
+condition_input: IResolvable | typing.List[EventOrchestrationUnroutedSetRuleCondition]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>]
 
 ---
 
 ##### `disabled_input`<sup>Optional</sup> <a name="disabled_input" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.disabledInput"></a>
 
 ```python
-disabled_input: typing.Union[bool, IResolvable]
+disabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -6884,10 +6884,10 @@ label_input: str
 ##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.disabled"></a>
 
 ```python
-disabled: typing.Union[bool, IResolvable]
+disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -6904,10 +6904,10 @@ label: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, EventOrchestrationUnroutedSetRule]
+internal_value: IResolvable | EventOrchestrationUnroutedSetRule
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>
 
 ---
 

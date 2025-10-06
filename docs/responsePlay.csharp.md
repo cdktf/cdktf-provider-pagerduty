@@ -286,7 +286,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.importFrom"></a>
@@ -340,7 +340,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -355,7 +355,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -380,24 +380,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutResponder` <a name="PutResponder" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.putResponder"></a>
 
 ```csharp
-private void PutResponder(object Value)
+private void PutResponder(IResolvable|ResponsePlayResponder[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.putResponder.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>[]
 
 ---
 
 ##### `PutSubscriber` <a name="PutSubscriber" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.putSubscriber"></a>
 
 ```csharp
-private void PutSubscriber(object Value)
+private void PutSubscriber(IResolvable|ResponsePlaySubscriber[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.putSubscriber.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>[]
 
 ---
 
@@ -593,13 +593,13 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.responder">Responder</a></code> | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderList">ResponsePlayResponderList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.subscriber">Subscriber</a></code> | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberList">ResponsePlaySubscriberList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.conferenceNumberInput">ConferenceNumberInput</a></code> | <code>string</code> | *No description.* |
@@ -608,10 +608,10 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.fromInput">FromInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.responderInput">ResponderInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.responderInput">ResponderInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.respondersMessageInput">RespondersMessageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.runnabilityInput">RunnabilityInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.subscriberInput">SubscriberInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.subscriberInput">SubscriberInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.subscribersMessageInput">SubscribersMessageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.teamInput">TeamInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
@@ -704,20 +704,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -764,10 +764,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -854,10 +854,10 @@ public string NameInput { get; }
 ##### `ResponderInput`<sup>Optional</sup> <a name="ResponderInput" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.responderInput"></a>
 
 ```csharp
-public object ResponderInput { get; }
+public IResolvable|ResponsePlayResponder[] ResponderInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>[]
 
 ---
 
@@ -884,10 +884,10 @@ public string RunnabilityInput { get; }
 ##### `SubscriberInput`<sup>Optional</sup> <a name="SubscriberInput" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.subscriberInput"></a>
 
 ```csharp
-public object SubscriberInput { get; }
+public IResolvable|ResponsePlaySubscriber[] SubscriberInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>[]
 
 ---
 
@@ -1059,23 +1059,23 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new ResponsePlayConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string From,
     string Name,
     string ConferenceNumber = null,
     string ConferenceUrl = null,
     string Description = null,
     string Id = null,
-    object Responder = null,
+    IResolvable|ResponsePlayResponder[] Responder = null,
     string RespondersMessage = null,
     string Runnability = null,
-    object Subscriber = null,
+    IResolvable|ResponsePlaySubscriber[] Subscriber = null,
     string SubscribersMessage = null,
     string Team = null,
     string Type = null
@@ -1086,23 +1086,23 @@ new ResponsePlayConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.from">From</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#from ResponsePlay#from}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#name ResponsePlay#name}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.conferenceNumber">ConferenceNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#conference_number ResponsePlay#conference_number}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.conferenceUrl">ConferenceUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#conference_url ResponsePlay#conference_url}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#description ResponsePlay#description}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#id ResponsePlay#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.responder">Responder</a></code> | <code>object</code> | responder block. |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.responder">Responder</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>[]</code> | responder block. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.respondersMessage">RespondersMessage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#responders_message ResponsePlay#responders_message}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.runnability">Runnability</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#runnability ResponsePlay#runnability}. |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.subscriber">Subscriber</a></code> | <code>object</code> | subscriber block. |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.subscriber">Subscriber</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>[]</code> | subscriber block. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.subscribersMessage">SubscribersMessage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#subscribers_message ResponsePlay#subscribers_message}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.team">Team</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#team ResponsePlay#team}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#type ResponsePlay#type}. |
@@ -1112,20 +1112,20 @@ new ResponsePlayConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1172,10 +1172,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1257,10 +1257,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `Responder`<sup>Optional</sup> <a name="Responder" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.responder"></a>
 
 ```csharp
-public object Responder { get; set; }
+public IResolvable|ResponsePlayResponder[] Responder { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>[]
 
 responder block.
 
@@ -1295,10 +1295,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Subscriber`<sup>Optional</sup> <a name="Subscriber" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.subscriber"></a>
 
 ```csharp
-public object Subscriber { get; set; }
+public IResolvable|ResponsePlaySubscriber[] Subscriber { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>[]
 
 subscriber block.
 
@@ -2530,7 +2530,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>[]</code> | *No description.* |
 
 ---
 
@@ -2561,10 +2561,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ResponsePlayResponder[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>[]
 
 ---
 
@@ -2838,7 +2838,7 @@ private void ResetType()
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a></code> | *No description.* |
 
 ---
 
@@ -2999,10 +2999,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ResponsePlayResponder InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>
 
 ---
 
@@ -4004,7 +4004,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>[]</code> | *No description.* |
 
 ---
 
@@ -4035,10 +4035,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ResponsePlaySubscriber[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>[]
 
 ---
 
@@ -4289,7 +4289,7 @@ private void ResetType()
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a></code> | *No description.* |
 
 ---
 
@@ -4360,10 +4360,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ResponsePlaySubscriber InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>
 
 ---
 
