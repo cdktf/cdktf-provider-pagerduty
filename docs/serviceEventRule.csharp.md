@@ -284,7 +284,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.importFrom"></a>
@@ -338,7 +338,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -353,7 +353,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -414,12 +414,12 @@ private void PutTimeFrame(ServiceEventRuleTimeFrame Value)
 ##### `PutVariable` <a name="PutVariable" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.putVariable"></a>
 
 ```csharp
-private void PutVariable(object Value)
+private void PutVariable(IResolvable|ServiceEventRuleVariable[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.putVariable.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>[]
 
 ---
 
@@ -591,26 +591,26 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.actions">Actions</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference">ServiceEventRuleActionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.conditions">Conditions</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference">ServiceEventRuleConditionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.timeFrame">TimeFrame</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference">ServiceEventRuleTimeFrameOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.variable">Variable</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableList">ServiceEventRuleVariableList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.actionsInput">ActionsInput</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions">ServiceEventRuleActions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.conditionsInput">ConditionsInput</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditions">ServiceEventRuleConditions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.disabledInput">DisabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.disabledInput">DisabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.positionInput">PositionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.serviceInput">ServiceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.timeFrameInput">TimeFrameInput</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame">ServiceEventRuleTimeFrame</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.variableInput">VariableInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.disabled">Disabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.variableInput">VariableInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.position">Position</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.service">Service</a></code> | <code>string</code> | *No description.* |
@@ -692,20 +692,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -752,10 +752,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -822,10 +822,10 @@ public ServiceEventRuleConditions ConditionsInput { get; }
 ##### `DisabledInput`<sup>Optional</sup> <a name="DisabledInput" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.disabledInput"></a>
 
 ```csharp
-public object DisabledInput { get; }
+public bool|IResolvable DisabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -872,20 +872,20 @@ public ServiceEventRuleTimeFrame TimeFrameInput { get; }
 ##### `VariableInput`<sup>Optional</sup> <a name="VariableInput" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.variableInput"></a>
 
 ```csharp
-public object VariableInput { get; }
+public IResolvable|ServiceEventRuleVariable[] VariableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>[]
 
 ---
 
 ##### `Disabled`<sup>Required</sup> <a name="Disabled" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; }
+public bool|IResolvable Disabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -947,13 +947,13 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new ServiceEventRuleActions {
-    object Annotate = null,
-    object EventAction = null,
-    object Extractions = null,
-    object Priority = null,
-    object Severity = null,
-    object Suppress = null,
-    object Suspend = null
+    IResolvable|ServiceEventRuleActionsAnnotate[] Annotate = null,
+    IResolvable|ServiceEventRuleActionsEventAction[] EventAction = null,
+    IResolvable|ServiceEventRuleActionsExtractions[] Extractions = null,
+    IResolvable|ServiceEventRuleActionsPriority[] Priority = null,
+    IResolvable|ServiceEventRuleActionsSeverity[] Severity = null,
+    IResolvable|ServiceEventRuleActionsSuppress[] Suppress = null,
+    IResolvable|ServiceEventRuleActionsSuspend[] Suspend = null
 };
 ```
 
@@ -961,23 +961,23 @@ new ServiceEventRuleActions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.annotate">Annotate</a></code> | <code>object</code> | annotate block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.eventAction">EventAction</a></code> | <code>object</code> | event_action block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.extractions">Extractions</a></code> | <code>object</code> | extractions block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.priority">Priority</a></code> | <code>object</code> | priority block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.severity">Severity</a></code> | <code>object</code> | severity block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.suppress">Suppress</a></code> | <code>object</code> | suppress block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.suspend">Suspend</a></code> | <code>object</code> | suspend block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.annotate">Annotate</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>[]</code> | annotate block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.eventAction">EventAction</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>[]</code> | event_action block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.extractions">Extractions</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>[]</code> | extractions block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.priority">Priority</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>[]</code> | priority block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.severity">Severity</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>[]</code> | severity block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.suppress">Suppress</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>[]</code> | suppress block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.suspend">Suspend</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>[]</code> | suspend block. |
 
 ---
 
 ##### `Annotate`<sup>Optional</sup> <a name="Annotate" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.annotate"></a>
 
 ```csharp
-public object Annotate { get; set; }
+public IResolvable|ServiceEventRuleActionsAnnotate[] Annotate { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>[]
 
 annotate block.
 
@@ -988,10 +988,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `EventAction`<sup>Optional</sup> <a name="EventAction" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.eventAction"></a>
 
 ```csharp
-public object EventAction { get; set; }
+public IResolvable|ServiceEventRuleActionsEventAction[] EventAction { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>[]
 
 event_action block.
 
@@ -1002,10 +1002,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Extractions`<sup>Optional</sup> <a name="Extractions" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.extractions"></a>
 
 ```csharp
-public object Extractions { get; set; }
+public IResolvable|ServiceEventRuleActionsExtractions[] Extractions { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>[]
 
 extractions block.
 
@@ -1016,10 +1016,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Priority`<sup>Optional</sup> <a name="Priority" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.priority"></a>
 
 ```csharp
-public object Priority { get; set; }
+public IResolvable|ServiceEventRuleActionsPriority[] Priority { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>[]
 
 priority block.
 
@@ -1030,10 +1030,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Severity`<sup>Optional</sup> <a name="Severity" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.severity"></a>
 
 ```csharp
-public object Severity { get; set; }
+public IResolvable|ServiceEventRuleActionsSeverity[] Severity { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>[]
 
 severity block.
 
@@ -1044,10 +1044,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Suppress`<sup>Optional</sup> <a name="Suppress" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.suppress"></a>
 
 ```csharp
-public object Suppress { get; set; }
+public IResolvable|ServiceEventRuleActionsSuppress[] Suppress { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>[]
 
 suppress block.
 
@@ -1058,10 +1058,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Suspend`<sup>Optional</sup> <a name="Suspend" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.suspend"></a>
 
 ```csharp
-public object Suspend { get; set; }
+public IResolvable|ServiceEventRuleActionsSuspend[] Suspend { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>[]
 
 suspend block.
 
@@ -1282,7 +1282,7 @@ new ServiceEventRuleActionsSuppress {
     double ThresholdTimeAmount = null,
     string ThresholdTimeUnit = null,
     double ThresholdValue = null,
-    object Value = null
+    bool|IResolvable Value = null
 };
 ```
 
@@ -1293,7 +1293,7 @@ new ServiceEventRuleActionsSuppress {
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress.property.thresholdTimeAmount">ThresholdTimeAmount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#threshold_time_amount ServiceEventRule#threshold_time_amount}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress.property.thresholdTimeUnit">ThresholdTimeUnit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#threshold_time_unit ServiceEventRule#threshold_time_unit}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress.property.thresholdValue">ThresholdValue</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#threshold_value ServiceEventRule#threshold_value}. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress.property.value">Value</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#value ServiceEventRule#value}. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress.property.value">Value</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#value ServiceEventRule#value}. |
 
 ---
 
@@ -1336,10 +1336,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Value`<sup>Optional</sup> <a name="Value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress.property.value"></a>
 
 ```csharp
-public object Value { get; set; }
+public bool|IResolvable Value { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#value ServiceEventRule#value}.
 
@@ -1386,7 +1386,7 @@ using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new ServiceEventRuleConditions {
     string Operator = null,
-    object Subconditions = null
+    IResolvable|ServiceEventRuleConditionsSubconditions[] Subconditions = null
 };
 ```
 
@@ -1395,7 +1395,7 @@ new ServiceEventRuleConditions {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditions.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#operator ServiceEventRule#operator}. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditions.property.subconditions">Subconditions</a></code> | <code>object</code> | subconditions block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditions.property.subconditions">Subconditions</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>[]</code> | subconditions block. |
 
 ---
 
@@ -1414,10 +1414,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Subconditions`<sup>Optional</sup> <a name="Subconditions" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditions.property.subconditions"></a>
 
 ```csharp
-public object Subconditions { get; set; }
+public IResolvable|ServiceEventRuleConditionsSubconditions[] Subconditions { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>[]
 
 subconditions block.
 
@@ -1434,7 +1434,7 @@ using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new ServiceEventRuleConditionsSubconditions {
     string Operator = null,
-    object Parameter = null
+    IResolvable|ServiceEventRuleConditionsSubconditionsParameter[] Parameter = null
 };
 ```
 
@@ -1443,7 +1443,7 @@ new ServiceEventRuleConditionsSubconditions {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#operator ServiceEventRule#operator}. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions.property.parameter">Parameter</a></code> | <code>object</code> | parameter block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions.property.parameter">Parameter</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>[]</code> | parameter block. |
 
 ---
 
@@ -1462,10 +1462,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Parameter`<sup>Optional</sup> <a name="Parameter" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions.property.parameter"></a>
 
 ```csharp
-public object Parameter { get; set; }
+public IResolvable|ServiceEventRuleConditionsSubconditionsParameter[] Parameter { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>[]
 
 parameter block.
 
@@ -1527,21 +1527,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new ServiceEventRuleConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Service,
     ServiceEventRuleActions Actions = null,
     ServiceEventRuleConditions Conditions = null,
-    object Disabled = null,
+    bool|IResolvable Disabled = null,
     string Id = null,
     double Position = null,
     ServiceEventRuleTimeFrame TimeFrame = null,
-    object Variable = null
+    IResolvable|ServiceEventRuleVariable[] Variable = null
 };
 ```
 
@@ -1549,41 +1549,41 @@ new ServiceEventRuleConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.service">Service</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#service ServiceEventRule#service}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.actions">Actions</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions">ServiceEventRuleActions</a></code> | actions block. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.conditions">Conditions</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditions">ServiceEventRuleConditions</a></code> | conditions block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#disabled ServiceEventRule#disabled}. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#disabled ServiceEventRule#disabled}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#id ServiceEventRule#id}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.position">Position</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#position ServiceEventRule#position}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.timeFrame">TimeFrame</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame">ServiceEventRuleTimeFrame</a></code> | time_frame block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.variable">Variable</a></code> | <code>object</code> | variable block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.variable">Variable</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>[]</code> | variable block. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1630,10 +1630,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1680,10 +1680,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Disabled`<sup>Optional</sup> <a name="Disabled" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; set; }
+public bool|IResolvable Disabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#disabled ServiceEventRule#disabled}.
 
@@ -1733,10 +1733,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Variable`<sup>Optional</sup> <a name="Variable" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.variable"></a>
 
 ```csharp
-public object Variable { get; set; }
+public IResolvable|ServiceEventRuleVariable[] Variable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>[]
 
 variable block.
 
@@ -1752,8 +1752,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new ServiceEventRuleTimeFrame {
-    object ActiveBetween = null,
-    object ScheduledWeekly = null
+    IResolvable|ServiceEventRuleTimeFrameActiveBetween[] ActiveBetween = null,
+    IResolvable|ServiceEventRuleTimeFrameScheduledWeekly[] ScheduledWeekly = null
 };
 ```
 
@@ -1761,18 +1761,18 @@ new ServiceEventRuleTimeFrame {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame.property.activeBetween">ActiveBetween</a></code> | <code>object</code> | active_between block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame.property.scheduledWeekly">ScheduledWeekly</a></code> | <code>object</code> | scheduled_weekly block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame.property.activeBetween">ActiveBetween</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>[]</code> | active_between block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame.property.scheduledWeekly">ScheduledWeekly</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>[]</code> | scheduled_weekly block. |
 
 ---
 
 ##### `ActiveBetween`<sup>Optional</sup> <a name="ActiveBetween" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame.property.activeBetween"></a>
 
 ```csharp
-public object ActiveBetween { get; set; }
+public IResolvable|ServiceEventRuleTimeFrameActiveBetween[] ActiveBetween { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>[]
 
 active_between block.
 
@@ -1783,10 +1783,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `ScheduledWeekly`<sup>Optional</sup> <a name="ScheduledWeekly" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame.property.scheduledWeekly"></a>
 
 ```csharp
-public object ScheduledWeekly { get; set; }
+public IResolvable|ServiceEventRuleTimeFrameScheduledWeekly[] ScheduledWeekly { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>[]
 
 scheduled_weekly block.
 
@@ -1923,7 +1923,7 @@ using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new ServiceEventRuleVariable {
     string Name = null,
-    object Parameters = null,
+    IResolvable|ServiceEventRuleVariableParameters[] Parameters = null,
     string Type = null
 };
 ```
@@ -1933,7 +1933,7 @@ new ServiceEventRuleVariable {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#name ServiceEventRule#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable.property.parameters">Parameters</a></code> | <code>object</code> | parameters block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable.property.parameters">Parameters</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>[]</code> | parameters block. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#type ServiceEventRule#type}. |
 
 ---
@@ -1953,10 +1953,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Parameters`<sup>Optional</sup> <a name="Parameters" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable.property.parameters"></a>
 
 ```csharp
-public object Parameters { get; set; }
+public IResolvable|ServiceEventRuleVariableParameters[] Parameters { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>[]
 
 parameters block.
 
@@ -2145,7 +2145,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>[]</code> | *No description.* |
 
 ---
 
@@ -2176,10 +2176,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleActionsAnnotate[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>[]
 
 ---
 
@@ -2421,7 +2421,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a></code> | *No description.* |
 
 ---
 
@@ -2472,10 +2472,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleActionsAnnotate InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>
 
 ---
 
@@ -2601,7 +2601,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>[]</code> | *No description.* |
 
 ---
 
@@ -2632,10 +2632,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleActionsEventAction[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>[]
 
 ---
 
@@ -2877,7 +2877,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a></code> | *No description.* |
 
 ---
 
@@ -2928,10 +2928,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleActionsEventAction InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>
 
 ---
 
@@ -3057,7 +3057,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>[]</code> | *No description.* |
 
 ---
 
@@ -3088,10 +3088,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleActionsExtractions[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>[]
 
 ---
 
@@ -3360,7 +3360,7 @@ private void ResetTemplate()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.source">Source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.target">Target</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.template">Template</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a></code> | *No description.* |
 
 ---
 
@@ -3471,10 +3471,10 @@ public string Template { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleActionsExtractions InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>
 
 ---
 
@@ -3699,84 +3699,84 @@ Returns a reversible string representation.
 ##### `PutAnnotate` <a name="PutAnnotate" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putAnnotate"></a>
 
 ```csharp
-private void PutAnnotate(object Value)
+private void PutAnnotate(IResolvable|ServiceEventRuleActionsAnnotate[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putAnnotate.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>[]
 
 ---
 
 ##### `PutEventAction` <a name="PutEventAction" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putEventAction"></a>
 
 ```csharp
-private void PutEventAction(object Value)
+private void PutEventAction(IResolvable|ServiceEventRuleActionsEventAction[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putEventAction.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>[]
 
 ---
 
 ##### `PutExtractions` <a name="PutExtractions" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putExtractions"></a>
 
 ```csharp
-private void PutExtractions(object Value)
+private void PutExtractions(IResolvable|ServiceEventRuleActionsExtractions[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putExtractions.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>[]
 
 ---
 
 ##### `PutPriority` <a name="PutPriority" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putPriority"></a>
 
 ```csharp
-private void PutPriority(object Value)
+private void PutPriority(IResolvable|ServiceEventRuleActionsPriority[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putPriority.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>[]
 
 ---
 
 ##### `PutSeverity` <a name="PutSeverity" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putSeverity"></a>
 
 ```csharp
-private void PutSeverity(object Value)
+private void PutSeverity(IResolvable|ServiceEventRuleActionsSeverity[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putSeverity.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>[]
 
 ---
 
 ##### `PutSuppress` <a name="PutSuppress" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putSuppress"></a>
 
 ```csharp
-private void PutSuppress(object Value)
+private void PutSuppress(IResolvable|ServiceEventRuleActionsSuppress[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putSuppress.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>[]
 
 ---
 
 ##### `PutSuspend` <a name="PutSuspend" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putSuspend"></a>
 
 ```csharp
-private void PutSuspend(object Value)
+private void PutSuspend(IResolvable|ServiceEventRuleActionsSuspend[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putSuspend.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>[]
 
 ---
 
@@ -3836,13 +3836,13 @@ private void ResetSuspend()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.severity">Severity</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityList">ServiceEventRuleActionsSeverityList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.suppress">Suppress</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressList">ServiceEventRuleActionsSuppressList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.suspend">Suspend</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendList">ServiceEventRuleActionsSuspendList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.annotateInput">AnnotateInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.eventActionInput">EventActionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.extractionsInput">ExtractionsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.priorityInput">PriorityInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.severityInput">SeverityInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.suppressInput">SuppressInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.suspendInput">SuspendInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.annotateInput">AnnotateInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.eventActionInput">EventActionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.extractionsInput">ExtractionsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.priorityInput">PriorityInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.severityInput">SeverityInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.suppressInput">SuppressInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.suspendInput">SuspendInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions">ServiceEventRuleActions</a></code> | *No description.* |
 
 ---
@@ -3944,70 +3944,70 @@ public ServiceEventRuleActionsSuspendList Suspend { get; }
 ##### `AnnotateInput`<sup>Optional</sup> <a name="AnnotateInput" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.annotateInput"></a>
 
 ```csharp
-public object AnnotateInput { get; }
+public IResolvable|ServiceEventRuleActionsAnnotate[] AnnotateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>[]
 
 ---
 
 ##### `EventActionInput`<sup>Optional</sup> <a name="EventActionInput" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.eventActionInput"></a>
 
 ```csharp
-public object EventActionInput { get; }
+public IResolvable|ServiceEventRuleActionsEventAction[] EventActionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>[]
 
 ---
 
 ##### `ExtractionsInput`<sup>Optional</sup> <a name="ExtractionsInput" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.extractionsInput"></a>
 
 ```csharp
-public object ExtractionsInput { get; }
+public IResolvable|ServiceEventRuleActionsExtractions[] ExtractionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>[]
 
 ---
 
 ##### `PriorityInput`<sup>Optional</sup> <a name="PriorityInput" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.priorityInput"></a>
 
 ```csharp
-public object PriorityInput { get; }
+public IResolvable|ServiceEventRuleActionsPriority[] PriorityInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>[]
 
 ---
 
 ##### `SeverityInput`<sup>Optional</sup> <a name="SeverityInput" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.severityInput"></a>
 
 ```csharp
-public object SeverityInput { get; }
+public IResolvable|ServiceEventRuleActionsSeverity[] SeverityInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>[]
 
 ---
 
 ##### `SuppressInput`<sup>Optional</sup> <a name="SuppressInput" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.suppressInput"></a>
 
 ```csharp
-public object SuppressInput { get; }
+public IResolvable|ServiceEventRuleActionsSuppress[] SuppressInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>[]
 
 ---
 
 ##### `SuspendInput`<sup>Optional</sup> <a name="SuspendInput" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.suspendInput"></a>
 
 ```csharp
-public object SuspendInput { get; }
+public IResolvable|ServiceEventRuleActionsSuspend[] SuspendInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>[]
 
 ---
 
@@ -4143,7 +4143,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>[]</code> | *No description.* |
 
 ---
 
@@ -4174,10 +4174,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleActionsPriority[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>[]
 
 ---
 
@@ -4419,7 +4419,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a></code> | *No description.* |
 
 ---
 
@@ -4470,10 +4470,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleActionsPriority InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>
 
 ---
 
@@ -4599,7 +4599,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>[]</code> | *No description.* |
 
 ---
 
@@ -4630,10 +4630,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleActionsSeverity[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>[]
 
 ---
 
@@ -4875,7 +4875,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a></code> | *No description.* |
 
 ---
 
@@ -4926,10 +4926,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleActionsSeverity InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>
 
 ---
 
@@ -5055,7 +5055,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>[]</code> | *No description.* |
 
 ---
 
@@ -5086,10 +5086,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleActionsSuppress[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>[]
 
 ---
 
@@ -5353,12 +5353,12 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.thresholdTimeAmountInput">ThresholdTimeAmountInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.thresholdTimeUnitInput">ThresholdTimeUnitInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.thresholdValueInput">ThresholdValueInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.valueInput">ValueInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.valueInput">ValueInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.thresholdTimeAmount">ThresholdTimeAmount</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.thresholdTimeUnit">ThresholdTimeUnit</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.thresholdValue">ThresholdValue</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.value">Value</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.value">Value</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a></code> | *No description.* |
 
 ---
 
@@ -5419,10 +5419,10 @@ public double ThresholdValueInput { get; }
 ##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.valueInput"></a>
 
 ```csharp
-public object ValueInput { get; }
+public bool|IResolvable ValueInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5459,20 +5459,20 @@ public double ThresholdValue { get; }
 ##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.value"></a>
 
 ```csharp
-public object Value { get; }
+public bool|IResolvable Value { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleActionsSuppress InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>
 
 ---
 
@@ -5598,7 +5598,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>[]</code> | *No description.* |
 
 ---
 
@@ -5629,10 +5629,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleActionsSuspend[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>[]
 
 ---
 
@@ -5874,7 +5874,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.valueInput">ValueInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.value">Value</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a></code> | *No description.* |
 
 ---
 
@@ -5925,10 +5925,10 @@ public double Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleActionsSuspend InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>
 
 ---
 
@@ -6142,12 +6142,12 @@ Returns a reversible string representation.
 ##### `PutSubconditions` <a name="PutSubconditions" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.putSubconditions"></a>
 
 ```csharp
-private void PutSubconditions(object Value)
+private void PutSubconditions(IResolvable|ServiceEventRuleConditionsSubconditions[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.putSubconditions.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>[]
 
 ---
 
@@ -6172,7 +6172,7 @@ private void ResetSubconditions()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.property.subconditions">Subconditions</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsList">ServiceEventRuleConditionsSubconditionsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.property.operatorInput">OperatorInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.property.subconditionsInput">SubconditionsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.property.subconditionsInput">SubconditionsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.property.operator">Operator</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditions">ServiceEventRuleConditions</a></code> | *No description.* |
 
@@ -6225,10 +6225,10 @@ public string OperatorInput { get; }
 ##### `SubconditionsInput`<sup>Optional</sup> <a name="SubconditionsInput" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.property.subconditionsInput"></a>
 
 ```csharp
-public object SubconditionsInput { get; }
+public IResolvable|ServiceEventRuleConditionsSubconditions[] SubconditionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>[]
 
 ---
 
@@ -6374,7 +6374,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>[]</code> | *No description.* |
 
 ---
 
@@ -6405,10 +6405,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleConditionsSubconditions[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>[]
 
 ---
 
@@ -6640,12 +6640,12 @@ Returns a reversible string representation.
 ##### `PutParameter` <a name="PutParameter" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.putParameter"></a>
 
 ```csharp
-private void PutParameter(object Value)
+private void PutParameter(IResolvable|ServiceEventRuleConditionsSubconditionsParameter[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.putParameter.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>[]
 
 ---
 
@@ -6670,9 +6670,9 @@ private void ResetParameter()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.parameter">Parameter</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterList">ServiceEventRuleConditionsSubconditionsParameterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.operatorInput">OperatorInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.parameterInput">ParameterInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.parameterInput">ParameterInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.operator">Operator</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a></code> | *No description.* |
 
 ---
 
@@ -6723,10 +6723,10 @@ public string OperatorInput { get; }
 ##### `ParameterInput`<sup>Optional</sup> <a name="ParameterInput" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.parameterInput"></a>
 
 ```csharp
-public object ParameterInput { get; }
+public IResolvable|ServiceEventRuleConditionsSubconditionsParameter[] ParameterInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>[]
 
 ---
 
@@ -6743,10 +6743,10 @@ public string Operator { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleConditionsSubconditions InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>
 
 ---
 
@@ -6872,7 +6872,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>[]</code> | *No description.* |
 
 ---
 
@@ -6903,10 +6903,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleConditionsSubconditionsParameter[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>[]
 
 ---
 
@@ -7157,7 +7157,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a></code> | *No description.* |
 
 ---
 
@@ -7228,10 +7228,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleConditionsSubconditionsParameter InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>
 
 ---
 
@@ -7357,7 +7357,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>[]</code> | *No description.* |
 
 ---
 
@@ -7388,10 +7388,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleTimeFrameActiveBetween[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>[]
 
 ---
 
@@ -7642,7 +7642,7 @@ private void ResetStartTime()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.startTimeInput">StartTimeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.endTime">EndTime</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.startTime">StartTime</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a></code> | *No description.* |
 
 ---
 
@@ -7713,10 +7713,10 @@ public double StartTime { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleTimeFrameActiveBetween InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>
 
 ---
 
@@ -7931,24 +7931,24 @@ Returns a reversible string representation.
 ##### `PutActiveBetween` <a name="PutActiveBetween" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.putActiveBetween"></a>
 
 ```csharp
-private void PutActiveBetween(object Value)
+private void PutActiveBetween(IResolvable|ServiceEventRuleTimeFrameActiveBetween[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.putActiveBetween.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>[]
 
 ---
 
 ##### `PutScheduledWeekly` <a name="PutScheduledWeekly" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.putScheduledWeekly"></a>
 
 ```csharp
-private void PutScheduledWeekly(object Value)
+private void PutScheduledWeekly(IResolvable|ServiceEventRuleTimeFrameScheduledWeekly[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.putScheduledWeekly.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>[]
 
 ---
 
@@ -7973,8 +7973,8 @@ private void ResetScheduledWeekly()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.activeBetween">ActiveBetween</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenList">ServiceEventRuleTimeFrameActiveBetweenList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.scheduledWeekly">ScheduledWeekly</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyList">ServiceEventRuleTimeFrameScheduledWeeklyList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.activeBetweenInput">ActiveBetweenInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.scheduledWeeklyInput">ScheduledWeeklyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.activeBetweenInput">ActiveBetweenInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.scheduledWeeklyInput">ScheduledWeeklyInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame">ServiceEventRuleTimeFrame</a></code> | *No description.* |
 
 ---
@@ -8026,20 +8026,20 @@ public ServiceEventRuleTimeFrameScheduledWeeklyList ScheduledWeekly { get; }
 ##### `ActiveBetweenInput`<sup>Optional</sup> <a name="ActiveBetweenInput" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.activeBetweenInput"></a>
 
 ```csharp
-public object ActiveBetweenInput { get; }
+public IResolvable|ServiceEventRuleTimeFrameActiveBetween[] ActiveBetweenInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>[]
 
 ---
 
 ##### `ScheduledWeeklyInput`<sup>Optional</sup> <a name="ScheduledWeeklyInput" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.scheduledWeeklyInput"></a>
 
 ```csharp
-public object ScheduledWeeklyInput { get; }
+public IResolvable|ServiceEventRuleTimeFrameScheduledWeekly[] ScheduledWeeklyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>[]
 
 ---
 
@@ -8175,7 +8175,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>[]</code> | *No description.* |
 
 ---
 
@@ -8206,10 +8206,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleTimeFrameScheduledWeekly[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>[]
 
 ---
 
@@ -8478,7 +8478,7 @@ private void ResetWeekdays()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.startTime">StartTime</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.timezone">Timezone</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.weekdays">Weekdays</a></code> | <code>double[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a></code> | *No description.* |
 
 ---
 
@@ -8589,10 +8589,10 @@ public double[] Weekdays { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleTimeFrameScheduledWeekly InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>
 
 ---
 
@@ -8718,7 +8718,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>[]</code> | *No description.* |
 
 ---
 
@@ -8749,10 +8749,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleVariable[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>[]
 
 ---
 
@@ -8985,12 +8985,12 @@ Returns a reversible string representation.
 ##### `PutParameters` <a name="PutParameters" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.putParameters"></a>
 
 ```csharp
-private void PutParameters(object Value)
+private void PutParameters(IResolvable|ServiceEventRuleVariableParameters[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.putParameters.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>[]
 
 ---
 
@@ -9021,11 +9021,11 @@ private void ResetType()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.parameters">Parameters</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersList">ServiceEventRuleVariableParametersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.parametersInput">ParametersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.parametersInput">ParametersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a></code> | *No description.* |
 
 ---
 
@@ -9076,10 +9076,10 @@ public string NameInput { get; }
 ##### `ParametersInput`<sup>Optional</sup> <a name="ParametersInput" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.parametersInput"></a>
 
 ```csharp
-public object ParametersInput { get; }
+public IResolvable|ServiceEventRuleVariableParameters[] ParametersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>[]
 
 ---
 
@@ -9116,10 +9116,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleVariable InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>
 
 ---
 
@@ -9245,7 +9245,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>[]</code> | *No description.* |
 
 ---
 
@@ -9276,10 +9276,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleVariableParameters[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>[]
 
 ---
 
@@ -9530,7 +9530,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a></code> | *No description.* |
 
 ---
 
@@ -9601,10 +9601,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceEventRuleVariableParameters InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>
 
 ---
 

@@ -279,7 +279,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-pagerduty.schedule.Schedule.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-pagerduty.schedule.Schedule.importFrom"></a>
@@ -333,7 +333,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-pagerduty.schedule.Schedule.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -348,7 +348,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-pagerduty.schedule.Schedule.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -373,12 +373,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutLayer` <a name="PutLayer" id="@cdktf/provider-pagerduty.schedule.Schedule.putLayer"></a>
 
 ```csharp
-private void PutLayer(object Value)
+private void PutLayer(IResolvable|ScheduleLayer[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.schedule.Schedule.putLayer.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer">ScheduleLayer</a>[]
 
 ---
 
@@ -538,26 +538,26 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.finalSchedule">FinalSchedule</a></code> | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleFinalScheduleList">ScheduleFinalScheduleList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.layer">Layer</a></code> | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerList">ScheduleLayerList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.layerInput">LayerInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.layerInput">LayerInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer">ScheduleLayer</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.overflowInput">OverflowInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.overflowInput">OverflowInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.teamsInput">TeamsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.timeZoneInput">TimeZoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.overflow">Overflow</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.overflow">Overflow</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.teams">Teams</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.Schedule.property.timeZone">TimeZone</a></code> | <code>string</code> | *No description.* |
 
@@ -638,20 +638,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-pagerduty.schedule.Schedule.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.schedule.Schedule.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -698,10 +698,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-pagerduty.schedule.Schedule.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -748,10 +748,10 @@ public string IdInput { get; }
 ##### `LayerInput`<sup>Optional</sup> <a name="LayerInput" id="@cdktf/provider-pagerduty.schedule.Schedule.property.layerInput"></a>
 
 ```csharp
-public object LayerInput { get; }
+public IResolvable|ScheduleLayer[] LayerInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer">ScheduleLayer</a>[]
 
 ---
 
@@ -768,10 +768,10 @@ public string NameInput { get; }
 ##### `OverflowInput`<sup>Optional</sup> <a name="OverflowInput" id="@cdktf/provider-pagerduty.schedule.Schedule.property.overflowInput"></a>
 
 ```csharp
-public object OverflowInput { get; }
+public bool|IResolvable OverflowInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -828,10 +828,10 @@ public string Name { get; }
 ##### `Overflow`<sup>Required</sup> <a name="Overflow" id="@cdktf/provider-pagerduty.schedule.Schedule.property.overflow"></a>
 
 ```csharp
-public object Overflow { get; }
+public bool|IResolvable Overflow { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -883,19 +883,19 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new ScheduleConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
-    object Layer,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    IResolvable|ScheduleLayer[] Layer,
     string TimeZone,
     string Description = null,
     string Id = null,
     string Name = null,
-    object Overflow = null,
+    bool|IResolvable Overflow = null,
     string[] Teams = null
 };
 ```
@@ -904,19 +904,19 @@ new ScheduleConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.layer">Layer</a></code> | <code>object</code> | layer block. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.layer">Layer</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer">ScheduleLayer</a>[]</code> | layer block. |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.timeZone">TimeZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/schedule#time_zone Schedule#time_zone}. |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/schedule#description Schedule#description}. |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/schedule#id Schedule#id}. |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/schedule#name Schedule#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.overflow">Overflow</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/schedule#overflow Schedule#overflow}. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.overflow">Overflow</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/schedule#overflow Schedule#overflow}. |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.teams">Teams</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/schedule#teams Schedule#teams}. |
 
 ---
@@ -924,20 +924,20 @@ new ScheduleConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -984,20 +984,20 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `Layer`<sup>Required</sup> <a name="Layer" id="@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.layer"></a>
 
 ```csharp
-public object Layer { get; set; }
+public IResolvable|ScheduleLayer[] Layer { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer">ScheduleLayer</a>[]
 
 layer block.
 
@@ -1059,10 +1059,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Overflow`<sup>Optional</sup> <a name="Overflow" id="@cdktf/provider-pagerduty.schedule.ScheduleConfig.property.overflow"></a>
 
 ```csharp
-public object Overflow { get; set; }
+public bool|IResolvable Overflow { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/schedule#overflow Schedule#overflow}.
 
@@ -1107,7 +1107,7 @@ new ScheduleLayer {
     string[] Users,
     string End = null,
     string Name = null,
-    object Restriction = null
+    IResolvable|ScheduleLayerRestriction[] Restriction = null
 };
 ```
 
@@ -1121,7 +1121,7 @@ new ScheduleLayer {
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.users">Users</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/schedule#users Schedule#users}. |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.end">End</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/schedule#end Schedule#end}. |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/schedule#name Schedule#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.restriction">Restriction</a></code> | <code>object</code> | restriction block. |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.restriction">Restriction</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction">ScheduleLayerRestriction</a>[]</code> | restriction block. |
 
 ---
 
@@ -1200,10 +1200,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Restriction`<sup>Optional</sup> <a name="Restriction" id="@cdktf/provider-pagerduty.schedule.ScheduleLayer.property.restriction"></a>
 
 ```csharp
-public object Restriction { get; set; }
+public IResolvable|ScheduleLayerRestriction[] Restriction { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction">ScheduleLayerRestriction</a>[]
 
 restriction block.
 
@@ -1846,7 +1846,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer">ScheduleLayer</a>[]</code> | *No description.* |
 
 ---
 
@@ -1877,10 +1877,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.schedule.ScheduleLayerList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ScheduleLayer[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer">ScheduleLayer</a>[]
 
 ---
 
@@ -2113,12 +2113,12 @@ Returns a reversible string representation.
 ##### `PutRestriction` <a name="PutRestriction" id="@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.putRestriction"></a>
 
 ```csharp
-private void PutRestriction(object Value)
+private void PutRestriction(IResolvable|ScheduleLayerRestriction[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.putRestriction.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction">ScheduleLayerRestriction</a>[]
 
 ---
 
@@ -2152,7 +2152,7 @@ private void ResetRestriction()
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.restriction">Restriction</a></code> | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionList">ScheduleLayerRestrictionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.endInput">EndInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.restrictionInput">RestrictionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.restrictionInput">RestrictionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction">ScheduleLayerRestriction</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.rotationTurnLengthSecondsInput">RotationTurnLengthSecondsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.rotationVirtualStartInput">RotationVirtualStartInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.startInput">StartInput</a></code> | <code>string</code> | *No description.* |
@@ -2163,7 +2163,7 @@ private void ResetRestriction()
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.rotationVirtualStart">RotationVirtualStart</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.start">Start</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.users">Users</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer">ScheduleLayer</a></code> | *No description.* |
 
 ---
 
@@ -2244,10 +2244,10 @@ public string NameInput { get; }
 ##### `RestrictionInput`<sup>Optional</sup> <a name="RestrictionInput" id="@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.restrictionInput"></a>
 
 ```csharp
-public object RestrictionInput { get; }
+public IResolvable|ScheduleLayerRestriction[] RestrictionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction">ScheduleLayerRestriction</a>[]
 
 ---
 
@@ -2354,10 +2354,10 @@ public string[] Users { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.schedule.ScheduleLayerOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ScheduleLayer InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayer">ScheduleLayer</a>
 
 ---
 
@@ -2483,7 +2483,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction">ScheduleLayerRestriction</a>[]</code> | *No description.* |
 
 ---
 
@@ -2514,10 +2514,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ScheduleLayerRestriction[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction">ScheduleLayerRestriction</a>[]
 
 ---
 
@@ -2765,7 +2765,7 @@ private void ResetStartDayOfWeek()
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionOutputReference.property.startDayOfWeek">StartDayOfWeek</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionOutputReference.property.startTimeOfDay">StartTimeOfDay</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction">ScheduleLayerRestriction</a></code> | *No description.* |
 
 ---
 
@@ -2876,10 +2876,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.schedule.ScheduleLayerRestrictionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ScheduleLayerRestriction InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.schedule.ScheduleLayerRestriction">ScheduleLayerRestriction</a>
 
 ---
 

@@ -14,21 +14,21 @@ from cdktf_cdktf_provider_pagerduty import service_event_rule
 serviceEventRule.ServiceEventRule(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   service: str,
   actions: ServiceEventRuleActions = None,
   conditions: ServiceEventRuleConditions = None,
-  disabled: typing.Union[bool, IResolvable] = None,
+  disabled: bool | IResolvable = None,
   id: str = None,
   position: typing.Union[int, float] = None,
   time_frame: ServiceEventRuleTimeFrame = None,
-  variable: typing.Union[IResolvable, typing.List[ServiceEventRuleVariable]] = None
+  variable: IResolvable | typing.List[ServiceEventRuleVariable] = None
 )
 ```
 
@@ -36,21 +36,21 @@ serviceEventRule.ServiceEventRule(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.service">service</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#service ServiceEventRule#service}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.actions">actions</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions">ServiceEventRuleActions</a></code> | actions block. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.conditions">conditions</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditions">ServiceEventRuleConditions</a></code> | conditions block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#disabled ServiceEventRule#disabled}. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#disabled ServiceEventRule#disabled}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#id ServiceEventRule#id}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.position">position</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#position ServiceEventRule#position}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.timeFrame">time_frame</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame">ServiceEventRuleTimeFrame</a></code> | time_frame block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.variable">variable</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]]</code> | variable block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.variable">variable</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]</code> | variable block. |
 
 ---
 
@@ -74,13 +74,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.disabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#disabled ServiceEventRule#disabled}.
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ##### `variable`<sup>Optional</sup> <a name="variable" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.Initializer.parameter.variable"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]
 
 variable block.
 
@@ -452,7 +452,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.importFrom"></a>
@@ -515,7 +515,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -531,7 +531,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -559,19 +559,19 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_actions(
-  annotate: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsAnnotate]] = None,
-  event_action: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsEventAction]] = None,
-  extractions: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsExtractions]] = None,
-  priority: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsPriority]] = None,
-  severity: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSeverity]] = None,
-  suppress: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSuppress]] = None,
-  suspend: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSuspend]] = None
+  annotate: IResolvable | typing.List[ServiceEventRuleActionsAnnotate] = None,
+  event_action: IResolvable | typing.List[ServiceEventRuleActionsEventAction] = None,
+  extractions: IResolvable | typing.List[ServiceEventRuleActionsExtractions] = None,
+  priority: IResolvable | typing.List[ServiceEventRuleActionsPriority] = None,
+  severity: IResolvable | typing.List[ServiceEventRuleActionsSeverity] = None,
+  suppress: IResolvable | typing.List[ServiceEventRuleActionsSuppress] = None,
+  suspend: IResolvable | typing.List[ServiceEventRuleActionsSuspend] = None
 ) -> None
 ```
 
 ###### `annotate`<sup>Optional</sup> <a name="annotate" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.putActions.parameter.annotate"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]
 
 annotate block.
 
@@ -581,7 +581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ###### `event_action`<sup>Optional</sup> <a name="event_action" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.putActions.parameter.eventAction"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]
 
 event_action block.
 
@@ -591,7 +591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ###### `extractions`<sup>Optional</sup> <a name="extractions" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.putActions.parameter.extractions"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]
 
 extractions block.
 
@@ -601,7 +601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ###### `priority`<sup>Optional</sup> <a name="priority" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.putActions.parameter.priority"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]
 
 priority block.
 
@@ -611,7 +611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ###### `severity`<sup>Optional</sup> <a name="severity" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.putActions.parameter.severity"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]
 
 severity block.
 
@@ -621,7 +621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ###### `suppress`<sup>Optional</sup> <a name="suppress" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.putActions.parameter.suppress"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]
 
 suppress block.
 
@@ -631,7 +631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ###### `suspend`<sup>Optional</sup> <a name="suspend" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.putActions.parameter.suspend"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]
 
 suspend block.
 
@@ -644,7 +644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ```python
 def put_conditions(
   operator: str = None,
-  subconditions: typing.Union[IResolvable, typing.List[ServiceEventRuleConditionsSubconditions]] = None
+  subconditions: IResolvable | typing.List[ServiceEventRuleConditionsSubconditions] = None
 ) -> None
 ```
 
@@ -658,7 +658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ###### `subconditions`<sup>Optional</sup> <a name="subconditions" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.putConditions.parameter.subconditions"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]
 
 subconditions block.
 
@@ -670,14 +670,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ```python
 def put_time_frame(
-  active_between: typing.Union[IResolvable, typing.List[ServiceEventRuleTimeFrameActiveBetween]] = None,
-  scheduled_weekly: typing.Union[IResolvable, typing.List[ServiceEventRuleTimeFrameScheduledWeekly]] = None
+  active_between: IResolvable | typing.List[ServiceEventRuleTimeFrameActiveBetween] = None,
+  scheduled_weekly: IResolvable | typing.List[ServiceEventRuleTimeFrameScheduledWeekly] = None
 ) -> None
 ```
 
 ###### `active_between`<sup>Optional</sup> <a name="active_between" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.putTimeFrame.parameter.activeBetween"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]
 
 active_between block.
 
@@ -687,7 +687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ###### `scheduled_weekly`<sup>Optional</sup> <a name="scheduled_weekly" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.putTimeFrame.parameter.scheduledWeekly"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]
 
 scheduled_weekly block.
 
@@ -699,13 +699,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ```python
 def put_variable(
-  value: typing.Union[IResolvable, typing.List[ServiceEventRuleVariable]]
+  value: IResolvable | typing.List[ServiceEventRuleVariable]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.putVariable.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]
 
 ---
 
@@ -888,26 +888,26 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.actions">actions</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference">ServiceEventRuleActionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.conditions">conditions</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference">ServiceEventRuleConditionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.timeFrame">time_frame</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference">ServiceEventRuleTimeFrameOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.variable">variable</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableList">ServiceEventRuleVariableList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.actionsInput">actions_input</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions">ServiceEventRuleActions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.conditionsInput">conditions_input</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditions">ServiceEventRuleConditions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.disabledInput">disabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.disabledInput">disabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.positionInput">position_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.serviceInput">service_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.timeFrameInput">time_frame_input</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame">ServiceEventRuleTimeFrame</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.variableInput">variable_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.variableInput">variable_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.position">position</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.service">service</a></code> | <code>str</code> | *No description.* |
@@ -989,20 +989,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1049,10 +1049,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1119,10 +1119,10 @@ conditions_input: ServiceEventRuleConditions
 ##### `disabled_input`<sup>Optional</sup> <a name="disabled_input" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.disabledInput"></a>
 
 ```python
-disabled_input: typing.Union[bool, IResolvable]
+disabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1169,20 +1169,20 @@ time_frame_input: ServiceEventRuleTimeFrame
 ##### `variable_input`<sup>Optional</sup> <a name="variable_input" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.variableInput"></a>
 
 ```python
-variable_input: typing.Union[IResolvable, typing.List[ServiceEventRuleVariable]]
+variable_input: IResolvable | typing.List[ServiceEventRuleVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]
 
 ---
 
 ##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRule.property.disabled"></a>
 
 ```python
-disabled: typing.Union[bool, IResolvable]
+disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1244,13 +1244,13 @@ tfResourceType: str
 from cdktf_cdktf_provider_pagerduty import service_event_rule
 
 serviceEventRule.ServiceEventRuleActions(
-  annotate: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsAnnotate]] = None,
-  event_action: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsEventAction]] = None,
-  extractions: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsExtractions]] = None,
-  priority: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsPriority]] = None,
-  severity: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSeverity]] = None,
-  suppress: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSuppress]] = None,
-  suspend: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSuspend]] = None
+  annotate: IResolvable | typing.List[ServiceEventRuleActionsAnnotate] = None,
+  event_action: IResolvable | typing.List[ServiceEventRuleActionsEventAction] = None,
+  extractions: IResolvable | typing.List[ServiceEventRuleActionsExtractions] = None,
+  priority: IResolvable | typing.List[ServiceEventRuleActionsPriority] = None,
+  severity: IResolvable | typing.List[ServiceEventRuleActionsSeverity] = None,
+  suppress: IResolvable | typing.List[ServiceEventRuleActionsSuppress] = None,
+  suspend: IResolvable | typing.List[ServiceEventRuleActionsSuspend] = None
 )
 ```
 
@@ -1258,23 +1258,23 @@ serviceEventRule.ServiceEventRuleActions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.annotate">annotate</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]]</code> | annotate block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.eventAction">event_action</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]]</code> | event_action block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.extractions">extractions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]]</code> | extractions block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.priority">priority</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]]</code> | priority block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.severity">severity</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]]</code> | severity block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.suppress">suppress</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]]</code> | suppress block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.suspend">suspend</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]]</code> | suspend block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.annotate">annotate</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]</code> | annotate block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.eventAction">event_action</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]</code> | event_action block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.extractions">extractions</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]</code> | extractions block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.priority">priority</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]</code> | priority block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.severity">severity</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]</code> | severity block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.suppress">suppress</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]</code> | suppress block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.suspend">suspend</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]</code> | suspend block. |
 
 ---
 
 ##### `annotate`<sup>Optional</sup> <a name="annotate" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.annotate"></a>
 
 ```python
-annotate: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsAnnotate]]
+annotate: IResolvable | typing.List[ServiceEventRuleActionsAnnotate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]
 
 annotate block.
 
@@ -1285,10 +1285,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `event_action`<sup>Optional</sup> <a name="event_action" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.eventAction"></a>
 
 ```python
-event_action: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsEventAction]]
+event_action: IResolvable | typing.List[ServiceEventRuleActionsEventAction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]
 
 event_action block.
 
@@ -1299,10 +1299,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `extractions`<sup>Optional</sup> <a name="extractions" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.extractions"></a>
 
 ```python
-extractions: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsExtractions]]
+extractions: IResolvable | typing.List[ServiceEventRuleActionsExtractions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]
 
 extractions block.
 
@@ -1313,10 +1313,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `priority`<sup>Optional</sup> <a name="priority" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.priority"></a>
 
 ```python
-priority: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsPriority]]
+priority: IResolvable | typing.List[ServiceEventRuleActionsPriority]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]
 
 priority block.
 
@@ -1327,10 +1327,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `severity`<sup>Optional</sup> <a name="severity" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.severity"></a>
 
 ```python
-severity: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSeverity]]
+severity: IResolvable | typing.List[ServiceEventRuleActionsSeverity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]
 
 severity block.
 
@@ -1341,10 +1341,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `suppress`<sup>Optional</sup> <a name="suppress" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.suppress"></a>
 
 ```python
-suppress: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSuppress]]
+suppress: IResolvable | typing.List[ServiceEventRuleActionsSuppress]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]
 
 suppress block.
 
@@ -1355,10 +1355,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `suspend`<sup>Optional</sup> <a name="suspend" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions.property.suspend"></a>
 
 ```python
-suspend: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSuspend]]
+suspend: IResolvable | typing.List[ServiceEventRuleActionsSuspend]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]
 
 suspend block.
 
@@ -1579,7 +1579,7 @@ serviceEventRule.ServiceEventRuleActionsSuppress(
   threshold_time_amount: typing.Union[int, float] = None,
   threshold_time_unit: str = None,
   threshold_value: typing.Union[int, float] = None,
-  value: typing.Union[bool, IResolvable] = None
+  value: bool | IResolvable = None
 )
 ```
 
@@ -1590,7 +1590,7 @@ serviceEventRule.ServiceEventRuleActionsSuppress(
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress.property.thresholdTimeAmount">threshold_time_amount</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#threshold_time_amount ServiceEventRule#threshold_time_amount}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress.property.thresholdTimeUnit">threshold_time_unit</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#threshold_time_unit ServiceEventRule#threshold_time_unit}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress.property.thresholdValue">threshold_value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#threshold_value ServiceEventRule#threshold_value}. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress.property.value">value</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#value ServiceEventRule#value}. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress.property.value">value</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#value ServiceEventRule#value}. |
 
 ---
 
@@ -1633,10 +1633,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `value`<sup>Optional</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress.property.value"></a>
 
 ```python
-value: typing.Union[bool, IResolvable]
+value: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#value ServiceEventRule#value}.
 
@@ -1683,7 +1683,7 @@ from cdktf_cdktf_provider_pagerduty import service_event_rule
 
 serviceEventRule.ServiceEventRuleConditions(
   operator: str = None,
-  subconditions: typing.Union[IResolvable, typing.List[ServiceEventRuleConditionsSubconditions]] = None
+  subconditions: IResolvable | typing.List[ServiceEventRuleConditionsSubconditions] = None
 )
 ```
 
@@ -1692,7 +1692,7 @@ serviceEventRule.ServiceEventRuleConditions(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditions.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#operator ServiceEventRule#operator}. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditions.property.subconditions">subconditions</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]]</code> | subconditions block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditions.property.subconditions">subconditions</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]</code> | subconditions block. |
 
 ---
 
@@ -1711,10 +1711,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `subconditions`<sup>Optional</sup> <a name="subconditions" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditions.property.subconditions"></a>
 
 ```python
-subconditions: typing.Union[IResolvable, typing.List[ServiceEventRuleConditionsSubconditions]]
+subconditions: IResolvable | typing.List[ServiceEventRuleConditionsSubconditions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]
 
 subconditions block.
 
@@ -1731,7 +1731,7 @@ from cdktf_cdktf_provider_pagerduty import service_event_rule
 
 serviceEventRule.ServiceEventRuleConditionsSubconditions(
   operator: str = None,
-  parameter: typing.Union[IResolvable, typing.List[ServiceEventRuleConditionsSubconditionsParameter]] = None
+  parameter: IResolvable | typing.List[ServiceEventRuleConditionsSubconditionsParameter] = None
 )
 ```
 
@@ -1740,7 +1740,7 @@ serviceEventRule.ServiceEventRuleConditionsSubconditions(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions.property.operator">operator</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#operator ServiceEventRule#operator}. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions.property.parameter">parameter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]]</code> | parameter block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions.property.parameter">parameter</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]</code> | parameter block. |
 
 ---
 
@@ -1759,10 +1759,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `parameter`<sup>Optional</sup> <a name="parameter" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions.property.parameter"></a>
 
 ```python
-parameter: typing.Union[IResolvable, typing.List[ServiceEventRuleConditionsSubconditionsParameter]]
+parameter: IResolvable | typing.List[ServiceEventRuleConditionsSubconditionsParameter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]
 
 parameter block.
 
@@ -1824,21 +1824,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 from cdktf_cdktf_provider_pagerduty import service_event_rule
 
 serviceEventRule.ServiceEventRuleConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   service: str,
   actions: ServiceEventRuleActions = None,
   conditions: ServiceEventRuleConditions = None,
-  disabled: typing.Union[bool, IResolvable] = None,
+  disabled: bool | IResolvable = None,
   id: str = None,
   position: typing.Union[int, float] = None,
   time_frame: ServiceEventRuleTimeFrame = None,
-  variable: typing.Union[IResolvable, typing.List[ServiceEventRuleVariable]] = None
+  variable: IResolvable | typing.List[ServiceEventRuleVariable] = None
 )
 ```
 
@@ -1846,41 +1846,41 @@ serviceEventRule.ServiceEventRuleConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.service">service</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#service ServiceEventRule#service}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.actions">actions</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions">ServiceEventRuleActions</a></code> | actions block. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.conditions">conditions</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditions">ServiceEventRuleConditions</a></code> | conditions block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#disabled ServiceEventRule#disabled}. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#disabled ServiceEventRule#disabled}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#id ServiceEventRule#id}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.position">position</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#position ServiceEventRule#position}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.timeFrame">time_frame</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame">ServiceEventRuleTimeFrame</a></code> | time_frame block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.variable">variable</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]]</code> | variable block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.variable">variable</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]</code> | variable block. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1927,10 +1927,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1977,10 +1977,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.disabled"></a>
 
 ```python
-disabled: typing.Union[bool, IResolvable]
+disabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#disabled ServiceEventRule#disabled}.
 
@@ -2030,10 +2030,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `variable`<sup>Optional</sup> <a name="variable" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConfig.property.variable"></a>
 
 ```python
-variable: typing.Union[IResolvable, typing.List[ServiceEventRuleVariable]]
+variable: IResolvable | typing.List[ServiceEventRuleVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]
 
 variable block.
 
@@ -2049,8 +2049,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 from cdktf_cdktf_provider_pagerduty import service_event_rule
 
 serviceEventRule.ServiceEventRuleTimeFrame(
-  active_between: typing.Union[IResolvable, typing.List[ServiceEventRuleTimeFrameActiveBetween]] = None,
-  scheduled_weekly: typing.Union[IResolvable, typing.List[ServiceEventRuleTimeFrameScheduledWeekly]] = None
+  active_between: IResolvable | typing.List[ServiceEventRuleTimeFrameActiveBetween] = None,
+  scheduled_weekly: IResolvable | typing.List[ServiceEventRuleTimeFrameScheduledWeekly] = None
 )
 ```
 
@@ -2058,18 +2058,18 @@ serviceEventRule.ServiceEventRuleTimeFrame(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame.property.activeBetween">active_between</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]]</code> | active_between block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame.property.scheduledWeekly">scheduled_weekly</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]]</code> | scheduled_weekly block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame.property.activeBetween">active_between</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]</code> | active_between block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame.property.scheduledWeekly">scheduled_weekly</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]</code> | scheduled_weekly block. |
 
 ---
 
 ##### `active_between`<sup>Optional</sup> <a name="active_between" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame.property.activeBetween"></a>
 
 ```python
-active_between: typing.Union[IResolvable, typing.List[ServiceEventRuleTimeFrameActiveBetween]]
+active_between: IResolvable | typing.List[ServiceEventRuleTimeFrameActiveBetween]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]
 
 active_between block.
 
@@ -2080,10 +2080,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `scheduled_weekly`<sup>Optional</sup> <a name="scheduled_weekly" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame.property.scheduledWeekly"></a>
 
 ```python
-scheduled_weekly: typing.Union[IResolvable, typing.List[ServiceEventRuleTimeFrameScheduledWeekly]]
+scheduled_weekly: IResolvable | typing.List[ServiceEventRuleTimeFrameScheduledWeekly]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]
 
 scheduled_weekly block.
 
@@ -2220,7 +2220,7 @@ from cdktf_cdktf_provider_pagerduty import service_event_rule
 
 serviceEventRule.ServiceEventRuleVariable(
   name: str = None,
-  parameters: typing.Union[IResolvable, typing.List[ServiceEventRuleVariableParameters]] = None,
+  parameters: IResolvable | typing.List[ServiceEventRuleVariableParameters] = None,
   type: str = None
 )
 ```
@@ -2230,7 +2230,7 @@ serviceEventRule.ServiceEventRuleVariable(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#name ServiceEventRule#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable.property.parameters">parameters</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]]</code> | parameters block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable.property.parameters">parameters</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]</code> | parameters block. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_event_rule#type ServiceEventRule#type}. |
 
 ---
@@ -2250,10 +2250,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `parameters`<sup>Optional</sup> <a name="parameters" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable.property.parameters"></a>
 
 ```python
-parameters: typing.Union[IResolvable, typing.List[ServiceEventRuleVariableParameters]]
+parameters: IResolvable | typing.List[ServiceEventRuleVariableParameters]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]
 
 parameters block.
 
@@ -2452,7 +2452,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]</code> | *No description.* |
 
 ---
 
@@ -2483,10 +2483,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsAnnotate]]
+internal_value: IResolvable | typing.List[ServiceEventRuleActionsAnnotate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]
 
 ---
 
@@ -2755,7 +2755,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a></code> | *No description.* |
 
 ---
 
@@ -2806,10 +2806,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotateOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceEventRuleActionsAnnotate]
+internal_value: IResolvable | ServiceEventRuleActionsAnnotate
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>
 
 ---
 
@@ -2945,7 +2945,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]</code> | *No description.* |
 
 ---
 
@@ -2976,10 +2976,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsEventAction]]
+internal_value: IResolvable | typing.List[ServiceEventRuleActionsEventAction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]
 
 ---
 
@@ -3248,7 +3248,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a></code> | *No description.* |
 
 ---
 
@@ -3299,10 +3299,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventActionOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceEventRuleActionsEventAction]
+internal_value: IResolvable | ServiceEventRuleActionsEventAction
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>
 
 ---
 
@@ -3438,7 +3438,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]</code> | *No description.* |
 
 ---
 
@@ -3469,10 +3469,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsExtractions]]
+internal_value: IResolvable | typing.List[ServiceEventRuleActionsExtractions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]
 
 ---
 
@@ -3768,7 +3768,7 @@ def reset_template() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.target">target</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.template">template</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a></code> | *No description.* |
 
 ---
 
@@ -3879,10 +3879,10 @@ template: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceEventRuleActionsExtractions]
+internal_value: IResolvable | ServiceEventRuleActionsExtractions
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>
 
 ---
 
@@ -4133,13 +4133,13 @@ Returns a reversible string representation.
 
 ```python
 def put_annotate(
-  value: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsAnnotate]]
+  value: IResolvable | typing.List[ServiceEventRuleActionsAnnotate]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putAnnotate.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]
 
 ---
 
@@ -4147,13 +4147,13 @@ def put_annotate(
 
 ```python
 def put_event_action(
-  value: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsEventAction]]
+  value: IResolvable | typing.List[ServiceEventRuleActionsEventAction]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putEventAction.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]
 
 ---
 
@@ -4161,13 +4161,13 @@ def put_event_action(
 
 ```python
 def put_extractions(
-  value: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsExtractions]]
+  value: IResolvable | typing.List[ServiceEventRuleActionsExtractions]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putExtractions.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]
 
 ---
 
@@ -4175,13 +4175,13 @@ def put_extractions(
 
 ```python
 def put_priority(
-  value: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsPriority]]
+  value: IResolvable | typing.List[ServiceEventRuleActionsPriority]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putPriority.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]
 
 ---
 
@@ -4189,13 +4189,13 @@ def put_priority(
 
 ```python
 def put_severity(
-  value: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSeverity]]
+  value: IResolvable | typing.List[ServiceEventRuleActionsSeverity]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putSeverity.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]
 
 ---
 
@@ -4203,13 +4203,13 @@ def put_severity(
 
 ```python
 def put_suppress(
-  value: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSuppress]]
+  value: IResolvable | typing.List[ServiceEventRuleActionsSuppress]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putSuppress.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]
 
 ---
 
@@ -4217,13 +4217,13 @@ def put_suppress(
 
 ```python
 def put_suspend(
-  value: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSuspend]]
+  value: IResolvable | typing.List[ServiceEventRuleActionsSuspend]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.putSuspend.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]
 
 ---
 
@@ -4283,13 +4283,13 @@ def reset_suspend() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.severity">severity</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityList">ServiceEventRuleActionsSeverityList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.suppress">suppress</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressList">ServiceEventRuleActionsSuppressList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.suspend">suspend</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendList">ServiceEventRuleActionsSuspendList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.annotateInput">annotate_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.eventActionInput">event_action_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.extractionsInput">extractions_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.priorityInput">priority_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.severityInput">severity_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.suppressInput">suppress_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.suspendInput">suspend_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.annotateInput">annotate_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.eventActionInput">event_action_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.extractionsInput">extractions_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.priorityInput">priority_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.severityInput">severity_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.suppressInput">suppress_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.suspendInput">suspend_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActions">ServiceEventRuleActions</a></code> | *No description.* |
 
 ---
@@ -4391,70 +4391,70 @@ suspend: ServiceEventRuleActionsSuspendList
 ##### `annotate_input`<sup>Optional</sup> <a name="annotate_input" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.annotateInput"></a>
 
 ```python
-annotate_input: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsAnnotate]]
+annotate_input: IResolvable | typing.List[ServiceEventRuleActionsAnnotate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsAnnotate">ServiceEventRuleActionsAnnotate</a>]
 
 ---
 
 ##### `event_action_input`<sup>Optional</sup> <a name="event_action_input" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.eventActionInput"></a>
 
 ```python
-event_action_input: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsEventAction]]
+event_action_input: IResolvable | typing.List[ServiceEventRuleActionsEventAction]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsEventAction">ServiceEventRuleActionsEventAction</a>]
 
 ---
 
 ##### `extractions_input`<sup>Optional</sup> <a name="extractions_input" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.extractionsInput"></a>
 
 ```python
-extractions_input: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsExtractions]]
+extractions_input: IResolvable | typing.List[ServiceEventRuleActionsExtractions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsExtractions">ServiceEventRuleActionsExtractions</a>]
 
 ---
 
 ##### `priority_input`<sup>Optional</sup> <a name="priority_input" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.priorityInput"></a>
 
 ```python
-priority_input: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsPriority]]
+priority_input: IResolvable | typing.List[ServiceEventRuleActionsPriority]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]
 
 ---
 
 ##### `severity_input`<sup>Optional</sup> <a name="severity_input" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.severityInput"></a>
 
 ```python
-severity_input: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSeverity]]
+severity_input: IResolvable | typing.List[ServiceEventRuleActionsSeverity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]
 
 ---
 
 ##### `suppress_input`<sup>Optional</sup> <a name="suppress_input" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.suppressInput"></a>
 
 ```python
-suppress_input: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSuppress]]
+suppress_input: IResolvable | typing.List[ServiceEventRuleActionsSuppress]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]
 
 ---
 
 ##### `suspend_input`<sup>Optional</sup> <a name="suspend_input" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsOutputReference.property.suspendInput"></a>
 
 ```python
-suspend_input: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSuspend]]
+suspend_input: IResolvable | typing.List[ServiceEventRuleActionsSuspend]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]
 
 ---
 
@@ -4600,7 +4600,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]</code> | *No description.* |
 
 ---
 
@@ -4631,10 +4631,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsPriority]]
+internal_value: IResolvable | typing.List[ServiceEventRuleActionsPriority]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]
 
 ---
 
@@ -4903,7 +4903,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a></code> | *No description.* |
 
 ---
 
@@ -4954,10 +4954,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriorityOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceEventRuleActionsPriority]
+internal_value: IResolvable | ServiceEventRuleActionsPriority
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsPriority">ServiceEventRuleActionsPriority</a>
 
 ---
 
@@ -5093,7 +5093,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]</code> | *No description.* |
 
 ---
 
@@ -5124,10 +5124,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSeverity]]
+internal_value: IResolvable | typing.List[ServiceEventRuleActionsSeverity]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]
 
 ---
 
@@ -5396,7 +5396,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a></code> | *No description.* |
 
 ---
 
@@ -5447,10 +5447,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverityOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceEventRuleActionsSeverity]
+internal_value: IResolvable | ServiceEventRuleActionsSeverity
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSeverity">ServiceEventRuleActionsSeverity</a>
 
 ---
 
@@ -5586,7 +5586,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]</code> | *No description.* |
 
 ---
 
@@ -5617,10 +5617,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSuppress]]
+internal_value: IResolvable | typing.List[ServiceEventRuleActionsSuppress]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]
 
 ---
 
@@ -5911,12 +5911,12 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.thresholdTimeAmountInput">threshold_time_amount_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.thresholdTimeUnitInput">threshold_time_unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.thresholdValueInput">threshold_value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.valueInput">value_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.thresholdTimeAmount">threshold_time_amount</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.thresholdTimeUnit">threshold_time_unit</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.thresholdValue">threshold_value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.value">value</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.value">value</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a></code> | *No description.* |
 
 ---
 
@@ -5977,10 +5977,10 @@ threshold_value_input: typing.Union[int, float]
 ##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.valueInput"></a>
 
 ```python
-value_input: typing.Union[bool, IResolvable]
+value_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -6017,20 +6017,20 @@ threshold_value: typing.Union[int, float]
 ##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.value"></a>
 
 ```python
-value: typing.Union[bool, IResolvable]
+value: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppressOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceEventRuleActionsSuppress]
+internal_value: IResolvable | ServiceEventRuleActionsSuppress
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuppress">ServiceEventRuleActionsSuppress</a>
 
 ---
 
@@ -6166,7 +6166,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]</code> | *No description.* |
 
 ---
 
@@ -6197,10 +6197,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceEventRuleActionsSuspend]]
+internal_value: IResolvable | typing.List[ServiceEventRuleActionsSuspend]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]
 
 ---
 
@@ -6469,7 +6469,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a></code> | *No description.* |
 
 ---
 
@@ -6520,10 +6520,10 @@ value: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspendOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceEventRuleActionsSuspend]
+internal_value: IResolvable | ServiceEventRuleActionsSuspend
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleActionsSuspend">ServiceEventRuleActionsSuspend</a>
 
 ---
 
@@ -6763,13 +6763,13 @@ Returns a reversible string representation.
 
 ```python
 def put_subconditions(
-  value: typing.Union[IResolvable, typing.List[ServiceEventRuleConditionsSubconditions]]
+  value: IResolvable | typing.List[ServiceEventRuleConditionsSubconditions]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.putSubconditions.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]
 
 ---
 
@@ -6794,7 +6794,7 @@ def reset_subconditions() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.property.subconditions">subconditions</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsList">ServiceEventRuleConditionsSubconditionsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.property.operatorInput">operator_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.property.subconditionsInput">subconditions_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.property.subconditionsInput">subconditions_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditions">ServiceEventRuleConditions</a></code> | *No description.* |
 
@@ -6847,10 +6847,10 @@ operator_input: str
 ##### `subconditions_input`<sup>Optional</sup> <a name="subconditions_input" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsOutputReference.property.subconditionsInput"></a>
 
 ```python
-subconditions_input: typing.Union[IResolvable, typing.List[ServiceEventRuleConditionsSubconditions]]
+subconditions_input: IResolvable | typing.List[ServiceEventRuleConditionsSubconditions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]
 
 ---
 
@@ -7006,7 +7006,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]</code> | *No description.* |
 
 ---
 
@@ -7037,10 +7037,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceEventRuleConditionsSubconditions]]
+internal_value: IResolvable | typing.List[ServiceEventRuleConditionsSubconditions]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]
 
 ---
 
@@ -7300,13 +7300,13 @@ Returns a reversible string representation.
 
 ```python
 def put_parameter(
-  value: typing.Union[IResolvable, typing.List[ServiceEventRuleConditionsSubconditionsParameter]]
+  value: IResolvable | typing.List[ServiceEventRuleConditionsSubconditionsParameter]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.putParameter.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]
 
 ---
 
@@ -7331,9 +7331,9 @@ def reset_parameter() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.parameter">parameter</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterList">ServiceEventRuleConditionsSubconditionsParameterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.operatorInput">operator_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.parameterInput">parameter_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.parameterInput">parameter_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a></code> | *No description.* |
 
 ---
 
@@ -7384,10 +7384,10 @@ operator_input: str
 ##### `parameter_input`<sup>Optional</sup> <a name="parameter_input" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.parameterInput"></a>
 
 ```python
-parameter_input: typing.Union[IResolvable, typing.List[ServiceEventRuleConditionsSubconditionsParameter]]
+parameter_input: IResolvable | typing.List[ServiceEventRuleConditionsSubconditionsParameter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]
 
 ---
 
@@ -7404,10 +7404,10 @@ operator: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceEventRuleConditionsSubconditions]
+internal_value: IResolvable | ServiceEventRuleConditionsSubconditions
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditions">ServiceEventRuleConditionsSubconditions</a>
 
 ---
 
@@ -7543,7 +7543,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]</code> | *No description.* |
 
 ---
 
@@ -7574,10 +7574,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceEventRuleConditionsSubconditionsParameter]]
+internal_value: IResolvable | typing.List[ServiceEventRuleConditionsSubconditionsParameter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]
 
 ---
 
@@ -7855,7 +7855,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a></code> | *No description.* |
 
 ---
 
@@ -7926,10 +7926,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceEventRuleConditionsSubconditionsParameter]
+internal_value: IResolvable | ServiceEventRuleConditionsSubconditionsParameter
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleConditionsSubconditionsParameter">ServiceEventRuleConditionsSubconditionsParameter</a>
 
 ---
 
@@ -8065,7 +8065,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]</code> | *No description.* |
 
 ---
 
@@ -8096,10 +8096,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceEventRuleTimeFrameActiveBetween]]
+internal_value: IResolvable | typing.List[ServiceEventRuleTimeFrameActiveBetween]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]
 
 ---
 
@@ -8377,7 +8377,7 @@ def reset_start_time() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.startTimeInput">start_time_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.endTime">end_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.startTime">start_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a></code> | *No description.* |
 
 ---
 
@@ -8448,10 +8448,10 @@ start_time: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceEventRuleTimeFrameActiveBetween]
+internal_value: IResolvable | ServiceEventRuleTimeFrameActiveBetween
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>
 
 ---
 
@@ -8692,13 +8692,13 @@ Returns a reversible string representation.
 
 ```python
 def put_active_between(
-  value: typing.Union[IResolvable, typing.List[ServiceEventRuleTimeFrameActiveBetween]]
+  value: IResolvable | typing.List[ServiceEventRuleTimeFrameActiveBetween]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.putActiveBetween.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]
 
 ---
 
@@ -8706,13 +8706,13 @@ def put_active_between(
 
 ```python
 def put_scheduled_weekly(
-  value: typing.Union[IResolvable, typing.List[ServiceEventRuleTimeFrameScheduledWeekly]]
+  value: IResolvable | typing.List[ServiceEventRuleTimeFrameScheduledWeekly]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.putScheduledWeekly.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]
 
 ---
 
@@ -8737,8 +8737,8 @@ def reset_scheduled_weekly() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.activeBetween">active_between</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetweenList">ServiceEventRuleTimeFrameActiveBetweenList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.scheduledWeekly">scheduled_weekly</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyList">ServiceEventRuleTimeFrameScheduledWeeklyList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.activeBetweenInput">active_between_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.scheduledWeeklyInput">scheduled_weekly_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.activeBetweenInput">active_between_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.scheduledWeeklyInput">scheduled_weekly_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrame">ServiceEventRuleTimeFrame</a></code> | *No description.* |
 
 ---
@@ -8790,20 +8790,20 @@ scheduled_weekly: ServiceEventRuleTimeFrameScheduledWeeklyList
 ##### `active_between_input`<sup>Optional</sup> <a name="active_between_input" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.activeBetweenInput"></a>
 
 ```python
-active_between_input: typing.Union[IResolvable, typing.List[ServiceEventRuleTimeFrameActiveBetween]]
+active_between_input: IResolvable | typing.List[ServiceEventRuleTimeFrameActiveBetween]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameActiveBetween">ServiceEventRuleTimeFrameActiveBetween</a>]
 
 ---
 
 ##### `scheduled_weekly_input`<sup>Optional</sup> <a name="scheduled_weekly_input" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameOutputReference.property.scheduledWeeklyInput"></a>
 
 ```python
-scheduled_weekly_input: typing.Union[IResolvable, typing.List[ServiceEventRuleTimeFrameScheduledWeekly]]
+scheduled_weekly_input: IResolvable | typing.List[ServiceEventRuleTimeFrameScheduledWeekly]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]
 
 ---
 
@@ -8949,7 +8949,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]</code> | *No description.* |
 
 ---
 
@@ -8980,10 +8980,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceEventRuleTimeFrameScheduledWeekly]]
+internal_value: IResolvable | typing.List[ServiceEventRuleTimeFrameScheduledWeekly]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]
 
 ---
 
@@ -9279,7 +9279,7 @@ def reset_weekdays() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.startTime">start_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.timezone">timezone</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.weekdays">weekdays</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a></code> | *No description.* |
 
 ---
 
@@ -9390,10 +9390,10 @@ weekdays: typing.List[typing.Union[int, float]]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeeklyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceEventRuleTimeFrameScheduledWeekly]
+internal_value: IResolvable | ServiceEventRuleTimeFrameScheduledWeekly
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleTimeFrameScheduledWeekly">ServiceEventRuleTimeFrameScheduledWeekly</a>
 
 ---
 
@@ -9529,7 +9529,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]</code> | *No description.* |
 
 ---
 
@@ -9560,10 +9560,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceEventRuleVariable]]
+internal_value: IResolvable | typing.List[ServiceEventRuleVariable]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]
 
 ---
 
@@ -9824,13 +9824,13 @@ Returns a reversible string representation.
 
 ```python
 def put_parameters(
-  value: typing.Union[IResolvable, typing.List[ServiceEventRuleVariableParameters]]
+  value: IResolvable | typing.List[ServiceEventRuleVariableParameters]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.putParameters.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]
 
 ---
 
@@ -9861,11 +9861,11 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.parameters">parameters</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersList">ServiceEventRuleVariableParametersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.parametersInput">parameters_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.parametersInput">parameters_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a></code> | *No description.* |
 
 ---
 
@@ -9916,10 +9916,10 @@ name_input: str
 ##### `parameters_input`<sup>Optional</sup> <a name="parameters_input" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.parametersInput"></a>
 
 ```python
-parameters_input: typing.Union[IResolvable, typing.List[ServiceEventRuleVariableParameters]]
+parameters_input: IResolvable | typing.List[ServiceEventRuleVariableParameters]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]
 
 ---
 
@@ -9956,10 +9956,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceEventRuleVariable]
+internal_value: IResolvable | ServiceEventRuleVariable
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariable">ServiceEventRuleVariable</a>
 
 ---
 
@@ -10095,7 +10095,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]</code> | *No description.* |
 
 ---
 
@@ -10126,10 +10126,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceEventRuleVariableParameters]]
+internal_value: IResolvable | typing.List[ServiceEventRuleVariableParameters]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]
 
 ---
 
@@ -10407,7 +10407,7 @@ def reset_value() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a></code> | *No description.* |
 
 ---
 
@@ -10478,10 +10478,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParametersOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceEventRuleVariableParameters]
+internal_value: IResolvable | ServiceEventRuleVariableParameters
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceEventRule.ServiceEventRuleVariableParameters">ServiceEventRuleVariableParameters</a>
 
 ---
 

@@ -285,7 +285,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.importFrom"></a>
@@ -339,7 +339,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -354,7 +354,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -415,12 +415,12 @@ private void PutTimeFrame(RulesetRuleTimeFrame Value)
 ##### `PutVariable` <a name="PutVariable" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.putVariable"></a>
 
 ```csharp
-private void PutVariable(object Value)
+private void PutVariable(IResolvable|RulesetRuleVariable[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.putVariable.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable">RulesetRuleVariable</a>[]
 
 ---
 
@@ -598,28 +598,28 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.actions">Actions</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference">RulesetRuleActionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.conditions">Conditions</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsOutputReference">RulesetRuleConditionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.timeFrame">TimeFrame</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameOutputReference">RulesetRuleTimeFrameOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.variable">Variable</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableList">RulesetRuleVariableList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.actionsInput">ActionsInput</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions">RulesetRuleActions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.catchAllInput">CatchAllInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.catchAllInput">CatchAllInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.conditionsInput">ConditionsInput</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditions">RulesetRuleConditions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.disabledInput">DisabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.disabledInput">DisabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.positionInput">PositionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.rulesetInput">RulesetInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.timeFrameInput">TimeFrameInput</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrame">RulesetRuleTimeFrame</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.variableInput">VariableInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.catchAll">CatchAll</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.disabled">Disabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.variableInput">VariableInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable">RulesetRuleVariable</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.catchAll">CatchAll</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.position">Position</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.ruleset">Ruleset</a></code> | <code>string</code> | *No description.* |
@@ -701,20 +701,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -761,10 +761,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -821,10 +821,10 @@ public RulesetRuleActions ActionsInput { get; }
 ##### `CatchAllInput`<sup>Optional</sup> <a name="CatchAllInput" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.catchAllInput"></a>
 
 ```csharp
-public object CatchAllInput { get; }
+public bool|IResolvable CatchAllInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -841,10 +841,10 @@ public RulesetRuleConditions ConditionsInput { get; }
 ##### `DisabledInput`<sup>Optional</sup> <a name="DisabledInput" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.disabledInput"></a>
 
 ```csharp
-public object DisabledInput { get; }
+public bool|IResolvable DisabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -891,30 +891,30 @@ public RulesetRuleTimeFrame TimeFrameInput { get; }
 ##### `VariableInput`<sup>Optional</sup> <a name="VariableInput" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.variableInput"></a>
 
 ```csharp
-public object VariableInput { get; }
+public IResolvable|RulesetRuleVariable[] VariableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable">RulesetRuleVariable</a>[]
 
 ---
 
 ##### `CatchAll`<sup>Required</sup> <a name="CatchAll" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.catchAll"></a>
 
 ```csharp
-public object CatchAll { get; }
+public bool|IResolvable CatchAll { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Disabled`<sup>Required</sup> <a name="Disabled" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRule.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; }
+public bool|IResolvable Disabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -976,14 +976,14 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new RulesetRuleActions {
-    object Annotate = null,
-    object EventAction = null,
-    object Extractions = null,
-    object Priority = null,
-    object Route = null,
-    object Severity = null,
-    object Suppress = null,
-    object Suspend = null
+    IResolvable|RulesetRuleActionsAnnotate[] Annotate = null,
+    IResolvable|RulesetRuleActionsEventAction[] EventAction = null,
+    IResolvable|RulesetRuleActionsExtractions[] Extractions = null,
+    IResolvable|RulesetRuleActionsPriority[] Priority = null,
+    IResolvable|RulesetRuleActionsRoute[] Route = null,
+    IResolvable|RulesetRuleActionsSeverity[] Severity = null,
+    IResolvable|RulesetRuleActionsSuppress[] Suppress = null,
+    IResolvable|RulesetRuleActionsSuspend[] Suspend = null
 };
 ```
 
@@ -991,24 +991,24 @@ new RulesetRuleActions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.annotate">Annotate</a></code> | <code>object</code> | annotate block. |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.eventAction">EventAction</a></code> | <code>object</code> | event_action block. |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.extractions">Extractions</a></code> | <code>object</code> | extractions block. |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.priority">Priority</a></code> | <code>object</code> | priority block. |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.route">Route</a></code> | <code>object</code> | route block. |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.severity">Severity</a></code> | <code>object</code> | severity block. |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.suppress">Suppress</a></code> | <code>object</code> | suppress block. |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.suspend">Suspend</a></code> | <code>object</code> | suspend block. |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.annotate">Annotate</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotate">RulesetRuleActionsAnnotate</a>[]</code> | annotate block. |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.eventAction">EventAction</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventAction">RulesetRuleActionsEventAction</a>[]</code> | event_action block. |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.extractions">Extractions</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractions">RulesetRuleActionsExtractions</a>[]</code> | extractions block. |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.priority">Priority</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriority">RulesetRuleActionsPriority</a>[]</code> | priority block. |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.route">Route</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRoute">RulesetRuleActionsRoute</a>[]</code> | route block. |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.severity">Severity</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverity">RulesetRuleActionsSeverity</a>[]</code> | severity block. |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.suppress">Suppress</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress">RulesetRuleActionsSuppress</a>[]</code> | suppress block. |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.suspend">Suspend</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspend">RulesetRuleActionsSuspend</a>[]</code> | suspend block. |
 
 ---
 
 ##### `Annotate`<sup>Optional</sup> <a name="Annotate" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.annotate"></a>
 
 ```csharp
-public object Annotate { get; set; }
+public IResolvable|RulesetRuleActionsAnnotate[] Annotate { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotate">RulesetRuleActionsAnnotate</a>[]
 
 annotate block.
 
@@ -1019,10 +1019,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `EventAction`<sup>Optional</sup> <a name="EventAction" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.eventAction"></a>
 
 ```csharp
-public object EventAction { get; set; }
+public IResolvable|RulesetRuleActionsEventAction[] EventAction { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventAction">RulesetRuleActionsEventAction</a>[]
 
 event_action block.
 
@@ -1033,10 +1033,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Extractions`<sup>Optional</sup> <a name="Extractions" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.extractions"></a>
 
 ```csharp
-public object Extractions { get; set; }
+public IResolvable|RulesetRuleActionsExtractions[] Extractions { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractions">RulesetRuleActionsExtractions</a>[]
 
 extractions block.
 
@@ -1047,10 +1047,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Priority`<sup>Optional</sup> <a name="Priority" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.priority"></a>
 
 ```csharp
-public object Priority { get; set; }
+public IResolvable|RulesetRuleActionsPriority[] Priority { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriority">RulesetRuleActionsPriority</a>[]
 
 priority block.
 
@@ -1061,10 +1061,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Route`<sup>Optional</sup> <a name="Route" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.route"></a>
 
 ```csharp
-public object Route { get; set; }
+public IResolvable|RulesetRuleActionsRoute[] Route { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRoute">RulesetRuleActionsRoute</a>[]
 
 route block.
 
@@ -1075,10 +1075,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Severity`<sup>Optional</sup> <a name="Severity" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.severity"></a>
 
 ```csharp
-public object Severity { get; set; }
+public IResolvable|RulesetRuleActionsSeverity[] Severity { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverity">RulesetRuleActionsSeverity</a>[]
 
 severity block.
 
@@ -1089,10 +1089,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Suppress`<sup>Optional</sup> <a name="Suppress" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.suppress"></a>
 
 ```csharp
-public object Suppress { get; set; }
+public IResolvable|RulesetRuleActionsSuppress[] Suppress { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress">RulesetRuleActionsSuppress</a>[]
 
 suppress block.
 
@@ -1103,10 +1103,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Suspend`<sup>Optional</sup> <a name="Suspend" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions.property.suspend"></a>
 
 ```csharp
-public object Suspend { get; set; }
+public IResolvable|RulesetRuleActionsSuspend[] Suspend { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspend">RulesetRuleActionsSuspend</a>[]
 
 suspend block.
 
@@ -1359,7 +1359,7 @@ new RulesetRuleActionsSuppress {
     double ThresholdTimeAmount = null,
     string ThresholdTimeUnit = null,
     double ThresholdValue = null,
-    object Value = null
+    bool|IResolvable Value = null
 };
 ```
 
@@ -1370,7 +1370,7 @@ new RulesetRuleActionsSuppress {
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress.property.thresholdTimeAmount">ThresholdTimeAmount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#threshold_time_amount RulesetRule#threshold_time_amount}. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress.property.thresholdTimeUnit">ThresholdTimeUnit</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#threshold_time_unit RulesetRule#threshold_time_unit}. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress.property.thresholdValue">ThresholdValue</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#threshold_value RulesetRule#threshold_value}. |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress.property.value">Value</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#value RulesetRule#value}. |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress.property.value">Value</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#value RulesetRule#value}. |
 
 ---
 
@@ -1413,10 +1413,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Value`<sup>Optional</sup> <a name="Value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress.property.value"></a>
 
 ```csharp
-public object Value { get; set; }
+public bool|IResolvable Value { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#value RulesetRule#value}.
 
@@ -1463,7 +1463,7 @@ using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new RulesetRuleConditions {
     string Operator = null,
-    object Subconditions = null
+    IResolvable|RulesetRuleConditionsSubconditions[] Subconditions = null
 };
 ```
 
@@ -1472,7 +1472,7 @@ new RulesetRuleConditions {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditions.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#operator RulesetRule#operator}. |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditions.property.subconditions">Subconditions</a></code> | <code>object</code> | subconditions block. |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditions.property.subconditions">Subconditions</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions">RulesetRuleConditionsSubconditions</a>[]</code> | subconditions block. |
 
 ---
 
@@ -1491,10 +1491,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Subconditions`<sup>Optional</sup> <a name="Subconditions" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditions.property.subconditions"></a>
 
 ```csharp
-public object Subconditions { get; set; }
+public IResolvable|RulesetRuleConditionsSubconditions[] Subconditions { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions">RulesetRuleConditionsSubconditions</a>[]
 
 subconditions block.
 
@@ -1511,7 +1511,7 @@ using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new RulesetRuleConditionsSubconditions {
     string Operator = null,
-    object Parameter = null
+    IResolvable|RulesetRuleConditionsSubconditionsParameter[] Parameter = null
 };
 ```
 
@@ -1520,7 +1520,7 @@ new RulesetRuleConditionsSubconditions {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions.property.operator">Operator</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#operator RulesetRule#operator}. |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions.property.parameter">Parameter</a></code> | <code>object</code> | parameter block. |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions.property.parameter">Parameter</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameter">RulesetRuleConditionsSubconditionsParameter</a>[]</code> | parameter block. |
 
 ---
 
@@ -1539,10 +1539,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Parameter`<sup>Optional</sup> <a name="Parameter" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions.property.parameter"></a>
 
 ```csharp
-public object Parameter { get; set; }
+public IResolvable|RulesetRuleConditionsSubconditionsParameter[] Parameter { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameter">RulesetRuleConditionsSubconditionsParameter</a>[]
 
 parameter block.
 
@@ -1604,22 +1604,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new RulesetRuleConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Ruleset,
     RulesetRuleActions Actions = null,
-    object CatchAll = null,
+    bool|IResolvable CatchAll = null,
     RulesetRuleConditions Conditions = null,
-    object Disabled = null,
+    bool|IResolvable Disabled = null,
     string Id = null,
     double Position = null,
     RulesetRuleTimeFrame TimeFrame = null,
-    object Variable = null
+    IResolvable|RulesetRuleVariable[] Variable = null
 };
 ```
 
@@ -1627,42 +1627,42 @@ new RulesetRuleConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.ruleset">Ruleset</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#ruleset RulesetRule#ruleset}. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.actions">Actions</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions">RulesetRuleActions</a></code> | actions block. |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.catchAll">CatchAll</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#catch_all RulesetRule#catch_all}. |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.catchAll">CatchAll</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#catch_all RulesetRule#catch_all}. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.conditions">Conditions</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditions">RulesetRuleConditions</a></code> | conditions block. |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#disabled RulesetRule#disabled}. |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#disabled RulesetRule#disabled}. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#id RulesetRule#id}. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.position">Position</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#position RulesetRule#position}. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.timeFrame">TimeFrame</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrame">RulesetRuleTimeFrame</a></code> | time_frame block. |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.variable">Variable</a></code> | <code>object</code> | variable block. |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.variable">Variable</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable">RulesetRuleVariable</a>[]</code> | variable block. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1709,10 +1709,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1745,10 +1745,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `CatchAll`<sup>Optional</sup> <a name="CatchAll" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.catchAll"></a>
 
 ```csharp
-public object CatchAll { get; set; }
+public bool|IResolvable CatchAll { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#catch_all RulesetRule#catch_all}.
 
@@ -1771,10 +1771,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Disabled`<sup>Optional</sup> <a name="Disabled" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; set; }
+public bool|IResolvable Disabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#disabled RulesetRule#disabled}.
 
@@ -1824,10 +1824,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Variable`<sup>Optional</sup> <a name="Variable" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConfig.property.variable"></a>
 
 ```csharp
-public object Variable { get; set; }
+public IResolvable|RulesetRuleVariable[] Variable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable">RulesetRuleVariable</a>[]
 
 variable block.
 
@@ -1843,8 +1843,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new RulesetRuleTimeFrame {
-    object ActiveBetween = null,
-    object ScheduledWeekly = null
+    IResolvable|RulesetRuleTimeFrameActiveBetween[] ActiveBetween = null,
+    IResolvable|RulesetRuleTimeFrameScheduledWeekly[] ScheduledWeekly = null
 };
 ```
 
@@ -1852,18 +1852,18 @@ new RulesetRuleTimeFrame {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrame.property.activeBetween">ActiveBetween</a></code> | <code>object</code> | active_between block. |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrame.property.scheduledWeekly">ScheduledWeekly</a></code> | <code>object</code> | scheduled_weekly block. |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrame.property.activeBetween">ActiveBetween</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetween">RulesetRuleTimeFrameActiveBetween</a>[]</code> | active_between block. |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrame.property.scheduledWeekly">ScheduledWeekly</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeekly">RulesetRuleTimeFrameScheduledWeekly</a>[]</code> | scheduled_weekly block. |
 
 ---
 
 ##### `ActiveBetween`<sup>Optional</sup> <a name="ActiveBetween" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrame.property.activeBetween"></a>
 
 ```csharp
-public object ActiveBetween { get; set; }
+public IResolvable|RulesetRuleTimeFrameActiveBetween[] ActiveBetween { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetween">RulesetRuleTimeFrameActiveBetween</a>[]
 
 active_between block.
 
@@ -1874,10 +1874,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `ScheduledWeekly`<sup>Optional</sup> <a name="ScheduledWeekly" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrame.property.scheduledWeekly"></a>
 
 ```csharp
-public object ScheduledWeekly { get; set; }
+public IResolvable|RulesetRuleTimeFrameScheduledWeekly[] ScheduledWeekly { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeekly">RulesetRuleTimeFrameScheduledWeekly</a>[]
 
 scheduled_weekly block.
 
@@ -2014,7 +2014,7 @@ using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new RulesetRuleVariable {
     string Name = null,
-    object Parameters = null,
+    IResolvable|RulesetRuleVariableParameters[] Parameters = null,
     string Type = null
 };
 ```
@@ -2024,7 +2024,7 @@ new RulesetRuleVariable {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#name RulesetRule#name}. |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable.property.parameters">Parameters</a></code> | <code>object</code> | parameters block. |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable.property.parameters">Parameters</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParameters">RulesetRuleVariableParameters</a>[]</code> | parameters block. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/ruleset_rule#type RulesetRule#type}. |
 
 ---
@@ -2044,10 +2044,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Parameters`<sup>Optional</sup> <a name="Parameters" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable.property.parameters"></a>
 
 ```csharp
-public object Parameters { get; set; }
+public IResolvable|RulesetRuleVariableParameters[] Parameters { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParameters">RulesetRuleVariableParameters</a>[]
 
 parameters block.
 
@@ -2236,7 +2236,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotate">RulesetRuleActionsAnnotate</a>[]</code> | *No description.* |
 
 ---
 
@@ -2267,10 +2267,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleActionsAnnotate[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotate">RulesetRuleActionsAnnotate</a>[]
 
 ---
 
@@ -2512,7 +2512,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotate">RulesetRuleActionsAnnotate</a></code> | *No description.* |
 
 ---
 
@@ -2563,10 +2563,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotateOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleActionsAnnotate InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotate">RulesetRuleActionsAnnotate</a>
 
 ---
 
@@ -2692,7 +2692,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventAction">RulesetRuleActionsEventAction</a>[]</code> | *No description.* |
 
 ---
 
@@ -2723,10 +2723,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleActionsEventAction[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventAction">RulesetRuleActionsEventAction</a>[]
 
 ---
 
@@ -2968,7 +2968,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventAction">RulesetRuleActionsEventAction</a></code> | *No description.* |
 
 ---
 
@@ -3019,10 +3019,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventActionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleActionsEventAction InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventAction">RulesetRuleActionsEventAction</a>
 
 ---
 
@@ -3148,7 +3148,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractions">RulesetRuleActionsExtractions</a>[]</code> | *No description.* |
 
 ---
 
@@ -3179,10 +3179,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleActionsExtractions[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractions">RulesetRuleActionsExtractions</a>[]
 
 ---
 
@@ -3451,7 +3451,7 @@ private void ResetTemplate()
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsOutputReference.property.source">Source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsOutputReference.property.target">Target</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsOutputReference.property.template">Template</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractions">RulesetRuleActionsExtractions</a></code> | *No description.* |
 
 ---
 
@@ -3562,10 +3562,10 @@ public string Template { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractionsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleActionsExtractions InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractions">RulesetRuleActionsExtractions</a>
 
 ---
 
@@ -3792,96 +3792,96 @@ Returns a reversible string representation.
 ##### `PutAnnotate` <a name="PutAnnotate" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.putAnnotate"></a>
 
 ```csharp
-private void PutAnnotate(object Value)
+private void PutAnnotate(IResolvable|RulesetRuleActionsAnnotate[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.putAnnotate.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotate">RulesetRuleActionsAnnotate</a>[]
 
 ---
 
 ##### `PutEventAction` <a name="PutEventAction" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.putEventAction"></a>
 
 ```csharp
-private void PutEventAction(object Value)
+private void PutEventAction(IResolvable|RulesetRuleActionsEventAction[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.putEventAction.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventAction">RulesetRuleActionsEventAction</a>[]
 
 ---
 
 ##### `PutExtractions` <a name="PutExtractions" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.putExtractions"></a>
 
 ```csharp
-private void PutExtractions(object Value)
+private void PutExtractions(IResolvable|RulesetRuleActionsExtractions[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.putExtractions.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractions">RulesetRuleActionsExtractions</a>[]
 
 ---
 
 ##### `PutPriority` <a name="PutPriority" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.putPriority"></a>
 
 ```csharp
-private void PutPriority(object Value)
+private void PutPriority(IResolvable|RulesetRuleActionsPriority[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.putPriority.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriority">RulesetRuleActionsPriority</a>[]
 
 ---
 
 ##### `PutRoute` <a name="PutRoute" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.putRoute"></a>
 
 ```csharp
-private void PutRoute(object Value)
+private void PutRoute(IResolvable|RulesetRuleActionsRoute[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.putRoute.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRoute">RulesetRuleActionsRoute</a>[]
 
 ---
 
 ##### `PutSeverity` <a name="PutSeverity" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.putSeverity"></a>
 
 ```csharp
-private void PutSeverity(object Value)
+private void PutSeverity(IResolvable|RulesetRuleActionsSeverity[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.putSeverity.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverity">RulesetRuleActionsSeverity</a>[]
 
 ---
 
 ##### `PutSuppress` <a name="PutSuppress" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.putSuppress"></a>
 
 ```csharp
-private void PutSuppress(object Value)
+private void PutSuppress(IResolvable|RulesetRuleActionsSuppress[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.putSuppress.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress">RulesetRuleActionsSuppress</a>[]
 
 ---
 
 ##### `PutSuspend` <a name="PutSuspend" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.putSuspend"></a>
 
 ```csharp
-private void PutSuspend(object Value)
+private void PutSuspend(IResolvable|RulesetRuleActionsSuspend[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.putSuspend.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspend">RulesetRuleActionsSuspend</a>[]
 
 ---
 
@@ -3948,14 +3948,14 @@ private void ResetSuspend()
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.severity">Severity</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityList">RulesetRuleActionsSeverityList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.suppress">Suppress</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressList">RulesetRuleActionsSuppressList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.suspend">Suspend</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendList">RulesetRuleActionsSuspendList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.annotateInput">AnnotateInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.eventActionInput">EventActionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.extractionsInput">ExtractionsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.priorityInput">PriorityInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.routeInput">RouteInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.severityInput">SeverityInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.suppressInput">SuppressInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.suspendInput">SuspendInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.annotateInput">AnnotateInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotate">RulesetRuleActionsAnnotate</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.eventActionInput">EventActionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventAction">RulesetRuleActionsEventAction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.extractionsInput">ExtractionsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractions">RulesetRuleActionsExtractions</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.priorityInput">PriorityInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriority">RulesetRuleActionsPriority</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.routeInput">RouteInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRoute">RulesetRuleActionsRoute</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.severityInput">SeverityInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverity">RulesetRuleActionsSeverity</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.suppressInput">SuppressInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress">RulesetRuleActionsSuppress</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.suspendInput">SuspendInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspend">RulesetRuleActionsSuspend</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActions">RulesetRuleActions</a></code> | *No description.* |
 
 ---
@@ -4067,80 +4067,80 @@ public RulesetRuleActionsSuspendList Suspend { get; }
 ##### `AnnotateInput`<sup>Optional</sup> <a name="AnnotateInput" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.annotateInput"></a>
 
 ```csharp
-public object AnnotateInput { get; }
+public IResolvable|RulesetRuleActionsAnnotate[] AnnotateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsAnnotate">RulesetRuleActionsAnnotate</a>[]
 
 ---
 
 ##### `EventActionInput`<sup>Optional</sup> <a name="EventActionInput" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.eventActionInput"></a>
 
 ```csharp
-public object EventActionInput { get; }
+public IResolvable|RulesetRuleActionsEventAction[] EventActionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsEventAction">RulesetRuleActionsEventAction</a>[]
 
 ---
 
 ##### `ExtractionsInput`<sup>Optional</sup> <a name="ExtractionsInput" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.extractionsInput"></a>
 
 ```csharp
-public object ExtractionsInput { get; }
+public IResolvable|RulesetRuleActionsExtractions[] ExtractionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsExtractions">RulesetRuleActionsExtractions</a>[]
 
 ---
 
 ##### `PriorityInput`<sup>Optional</sup> <a name="PriorityInput" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.priorityInput"></a>
 
 ```csharp
-public object PriorityInput { get; }
+public IResolvable|RulesetRuleActionsPriority[] PriorityInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriority">RulesetRuleActionsPriority</a>[]
 
 ---
 
 ##### `RouteInput`<sup>Optional</sup> <a name="RouteInput" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.routeInput"></a>
 
 ```csharp
-public object RouteInput { get; }
+public IResolvable|RulesetRuleActionsRoute[] RouteInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRoute">RulesetRuleActionsRoute</a>[]
 
 ---
 
 ##### `SeverityInput`<sup>Optional</sup> <a name="SeverityInput" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.severityInput"></a>
 
 ```csharp
-public object SeverityInput { get; }
+public IResolvable|RulesetRuleActionsSeverity[] SeverityInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverity">RulesetRuleActionsSeverity</a>[]
 
 ---
 
 ##### `SuppressInput`<sup>Optional</sup> <a name="SuppressInput" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.suppressInput"></a>
 
 ```csharp
-public object SuppressInput { get; }
+public IResolvable|RulesetRuleActionsSuppress[] SuppressInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress">RulesetRuleActionsSuppress</a>[]
 
 ---
 
 ##### `SuspendInput`<sup>Optional</sup> <a name="SuspendInput" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsOutputReference.property.suspendInput"></a>
 
 ```csharp
-public object SuspendInput { get; }
+public IResolvable|RulesetRuleActionsSuspend[] SuspendInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspend">RulesetRuleActionsSuspend</a>[]
 
 ---
 
@@ -4276,7 +4276,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriority">RulesetRuleActionsPriority</a>[]</code> | *No description.* |
 
 ---
 
@@ -4307,10 +4307,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleActionsPriority[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriority">RulesetRuleActionsPriority</a>[]
 
 ---
 
@@ -4552,7 +4552,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriority">RulesetRuleActionsPriority</a></code> | *No description.* |
 
 ---
 
@@ -4603,10 +4603,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriorityOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleActionsPriority InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsPriority">RulesetRuleActionsPriority</a>
 
 ---
 
@@ -4732,7 +4732,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRoute">RulesetRuleActionsRoute</a>[]</code> | *No description.* |
 
 ---
 
@@ -4763,10 +4763,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleActionsRoute[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRoute">RulesetRuleActionsRoute</a>[]
 
 ---
 
@@ -5008,7 +5008,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRoute">RulesetRuleActionsRoute</a></code> | *No description.* |
 
 ---
 
@@ -5059,10 +5059,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRouteOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleActionsRoute InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsRoute">RulesetRuleActionsRoute</a>
 
 ---
 
@@ -5188,7 +5188,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverity">RulesetRuleActionsSeverity</a>[]</code> | *No description.* |
 
 ---
 
@@ -5219,10 +5219,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleActionsSeverity[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverity">RulesetRuleActionsSeverity</a>[]
 
 ---
 
@@ -5464,7 +5464,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverity">RulesetRuleActionsSeverity</a></code> | *No description.* |
 
 ---
 
@@ -5515,10 +5515,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverityOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleActionsSeverity InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSeverity">RulesetRuleActionsSeverity</a>
 
 ---
 
@@ -5644,7 +5644,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress">RulesetRuleActionsSuppress</a>[]</code> | *No description.* |
 
 ---
 
@@ -5675,10 +5675,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleActionsSuppress[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress">RulesetRuleActionsSuppress</a>[]
 
 ---
 
@@ -5942,12 +5942,12 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.thresholdTimeAmountInput">ThresholdTimeAmountInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.thresholdTimeUnitInput">ThresholdTimeUnitInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.thresholdValueInput">ThresholdValueInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.valueInput">ValueInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.valueInput">ValueInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.thresholdTimeAmount">ThresholdTimeAmount</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.thresholdTimeUnit">ThresholdTimeUnit</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.thresholdValue">ThresholdValue</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.value">Value</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.value">Value</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress">RulesetRuleActionsSuppress</a></code> | *No description.* |
 
 ---
 
@@ -6008,10 +6008,10 @@ public double ThresholdValueInput { get; }
 ##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.valueInput"></a>
 
 ```csharp
-public object ValueInput { get; }
+public bool|IResolvable ValueInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6048,20 +6048,20 @@ public double ThresholdValue { get; }
 ##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.value"></a>
 
 ```csharp
-public object Value { get; }
+public bool|IResolvable Value { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppressOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleActionsSuppress InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuppress">RulesetRuleActionsSuppress</a>
 
 ---
 
@@ -6187,7 +6187,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspend">RulesetRuleActionsSuspend</a>[]</code> | *No description.* |
 
 ---
 
@@ -6218,10 +6218,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleActionsSuspend[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspend">RulesetRuleActionsSuspend</a>[]
 
 ---
 
@@ -6463,7 +6463,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendOutputReference.property.valueInput">ValueInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendOutputReference.property.value">Value</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspend">RulesetRuleActionsSuspend</a></code> | *No description.* |
 
 ---
 
@@ -6514,10 +6514,10 @@ public double Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspendOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleActionsSuspend InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleActionsSuspend">RulesetRuleActionsSuspend</a>
 
 ---
 
@@ -6731,12 +6731,12 @@ Returns a reversible string representation.
 ##### `PutSubconditions` <a name="PutSubconditions" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsOutputReference.putSubconditions"></a>
 
 ```csharp
-private void PutSubconditions(object Value)
+private void PutSubconditions(IResolvable|RulesetRuleConditionsSubconditions[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsOutputReference.putSubconditions.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions">RulesetRuleConditionsSubconditions</a>[]
 
 ---
 
@@ -6761,7 +6761,7 @@ private void ResetSubconditions()
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsOutputReference.property.subconditions">Subconditions</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsList">RulesetRuleConditionsSubconditionsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsOutputReference.property.operatorInput">OperatorInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsOutputReference.property.subconditionsInput">SubconditionsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsOutputReference.property.subconditionsInput">SubconditionsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions">RulesetRuleConditionsSubconditions</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsOutputReference.property.operator">Operator</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditions">RulesetRuleConditions</a></code> | *No description.* |
 
@@ -6814,10 +6814,10 @@ public string OperatorInput { get; }
 ##### `SubconditionsInput`<sup>Optional</sup> <a name="SubconditionsInput" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsOutputReference.property.subconditionsInput"></a>
 
 ```csharp
-public object SubconditionsInput { get; }
+public IResolvable|RulesetRuleConditionsSubconditions[] SubconditionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions">RulesetRuleConditionsSubconditions</a>[]
 
 ---
 
@@ -6963,7 +6963,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions">RulesetRuleConditionsSubconditions</a>[]</code> | *No description.* |
 
 ---
 
@@ -6994,10 +6994,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleConditionsSubconditions[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions">RulesetRuleConditionsSubconditions</a>[]
 
 ---
 
@@ -7229,12 +7229,12 @@ Returns a reversible string representation.
 ##### `PutParameter` <a name="PutParameter" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.putParameter"></a>
 
 ```csharp
-private void PutParameter(object Value)
+private void PutParameter(IResolvable|RulesetRuleConditionsSubconditionsParameter[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.putParameter.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameter">RulesetRuleConditionsSubconditionsParameter</a>[]
 
 ---
 
@@ -7259,9 +7259,9 @@ private void ResetParameter()
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.property.parameter">Parameter</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterList">RulesetRuleConditionsSubconditionsParameterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.property.operatorInput">OperatorInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.property.parameterInput">ParameterInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.property.parameterInput">ParameterInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameter">RulesetRuleConditionsSubconditionsParameter</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.property.operator">Operator</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions">RulesetRuleConditionsSubconditions</a></code> | *No description.* |
 
 ---
 
@@ -7312,10 +7312,10 @@ public string OperatorInput { get; }
 ##### `ParameterInput`<sup>Optional</sup> <a name="ParameterInput" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.property.parameterInput"></a>
 
 ```csharp
-public object ParameterInput { get; }
+public IResolvable|RulesetRuleConditionsSubconditionsParameter[] ParameterInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameter">RulesetRuleConditionsSubconditionsParameter</a>[]
 
 ---
 
@@ -7332,10 +7332,10 @@ public string Operator { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleConditionsSubconditions InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditions">RulesetRuleConditionsSubconditions</a>
 
 ---
 
@@ -7461,7 +7461,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameter">RulesetRuleConditionsSubconditionsParameter</a>[]</code> | *No description.* |
 
 ---
 
@@ -7492,10 +7492,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleConditionsSubconditionsParameter[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameter">RulesetRuleConditionsSubconditionsParameter</a>[]
 
 ---
 
@@ -7746,7 +7746,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameter">RulesetRuleConditionsSubconditionsParameter</a></code> | *No description.* |
 
 ---
 
@@ -7817,10 +7817,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameterOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleConditionsSubconditionsParameter InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleConditionsSubconditionsParameter">RulesetRuleConditionsSubconditionsParameter</a>
 
 ---
 
@@ -7946,7 +7946,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetween">RulesetRuleTimeFrameActiveBetween</a>[]</code> | *No description.* |
 
 ---
 
@@ -7977,10 +7977,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleTimeFrameActiveBetween[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetween">RulesetRuleTimeFrameActiveBetween</a>[]
 
 ---
 
@@ -8231,7 +8231,7 @@ private void ResetStartTime()
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenOutputReference.property.startTimeInput">StartTimeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenOutputReference.property.endTime">EndTime</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenOutputReference.property.startTime">StartTime</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetween">RulesetRuleTimeFrameActiveBetween</a></code> | *No description.* |
 
 ---
 
@@ -8302,10 +8302,10 @@ public double StartTime { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleTimeFrameActiveBetween InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetween">RulesetRuleTimeFrameActiveBetween</a>
 
 ---
 
@@ -8520,24 +8520,24 @@ Returns a reversible string representation.
 ##### `PutActiveBetween` <a name="PutActiveBetween" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameOutputReference.putActiveBetween"></a>
 
 ```csharp
-private void PutActiveBetween(object Value)
+private void PutActiveBetween(IResolvable|RulesetRuleTimeFrameActiveBetween[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameOutputReference.putActiveBetween.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetween">RulesetRuleTimeFrameActiveBetween</a>[]
 
 ---
 
 ##### `PutScheduledWeekly` <a name="PutScheduledWeekly" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameOutputReference.putScheduledWeekly"></a>
 
 ```csharp
-private void PutScheduledWeekly(object Value)
+private void PutScheduledWeekly(IResolvable|RulesetRuleTimeFrameScheduledWeekly[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameOutputReference.putScheduledWeekly.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeekly">RulesetRuleTimeFrameScheduledWeekly</a>[]
 
 ---
 
@@ -8562,8 +8562,8 @@ private void ResetScheduledWeekly()
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameOutputReference.property.activeBetween">ActiveBetween</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetweenList">RulesetRuleTimeFrameActiveBetweenList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameOutputReference.property.scheduledWeekly">ScheduledWeekly</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyList">RulesetRuleTimeFrameScheduledWeeklyList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameOutputReference.property.activeBetweenInput">ActiveBetweenInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameOutputReference.property.scheduledWeeklyInput">ScheduledWeeklyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameOutputReference.property.activeBetweenInput">ActiveBetweenInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetween">RulesetRuleTimeFrameActiveBetween</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameOutputReference.property.scheduledWeeklyInput">ScheduledWeeklyInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeekly">RulesetRuleTimeFrameScheduledWeekly</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrame">RulesetRuleTimeFrame</a></code> | *No description.* |
 
 ---
@@ -8615,20 +8615,20 @@ public RulesetRuleTimeFrameScheduledWeeklyList ScheduledWeekly { get; }
 ##### `ActiveBetweenInput`<sup>Optional</sup> <a name="ActiveBetweenInput" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameOutputReference.property.activeBetweenInput"></a>
 
 ```csharp
-public object ActiveBetweenInput { get; }
+public IResolvable|RulesetRuleTimeFrameActiveBetween[] ActiveBetweenInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameActiveBetween">RulesetRuleTimeFrameActiveBetween</a>[]
 
 ---
 
 ##### `ScheduledWeeklyInput`<sup>Optional</sup> <a name="ScheduledWeeklyInput" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameOutputReference.property.scheduledWeeklyInput"></a>
 
 ```csharp
-public object ScheduledWeeklyInput { get; }
+public IResolvable|RulesetRuleTimeFrameScheduledWeekly[] ScheduledWeeklyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeekly">RulesetRuleTimeFrameScheduledWeekly</a>[]
 
 ---
 
@@ -8764,7 +8764,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeekly">RulesetRuleTimeFrameScheduledWeekly</a>[]</code> | *No description.* |
 
 ---
 
@@ -8795,10 +8795,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleTimeFrameScheduledWeekly[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeekly">RulesetRuleTimeFrameScheduledWeekly</a>[]
 
 ---
 
@@ -9067,7 +9067,7 @@ private void ResetWeekdays()
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyOutputReference.property.startTime">StartTime</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyOutputReference.property.timezone">Timezone</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyOutputReference.property.weekdays">Weekdays</a></code> | <code>double[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeekly">RulesetRuleTimeFrameScheduledWeekly</a></code> | *No description.* |
 
 ---
 
@@ -9178,10 +9178,10 @@ public double[] Weekdays { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeeklyOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleTimeFrameScheduledWeekly InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleTimeFrameScheduledWeekly">RulesetRuleTimeFrameScheduledWeekly</a>
 
 ---
 
@@ -9307,7 +9307,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable">RulesetRuleVariable</a>[]</code> | *No description.* |
 
 ---
 
@@ -9338,10 +9338,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleVariable[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable">RulesetRuleVariable</a>[]
 
 ---
 
@@ -9574,12 +9574,12 @@ Returns a reversible string representation.
 ##### `PutParameters` <a name="PutParameters" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.putParameters"></a>
 
 ```csharp
-private void PutParameters(object Value)
+private void PutParameters(IResolvable|RulesetRuleVariableParameters[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.putParameters.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParameters">RulesetRuleVariableParameters</a>[]
 
 ---
 
@@ -9610,11 +9610,11 @@ private void ResetType()
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.parameters">Parameters</a></code> | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersList">RulesetRuleVariableParametersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.parametersInput">ParametersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.parametersInput">ParametersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParameters">RulesetRuleVariableParameters</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable">RulesetRuleVariable</a></code> | *No description.* |
 
 ---
 
@@ -9665,10 +9665,10 @@ public string NameInput { get; }
 ##### `ParametersInput`<sup>Optional</sup> <a name="ParametersInput" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.parametersInput"></a>
 
 ```csharp
-public object ParametersInput { get; }
+public IResolvable|RulesetRuleVariableParameters[] ParametersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParameters">RulesetRuleVariableParameters</a>[]
 
 ---
 
@@ -9705,10 +9705,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleVariable InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariable">RulesetRuleVariable</a>
 
 ---
 
@@ -9834,7 +9834,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParameters">RulesetRuleVariableParameters</a>[]</code> | *No description.* |
 
 ---
 
@@ -9865,10 +9865,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleVariableParameters[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParameters">RulesetRuleVariableParameters</a>[]
 
 ---
 
@@ -10119,7 +10119,7 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParameters">RulesetRuleVariableParameters</a></code> | *No description.* |
 
 ---
 
@@ -10190,10 +10190,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParametersOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|RulesetRuleVariableParameters InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.rulesetRule.RulesetRuleVariableParameters">RulesetRuleVariableParameters</a>
 
 ---
 

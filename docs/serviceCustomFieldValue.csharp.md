@@ -274,7 +274,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.importFrom"></a>
@@ -328,7 +328,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -343,7 +343,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -368,12 +368,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutCustomFields` <a name="PutCustomFields" id="@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.putCustomFields"></a>
 
 ```csharp
-private void PutCustomFields(object Value)
+private void PutCustomFields(IResolvable|ServiceCustomFieldValueCustomFields[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.putCustomFields.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFields">ServiceCustomFieldValueCustomFields</a>[]
 
 ---
 
@@ -503,16 +503,16 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.customFields">CustomFields</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFieldsList">ServiceCustomFieldValueCustomFieldsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.customFieldsInput">CustomFieldsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.customFieldsInput">CustomFieldsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFields">ServiceCustomFieldValueCustomFields</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.serviceIdInput">ServiceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.serviceId">ServiceId</a></code> | <code>string</code> | *No description.* |
 
@@ -593,20 +593,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -653,10 +653,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -683,10 +683,10 @@ public string Id { get; }
 ##### `CustomFieldsInput`<sup>Optional</sup> <a name="CustomFieldsInput" id="@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValue.property.customFieldsInput"></a>
 
 ```csharp
-public object CustomFieldsInput { get; }
+public IResolvable|ServiceCustomFieldValueCustomFields[] CustomFieldsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFields">ServiceCustomFieldValueCustomFields</a>[]
 
 ---
 
@@ -738,14 +738,14 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new ServiceCustomFieldValueConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
-    object CustomFields,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    IResolvable|ServiceCustomFieldValueCustomFields[] CustomFields,
     string ServiceId
 };
 ```
@@ -754,14 +754,14 @@ new ServiceCustomFieldValueConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueConfig.property.customFields">CustomFields</a></code> | <code>object</code> | The custom field values to set for the service. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueConfig.property.customFields">CustomFields</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFields">ServiceCustomFieldValueCustomFields</a>[]</code> | The custom field values to set for the service. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueConfig.property.serviceId">ServiceId</a></code> | <code>string</code> | The ID of the service to set custom field values for. |
 
 ---
@@ -769,20 +769,20 @@ new ServiceCustomFieldValueConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -829,20 +829,20 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `CustomFields`<sup>Required</sup> <a name="CustomFields" id="@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueConfig.property.customFields"></a>
 
 ```csharp
-public object CustomFields { get; set; }
+public IResolvable|ServiceCustomFieldValueCustomFields[] CustomFields { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFields">ServiceCustomFieldValueCustomFields</a>[]
 
 The custom field values to set for the service.
 
@@ -1050,7 +1050,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFieldsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFieldsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFieldsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFieldsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFields">ServiceCustomFieldValueCustomFields</a>[]</code> | *No description.* |
 
 ---
 
@@ -1081,10 +1081,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFieldsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceCustomFieldValueCustomFields[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFields">ServiceCustomFieldValueCustomFields</a>[]
 
 ---
 
@@ -1323,7 +1323,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFieldsOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFieldsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFieldsOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFieldsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFields">ServiceCustomFieldValueCustomFields</a></code> | *No description.* |
 
 ---
 
@@ -1414,10 +1414,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFieldsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ServiceCustomFieldValueCustomFields InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.serviceCustomFieldValue.ServiceCustomFieldValueCustomFields">ServiceCustomFieldValueCustomFields</a>
 
 ---
 

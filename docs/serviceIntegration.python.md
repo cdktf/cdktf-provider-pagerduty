@@ -14,18 +14,18 @@ from cdktf_cdktf_provider_pagerduty import service_integration
 serviceIntegration.ServiceIntegration(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   service: str,
-  email_filter: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailFilter]] = None,
+  email_filter: IResolvable | typing.List[ServiceIntegrationEmailFilter] = None,
   email_filter_mode: str = None,
   email_incident_creation: str = None,
-  email_parser: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParser]] = None,
+  email_parser: IResolvable | typing.List[ServiceIntegrationEmailParser] = None,
   email_parsing_fallback: str = None,
   id: str = None,
   integration_email: str = None,
@@ -40,18 +40,18 @@ serviceIntegration.ServiceIntegration(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.service">service</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_integration#service ServiceIntegration#service}. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.emailFilter">email_filter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]]</code> | email_filter block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.emailFilter">email_filter</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]</code> | email_filter block. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.emailFilterMode">email_filter_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_integration#email_filter_mode ServiceIntegration#email_filter_mode}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.emailIncidentCreation">email_incident_creation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_integration#email_incident_creation ServiceIntegration#email_incident_creation}. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.emailParser">email_parser</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]]</code> | email_parser block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.emailParser">email_parser</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]</code> | email_parser block. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.emailParsingFallback">email_parsing_fallback</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_integration#email_parsing_fallback ServiceIntegration#email_parsing_fallback}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_integration#id ServiceIntegration#id}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.integrationEmail">integration_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_integration#integration_email ServiceIntegration#integration_email}. |
@@ -82,13 +82,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ##### `email_filter`<sup>Optional</sup> <a name="email_filter" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.emailFilter"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]
 
 email_filter block.
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ##### `email_parser`<sup>Optional</sup> <a name="email_parser" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.Initializer.parameter.emailParser"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]
 
 email_parser block.
 
@@ -490,7 +490,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.importFrom"></a>
@@ -553,7 +553,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -569,7 +569,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -597,13 +597,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_email_filter(
-  value: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailFilter]]
+  value: IResolvable | typing.List[ServiceIntegrationEmailFilter]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.putEmailFilter.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]
 
 ---
 
@@ -611,13 +611,13 @@ def put_email_filter(
 
 ```python
 def put_email_parser(
-  value: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParser]]
+  value: IResolvable | typing.List[ServiceIntegrationEmailParser]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.putEmailParser.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]
 
 ---
 
@@ -824,20 +824,20 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.emailFilter">email_filter</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilterList">ServiceIntegrationEmailFilterList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.emailParser">email_parser</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserList">ServiceIntegrationEmailParserList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.htmlUrl">html_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.emailFilterInput">email_filter_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.emailFilterInput">email_filter_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.emailFilterModeInput">email_filter_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.emailIncidentCreationInput">email_incident_creation_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.emailParserInput">email_parser_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.emailParserInput">email_parser_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.emailParsingFallbackInput">email_parsing_fallback_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.integrationEmailInput">integration_email_input</a></code> | <code>str</code> | *No description.* |
@@ -934,20 +934,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -994,10 +994,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1034,10 +1034,10 @@ html_url: str
 ##### `email_filter_input`<sup>Optional</sup> <a name="email_filter_input" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.emailFilterInput"></a>
 
 ```python
-email_filter_input: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailFilter]]
+email_filter_input: IResolvable | typing.List[ServiceIntegrationEmailFilter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]
 
 ---
 
@@ -1064,10 +1064,10 @@ email_incident_creation_input: str
 ##### `email_parser_input`<sup>Optional</sup> <a name="email_parser_input" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegration.property.emailParserInput"></a>
 
 ```python
-email_parser_input: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParser]]
+email_parser_input: IResolvable | typing.List[ServiceIntegrationEmailParser]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]
 
 ---
 
@@ -1279,18 +1279,18 @@ tfResourceType: str
 from cdktf_cdktf_provider_pagerduty import service_integration
 
 serviceIntegration.ServiceIntegrationConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   service: str,
-  email_filter: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailFilter]] = None,
+  email_filter: IResolvable | typing.List[ServiceIntegrationEmailFilter] = None,
   email_filter_mode: str = None,
   email_incident_creation: str = None,
-  email_parser: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParser]] = None,
+  email_parser: IResolvable | typing.List[ServiceIntegrationEmailParser] = None,
   email_parsing_fallback: str = None,
   id: str = None,
   integration_email: str = None,
@@ -1305,18 +1305,18 @@ serviceIntegration.ServiceIntegrationConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.service">service</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_integration#service ServiceIntegration#service}. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.emailFilter">email_filter</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]]</code> | email_filter block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.emailFilter">email_filter</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]</code> | email_filter block. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.emailFilterMode">email_filter_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_integration#email_filter_mode ServiceIntegration#email_filter_mode}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.emailIncidentCreation">email_incident_creation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_integration#email_incident_creation ServiceIntegration#email_incident_creation}. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.emailParser">email_parser</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]]</code> | email_parser block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.emailParser">email_parser</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]</code> | email_parser block. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.emailParsingFallback">email_parsing_fallback</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_integration#email_parsing_fallback ServiceIntegration#email_parsing_fallback}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_integration#id ServiceIntegration#id}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.integrationEmail">integration_email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_integration#integration_email ServiceIntegration#integration_email}. |
@@ -1330,20 +1330,20 @@ serviceIntegration.ServiceIntegrationConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1390,10 +1390,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1412,10 +1412,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `email_filter`<sup>Optional</sup> <a name="email_filter" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.emailFilter"></a>
 
 ```python
-email_filter: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailFilter]]
+email_filter: IResolvable | typing.List[ServiceIntegrationEmailFilter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]
 
 email_filter block.
 
@@ -1450,10 +1450,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `email_parser`<sup>Optional</sup> <a name="email_parser" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationConfig.property.emailParser"></a>
 
 ```python
-email_parser: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParser]]
+email_parser: IResolvable | typing.List[ServiceIntegrationEmailParser]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]
 
 email_parser block.
 
@@ -1660,7 +1660,7 @@ from cdktf_cdktf_provider_pagerduty import service_integration
 serviceIntegration.ServiceIntegrationEmailParser(
   action: str,
   match_predicate: ServiceIntegrationEmailParserMatchPredicate,
-  value_extractor: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParserValueExtractor]] = None
+  value_extractor: IResolvable | typing.List[ServiceIntegrationEmailParserValueExtractor] = None
 )
 ```
 
@@ -1670,7 +1670,7 @@ serviceIntegration.ServiceIntegrationEmailParser(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser.property.action">action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_integration#action ServiceIntegration#action}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser.property.matchPredicate">match_predicate</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicate">ServiceIntegrationEmailParserMatchPredicate</a></code> | match_predicate block. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser.property.valueExtractor">value_extractor</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a>]]</code> | value_extractor block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser.property.valueExtractor">value_extractor</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a>]</code> | value_extractor block. |
 
 ---
 
@@ -1703,10 +1703,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `value_extractor`<sup>Optional</sup> <a name="value_extractor" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser.property.valueExtractor"></a>
 
 ```python
-value_extractor: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParserValueExtractor]]
+value_extractor: IResolvable | typing.List[ServiceIntegrationEmailParserValueExtractor]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a>]
 
 value_extractor block.
 
@@ -1723,7 +1723,7 @@ from cdktf_cdktf_provider_pagerduty import service_integration
 
 serviceIntegration.ServiceIntegrationEmailParserMatchPredicate(
   type: str,
-  predicate: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParserMatchPredicatePredicate]] = None
+  predicate: IResolvable | typing.List[ServiceIntegrationEmailParserMatchPredicatePredicate] = None
 )
 ```
 
@@ -1732,7 +1732,7 @@ serviceIntegration.ServiceIntegrationEmailParserMatchPredicate(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicate.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_integration#type ServiceIntegration#type}. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicate.property.predicate">predicate</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]]</code> | predicate block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicate.property.predicate">predicate</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]</code> | predicate block. |
 
 ---
 
@@ -1751,10 +1751,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `predicate`<sup>Optional</sup> <a name="predicate" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicate.property.predicate"></a>
 
 ```python
-predicate: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParserMatchPredicatePredicate]]
+predicate: IResolvable | typing.List[ServiceIntegrationEmailParserMatchPredicatePredicate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]
 
 predicate block.
 
@@ -1773,7 +1773,7 @@ serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate(
   type: str,
   matcher: str = None,
   part: str = None,
-  predicate: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParserMatchPredicatePredicatePredicate]] = None
+  predicate: IResolvable | typing.List[ServiceIntegrationEmailParserMatchPredicatePredicatePredicate] = None
 )
 ```
 
@@ -1784,7 +1784,7 @@ serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate(
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_integration#type ServiceIntegration#type}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate.property.matcher">matcher</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_integration#matcher ServiceIntegration#matcher}. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate.property.part">part</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/service_integration#part ServiceIntegration#part}. |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate.property.predicate">predicate</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a>]]</code> | predicate block. |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate.property.predicate">predicate</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a>]</code> | predicate block. |
 
 ---
 
@@ -1827,10 +1827,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `predicate`<sup>Optional</sup> <a name="predicate" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate.property.predicate"></a>
 
 ```python
-predicate: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParserMatchPredicatePredicatePredicate]]
+predicate: IResolvable | typing.List[ServiceIntegrationEmailParserMatchPredicatePredicatePredicate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a>]
 
 predicate block.
 
@@ -2133,7 +2133,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilterList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilterList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilterList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilterList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]</code> | *No description.* |
 
 ---
 
@@ -2164,10 +2164,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilterList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailFilter]]
+internal_value: IResolvable | typing.List[ServiceIntegrationEmailFilter]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]
 
 ---
 
@@ -2482,7 +2482,7 @@ def reset_subject_regex() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilterOutputReference.property.fromEmailRegex">from_email_regex</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilterOutputReference.property.subjectMode">subject_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilterOutputReference.property.subjectRegex">subject_regex</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilterOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilterOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a></code> | *No description.* |
 
 ---
 
@@ -2643,10 +2643,10 @@ subject_regex: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilterOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceIntegrationEmailFilter]
+internal_value: IResolvable | ServiceIntegrationEmailFilter
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailFilter">ServiceIntegrationEmailFilter</a>
 
 ---
 
@@ -2782,7 +2782,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]</code> | *No description.* |
 
 ---
 
@@ -2813,10 +2813,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParser]]
+internal_value: IResolvable | typing.List[ServiceIntegrationEmailParser]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]
 
 ---
 
@@ -3055,13 +3055,13 @@ Returns a reversible string representation.
 
 ```python
 def put_predicate(
-  value: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParserMatchPredicatePredicate]]
+  value: IResolvable | typing.List[ServiceIntegrationEmailParserMatchPredicatePredicate]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicateOutputReference.putPredicate.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]
 
 ---
 
@@ -3079,7 +3079,7 @@ def reset_predicate() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicateOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicateOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicateOutputReference.property.predicate">predicate</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateList">ServiceIntegrationEmailParserMatchPredicatePredicateList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicateOutputReference.property.predicateInput">predicate_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicateOutputReference.property.predicateInput">predicate_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicateOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicateOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicateOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicate">ServiceIntegrationEmailParserMatchPredicate</a></code> | *No description.* |
@@ -3123,10 +3123,10 @@ predicate: ServiceIntegrationEmailParserMatchPredicatePredicateList
 ##### `predicate_input`<sup>Optional</sup> <a name="predicate_input" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicateOutputReference.property.predicateInput"></a>
 
 ```python
-predicate_input: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParserMatchPredicatePredicate]]
+predicate_input: IResolvable | typing.List[ServiceIntegrationEmailParserMatchPredicatePredicate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]
 
 ---
 
@@ -3292,7 +3292,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]</code> | *No description.* |
 
 ---
 
@@ -3323,10 +3323,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParserMatchPredicatePredicate]]
+internal_value: IResolvable | typing.List[ServiceIntegrationEmailParserMatchPredicatePredicate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]
 
 ---
 
@@ -3587,13 +3587,13 @@ Returns a reversible string representation.
 
 ```python
 def put_predicate(
-  value: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParserMatchPredicatePredicatePredicate]]
+  value: IResolvable | typing.List[ServiceIntegrationEmailParserMatchPredicatePredicatePredicate]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference.putPredicate.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a>]
 
 ---
 
@@ -3625,12 +3625,12 @@ def reset_predicate() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference.property.predicate">predicate</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicateList">ServiceIntegrationEmailParserMatchPredicatePredicatePredicateList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference.property.matcherInput">matcher_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference.property.partInput">part_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference.property.predicateInput">predicate_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference.property.predicateInput">predicate_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference.property.matcher">matcher</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference.property.part">part</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a></code> | *No description.* |
 
 ---
 
@@ -3691,10 +3691,10 @@ part_input: str
 ##### `predicate_input`<sup>Optional</sup> <a name="predicate_input" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference.property.predicateInput"></a>
 
 ```python
-predicate_input: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParserMatchPredicatePredicatePredicate]]
+predicate_input: IResolvable | typing.List[ServiceIntegrationEmailParserMatchPredicatePredicatePredicate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a>]
 
 ---
 
@@ -3741,10 +3741,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicateOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceIntegrationEmailParserMatchPredicatePredicate]
+internal_value: IResolvable | ServiceIntegrationEmailParserMatchPredicatePredicate
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>
 
 ---
 
@@ -3880,7 +3880,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicateList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicateList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicateList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicateList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a>]</code> | *No description.* |
 
 ---
 
@@ -3911,10 +3911,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicateList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParserMatchPredicatePredicatePredicate]]
+internal_value: IResolvable | typing.List[ServiceIntegrationEmailParserMatchPredicatePredicatePredicate]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a>]
 
 ---
 
@@ -4180,7 +4180,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference.property.matcher">matcher</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference.property.part">part</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a></code> | *No description.* |
 
 ---
 
@@ -4271,10 +4271,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicateOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceIntegrationEmailParserMatchPredicatePredicatePredicate]
+internal_value: IResolvable | ServiceIntegrationEmailParserMatchPredicatePredicatePredicate
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicatePredicate</a>
 
 ---
 
@@ -4535,7 +4535,7 @@ Returns a reversible string representation.
 ```python
 def put_match_predicate(
   type: str,
-  predicate: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParserMatchPredicatePredicate]] = None
+  predicate: IResolvable | typing.List[ServiceIntegrationEmailParserMatchPredicatePredicate] = None
 ) -> None
 ```
 
@@ -4549,7 +4549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ###### `predicate`<sup>Optional</sup> <a name="predicate" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserOutputReference.putMatchPredicate.parameter.predicate"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicatePredicate">ServiceIntegrationEmailParserMatchPredicatePredicate</a>]
 
 predicate block.
 
@@ -4561,13 +4561,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ```python
 def put_value_extractor(
-  value: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParserValueExtractor]]
+  value: IResolvable | typing.List[ServiceIntegrationEmailParserValueExtractor]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserOutputReference.putValueExtractor.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a>]
 
 ---
 
@@ -4589,9 +4589,9 @@ def reset_value_extractor() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserOutputReference.property.valueExtractor">value_extractor</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractorList">ServiceIntegrationEmailParserValueExtractorList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserOutputReference.property.actionInput">action_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserOutputReference.property.matchPredicateInput">match_predicate_input</a></code> | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserMatchPredicate">ServiceIntegrationEmailParserMatchPredicate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserOutputReference.property.valueExtractorInput">value_extractor_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserOutputReference.property.valueExtractorInput">value_extractor_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserOutputReference.property.action">action</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a></code> | *No description.* |
 
 ---
 
@@ -4672,10 +4672,10 @@ match_predicate_input: ServiceIntegrationEmailParserMatchPredicate
 ##### `value_extractor_input`<sup>Optional</sup> <a name="value_extractor_input" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserOutputReference.property.valueExtractorInput"></a>
 
 ```python
-value_extractor_input: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParserValueExtractor]]
+value_extractor_input: IResolvable | typing.List[ServiceIntegrationEmailParserValueExtractor]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a>]
 
 ---
 
@@ -4692,10 +4692,10 @@ action: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceIntegrationEmailParser]
+internal_value: IResolvable | ServiceIntegrationEmailParser
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParser">ServiceIntegrationEmailParser</a>
 
 ---
 
@@ -4831,7 +4831,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractorList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractorList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractorList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractorList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a>]</code> | *No description.* |
 
 ---
 
@@ -4862,10 +4862,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractorList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceIntegrationEmailParserValueExtractor]]
+internal_value: IResolvable | typing.List[ServiceIntegrationEmailParserValueExtractor]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a>]
 
 ---
 
@@ -5158,7 +5158,7 @@ def reset_starts_after() -> None
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractorOutputReference.property.startsAfter">starts_after</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractorOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractorOutputReference.property.valueName">value_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractorOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractorOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a></code> | *No description.* |
 
 ---
 
@@ -5309,10 +5309,10 @@ value_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractorOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceIntegrationEmailParserValueExtractor]
+internal_value: IResolvable | ServiceIntegrationEmailParserValueExtractor
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.serviceIntegration.ServiceIntegrationEmailParserValueExtractor">ServiceIntegrationEmailParserValueExtractor</a>
 
 ---
 

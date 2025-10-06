@@ -14,23 +14,23 @@ from cdktf_cdktf_provider_pagerduty import response_play
 responsePlay.ResponsePlay(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   from: str,
   name: str,
   conference_number: str = None,
   conference_url: str = None,
   description: str = None,
   id: str = None,
-  responder: typing.Union[IResolvable, typing.List[ResponsePlayResponder]] = None,
+  responder: IResolvable | typing.List[ResponsePlayResponder] = None,
   responders_message: str = None,
   runnability: str = None,
-  subscriber: typing.Union[IResolvable, typing.List[ResponsePlaySubscriber]] = None,
+  subscriber: IResolvable | typing.List[ResponsePlaySubscriber] = None,
   subscribers_message: str = None,
   team: str = None,
   type: str = None
@@ -41,23 +41,23 @@ responsePlay.ResponsePlay(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.from">from</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#from ResponsePlay#from}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#name ResponsePlay#name}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.conferenceNumber">conference_number</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#conference_number ResponsePlay#conference_number}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.conferenceUrl">conference_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#conference_url ResponsePlay#conference_url}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#description ResponsePlay#description}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#id ResponsePlay#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.responder">responder</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]]</code> | responder block. |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.responder">responder</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]</code> | responder block. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.respondersMessage">responders_message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#responders_message ResponsePlay#responders_message}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.runnability">runnability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#runnability ResponsePlay#runnability}. |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.subscriber">subscriber</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]]</code> | subscriber block. |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.subscriber">subscriber</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]</code> | subscriber block. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.subscribersMessage">subscribers_message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#subscribers_message ResponsePlay#subscribers_message}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.team">team</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#team ResponsePlay#team}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#type ResponsePlay#type}. |
@@ -84,13 +84,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -177,7 +177,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `responder`<sup>Optional</sup> <a name="responder" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.responder"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]
 
 responder block.
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ##### `subscriber`<sup>Optional</sup> <a name="subscriber" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.Initializer.parameter.subscriber"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]
 
 subscriber block.
 
@@ -500,7 +500,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.importFrom"></a>
@@ -563,7 +563,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -579,7 +579,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -607,13 +607,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_responder(
-  value: typing.Union[IResolvable, typing.List[ResponsePlayResponder]]
+  value: IResolvable | typing.List[ResponsePlayResponder]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.putResponder.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]
 
 ---
 
@@ -621,13 +621,13 @@ def put_responder(
 
 ```python
 def put_subscriber(
-  value: typing.Union[IResolvable, typing.List[ResponsePlaySubscriber]]
+  value: IResolvable | typing.List[ResponsePlaySubscriber]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.putSubscriber.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]
 
 ---
 
@@ -834,13 +834,13 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.responder">responder</a></code> | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderList">ResponsePlayResponderList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.subscriber">subscriber</a></code> | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberList">ResponsePlaySubscriberList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.conferenceNumberInput">conference_number_input</a></code> | <code>str</code> | *No description.* |
@@ -849,10 +849,10 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.fromInput">from_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.responderInput">responder_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.responderInput">responder_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.respondersMessageInput">responders_message_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.runnabilityInput">runnability_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.subscriberInput">subscriber_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.subscriberInput">subscriber_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.subscribersMessageInput">subscribers_message_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.teamInput">team_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
@@ -945,20 +945,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1005,10 +1005,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1095,10 +1095,10 @@ name_input: str
 ##### `responder_input`<sup>Optional</sup> <a name="responder_input" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.responderInput"></a>
 
 ```python
-responder_input: typing.Union[IResolvable, typing.List[ResponsePlayResponder]]
+responder_input: IResolvable | typing.List[ResponsePlayResponder]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]
 
 ---
 
@@ -1125,10 +1125,10 @@ runnability_input: str
 ##### `subscriber_input`<sup>Optional</sup> <a name="subscriber_input" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlay.property.subscriberInput"></a>
 
 ```python
-subscriber_input: typing.Union[IResolvable, typing.List[ResponsePlaySubscriber]]
+subscriber_input: IResolvable | typing.List[ResponsePlaySubscriber]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]
 
 ---
 
@@ -1300,23 +1300,23 @@ tfResourceType: str
 from cdktf_cdktf_provider_pagerduty import response_play
 
 responsePlay.ResponsePlayConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   from: str,
   name: str,
   conference_number: str = None,
   conference_url: str = None,
   description: str = None,
   id: str = None,
-  responder: typing.Union[IResolvable, typing.List[ResponsePlayResponder]] = None,
+  responder: IResolvable | typing.List[ResponsePlayResponder] = None,
   responders_message: str = None,
   runnability: str = None,
-  subscriber: typing.Union[IResolvable, typing.List[ResponsePlaySubscriber]] = None,
+  subscriber: IResolvable | typing.List[ResponsePlaySubscriber] = None,
   subscribers_message: str = None,
   team: str = None,
   type: str = None
@@ -1327,23 +1327,23 @@ responsePlay.ResponsePlayConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.from">from</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#from ResponsePlay#from}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#name ResponsePlay#name}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.conferenceNumber">conference_number</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#conference_number ResponsePlay#conference_number}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.conferenceUrl">conference_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#conference_url ResponsePlay#conference_url}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#description ResponsePlay#description}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#id ResponsePlay#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.responder">responder</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]]</code> | responder block. |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.responder">responder</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]</code> | responder block. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.respondersMessage">responders_message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#responders_message ResponsePlay#responders_message}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.runnability">runnability</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#runnability ResponsePlay#runnability}. |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.subscriber">subscriber</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]]</code> | subscriber block. |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.subscriber">subscriber</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]</code> | subscriber block. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.subscribersMessage">subscribers_message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#subscribers_message ResponsePlay#subscribers_message}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.team">team</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#team ResponsePlay#team}. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/response_play#type ResponsePlay#type}. |
@@ -1353,20 +1353,20 @@ responsePlay.ResponsePlayConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1413,10 +1413,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1498,10 +1498,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `responder`<sup>Optional</sup> <a name="responder" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.responder"></a>
 
 ```python
-responder: typing.Union[IResolvable, typing.List[ResponsePlayResponder]]
+responder: IResolvable | typing.List[ResponsePlayResponder]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]
 
 responder block.
 
@@ -1536,10 +1536,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `subscriber`<sup>Optional</sup> <a name="subscriber" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayConfig.property.subscriber"></a>
 
 ```python
-subscriber: typing.Union[IResolvable, typing.List[ResponsePlaySubscriber]]
+subscriber: IResolvable | typing.List[ResponsePlaySubscriber]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]
 
 subscriber block.
 
@@ -2847,7 +2847,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]</code> | *No description.* |
 
 ---
 
@@ -2878,10 +2878,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ResponsePlayResponder]]
+internal_value: IResolvable | typing.List[ResponsePlayResponder]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]
 
 ---
 
@@ -3182,7 +3182,7 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a></code> | *No description.* |
 
 ---
 
@@ -3343,10 +3343,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponderOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ResponsePlayResponder]
+internal_value: IResolvable | ResponsePlayResponder
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlayResponder">ResponsePlayResponder</a>
 
 ---
 
@@ -4432,7 +4432,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]</code> | *No description.* |
 
 ---
 
@@ -4463,10 +4463,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ResponsePlaySubscriber]]
+internal_value: IResolvable | typing.List[ResponsePlaySubscriber]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]
 
 ---
 
@@ -4744,7 +4744,7 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a></code> | *No description.* |
 
 ---
 
@@ -4815,10 +4815,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriberOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ResponsePlaySubscriber]
+internal_value: IResolvable | ResponsePlaySubscriber
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-pagerduty.responsePlay.ResponsePlaySubscriber">ResponsePlaySubscriber</a>
 
 ---
 

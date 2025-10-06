@@ -12,23 +12,17 @@ Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 import com.hashicorp.cdktf.providers.pagerduty.event_orchestration_service.EventOrchestrationService;
 
 EventOrchestrationService.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .catchAll(EventOrchestrationServiceCatchAll)
     .service(java.lang.String)
-    .set(IResolvable)
-    .set(java.util.List<EventOrchestrationServiceSet>)
-//  .enableEventOrchestrationForService(java.lang.Boolean)
-//  .enableEventOrchestrationForService(IResolvable)
+    .set(IResolvable|java.util.List<EventOrchestrationServiceSet>)
+//  .enableEventOrchestrationForService(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
     .build();
 ```
@@ -37,17 +31,17 @@ EventOrchestrationService.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.catchAll">catchAll</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAll">EventOrchestrationServiceCatchAll</a></code> | catch_all block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.service">service</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#service EventOrchestrationService#service}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.set">set</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>></code> | set block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.enableEventOrchestrationForService">enableEventOrchestrationForService</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#enable_event_orchestration_for_service EventOrchestrationService#enable_event_orchestration_for_service}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.set">set</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>></code> | set block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.enableEventOrchestrationForService">enableEventOrchestrationForService</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#enable_event_orchestration_for_service EventOrchestrationService#enable_event_orchestration_for_service}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#id EventOrchestrationService#id}. |
 
 ---
@@ -72,13 +66,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -108,7 +102,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -132,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ##### `set`<sup>Required</sup> <a name="set" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.set"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>>
 
 set block.
 
@@ -142,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ##### `enableEventOrchestrationForService`<sup>Optional</sup> <a name="enableEventOrchestrationForService" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.Initializer.parameter.enableEventOrchestrationForService"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#enable_event_orchestration_for_service EventOrchestrationService#enable_event_orchestration_for_service}.
 
@@ -390,7 +384,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.importFrom"></a>
@@ -446,7 +440,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -461,7 +455,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -498,12 +492,12 @@ public void putCatchAll(EventOrchestrationServiceCatchAll value)
 ##### `putSet` <a name="putSet" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.putSet"></a>
 
 ```java
-public void putSet(IResolvable OR java.util.List<EventOrchestrationServiceSet> value)
+public void putSet(IResolvable|java.util.List<EventOrchestrationServiceSet> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.putSet.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>>
 
 ---
 
@@ -645,21 +639,21 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.catchAll">catchAll</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllOutputReference">EventOrchestrationServiceCatchAllOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.set">set</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetList">EventOrchestrationServiceSetList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.catchAllInput">catchAllInput</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAll">EventOrchestrationServiceCatchAll</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.enableEventOrchestrationForServiceInput">enableEventOrchestrationForServiceInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.enableEventOrchestrationForServiceInput">enableEventOrchestrationForServiceInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.serviceInput">serviceInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.setInput">setInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.enableEventOrchestrationForService">enableEventOrchestrationForService</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.setInput">setInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.enableEventOrchestrationForService">enableEventOrchestrationForService</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.service">service</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -740,20 +734,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -800,10 +794,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -840,10 +834,10 @@ public EventOrchestrationServiceCatchAll getCatchAllInput();
 ##### `enableEventOrchestrationForServiceInput`<sup>Optional</sup> <a name="enableEventOrchestrationForServiceInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.enableEventOrchestrationForServiceInput"></a>
 
 ```java
-public java.lang.Object getEnableEventOrchestrationForServiceInput();
+public java.lang.Boolean|IResolvable getEnableEventOrchestrationForServiceInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -870,20 +864,20 @@ public java.lang.String getServiceInput();
 ##### `setInput`<sup>Optional</sup> <a name="setInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.setInput"></a>
 
 ```java
-public java.lang.Object getSetInput();
+public IResolvable|java.util.List<EventOrchestrationServiceSet> getSetInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>>
 
 ---
 
 ##### `enableEventOrchestrationForService`<sup>Required</sup> <a name="enableEventOrchestrationForService" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationService.property.enableEventOrchestrationForService"></a>
 
 ```java
-public java.lang.Object getEnableEventOrchestrationForService();
+public java.lang.Boolean|IResolvable getEnableEventOrchestrationForService();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -973,19 +967,15 @@ EventOrchestrationServiceCatchAllActions.builder()
 //  .automationAction(EventOrchestrationServiceCatchAllActionsAutomationAction)
 //  .escalationPolicy(java.lang.String)
 //  .eventAction(java.lang.String)
-//  .extraction(IResolvable)
-//  .extraction(java.util.List<EventOrchestrationServiceCatchAllActionsExtraction>)
-//  .incidentCustomFieldUpdate(IResolvable)
-//  .incidentCustomFieldUpdate(java.util.List<EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate>)
+//  .extraction(IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsExtraction>)
+//  .incidentCustomFieldUpdate(IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate>)
 //  .pagerdutyAutomationAction(EventOrchestrationServiceCatchAllActionsPagerdutyAutomationAction)
 //  .priority(java.lang.String)
 //  .routeTo(java.lang.String)
 //  .severity(java.lang.String)
-//  .suppress(java.lang.Boolean)
-//  .suppress(IResolvable)
+//  .suppress(java.lang.Boolean|IResolvable)
 //  .suspend(java.lang.Number)
-//  .variable(IResolvable)
-//  .variable(java.util.List<EventOrchestrationServiceCatchAllActionsVariable>)
+//  .variable(IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsVariable>)
     .build();
 ```
 
@@ -997,15 +987,15 @@ EventOrchestrationServiceCatchAllActions.builder()
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.automationAction">automationAction</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationAction">EventOrchestrationServiceCatchAllActionsAutomationAction</a></code> | automation_action block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.escalationPolicy">escalationPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#escalation_policy EventOrchestrationService#escalation_policy}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.eventAction">eventAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#event_action EventOrchestrationService#event_action}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.extraction">extraction</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a>></code> | extraction block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.incidentCustomFieldUpdate">incidentCustomFieldUpdate</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a>></code> | incident_custom_field_update block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.extraction">extraction</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a>></code> | extraction block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.incidentCustomFieldUpdate">incidentCustomFieldUpdate</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a>></code> | incident_custom_field_update block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.pagerdutyAutomationAction">pagerdutyAutomationAction</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsPagerdutyAutomationAction">EventOrchestrationServiceCatchAllActionsPagerdutyAutomationAction</a></code> | pagerduty_automation_action block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.priority">priority</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#priority EventOrchestrationService#priority}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.routeTo">routeTo</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#route_to EventOrchestrationService#route_to}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.severity">severity</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#severity EventOrchestrationService#severity}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.suppress">suppress</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#suppress EventOrchestrationService#suppress}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.suppress">suppress</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#suppress EventOrchestrationService#suppress}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.suspend">suspend</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#suspend EventOrchestrationService#suspend}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.variable">variable</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a>></code> | variable block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.variable">variable</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a>></code> | variable block. |
 
 ---
 
@@ -1062,10 +1052,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `extraction`<sup>Optional</sup> <a name="extraction" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.extraction"></a>
 
 ```java
-public java.lang.Object getExtraction();
+public IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsExtraction> getExtraction();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a>>
 
 extraction block.
 
@@ -1076,10 +1066,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `incidentCustomFieldUpdate`<sup>Optional</sup> <a name="incidentCustomFieldUpdate" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.incidentCustomFieldUpdate"></a>
 
 ```java
-public java.lang.Object getIncidentCustomFieldUpdate();
+public IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate> getIncidentCustomFieldUpdate();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a>>
 
 incident_custom_field_update block.
 
@@ -1140,10 +1130,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `suppress`<sup>Optional</sup> <a name="suppress" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.suppress"></a>
 
 ```java
-public java.lang.Object getSuppress();
+public java.lang.Boolean|IResolvable getSuppress();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#suppress EventOrchestrationService#suppress}.
 
@@ -1164,10 +1154,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `variable`<sup>Optional</sup> <a name="variable" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions.property.variable"></a>
 
 ```java
-public java.lang.Object getVariable();
+public IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsVariable> getVariable();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a>>
 
 variable block.
 
@@ -1185,12 +1175,9 @@ import com.hashicorp.cdktf.providers.pagerduty.event_orchestration_service.Event
 EventOrchestrationServiceCatchAllActionsAutomationAction.builder()
     .name(java.lang.String)
     .url(java.lang.String)
-//  .autoSend(java.lang.Boolean)
-//  .autoSend(IResolvable)
-//  .header(IResolvable)
-//  .header(java.util.List<EventOrchestrationServiceCatchAllActionsAutomationActionHeader>)
-//  .parameter(IResolvable)
-//  .parameter(java.util.List<EventOrchestrationServiceCatchAllActionsAutomationActionParameter>)
+//  .autoSend(java.lang.Boolean|IResolvable)
+//  .header(IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsAutomationActionHeader>)
+//  .parameter(IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsAutomationActionParameter>)
 //  .triggerTypes(java.util.List<java.lang.String>)
     .build();
 ```
@@ -1201,9 +1188,9 @@ EventOrchestrationServiceCatchAllActionsAutomationAction.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationAction.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#name EventOrchestrationService#name}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationAction.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#url EventOrchestrationService#url}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationAction.property.autoSend">autoSend</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#auto_send EventOrchestrationService#auto_send}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationAction.property.header">header</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a>></code> | header block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationAction.property.parameter">parameter</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a>></code> | parameter block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationAction.property.autoSend">autoSend</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#auto_send EventOrchestrationService#auto_send}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationAction.property.header">header</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a>></code> | header block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationAction.property.parameter">parameter</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a>></code> | parameter block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationAction.property.triggerTypes">triggerTypes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#trigger_types EventOrchestrationService#trigger_types}. |
 
 ---
@@ -1235,10 +1222,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `autoSend`<sup>Optional</sup> <a name="autoSend" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationAction.property.autoSend"></a>
 
 ```java
-public java.lang.Object getAutoSend();
+public java.lang.Boolean|IResolvable getAutoSend();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#auto_send EventOrchestrationService#auto_send}.
 
@@ -1247,10 +1234,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `header`<sup>Optional</sup> <a name="header" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationAction.property.header"></a>
 
 ```java
-public java.lang.Object getHeader();
+public IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsAutomationActionHeader> getHeader();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a>>
 
 header block.
 
@@ -1261,10 +1248,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `parameter`<sup>Optional</sup> <a name="parameter" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationAction.property.parameter"></a>
 
 ```java
-public java.lang.Object getParameter();
+public IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsAutomationActionParameter> getParameter();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a>>
 
 parameter block.
 
@@ -1627,23 +1614,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 import com.hashicorp.cdktf.providers.pagerduty.event_orchestration_service.EventOrchestrationServiceConfig;
 
 EventOrchestrationServiceConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .catchAll(EventOrchestrationServiceCatchAll)
     .service(java.lang.String)
-    .set(IResolvable)
-    .set(java.util.List<EventOrchestrationServiceSet>)
-//  .enableEventOrchestrationForService(java.lang.Boolean)
-//  .enableEventOrchestrationForService(IResolvable)
+    .set(IResolvable|java.util.List<EventOrchestrationServiceSet>)
+//  .enableEventOrchestrationForService(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
     .build();
 ```
@@ -1652,17 +1633,17 @@ EventOrchestrationServiceConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.catchAll">catchAll</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAll">EventOrchestrationServiceCatchAll</a></code> | catch_all block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.service">service</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#service EventOrchestrationService#service}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.set">set</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>></code> | set block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.enableEventOrchestrationForService">enableEventOrchestrationForService</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#enable_event_orchestration_for_service EventOrchestrationService#enable_event_orchestration_for_service}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.set">set</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>></code> | set block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.enableEventOrchestrationForService">enableEventOrchestrationForService</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#enable_event_orchestration_for_service EventOrchestrationService#enable_event_orchestration_for_service}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#id EventOrchestrationService#id}. |
 
 ---
@@ -1670,20 +1651,20 @@ EventOrchestrationServiceConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1730,10 +1711,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1766,10 +1747,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `set`<sup>Required</sup> <a name="set" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.set"></a>
 
 ```java
-public java.lang.Object getSet();
+public IResolvable|java.util.List<EventOrchestrationServiceSet> getSet();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>>
 
 set block.
 
@@ -1780,10 +1761,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `enableEventOrchestrationForService`<sup>Optional</sup> <a name="enableEventOrchestrationForService" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceConfig.property.enableEventOrchestrationForService"></a>
 
 ```java
-public java.lang.Object getEnableEventOrchestrationForService();
+public java.lang.Boolean|IResolvable getEnableEventOrchestrationForService();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#enable_event_orchestration_for_service EventOrchestrationService#enable_event_orchestration_for_service}.
 
@@ -1813,8 +1794,7 @@ import com.hashicorp.cdktf.providers.pagerduty.event_orchestration_service.Event
 
 EventOrchestrationServiceSet.builder()
     .id(java.lang.String)
-//  .rule(IResolvable)
-//  .rule(java.util.List<EventOrchestrationServiceSetRule>)
+//  .rule(IResolvable|java.util.List<EventOrchestrationServiceSetRule>)
     .build();
 ```
 
@@ -1823,7 +1803,7 @@ EventOrchestrationServiceSet.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#id EventOrchestrationService#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet.property.rule">rule</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a>></code> | rule block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet.property.rule">rule</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a>></code> | rule block. |
 
 ---
 
@@ -1845,10 +1825,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `rule`<sup>Optional</sup> <a name="rule" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet.property.rule"></a>
 
 ```java
-public java.lang.Object getRule();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRule> getRule();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a>>
 
 rule block.
 
@@ -1865,10 +1845,8 @@ import com.hashicorp.cdktf.providers.pagerduty.event_orchestration_service.Event
 
 EventOrchestrationServiceSetRule.builder()
     .actions(EventOrchestrationServiceSetRuleActions)
-//  .condition(IResolvable)
-//  .condition(java.util.List<EventOrchestrationServiceSetRuleCondition>)
-//  .disabled(java.lang.Boolean)
-//  .disabled(IResolvable)
+//  .condition(IResolvable|java.util.List<EventOrchestrationServiceSetRuleCondition>)
+//  .disabled(java.lang.Boolean|IResolvable)
 //  .label(java.lang.String)
     .build();
 ```
@@ -1878,8 +1856,8 @@ EventOrchestrationServiceSetRule.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule.property.actions">actions</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions">EventOrchestrationServiceSetRuleActions</a></code> | actions block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule.property.condition">condition</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a>></code> | condition block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#disabled EventOrchestrationService#disabled}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule.property.condition">condition</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a>></code> | condition block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#disabled EventOrchestrationService#disabled}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule.property.label">label</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#label EventOrchestrationService#label}. |
 
 ---
@@ -1901,10 +1879,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `condition`<sup>Optional</sup> <a name="condition" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule.property.condition"></a>
 
 ```java
-public java.lang.Object getCondition();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleCondition> getCondition();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a>>
 
 condition block.
 
@@ -1915,10 +1893,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule.property.disabled"></a>
 
 ```java
-public java.lang.Object getDisabled();
+public java.lang.Boolean|IResolvable getDisabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#disabled EventOrchestrationService#disabled}.
 
@@ -1948,19 +1926,15 @@ EventOrchestrationServiceSetRuleActions.builder()
 //  .automationAction(EventOrchestrationServiceSetRuleActionsAutomationAction)
 //  .escalationPolicy(java.lang.String)
 //  .eventAction(java.lang.String)
-//  .extraction(IResolvable)
-//  .extraction(java.util.List<EventOrchestrationServiceSetRuleActionsExtraction>)
-//  .incidentCustomFieldUpdate(IResolvable)
-//  .incidentCustomFieldUpdate(java.util.List<EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate>)
+//  .extraction(IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsExtraction>)
+//  .incidentCustomFieldUpdate(IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate>)
 //  .pagerdutyAutomationAction(EventOrchestrationServiceSetRuleActionsPagerdutyAutomationAction)
 //  .priority(java.lang.String)
 //  .routeTo(java.lang.String)
 //  .severity(java.lang.String)
-//  .suppress(java.lang.Boolean)
-//  .suppress(IResolvable)
+//  .suppress(java.lang.Boolean|IResolvable)
 //  .suspend(java.lang.Number)
-//  .variable(IResolvable)
-//  .variable(java.util.List<EventOrchestrationServiceSetRuleActionsVariable>)
+//  .variable(IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsVariable>)
     .build();
 ```
 
@@ -1972,15 +1946,15 @@ EventOrchestrationServiceSetRuleActions.builder()
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.automationAction">automationAction</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationAction">EventOrchestrationServiceSetRuleActionsAutomationAction</a></code> | automation_action block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.escalationPolicy">escalationPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#escalation_policy EventOrchestrationService#escalation_policy}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.eventAction">eventAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#event_action EventOrchestrationService#event_action}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.extraction">extraction</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a>></code> | extraction block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.incidentCustomFieldUpdate">incidentCustomFieldUpdate</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a>></code> | incident_custom_field_update block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.extraction">extraction</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a>></code> | extraction block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.incidentCustomFieldUpdate">incidentCustomFieldUpdate</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a>></code> | incident_custom_field_update block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.pagerdutyAutomationAction">pagerdutyAutomationAction</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsPagerdutyAutomationAction">EventOrchestrationServiceSetRuleActionsPagerdutyAutomationAction</a></code> | pagerduty_automation_action block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.priority">priority</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#priority EventOrchestrationService#priority}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.routeTo">routeTo</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#route_to EventOrchestrationService#route_to}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.severity">severity</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#severity EventOrchestrationService#severity}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.suppress">suppress</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#suppress EventOrchestrationService#suppress}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.suppress">suppress</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#suppress EventOrchestrationService#suppress}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.suspend">suspend</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#suspend EventOrchestrationService#suspend}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.variable">variable</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a>></code> | variable block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.variable">variable</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a>></code> | variable block. |
 
 ---
 
@@ -2037,10 +2011,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `extraction`<sup>Optional</sup> <a name="extraction" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.extraction"></a>
 
 ```java
-public java.lang.Object getExtraction();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsExtraction> getExtraction();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a>>
 
 extraction block.
 
@@ -2051,10 +2025,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `incidentCustomFieldUpdate`<sup>Optional</sup> <a name="incidentCustomFieldUpdate" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.incidentCustomFieldUpdate"></a>
 
 ```java
-public java.lang.Object getIncidentCustomFieldUpdate();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate> getIncidentCustomFieldUpdate();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a>>
 
 incident_custom_field_update block.
 
@@ -2115,10 +2089,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `suppress`<sup>Optional</sup> <a name="suppress" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.suppress"></a>
 
 ```java
-public java.lang.Object getSuppress();
+public java.lang.Boolean|IResolvable getSuppress();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#suppress EventOrchestrationService#suppress}.
 
@@ -2139,10 +2113,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `variable`<sup>Optional</sup> <a name="variable" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions.property.variable"></a>
 
 ```java
-public java.lang.Object getVariable();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsVariable> getVariable();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a>>
 
 variable block.
 
@@ -2160,12 +2134,9 @@ import com.hashicorp.cdktf.providers.pagerduty.event_orchestration_service.Event
 EventOrchestrationServiceSetRuleActionsAutomationAction.builder()
     .name(java.lang.String)
     .url(java.lang.String)
-//  .autoSend(java.lang.Boolean)
-//  .autoSend(IResolvable)
-//  .header(IResolvable)
-//  .header(java.util.List<EventOrchestrationServiceSetRuleActionsAutomationActionHeader>)
-//  .parameter(IResolvable)
-//  .parameter(java.util.List<EventOrchestrationServiceSetRuleActionsAutomationActionParameter>)
+//  .autoSend(java.lang.Boolean|IResolvable)
+//  .header(IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsAutomationActionHeader>)
+//  .parameter(IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsAutomationActionParameter>)
 //  .triggerTypes(java.util.List<java.lang.String>)
     .build();
 ```
@@ -2176,9 +2147,9 @@ EventOrchestrationServiceSetRuleActionsAutomationAction.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationAction.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#name EventOrchestrationService#name}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationAction.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#url EventOrchestrationService#url}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationAction.property.autoSend">autoSend</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#auto_send EventOrchestrationService#auto_send}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationAction.property.header">header</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a>></code> | header block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationAction.property.parameter">parameter</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a>></code> | parameter block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationAction.property.autoSend">autoSend</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#auto_send EventOrchestrationService#auto_send}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationAction.property.header">header</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a>></code> | header block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationAction.property.parameter">parameter</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a>></code> | parameter block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationAction.property.triggerTypes">triggerTypes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#trigger_types EventOrchestrationService#trigger_types}. |
 
 ---
@@ -2210,10 +2181,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `autoSend`<sup>Optional</sup> <a name="autoSend" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationAction.property.autoSend"></a>
 
 ```java
-public java.lang.Object getAutoSend();
+public java.lang.Boolean|IResolvable getAutoSend();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_service#auto_send EventOrchestrationService#auto_send}.
 
@@ -2222,10 +2193,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `header`<sup>Optional</sup> <a name="header" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationAction.property.header"></a>
 
 ```java
-public java.lang.Object getHeader();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsAutomationActionHeader> getHeader();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a>>
 
 header block.
 
@@ -2236,10 +2207,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `parameter`<sup>Optional</sup> <a name="parameter" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationAction.property.parameter"></a>
 
 ```java
-public java.lang.Object getParameter();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsAutomationActionParameter> getParameter();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a>>
 
 parameter block.
 
@@ -2749,7 +2720,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeaderList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeaderList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeaderList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeaderList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a>></code> | *No description.* |
 
 ---
 
@@ -2780,10 +2751,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeaderList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsAutomationActionHeader> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a>>
 
 ---
 
@@ -3020,7 +2991,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeaderOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeaderOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeaderOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a></code> | *No description.* |
 
 ---
 
@@ -3091,10 +3062,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeaderOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|EventOrchestrationServiceCatchAllActionsAutomationActionHeader getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a>
 
 ---
 
@@ -3311,24 +3282,24 @@ Returns a reversible string representation.
 ##### `putHeader` <a name="putHeader" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.putHeader"></a>
 
 ```java
-public void putHeader(IResolvable OR java.util.List<EventOrchestrationServiceCatchAllActionsAutomationActionHeader> value)
+public void putHeader(IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsAutomationActionHeader> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.putHeader.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a>>
 
 ---
 
 ##### `putParameter` <a name="putParameter" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.putParameter"></a>
 
 ```java
-public void putParameter(IResolvable OR java.util.List<EventOrchestrationServiceCatchAllActionsAutomationActionParameter> value)
+public void putParameter(IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsAutomationActionParameter> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.putParameter.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a>>
 
 ---
 
@@ -3365,13 +3336,13 @@ public void resetTriggerTypes()
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.header">header</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeaderList">EventOrchestrationServiceCatchAllActionsAutomationActionHeaderList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.parameter">parameter</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameterList">EventOrchestrationServiceCatchAllActionsAutomationActionParameterList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.autoSendInput">autoSendInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.headerInput">headerInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.autoSendInput">autoSendInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.headerInput">headerInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.parameterInput">parameterInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.parameterInput">parameterInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.triggerTypesInput">triggerTypesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.autoSend">autoSend</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.autoSend">autoSend</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.triggerTypes">triggerTypes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3426,20 +3397,20 @@ public EventOrchestrationServiceCatchAllActionsAutomationActionParameterList get
 ##### `autoSendInput`<sup>Optional</sup> <a name="autoSendInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.autoSendInput"></a>
 
 ```java
-public java.lang.Object getAutoSendInput();
+public java.lang.Boolean|IResolvable getAutoSendInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `headerInput`<sup>Optional</sup> <a name="headerInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.headerInput"></a>
 
 ```java
-public java.lang.Object getHeaderInput();
+public IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsAutomationActionHeader> getHeaderInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionHeader">EventOrchestrationServiceCatchAllActionsAutomationActionHeader</a>>
 
 ---
 
@@ -3456,10 +3427,10 @@ public java.lang.String getNameInput();
 ##### `parameterInput`<sup>Optional</sup> <a name="parameterInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.parameterInput"></a>
 
 ```java
-public java.lang.Object getParameterInput();
+public IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsAutomationActionParameter> getParameterInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a>>
 
 ---
 
@@ -3486,10 +3457,10 @@ public java.lang.String getUrlInput();
 ##### `autoSend`<sup>Required</sup> <a name="autoSend" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionOutputReference.property.autoSend"></a>
 
 ```java
-public java.lang.Object getAutoSend();
+public java.lang.Boolean|IResolvable getAutoSend();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -3655,7 +3626,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameterList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameterList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameterList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameterList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a>></code> | *No description.* |
 
 ---
 
@@ -3686,10 +3657,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameterList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsAutomationActionParameter> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a>>
 
 ---
 
@@ -3926,7 +3897,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameterOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameterOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameterOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameterOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameterOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a></code> | *No description.* |
 
 ---
 
@@ -3997,10 +3968,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameterOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|EventOrchestrationServiceCatchAllActionsAutomationActionParameter getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationActionParameter">EventOrchestrationServiceCatchAllActionsAutomationActionParameter</a>
 
 ---
 
@@ -4126,7 +4097,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtractionList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtractionList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtractionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtractionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a>></code> | *No description.* |
 
 ---
 
@@ -4157,10 +4128,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtractionList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsExtraction> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a>>
 
 ---
 
@@ -4422,7 +4393,7 @@ public void resetTemplate()
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtractionOutputReference.property.source">source</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtractionOutputReference.property.target">target</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtractionOutputReference.property.template">template</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtractionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtractionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a></code> | *No description.* |
 
 ---
 
@@ -4533,10 +4504,10 @@ public java.lang.String getTemplate();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtractionOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|EventOrchestrationServiceCatchAllActionsExtraction getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a>
 
 ---
 
@@ -4662,7 +4633,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a>></code> | *No description.* |
 
 ---
 
@@ -4693,10 +4664,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a>>
 
 ---
 
@@ -4933,7 +4904,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a></code> | *No description.* |
 
 ---
 
@@ -5004,10 +4975,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdateOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a>
 
 ---
 
@@ -5248,24 +5219,24 @@ public void putAutomationAction(EventOrchestrationServiceCatchAllActionsAutomati
 ##### `putExtraction` <a name="putExtraction" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.putExtraction"></a>
 
 ```java
-public void putExtraction(IResolvable OR java.util.List<EventOrchestrationServiceCatchAllActionsExtraction> value)
+public void putExtraction(IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsExtraction> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.putExtraction.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a>>
 
 ---
 
 ##### `putIncidentCustomFieldUpdate` <a name="putIncidentCustomFieldUpdate" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.putIncidentCustomFieldUpdate"></a>
 
 ```java
-public void putIncidentCustomFieldUpdate(IResolvable OR java.util.List<EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate> value)
+public void putIncidentCustomFieldUpdate(IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.putIncidentCustomFieldUpdate.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a>>
 
 ---
 
@@ -5284,12 +5255,12 @@ public void putPagerdutyAutomationAction(EventOrchestrationServiceCatchAllAction
 ##### `putVariable` <a name="putVariable" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.putVariable"></a>
 
 ```java
-public void putVariable(IResolvable OR java.util.List<EventOrchestrationServiceCatchAllActionsVariable> value)
+public void putVariable(IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsVariable> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.putVariable.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a>>
 
 ---
 
@@ -5387,22 +5358,22 @@ public void resetVariable()
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.automationActionInput">automationActionInput</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsAutomationAction">EventOrchestrationServiceCatchAllActionsAutomationAction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.escalationPolicyInput">escalationPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.eventActionInput">eventActionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.extractionInput">extractionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.incidentCustomFieldUpdateInput">incidentCustomFieldUpdateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.extractionInput">extractionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.incidentCustomFieldUpdateInput">incidentCustomFieldUpdateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.pagerdutyAutomationActionInput">pagerdutyAutomationActionInput</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsPagerdutyAutomationAction">EventOrchestrationServiceCatchAllActionsPagerdutyAutomationAction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.priorityInput">priorityInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.routeToInput">routeToInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.severityInput">severityInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.suppressInput">suppressInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.suppressInput">suppressInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.suspendInput">suspendInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.variableInput">variableInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.variableInput">variableInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.annotate">annotate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.escalationPolicy">escalationPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.eventAction">eventAction</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.priority">priority</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.routeTo">routeTo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.severity">severity</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.suppress">suppress</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.suppress">suppress</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.suspend">suspend</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActions">EventOrchestrationServiceCatchAllActions</a></code> | *No description.* |
 
@@ -5525,20 +5496,20 @@ public java.lang.String getEventActionInput();
 ##### `extractionInput`<sup>Optional</sup> <a name="extractionInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.extractionInput"></a>
 
 ```java
-public java.lang.Object getExtractionInput();
+public IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsExtraction> getExtractionInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsExtraction">EventOrchestrationServiceCatchAllActionsExtraction</a>>
 
 ---
 
 ##### `incidentCustomFieldUpdateInput`<sup>Optional</sup> <a name="incidentCustomFieldUpdateInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.incidentCustomFieldUpdateInput"></a>
 
 ```java
-public java.lang.Object getIncidentCustomFieldUpdateInput();
+public IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate> getIncidentCustomFieldUpdateInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate">EventOrchestrationServiceCatchAllActionsIncidentCustomFieldUpdate</a>>
 
 ---
 
@@ -5585,10 +5556,10 @@ public java.lang.String getSeverityInput();
 ##### `suppressInput`<sup>Optional</sup> <a name="suppressInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.suppressInput"></a>
 
 ```java
-public java.lang.Object getSuppressInput();
+public java.lang.Boolean|IResolvable getSuppressInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -5605,10 +5576,10 @@ public java.lang.Number getSuspendInput();
 ##### `variableInput`<sup>Optional</sup> <a name="variableInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.variableInput"></a>
 
 ```java
-public java.lang.Object getVariableInput();
+public IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsVariable> getVariableInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a>>
 
 ---
 
@@ -5675,10 +5646,10 @@ public java.lang.String getSeverity();
 ##### `suppress`<sup>Required</sup> <a name="suppress" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsOutputReference.property.suppress"></a>
 
 ```java
-public java.lang.Object getSuppress();
+public java.lang.Boolean|IResolvable getSuppress();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -6124,7 +6095,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariableList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariableList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariableList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariableList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a>></code> | *No description.* |
 
 ---
 
@@ -6155,10 +6126,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariableList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<EventOrchestrationServiceCatchAllActionsVariable> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a>>
 
 ---
 
@@ -6399,7 +6370,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariableOutputReference.property.path">path</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariableOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariableOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariableOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariableOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a></code> | *No description.* |
 
 ---
 
@@ -6510,10 +6481,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariableOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|EventOrchestrationServiceCatchAllActionsVariable getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceCatchAllActionsVariable">EventOrchestrationServiceCatchAllActionsVariable</a>
 
 ---
 
@@ -6923,7 +6894,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>></code> | *No description.* |
 
 ---
 
@@ -6954,10 +6925,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<EventOrchestrationServiceSet> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>>
 
 ---
 
@@ -7188,12 +7159,12 @@ Returns a reversible string representation.
 ##### `putRule` <a name="putRule" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetOutputReference.putRule"></a>
 
 ```java
-public void putRule(IResolvable OR java.util.List<EventOrchestrationServiceSetRule> value)
+public void putRule(IResolvable|java.util.List<EventOrchestrationServiceSetRule> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetOutputReference.putRule.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a>>
 
 ---
 
@@ -7212,9 +7183,9 @@ public void resetRule()
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetOutputReference.property.rule">rule</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleList">EventOrchestrationServiceSetRuleList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetOutputReference.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetOutputReference.property.ruleInput">ruleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetOutputReference.property.ruleInput">ruleInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a></code> | *No description.* |
 
 ---
 
@@ -7265,10 +7236,10 @@ public java.lang.String getIdInput();
 ##### `ruleInput`<sup>Optional</sup> <a name="ruleInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetOutputReference.property.ruleInput"></a>
 
 ```java
-public java.lang.Object getRuleInput();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRule> getRuleInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a>>
 
 ---
 
@@ -7285,10 +7256,10 @@ public java.lang.String getId();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|EventOrchestrationServiceSet getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSet">EventOrchestrationServiceSet</a>
 
 ---
 
@@ -7414,7 +7385,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeaderList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeaderList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeaderList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeaderList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a>></code> | *No description.* |
 
 ---
 
@@ -7445,10 +7416,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeaderList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsAutomationActionHeader> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a>>
 
 ---
 
@@ -7685,7 +7656,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeaderOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeaderOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeaderOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a></code> | *No description.* |
 
 ---
 
@@ -7756,10 +7727,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeaderOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|EventOrchestrationServiceSetRuleActionsAutomationActionHeader getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a>
 
 ---
 
@@ -7976,24 +7947,24 @@ Returns a reversible string representation.
 ##### `putHeader` <a name="putHeader" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.putHeader"></a>
 
 ```java
-public void putHeader(IResolvable OR java.util.List<EventOrchestrationServiceSetRuleActionsAutomationActionHeader> value)
+public void putHeader(IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsAutomationActionHeader> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.putHeader.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a>>
 
 ---
 
 ##### `putParameter` <a name="putParameter" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.putParameter"></a>
 
 ```java
-public void putParameter(IResolvable OR java.util.List<EventOrchestrationServiceSetRuleActionsAutomationActionParameter> value)
+public void putParameter(IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsAutomationActionParameter> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.putParameter.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a>>
 
 ---
 
@@ -8030,13 +8001,13 @@ public void resetTriggerTypes()
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.header">header</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeaderList">EventOrchestrationServiceSetRuleActionsAutomationActionHeaderList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.parameter">parameter</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameterList">EventOrchestrationServiceSetRuleActionsAutomationActionParameterList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.autoSendInput">autoSendInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.headerInput">headerInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.autoSendInput">autoSendInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.headerInput">headerInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.parameterInput">parameterInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.parameterInput">parameterInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.triggerTypesInput">triggerTypesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.autoSend">autoSend</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.autoSend">autoSend</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.triggerTypes">triggerTypes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -8091,20 +8062,20 @@ public EventOrchestrationServiceSetRuleActionsAutomationActionParameterList getP
 ##### `autoSendInput`<sup>Optional</sup> <a name="autoSendInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.autoSendInput"></a>
 
 ```java
-public java.lang.Object getAutoSendInput();
+public java.lang.Boolean|IResolvable getAutoSendInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `headerInput`<sup>Optional</sup> <a name="headerInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.headerInput"></a>
 
 ```java
-public java.lang.Object getHeaderInput();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsAutomationActionHeader> getHeaderInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionHeader">EventOrchestrationServiceSetRuleActionsAutomationActionHeader</a>>
 
 ---
 
@@ -8121,10 +8092,10 @@ public java.lang.String getNameInput();
 ##### `parameterInput`<sup>Optional</sup> <a name="parameterInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.parameterInput"></a>
 
 ```java
-public java.lang.Object getParameterInput();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsAutomationActionParameter> getParameterInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a>>
 
 ---
 
@@ -8151,10 +8122,10 @@ public java.lang.String getUrlInput();
 ##### `autoSend`<sup>Required</sup> <a name="autoSend" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionOutputReference.property.autoSend"></a>
 
 ```java
-public java.lang.Object getAutoSend();
+public java.lang.Boolean|IResolvable getAutoSend();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -8320,7 +8291,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameterList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameterList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameterList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameterList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a>></code> | *No description.* |
 
 ---
 
@@ -8351,10 +8322,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameterList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsAutomationActionParameter> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a>>
 
 ---
 
@@ -8591,7 +8562,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameterOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameterOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameterOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameterOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameterOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a></code> | *No description.* |
 
 ---
 
@@ -8662,10 +8633,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameterOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|EventOrchestrationServiceSetRuleActionsAutomationActionParameter getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationActionParameter">EventOrchestrationServiceSetRuleActionsAutomationActionParameter</a>
 
 ---
 
@@ -8791,7 +8762,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtractionList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtractionList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtractionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtractionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a>></code> | *No description.* |
 
 ---
 
@@ -8822,10 +8793,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtractionList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsExtraction> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a>>
 
 ---
 
@@ -9087,7 +9058,7 @@ public void resetTemplate()
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtractionOutputReference.property.source">source</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtractionOutputReference.property.target">target</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtractionOutputReference.property.template">template</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtractionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtractionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a></code> | *No description.* |
 
 ---
 
@@ -9198,10 +9169,10 @@ public java.lang.String getTemplate();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtractionOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|EventOrchestrationServiceSetRuleActionsExtraction getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a>
 
 ---
 
@@ -9327,7 +9298,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdateList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdateList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdateList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a>></code> | *No description.* |
 
 ---
 
@@ -9358,10 +9329,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdateList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a>>
 
 ---
 
@@ -9598,7 +9569,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdateOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdateOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdateOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdateOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a></code> | *No description.* |
 
 ---
 
@@ -9669,10 +9640,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdateOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a>
 
 ---
 
@@ -9913,24 +9884,24 @@ public void putAutomationAction(EventOrchestrationServiceSetRuleActionsAutomatio
 ##### `putExtraction` <a name="putExtraction" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.putExtraction"></a>
 
 ```java
-public void putExtraction(IResolvable OR java.util.List<EventOrchestrationServiceSetRuleActionsExtraction> value)
+public void putExtraction(IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsExtraction> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.putExtraction.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a>>
 
 ---
 
 ##### `putIncidentCustomFieldUpdate` <a name="putIncidentCustomFieldUpdate" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.putIncidentCustomFieldUpdate"></a>
 
 ```java
-public void putIncidentCustomFieldUpdate(IResolvable OR java.util.List<EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate> value)
+public void putIncidentCustomFieldUpdate(IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.putIncidentCustomFieldUpdate.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a>>
 
 ---
 
@@ -9949,12 +9920,12 @@ public void putPagerdutyAutomationAction(EventOrchestrationServiceSetRuleActions
 ##### `putVariable` <a name="putVariable" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.putVariable"></a>
 
 ```java
-public void putVariable(IResolvable OR java.util.List<EventOrchestrationServiceSetRuleActionsVariable> value)
+public void putVariable(IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsVariable> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.putVariable.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a>>
 
 ---
 
@@ -10052,22 +10023,22 @@ public void resetVariable()
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.automationActionInput">automationActionInput</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsAutomationAction">EventOrchestrationServiceSetRuleActionsAutomationAction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.escalationPolicyInput">escalationPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.eventActionInput">eventActionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.extractionInput">extractionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.incidentCustomFieldUpdateInput">incidentCustomFieldUpdateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.extractionInput">extractionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.incidentCustomFieldUpdateInput">incidentCustomFieldUpdateInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.pagerdutyAutomationActionInput">pagerdutyAutomationActionInput</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsPagerdutyAutomationAction">EventOrchestrationServiceSetRuleActionsPagerdutyAutomationAction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.priorityInput">priorityInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.routeToInput">routeToInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.severityInput">severityInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.suppressInput">suppressInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.suppressInput">suppressInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.suspendInput">suspendInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.variableInput">variableInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.variableInput">variableInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.annotate">annotate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.escalationPolicy">escalationPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.eventAction">eventAction</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.priority">priority</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.routeTo">routeTo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.severity">severity</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.suppress">suppress</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.suppress">suppress</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.suspend">suspend</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions">EventOrchestrationServiceSetRuleActions</a></code> | *No description.* |
 
@@ -10190,20 +10161,20 @@ public java.lang.String getEventActionInput();
 ##### `extractionInput`<sup>Optional</sup> <a name="extractionInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.extractionInput"></a>
 
 ```java
-public java.lang.Object getExtractionInput();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsExtraction> getExtractionInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsExtraction">EventOrchestrationServiceSetRuleActionsExtraction</a>>
 
 ---
 
 ##### `incidentCustomFieldUpdateInput`<sup>Optional</sup> <a name="incidentCustomFieldUpdateInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.incidentCustomFieldUpdateInput"></a>
 
 ```java
-public java.lang.Object getIncidentCustomFieldUpdateInput();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate> getIncidentCustomFieldUpdateInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate">EventOrchestrationServiceSetRuleActionsIncidentCustomFieldUpdate</a>>
 
 ---
 
@@ -10250,10 +10221,10 @@ public java.lang.String getSeverityInput();
 ##### `suppressInput`<sup>Optional</sup> <a name="suppressInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.suppressInput"></a>
 
 ```java
-public java.lang.Object getSuppressInput();
+public java.lang.Boolean|IResolvable getSuppressInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -10270,10 +10241,10 @@ public java.lang.Number getSuspendInput();
 ##### `variableInput`<sup>Optional</sup> <a name="variableInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.variableInput"></a>
 
 ```java
-public java.lang.Object getVariableInput();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsVariable> getVariableInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a>>
 
 ---
 
@@ -10340,10 +10311,10 @@ public java.lang.String getSeverity();
 ##### `suppress`<sup>Required</sup> <a name="suppress" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsOutputReference.property.suppress"></a>
 
 ```java
-public java.lang.Object getSuppress();
+public java.lang.Boolean|IResolvable getSuppress();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -10789,7 +10760,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariableList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariableList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariableList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariableList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a>></code> | *No description.* |
 
 ---
 
@@ -10820,10 +10791,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariableList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleActionsVariable> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a>>
 
 ---
 
@@ -11064,7 +11035,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariableOutputReference.property.path">path</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariableOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariableOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariableOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariableOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a></code> | *No description.* |
 
 ---
 
@@ -11175,10 +11146,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariableOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|EventOrchestrationServiceSetRuleActionsVariable getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActionsVariable">EventOrchestrationServiceSetRuleActionsVariable</a>
 
 ---
 
@@ -11304,7 +11275,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleConditionList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleConditionList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleConditionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleConditionList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a>></code> | *No description.* |
 
 ---
 
@@ -11335,10 +11306,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleConditionList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleCondition> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a>>
 
 ---
 
@@ -11573,7 +11544,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleConditionOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleConditionOutputReference.property.expressionInput">expressionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleConditionOutputReference.property.expression">expression</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleConditionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleConditionOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a></code> | *No description.* |
 
 ---
 
@@ -11624,10 +11595,10 @@ public java.lang.String getExpression();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleConditionOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|EventOrchestrationServiceSetRuleCondition getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a>
 
 ---
 
@@ -11753,7 +11724,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a>></code> | *No description.* |
 
 ---
 
@@ -11784,10 +11755,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRule> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a>>
 
 ---
 
@@ -12033,12 +12004,12 @@ public void putActions(EventOrchestrationServiceSetRuleActions value)
 ##### `putCondition` <a name="putCondition" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.putCondition"></a>
 
 ```java
-public void putCondition(IResolvable OR java.util.List<EventOrchestrationServiceSetRuleCondition> value)
+public void putCondition(IResolvable|java.util.List<EventOrchestrationServiceSetRuleCondition> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.putCondition.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a>>
 
 ---
 
@@ -12071,12 +12042,12 @@ public void resetLabel()
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleConditionList">EventOrchestrationServiceSetRuleConditionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.property.actionsInput">actionsInput</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleActions">EventOrchestrationServiceSetRuleActions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.property.conditionInput">conditionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.property.conditionInput">conditionInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.property.labelInput">labelInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.property.disabled">disabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.property.label">label</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a></code> | *No description.* |
 
 ---
 
@@ -12147,20 +12118,20 @@ public EventOrchestrationServiceSetRuleActions getActionsInput();
 ##### `conditionInput`<sup>Optional</sup> <a name="conditionInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.property.conditionInput"></a>
 
 ```java
-public java.lang.Object getConditionInput();
+public IResolvable|java.util.List<EventOrchestrationServiceSetRuleCondition> getConditionInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleCondition">EventOrchestrationServiceSetRuleCondition</a>>
 
 ---
 
 ##### `disabledInput`<sup>Optional</sup> <a name="disabledInput" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.property.disabledInput"></a>
 
 ```java
-public java.lang.Object getDisabledInput();
+public java.lang.Boolean|IResolvable getDisabledInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -12177,10 +12148,10 @@ public java.lang.String getLabelInput();
 ##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.property.disabled"></a>
 
 ```java
-public java.lang.Object getDisabled();
+public java.lang.Boolean|IResolvable getDisabled();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -12197,10 +12168,10 @@ public java.lang.String getLabel();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRuleOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|EventOrchestrationServiceSetRule getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationService.EventOrchestrationServiceSetRule">EventOrchestrationServiceSetRule</a>
 
 ---
 

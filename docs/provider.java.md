@@ -14,11 +14,9 @@ import com.hashicorp.cdktf.providers.pagerduty.provider.PagerdutyProvider;
 PagerdutyProvider.Builder.create(Construct scope, java.lang.String id)
 //  .alias(java.lang.String)
 //  .apiUrlOverride(java.lang.String)
-//  .insecureTls(java.lang.Boolean)
-//  .insecureTls(IResolvable)
+//  .insecureTls(java.lang.Boolean|IResolvable)
 //  .serviceRegion(java.lang.String)
-//  .skipCredentialsValidation(java.lang.Boolean)
-//  .skipCredentialsValidation(IResolvable)
+//  .skipCredentialsValidation(java.lang.Boolean|IResolvable)
 //  .token(java.lang.String)
 //  .useAppOauthScopedToken(PagerdutyProviderUseAppOauthScopedToken)
 //  .userToken(java.lang.String)
@@ -31,9 +29,9 @@ PagerdutyProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.apiUrlOverride">apiUrlOverride</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#api_url_override PagerdutyProvider#api_url_override}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.insecureTls">insecureTls</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#insecure_tls PagerdutyProvider#insecure_tls}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.insecureTls">insecureTls</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#insecure_tls PagerdutyProvider#insecure_tls}. |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.serviceRegion">serviceRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#service_region PagerdutyProvider#service_region}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.skipCredentialsValidation">skipCredentialsValidation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.skipCredentialsValidation">skipCredentialsValidation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}. |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#token PagerdutyProvider#token}. |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.useAppOauthScopedToken">useAppOauthScopedToken</a></code> | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken">PagerdutyProviderUseAppOauthScopedToken</a></code> | use_app_oauth_scoped_token block. |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.userToken">userToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#user_token PagerdutyProvider#user_token}. |
@@ -78,7 +76,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ##### `insecureTls`<sup>Optional</sup> <a name="insecureTls" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.insecureTls"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#insecure_tls PagerdutyProvider#insecure_tls}.
 
@@ -94,7 +92,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 
 ##### `skipCredentialsValidation`<sup>Optional</sup> <a name="skipCredentialsValidation" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.Initializer.parameter.skipCredentialsValidation"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}.
 
@@ -396,16 +394,16 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.alias">alias</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.apiUrlOverrideInput">apiUrlOverrideInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.insecureTlsInput">insecureTlsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.insecureTlsInput">insecureTlsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.serviceRegionInput">serviceRegionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.skipCredentialsValidationInput">skipCredentialsValidationInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.skipCredentialsValidationInput">skipCredentialsValidationInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.tokenInput">tokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.useAppOauthScopedTokenInput">useAppOauthScopedTokenInput</a></code> | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken">PagerdutyProviderUseAppOauthScopedToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.userTokenInput">userTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.apiUrlOverride">apiUrlOverride</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.insecureTls">insecureTls</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.insecureTls">insecureTls</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.serviceRegion">serviceRegion</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.skipCredentialsValidation">skipCredentialsValidation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.skipCredentialsValidation">skipCredentialsValidation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.token">token</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.useAppOauthScopedToken">useAppOauthScopedToken</a></code> | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken">PagerdutyProviderUseAppOauthScopedToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.userToken">userToken</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -527,10 +525,10 @@ public java.lang.String getApiUrlOverrideInput();
 ##### `insecureTlsInput`<sup>Optional</sup> <a name="insecureTlsInput" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.insecureTlsInput"></a>
 
 ```java
-public java.lang.Object getInsecureTlsInput();
+public java.lang.Boolean|IResolvable getInsecureTlsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -547,10 +545,10 @@ public java.lang.String getServiceRegionInput();
 ##### `skipCredentialsValidationInput`<sup>Optional</sup> <a name="skipCredentialsValidationInput" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.skipCredentialsValidationInput"></a>
 
 ```java
-public java.lang.Object getSkipCredentialsValidationInput();
+public java.lang.Boolean|IResolvable getSkipCredentialsValidationInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -597,10 +595,10 @@ public java.lang.String getApiUrlOverride();
 ##### `insecureTls`<sup>Optional</sup> <a name="insecureTls" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.insecureTls"></a>
 
 ```java
-public java.lang.Object getInsecureTls();
+public java.lang.Boolean|IResolvable getInsecureTls();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -617,10 +615,10 @@ public java.lang.String getServiceRegion();
 ##### `skipCredentialsValidation`<sup>Optional</sup> <a name="skipCredentialsValidation" id="@cdktf/provider-pagerduty.provider.PagerdutyProvider.property.skipCredentialsValidation"></a>
 
 ```java
-public java.lang.Object getSkipCredentialsValidation();
+public java.lang.Boolean|IResolvable getSkipCredentialsValidation();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -684,11 +682,9 @@ import com.hashicorp.cdktf.providers.pagerduty.provider.PagerdutyProviderConfig;
 PagerdutyProviderConfig.builder()
 //  .alias(java.lang.String)
 //  .apiUrlOverride(java.lang.String)
-//  .insecureTls(java.lang.Boolean)
-//  .insecureTls(IResolvable)
+//  .insecureTls(java.lang.Boolean|IResolvable)
 //  .serviceRegion(java.lang.String)
-//  .skipCredentialsValidation(java.lang.Boolean)
-//  .skipCredentialsValidation(IResolvable)
+//  .skipCredentialsValidation(java.lang.Boolean|IResolvable)
 //  .token(java.lang.String)
 //  .useAppOauthScopedToken(PagerdutyProviderUseAppOauthScopedToken)
 //  .userToken(java.lang.String)
@@ -701,9 +697,9 @@ PagerdutyProviderConfig.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.apiUrlOverride">apiUrlOverride</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#api_url_override PagerdutyProvider#api_url_override}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.insecureTls">insecureTls</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#insecure_tls PagerdutyProvider#insecure_tls}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.insecureTls">insecureTls</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#insecure_tls PagerdutyProvider#insecure_tls}. |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.serviceRegion">serviceRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#service_region PagerdutyProvider#service_region}. |
-| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.skipCredentialsValidation">skipCredentialsValidation</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}. |
+| <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.skipCredentialsValidation">skipCredentialsValidation</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}. |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#token PagerdutyProvider#token}. |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.useAppOauthScopedToken">useAppOauthScopedToken</a></code> | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderUseAppOauthScopedToken">PagerdutyProviderUseAppOauthScopedToken</a></code> | use_app_oauth_scoped_token block. |
 | <code><a href="#@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.userToken">userToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#user_token PagerdutyProvider#user_token}. |
@@ -739,10 +735,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `insecureTls`<sup>Optional</sup> <a name="insecureTls" id="@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.insecureTls"></a>
 
 ```java
-public java.lang.Object getInsecureTls();
+public java.lang.Boolean|IResolvable getInsecureTls();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#insecure_tls PagerdutyProvider#insecure_tls}.
 
@@ -763,10 +759,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `skipCredentialsValidation`<sup>Optional</sup> <a name="skipCredentialsValidation" id="@cdktf/provider-pagerduty.provider.PagerdutyProviderConfig.property.skipCredentialsValidation"></a>
 
 ```java
-public java.lang.Object getSkipCredentialsValidation();
+public java.lang.Boolean|IResolvable getSkipCredentialsValidation();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs#skip_credentials_validation PagerdutyProvider#skip_credentials_validation}.
 

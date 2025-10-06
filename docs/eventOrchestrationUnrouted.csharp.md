@@ -276,7 +276,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.importFrom"></a>
@@ -330,7 +330,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -345,7 +345,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -382,12 +382,12 @@ private void PutCatchAll(EventOrchestrationUnroutedCatchAll Value)
 ##### `PutSet` <a name="PutSet" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.putSet"></a>
 
 ```csharp
-private void PutSet(object Value)
+private void PutSet(IResolvable|EventOrchestrationUnroutedSet[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.putSet.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>[]
 
 ---
 
@@ -523,19 +523,19 @@ Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.catchAll">CatchAll</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllOutputReference">EventOrchestrationUnroutedCatchAllOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.set">Set</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetList">EventOrchestrationUnroutedSetList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.catchAllInput">CatchAllInput</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAll">EventOrchestrationUnroutedCatchAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.eventOrchestrationInput">EventOrchestrationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.setInput">SetInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.setInput">SetInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.eventOrchestration">EventOrchestration</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.id">Id</a></code> | <code>string</code> | *No description.* |
 
@@ -616,20 +616,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -676,10 +676,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -736,10 +736,10 @@ public string IdInput { get; }
 ##### `SetInput`<sup>Optional</sup> <a name="SetInput" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnrouted.property.setInput"></a>
 
 ```csharp
-public object SetInput { get; }
+public IResolvable|EventOrchestrationUnroutedSet[] SetInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>[]
 
 ---
 
@@ -826,9 +826,9 @@ using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new EventOrchestrationUnroutedCatchAllActions {
     string EventAction = null,
-    object Extraction = null,
+    IResolvable|EventOrchestrationUnroutedCatchAllActionsExtraction[] Extraction = null,
     string Severity = null,
-    object Variable = null
+    IResolvable|EventOrchestrationUnroutedCatchAllActionsVariable[] Variable = null
 };
 ```
 
@@ -837,9 +837,9 @@ new EventOrchestrationUnroutedCatchAllActions {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions.property.eventAction">EventAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#event_action EventOrchestrationUnrouted#event_action}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions.property.extraction">Extraction</a></code> | <code>object</code> | extraction block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions.property.extraction">Extraction</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>[]</code> | extraction block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions.property.severity">Severity</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#severity EventOrchestrationUnrouted#severity}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions.property.variable">Variable</a></code> | <code>object</code> | variable block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions.property.variable">Variable</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>[]</code> | variable block. |
 
 ---
 
@@ -858,10 +858,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Extraction`<sup>Optional</sup> <a name="Extraction" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions.property.extraction"></a>
 
 ```csharp
-public object Extraction { get; set; }
+public IResolvable|EventOrchestrationUnroutedCatchAllActionsExtraction[] Extraction { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>[]
 
 extraction block.
 
@@ -884,10 +884,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Variable`<sup>Optional</sup> <a name="Variable" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions.property.variable"></a>
 
 ```csharp
-public object Variable { get; set; }
+public IResolvable|EventOrchestrationUnroutedCatchAllActionsVariable[] Variable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>[]
 
 variable block.
 
@@ -1051,16 +1051,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new EventOrchestrationUnroutedConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     EventOrchestrationUnroutedCatchAll CatchAll,
     string EventOrchestration,
-    object Set,
+    IResolvable|EventOrchestrationUnroutedSet[] Set,
     string Id = null
 };
 ```
@@ -1069,16 +1069,16 @@ new EventOrchestrationUnroutedConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.catchAll">CatchAll</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAll">EventOrchestrationUnroutedCatchAll</a></code> | catch_all block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.eventOrchestration">EventOrchestration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#event_orchestration EventOrchestrationUnrouted#event_orchestration}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.set">Set</a></code> | <code>object</code> | set block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.set">Set</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>[]</code> | set block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#id EventOrchestrationUnrouted#id}. |
 
 ---
@@ -1086,20 +1086,20 @@ new EventOrchestrationUnroutedConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1146,10 +1146,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1182,10 +1182,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Set`<sup>Required</sup> <a name="Set" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedConfig.property.set"></a>
 
 ```csharp
-public object Set { get; set; }
+public IResolvable|EventOrchestrationUnroutedSet[] Set { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>[]
 
 set block.
 
@@ -1217,7 +1217,7 @@ using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new EventOrchestrationUnroutedSet {
     string Id,
-    object Rule = null
+    IResolvable|EventOrchestrationUnroutedSetRule[] Rule = null
 };
 ```
 
@@ -1226,7 +1226,7 @@ new EventOrchestrationUnroutedSet {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#id EventOrchestrationUnrouted#id}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet.property.rule">Rule</a></code> | <code>object</code> | rule block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet.property.rule">Rule</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>[]</code> | rule block. |
 
 ---
 
@@ -1248,10 +1248,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `Rule`<sup>Optional</sup> <a name="Rule" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet.property.rule"></a>
 
 ```csharp
-public object Rule { get; set; }
+public IResolvable|EventOrchestrationUnroutedSetRule[] Rule { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>[]
 
 rule block.
 
@@ -1268,8 +1268,8 @@ using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new EventOrchestrationUnroutedSetRule {
     EventOrchestrationUnroutedSetRuleActions Actions,
-    object Condition = null,
-    object Disabled = null,
+    IResolvable|EventOrchestrationUnroutedSetRuleCondition[] Condition = null,
+    bool|IResolvable Disabled = null,
     string Label = null
 };
 ```
@@ -1279,8 +1279,8 @@ new EventOrchestrationUnroutedSetRule {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule.property.actions">Actions</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions">EventOrchestrationUnroutedSetRuleActions</a></code> | actions block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule.property.condition">Condition</a></code> | <code>object</code> | condition block. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule.property.disabled">Disabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#disabled EventOrchestrationUnrouted#disabled}. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule.property.condition">Condition</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>[]</code> | condition block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#disabled EventOrchestrationUnrouted#disabled}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule.property.label">Label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#label EventOrchestrationUnrouted#label}. |
 
 ---
@@ -1302,10 +1302,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Condition`<sup>Optional</sup> <a name="Condition" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule.property.condition"></a>
 
 ```csharp
-public object Condition { get; set; }
+public IResolvable|EventOrchestrationUnroutedSetRuleCondition[] Condition { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>[]
 
 condition block.
 
@@ -1316,10 +1316,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Disabled`<sup>Optional</sup> <a name="Disabled" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; set; }
+public bool|IResolvable Disabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#disabled EventOrchestrationUnrouted#disabled}.
 
@@ -1346,10 +1346,10 @@ using HashiCorp.Cdktf.Providers.Pagerduty;
 
 new EventOrchestrationUnroutedSetRuleActions {
     string EventAction = null,
-    object Extraction = null,
+    IResolvable|EventOrchestrationUnroutedSetRuleActionsExtraction[] Extraction = null,
     string RouteTo = null,
     string Severity = null,
-    object Variable = null
+    IResolvable|EventOrchestrationUnroutedSetRuleActionsVariable[] Variable = null
 };
 ```
 
@@ -1358,10 +1358,10 @@ new EventOrchestrationUnroutedSetRuleActions {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.eventAction">EventAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#event_action EventOrchestrationUnrouted#event_action}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.extraction">Extraction</a></code> | <code>object</code> | extraction block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.extraction">Extraction</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>[]</code> | extraction block. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.routeTo">RouteTo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#route_to EventOrchestrationUnrouted#route_to}. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.severity">Severity</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/event_orchestration_unrouted#severity EventOrchestrationUnrouted#severity}. |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.variable">Variable</a></code> | <code>object</code> | variable block. |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.variable">Variable</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>[]</code> | variable block. |
 
 ---
 
@@ -1380,10 +1380,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Extraction`<sup>Optional</sup> <a name="Extraction" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.extraction"></a>
 
 ```csharp
-public object Extraction { get; set; }
+public IResolvable|EventOrchestrationUnroutedSetRuleActionsExtraction[] Extraction { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>[]
 
 extraction block.
 
@@ -1418,10 +1418,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pager
 ##### `Variable`<sup>Optional</sup> <a name="Variable" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions.property.variable"></a>
 
 ```csharp
-public object Variable { get; set; }
+public IResolvable|EventOrchestrationUnroutedSetRuleActionsVariable[] Variable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>[]
 
 variable block.
 
@@ -1732,7 +1732,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>[]</code> | *No description.* |
 
 ---
 
@@ -1763,10 +1763,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|EventOrchestrationUnroutedCatchAllActionsExtraction[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>[]
 
 ---
 
@@ -2028,7 +2028,7 @@ private void ResetTemplate()
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.source">Source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.target">Target</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.template">Template</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a></code> | *No description.* |
 
 ---
 
@@ -2139,10 +2139,10 @@ public string Template { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtractionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|EventOrchestrationUnroutedCatchAllActionsExtraction InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>
 
 ---
 
@@ -2359,24 +2359,24 @@ Returns a reversible string representation.
 ##### `PutExtraction` <a name="PutExtraction" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.putExtraction"></a>
 
 ```csharp
-private void PutExtraction(object Value)
+private void PutExtraction(IResolvable|EventOrchestrationUnroutedCatchAllActionsExtraction[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.putExtraction.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>[]
 
 ---
 
 ##### `PutVariable` <a name="PutVariable" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.putVariable"></a>
 
 ```csharp
-private void PutVariable(object Value)
+private void PutVariable(IResolvable|EventOrchestrationUnroutedCatchAllActionsVariable[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.putVariable.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>[]
 
 ---
 
@@ -2415,9 +2415,9 @@ private void ResetVariable()
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.suppress">Suppress</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.variable">Variable</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableList">EventOrchestrationUnroutedCatchAllActionsVariableList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.eventActionInput">EventActionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.extractionInput">ExtractionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.extractionInput">ExtractionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.severityInput">SeverityInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.variableInput">VariableInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.variableInput">VariableInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.eventAction">EventAction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.severity">Severity</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActions">EventOrchestrationUnroutedCatchAllActions</a></code> | *No description.* |
@@ -2491,10 +2491,10 @@ public string EventActionInput { get; }
 ##### `ExtractionInput`<sup>Optional</sup> <a name="ExtractionInput" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.extractionInput"></a>
 
 ```csharp
-public object ExtractionInput { get; }
+public IResolvable|EventOrchestrationUnroutedCatchAllActionsExtraction[] ExtractionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsExtraction">EventOrchestrationUnroutedCatchAllActionsExtraction</a>[]
 
 ---
 
@@ -2511,10 +2511,10 @@ public string SeverityInput { get; }
 ##### `VariableInput`<sup>Optional</sup> <a name="VariableInput" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsOutputReference.property.variableInput"></a>
 
 ```csharp
-public object VariableInput { get; }
+public IResolvable|EventOrchestrationUnroutedCatchAllActionsVariable[] VariableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>[]
 
 ---
 
@@ -2670,7 +2670,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>[]</code> | *No description.* |
 
 ---
 
@@ -2701,10 +2701,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|EventOrchestrationUnroutedCatchAllActionsVariable[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>[]
 
 ---
 
@@ -2945,7 +2945,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a></code> | *No description.* |
 
 ---
 
@@ -3056,10 +3056,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariableOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|EventOrchestrationUnroutedCatchAllActionsVariable InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedCatchAllActionsVariable">EventOrchestrationUnroutedCatchAllActionsVariable</a>
 
 ---
 
@@ -3469,7 +3469,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>[]</code> | *No description.* |
 
 ---
 
@@ -3500,10 +3500,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|EventOrchestrationUnroutedSet[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>[]
 
 ---
 
@@ -3734,12 +3734,12 @@ Returns a reversible string representation.
 ##### `PutRule` <a name="PutRule" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.putRule"></a>
 
 ```csharp
-private void PutRule(object Value)
+private void PutRule(IResolvable|EventOrchestrationUnroutedSetRule[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.putRule.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>[]
 
 ---
 
@@ -3758,9 +3758,9 @@ private void ResetRule()
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.rule">Rule</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleList">EventOrchestrationUnroutedSetRuleList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.ruleInput">RuleInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.ruleInput">RuleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a></code> | *No description.* |
 
 ---
 
@@ -3811,10 +3811,10 @@ public string IdInput { get; }
 ##### `RuleInput`<sup>Optional</sup> <a name="RuleInput" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.ruleInput"></a>
 
 ```csharp
-public object RuleInput { get; }
+public IResolvable|EventOrchestrationUnroutedSetRule[] RuleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>[]
 
 ---
 
@@ -3831,10 +3831,10 @@ public string Id { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|EventOrchestrationUnroutedSet InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSet">EventOrchestrationUnroutedSet</a>
 
 ---
 
@@ -3960,7 +3960,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>[]</code> | *No description.* |
 
 ---
 
@@ -3991,10 +3991,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|EventOrchestrationUnroutedSetRuleActionsExtraction[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>[]
 
 ---
 
@@ -4256,7 +4256,7 @@ private void ResetTemplate()
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.source">Source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.target">Target</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.template">Template</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a></code> | *No description.* |
 
 ---
 
@@ -4367,10 +4367,10 @@ public string Template { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|EventOrchestrationUnroutedSetRuleActionsExtraction InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>
 
 ---
 
@@ -4588,24 +4588,24 @@ Returns a reversible string representation.
 ##### `PutExtraction` <a name="PutExtraction" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.putExtraction"></a>
 
 ```csharp
-private void PutExtraction(object Value)
+private void PutExtraction(IResolvable|EventOrchestrationUnroutedSetRuleActionsExtraction[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.putExtraction.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>[]
 
 ---
 
 ##### `PutVariable` <a name="PutVariable" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.putVariable"></a>
 
 ```csharp
-private void PutVariable(object Value)
+private void PutVariable(IResolvable|EventOrchestrationUnroutedSetRuleActionsVariable[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.putVariable.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>[]
 
 ---
 
@@ -4649,10 +4649,10 @@ private void ResetVariable()
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.extraction">Extraction</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtractionList">EventOrchestrationUnroutedSetRuleActionsExtractionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.variable">Variable</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableList">EventOrchestrationUnroutedSetRuleActionsVariableList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.eventActionInput">EventActionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.extractionInput">ExtractionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.extractionInput">ExtractionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.routeToInput">RouteToInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.severityInput">SeverityInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.variableInput">VariableInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.variableInput">VariableInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.eventAction">EventAction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.routeTo">RouteTo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.severity">Severity</a></code> | <code>string</code> | *No description.* |
@@ -4717,10 +4717,10 @@ public string EventActionInput { get; }
 ##### `ExtractionInput`<sup>Optional</sup> <a name="ExtractionInput" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.extractionInput"></a>
 
 ```csharp
-public object ExtractionInput { get; }
+public IResolvable|EventOrchestrationUnroutedSetRuleActionsExtraction[] ExtractionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsExtraction">EventOrchestrationUnroutedSetRuleActionsExtraction</a>[]
 
 ---
 
@@ -4747,10 +4747,10 @@ public string SeverityInput { get; }
 ##### `VariableInput`<sup>Optional</sup> <a name="VariableInput" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsOutputReference.property.variableInput"></a>
 
 ```csharp
-public object VariableInput { get; }
+public IResolvable|EventOrchestrationUnroutedSetRuleActionsVariable[] VariableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>[]
 
 ---
 
@@ -4916,7 +4916,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>[]</code> | *No description.* |
 
 ---
 
@@ -4947,10 +4947,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|EventOrchestrationUnroutedSetRuleActionsVariable[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>[]
 
 ---
 
@@ -5191,7 +5191,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a></code> | *No description.* |
 
 ---
 
@@ -5302,10 +5302,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariableOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|EventOrchestrationUnroutedSetRuleActionsVariable InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActionsVariable">EventOrchestrationUnroutedSetRuleActionsVariable</a>
 
 ---
 
@@ -5431,7 +5431,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>[]</code> | *No description.* |
 
 ---
 
@@ -5462,10 +5462,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|EventOrchestrationUnroutedSetRuleCondition[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>[]
 
 ---
 
@@ -5700,7 +5700,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.expressionInput">ExpressionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.expression">Expression</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a></code> | *No description.* |
 
 ---
 
@@ -5751,10 +5751,10 @@ public string Expression { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|EventOrchestrationUnroutedSetRuleCondition InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>
 
 ---
 
@@ -5880,7 +5880,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -5911,10 +5911,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|EventOrchestrationUnroutedSetRule[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>[]
 
 ---
 
@@ -6160,12 +6160,12 @@ private void PutActions(EventOrchestrationUnroutedSetRuleActions Value)
 ##### `PutCondition` <a name="PutCondition" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.putCondition"></a>
 
 ```csharp
-private void PutCondition(object Value)
+private void PutCondition(IResolvable|EventOrchestrationUnroutedSetRuleCondition[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.putCondition.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>[]
 
 ---
 
@@ -6198,12 +6198,12 @@ private void ResetLabel()
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleConditionList">EventOrchestrationUnroutedSetRuleConditionList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.actionsInput">ActionsInput</a></code> | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleActions">EventOrchestrationUnroutedSetRuleActions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.conditionInput">ConditionInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.disabledInput">DisabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.conditionInput">ConditionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.disabledInput">DisabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.labelInput">LabelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.disabled">Disabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.disabled">Disabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.label">Label</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a></code> | *No description.* |
 
 ---
 
@@ -6274,20 +6274,20 @@ public EventOrchestrationUnroutedSetRuleActions ActionsInput { get; }
 ##### `ConditionInput`<sup>Optional</sup> <a name="ConditionInput" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.conditionInput"></a>
 
 ```csharp
-public object ConditionInput { get; }
+public IResolvable|EventOrchestrationUnroutedSetRuleCondition[] ConditionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleCondition">EventOrchestrationUnroutedSetRuleCondition</a>[]
 
 ---
 
 ##### `DisabledInput`<sup>Optional</sup> <a name="DisabledInput" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.disabledInput"></a>
 
 ```csharp
-public object DisabledInput { get; }
+public bool|IResolvable DisabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6304,10 +6304,10 @@ public string LabelInput { get; }
 ##### `Disabled`<sup>Required</sup> <a name="Disabled" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.disabled"></a>
 
 ```csharp
-public object Disabled { get; }
+public bool|IResolvable Disabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -6324,10 +6324,10 @@ public string Label { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRuleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|EventOrchestrationUnroutedSetRule InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-pagerduty.eventOrchestrationUnrouted.EventOrchestrationUnroutedSetRule">EventOrchestrationUnroutedSetRule</a>
 
 ---
 
