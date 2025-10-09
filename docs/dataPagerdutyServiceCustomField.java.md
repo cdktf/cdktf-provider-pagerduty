@@ -4,7 +4,7 @@
 
 ### DataPagerdutyServiceCustomField <a name="DataPagerdutyServiceCustomField" id="@cdktf/provider-pagerduty.dataPagerdutyServiceCustomField.DataPagerdutyServiceCustomField"></a>
 
-Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/data-sources/service_custom_field pagerduty_service_custom_field}.
+Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.2/docs/data-sources/service_custom_field pagerduty_service_custom_field}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-pagerduty.dataPagerdutyServiceCustomField.DataPagerdutyServiceCustomField.Initializer"></a>
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 The human-readable name of the field. This must be unique across an account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/data-sources/service_custom_field#display_name DataPagerdutyServiceCustomField#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.2/docs/data-sources/service_custom_field#display_name DataPagerdutyServiceCustomField#display_name}
 
 ---
 
@@ -427,7 +427,7 @@ The construct id used in the generated config for the DataPagerdutyServiceCustom
 
 The id of the existing DataPagerdutyServiceCustomField that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/data-sources/service_custom_field#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.2/docs/data-sources/service_custom_field#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -857,7 +857,7 @@ public java.lang.String getDisplayName();
 
 The human-readable name of the field. This must be unique across an account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/data-sources/service_custom_field#display_name DataPagerdutyServiceCustomField#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.2/docs/data-sources/service_custom_field#display_name DataPagerdutyServiceCustomField#display_name}
 
 ---
 
