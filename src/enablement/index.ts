@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/enablement
+// https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.2/docs/resources/enablement
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktf from 'cdktf';
 
 export interface EnablementConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/enablement#enabled Enablement#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.2/docs/resources/enablement#enabled Enablement#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/enablement#entity_id Enablement#entity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.2/docs/resources/enablement#entity_id Enablement#entity_id}
   */
   readonly entityId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/enablement#entity_type Enablement#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.2/docs/resources/enablement#entity_type Enablement#entity_type}
   */
   readonly entityType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/enablement#feature Enablement#feature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.2/docs/resources/enablement#feature Enablement#feature}
   */
   readonly feature: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/enablement pagerduty_enablement}
+* Represents a {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.2/docs/resources/enablement pagerduty_enablement}
 */
 export class Enablement extends cdktf.TerraformResource {
 
@@ -47,7 +47,7 @@ export class Enablement extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Enablement resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Enablement to import
-  * @param importFromId The id of the existing Enablement that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/enablement#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Enablement that should be imported. Refer to the {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.2/docs/resources/enablement#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Enablement to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -59,7 +59,7 @@ export class Enablement extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.1/docs/resources/enablement pagerduty_enablement} Resource
+  * Create a new {@link https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.2/docs/resources/enablement pagerduty_enablement} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class Enablement extends cdktf.TerraformResource {
       terraformResourceType: 'pagerduty_enablement',
       terraformGeneratorMetadata: {
         providerName: 'pagerduty',
-        providerVersion: '3.30.1',
+        providerVersion: '3.30.2',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
