@@ -1,3 +1,3 @@
 # `data_pagerduty_user_contact_method`
 
-Refer to the Terraform Registry for docs: [`data_pagerduty_user_contact_method`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.2/docs/data-sources/user_contact_method).
+Refer to the Terraform Registry for docs: [`data_pagerduty_user_contact_method`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.3/docs/data-sources/user_contact_method).
