@@ -1,3 +1,3 @@
 # `pagerduty_event_rule`
 
-Refer to the Terraform Registry for docs: [`pagerduty_event_rule`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.2/docs/resources/event_rule).
+Refer to the Terraform Registry for docs: [`pagerduty_event_rule`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.3/docs/resources/event_rule).
