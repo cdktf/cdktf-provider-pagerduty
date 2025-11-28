@@ -1,3 +1,3 @@
 # `pagerduty_business_service_subscriber`
 
-Refer to the Terraform Registry for docs: [`pagerduty_business_service_subscriber`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.6/docs/resources/business_service_subscriber).
+Refer to the Terraform Registry for docs: [`pagerduty_business_service_subscriber`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.7/docs/resources/business_service_subscriber).
