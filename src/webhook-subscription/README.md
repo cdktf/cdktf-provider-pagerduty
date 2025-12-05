@@ -1,3 +1,3 @@
 # `pagerduty_webhook_subscription`
 
-Refer to the Terraform Registry for docs: [`pagerduty_webhook_subscription`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.7/docs/resources/webhook_subscription).
+Refer to the Terraform Registry for docs: [`pagerduty_webhook_subscription`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/webhook_subscription).

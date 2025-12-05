@@ -1,3 +1,3 @@
 # `pagerduty_extension_servicenow`
 
-Refer to the Terraform Registry for docs: [`pagerduty_extension_servicenow`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.7/docs/resources/extension_servicenow).
+Refer to the Terraform Registry for docs: [`pagerduty_extension_servicenow`](https://registry.terraform.io/providers/pagerduty/pagerduty/3.30.8/docs/resources/extension_servicenow).
